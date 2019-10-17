@@ -8,34 +8,32 @@ import json
 import os
 import csv
 import spacy
+from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM
+import time
 
 class Data:
 
-    def __init__(self, data_path, embedding_path, mode):
+    def __init__(self, data_path):
 
         self.data_path = data_path
-        self.embedding_path = embedding_path
         self.REPLACE_BY_SPACE_RE = re.compile(r'[/(){}\[\]\|@,;]')
         self.BAD_SYMBOLS_RE = re.compile(r'[^0-9a-z #+_]')
-        self.raw_data = self.prepare_text(mode)
-        self.intents = [data[1] for data in self.raw_data]
-        self.num_labels = len(set(self.intents))
-        
-        # Run the following to get starspace embedding
-        # > ./starspace train -trainFile data.txt -model modelSaveFile -label '#'
-        
-        #self.load_embeddings()
 
     #==================================================#
     #                   Text Prepare                   #
     #==================================================#
+    
+    #pure virtual function
+    def prepare_text(self):
+        raise NotImplementedError("Please define virtual function!!")
 
-    def text_prepare(self, text):
+    # prepare text
+    def text_prepare(self, text, mode):
         """
             text: a string       
             return: modified string
         """
-        #nlp = spacy.load('en')
+        
         text = text.lower() # lowercase text
         text = re.sub(self.REPLACE_BY_SPACE_RE, ' ', text) # replace REPLACE_BY_SPACE_RE symbols by space in text
         text = re.sub(self.BAD_SYMBOLS_RE, '', text) # delete symbols which are in BAD_SYMBOLS_RE from text
@@ -43,38 +41,82 @@ class Data:
         text = re.sub(r"\!+", "!", text)
         text = re.sub(r"\,+", ",", text)
         text = re.sub(r"\?+", "?", text)
-        #text = " ".join(nlp.tokenizer(text).text)
+        if mode == "Bert":
+            tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+            text = tokenizer.convert_tokens_to_ids(tokenizer.tokenize(text))
         
         return text
     
+
+class ATISData(Data):
+
+    def __init__(self, data_path, mode, input_path=None, embedding_path=None, done=True):
+
+        super(ATISData, self).__init__(data_path)
+        
+        self.raw_data = self.prepare_text(mode, done)
+        self.intents = [data[1] for data in self.raw_data]
+        self.num_labels = len(set(self.intents))
+
+        if mode == "Starspace":
+            # Run the following to get starspace embedding
+            # > ./starspace train -trainFile data.txt -model modelSaveFile -label '#'
+            self.embedding_path = embedding_path
+            self.input_path = input_path
+            self.write_files()
+            self.load_embeddings()
+        
+        if mode == "Bert":
+            pass
+
+
     #==================================================#
-    #            Prepare Text for Starspace            #
+    #                   Prepare Text                   #
     #==================================================#
     
-    def prepare_text(self, mode="no"):
+    def prepare_text(self, mode, done):
+
+        if done:
+            with open("raw_data.pkl", "rb") as f:
+                return pickle.load(f)
+
+        ptime = time.time()
 
         with open(self.data_path, 'r') as f:
             data = json.load(f)
         
         raw_data = []
-        self.word2id = {}
+        self.intent2id = {}
         counter = 0
         for sample in data['rasa_nlu_data']['common_examples']:
-            if sample['intent'] not in self.word2id:
-                self.word2id[sample['intent']] = counter
+            if sample['intent'] not in self.intent2id:
+                self.intent2id[sample['intent']] = counter
                 counter += 1
-            raw_data.append((self.text_prepare(sample['text']), self.word2id[sample['intent']], sample['entities']))
-
-        if mode == "yes":
-            with open('val.txt', 'w') as f:
-                for text, intent, _ in raw_data:
-                    f.write(text+" __label__{}".format(intent)+"\n")
+            raw_data.append((self.text_prepare(sample['text'], mode), self.intent2id[sample['intent']], sample['entities']))
+        
+        with open("raw_data.pkl", "wb") as f:
+            pickle.dump(raw_data, f)
+        
+        print("Process time: ", time.time()-ptime)
         
         return raw_data
     
     #==================================================#
-    #                 Load Embeddings                  #
+    #                       Bert                       #
     #==================================================#
+
+    
+    
+    
+    #==================================================#
+    #                    Starspace                     #
+    #==================================================#
+
+    def write_files(self):
+        if mode == "yes":
+            with open(self.input_path, 'w') as f:
+                for text, intent, _ in self.raw_data:
+                    f.write(text+" __label__{}".format(intent)+"\n")
 
     def load_embeddings(self):
         
@@ -89,16 +131,10 @@ class Data:
         self.embedded_data = np.zeros((len(self.raw_data), 100))
         for i, data in enumerate(self.raw_data):
             self.embedded_data[i,:] = np.mean([self.word_embeddings[txt] for txt in data[0].split()], axis=0)
-
-        
+    
 
 if __name__ == "__main__":
-    data = Data("../raw_datasets/ATIS/test.json", "modelSaveFile.tsv", "yes")
-
-
-    # from sklearn.cluster import KMeans
-    # kmeans = KMeans(n_clusters=22, random_state=0, init='k-means++').fit(data.embedded_data)
-    # print(kmeans.labels_)
+    data = ATISData("../raw_datasets/ATIS/test.json", "Bert")
 
 
 
