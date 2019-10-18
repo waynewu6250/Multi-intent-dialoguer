@@ -1,57 +1,60 @@
 import torch as t
 from torch.utils.data import Dataset, DataLoader
+import pickle
+from sklearn.model_selection import train_test_split
 from config import opt
+import numpy as np
 
 class ATISDataset(Dataset):
 
-    def __init__(self,opt):
-        self.data = t.load(opt.caption_path)
-        self.captions_list = self.data['captions_list']
-        self.word2ix = self.data['word2ix']
-        self.ix2word = self.data['ix2word']
-        self.id2ix = self.data['id2ix']
-        self.ix2id = self.data['ix2id']
-
-        self.pad = self.word2ix['<PAD>']
-        self.unk = self.word2ix['<UNK>']
-        self.eos = self.word2ix['<EOS>']
-
-        self.imgs = t.load(opt.img_feature_path)
+    def __init__(self, data, labels, opt):
+        self.data = data
+        self.labels = labels
+        self.num_data = len(self.data)
 
     def __getitem__(self, index):
-        img = self.imgs[index]
-        caption = self.captions_list[index]
-        return img, caption, index
+
+        caps = self.data[index]
+        label = self.labels[index]
+        return caps, label, index
     
     def __len__(self):
-        return len(self.imgs)
+        return len(self.data)
 
 
-def get_collate_fn(pad, eos, max_length=50):
+def get_collate_fn(max_length):
     def collate_fn(imgs_caps):
-        # Sort by caption lengths
-        imgs_caps = sorted(imgs_caps, key = lambda x: len(x[1]), reverse=True)
-        imgs, captions, indexes = zip(*imgs_caps)
-        imgs = t.cat([img.unsqueeze(0) for img in imgs], 0)
+        
+        caps, labels, indexes = zip(*imgs_caps)
         
         # Calculate caption length
-        lengths = [min(len(c) + 1, max_length) for c in captions]
+        lengths = [min(len(c), max_length) for c in caps]
         batch_length = max(lengths)
 
         # Captions into tensor
-        captions_t = t.LongTensor(batch_length, len(captions)).fill_(pad)
-        for i,cap in enumerate(captions):
-            end_cap = lengths[i]-1
-            if end_cap < batch_length:
-                captions_t[end_cap,i] = eos
-            captions_t[:end_cap,i].copy_(t.LongTensor(cap))
+        captions_t = t.LongTensor(len(caps), batch_length).fill_(0)
+        for i,cap in enumerate(caps):
+            captions_t[i, :lengths[i]].copy_(t.LongTensor(cap))
         
-        return imgs, (captions_t, lengths), indexes
+        labels = t.from_numpy(np.array(labels))
+
+        return captions_t, labels, indexes
     return collate_fn
 
-def get_dataloader(opt):
-    dataset = AllDataset(opt)
+def get_dataloader(data, labels, opt):
+    dataset = ATISDataset(data, labels, opt)
     return DataLoader(dataset, 
                       batch_size=opt.batch_size, 
                       shuffle=False, 
-                      collate_fn=get_collate_fn(dataset.pad,dataset.eos))
+                      collate_fn=get_collate_fn(opt.maxlen))
+
+if __name__ == '__main__':
+    
+    with open(opt.data_path, 'rb') as f:
+        data = pickle.load(f)
+    X, y, entities = zip(*data)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, )
+
+    trainloader = get_dataloader(X_train, y_train, opt)
+    
+    
