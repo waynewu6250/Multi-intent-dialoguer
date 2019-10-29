@@ -22,6 +22,8 @@ def train():
     # dataset
     with open(opt.data_path, 'rb') as f:
         data = pickle.load(f)
+    with open(opt.dic_path, 'rb') as f:
+        dic = pickle.load(f)
     X, y, _ = zip(*data)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
@@ -32,8 +34,7 @@ def train():
     config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
         num_hidden_layers=12, num_attention_heads=12, intermediate_size=3072)
     
-    
-    model = BertEmbedding(config, max(train_loader.dataset.labels)+1)
+    model = BertEmbedding(config, len(dic))
     if opt.model_path:
         model.load_state_dict(torch.load(opt.model_path), map_location="cpu")
         print("Pretrained model has been loaded.\n")
@@ -61,7 +62,7 @@ def train():
             optimizer.zero_grad()
             pooled_output, outputs = model(captions_t)
             train_loss = criterion(outputs, labels)
-            print(train_loss)
+            print(torch.max(outputs, 1)[1])
 
             train_loss.backward()
             optimizer.step()
@@ -88,7 +89,7 @@ def train():
 
         print('Total val loss: {:.4f} '.format(total_val_loss / val_loader.dataset.num_data))
         print('Val accuracy: {:.4f}'.format(val_corrects.double() / val_loader.dataset.num_data))
-        if val_loss < best_loss:
+        if total_val_loss < best_loss:
             print('saving with loss of {}'.format(total_val_loss),
                   'improved over previous {}'.format(best_loss))
             best_loss = total_val_loss

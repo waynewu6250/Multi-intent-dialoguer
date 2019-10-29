@@ -54,9 +54,9 @@ class ATISData(Data):
 
         super(ATISData, self).__init__(data_path)
         
-        self.raw_data = self.prepare_text(mode, done)
+        self.raw_data, self.intent2id = self.prepare_text(mode, done)
         self.intents = [data[1] for data in self.raw_data]
-        self.num_labels = len(set(self.intents))
+        self.num_labels = len(self.intent2id)
 
         if mode == "Starspace":
             # Run the following to get starspace embedding
@@ -78,7 +78,10 @@ class ATISData(Data):
 
         if done:
             with open("raw_data.pkl", "rb") as f:
-                return pickle.load(f)
+                raw_data = pickle.load(f)
+            with open("intent2id.pkl", "rb") as f:
+                intent2id = pickle.load(f)
+            return raw_data, intent2id
 
         ptime = time.time()
 
@@ -86,20 +89,22 @@ class ATISData(Data):
             data = json.load(f)
         
         raw_data = []
-        self.intent2id = {}
+        intent2id = {}
         counter = 0
         for sample in data['rasa_nlu_data']['common_examples']:
-            if sample['intent'] not in self.intent2id:
-                self.intent2id[sample['intent']] = counter
+            if sample['intent'] not in intent2id:
+                intent2id[sample['intent']] = counter
                 counter += 1
-            raw_data.append((self.text_prepare(sample['text'], mode), self.intent2id[sample['intent']], sample['entities']))
+            raw_data.append((self.text_prepare(sample['text'], mode), intent2id[sample['intent']], sample['entities']))
         
         with open("raw_data.pkl", "wb") as f:
             pickle.dump(raw_data, f)
+        with open("intent2id.pkl", "wb") as f:
+            pickle.dump(intent2id, f)
         
         print("Process time: ", time.time()-ptime)
         
-        return raw_data
+        return raw_data, intent2id
     
     #==================================================#
     #                       Bert                       #

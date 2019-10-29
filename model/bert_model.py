@@ -28,6 +28,8 @@ class BertEmbedding(nn.Module):
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
         self.classifier = nn.Linear(config.hidden_size, num_labels)
         nn.init.xavier_normal_(self.classifier.weight)
+
+        
     
     def forward(self, input_ids, token_type_ids=None, attention_mask=None, labels=None):
         _, pooled_output = self.bert(input_ids, token_type_ids, attention_mask, output_all_encoded_layers=False)
@@ -36,13 +38,14 @@ class BertEmbedding(nn.Module):
         outputs = F.softmax(logits, dim=1)
         return pooled_output, outputs
 
-    def freeze_bert_encoder(self):
-        for param in self.bert.parameters():
-            param.requires_grad = False
+    # def freeze_bert_encoder(self):
+    #     for param in self.bert.parameters():
+    #         param.requires_grad = False
     
-    def unfreeze_bert_encoder(self):
-        for param in self.bert.parameters():
-            param.requires_grad = True
+    # def unfreeze_bert_encoder(self):
+        # for param in self.bert.parameters():
+        #         param.requires_grad = True
+        
 
 
 if __name__ == "__main__":
