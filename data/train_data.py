@@ -41,11 +41,13 @@ class Data:
         text = re.sub(r"\!+", "!", text)
         text = re.sub(r"\,+", ",", text)
         text = re.sub(r"\?+", "?", text)
+        text = "[CLS] " + text + " [SEP]"
         if mode == "Bert":
-            tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-            text = tokenizer.convert_tokens_to_ids(tokenizer.tokenize(text))
+            tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
+            tokenized_text = tokenizer.tokenize(text)
+            tokenized_ids = tokenizer.convert_tokens_to_ids(tokenized_text)
         
-        return text
+        return tokenized_ids
     
 
 class ATISData(Data):
@@ -107,21 +109,13 @@ class ATISData(Data):
         return raw_data, intent2id
     
     #==================================================#
-    #                       Bert                       #
-    #==================================================#
-
-    
-    
-    
-    #==================================================#
     #                    Starspace                     #
     #==================================================#
 
     def write_files(self):
-        if mode == "yes":
-            with open(self.input_path, 'w') as f:
-                for text, intent, _ in self.raw_data:
-                    f.write(text+" __label__{}".format(intent)+"\n")
+        with open(self.input_path, 'w') as f:
+            for text, intent, _ in self.raw_data:
+                f.write(text+" __label__{}".format(intent)+"\n")
 
     def load_embeddings(self):
         
@@ -139,7 +133,7 @@ class ATISData(Data):
     
 
 if __name__ == "__main__":
-    data = ATISData("../raw_datasets/ATIS/test.json", "Bert")
+    data = ATISData("../raw_datasets/ATIS/train.json", "Bert", done=False)
 
 
 

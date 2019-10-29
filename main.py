@@ -3,7 +3,8 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 from torch.optim import Adam, RMSprop
-from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM, BertConfig
+from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM, BertConfig, BertAdam
+from keras.preprocessing.sequence import pad_sequences
 from sklearn.model_selection import train_test_split
 import pickle
 import copy
@@ -25,10 +26,18 @@ def train():
     with open(opt.dic_path, 'rb') as f:
         dic = pickle.load(f)
     X, y, _ = zip(*data)
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    input_ids = pad_sequences(X, maxlen=opt.maxlen, dtype="long", truncating="post", padding="post")
+    
+    attention_masks = []
+    for seq in input_ids:
+      seq_mask = [float(i>0) for i in seq]
+      attention_masks.append(seq_mask)
+    
+    X_train, X_test, y_train, y_test = train_test_split(input_ids, y, test_size=0.1, random_state=42)
+    mask_train, mask_test, _, _ = train_test_split(attention_masks, y, test_size=0.1, random_state=42)
 
-    train_loader = get_dataloader(X_train, y_train, opt)
-    val_loader = get_dataloader(X_test, y_test, opt)
+    train_loader = get_dataloader(X_train, y_train, mask_train, opt)
+    val_loader = get_dataloader(X_test, y_test, mask_test, opt)
     
     # model
     config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
@@ -41,8 +50,16 @@ def train():
     model = model.to(device)
 
     # optimizer, criterion
-    optimizer= Adam([{"params": model.bert.parameters(), "lr": opt.learning_rate_bert},
-                     {"params": model.classifier.parameters(), "lr": opt.learning_rate_classifier}])
+    param_optimizer = list(model.named_parameters())
+    no_decay = ['bias', 'gamma', 'beta']
+    optimizer_grouped_parameters = [
+        {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)],
+        'weight_decay_rate': 0.01},
+        {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)],
+        'weight_decay_rate': 0.0}
+    ]
+    
+    optimizer = BertAdam(optimizer_grouped_parameters,lr=opt.learning_rate_bert, warmup=.1)
     criterion = nn.CrossEntropyLoss().to(device)
     best_loss = 100
 
@@ -54,15 +71,17 @@ def train():
         total_train_loss = 0
         train_corrects = 0
         
-        for (captions_t, labels, _) in train_loader:
+        for (captions_t, labels, masks) in train_loader:
 
             captions_t = captions_t.to(device)
             labels = labels.to(device)
+            masks = masks.to(device)
 
             optimizer.zero_grad()
-            pooled_output, outputs = model(captions_t)
+            #train_loss = model(captions_t, masks, labels)
+
+            pooled_output, outputs = model(captions_t, masks)
             train_loss = criterion(outputs, labels)
-            print(torch.max(outputs, 1)[1])
 
             train_loss.backward()
             optimizer.step()
@@ -76,12 +95,14 @@ def train():
         # Validation Phase
         total_val_loss = 0
         val_corrects = 0
-        for (captions_t, labels, _) in val_loader:
+        for (captions_t, labels, masks) in val_loader:
 
             captions_t = captions_t.to(device)
             labels = labels.to(device)
-
-            pooled_output, outputs = model(captions_t)
+            masks = masks.to(device)
+            
+            with torch.no_grad():
+                pooled_output, outputs = model(captions_t, masks)
             val_loss = criterion(outputs, labels)
 
             total_val_loss += val_loss

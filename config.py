@@ -6,8 +6,8 @@ class Config:
 
     maxlen = 20
     batch_size = 16
-    epochs = 25
-    learning_rate_bert = 1e-3
+    epochs = 5
+    learning_rate_bert = 2e-5
     learning_rate_classifier = 1e-3
 
 
