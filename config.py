@@ -1,8 +1,9 @@
 class Config:
 
-    data_path = "data/raw_data.pkl" #"Multi-intent-dialoguer/data/raw_data.pkl"
+    train_path = "data/raw_data.pkl" #"Multi-intent-dialoguer/data/raw_data.pkl"
+    test_path = "data/raw_data_test.pkl"
     dic_path = "data/intent2id.pkl"
-    model_path = None #"bert_test.pth"
+    model_path = "epoch-3.pth"
 
     maxlen = 20
     batch_size = 16
