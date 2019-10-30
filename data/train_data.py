@@ -91,15 +91,21 @@ class ATISData(Data):
             data = json.load(f)
         
         raw_data = []
-        intent2id = {}
-        counter = 0
+        if os.path.exists("intent2id.pkl"):
+            with open("intent2id.pkl", "rb") as f:
+                intent2id = pickle.load(f)
+            counter = len(intent2id)
+        else:
+            intent2id = {}
+            counter = 0
+        
         for sample in data['rasa_nlu_data']['common_examples']:
             if sample['intent'] not in intent2id:
                 intent2id[sample['intent']] = counter
                 counter += 1
             raw_data.append((self.text_prepare(sample['text'], mode), intent2id[sample['intent']], sample['entities']))
         
-        with open("raw_data.pkl", "wb") as f:
+        with open("raw_data_test.pkl", "wb") as f:
             pickle.dump(raw_data, f)
         with open("intent2id.pkl", "wb") as f:
             pickle.dump(intent2id, f)
@@ -133,7 +139,7 @@ class ATISData(Data):
     
 
 if __name__ == "__main__":
-    data = ATISData("../raw_datasets/ATIS/train.json", "Bert", done=False)
+    data = ATISData("../raw_datasets/ATIS/test.json", "Bert")
 
 
 
