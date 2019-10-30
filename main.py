@@ -13,6 +13,19 @@ from model import BertEmbedding
 from all_data import get_dataloader
 from config import opt
 
+def load_data(path):
+    
+    with open(path, 'rb') as f:
+        data = pickle.load(f)
+
+    X, y, _ = zip(*data)
+    input_ids = pad_sequences(X, maxlen=opt.maxlen, dtype="long", truncating="post", padding="post")
+    
+    attention_masks = []
+    for seq in input_ids:
+        seq_mask = [float(i>0) for i in seq]
+        attention_masks.append(seq_mask)
+    return input_ids, y, attention_masks
 
 def train():
     
@@ -21,23 +34,16 @@ def train():
     torch.backends.cudnn.enabled = False
 
     # dataset
-    with open(opt.data_path, 'rb') as f:
-        data = pickle.load(f)
     with open(opt.dic_path, 'rb') as f:
         dic = pickle.load(f)
-    X, y, _ = zip(*data)
-    input_ids = pad_sequences(X, maxlen=opt.maxlen, dtype="long", truncating="post", padding="post")
     
-    attention_masks = []
-    for seq in input_ids:
-      seq_mask = [float(i>0) for i in seq]
-      attention_masks.append(seq_mask)
-    
-    X_train, X_test, y_train, y_test = train_test_split(input_ids, y, test_size=0.1, random_state=42)
-    mask_train, mask_test, _, _ = train_test_split(attention_masks, y, test_size=0.1, random_state=42)
+    X_train, y_train, mask_train = load_data(opt.train_path)
+    X_test, y_test, mask_test = load_data(opt.test_path)
 
     train_loader = get_dataloader(X_train, y_train, mask_train, opt)
     val_loader = get_dataloader(X_test, y_test, mask_test, opt)
+    print(train_loader.dataset.num_data)
+    print(val_loader.dataset.num_data)
     
     # model
     config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
@@ -116,8 +122,7 @@ def train():
             best_loss = total_val_loss
             best_model_wts = copy.deepcopy(model.state_dict())
 
-            if (epoch+1) % 5 == 0:
-                torch.save(model.state_dict(), "checkpoints/chinese-epoch-%s.pth"%epoch)
+            torch.save(model.state_dict(), "checkpoints/epoch-%s.pth"%epoch)
         
         print()
 
