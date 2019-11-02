@@ -8,6 +8,7 @@ from keras.preprocessing.sequence import pad_sequences
 from sklearn.model_selection import train_test_split
 import pickle
 import copy
+import numpy as np
 
 from model import BertEmbedding
 from all_data import get_dataloader
@@ -27,9 +28,12 @@ def load_data(path):
         attention_masks.append(seq_mask)
     return input_ids, y, attention_masks
 
-def train():
+def train(**kwargs):
     
     # attributes
+    for k, v in kwargs.items():
+        setattr(opt, k, v)
+    
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     torch.backends.cudnn.enabled = False
 
@@ -42,8 +46,6 @@ def train():
 
     train_loader = get_dataloader(X_train, y_train, mask_train, opt)
     val_loader = get_dataloader(X_test, y_test, mask_test, opt)
-    print(train_loader.dataset.num_data)
-    print(val_loader.dataset.num_data)
     
     # model
     config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
@@ -51,7 +53,7 @@ def train():
     
     model = BertEmbedding(config, len(dic))
     if opt.model_path:
-        model.load_state_dict(torch.load(opt.model_path), map_location="cpu")
+        model.load_state_dict(torch.load(opt.model_path))
         print("Pretrained model has been loaded.\n")
     model = model.to(device)
 
@@ -126,8 +128,60 @@ def train():
         
         print()
 
+def test(**kwargs):
+
+    # attributes
+    for k, v in kwargs.items():
+        setattr(opt, k, v)
+
+    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    torch.backends.cudnn.enabled = False
+
+    # dataset
+    with open(opt.dic_path, 'rb') as f:
+        dic = pickle.load(f)
+    reverse_dic = {v: k for k,v in dic.items()}
+    X_test, y_test, mask_test = load_data(opt.test_path)
+    
+    # model
+    config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
+        num_hidden_layers=12, num_attention_heads=12, intermediate_size=3072)
+    
+    model = BertEmbedding(config, len(dic))
+    if opt.model_path:
+        model.load_state_dict(torch.load(opt.model_path))
+        print("Pretrained model has been loaded.\n")
+    model = model.to(device)
+
+    # Run classification
+    index = np.random.randint(0, len(X_test), 1)[0]
+    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
+    input_ids = X_test[index]
+    attention_masks = mask_test[index]
+    #print(" ".join(tokenizer.convert_ids_to_tokens(input_ids)))
+    
+    # User defined
+    text = "I miss my luggage"
+    print(text)
+    text = "[CLS] " + text + " [SEP]"
+    tokenized_text = tokenizer.tokenize(text)
+    tokenized_ids = np.array(tokenizer.convert_tokens_to_ids(tokenized_text))[np.newaxis,:]
+    
+    input_ids = pad_sequences(tokenized_ids, maxlen=opt.maxlen, dtype="long", truncating="post", padding="post").squeeze(0)
+    attention_masks = [float(i>0) for i in input_ids]
+    
+    captions_t = torch.LongTensor(input_ids).unsqueeze(0).to(device)
+    mask = torch.LongTensor(attention_masks).unsqueeze(0).to(device)
+    with torch.no_grad():
+        pooled_output, outputs = model(captions_t, mask)
+    print("Predicted label: ", reverse_dic[torch.max(outputs, 1)[1].item()])
+    # print("Real label: ", reverse_dic[y_test[index]])
+
+
+
 if __name__ == '__main__':
-    train()
+    import fire
+    fire.Fire()
     
 
 
