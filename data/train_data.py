@@ -1,6 +1,7 @@
 import torch as t
 from torch.autograd import Variable
 import numpy as np
+import pandas as pd
 import re
 import pickle
 import h5py
@@ -79,9 +80,9 @@ class ATISData(Data):
     def prepare_text(self, mode, done):
 
         if done:
-            with open("raw_data.pkl", "rb") as f:
+            with open("atis/raw_data.pkl", "rb") as f:
                 raw_data = pickle.load(f)
-            with open("intent2id.pkl", "rb") as f:
+            with open("atis/intent2id.pkl", "rb") as f:
                 intent2id = pickle.load(f)
             return raw_data, intent2id
 
@@ -91,8 +92,8 @@ class ATISData(Data):
             data = json.load(f)
         
         raw_data = []
-        if os.path.exists("intent2id.pkl"):
-            with open("intent2id.pkl", "rb") as f:
+        if os.path.exists("atis/intent2id.pkl"):
+            with open("atis/intent2id.pkl", "rb") as f:
                 intent2id = pickle.load(f)
             counter = len(intent2id)
         else:
@@ -105,9 +106,9 @@ class ATISData(Data):
                 counter += 1
             raw_data.append((self.text_prepare(sample['text'], mode), intent2id[sample['intent']], sample['entities']))
         
-        with open("raw_data_test.pkl", "wb") as f:
+        with open("atis/raw_data_test.pkl", "wb") as f:
             pickle.dump(raw_data, f)
-        with open("intent2id.pkl", "wb") as f:
+        with open("atis/intent2id.pkl", "wb") as f:
             pickle.dump(intent2id, f)
         
         print("Process time: ", time.time()-ptime)
@@ -138,8 +139,59 @@ class ATISData(Data):
             self.embedded_data[i,:] = np.mean([self.word_embeddings[txt] for txt in data[0].split()], axis=0)
     
 
+class SemanticData(Data):
+
+    def __init__(self, data_path, done=True):
+
+        super(SemanticData, self).__init__(data_path)
+        self.prepare_text(done)
+    
+    def prepare_text(self, done):
+
+        if done:
+            with open("semantic/raw_data_se.pkl", "rb") as f:
+                raw_data = pickle.load(f)
+            with open("semantic/intent2id_se.pkl", "rb") as f:
+                intent2id = pickle.load(f)
+            return raw_data, intent2id
+        
+        data = pd.read_csv(self.data_path, sep='\t', names = ["question", "question2", "info"])
+        data["intent"] = data["info"].apply(lambda x: "_".join(sorted(re.findall(r'\[IN:(\w+)', x))))
+
+        ptime = time.time()
+        
+        raw_data = []
+        if os.path.exists("semantic/intent2id_se.pkl"):
+            with open("semantic/intent2id_se.pkl", "rb") as f:
+                intent2id = pickle.load(f)
+            counter = len(intent2id)
+        else:
+            intent2id = {}
+            counter = 0
+        
+        for i, (text, intent) in enumerate(zip(data["question"].values[:10000], data["intent"].values[:10000])):
+            if intent not in intent2id:
+                intent2id[intent] = counter
+                counter += 1
+            raw_data.append((self.text_prepare(text, "Bert"), intent2id[intent]))
+            print("Finish: ", i)
+        
+        with open("semantic/raw_data_se.pkl", "wb") as f:
+            pickle.dump(raw_data, f)
+        with open("semantic/intent2id_se.pkl", "wb") as f:
+            pickle.dump(intent2id, f)
+        
+        print("Process time: ", time.time()-ptime)
+        
+        return raw_data, intent2id
+
+
+
+
+
 if __name__ == "__main__":
-    data = ATISData("../raw_datasets/ATIS/test.json", "Bert")
+    #data = ATISData("../raw_datasets/ATIS/test.json", "Bert")
+    data = SemanticData("../raw_datasets/top-dataset-semantic-parsing/train.tsv", done=False)
 
 
 
