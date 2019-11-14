@@ -5,7 +5,7 @@ from config import opt
 from sklearn.model_selection import train_test_split
 import numpy as np
 
-class ATISDataset(Dataset):
+class CoreDataset(Dataset):
 
     def __init__(self, data, labels, masks, opt):
         self.data = data
@@ -33,7 +33,7 @@ class ATISDataset(Dataset):
         return len(self.data)
 
 def get_dataloader(data, labels, masks, opt):
-    dataset = ATISDataset(data, labels, masks, opt)
+    dataset = CoreDataset(data, labels, masks, opt)
     return DataLoader(dataset, 
                       batch_size=opt.batch_size, 
                       shuffle=False)

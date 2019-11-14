@@ -9,24 +9,21 @@ from sklearn.model_selection import train_test_split
 import pickle
 import copy
 import numpy as np
+import collections
 
 from model import BertEmbedding
 from all_data import get_dataloader
 from config import opt
 
-def load_data(path):
+def load_data(X):
     
-    with open(path, 'rb') as f:
-        data = pickle.load(f)
-
-    X, y, _ = zip(*data)
     input_ids = pad_sequences(X, maxlen=opt.maxlen, dtype="long", truncating="post", padding="post")
     
     attention_masks = []
     for seq in input_ids:
         seq_mask = [float(i>0) for i in seq]
         attention_masks.append(seq_mask)
-    return input_ids, y, attention_masks
+    return input_ids, attention_masks
 
 def train(**kwargs):
     
@@ -38,12 +35,32 @@ def train(**kwargs):
     torch.backends.cudnn.enabled = False
 
     # dataset
-    with open(opt.dic_path, 'rb') as f:
-        dic = pickle.load(f)
-    
-    X_train, y_train, mask_train = load_data(opt.train_path)
-    X_test, y_test, mask_test = load_data(opt.test_path)
+    if opt.datatype == "atis":
+    # ATIS Dataset
+        with open(opt.atis_dic_path, 'rb') as f:
+            dic = pickle.load(f)
+        with open(opt.atis_train_path, 'rb') as f:
+            train_data = pickle.load(f)
+        with open(opt.atis_test_path, 'rb') as f:
+            test_data = pickle.load(f)
 
+        X_train, y_train, _ = zip(*train_data)
+        X_test, y_test, _ = zip(*test_data)
+        
+        X_train, mask_train = load_data(X_train)
+        X_test, mask_test = load_data(X_test)
+
+    # Semantic parsing Dataset
+    elif opt.datatype == "semantic":
+        with open(opt.se_dic_path, 'rb') as f:
+            dic = pickle.load(f)
+        with open(opt.se_path, 'rb') as f:
+            data = pickle.load(f)
+        X, y = zip(*data)
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
+        X_train, mask_train = load_data(X_train)
+        X_test, mask_test = load_data(X_test)
+    
     train_loader = get_dataloader(X_train, y_train, mask_train, opt)
     val_loader = get_dataloader(X_test, y_test, mask_test, opt)
     
@@ -52,8 +69,8 @@ def train(**kwargs):
         num_hidden_layers=12, num_attention_heads=12, intermediate_size=3072)
     
     model = BertEmbedding(config, len(dic))
-    if opt.model_path:
-        model.load_state_dict(torch.load(opt.model_path))
+    if opt.se_model_path:
+        model.load_state_dict(torch.load(opt.se_model_path))
         print("Pretrained model has been loaded.\n")
     model = model.to(device)
 
@@ -124,11 +141,38 @@ def train(**kwargs):
             best_loss = total_val_loss
             best_model_wts = copy.deepcopy(model.state_dict())
 
-            torch.save(model.state_dict(), "checkpoints/epoch-%s.pth"%epoch)
+            torch.save(model.state_dict(), "checkpoints/epoch-se-%s.pth"%epoch)
         
         print()
 
 def test(**kwargs):
+
+    # ATIS Dataset
+    if opt.datatype == "atis":
+        with open(opt.atis_train_path, 'rb') as f:
+            train_data = pickle.load(f)
+        X_train, y_train, _ = zip(*train_data)
+        X_train, mask_train = load_data(X_train)
+        
+        with open(opt.atis_test_path, 'rb') as f:
+            test_data = pickle.load(f)
+        X_test, y_test, _ = zip(*test_data)
+        X_test, mask_test = load_data(X_test)
+
+        dic_path = opt.atis_dic_path
+        model_path = opt.atis_model_path
+        embedding_path = opt.atis_embedding_path
+
+    # Semantic parsing Dataset
+    elif opt.datatype == "semantic":
+        with open(opt.se_path, 'rb') as f:
+            data = pickle.load(f)
+        X_train, y_train = zip(*data)
+        X_train, mask_train = load_data(X_train)
+
+        dic_path = opt.se_dic_path
+        model_path = opt.se_model_path
+        embedding_path = opt.se_embedding_path
 
     # attributes
     for k, v in kwargs.items():
@@ -137,45 +181,87 @@ def test(**kwargs):
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     torch.backends.cudnn.enabled = False
 
-    # dataset
-    with open(opt.dic_path, 'rb') as f:
+    # dictionary
+    with open(dic_path, 'rb') as f:
         dic = pickle.load(f)
     reverse_dic = {v: k for k,v in dic.items()}
-    X_test, y_test, mask_test = load_data(opt.test_path)
     
     # model
     config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
         num_hidden_layers=12, num_attention_heads=12, intermediate_size=3072)
     
     model = BertEmbedding(config, len(dic))
-    if opt.model_path:
-        model.load_state_dict(torch.load(opt.model_path))
+    if model_path:
+        model.load_state_dict(torch.load(model_path))
         print("Pretrained model has been loaded.\n")
     model = model.to(device)
-
-    # Run classification
-    index = np.random.randint(0, len(X_test), 1)[0]
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
-    input_ids = X_test[index]
-    attention_masks = mask_test[index]
-    #print(" ".join(tokenizer.convert_ids_to_tokens(input_ids)))
+
+    # Store embeddings
+    if opt.mode == "embedding":
+        
+        train_loader = get_dataloader(X_train, y_train, mask_train, opt)
+
+        results = collections.defaultdict(list)
+
+        for i, (captions_t, labels, masks) in enumerate(train_loader):
+            
+            captions_t = captions_t.to(device)
+            labels = labels.to(device)
+            masks = masks.to(device)
+            with torch.no_grad():
+                pooled_output, outputs = model(captions_t, masks)
+                print("Saving Data: %d" % i)
+
+                for ii in range(len(labels)):
+                    key = labels[ii].data.cpu().item()
+                    embedding = pooled_output[ii].data.cpu().numpy().reshape(-1)
+                    tokens = tokenizer.convert_ids_to_tokens(captions_t[ii].data.cpu().numpy())
+                    tokens = [token for token in tokens if token != "[CLS]" and token != "[SEP]" and token != "[PAD]"]
+                    original_sentence = " ".join(tokens)
+                    results[key].append((original_sentence, embedding))
+
+        torch.save(results, embedding_path)
+    
+    # Run test classification
+    elif opt.mode == "data":
+
+        index = np.random.randint(0, len(X_test), 1)[0]
+        input_ids = X_test[index]
+        attention_masks = mask_test[index]
+        print(" ".join(tokenizer.convert_ids_to_tokens(input_ids)))
+
+        captions_t = torch.LongTensor(input_ids).unsqueeze(0).to(device)
+        mask = torch.LongTensor(attention_masks).unsqueeze(0).to(device)
+        with torch.no_grad():
+            pooled_output, outputs = model(captions_t, mask)
+        print("Predicted label: ", reverse_dic[torch.max(outputs, 1)[1].item()])
+        print("Real label: ", reverse_dic[y_test[index]])
     
     # User defined
-    text = "I miss my luggage"
-    print(text)
-    text = "[CLS] " + text + " [SEP]"
-    tokenized_text = tokenizer.tokenize(text)
-    tokenized_ids = np.array(tokenizer.convert_tokens_to_ids(tokenized_text))[np.newaxis,:]
+    elif opt.mode == "user":
+        while True:
+            print("Please input the sentence: ")
+            text = input()
+            print("\n======== Predicted Results ========")
+            print(text)
+            text = "[CLS] " + text + " [SEP]"
+            tokenized_text = tokenizer.tokenize(text)
+            tokenized_ids = np.array(tokenizer.convert_tokens_to_ids(tokenized_text))[np.newaxis,:]
+            
+            input_ids = pad_sequences(tokenized_ids, maxlen=opt.maxlen, dtype="long", truncating="post", padding="post").squeeze(0)
+            attention_masks = [float(i>0) for i in input_ids]
+
+            captions_t = torch.LongTensor(input_ids).unsqueeze(0).to(device)
+            mask = torch.LongTensor(attention_masks).unsqueeze(0).to(device)
+            with torch.no_grad():
+                pooled_output, outputs = model(captions_t, mask)
+            print("Predicted label: ", reverse_dic[torch.max(outputs, 1)[1].item()])
+            print("=================================")    
     
-    input_ids = pad_sequences(tokenized_ids, maxlen=opt.maxlen, dtype="long", truncating="post", padding="post").squeeze(0)
-    attention_masks = [float(i>0) for i in input_ids]
     
-    captions_t = torch.LongTensor(input_ids).unsqueeze(0).to(device)
-    mask = torch.LongTensor(attention_masks).unsqueeze(0).to(device)
-    with torch.no_grad():
-        pooled_output, outputs = model(captions_t, mask)
-    print("Predicted label: ", reverse_dic[torch.max(outputs, 1)[1].item()])
-    # print("Real label: ", reverse_dic[y_test[index]])
+
+
 
 
 
