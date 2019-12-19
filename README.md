@@ -1,5 +1,10 @@
 # Multi-intent-dialoguer
-Research project for task-oriented dialogue system with jointly training multi-intent classification and slot filling
+
+**Research project:** <br>
+Intent clustering mechanism for task-oriented dialogue systems to deal with single or multi-intent recognition
+
+## BERT Fine-tuning
+The service uses BERT as fine-tuning and performs nearest neighbor algorithm at downstream analysis.
 
 ## Using BERT-as-service
 Enter the following command:
