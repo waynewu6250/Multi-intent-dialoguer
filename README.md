@@ -56,7 +56,7 @@ In [cluster.py](https://github.com/waynewu6250/Multi-intent-dialoguer/blob/maste
 | ATIS: 50               |  0.9698  |
 
 As we further delve into some subclusters by choosing only 6 nearest neighbors with same label:
-"FLIGHT" in ATIS dataset, we could have some example clusters as follows:
+**"FLIGHT"** in ATIS dataset, we could have some example clusters as follows:
 
 **Subcluster 1:**
 >
