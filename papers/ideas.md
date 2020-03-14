@@ -4,14 +4,12 @@
 Tag the sentences as three following tags: <br>
 \<Problem\>, \<Solution\>, \<NaN\>
 
-a) Name-entity recognition: LSTM+CRF <br>
-* Ref: 
+a) **Name-entity recognition:** LSTM+CRF <br>
 
-b) BERT: Cut into language segments and do sentence-sentence classification to see if they are relevant (scores)
-* Ref: 
+b) **BERT:** <br>
+Cut into language segments and do sentence-sentence classification to see if they are relevant (scores)
 
-c) Topic Model (Word level)
-* Ref: 
+c) **Topic Model** (Word level)
 
 -----
 
