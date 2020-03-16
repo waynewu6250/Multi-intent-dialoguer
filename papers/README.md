@@ -37,3 +37,7 @@
 [Movie Booking Dataset](https://github.com/MiuLab/TC-Bot#data)
 
 [Stanford Dialog Dataset](http://nlp.stanford.edu/projects/kvret/kvret_dataset_public.zip)
+
+
+## 4. Great Paper Source:
+[CNN Model Review](https://towardsdatascience.com/review-ssd-single-shot-detector-object-detection-851a94607d11)

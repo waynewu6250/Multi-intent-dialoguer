@@ -41,16 +41,18 @@ c) **Text Summarization using autoencoder:**
 
 [MeanSum](https://arxiv.org/pdf/1810.05739.pdf): Uses autoencoder to produce summary combining reconstruction loss and summary loss
 
-d) **Unsupervised Object Detection**
+d) **Unsupervised Object Detection/Segmentation**
 
 [Unsupervised Object Detection](https://arxiv.org/pdf/1808.04593.pdf)
 
+[Unsupervised Segmentation](https://kanezaki.github.io/pytorch-unsupervised-segmentation/ICASSP2018_kanezaki.pdf)
 
 
 ------
-WNet instance segmentation
-
-DCEC change p
+Unsupervised instance segmentation: <br>
+1) WNet
+2) CNN backpropagation
+3) Vector Clustering: DEC, DCEC change p
 
 
 
