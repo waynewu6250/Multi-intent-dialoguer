@@ -12,7 +12,7 @@ class PerformClustering:
     def __init__(self, dic_path, embeddings_path, label_id=None):
         '''
         data:
-        1. embeddings: id: [emb1, emb2, emb3, ...]
+        1. embeddings: id: [(sent1,emb1), (sent2,emb2), (sent3,emb3), ...]
         2. data: [emb1, emb2, emb3, ...]
 
         dictinary:
@@ -110,8 +110,8 @@ class PerformClustering:
 #%%
 # if __name__ == "__main__":
 
-dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/atis/intent2id.pkl"
-embedding_path = "/nethome/twu367/Multi-intent-dialoguer/results/atis_embeddings.pth"
+dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/semantic/intent2id_se.pkl"
+embedding_path = "/nethome/twu367/Multi-intent-dialoguer/results/se_embeddings.pth"
 
 # All neighbor analysis
 sentence_id = 5
