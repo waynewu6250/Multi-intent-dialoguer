@@ -37,10 +37,7 @@ class PerformClustering:
             self.dic = pickle.load(f)
         self.reverse_dic = {v: k for k,v in self.dic.items()}
         self.embeddings = torch.load(self.embeddings_path)
-        if label_id != None:
-            self.emb2sent, self.emb2id, self.data, self.labels_ref = self.prepare_data_single(label_id)
-        else:
-            self.emb2sent, self.emb2id, self.data, self.labels_ref = self.prepare_data()
+        self.emb2sent, self.emb2id, self.data, self.labels_ref = self.prepare_data()
     
     def prepare_data(self):
         
@@ -67,13 +64,18 @@ class PerformClustering:
         train_size = int(ratio*len(self.data))
         x_train = self.data[indices[:train_size],:][:,:,np.newaxis]
         x_test = self.data[indices[train_size:],:][:,:,np.newaxis]
+        
         return (x_train, x_test)
 
 
-def perform_dcec():
+def train(**kwargs):
+
+    for k, v in kwargs.items():
+        setattr(opt, k, v)
     
     cluster = PerformClustering(opt.dic_path, opt.embedding_path)
     data = cluster.random_split(0.8)
+    
     print("1. Get data ready!")
 
     model = DCEC(opt.input_shape, opt.filters, opt.kernel_size, opt.n_clusters, opt.weights, data, opt.alpha, pretrain=False)
@@ -82,9 +84,39 @@ def perform_dcec():
     
     model.fit(data, opt)
 
+    with open('labels.pkl', 'wb') as f:
+        pickle.dump(model.cur_label, f)
+    with open('data.pkl', 'wb') as f:
+        pickle.dump(data, f)
+    
+
+
+def test(**kwargs):
+
+    for k, v in kwargs.items():
+        setattr(opt, k, v)
+
+    cluster = PerformClustering(opt.dic_path, opt.embedding_path)
+
+    with open('labels.pkl', 'rb') as f:
+        labels = pickle.load(f)
+    with open('data.pkl', 'rb') as f:
+        data = pickle.load(f)
+
+    x_train, x_test = data
+    x_test = x_test.squeeze(-1)
+
+    print('Cluster Number:', opt.cluster_id)
+
+    for emb in x_test[np.where(labels == opt.cluster_id)]:
+        sent = cluster.emb2sent[tuple(emb.tolist())]
+        idd = cluster.emb2id[tuple(emb.tolist())]
+        print('{}: {}'.format(idd, sent))
+        
 
 if __name__ == '__main__':
-    perform_dcec()
+    import fire
+    fire.Fire()
 
     
     
