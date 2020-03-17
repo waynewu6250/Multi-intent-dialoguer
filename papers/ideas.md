@@ -20,7 +20,7 @@ Uses autoencoder to summarize important words and cluster them into problems and
 a) **Attention Mechanism:**
 
 [Multimodal Attention 1](https://arxiv.org/pdf/1612.01887.pdf), [Multimodal Attention 2](https://arxiv.org/pdf/1502.03044.pdf): <br>
-Use text fectors to attend on different regions of images.
+Use text vectors to attend on different regions of images.
 
 [Multimodal Attention for Explanations](http://openaccess.thecvf.com/content_cvpr_2018/papers/Park_Multimodal_Explanations_Justifying_CVPR_2018_paper.pdf): <br>
 Use Image+Texts+Answer to attend on images.
@@ -47,11 +47,13 @@ d) **Unsupervised Object Detection/Segmentation**
 
 [Unsupervised Segmentation](https://kanezaki.github.io/pytorch-unsupervised-segmentation/ICASSP2018_kanezaki.pdf)
 
+[Instance Embedding](https://towardsdatascience.com/instance-embedding-instance-segmentation-without-proposals-31946a7c53e1): [code](https://github.com/nyoki-mtl/pytorch-discriminative-loss)
+
 
 ------
 Unsupervised instance segmentation: <br>
 1) WNet
-2) CNN backpropagation
+2) superpixel clustering
 3) Vector Clustering: DEC, DCEC change p
 
 
