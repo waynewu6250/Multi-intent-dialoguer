@@ -19,13 +19,14 @@ class Config:
     learning_rate_classifier = 1e-3
 
     datatype = "semantic"
-    mode = "user" #"user", "data"
+    mode = "embedding" #"user", "data"
 
     #################### For Clustering ####################
     dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/semantic/intent2id_se.pkl"
     embedding_path = "/nethome/twu367/Multi-intent-dialoguer/results/se_embeddings.pth"
 
     #################### For DCEC ####################
+    
     # Model
     input_shape = (768, 1)
     filters = [16, 8, 1]
@@ -34,13 +35,15 @@ class Config:
 
     # Training
     b_size = 1024
-    n_clusters = 6
-    max_iter = 200
+    n_clusters = 10
+    max_iter = 100
     update_interval = 10
     save_interval = 10
     tol = 1e-3
 
     weights = None #'checkpoints/dcec_model_48.h5'
+
+    cluster_id = 0
 
 
 

@@ -143,6 +143,9 @@ class DCEC:
                 self.model.save_weights('dcec-checkpoints/dcec_model_' + str(iter) + '.h5')
             
 
+        
+            
+
 
             
 
