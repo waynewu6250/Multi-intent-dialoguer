@@ -84,9 +84,9 @@ def train(**kwargs):
     
     model.fit(data, opt)
 
-    with open('labels.pkl', 'wb') as f:
+    with open(opt.cluster_label_path, 'wb') as f:
         pickle.dump(model.cur_label, f)
-    with open('data.pkl', 'wb') as f:
+    with open(opt.cluster_data_path, 'wb') as f:
         pickle.dump(data, f)
     
 
@@ -98,9 +98,9 @@ def test(**kwargs):
 
     cluster = PerformClustering(opt.dic_path, opt.embedding_path)
 
-    with open('labels.pkl', 'rb') as f:
+    with open(opt.cluster_data_path, 'rb') as f:
         labels = pickle.load(f)
-    with open('data.pkl', 'rb') as f:
+    with open(opt.cluster_label_path, 'rb') as f:
         data = pickle.load(f)
 
     x_train, x_test = data

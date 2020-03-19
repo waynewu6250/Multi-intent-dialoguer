@@ -140,7 +140,7 @@ class DCEC:
             if (iter+1) % opt.save_interval == 0:
                 # save DCEC model checkpoints
                 print('Saving model no.', iter)
-                self.model.save_weights('dcec-checkpoints/dcec_model_' + str(iter) + '.h5')
+                self.model.save_weights('checkpoints-dcec/dcec_model_' + str(iter) + '.h5')
             
 
         
