@@ -35,6 +35,10 @@ b) **Deep Clustering:**
 
 [Text Clustering](https://www.aclweb.org/anthology/D19-5405.pdf)
 
+[Unsupervised Aspect Extraction](https://www.comp.nus.edu.sg/~leews/publications/acl17.pdf)
+
+[Weakly Supervised Aspect Extraction](https://stangelid.github.io/emnlp18oposum.pdf)
+
 c) **Text Summarization using autoencoder:**
 
 [SummAE](https://www.groundai.com/project/summae-zero-shot-abstractive-text-summarization-using-length-agnostic-auto-encoders/1)
