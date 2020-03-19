@@ -2,6 +2,7 @@ import keras
 from keras.layers import Input, Conv1D, MaxPool1D, Flatten, UpSampling1D, BatchNormalization, LSTM, RepeatVector
 from keras.models import Model, load_model
 
+
 def CAE_model(input_shape=(768,1), filters=[16, 8, 1], kernel_size=3):
 
     x_input = Input(shape=input_shape)

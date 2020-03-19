@@ -42,13 +42,13 @@ class Data:
         text = re.sub(r"\!+", "!", text)
         text = re.sub(r"\,+", ",", text)
         text = re.sub(r"\?+", "?", text)
-        text = "[CLS] " + text + " [SEP]"
         if mode == "Bert":
+            text = "[CLS] " + text + " [SEP]"
             tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
             tokenized_text = tokenizer.tokenize(text)
             tokenized_ids = tokenizer.convert_tokens_to_ids(tokenized_text)
-        
-        return tokenized_ids
+            text = tokenized_ids
+        return text
     
 
 class ATISData(Data):

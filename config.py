@@ -1,10 +1,6 @@
 class Config:
 
-<<<<<<< HEAD
     #################### For BERT fine-tuning ####################
-=======
-    # ATIS dataset
->>>>>>> 2ddcbbf86f7adc8e65d75c91954b0fd50459f059
     atis_train_path = "data/atis/raw_data.pkl"
     atis_test_path = "data/atis/raw_data_test.pkl"
     atis_dic_path = "data/atis/intent2id.pkl"
@@ -17,10 +13,6 @@ class Config:
     se_model_path = "checkpoints/epoch-se-3.pth"
     se_embedding_path = "results/se_embeddings.pth"
 
-<<<<<<< HEAD
-=======
-    # model hyperparameter
->>>>>>> 2ddcbbf86f7adc8e65d75c91954b0fd50459f059
     maxlen = 20
     batch_size = 16
     epochs = 5
@@ -29,7 +21,6 @@ class Config:
 
     # control
     datatype = "semantic"
-<<<<<<< HEAD
     mode = "embedding" #"user", "data"
 
     #################### For Clustering ####################
@@ -54,11 +45,16 @@ class Config:
 
     weights = None #'checkpoints/dcec_model_48.h5'
 
+    # clustering
+    cluster_data_path = "clustering_results/data.pkl"
+    cluster_label_path =  "clustering_results/labels.pkl"
     cluster_id = 0
-=======
-    mode = "user" #"data"
 
->>>>>>> 2ddcbbf86f7adc8e65d75c91954b0fd50459f059
+    #################### For scBERT ####################
+    se_path_for_sc = "data/semantic/raw_data_se_not_tokenize.pkl"
+    se_dic_path_for_sc = "data/semantic/intent2id_se_not_tokenize.pkl"
+    se_model_path_for_sc = "checkpoints-dcec/epoch-se.pth"
+
 
 
 
