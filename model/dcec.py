@@ -83,7 +83,7 @@ class DCEC:
                 shuffle=True,
                 validation_data=(x_test, x_test))
         
-        self.autoencoder.save('dcec-checkpoints/model.h5')
+        self.autoencoder.save('checkpoints-dcec/model.h5')
         self.pretrain = True
     
     @staticmethod

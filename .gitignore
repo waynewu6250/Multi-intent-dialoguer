@@ -106,5 +106,7 @@ venv.bak/
 # BERT model
 multilingual_L-12_H-768_A-12/
 checkpoints/
-dcec-checkpoints/*.h5
+checkpoints-dcec/*.h5
+checkpoints-scbert/*.h5
+
 

@@ -55,6 +55,10 @@ class Config:
     se_dic_path_for_sc = "data/semantic/intent2id_se_not_tokenize.pkl"
     se_model_path_for_sc = "checkpoints-dcec/epoch-se.pth"
 
+    neg_size = 100
+    hidden_dim = 768
+
+
 
 
 
