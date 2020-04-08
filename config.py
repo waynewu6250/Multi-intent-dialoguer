@@ -25,7 +25,7 @@ class Config:
 
     #################### For Clustering ####################
     dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/semantic/intent2id_se.pkl"
-    embedding_path = "/nethome/twu367/Multi-intent-dialoguer/results/se_embeddings.pth"
+    embedding_path = "/nethome/twu367/Multi-intent-dialoguer/results/se_embeddings_raw.pth"
 
     #################### For DCEC ####################
     
@@ -37,13 +37,13 @@ class Config:
 
     # Training
     b_size = 1024
-    n_clusters = 10
+    n_clusters = 180
     max_iter = 100
     update_interval = 10
     save_interval = 10
     tol = 1e-3
 
-    weights = None #'checkpoints/dcec_model_48.h5'
+    weights = None #'checkpoints-dcec/dcec_model_99.h5'
 
     # clustering
     cluster_data_path = "clustering_results/data.pkl"

@@ -53,7 +53,7 @@ class DCEC:
     def __init__(self, input_shape, filters, kernel_size, n_clusters, weights, data, alpha=1.0, pretrain=True):
         
         if pretrain:
-            self.autoencoder = load_model('dcec-checkpoints/model.h5')
+            self.autoencoder = load_model('checkpoints-dcec/model.h5')
         else:
             print("Start Pretraining...")
             self.autoencoder = CAE_model(input_shape, filters, kernel_size)
@@ -79,7 +79,7 @@ class DCEC:
 
         self.autoencoder.fit(x_train, x_train,
                 epochs=10,
-                batch_size=1024,
+                batch_size=128,
                 shuffle=True,
                 validation_data=(x_test, x_test))
         
