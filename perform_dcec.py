@@ -6,9 +6,11 @@ import torch.nn as nn
 import keras
 from keras.layers import Input, Conv1D, MaxPool1D, Flatten, UpSampling1D, BatchNormalization, LSTM, RepeatVector
 from keras.models import Model, load_model
+import keras.backend as K
 import h5py
 from sklearn.cluster import KMeans
 from sklearn import metrics
+import collections
 
 from model import DCEC
 from config import opt
@@ -84,8 +86,14 @@ def train(**kwargs):
     
     model.fit(data, opt)
 
+    test_func = K.function(model.model.input, model.model.get_layer(name='cluster').weights)
+    cluster_centers = test_func(data[1])
+    
+    q, _ = model.model.predict(data[1])
+    cur_label = np.argmax(q, axis = 1)
+
     with open(opt.cluster_label_path, 'wb') as f:
-        pickle.dump(model.cur_label, f)
+        pickle.dump(cur_label, f)
     with open(opt.cluster_data_path, 'wb') as f:
         pickle.dump(data, f)
     
@@ -99,19 +107,43 @@ def test(**kwargs):
     cluster = PerformClustering(opt.dic_path, opt.embedding_path)
 
     with open(opt.cluster_data_path, 'rb') as f:
-        labels = pickle.load(f)
-    with open(opt.cluster_label_path, 'rb') as f:
         data = pickle.load(f)
+    with open(opt.cluster_label_path, 'rb') as f:
+        labels = pickle.load(f)
 
     x_train, x_test = data
     x_test = x_test.squeeze(-1)
 
-    print('Cluster Number:', opt.cluster_id)
+    #print('Cluster Number:', opt.cluster_id)
+    cache = collections.defaultdict(list)
+    for cluster_id in range(opt.n_clusters):
+        idds = []
+        sents = []
+        # Calculate original ids
+        if cluster_id not in labels:
+            continue
+        for emb in x_test[np.where(labels == cluster_id)]:
+            idd = cluster.emb2id[tuple(emb.tolist())]
+            sent = cluster.emb2sent[tuple(emb.tolist())]
+            idds.append(idd)
+            sents.append((idd,sent))
+        
+        # Cluster:
+        uid = np.unique(idds)
+        lengths = [len(np.where(idds == uid[i])) for i in range(len(uid))]
+        cache[uid[np.argmax(lengths)]].append(sents)
 
-    for emb in x_test[np.where(labels == opt.cluster_id)]:
-        sent = cluster.emb2sent[tuple(emb.tolist())]
-        idd = cluster.emb2id[tuple(emb.tolist())]
-        print('{}: {}'.format(idd, sent))
+    cache = sorted(cache.items(), key = lambda x: x[0])
+
+    with open('clustering_results/result_ft_raw.txt', 'w') as f:
+        for key, value in cache:
+            f.write("-"*15)
+            f.write("\n Original Label: {} \n".format(key))
+            for i, sents in enumerate(value):
+                f.write("*"*5+"Mini-cluster {}".format(i)+"*"*5+"\n")
+                for sent in sents:
+                    f.write("{} \n".format(sent))
+            f.write("-"*15+"\n\n")
         
 
 if __name__ == '__main__':

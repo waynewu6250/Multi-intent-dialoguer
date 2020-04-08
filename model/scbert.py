@@ -2,7 +2,7 @@ from keras_bert import load_trained_model_from_checkpoint
 from keras_bert import get_pretrained, PretrainedList, get_checkpoint_paths
 from keras_bert import Tokenizer
 
-from keras.layers import Input, Conv1D, MaxPool1D, Flatten, UpSampling1D, BatchNormalization, LSTM, RepeatVector, Lambda, Dense, Activation
+from keras.layers import Input, Conv1D, MaxPool1D, Flatten, UpSampling1D, BatchNormalization, LSTM, RepeatVector, Lambda, Dense, Activation, Reshape
 from keras.models import Model, load_model
 
 import keras.backend as K
@@ -116,14 +116,18 @@ class CustomLoss(Layer):
         super(CustomLoss, self).__init__(**kwargs)
 
     def norm(self, tensor):
-        return K.cast(K.epsilon() + K.sqrt(K.sum(K.square(tensor), axis=1, keepdims=False)), K.floatx())
+        return K.cast(K.epsilon() + K.sqrt(K.sum(K.square(tensor), axis=-1, keepdims=True)), K.floatx())
     
     def call(self, input_tensor):
 
         z_s, r_s = input_tensor[0], input_tensor[1]
-        pos = K.sum(z_s*r_s, axis=1) / (self.norm(z_s)*self.norm(r_s))
-        #neg = K.sum(z_s*r_s, axis=1) / (self.norm(n_s)*self.norm(r_s))
-        
+
+        z_s = z_s / self.norm(z_s)
+        r_s = r_s / self.norm(r_s)
+
+        #pos = K.sum(z_s*r_s, axis=1) / (self.norm(z_s)*self.norm(r_s))
+        #neg = K.sum(n_s*r_s, axis=1) / (self.norm(n_s)*self.norm(r_s))
+        pos = K.sum(z_s*r_s, axis=-1, keepdims=False)
         loss = K.cast(K.sum(K.maximum(0., (1. - pos ))), K.floatx())
         
         self.add_loss(loss, inputs = input_tensor)
@@ -158,18 +162,21 @@ def SCBert(opt):
     bert_model = load_trained_model_from_checkpoint(paths.config, paths.checkpoint, seq_len=opt.maxlen)
 
     for l in bert_model.layers:
-        l.trainable = True
+        l.trainable = False
 
-    x_input = Input(shape=(opt.maxlen,))
-    x_segment = Input(shape=(opt.maxlen,))
+    x_input = Input(shape=(opt.maxlen,), name='x_input')
+    x_segment = Input(shape=(opt.maxlen,), name='x_segment')
     
     word_embeddings = bert_model([x_input, x_segment])
 
     # Negative samples
-    # neg_input = Input(shape=(opt.neg_size, opt.maxlen,))
-    # neg_segment = Input(shape=(opt.neg_size, opt.maxlen,))
-    # neg_embeddings = bert_model([neg_input, neg_segment])
-    # neg_embeddings = Lambda(lambda x: K.mean(x, axis=1, keepdims=False))(neg_embeddings) # NxTxH
+    # neg_input = Input(shape=(opt.maxlen,))
+    # neg_segment = Input(shape=(opt.maxlen,))
+    # neg_embeddings = bert_model([neg_input, neg_segment]) # (Nxneg)xTxH
+    # N_neg, T, H = neg_embeddings.shape
+    # neg_embeddings = Lambda(lambda x: x, output_shape=lambda s:s)(neg_embeddings)
+    # neg_embeddings = Reshape((opt.neg_size, T, H))(neg_embeddings) # NxnegxTxH
+    # neg_embeddings = Lambda(lambda x: K.mean(x, axis=-2, keepdims=False))(neg_embeddings) # NxTxH
     # n_s = Lambda(lambda x: K.mean(x, axis=-2, keepdims=False))(neg_embeddings) # NxH
     
     # Sentence Representation
@@ -180,7 +187,7 @@ def SCBert(opt):
 
     # Get probability score for clusters
     preds = Dense(opt.n_clusters)(z_s)
-    scores = Activation('softmax')(preds)
+    scores = Activation('softmax', name='scores')(preds)
     r_s = WeightedEmbedding(opt.hidden_dim)(scores) # NxH
     
     # Calculate loss
