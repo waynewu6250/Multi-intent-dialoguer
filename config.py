@@ -1,6 +1,7 @@
 class Config:
 
     #################### For BERT fine-tuning ####################
+    # atis dataset
     atis_train_path = "data/atis/raw_data.pkl"
     atis_test_path = "data/atis/raw_data_test.pkl"
     atis_dic_path = "data/atis/intent2id.pkl"
@@ -12,6 +13,9 @@ class Config:
     se_dic_path = "data/semantic/intent2id_se.pkl"
     se_model_path = "checkpoints/epoch-se-3.pth"
     se_embedding_path = "results/se_embeddings.pth"
+
+    # multiWOZ dataset
+    woz_path = "data/"
 
     maxlen = 20
     batch_size = 16

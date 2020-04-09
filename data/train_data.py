@@ -9,7 +9,7 @@ import json
 import os
 import csv
 import spacy
-from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM
+#from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM
 import time
 
 class Data:
