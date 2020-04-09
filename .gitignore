@@ -108,6 +108,7 @@ multilingual_L-12_H-768_A-12/
 checkpoints/
 checkpoints-dcec/*.h5
 checkpoints-scbert/*.h5
+raw_datasets/MULTIWOZ2.1/
 
 
 
