@@ -1,0 +1,2540 @@
+---------------
+ Original Label: 0 
+*****Mini-cluster 0*****
+(0, 'how long is the drive') 
+(0, 'how long is the drive from olympia to seat ##ac') 
+(0, 'how long will i need to wait in traffic') 
+(0, 'for how long does this traffic go on for') 
+(0, 'what is the drive time from 417 to 95 on the 52 ##8') 
+(0, 'how long is this route im on') 
+(0, 'what many minutes was added to the drive time due to the accident') 
+*****Mini-cluster 1*****
+(0, 'what ##s travel time') 
+(0, 'how long do i have left on my trip') 
+(0, 'how long is my com ##mute') 
+(0, 'tell me how much longer to tennessee') 
+(0, 'what ##s the time to macon by i ##20') 
+(0, 'how long will it take me to get to ocean city md') 
+(0, 'how many hours to get to kala ##ma ##zoo') 
+(0, 'what is my drive time to down town') 
+(0, 'get the time to alexandria using desert road') 
+(0, 'how much will the rain add to my com ##mute') 
+(0, 'how long would it take to drive from fl to ohio') 
+(0, 'how long should it take to get to miami with normal traffic conditions') 
+(0, 'how long to huntington') 
+(0, 'how much time will it add to my com ##mute if i leave during rush hour') 
+(0, 'how long will it take to get to richmond') 
+(0, 'how many hours drive is it to new york state') 
+(0, 'ho ##i ##w long to get around dc if i leave now') 
+(0, 'get the time to mans ##our ##a using route 90') 
+(0, 'how long is it from chicago to los angeles') 
+(0, 'how long will it take me to get back to nj') 
+(0, 'how long will it take to get downtown with the construction going on') 
+(0, 'is my com ##mute more than an hour') 
+(0, 'how long is it going to take to get to lone tree') 
+(0, 'how long do you think it will take me to get to albuquerque') 
+(0, 'time to get to strong ##sville') 
+*****Mini-cluster 2*****
+(0, 'how long will it take me to drive to san diego from phoenix') 
+(0, 'my uncle needs a ride from rochester to ut ##ica how long will that drive take') 
+(0, 'how long will it take me to drive from woodstock to griffin today') 
+(0, 'if i leave at noon tomorrow how long will it take me to drive to seattle washington') 
+(0, 'what is the drive time to san jose from portland for early morning') 
+(0, 'how long is my drive to canada') 
+(0, 'how long will it take me to drive to panama city fl') 
+(0, 'how long should i expect to be in traffic on the way to san diego') 
+(0, 'how many hours will it take to reach new york from atlanta') 
+(0, 'what is the driving time from portland to seattle') 
+(0, 'how long will it take to drive from pittsburgh to tulsa') 
+(0, 'how long is the drive from san jose to la') 
+(0, 'how long is a flight from miami to paris') 
+(0, 'will it take more than 24 hours to drive from texas to new york') 
+(0, 'get the time to st louis using route 90') 
+(0, 'how long is it going to take me to get to clement ##on') 
+(0, 'how much time does it take to travel from sri lanka to indonesia') 
+(0, 'driving time from north royal ##ton to bellevue') 
+(0, 'how long will it take to drive from boston to miami') 
+(0, 'how long will it take to get to sydney from rome') 
+(0, 'how long do i need to get to cape may with traffic') 
+(0, 'how much longer of a com ##mute because of traffic into raleigh') 
+(0, 'how long does it take to get from lansing to flint') 
+(0, 'how long will it take to get to fort lauderdale by train') 
+(0, 'how much time does it take to fly to new york from chicago') 
+(0, 'how long does it take to drive from miami to los angeles') 
+(0, 'how much time it take to reach cairo by bus in this morning') 
+(0, 'will it take more than three hours to get to vegas') 
+(0, 'how many hours does it take to get from los angeles to san diego in a car') 
+(0, 'how long does it take to get from minneapolis to virginia') 
+(0, 'how long will it take to drive from portland me to boston') 
+(0, 'get the time to denver using grand ave') 
+(0, 'how long is my drive to tully today') 
+(0, 'tell me how long it takes to drive from nyc to jersey city') 
+(0, 'what is the travel time from newport to portland tonight on the highway') 
+*****Mini-cluster 3*****
+(0, 'how long is the drive from jen ##ner to men ##do ##cino') 
+(0, 'how long will it take to get to buffalo if i leave at 8 ##am from north syracuse ny') 
+(0, 'how long is my drive to seaside') 
+(0, 'what is my trip time from new ##nan to the glen ##ridge connector today') 
+(0, 'how long will it take me to travel from rochester to buffalo this morning') 
+(0, 'what is the drive time to milwaukee right now') 
+(0, 'i want to know how long till we arrive in phoenix from dallas by plane') 
+(0, 'how long will it take me to drive to new york from flow ##ood ms') 
+(0, 'how much time before i reach my destination') 
+(0, 'how long will it take to drive to san antonio') 
+(0, 'how long will it take me to get from belts ##ville to dc') 
+(0, 'how long will it take to drive to san jose tomorrow morning') 
+(0, 'how long will it take to get to dan ##bury') 
+(0, 'how long does it take to get from new york to oregon by car') 
+(0, 'how long is a flight to paris from new york city') 
+(0, 'how long is the drive from arizona to virginia') 
+(0, 'what ##s the drive time to the coast') 
+(0, 'if i left at 2 ##pm now long would it take me to get to midtown atlanta') 
+(0, 'how long does it take to fly from denver to thailand') 
+(0, 'how long will it take me to jen ##kin ##town') 
+(0, 'how many hours will it take me to drive from ventura to san francisco if i leave at noon') 
+(0, 'how long will it take me to drive to miami in heavy traffic') 
+(0, 'how much time will traffic add to my com ##mute if i leave at 700') 
+(0, 'leaving at 7 this morning how long to cherry valley') 
+(0, 'how long will it take to drive to los angeles') 
+(0, 'how long does it take to drive from salem to crater lake') 
+(0, 'how long will it take to get to dow ##town if i leave at 4 pm') 
+(0, 'how long does it take to get to sebastian im i ##9 ##5 and can i make it there') 
+(0, 'how long will it take me to drive to nashville') 
+(0, 'how long is the drive to stone harbor') 
+(0, 'how much will traffic add to my time to get to east corn ##ing') 
+(0, 'how long does it take to go from new ##burgh to monroe with traffic') 
+(0, 'how long will it take me to get to mansfield') 
+(0, 'how long will it take me to get to val ##para ##iso if i take route 30 this evening') 
+(0, 'how long is it going to take for me to driving from irving to arlington') 
+(0, 'how long will it take me to drive to fort collins') 
+---------------
+
+---------------
+ Original Label: 1 
+*****Mini-cluster 0*****
+(1, 'should i re route based on traffic') 
+(1, 'when are traffic conditions best') 
+(1, 'who has the worst traffic in the us') 
+(1, 'how many more miles before traffic lets up') 
+(1, 'what time of day is traffic the worst') 
+(1, 'when is traffic not too heavy in pittsburgh') 
+(1, 'should i jump on the express lane') 
+(1, 'is traffic better today than yesterday') 
+(1, 'is there always this much traffic') 
+(1, 'does the 49 bus run down rodgers avenue') 
+(1, 'can you tell me which exit to take off of 40 to get to henderson ##ville') 
+(1, 'should i drive in traffic now') 
+(1, 'how long will it take to run my er ##rand ##s') 
+*****Mini-cluster 1*****
+(93, 'how long will it take for me to my office from grand central if i leave at 6 am') 
+(136, 'what mu ##ni route is the fastest to get from my work to the west portal movie theater for') 
+(1, 'would taking the freeway to work save me time') 
+(93, 'how long will it take me to get to my brother bob ##s work in seattle') 
+(93, 'how long is the drive to work if i take gibson instead of the highway') 
+(21, 'take me to office from highway via mall road') 
+*****Mini-cluster 2*****
+(1, 'is fl ##l or mc ##o closer to club med sand ##pipe ##r') 
+(1, 'how many miles can i travel in 80 hours going 65 mph') 
+(1, 'what ##s the difference in distance between dc and boston') 
+(1, 'what is the distance in a country mile') 
+*****Mini-cluster 3*****
+(1, 'will there be any gas stations open this morning if i start driving at 3a ##m') 
+(1, 'please send david direction to get to my house as fast as possible on his way home from work') 
+(1, 'is it fast lanes to halifax nova scotia') 
+(1, 'check for du ##i checkpoint ##s on ro ##ut 10 in cheshire south end around 9 ##pm') 
+(1, 'which is easier to get from disney park to disney park a taxi or the shuttle') 
+(1, 'stop this trip') 
+(1, 'is there a faster way to go') 
+(1, 'is there a better route available') 
+*****Mini-cluster 4*****
+(1, 'is traffic worse at 6 am or 630 am') 
+(1, 'the best way to avoid traffic is the highway') 
+(1, 'expressway is shorter right') 
+(1, 'what has worse traffic la or sf') 
+(1, 'is there a reduced speed limit sign coming up soon on this path') 
+(1, 'is it a faster drive during the evening or the morning') 
+(1, 'public transportation routes and times in banning') 
+(1, 'is it faster to take stone or eu ##cl ##id to get to work with traffic conditions now') 
+(1, 'what are my options for public transportation to get downtown right now') 
+(1, 'which is farther go ##wer or easton') 
+(1, 'what the government can do to stop heavy traffic ##s') 
+*****Mini-cluster 5*****
+(1, 'i need to schedule an uber to pick me up from cafe du ##mond and get me to the') 
+(1, 'how much longer than a car will my com ##mute take if i take the bus at 6') 
+(1, 'best time to drive home') 
+(1, 'if paige leaves op ##elo ##usa ##s at noon what time should i expect to meet her in baton') 
+(1, 'driving speed from home to miami') 
+(1, 'show me how the least expensive way to get into manhattan') 
+(1, 'should i be getting out of here at 2 to make it to the shuttle bus at 230 to') 
+(1, 'what time of day has the least traffic') 
+(1, 'will the buses run on time even though it has started to rain') 
+*****Mini-cluster 6*****
+(10, 'how long are the construction delays') 
+(1, 'are there any road blocks') 
+(10, 'how long is the traffic delay on 4th street') 
+(10, 'how long is the expected traffic delay on i ##65 right now') 
+(10, 'how long is the delay') 
+(10, 'how many minute delay is it') 
+*****Mini-cluster 7*****
+(1, 'show me a map of the traffic') 
+(1, 'when does cedar avenue re ##open') 
+(13, 'what time does the sun rise today') 
+(1, 'can you access traffic cameras') 
+(48, 'when does the next android operating system release') 
+(13, 'best panorama view of the city') 
+*****Mini-cluster 8*****
+(1, 'will the ice and snow storm affect departure times of trains leaving union station') 
+(1, 'when is road construction on davis b ##l ##vd going to start') 
+(13, 'what city has the most traffic in the us') 
+(1, 'what ##s the best time this afternoon to leave to get to the steak ##house quickly') 
+*****Mini-cluster 9*****
+(1, 'should i travel now') 
+(1, 'does gi ##za bus station have buses to mo ##kat ##tam early in the morning') 
+(1, 'what is the route is the worst from home to sea ##world') 
+(1, 'what is the speed limit on i ##70') 
+(1, 'how long does it take for k ##fc order delivery to arrive to my house if i order now') 
+(1, 'what time of day is the traffic the light ##est in my area') 
+(1, 'how many turns are in a dry that i will have to make tomorrow to get to my sisters') 
+*****Mini-cluster 10*****
+(1, 'what is the average speed on i ##15 north bound by salt lake city') 
+(1, 'what is the best time to avoid traffic') 
+(1, 'when is the best time of day to beat traffic in la') 
+(1, 'when will rush hour end') 
+(1, 'best time to avoid traffic') 
+(1, 'what is the speed on the 10') 
+(1, 'should i wait to leave for san francisco until after rush hour') 
+(1, 'what time should i avoid traffic in madison') 
+*****Mini-cluster 11*****
+(1, 'is the metro faster than driving to la today') 
+(1, 'what highways do i need to avoid for traffic stops') 
+(1, 'which entrance is less cong ##ested at the mall') 
+(1, 'is there a traffic light at the intersection of bu ##ford h ##wy and dog ##wood rd') 
+(1, 'is there less traffic if i take the highway') 
+(1, 'are there any public ride on the way of ci ##ku ##tra street this morning') 
+*****Mini-cluster 12*****
+(1, 'how many stop lights are on the way home') 
+(1, 'is duluth mn farther north than nyc') 
+(1, 'how many road ##block ##s are there for the mar ##di gr ##as festival in downtown san diego') 
+(1, 'is the diamond interchange finished at the south end of town') 
+(1, 'is the traffic later on the 5 freeway or the 60 freeway') 
+(1, 'would it make a difference if i left for home now or if i waited an hour') 
+(1, 'is the traffic better on route 7 or route 40') 
+(1, 'getting 30 miles per gallon and the tank is 16 gallons how many miles can i drive') 
+(1, 'how many miles is the traffic backed up on the interstate between home and columbia') 
+(1, 'how is downtown traffic regulated for the saint patrick ##s parade') 
+(1, 'are there any road ##block ##s near the former confederate monuments in memphis') 
+---------------
+
+---------------
+ Original Label: 2 
+*****Mini-cluster 0*****
+(2, 'what time will i get to green ##bri ##er state park if i leave now') 
+(2, 'if i leave now what time will i arrive at the edison mall movie theater in edison new jersey') 
+(2, 'can i get from here to nape ##r ##ville illinois by 10 am') 
+(2, 'get the arrival time to the hospital if i leave now') 
+(2, 'when will we get to the next gas station') 
+(2, 'can i make it to the library in 15 ##mins if i use i ##27 ##5') 
+(2, 'can i get to the canada border by 6 pm if i leave detroit right now') 
+(2, 'what is my eta for the garden tonight') 
+(2, 'can i get to mac ##om ##b mall by 730 pm if i leave now') 
+(2, 'what time should i arrive at the hotel if i leave at 10 ##am') 
+*****Mini-cluster 1*****
+(2, 'how long before we arrive at disneyland') 
+(2, 'what will be my arrival time in san jose when started tonight at 9 ##pm from here') 
+(2, 'can i drive from here to canada by 5 ##pm') 
+(2, 'if i take i 95 will i make it to disney world by 7 ##am tomorrow') 
+(2, 'what time will i arrive at the airport if i leave at 8 ##am') 
+(2, 'if i leave at 9 ##am will i make it to the fox theater by 10 pm') 
+(2, 'can i get from here to se ##don ##a before midnight if i leave now') 
+(2, 'will i arrive before 5 ##pm from here to riverside') 
+(2, 'can i get from here to manhattan before 5 ##pm') 
+(2, 'can i get from here to dallas before 10 ##am') 
+(2, 'if i leave here at 6 am when will i get to portland') 
+(2, 'if i leave here at 3 pm when will i get to cincinnati') 
+---------------
+
+---------------
+ Original Label: 3 
+*****Mini-cluster 0*****
+(3, 'tell me when i should leave here by if i want to arrive at home by midnight') 
+(3, 'what time should i leave home to get to the airport by 9 am next tuesday') 
+(3, 'i have to pick someone up at the airport during rush hour what time should i leave home in') 
+(3, 'what time should i leave my house to get to del am ##o mall by 12 pm') 
+(3, 'if i arrive at the mall by 10 this morning how long can i stay if i need to') 
+(3, 'if i want to arrive at the long beach baseball park by 3 pm what time do i need') 
+---------------
+
+---------------
+ Original Label: 4 
+*****Mini-cluster 0*****
+(4, 'what is the traffic like for my drive home') 
+(4, 'can i expect at delay in traffic on my way home') 
+(4, 'how is traffic heading to dad ##s house') 
+(4, 'are there any accidents on my way home') 
+(4, 'i need to know if there ##s a lot of traffic on my way home') 
+(4, 'is there any traffic on my drive home today') 
+(4, 'is there traffic today going home') 
+(4, 'should i expect delays traveling from my house to omaha this morning') 
+(4, 'how ##s the traffic from home to aurora') 
+(4, 'any delays on 65 north to 75 east from my house today at 330') 
+(4, 'is there any construction on i ##4 n on my com ##mute home') 
+(4, 'are there any delays on my way home') 
+(4, 'how heavy is the traffic right now on the way home') 
+(4, 'please tell me the traffic going home is light') 
+(4, 'please tell me there ##s no traffic on my way home') 
+(4, 'what ##s the traffic like on the way home') 
+(4, 'i need to know what traffic is like on my way home') 
+(4, 'are they any traffic delays for my ride home today') 
+(4, 'is there going to be a delay on my way home') 
+*****Mini-cluster 1*****
+(126, 'are there any road conditions to be aware of from work to the rap concert') 
+(183, 'update me on the current traffic situations in my town') 
+(4, 'are there any det ##ours for highway 16 this weekend from home to gig harbor') 
+(96, 'will the roads between downtown and my house be blocked for the parade tomorrow afternoon') 
+(96, 'is there any construction from home to eagles parade') 
+(96, 'are there any traffic accidents on my way from home to rock in rio') 
+---------------
+
+---------------
+ Original Label: 5 
+*****Mini-cluster 0*****
+(5, 'what is the most direct route to take if i were going to leave at 7 pm to get') 
+(5, 'what is the best way to get home tonight') 
+(5, 'give me directions to karen ##s house if i leave downtown dallas at 2a ##m') 
+(5, 'what ##s the fastest route to my sisters house') 
+(5, 'what ##s the quick ##est way home') 
+(5, 'how do i get home') 
+(5, 'map a course home') 
+(5, 'out of all the available routes home which is fastest') 
+(5, 'go home') 
+(5, 'what is the quick ##est way to to get home') 
+(5, 'show me the direction to home') 
+(5, 'what ##s the best route to take home') 
+(5, 'what ##s the best route home today') 
+(5, 'directions to mom ##s') 
+(5, 'which route is best for my drive home') 
+(5, 'what ##s the least heavy traffic route home') 
+(5, 'how can i get to my sons house by noon') 
+---------------
+
+---------------
+ Original Label: 6 
+*****Mini-cluster 0*****
+(6, 'when will santa be available for pictures at penny ##pic ##kle ##s next weekend') 
+(6, 'find me an 80s cover band that is playing at a nightclub in the downtown akron area next month') 
+*****Mini-cluster 1*****
+(6, 'christmas tree lighting ##s near me this month') 
+(6, 'is the zoo having their special event this month or next') 
+(6, 'what ##s showing at the d ##ma') 
+(6, 'when ##s the next ballet at the ka ##uf ##fm ##an center') 
+(6, 'are there any christmas parades within 50 miles of me') 
+(6, 'what movies are in theaters right now') 
+(6, 'what ##s happening at radio city music hall next month') 
+(6, 'schedule of events at walt disney concert hall') 
+(6, 'what plays are in town') 
+(6, 'who is playing at madison square garden next week') 
+(6, 'what is happening in disney springs saturday night') 
+(6, 'is there a corn maze near me') 
+(6, 'beauty and beast play showing in theatre in fort worth soon') 
+(6, 'how many times a day does the brook ##wood library hold story time') 
+(6, 'what ##s up at the movie theatres tonight') 
+(6, 'are there sales events at the local mall') 
+(6, 'are there any christmas programs at the wei ##dner center in green bay tomorrow') 
+(6, 'coffee hour at ace hardware tonight at 5 ##pm') 
+*****Mini-cluster 2*****
+(6, 'wine tasting events near me') 
+(6, 'christmas parties near me in december') 
+(6, 'events at town square') 
+(6, 'estate sales near atlanta next week') 
+(6, 'small concerts happening within 100 miles of me') 
+(6, 'what art events are happening within 10 miles of me this weekend') 
+(6, 'mommy ##and ##me events near dallas') 
+(6, 'find comedy shows nearby') 
+(6, 'events today near me') 
+(6, 'are there any meeting santa events going on near me this month') 
+(6, 'what live music is happening near me this weekend') 
+(6, 'what events are there near me on sunday') 
+(6, 'wine tasting events this month within 50 miles of me') 
+(6, 'any royal wedding near london') 
+(6, 'vendor shows in near me this month') 
+(6, 'events at the uci campus this weekend') 
+*****Mini-cluster 3*****
+(6, 'what concerts are scheduled at hers ##hey ##park this year') 
+(6, 'concerts at dar ##ien lake within the next 6 months') 
+(6, 'summer sol ##stic ##e celebration this coming weekend in harvard square') 
+(6, 'are there any kendrick lamar concerts happening locally tonight') 
+(6, 'events at local aquarium next friday') 
+(6, 'concerts at the hard rock casino next month in bi ##lo ##xi') 
+(6, 'any wine tasting ##s within the next week near me') 
+(6, 'christmas events near salem oregon') 
+(6, 'concerts playing new years in times square at dark') 
+(6, 'nut ##cr ##acker near me for friday night') 
+(6, 'wine tasting events nearby this weekend') 
+(6, 'is there a lord ##e concert available nearby') 
+(6, 'any flea market around vancouver this weekend') 
+(6, 'dog festivals nearby') 
+(6, 'what events are happening at the me ##s ##qui ##te arena next month') 
+(6, 'are there any continuing education classes at the library this month') 
+(6, 'clothing sales events this weekend near me') 
+(6, 'events at planet kids next week') 
+(6, 'live music in town this weekend') 
+(6, 'music events around the nape ##r ##ville area this week') 
+(6, 'craft shows near me this month') 
+(6, 'running events near jo ##plin this weekend') 
+(6, 'christmas eve candle ##light services near me') 
+(6, 'park events in charlotte this month') 
+(6, 'events in san antonio occurring at the alam ##o this weekend') 
+(6, 'bryant park markets this weekend') 
+*****Mini-cluster 4*****
+(8, 'when is s ##x ##sw this year') 
+(8, 'tonight at 83 ##0 pm in hines ##ville ga comedy movies') 
+(8, 'what ##s happening in river forest') 
+(6, 'anything happening in central park tomorrow') 
+(8, 'is glass animals coming to wisconsin this year') 
+(8, 'all the music festivals in the united states for summer 2018') 
+(8, 'taylor swift concerts next month') 
+(8, 'erotic ##a reading meet ##ups') 
+(8, 'what time does the hank aaron christmas light show start on friday night') 
+(8, 'are there any dog surfing events happening in huntington beach this weekend') 
+(8, 'what time does santa start at the festival of lights tonight') 
+(8, 'kid friendly events sunday') 
+(8, 'taylor swift concert') 
+(8, 'concerts by casting crowns for next weekend') 
+(8, 'do they have hay rides here in south florida') 
+(8, 'concerts with metallic ##a headlining in san francisco') 
+(8, 'what ##s happening to do jay z') 
+(8, 'what movies are playing in lafayette today') 
+(8, 'concerts by noah and the whale this year') 
+(8, 'pac events this week') 
+(8, 'what seafood and wine festivals are there coming up next month') 
+(8, 'tu ##pper ##ware parties happening') 
+(8, 'things to do in orlando this weekend that include parking fees') 
+(8, 'events about marvel next week') 
+(8, 'festival of lights starts when tonight') 
+(8, 'is there a comic ##on event in dallas texas this coming year') 
+(8, 'what red cross events are there in houston') 
+*****Mini-cluster 5*****
+(6, 'where is the closest art show in london') 
+(6, 'when are the fourth of july events taking place in the city') 
+(6, 'are there any christmas markets on the south side of austin this month') 
+(6, 'wine tasting in the city this weekend') 
+(6, 'theater events in ho ##bo ##ken this week') 
+(6, 'is taylor swift coming to town') 
+(6, 'how many book fairs will there be in the area in the next months') 
+(6, 'what ##s happening at church this month') 
+(6, 'kid friendly events happening in downtown pensacola this weekend') 
+*****Mini-cluster 6*****
+(6, 'events going on near me tomorrow') 
+(6, 'are there any hike ##s near philadelphia') 
+(6, 'what sporting events are close') 
+(6, 'easter egg hunts near me') 
+(6, 'are there any comedy shows near me') 
+(6, 'anything to do near me') 
+(6, 'anything happening near me this weekend') 
+(6, 'are there any music related events happening near me') 
+(6, 'i want to see a concert tonight is there anything going on near me') 
+(6, 'what music festivals will be near me next month') 
+(6, 'anything near by') 
+(6, 'are there any craft fairs near me this month') 
+(6, 'are there any fairs or carnival ##s near me next weekend') 
+(6, 'jazz concerts close to me this weekend') 
+(6, 'tell me about fun events near me') 
+(6, 'fun things to do near me') 
+(6, 'night ##life near me tonight') 
+(6, 'what theater events are happening') 
+(6, 'are there any events going on near me tomorrow') 
+(6, 'are any rodeo ##s going to be nearby this month') 
+*****Mini-cluster 7*****
+(6, 'is there a kc chiefs watch party near me') 
+(6, 'any concerts in town') 
+(6, 'cooking demonstrations at cu ##lina ##rd') 
+(6, 'what events are going on at the mission inn') 
+(6, 'i feel like going to a club tonight so i need to know where there is a happy hour') 
+(6, 'what ##s on the agenda at eagles ballroom in milwaukee next month') 
+(6, 'any live jazz around here') 
+*****Mini-cluster 8*****
+(6, 'are there any upcoming jazz shows at the independent') 
+(6, 'jazz shows at the old folks home this week') 
+(6, 'what ##s at the house of blues') 
+(6, 'fun events for children at the park') 
+(6, 'what shows are at the stadium theater in january') 
+(6, 'wine tasting events nearby this month') 
+(6, 'what is playing at the local theater downtown this weekend') 
+(6, 'music party play time at church') 
+(6, 'list all the local festivals for the weekend') 
+(6, 'are there any scheduled country music concerts at the local theater this saturday night') 
+(6, 'where ##s the nearest christmas parade this weekend') 
+(6, 'when is the next showtime for the pirates at the majestic theater in willis ##ton') 
+(6, 'events at radio city tonight') 
+---------------
+
+---------------
+ Original Label: 7 
+*****Mini-cluster 0*****
+(7, 'what ##s traffic like in southern california') 
+(7, 'what is traffic in i ##70 in denver during the day') 
+(7, 'is there any construction on i ##5 on my route to the theater') 
+(7, 'is there an accident nearby') 
+(7, 'what are the over ##pass ##es on interstate 71 like this evening going to medina') 
+(7, 'is there a lot of traffic towards oracle arena') 
+(7, 'traffic conditions on i ##4 west in downtown orlando') 
+(7, 'are there any det ##ours to savoy airport tomorrow') 
+(7, 'is there any road ##work on my way to san marcos outlet') 
+(7, 'how bad is traffic to cost ##co') 
+(7, 'traffic for my ride to beach today') 
+*****Mini-cluster 1*****
+(7, 'are there any traffic accidents near my destination') 
+(7, 'is the traffic my area heavy now') 
+(7, 'is there construction on my route to michigan state') 
+(7, 'are there any traffic alert ##s in my area') 
+(7, 'traffic check for h ##wy 50 going north') 
+(7, 'is there construction going on in my area') 
+*****Mini-cluster 2*****
+(7, 'are there traffic delays on the ocean springs bridge') 
+(7, 'any det ##ours on the way to the city') 
+(7, 'how are the conditions going up spanish fork canyon now') 
+(7, 'did strong winds cause any delays on the interstate this morning') 
+(7, 'what does highway traffic look like right now') 
+(7, 'are there any crashes on the freeway') 
+(7, 'is the traffic on the bay bridge cleared up yet') 
+(7, 'what is the delay like on the highway') 
+(7, 'i want to know the current traffic for the brooklyn bridge') 
+(7, 'is colonial b ##l ##vd cong ##ested with traffic in fort myers fl') 
+(7, 'is the baltimore harbor tunnel construction making the current traffic worse') 
+(7, 'how busy is the belt line road at irving tx') 
+*****Mini-cluster 3*****
+(7, 'what is the traffic like near ashe ##ville') 
+(7, 'how bad is the traffic near the airport right now') 
+(7, 'traffic from here to dc') 
+(7, 'how is the traffic by newark airport') 
+*****Mini-cluster 4*****
+(10, 'what is the traffic like driving from bush ##nell to orlando') 
+(10, 'please tell me what is the traffic forecast in la for this afternoon') 
+(10, 'what will the traffic be like from houston to dallas') 
+(10, 'is the traffic bad on marine drive') 
+(10, 'is there traffic driving from phoenix to las vegas') 
+(10, 'what is the traffic driving from buffalo to amherst') 
+(10, 'are there any traffic delays on the 52 ##8') 
+(7, 'what is the traffic like driving from vermont to the canadian border') 
+(10, 'is the traffic bad in sacramento going to davis') 
+(10, 'what ##s the traffic report for baltimore') 
+(10, 'what is the traffic like from center city to west nor ##rito ##n') 
+(10, 'what is the current traffic travelling from cleveland to pittsburgh') 
+(10, 'look up traffic issues') 
+(10, 'any traffic det ##ours this morning') 
+(10, 'how is traffic to downtown houston') 
+(10, 'is traffic bad right now on i ##4') 
+(10, 'is the traffic bad right now on i ##35') 
+(10, 'what is traffic driving from alabama to atlanta') 
+(10, 'what is the traffic like today from atlanta to birmingham') 
+(10, 'what is the traffic on my daily route') 
+(10, 'how much further is this bumper to bumper traffic on i ##75') 
+(10, 'is there going to be construction on 5th st') 
+(10, 'any wreck ##s this morning') 
+(10, 'how bad is the traffic to florence') 
+(10, 'traffic from philadelphia to pittsburgh') 
+(10, 'is traffic usually bad on saturdays in phil ##ly') 
+(10, 'what is the traffic like driving from houston to san antonio') 
+(10, 'what is the traffic like today from atlanta to nashville') 
+(10, 'what is the traffic driving from los angeles to las vegas') 
+(10, 'are there delays this morning on jack ##y') 
+(10, 'what is the traffic like between tex ##ark ##ana and shreveport') 
+(10, 'is traffic heavy downtown right now') 
+(10, 'what is the traffic driving from san bern ##adi ##no to antioch ca') 
+(10, 'what is the traffic report now') 
+(10, 'what kind of traffic is there driving from san diego to anaheim') 
+(10, 'is traffic heavy on i ##20') 
+(10, 'any major accidents on i ##9 ##5 right now') 
+(10, 'are there any traffic jam ##s in toronto') 
+(10, 'what is the traffic driving from tampa to miami') 
+(10, 'is there any traffic tonight') 
+(10, 'is the traffic light in charlotte today') 
+(10, 'what is the traffic from little rock to north little rock') 
+(10, 'please let me know how bad the traffic is') 
+(10, 'will there be a lot of traffic tomorrow') 
+(10, 'what is the traffic driving from uptown minneapolis to burns ##ville') 
+(10, 'are there any traffic jam ##s this morning') 
+(10, 'update on the traffic please') 
+(10, 'what is the traffic driving from newark to new york') 
+(10, 'is the traffic backed up on burlington') 
+(10, 'traffic this morning') 
+(10, 'is traffic heavy to san francisco') 
+(10, 'is there traffic driving from portland to seattle') 
+(10, 'what is the estimated traffic from tracy to oakland') 
+(10, 'what ##s the traffic usually like on friday night in st louis') 
+(10, 'are there any det ##ours on mt read b ##l ##vd') 
+(10, 'traffic for la jo ##lla please') 
+(10, 'what is the traffic driving from philadelphia to king of prussia') 
+(10, 'what is the traffic on freeway i ##40 ##5') 
+(10, 'is traffic bad') 
+(10, 'traffic update please') 
+(10, 'what ##s the traffic like today') 
+(10, 'how is the com ##mute to spokane') 
+*****Mini-cluster 5*****
+(7, 'is traffic slow on the interstate') 
+(7, 'what ##s the traffic situation on the highway') 
+(7, 'why aren ##t we moving on the freeway') 
+(7, 'what is the latest construction in the area') 
+(7, 'how is the traffic around the bulls arena') 
+(7, 'how ##s to traffic to the mod ##a center if i leave right now') 
+(7, 'what is the traffic around camden yards like') 
+(7, 'is it traffic on the strip') 
+(7, 'how much traffic on back ##ro ##ads') 
+(7, 'is there a lot of traffic around assembly hall on friday nights') 
+(7, 'is traffic backed up on the highway') 
+(7, 'give me an update on the traffic conditions in the city') 
+(7, 'how is traffic north of grand rapids') 
+(7, 'is the holland tunnel open right now') 
+(7, 'when is traffic light for this area') 
+(7, 'is there traffic actually flowing on the interstate right now') 
+(7, 'what is the hold up on the parkway') 
+(7, 'what ##s the traffic going into the city') 
+(7, 'is there a lot of traffic out by the interstate at 8 ##am') 
+(7, 'how much traffic is on the highway') 
+(7, 'how bad is traffic ahead') 
+(7, 'when does construction start on the highway') 
+(7, 'what is the traffic on 295 in dc') 
+(7, 'are there any accidents on the main highway') 
+(7, 'how heavy is the traffic around ashe ##ville today') 
+(7, 'how is traffic getting into town') 
+(7, 'what is the traffic to the philadelphia airport right now') 
+(7, 'how is the traffic leaving the city on 56 ##5') 
+(7, 'is there an accident in front of me') 
+*****Mini-cluster 6*****
+(7, 'is my street cleared') 
+(7, 'is there heavy traffic near the airport right now') 
+(7, 'tell me how the traffic is on highway 27 near davenport fl') 
+(7, 'is there a lot of traffic near the concert hall') 
+(7, 'how is the traffic near chicago downtown') 
+(7, 'traffic in my area update') 
+(7, 'what is the road construction between here and bay city') 
+(7, 'how the traffic on my way to my doctor') 
+*****Mini-cluster 7*****
+(7, 'are there any accidents near sunny isles') 
+(7, 'what ##s the traffic like near columbus oh') 
+(7, 'are there any accidents between my location and destination') 
+(67, 'how is traffic around my area') 
+*****Mini-cluster 8*****
+(7, 'how is traffic headed to the shore right now') 
+(7, 'are there any det ##ours on my way to the mall') 
+(7, 'what is traffic like from here to jo ##plin') 
+(7, 'what will the highways be like from charlotte to tampa today') 
+(7, 'is traffic clear on the way to the hospital') 
+(7, 'how bad is traffic if i drive now to sam houston state university in huntsville texas') 
+(7, 'are there any det ##ours on the way to mid carolina high school') 
+(7, 'how many freeway ##s in las vegas are closed') 
+(7, 'is there heavy traffic between here and elk ##hart') 
+*****Mini-cluster 9*****
+(7, 'is the airport connector closed') 
+(7, 'is the interstate open') 
+(7, 'can you tell me if there is car accident near central park') 
+(7, 'is mornings ##ide lane dr ##iva ##ble in martins ##ville today') 
+(7, 'is the bridge open today') 
+(7, 'is the bridge on state rd 49 in ko ##uts open yet') 
+*****Mini-cluster 10*****
+(7, 'when was the most recent road accident around me') 
+(67, 'traffic south of me') 
+(67, 'current accidents near me right now') 
+(7, 'any road work near me') 
+---------------
+
+---------------
+ Original Label: 8 
+*****Mini-cluster 0*****
+(8, 'is kylie jen ##ners pop up store event tonight or tomorrow night and what time') 
+(8, 'learning to flip houses events in south carolina this year') 
+(8, 'are there any pet friendly events in cincinnati next weekend') 
+(13, 'when is my high school reunion') 
+(8, 'any ugly sweater parties in new orleans') 
+(8, 'kid friendly activities in atlanta next week') 
+(8, 'food event in chicago that are g ##lu ##ten ##free and dog ##fr ##ien ##dly during the spring season') 
+*****Mini-cluster 1*****
+(8, 'what ##s happening in los angeles tomorrow') 
+(8, 'is christmas made in the south going to be in charleston next weekend') 
+(8, 'food festivals this weekend in sacramento') 
+(8, 'list of er ##rand ##s for saturday') 
+(8, 'are there any mar ##di gr ##as parades happening in wave ##land mississippi during the month of february') 
+(8, 'what is happening in miami this weekend') 
+(8, 'where to learn pad ##dling this week') 
+(8, 'what to do in new york city in december') 
+(8, 'is there any performance art in washington dc in early march') 
+(8, 'things to do during the day in new orleans') 
+(8, 'the vintage hand ##made market in browns ##town times friday and saturday only') 
+(8, 'what is happening in las vegas tonight') 
+(8, 'is there some sort of christmas festival in carmel this year') 
+(8, 'salem oregon christmas celebrations') 
+(8, 'when is the next air show in los angeles') 
+(8, 'harry styles concert within the next month') 
+(8, 'poetry reading events') 
+(8, 'what to see in ga ##tl ##in ##burg') 
+(8, 'ta ##co events in mexico') 
+(8, 'what ##s happening this month in houston') 
+(8, 'are there any christmas plays tonight') 
+(8, 'what is going on in dallas texas tonight') 
+(8, 'any holiday films coming out in philadelphia soon') 
+(8, 'what is going on in new york city tomorrow afternoon') 
+(8, 'religious services for catholics') 
+(8, 'what ##s happening on las vegas strip') 
+(8, 'dance events in tampa') 
+(8, 'any fun s ##nor ##kel ##ing class happening in hi ##ck ##am beach this weekend') 
+(8, 'film screenings in new york') 
+(8, 'birthday celebrations in new orleans la on tuesday') 
+(8, 'new york events') 
+(8, 'what ##s going on in april in new york') 
+(8, 'what ##s happening in newark today') 
+(8, 'next set of doctors appointments') 
+(8, 'palm springs activities weekend') 
+(8, 'does school starts 8 ##am') 
+(8, 'what is happening in key west this week') 
+(8, 'when is the all souls procession next year') 
+(8, 'things to do in new berlin today') 
+(8, 'tell me more about the local ballet') 
+(8, 'what events are going on downtown') 
+(8, 'anything happening in austin texas on the 14th of january') 
+*****Mini-cluster 2*****
+(8, 'is anything going on in the french quarter next weekend') 
+(8, 'movies playing in sara ##so ##ta on friday') 
+(8, 'things to do in montreal this friday') 
+(8, 'when is john legend playing in new york') 
+(8, 'concord events for january') 
+(8, 'things to do in kent next month') 
+(8, 'is there any events in mobile alabama') 
+(8, 'what night is this years annual christmas parade') 
+(8, 'holiday pop up market this week in new york') 
+(8, 'what is there to do this weekend') 
+(8, 'events in paris') 
+(8, 'what is happening in denver tonight') 
+(8, 'music events next weekend') 
+(8, 'what ##s going on today') 
+(8, 'are there any good concerts happening next week') 
+(8, 'any holiday food events today') 
+(8, 'something fun to do this weekend') 
+(8, 'things to do in detroit next week') 
+(8, 'hay ride events') 
+(8, 'events in la next weekend') 
+(8, 'concerts in tampa') 
+(8, 'things to do in nashville') 
+(8, 'music events in chicago this weekend') 
+(8, 'motorcycle rallies in 2018') 
+(8, 'things to do in malibu tonight') 
+(8, 'list of concerts in la next week') 
+(8, 'fun concerts in kansas city tomorrow night') 
+(8, 'are there any events scheduled in seattle for next week') 
+(8, 'what race events will be happening in new england this year') 
+(8, 'concerts in tucson this week') 
+(8, 'is there anything to do this weekend') 
+(8, 'what can i do for this weekend') 
+(8, 'festivals in minneapolis minnesota this summer') 
+(8, 'december events in honolulu') 
+(8, 'wine tours tonight') 
+(8, 'is there anything going on in houston this week') 
+(8, 'are there are holiday parades in es ##con ##di ##do this month') 
+(8, 'things to do in mississippi') 
+(8, 'events in wa ##ds ##worth') 
+(8, 'concerts in birmingham tomorrow') 
+(8, 'where are the fun events') 
+(8, 'where can we see the easter bunny') 
+(8, 'wedding receptions') 
+(8, 'concerts by foo fighters next year in philadelphia') 
+(8, 'something to do tonight') 
+(8, 'pot ##lu ##ck announcements') 
+(8, 'holiday events for kids this month in dallas') 
+(8, 'what is there to do in seattle this week') 
+(8, 'halloween parties in atlanta') 
+(8, 'is there anything going on in minneapolis next week') 
+(8, 'events in chicago') 
+(8, 'music events this weekend') 
+(8, 'family events next week') 
+(8, 'what holiday events are happening in providence tomorrow') 
+(8, 'new years eve parties that are being held in ny city') 
+(8, 'plane show on saturday morning') 
+(8, 'formal events in clear ##water this week') 
+(8, 'any fun new years parties this month') 
+(8, 'things to do in los angeles') 
+(8, 'any symphonies in spokane') 
+(8, 'tell me when and where the next dance party is in los angeles') 
+(8, 'ice skating parties') 
+(8, 'things to do this friday') 
+(8, 'things to do in tucson in april') 
+(8, 'are there any events next sunday in no ##ho') 
+(8, 'what kind of halloween parties are there to attend this year') 
+(8, 'hay rides in poland this weekend') 
+(8, 'charity events happening in atlanta this week') 
+(8, 'any events going on this evening') 
+(8, 'things to do friday night in boston') 
+(8, 'christmas lights show in atlanta this december') 
+(8, 'when is din ##e in la') 
+(8, 'what is there to do next week') 
+(8, 'concerts this weekend in sacramento') 
+(8, 'christmas program events this weekend') 
+(8, 'what concerts are playing in buffalo friday night') 
+(8, 'free events in san francisco') 
+(8, 'business meetings for this week') 
+(8, 'christmas dinner outreach ##es in san antonio') 
+(8, 'what ##s happening in pittsburgh this saturday afternoon') 
+(8, 'any shows happening in los angeles this week') 
+(8, 'any events going on in dallas') 
+(8, 'where and when is the next celine de ##on concert') 
+(8, 'upcoming events in st augustine') 
+(8, 'is there an egg hunt in kent ohio on saturday') 
+*****Mini-cluster 3*****
+(8, 'anything cool happening in bays ##ide next week') 
+(8, 'what concerts are going to be happening in orlando florida during the months of april and may') 
+(8, 'concerts by billy joel next week') 
+(8, 'family friendly events in ash ##ville this weekend') 
+(8, 'anything cool happening next week') 
+(8, 'holiday movie nights for the family') 
+(8, 'christmas events') 
+(8, 'concerts in auburn hills this weekend') 
+(8, 'events for teens') 
+(8, 'what events are this summer in portland') 
+(8, 'free festivals in charlotte next year') 
+(8, 'cocktail parties') 
+(8, 'find christmas events in melbourne for this weekend') 
+(8, 'what music festivals are happening this summer') 
+(8, 'what events can i take the kids to this weekend') 
+(8, 'what ##s happening in nashville this weekend') 
+(8, 'what concerts are happening in boston next month') 
+(8, 'family events in hollywood this weekend') 
+(8, 'events this evening') 
+(8, 'farmers markets happening in central jersey') 
+(8, 'professional fights for the next year') 
+(8, 'concerts involving emi ##nem next week') 
+(8, 'cooking events in boston tomorrow evening') 
+(8, 'i need a list of alternative bands playing in tulsa next saturday night') 
+(8, 'arts ##y events this weekend') 
+(8, 'what movies come out next week') 
+(8, 'family ##fr ##ien ##dly things to do in new york this weekend') 
+(8, 'live music shows next weekend') 
+(8, 'what comedy shows are happening in the south end next week') 
+(8, 'are there any music events this month') 
+(8, 'what ##s going on in garden city the last week of the month') 
+(8, 'rihanna concert going on this month in miami') 
+(8, 'concerts to see janet jackson') 
+(8, 'free concerts in orlando next week') 
+(8, 'family act ##iv ##ties this weekend') 
+(8, 'live blues in cambridge ma tomorrow night') 
+(8, 'what events are there for families this weekend') 
+(8, 'p ##nk concert dates for march') 
+(8, 'what events are this month in katy') 
+(8, 'restaurant openings omaha december') 
+(8, 'where are some new years parties') 
+(8, 'to do in belle ##ville illinois this weekend') 
+(8, 'are there any events downtown next month') 
+(8, 'good concerts for pre ##tee ##ns in portland this summer') 
+(8, 'free events for families in detroit tomorrow') 
+(8, 'events next week in downtown orlando') 
+(8, 'i want to go to a wine tasting this weekend') 
+(8, 'looking for children ##s events in decatur next week') 
+(8, 'christmas events in eugene this weekend') 
+(8, 'christmas tree light ##hing events') 
+(8, 'cool events for kids tomorrow') 
+(8, 'where to go for fun family activities in indiana during christmas') 
+(8, 'christmas parties this december') 
+(8, 'any jazz concerts this month') 
+(8, 'family friendly food event in southern california this month') 
+(8, 'are there any kid friendly events coming up') 
+(8, 'what events are going on this weekend') 
+(8, 'are there any singer songwriter events coming up this weekend') 
+(8, 'va ##p parties tonight') 
+(8, 'christmas parties in london') 
+(8, 'food festivals this summer') 
+*****Mini-cluster 4*****
+(8, 'free car seat checks in san francisco from december thru february') 
+(8, 'i want to know the best halloween display is located') 
+(8, 'what plays are opening this week') 
+(8, 'tell me what is going on in tampa next month') 
+(8, 'what marathon events are scheduled on the west coast next year') 
+(8, 'facebook information on the school book fair event') 
+(8, 'santa claus in new york tonight') 
+(8, 'brewery tours in atlanta') 
+(8, 'cheese and wine festival in portland') 
+(8, 'beer festival in portland on saturday') 
+(8, 'is the trans siberian orchestra in concert in green bay this month') 
+(8, 'vegas mega concert for justin bi ##eber') 
+(8, 'events with free food') 
+(8, 'when is the dance party at lake jackson') 
+(8, 'what ##s happening on o ##ahu tonight') 
+(8, 'concerts in daytona coming up') 
+(8, 'when and where is the next fall out boy concert') 
+(8, 'are there any upcoming dead and company concerts on the east coast next month') 
+(8, 'is there any book signing from gabrielle union this weekend') 
+(8, 'april fools day events in oakland town today') 
+(8, 'carol ##ing in orlando') 
+(8, 'tell me about upcoming local events') 
+(8, 'music events in maui') 
+(8, 'are any ice skating shows scheduled for philadelphia') 
+(8, 'where can i find james span ##n website of events for this month') 
+(8, 'musical premier ##s in chicago in august 2018') 
+(8, 'broadway plays in new york in april 2018') 
+(8, 'what is happening in tucson today') 
+(8, 'lit friday night party in wai ##ki ##ki next week') 
+(8, 'find me a classical guitar concert for next week in tulsa') 
+(8, 'concerts by p did ##dy') 
+(8, 'give me a run down of the local events for the rest of the month') 
+(8, 'what are the show and date times for beyonce ##s tour') 
+(8, 'what are interesting things in garden grove this week') 
+(8, 'concerts by maxwell') 
+(8, 'what cool can i be doing right now') 
+(8, 'what ##s on this friday') 
+(8, 'singles meet ##ups in ashland this weekend') 
+(8, 'im looking for any broadway show happening tonight') 
+(8, 'when is the next chicago beach party') 
+*****Mini-cluster 5*****
+(8, 'wine tasting events next weekend') 
+(8, 'what fun things are happening in hartford next weekend') 
+(8, 'what is going with christmas events this week in queens') 
+(8, 'dog friendly events') 
+(8, 'is there any holiday plays to see this weekend in san jose') 
+(8, 'santa clause meetings') 
+(8, 'concerts by jeremy camp this weekend') 
+(8, 'outdoor kids events in brooklyn new york') 
+(8, 'fa ##ml ##ily ice skating this weekend') 
+(8, 'what ##s happening in san antonia this week') 
+(8, 'christmas fun honolulu') 
+(8, 'what ##s happening in los angeles next week') 
+(8, 'craft shows in ga ##ds ##den this weekend') 
+(8, 'what are some kid friendly events happening in the morning tomorrow') 
+(8, 'film events in new york this weekend') 
+(8, 'music events happening in phoenix in december') 
+(8, 'ginger ##bread making parties') 
+(8, 'what ##s happening for kids this weekend') 
+(8, 'what is going on') 
+(8, 'kids activities in allen ##town today') 
+(8, 'her concert in tampa this month') 
+(8, 'what ##s happening in huntington beach this weekend') 
+(8, 'are there any parties this weekend') 
+(8, 'are there any tree lighting ceremonies in davenport this weekend') 
+(8, 'winter festivals in sc ##hen ##ect ##ady this month') 
+(8, 'what ##s going on in orlando') 
+(8, 'punk concerts') 
+(8, 'church events this month') 
+(8, 'what ##s happening this weekend in orlando') 
+(8, 'anything to do in nyc on sunday') 
+(8, 'what ##s going on in aurora') 
+(8, 'what ##s happening in baker ##sfield this weekend evenings only') 
+(8, 'french bulldog events in san francisco next weekend') 
+(8, 'cheese and wine tasting') 
+(8, 'ballet in newark for next week') 
+(8, 'music concerts in dallas saturday') 
+(8, 'concerts in port st lucie') 
+(8, 'things to do in december in tucson') 
+(8, 'any soccer games this month in roanoke va') 
+(8, 'what can i do that ##s fun in milwaukee on sunday') 
+(8, 'paint parties in seattle this weekend') 
+(8, 'funny acts in dallas this weekend') 
+(8, 'what ##s going on in atlanta this weekend') 
+(8, 'when is the wing and beer festival in the short north') 
+(8, 'christmas events in wai ##ki ##ki this afternoon') 
+(8, 'musical concerts going on in new york city next weekend') 
+(8, 'renaissance fairs in pet ##al ms in january') 
+(8, 'sublime concerts') 
+(8, 'are there any metallic ##a concerts this year in california') 
+(8, 'kid friendly events for next week') 
+(8, 'turkish festival this weekend') 
+(8, 'any holiday wine tasting event in new york city area') 
+(8, 'kid events tomorrow') 
+*****Mini-cluster 6*****
+(8, 'are there any fun things to do this week') 
+(8, 'concerts by pri ##mus next month') 
+(8, 'fun things to do sunday with kids') 
+(8, 'is there any concert tomorrow') 
+(8, 'seattle street fair on tuesday') 
+(8, 'cinema schedule in mac ##om ##b for the next week') 
+(8, 'any art shows this month') 
+(8, 'what ##s the cool ##est thing to do next wednesday in beverly hills') 
+(8, 'what is the biggest event coming to seattle next month') 
+(8, 'what can i do that is fun this weekend') 
+(8, 'will there be a parade for the holiday') 
+(8, 'when is the next circus coming to las vegas') 
+(8, 'how many sports events are planned for las vegas over the next year') 
+(8, 'things to do in colorado springs colorado this christmas') 
+(8, 'any concerts in orange county going on today') 
+(8, 'does new york have comedy shows next week') 
+(8, 'concerts in irvine tomorrow') 
+(8, 'is there anything going on in be ##mi ##d ##ji tonight') 
+(8, 'live plays in memphis within the next few weeks') 
+(8, 'what broadway shows are currently playing in new york') 
+(8, 'holiday parties for todd ##lers next week') 
+(8, 'what christmas ##rel ##ated activities can i enjoy around the holidays in philadelphia') 
+(8, 'where can we go to see the ballet this weekend') 
+(8, 'what is music events are in fort worth this week') 
+(8, 'concerts in miami next week') 
+(8, 'fashion shows in dallas') 
+(8, 'what special events are coming up in po ##mona') 
+(8, 'any fun stuff to do this weekend') 
+(8, 'see if there are any good comedy shows this weekend in manhattan') 
+(8, 'things to do in seattle next week') 
+(8, 'concerts by kendrick lamar for march 2018') 
+(8, 'where can i see christmas lights') 
+(8, 'wine festival in philadelphia tomorrow') 
+(8, 'things to do in cleveland next weekend') 
+(8, 'is there anything fun to do in colorado springs') 
+(8, 'are there any thanksgiving parades within the next week') 
+(8, 'are there any christmas events tomorrow') 
+(8, 'food festivals in sc ##hen ##ect ##ady') 
+(8, 'is there a department party tonight') 
+(8, 'literary events this week') 
+(8, 'what can i do in tampa next month') 
+(8, 'holiday parties') 
+(8, 'concerts to see pink') 
+(8, 'list all the events for today') 
+(8, 'new years fireworks in westchester ny') 
+(8, 'free cooking classes') 
+(8, 'what events are coming up this weekend') 
+(8, 'can you show me christmas events in melbourne for this weekend') 
+(8, 'when is the next orchestra performance downtown') 
+(8, 'country concerts in portland in january') 
+(8, 'what should i do tomorrow') 
+(8, 'things to do in france tomorrow') 
+(8, 'what time does the flashback concert happen tomorrow') 
+*****Mini-cluster 7*****
+(8, 'christmas tree lighting ceremonies in henderson') 
+(8, 'movies playing at 9 ##pm tonight in tall ##aha ##ssee') 
+(8, 'things to do in la during the summer') 
+(8, 'concerts by jay z') 
+(8, 'christmas events in new york city') 
+(8, 'pumpkin carving contests in olympia washington') 
+(8, 'where can i go cross country skiing') 
+(8, 'anything new to do tomorrow') 
+(8, 'parades in ab ##ile ##ne next week') 
+(8, 'thinks to do in ft worth this coming weekend') 
+(8, 'what ##s going on in sc ##hen ##ect ##ady next weekend') 
+(8, 'what are something ##s to do on o ##ahu') 
+(8, 'santa events in henderson this weekend') 
+(8, 'punk concerts in kansas city') 
+(8, 'concerts in vegas next year') 
+(8, 'community holiday parties') 
+(8, 'green ##bay events this month') 
+(8, 'how many musical events are taking place in seattle this month') 
+(8, 'what ##s happening in miami tonight') 
+(8, 'looking for kids events this saturday in tampa') 
+(8, 'kid concerts this week') 
+(8, 'fun things to do in myrtle beach this winter') 
+(8, 'concerts in sf for this weekend') 
+(8, 'new year parties planned in reno') 
+(8, 'what concerts are in omaha') 
+(8, 'music concerts happening this summer in atlanta') 
+(8, 'bluegrass festivals') 
+(8, 'are there any upcoming crab feeds in fresno this month') 
+(8, 'anything to do next month') 
+(8, 'what are some upcoming concerts in orlando') 
+(8, 'festivals in nyc this weekend') 
+(8, 'holiday events happening on friday') 
+(8, 'what time does the jazz festival start') 
+(8, 'upcoming hip hop concerts') 
+(8, 'kid events in hers ##hey this month') 
+(8, 'music events in charleston next month') 
+(8, 'list music concerts downtown detroit') 
+(8, 'concerts in san francisco') 
+(8, 'music concerts in dallas') 
+(8, 'art walks this weekend') 
+(8, 'what music events are happening in los angeles today') 
+(8, 'what concerts happen in denver in april') 
+(8, 'concerts happening in austin saturday night') 
+(8, 'are there any farmers markets') 
+(8, 'new years eve parties') 
+(8, 'comedy competitions that start before 9 pm') 
+(8, 'any concerts happening this week') 
+(8, 'hip hop concerts happening this month') 
+(8, 'any christmas tree lighting ##s this weekend') 
+(8, 'events in ga ##tl ##in ##burg') 
+(8, 'han ##nu ##ka ##h events in new york') 
+(8, 'toy drive events this week in new york') 
+(8, 'when is h ##ya ##cin ##ths birthday party next week') 
+(8, 'things to do in bu ##rba ##nk this week') 
+(8, 'any events in te ##mp ##e tonight') 
+(8, 'events in concord') 
+(8, 'concerts in ga ##tl ##in ##burg') 
+(8, 'anything in san francisco this weekend') 
+(8, 'what college events are being held tomorrow') 
+*****Mini-cluster 8*****
+(8, 'what time is the pittsburgh symphony concert start tonight') 
+(8, 'drake concert in toronto tomorrow') 
+(8, 'things to do on my free time') 
+(8, 'any volunteer events happening tomorrow') 
+(8, 'river ##walk events during my stay in march') 
+(8, 'events that i can bring my dog to this weekend') 
+(8, 'are there any new years eve ##s events happening in portland when we fly in') 
+(8, 'any comedy shows to go to on monday') 
+(8, 'fun family place to ski in colorado next month') 
+(8, 'family birthday party for next month') 
+(8, 'what events can i attend next week') 
+(8, 'what ##s available to participate in for cleveland on friday') 
+(8, 'find a free sporting event this week please') 
+(8, 'what are the dates for the boat parade of lights in ha ##vas ##u this month') 
+(8, 'id like to know if there are any punk concerts to attend tomorrow in macon') 
+(8, 'any ideas what the kids and i can do sunday morning') 
+(8, 'concerts by beyonce') 
+(8, 'what fun events are available to participate in for long island on monday') 
+(8, 'can we catch any concerts this weekend') 
+(8, 'free events in florida') 
+(8, 'event recommendation for this weekend') 
+(8, 'what does the singles night ##life look like today') 
+(8, 'concerts by pink') 
+(8, 'beer tasting ##s in phoenix next month') 
+(8, 'concerts by s ##za') 
+---------------
+
+---------------
+ Original Label: 9 
+*****Mini-cluster 0*****
+(9, 'search the quick ##est route to e ##wa beach from mill ##ila ##ni via kun ##ia road') 
+(34, 'what is the fastest route available') 
+(34, 'what is the best route to take to vegas') 
+*****Mini-cluster 1*****
+(9, 'what is the quick ##est way to get to baylor hospital') 
+(9, 'please give me directions to the city avoiding road construction') 
+(9, 'what ##s the best way to get to the train station during rush hour') 
+(9, 'what ##s the quick ##est route to statue of liberty') 
+(9, 'what are the det ##ours to access love park in the afternoon by car') 
+(9, 'directions to my den ##sis ##t') 
+(9, 'look up directions to wai ##ki ##ki beach from ala moan ##a park arriving before 2 ##pm') 
+(9, 'i need to get to the denver airport by 2 ##pm show me the fastest way') 
+(9, 'west elementary school please') 
+(9, 'i have to pick up my computer and micro center and madison heights what ##s the least cong ##ested') 
+(9, 'what is the best route to magic springs hot springs arkansas') 
+(9, 'can i get the directions to pic ##o ski resort') 
+(9, 'get me to los angeles city hall by 3 ##pm without passing through wil ##shire b ##l ##vd') 
+(9, 'how do i get to the wal ##mart') 
+(9, 'what ##s the best way to get to the super ##dome during rush hour') 
+(9, 'can i get directions to the drive in theater in lake ##land') 
+(9, 'give me directions to ac ##me') 
+(9, 'can i get to the target in he ##lot ##es via la can ##tera parkway') 
+(9, 'route from ne ##yla ##nd stadium to dolly ##wood') 
+(9, 'i want to arrive at stanford university by 3 ##pm what is the fastest route') 
+(9, 'which way should i go to get to city hall before it closes') 
+(9, 'nearest mechanical workshop') 
+(9, 'get me to the wal ##mart in cup ##ert ##ino by noon') 
+(9, 'can you give me directions to the huntington dog beach via the i ##5') 
+(9, 'what route should i take to the airport to avoid traffic') 
+(9, 'route from central to uss kidd not using florida ave') 
+(9, 'tell me the quick ##est route to the movie theater') 
+(9, 'give me driving directions from port ha ##rco ##rt to lagos street avoiding the highway') 
+(9, 'what is the fastest road i can take to get to roosevelt field') 
+---------------
+
+---------------
+ Original Label: 10 
+*****Mini-cluster 0*****
+(10, 'how is the 440 loop this morning') 
+(10, 'are there any det ##ours in pittsburgh today') 
+(10, 'is there still a det ##our on bottom rd') 
+(10, 'are there road closure ##s along this route') 
+(10, 'is rush hour over yet') 
+(10, 'should i avoid 146 ##th street this morning') 
+(10, 'chicago rush hour please') 
+(10, 'should i be taking another alternative route due to traffic on us 41') 
+(10, 'are there any det ##ours in rose ##mond happening tomorrow afternoon') 
+*****Mini-cluster 1*****
+(10, 'will the snow affect traffic today') 
+(10, 'can you update me about traffic') 
+(10, 'what is the traffic like in columbia at 4 ##pm') 
+(10, 'what ##s traffic like in roll ##a mo') 
+(10, 'can i avoid traffic on ca ##xton') 
+(10, 'is there a lot of traffic in minneapolis right now') 
+(10, 'is it traffic normal today') 
+(10, 'is traffic getting better or worse') 
+(10, 'is traffic heavy now') 
+(10, 'how is traffic on the garden state parkway north') 
+(10, 'is traffic heavy in the tampa area') 
+(10, 'is traffic light or heavy right now') 
+(10, 'how is the traffic in nyc now') 
+(10, 'what is traffic like in los angeles') 
+(10, 'please provide provide traffic details') 
+(10, 'what is the traffic like on dodge street') 
+(10, 'what is the current traffic in oklahoma city oklahoma') 
+(10, 'from where to where on route 28 is traffic backed up') 
+(10, 'what is the traffic like') 
+(10, 'what is the traffic in boca rat ##on now') 
+(10, 'what is the traffic like in downtown new york this morning') 
+(10, 'is this traffic due to construction') 
+(10, 'what is the traffic like right now in downtown tampa') 
+(10, 'is the traffic heavy in bel ##mar nj') 
+(10, 'what does the traffic look like on i ##80 tonight') 
+(10, 'how heavy was the traffic in cleveland') 
+(10, 'any traffic alert ##s') 
+(10, 'how bad is traffic today') 
+(10, 'what is the traffic in salt lake') 
+(10, 'what is the traffic between miami and key west') 
+(10, 'how is traffic currently') 
+(10, 'what is the traffic like in queens ny right now') 
+(10, 'is the traffic in new york heavy today') 
+(10, 'how ##s the traffic in charlotte') 
+(10, 'what is the traffic conditions in new orleans') 
+(10, 'is there traffic in midnight') 
+(10, 'current traffic reports') 
+(10, 'why is the traffic stopped on 94') 
+(10, 'what does the traffic look like in te ##me ##cula') 
+(10, 'where is the traffic backed up to the rain and flooding') 
+(10, 'what are the traffic times into downtown now') 
+(10, 'i need to know what traffic is like in portland') 
+(10, 'what is the traffic usually like at noon') 
+(10, 'how ##s the traffic on the florida turnpike') 
+(10, 'what is the traffic today') 
+(10, 'how is traffic in san francisco') 
+(10, 'what should i expect from traffic today') 
+*****Mini-cluster 2*****
+(10, 'i want to know if there ##s traffic') 
+(10, 'updated traffic info please') 
+(10, 'any traffic updates i should be aware of today') 
+(10, 'traffic updates') 
+(10, 'how ##s the traffic in dallas today') 
+(10, 'what is the traffic like in seattle') 
+(10, 'what ##s the traffic like in los angeles on saturdays') 
+(10, 'is traffic heavy on main street') 
+(10, 'what ##s the traffic like in jamaica ny') 
+(10, 'any traffic backup ##s on 91 north') 
+(10, 'how is dallas traffic this morning') 
+(10, 'check my route for traffic conditions') 
+(10, 'how is traffic in tampa') 
+(10, 'please give me traffic report') 
+(10, 'what is the traffic like in cleveland ohio right now') 
+(10, 'please tell me what traffic is like') 
+(10, 'how is the traffic in iron ##de ##qu ##oit') 
+(10, 'can you tell me how the traffic is in raleigh right now') 
+(10, 'how ##s the traffic') 
+(10, 'what is the traffic like in san francisco') 
+(10, 'how is the traffic flow on i 4') 
+(10, 'is there traffic on the 290 w today') 
+(10, 'can i please know the traffic for uptown charlotte today') 
+(10, 'what is the traffic like in raleigh currently') 
+(10, 'what is the traffic in chicago') 
+(10, 'traffic in washington dc') 
+(10, 'give me the traffic report for today') 
+(10, 'what is the traffic like in lu ##sby md') 
+(10, 'what is the traffic like in san francisco right now') 
+(10, 'how bad is the traffic on 217 right now') 
+(10, 'what is the traffic like in minnesota') 
+(10, 'how heavy is the traffic driving from greenville to new york') 
+(10, 'is a traffic heavy') 
+(10, 'how is traffic at downtown santa monica today') 
+(10, 'how is the traffic between denver and grand junction') 
+(10, 'what is causing this traffic on 45') 
+(10, 'what ##s the traffic like downtown jones ##boro') 
+(10, 'why is traffic so heavy') 
+(10, 'how is traffic on the new jersey turnpike south') 
+(10, 'what does the traffic look like') 
+(10, 'traffic in gr ##esh ##am') 
+(10, 'what ##s the traffic like in knoxville right now') 
+(10, 'how heavy is traffic in sharon right now') 
+(10, 'let me see the traffic right now') 
+(10, 'what is traffic like heading into atlantic city') 
+(10, 'how is the traffic in bo ##rden ##town') 
+(10, 'give me current traffic updates') 
+(10, 'is traffic heavy at rush hour in baltimore') 
+(10, 'is traffic fine in maryland parkway') 
+(10, 'traffic on 4th avenue') 
+(10, 'has the traffic delay cleared up on mo ##lton avenue') 
+(10, 'how is the traffic in dallas') 
+(10, 'how bad is the traffic in mesa right now') 
+(10, 'traffic report for atlanta') 
+(10, 'how is the traffic on grand central parkway') 
+(10, 'update me on the current traffic please') 
+(10, 'what is the traffic like on highway 75') 
+(10, 'is traffic heavy in manhattan today') 
+(10, 'what is traffic like in the morning') 
+(10, 'where are the det ##ours on grant now') 
+(10, 'is the traffic slow right now') 
+(10, 'please tell me what the traffic is like right now') 
+(10, 'what is the traffic situation') 
+(10, 'how cong ##ested is the traffic') 
+*****Mini-cluster 3*****
+(10, 'any construction delays') 
+(10, 'what ##s the traffic for h ##wy 40') 
+(10, 'are the roads leading to downtown pensacola clear of construction and accidents') 
+(10, 'what ##s the traffic on 385') 
+(10, 'is there an accident on 417 northbound') 
+(10, 'where is there a lot of traffic on my route') 
+(10, 'is us 95 north bound busy') 
+(10, 'is the traffic bad on the way to tampa') 
+(10, 'tell me about traffic delays on the way to chattanooga this afternoon') 
+(10, 'traffic on the 87') 
+(10, 'what kind of traffic issues should i anti ##ci ##pate driving to california from phoenix tonight') 
+(10, 'are there any accidents on my com ##mute') 
+(10, 'am i going to hit heavy traffic now on my way to salem') 
+(10, 'any accidents on my route') 
+(10, 'will i hit traffic on this route') 
+(10, 'what is the traffic like on 294 today') 
+(10, 'is there light traffic now') 
+(10, 'will i have any winter weather delays if im leaving at 415 ##pm on 105 ##th ave') 
+(10, 'are there construction delays on the pike today') 
+(10, 'how is the traffic on interstate 75 heading towards mc ##don ##ough') 
+(10, 'how much traffic is on my route') 
+(10, 'how does traffic look on i ##75 north bound') 
+(10, 'how ##s traffic on 441') 
+(10, 'how ##s the traffic on i ##80 to sacramento') 
+(10, 'should i expect delays getting to fort wayne if i leave in an hour') 
+(10, 'is the traffic slow or fast on h ##wy 35 this morning') 
+(10, 'are there any incidents on the road') 
+(10, 'are there any road closure ##s on my com ##mute') 
+(10, 'what ##s traffic like going towards route one') 
+(10, 'how is the traffic driving from athens to decatur') 
+*****Mini-cluster 4*****
+(10, 'where are the traffic delays at this evening') 
+(10, 'is bra ##zos road closed') 
+(10, 'what is the traffic like from norris ##town to bryn ma ##wr') 
+(10, 'traffic on bam ##mel') 
+(10, 'what are the usual traffic conditions in paris on thursday') 
+(10, 'what is traffic like on 35') 
+(10, 'where is they det ##ouring off az ##an st') 
+(10, 'can you please give me traffic details in salt lake city') 
+(10, 'are there any delays on the i ##9 ##5') 
+(10, 'what are the traffic delays') 
+(10, 'is it stop and go traffic today') 
+(10, 'what is the traffic at 4 pm') 
+(10, 'is traffic heavy on curtis street') 
+(10, 'what is the traffic like from hawaii to new york') 
+(10, 'is traffic at a stands ##till') 
+(10, 'is traffic bad between los angeles and san diego') 
+(10, 'is there a traffic delay between nashville and brent ##wood right now') 
+(10, 'are there any accidents on val vista') 
+(10, 'traffic today') 
+(10, 'traffic due to accidents') 
+(10, 'how bad is the traffic on i ##20 because of the accident') 
+(10, 'any traffic jam ##s on 1792') 
+(10, 'is traffic heavy on michigan avenue') 
+(10, 'what is the traffic on nj turnpike') 
+(10, 'what are the roads looking like this morning') 
+(10, 'any traffic accidents') 
+(10, 'any road works on baseline') 
+(10, 'what is the traffic on i ##27 ##0') 
+(10, 'tell me the traffic now') 
+(10, 'is traffic heavy coming into new york city right now') 
+(10, 'what is the traffic this morning') 
+(10, 'how is the traffic situation this evening') 
+(10, 'are there any construction going on on the international drive') 
+(10, 'what is the traffic like going to baton rouge') 
+(10, 'traffic for the next month please') 
+(10, 'what ##s going on for today ##s traffic') 
+(10, 'give me a traffic update for lunch time') 
+(10, 'how is the traffic from se ##bri ##ng fl to lake pl ##ac ##id fl') 
+(10, 'what does the traffic look like this afternoon') 
+(10, 'are there any road closure ##s in atlanta this week') 
+(10, 'has the traffic on h ##wy 63 ##5 lifted') 
+(10, 'are there any traffic slow ##down ##s in red ##mond') 
+(10, 'what is the traffic driving from minnesota to ontario') 
+(10, 'is traffic on i ##9 ##5 moving steadily') 
+*****Mini-cluster 5*****
+(10, 'you think there is traffic tonight at bays ##ide') 
+(10, 'are there any major accidents reported this morning') 
+(10, 'tell me traffic') 
+(10, 'will there be any traffic hold ##ups that you know of') 
+(10, 'how is the traffic in henrietta') 
+(10, 'please give me recent traffic updates') 
+(10, 'is there traffic on i ##9 ##5 to philadelphia right now') 
+(10, 'is there an accident on the loop 202') 
+(10, 'latest traffic news please') 
+(10, 'any traffic at all') 
+(10, 'is there any traffic on route 7') 
+(10, 'how ##s the traffic to sussex') 
+(10, 'is there weather related traffic today') 
+(10, 'how ##s the traffic') 
+(10, 'what ##s traffic like now') 
+(10, 'show me traffic report') 
+(10, 'are there any congestion ##s in alex road highway') 
+(10, 'tonight ##s traffic conditions') 
+(10, 'what is the traffic like going to newport news') 
+(10, 'what is the traffic looking') 
+(10, 'is there an accident on the 99 freeway') 
+(10, 'is traffic running smoothly') 
+(10, 'how ##s the traffic in elm ##hurst') 
+(10, 'are there any accidents on the roads right now') 
+(10, 'is traffic heavy on highway 13 right now') 
+(10, 'give me traffic information') 
+(10, 'how is the traffic on i ##64') 
+(10, 'what is the traffic like on i ##75') 
+(10, 'what is the traffic like on giles rd') 
+(10, 'how bad is traffic on i ##9 ##5 today') 
+(10, 'traffic alert ##s') 
+(10, 'current traffic forecast') 
+(10, 'are there any major accidents') 
+(10, 'any accidents in atlanta today') 
+(10, 'how is the traffic going to austin') 
+(10, 'any accidents on the road') 
+(10, 'any accidents to report in south bend') 
+(10, 'is there heavy traffic in 95 north right now') 
+(10, 'is there fair traffic') 
+(10, 'have there been any accidents today') 
+(10, 'are there any expected traffic delays') 
+(10, 'is there an accident causing traffic') 
+(10, 'check traffic on route') 
+(10, 'current traffic') 
+(10, 'is there a traffic forecast') 
+(10, 'traffic report for nashville') 
+(10, 'is traffic lighter than usual') 
+(10, 'is traffic moving on charles street') 
+*****Mini-cluster 6*****
+(10, 'is traffic usually heavy around 3 am from rus ##kin to tampa') 
+(10, 'is there usually bad traffic in dallas around 6 pm') 
+(10, 'will the roads in b ##lok m be clear after the du ##rian festival if i leave in 12') 
+(10, 'what is the traffic from nap ##a to sacramento if i leave right now') 
+(10, 'will the traffic have cleared up on 1604 by 6 ##pm') 
+(10, 'will i be sitting in traffic for a while this evening') 
+(10, 'what is the traffic driving from minneapolis to hopkins at 1 pm') 
+(10, 'traffic for b ##las ##del ny') 
+(10, 'what will the traffic be like around 500 ##pm today') 
+*****Mini-cluster 7*****
+(10, 'are there any accidents in atlanta') 
+(10, 'is there a wreck on fm 1960') 
+(10, 'are there any traffic projects on 15') 
+(10, 'how con ##je ##sted is route 60') 
+(10, 'is there an accident on i ##5') 
+(10, 'pot holes on my route to chicago') 
+(10, 'is there an accident on i ##9 ##5 north') 
+(10, 'is there a traffic jam on us ##22 ##3') 
+(10, 'are there any delays on i ##10') 
+(10, 'are there any det ##ours on my way to ohio') 
+(10, 'is route 1 backed up') 
+(10, 'are there accidents or slow downs on the way to cleveland') 
+(10, 'traffic on i 19 today') 
+(10, 'if h ##wy 41 clear') 
+(10, 'any traffic delays on highway 5') 
+(10, 'where is they det ##ouring off strong st') 
+(10, 'construction on route') 
+(10, 'is there any accidents on i ##66') 
+(10, 'is i ##45 backed up') 
+(10, 'are there any traffic issues') 
+(10, 'how is the traffic from sy ##oss ##et to queens') 
+(10, 'are the roads clear right now') 
+(10, 'construction on my route') 
+(10, 'traffic please') 
+(10, 'traffic on i ##9 ##5 pl ##ae ##se') 
+(10, 'no traffic in young ##stown') 
+*****Mini-cluster 8*****
+(10, 'how heavy is the traffic expected to be for the holiday') 
+(10, 'is the traffic in downtown omaha going to be light by noon') 
+(10, 'how long is traffic backed up on hurst ##bourne parkway') 
+(10, 'what roads are closed') 
+(10, 'when will they re ##open route 78 ##5') 
+(10, 'what is causing traffic to slow down') 
+(10, 'what ##s the drive like today') 
+(10, 'are the streets downtown blocked off this morning for the marathon') 
+(10, 'what is the current traffic on the 215') 
+(10, 'today ##s traffic is heavy') 
+(10, 'what time the traffic is heavy in 270') 
+(10, 'if i leave at 5 ##pm will there be a lot of traffic') 
+(10, 'construction downtown sara ##so ##ta') 
+(10, 'how long before traffic clears up') 
+(10, 'show me all the heavy traffic areas') 
+*****Mini-cluster 9*****
+(10, 'what does traffic look like in houston') 
+(10, 'what is traffic like in japan') 
+(10, 'is traffic in midtown heavy today') 
+(10, 'is the traffic heavy up ahead') 
+(10, 'are there traffic det ##ours ahead') 
+(10, 'what does the traffic look like on the 101 freeway') 
+(10, 'traffic on 6th avenue west') 
+(10, 'what ##s traffic like in downtown guthrie oklahoma') 
+(10, 'what ##s the traffic in chandler like now') 
+(10, 'what does my com ##mute look like') 
+(10, 'are there any traffic alert ##s on my route to downtown los angeles') 
+(10, 'how backed up is the las vegas strip right now') 
+(10, 'tell me what the traffic is like in jacksonville') 
+(10, 'why does the sign say slow traffic') 
+(10, 'what is the traffic like in denver right now') 
+(10, 'is the traffic heavy on all the routes') 
+(10, 'is my route free of accidents') 
+(10, 'what are ##the traffic conditions in toledo') 
+(10, 'what does traffic in dc look like') 
+(10, 'what is traffic like outside') 
+(10, 'traffic details in miami florida') 
+(10, 'how heavy is traffic on the 10 freeway right now') 
+(10, 'what ##s the traffic look like today') 
+(10, 'how much traffic is there in the 101 right now') 
+---------------
+
+---------------
+ Original Label: 11 
+*****Mini-cluster 0*****
+(11, 'i want to get to jon ##s work in less than 15 minutes without taking the h ##20 ##1') 
+(11, 'how to avoid traffic to work') 
+(79, 'miles to drive to work') 
+(11, 'what ##s the fastest way to work') 
+(11, 'which route is the quick ##est to take to get to work this morning') 
+(11, 'what is my quick ##est route to work if i leave now') 
+(11, 'best route to get to work today') 
+---------------
+
+---------------
+ Original Label: 12 
+*****Mini-cluster 0*****
+(12, 'give me the quick ##est way to get to michaels on wyoming by taking the freeway') 
+(12, 'is there any bus route to pub ##li ##x from my location') 
+(12, 'please show me a route between the public library and the nearest park') 
+(12, 'get me directions to the fashion square mall in orlando using toll roads') 
+(12, 'i need directions to bee city avoiding interstate ##s') 
+*****Mini-cluster 1*****
+(12, 'can you tell me how to get to gay ##lord palms by disney springs and the fastest route to') 
+(12, 'directions to the skating rink near the airport') 
+(12, 'can i get to universal studios from disney ##world by taxi') 
+(12, 'give me directions to 12 main street in center ##ville from here') 
+(12, 'how do i get from here to the car dealers ##hip on commercial where i bought my car') 
+---------------
+
+---------------
+ Original Label: 13 
+*****Mini-cluster 0*****
+(13, 'ac on') 
+(13, 'did my dad schedule his yearly exam with his der ##mat ##ologist') 
+(13, 'fl ##ota ##tion sessions group ##on') 
+(13, 'do you like school') 
+(13, 'which') 
+*****Mini-cluster 1*****
+(13, 'are their any es ##ports bars near me that are open till midnight') 
+(13, 'what restaurants are open on christmas around here') 
+(13, 'what italian restaurants in the area have reservations available at 7 pm tonight') 
+(13, 'who has the cheap ##est food next to the concert arena') 
+(13, 'where are the best bars') 
+(13, 'which colleges have accepted my black friends for admission') 
+(13, '# 1 nightclub in downtown manhattan') 
+(13, 'are any of my friends from paint night going to the art museum exhibit') 
+(13, 'price of gas locally') 
+(13, 'what restaurants are having speed dating in greenville') 
+(48, 'where is the best place to park tonight for the festival of lights') 
+(13, 'who has watched the latest super hero movie') 
+(13, 'is their an es ##ports lounge with a grill nearby') 
+(13, 'is there uber service in this town') 
+*****Mini-cluster 2*****
+(13, 'what time does the nearest parking garage close') 
+(13, 'late ##night bars chicago north shore') 
+(13, 'what time does mcdonald ##s close') 
+(13, 'show me children ##s museums near san diego') 
+(13, 'what is the oldest building in this town and is it a historical landmark') 
+(13, 'hours for disney world this weekend') 
+*****Mini-cluster 3*****
+(13, 'make a post to all my local social media friends to meet me at 7 ##pm at ami ##gos') 
+(13, 'where should i go on vacation') 
+(13, 'what places can i go for the most reasonable prices') 
+*****Mini-cluster 4*****
+(13, 'what ##s up') 
+(13, 'car dealers ##hips having sales this weekend') 
+(13, 'new stores that opened in the month of december') 
+(13, 'family museums in las vegas') 
+(13, 'where did i store all my photos of my second trip to london') 
+(13, 'what time does tomorrow ##s game start') 
+(13, 'price of lemon ##s') 
+(13, 'where to eat in hollywood tonight') 
+*****Mini-cluster 5*****
+(48, 'when do we sign up for the marathon that is next month') 
+(48, 'top 10 sights in san francisco') 
+(48, 'what store has deal on baby dia ##pers right now') 
+(48, 'im looking for a cheap pizza place that delivers to or ##mond beach') 
+(48, 'best concert halls') 
+(48, 'bring wine tomorrow night') 
+(13, 'hip downtown clubs in new york') 
+(48, 'is the museum event formal') 
+(13, 'nightclub ##s in miami with best reviews to visit tomorrow night') 
+(48, 'what bars near me are open after midnight') 
+*****Mini-cluster 6*****
+(13, 'which restaurants are my friends tending to eat at the most') 
+(13, 'how much will college cost for my son') 
+(13, 'what kind of flowers did you plant') 
+(13, 'is daniela art performance next week') 
+(13, 'who would you like to move to a new place with') 
+(13, 'when was the last time catherine wrote something on her mothers profile') 
+(13, 'how far is numbers from me') 
+(13, 'what is the name of the new song by s ##za just released last month') 
+(13, 'keep my schedule for the weekend open for games') 
+(13, 'will glenn be able to take good pictures of sandy') 
+(13, 'bars that allow dogs near charlotte') 
+(13, 'where does my college rate among all colleges in the united states') 
+*****Mini-cluster 7*****
+(13, 'is any restaurants in my neighborhood family friendly') 
+(13, 'where is a bb ##q restaurant in portland') 
+(13, 'are tickets still available to alton brown in indianapolis') 
+(13, 'i want to go to a bar after the colts game where would you recommend') 
+(13, 'best place to christmas shop near me') 
+(13, 'malls near el paso that are closed') 
+(13, 'best winery to visit in ridge ##field') 
+(13, 'who has gone to my favorite restaurant') 
+(13, 'where did randall going camping last year') 
+(13, 'what are some popular places to take outdoor holiday photos within 30 miles of me') 
+*****Mini-cluster 8*****
+(13, 'is their an es ##ports lounge near me') 
+(13, 'places to see around el paso') 
+*****Mini-cluster 9*****
+(31, 'is jack going to the concert') 
+(13, 'have the games for next month on stand ##by') 
+---------------
+
+---------------
+ Original Label: 14 
+*****Mini-cluster 0*****
+(14, 'is there a train stop near mass ave in boston') 
+---------------
+
+---------------
+ Original Label: 15 
+*****Mini-cluster 0*****
+(15, 'is the rain making it hard to get to the rugby tournament today') 
+(15, 'will i run into flooding on my way to the bike show') 
+(15, 'are the roads snow ##pack ##ed on the way to the ski santa fe brew ##ski festival') 
+---------------
+
+---------------
+ Original Label: 16 
+*****Mini-cluster 0*****
+(16, 'show me how the traffic will effect my drive to work') 
+(16, 'are there any traffic incidents headed to work today') 
+(16, 'can you see if there are any obstruction ##s to work today') 
+(16, 'what does my route to work look like this morning') 
+(16, 'what is the traffic like on my way to work') 
+(16, 'what does my work com ##mute look like today') 
+*****Mini-cluster 1*****
+(16, 'is there construction on my way to work today') 
+*****Mini-cluster 2*****
+(16, 'give me a traffic update for my com ##mute to work') 
+(16, 'how ##s traffic to work today') 
+(16, 'what will traffic be like on my way to work tomorrow') 
+(16, 'please update me on traffic to work') 
+(16, 'is there construction on my route to work') 
+(16, 'is the traffic on the way to work bad this morning') 
+(16, 'is there going to be heavy traffic when i leave work at 6 tonight') 
+(16, 'is my com ##mute to work clear') 
+(16, 'will there be a lot of traffic on my way into work') 
+(16, 'can you give me an update on traffic accidents on my com ##mute to work') 
+(16, 'are there any accidents along the way to work') 
+(16, 'will there be construction this morning on my way to work') 
+(16, 'will i be hitting traffic on the way to work today') 
+(16, 'are there any accidents on the way to my job this morning') 
+(16, 'what ##s my drive to work like this morning') 
+(16, 'are there any power lines on the way to work this late evening') 
+(16, 'any road obstruction ##s on my way to work') 
+---------------
+
+---------------
+ Original Label: 17 
+*****Mini-cluster 0*****
+(17, 'how far is it from san antonio to orlando florida') 
+(17, 'how far is florida from kansas city') 
+(17, 'how many miles are between water ##ville and augusta') 
+(17, 'how many miles from newport news to kansas city missouri') 
+(17, 'show me the distance between jones ##boro and little rock') 
+(17, 'how far is it between st louis and nashville') 
+(17, 'how far is miami from tampa') 
+(17, 'how many miles between los angeles and san francisco') 
+(17, 'how many miles between des moines and an ##ken ##y') 
+(17, 'how far away is sacramento california from louisville kentucky') 
+(17, 'how far apart are rome and venice') 
+(17, 'what is the distance between tucson and chicago') 
+(17, 'how many miles away in san diego') 
+(17, 'what ##s the distance between fort mill and atlanta') 
+(17, 'what ##s the distance between greenville nc and atlanta') 
+(17, 'what is the distance from augusta to decatur') 
+(17, 'what is the distance between bo ##ling ##brook and new orleans') 
+(160, 'how far away from richmond is route eight and what time should i be getting there') 
+(17, 'what is the distance between santa fe and albuquerque') 
+(17, 'what is the distance from tennessee to virginia') 
+(17, 'what ##s the distance between lake stevens and seattle') 
+*****Mini-cluster 1*****
+(17, 'how far apart is philadelphia and seattle') 
+(17, 'what is the distance from fl to italy') 
+(17, 'how far is it from houston to new orleans') 
+(17, 'what is the distance between la and san francisco') 
+(17, 'what ##s the distance between texas and arizona') 
+(17, 'i need to know how many miles are between portland and new york') 
+(17, 'what is the distance between raleigh and portland') 
+(17, 'what ##s the distance from florida to ohio') 
+(17, 'what ##s the distance between florida and louisiana') 
+(17, 'what is the distance between north carolina and california in miles') 
+(17, 'how far is detroit from grand rapids') 
+(17, 'what is the distance from san francisco to seattle') 
+(17, 'how far is it to get to chicago from raleigh nc') 
+(17, 'how far away is washington dc') 
+(17, 'how far is alaska from texas') 
+(17, 'what is the distance from tampa to new york') 
+(17, 'how many miles from dallas to houston') 
+(17, 'what is the distance between australia and new york') 
+(17, 'how many miles between fort worth and grape ##vine') 
+(17, 'how far does it take to drive to portland or') 
+(17, 'how far between georgia and florida') 
+(17, 'what is the distance from brooklyn new york to bulls gap tn') 
+(17, 'what is the distance from chicago to michigan') 
+(17, 'how many miles between boise and seattle') 
+(17, 'what is the distance between los angeles and houston texas') 
+(17, 'what the distance between tampa and clear ##water') 
+(17, 'how far is it from the california ##me ##xi ##co border to the alaska border') 
+(17, 'how far is cincinnati from denver') 
+(17, 'what is the distance between tokyo and alaska') 
+(17, 'how far is it from boston to new york city') 
+(17, 'what is the distance between west palm beach and miami') 
+(17, 'how many miles is it from san diego to los angeles') 
+(17, 'how many miles is it from new york city to boston') 
+(17, 'what the distance between florida and tennessee') 
+(17, 'what is the distance between key west and miami') 
+(17, 'how many miles is london to japan') 
+(17, 'what is the distance between georgia and florida') 
+(17, 'how many miles is columbia sc from charleston sc') 
+(17, 'how far is tampa to gettysburg') 
+(17, 'how far away is japan from korea') 
+*****Mini-cluster 2*****
+(17, 'how many miles is garden grove from santa cruz') 
+(17, 'how far from st johns n ##b to pei') 
+*****Mini-cluster 3*****
+(17, 'how far is it from duluth to rapid city') 
+(17, 'miles between greensboro nc and atlanta') 
+(17, 'what is the distance between san francisco california and new york city new york') 
+(17, 'distance between pensacola fl and atlanta georgia') 
+(17, 'i want to know how far it is to get from san juan puerto rico to new york city') 
+(17, 'what ##s the distance between albuquerque and santa fe') 
+(17, 'driving distance from los angeles to florida') 
+(17, 'what is the distance between broken arrow and sap ##ul ##pa') 
+(17, 'what ##s the distance between phoenix and scott ##sdale') 
+(17, 'how far is san francisco from berkeley') 
+(17, 'what is the distance between honolulu and ka ##ua ##i') 
+(17, 'how far between la and denver') 
+(17, 'what is the distance between colorado springs and denver') 
+(17, 'what ##s the mile ##age between florida and north carolina') 
+(17, 'what is the distance between eng ##lewood new jersey to orlando florida') 
+(17, 'how far is the drive to bars ##tow') 
+(17, 'distance between nc to mn') 
+(17, 'how many miles is it from new york to california') 
+(17, 'what is the distance between dallas and houston') 
+(17, 'what is the distance from calgary to vancouver') 
+(17, 'what is the distance from usa to china') 
+(17, 'what ##s the distance between auburn and birmingham') 
+(17, 'how many miles is there between seattle and olympia') 
+(17, 'what ##s the distance between june ##au and ke ##tch ##ika ##n') 
+(17, 'how many miles to texas') 
+(17, 'what is the distance from new york to los angeles') 
+(17, 'what is the driving distance from bridge ##water to lu ##dlow') 
+(17, 'how many miles between baltimore and orlando') 
+(17, 'what ##s the distance between hong kong and mac ##ao') 
+(17, 'what ##s the distance between london and edinburgh') 
+---------------
+
+---------------
+ Original Label: 19 
+*****Mini-cluster 0*****
+(19, 'how long is my drive home now') 
+(19, 'how long will it take for me to get home right now') 
+(19, 'how long will it take me to get to ana ##s house if i leave in 5 hours') 
+(19, 'how long till i get home') 
+(19, 'how long from my uncles house to amar ##illo') 
+(19, 'how long are you est ##imating me to get home') 
+(19, 'how long will my com ##mute be if i ride the bus to mom ##s house') 
+(19, 'duration to get to my girlfriends house') 
+(19, 'how long will it take me to granny ##s house if i leave at 9 this morning') 
+(19, 'how long till i get home') 
+(19, 'please provide the time it will take to get home') 
+(19, 'please tell me how long the drive home is') 
+(19, 'how long will it take for me to drive to my house') 
+(19, 'if i leave my house at 2 pm how long will it take me to get to atlanta') 
+(19, 'how long will it take for me to get home from eugene tonight') 
+(19, 'how long will it take me to get to da ##vian ##s house if i leave now') 
+(19, 'will my drive home be longer') 
+(19, 'how long is the drive to my in laws') 
+(19, 'how long would it take to drive to orlando fl from my house') 
+(19, 'how long will it take me to drive from my house to mein ##ong township') 
+(19, 'how long will it take me to reach mom ##s house by car this afternoon') 
+(19, 'how long will it take me to get home if i leave at 5 ##pm') 
+(19, 'how long will it take to get home today') 
+(19, 'if i leave in an hour how long will it take me to get to sam ##s house') 
+(19, 'how long is my drive home going to take') 
+(19, 'how long will it take me to get from ke ##ls ##is house to the french quarter using i') 
+(19, 'how long will my drive home be if i leave at 5 ##pm') 
+(19, 'how long will it take to get to jessie ##s if i leave at 2') 
+*****Mini-cluster 1*****
+(19, 'how long will it take me to drive home today') 
+(19, 'how long is my drive home from chicago') 
+(19, 'how long will my drive home be') 
+(19, 'how long will it take to get to lisa ##s house by bus') 
+(19, 'how long will it take to get home tonight') 
+(19, 'how long to get home right now') 
+(19, 'how much time is affected to arrive home from this accident') 
+(19, 'drive time to home at 5 ##pm') 
+(19, 'how long will it take me to get home at 5 ##pm') 
+(19, 'what ##s the drive time to get to uncle bob ##s house from rochester') 
+(19, 'how fast can i get from mom ##s house to downtown') 
+(19, 'how long should it take to drive home') 
+(19, 'how long from home to louisville') 
+(19, 'how many hours would it take to drive from my house to california') 
+(19, 'how long will it take to get to downtown from my home') 
+(19, 'how long to drive home') 
+---------------
+
+---------------
+ Original Label: 20 
+*****Mini-cluster 0*****
+(20, 'if i leave tomorrow at 9 am how long will it take to get to bryce canyon') 
+(20, 'how long will it take to get to the hospital') 
+(20, 'how long should it take to get to the mall if the construction is still going on') 
+(20, 'how long to drive from here to miami') 
+(20, 'what is the current drive time to mt hood') 
+(20, 'how long does it take to get to down town miami toni ##gh') 
+(20, 'how long will it take me to get to the hospital with current traffic conditions') 
+(20, 'how long is my drive to the doctor') 
+(20, 'how long will it take me to get to my doctors by train if i leave now') 
+(20, 'what the drive time from here to seat ##ac') 
+(20, 'tell me the drive time to the store') 
+(20, 'how long will it take me to get to the airport if i take no toll roads') 
+(20, 'how long it takes to go to the city at 7 ##am') 
+(20, 'how fast can i make it to the movie theater on route 57') 
+(20, 'com ##mute time to lax') 
+(20, 'how long will it take to get to the vet ##erina ##rians office if i leave right now') 
+(20, 'how long will it take to get to a houston zoo') 
+(20, 'how long will it take me to drive to the k ##ro ##ger on 13 mile rd if i') 
+(20, 'can i get to ike ##a within an hours drive') 
+(20, 'i need the time to get to the theater leaving at 9 ##pm') 
+(20, 'how long will it take to get to the next rest stop') 
+(20, 'how long will it take to get to archery today') 
+(20, 'how long will it take to drive to the mall') 
+*****Mini-cluster 1*****
+(20, 'san jose airport leaving now approximate travel time') 
+(20, 'how long will the drive be to 1980 churchill street if i leave at 3 ##pm') 
+(20, 'how long is my drive from lake ha ##vas ##u to needles california') 
+(20, 'using the i ##10 freeway how long will it take me to get to victoria gardens') 
+(20, 'how long will it take to get to the 5th ave theater tonight') 
+(20, 'what is my drive time to the city') 
+(20, 'how long will it take me to get to california from con ##ro ##e texas with no toll roads') 
+(20, 'how long will it take to get to the meadow concert hall') 
+(20, 'how long will it take me to get to dia with current weather conditions from limo ##n') 
+(20, 'get the time to the yankee stadium using route 11') 
+(20, 'drive time to amc tu ##sti ##n') 
+(20, 'how long will it take me to get to main st from here if i leave in 5 minutes') 
+(20, 'tell me the timing to get to the theater on fifth ave') 
+(20, 'how long is drive from my location to washington dc') 
+---------------
+
+---------------
+ Original Label: 22 
+*****Mini-cluster 0*****
+(22, 'how long will it take me to drive to my 7 ##pm meeting') 
+(22, 'how much extra time should i prepare if im driving to the justin bi ##eber show') 
+(22, 'how long will it take to get to av ##ril la ##vi ##gne show tonight') 
+(22, 'how long will it take me to drive to my 4 ##pm meeting') 
+(22, 'how long will the drive take me to get to my 3 ##pm doctor appointment') 
+(22, 'how long will it take to be on time for my 5 ##pm meeting') 
+(22, 'how much time will it take me to arrive to the baseball game with these tr ##af ##ic delays') 
+(22, 'how long will it take for me to drive to the rangers game') 
+(22, 'how long will it take me to get to the concert tonight') 
+(22, 'how long will it take me to go to the seahawks game tonight') 
+---------------
+
+---------------
+ Original Label: 23 
+*****Mini-cluster 0*****
+(23, 'if i leave now what time will i get home') 
+(23, 'if i leave now will i get to jack ##s by 8 ##pm') 
+(23, 'what time will i arrive at mom and dad ##s') 
+(23, 'can i make it to marks house in 15 minutes') 
+(23, 'tell me when will i arrive at jim ##s if i leave now') 
+(23, 'what time will i get to my dad ##s if i leave right now') 
+(23, 'what time will i get to joe ##s house if i leave now') 
+(23, 'what time will i be home') 
+(23, 'when should i arrive home based on the traffic') 
+(23, 'can i get from my house to st louis in less than 12 hours if i leave now') 
+*****Mini-cluster 1*****
+(23, 'what time would i arrive at my parents house if i leave by 2 pm') 
+(23, 'what is the earliest time i could get to sand ##us ##ky oh if i leave home at 8') 
+(23, 'eta for me driving home now') 
+(23, 'what time will it be when i arrive at sam ##s place if i leave now') 
+(23, 'what time will i get to maggie ##s house if i leave at 7 am') 
+*****Mini-cluster 2*****
+(23, 'can i make it to billy ##s house by 6 ##pm for the party tonight') 
+---------------
+
+---------------
+ Original Label: 24 
+*****Mini-cluster 0*****
+(24, 'i am looking for the best route for my 5 o ##cl ##ock doctors appointment') 
+(24, 'what ##s the fastest way to get to the fall out boy concert') 
+(24, 'get me driving directions to the american music awards in new york city') 
+*****Mini-cluster 1*****
+(24, 'how do i get to the seattle seahawks game from br ##eme ##rton') 
+(24, 'i want to go to the concert and get there by 9 ##pm please provide the best route during') 
+(24, 'best route alternative to get to mike ##s superb ##ow ##l party in ham ##den if i leave now') 
+*****Mini-cluster 2*****
+(24, 'is there another way around the det ##our to the blake sheldon concert') 
+---------------
+
+---------------
+ Original Label: 25 
+*****Mini-cluster 0*****
+(25, 'when should i leave to catch my 800 am flight out of seat ##ac') 
+(25, 'what time should i leave kris hair salon to reach he ##bas wedding before 7 pm') 
+---------------
+
+---------------
+ Original Label: 26 
+*****Mini-cluster 0*****
+(26, 'is there a faster way to get there') 
+(26, 'is there a way around this traffic') 
+(26, 'new route to avoid that accident') 
+(26, 'can we go around the heavy traffic areas') 
+(26, 'is there a route with less traffic') 
+(26, 'is there an alternate route to avoid so much traffic') 
+(26, 'is there an alternate route with less traffic') 
+(26, 'is there an alternate route to avoid construction on i ##19') 
+(26, 'are there det ##ours around this traffic') 
+(26, 'alternate route to avoid traffic') 
+(26, 'find me a new route to san marcus that gets there by 10') 
+(26, 'alternative route that bypass traffic jam') 
+(26, 'is there a faster way to get to old town') 
+(26, 'is there a way around this traffic') 
+---------------
+
+---------------
+ Original Label: 27 
+*****Mini-cluster 0*****
+(163, 'what is the distance from my house to school') 
+(27, 'how many minutes by car is maria ##s house from johns baseball game') 
+(157, 'i need directions from my brothers house in kyle to my mom ##s house in taylor that avoids toll') 
+*****Mini-cluster 1*****
+(27, 'how long will take me to get to the music concert if i leave home at 8 pm') 
+(27, 'how long will it take me to drive from justin ##s house to the selena gomez show') 
+---------------
+
+---------------
+ Original Label: 28 
+*****Mini-cluster 0*****
+(28, 'when is the latest i can leave work at make my 3 ##pm meeting in south lyon avoiding the') 
+(91, 'can i be in the ceremonial from my office before midnight') 
+(91, 'can i make a party starting at 8 ##pm if i leave work now at 6 ##pm') 
+---------------
+
+---------------
+ Original Label: 29 
+*****Mini-cluster 0*****
+(29, 'when should i leave if i am going to make it to the game by 8 ##pm') 
+(29, 'what time should i need to leave to be at spring festival by midnight') 
+(29, 'if i want to get to the justin timber ##lake concert by 5 ##pm what time should i leave') 
+(29, 'what time should i leave to make it to the lil kim concert at 9 ##pm') 
+(29, 'what time should i leave to make it to the pink concert tonight at 7 ##pm') 
+(29, 'what time should i take the train to make it to the cold ##play concert tomorrow') 
+(29, 'what time should i leave to make it to the party by 4 ##pm') 
+(29, 'at what time should i live to make gina ##s concert by 10 ##pm') 
+(29, 'what time will i need to leave to make it to the houston rockets game by 8 pm') 
+(29, 'what time should i leave to make it to the concert by 9 ##pm') 
+(29, 'what time should i leave to make it to the vikings game by 7 ##pm') 
+---------------
+
+---------------
+ Original Label: 30 
+*****Mini-cluster 0*****
+(30, 'how many miles is it to canada from here') 
+(30, 'what ##s the length of the route to the civic center') 
+(30, 'mile ##age from my location to chattanooga') 
+(30, 'how far away is the nearest bank') 
+(30, 'what is the distance to east hills mall') 
+(30, 'how far is it to the post office') 
+---------------
+
+---------------
+ Original Label: 32 
+*****Mini-cluster 0*****
+(32, 'i want to arrive at the concert downtown at 5 pm what time will i need to leave my') 
+(32, 'what time i need to leave my house to make it to eagles game by 4 ##pm') 
+(32, 'what time should i leave my home to get to the 7 ##pm concert in mobile tomorrow') 
+(32, 'dinner is at 5 ##pm if i am travelling on 64 what time should i leave the house') 
+(32, 'i need to be at the movies by 7 what time do i need to leave home') 
+---------------
+
+---------------
+ Original Label: 33 
+*****Mini-cluster 0*****
+(33, 'city hall location near my house') 
+(134, 'is there a gas station on my route home') 
+---------------
+
+---------------
+ Original Label: 34 
+*****Mini-cluster 0*****
+(34, 'what is the route with the least traffic congestion') 
+(34, 'what fastest route to reach nas ##r city from ta ##hrer street at 11 ##am') 
+(36, 'can i get to wall street by 1100 pm with taxi') 
+(34, 'what is the fastest route to ga ##tl ##in ##burg from jacksonville nc') 
+(34, 'what is the quick ##est route to downtown today') 
+(34, 'show me a path with clear traffic at 3 ##pm today') 
+(34, 'what ##s the best det ##our route to avoid traffic') 
+(34, 'what ##s the shortest route with the least traffic') 
+*****Mini-cluster 1*****
+(34, 'calculate a route to downtown la that avoids traffic') 
+(34, 'what is the best route to drive from ny to florida') 
+(34, 'directions to georgia from atlanta') 
+(34, 'is there a route from houston to austin with less traffic') 
+(34, 'show me routes that avoid toll ##s') 
+(34, 'please give me directions to downtown') 
+(34, 'could i have the directions from panama city fl to atlanta') 
+(34, 'what is the most scenic route to burlington vermont') 
+(34, 'best way to avoid travelling on 32nd street') 
+(34, 'what ##s the fastest route from houston to austin') 
+(34, 'can you give me directions from philadelphia to dc avoiding toll ##s') 
+(34, 'show me the best route to get to grants pass the fastest') 
+(34, 'what is the best way to get to kent during evening rush hour') 
+(34, 'get directions to downtown detroit without flooding') 
+---------------
+
+---------------
+ Original Label: 35 
+*****Mini-cluster 0*****
+(35, 'what time should tyler leave to make it from berry alabama to savannah ga by 6 pm saturday') 
+(35, 'what time would i have to leave ny to get to pittsburgh by 3 ##pm') 
+(35, 'if i need to be in columbus by 5 ##pm what time should i leave cleveland') 
+(35, 'what time should i leave to reach cairo by 700 ##pm') 
+(35, 'what time do i need to leave norman to arrive in oklahoma city by five o ##cl ##ock') 
+*****Mini-cluster 1*****
+(35, 'when is the best time to leave') 
+(35, 'what is the best time of day to leave for ny') 
+(35, 'when should i leave to miss traffic') 
+---------------
+
+---------------
+ Original Label: 36 
+*****Mini-cluster 0*****
+(36, 'how late am i going to be') 
+(36, 'what ##s the arrival time for downtown dc if we leave hampton around 2 in the morning') 
+(36, 'if i leave at 8 am when will i arrive in harrisburg') 
+(36, 'if i leave los angeles at 10 am when will i arrive in anaheim') 
+(36, 'when will i get to beaufort') 
+(36, 'will i make it to dc by four') 
+(36, 'if i leave at 3 when will i get to amherst') 
+(36, 'can i make it to ohio by 2 am') 
+(36, 'what is the time frame of arrival to downtown today') 
+(36, 'when will i arrive in italy if i depart at 6 pm by plane') 
+(36, 'what time will i arrive') 
+(36, 'if i leave for austin now what time will i get there') 
+(36, 'if i leave for houston now what time would i arrive') 
+(36, 'what time should i arrive to houston if i leave 9 ##am tomorrow morning') 
+*****Mini-cluster 1*****
+(36, 'what is my arrival time') 
+(36, 'can i get to wa ##uke ##gan by noon if i leave now') 
+(36, 'i need an eta for arrival in austin if i leave now') 
+(36, 'if i take a bus to downtown now when should i arrive') 
+(36, 'can i get to maine before 6 pm') 
+(36, 'can i arrive at denver at 3 ##pm if i leave in 30 minutes') 
+(36, 'if i leave right now can i get to new york city before one o clock pm') 
+(36, 'can i get to columbus by 700 if i leave now') 
+(36, 'can i get to chicago by 500 ##pm with the current traffic conditions') 
+(36, 'what time can i make it to cat ##ua passing through lo ##nd ##rina downtown without any downed power') 
+(36, 'if i leave now can i be downtown in 10 min ##s') 
+---------------
+
+---------------
+ Original Label: 37 
+*****Mini-cluster 0*****
+(37, 'what time should i leave to arrive at the museum of natural history by 4 ##pm for free admissions') 
+(37, 'what time should i leave in the morning to get to the beach by noon') 
+(37, 'when do i need to leave to get to the airport at noon') 
+(37, 'what time should i leave to make to to the theater by 4') 
+(37, 'how soon will i have to leave to get to lincoln theater by 4 pm') 
+---------------
+
+---------------
+ Original Label: 38 
+*****Mini-cluster 0*****
+(54, 'how long will it take to get from target to wal ##mart tomorrow if i take the bus') 
+(38, 'how many minutes will it take for me to get to the nearest shop ##rite if i leave my') 
+*****Mini-cluster 1*****
+(38, 'how long will it take me to drive from my parents house to downtown disney') 
+(38, 'time to home using expressway') 
+(38, 'how long will it take me to get home from the doctors office') 
+(38, 'how long is the drive from my current location to home') 
+(38, 'how long will it take me to get to ahmed ##s house from here if i leave now') 
+(38, 'how long will it take to get to dad ##s house from here') 
+(38, 'how long will it take me to drive home from here') 
+(38, 'get the time to the interstate using h ##wy 64 ##1 from my parents house') 
+(38, 'how long will it take me to drive to cost ##co from my house') 
+(38, 'how long will it take me to drive to am ##eri ##plex theater from my house') 
+(38, 'how long will it take me to get from my sister karen ##s house to the wal ##mart in') 
+(38, 'time to get from my location to home leaving now') 
+(38, 'how long to get home from the airport when my flight lands') 
+---------------
+
+---------------
+ Original Label: 39 
+*****Mini-cluster 0*****
+(39, 'how do i get to dale ##y plaza from my house and avoid the flooded streets') 
+(39, 'which highway will get me home faster') 
+(39, 'tell me what the fastest way is to get from my house to the concert hall') 
+(39, 'can you give me directions to the dallas courthouse on commerce street from my house with no toll roads') 
+(39, 'what route will how the least traffic delays at this time to reach waterford lakes town center from my') 
+(39, 'get me driving directions to the west ##far ##ms mall from my house') 
+*****Mini-cluster 1*****
+(39, 'what ##s the best way to get from my house to central station in denver right now') 
+(39, 'can you tell me how to get to universal city walk without using i ##4 from my house') 
+(39, 'if i want to be home in an hour which freeway should i take with the least amount of') 
+(39, 'what freeway should i take if i want to have the quick ##est route to home') 
+(39, 'route me to angie ##s house in naples florida') 
+(39, 'directions from home to the orlando airport without traffic i need to arrive at 4 ##pm') 
+---------------
+
+---------------
+ Original Label: 40 
+*****Mini-cluster 0*****
+(40, 'what time would i arrive at the baseball park if i left work at 2 in the afternoon and') 
+(40, 'what time will i arrive at work if i leave my current location now') 
+(75, 'if i take university all the way will i be late to work') 
+(40, 'will i make it to providence university by 3 ##pm if i leave at 1 ##pm from my company') 
+---------------
+
+---------------
+ Original Label: 41 
+*****Mini-cluster 0*****
+(41, 'have the snow pl ##ows run in town yet or are the roads still covered') 
+(41, 'is campbell st downtown flooded again and closed') 
+*****Mini-cluster 1*****
+(52, 'are the roads leading to wal ##mart safe to drive on') 
+(52, 'what are the driving conditions today for the ns ##p') 
+(52, 'are road conditions expected to delay large truck deliveries') 
+(41, 'are the roads icy on the freeway') 
+(52, 'what are the current road conditions') 
+---------------
+
+---------------
+ Original Label: 43 
+*****Mini-cluster 0*****
+(155, 'how is the traffic to the horse expo right now can i get there by 6') 
+(43, 'will i arrive to the music festival at 6th october stage before dawn if i leave at 1 am') 
+*****Mini-cluster 1*****
+(43, 'if i leave here at 5 am when will i get to football game') 
+(101, 'will i make the game at ms ##g in nyc if i leave work at 6 pm') 
+---------------
+
+---------------
+ Original Label: 44 
+*****Mini-cluster 0*****
+(44, 'will the torch relay slow down traffic on i ##9 ##4 around 8 am today') 
+(44, 'what are the current road conditions right now on my way to the leafs game') 
+(44, 'are there traffic jam ##s already for the monster jam event') 
+(44, 'are there any delays on the way to the bulls game') 
+(44, 'will the construction and the yankees game cause a traffic jam later today') 
+(44, 'expected traffic during wednesday ##s ball game') 
+(44, 'what kind of traffic should i expect if im driving to get to see elton john') 
+(44, 'how is the traffic on the way to basketball game') 
+(44, 'any delays on the way to the bulls game') 
+(44, 'will i run in to construction on the way to the b ##lm rally') 
+(44, 'is traffic going to be bad for the lakers game tonight') 
+---------------
+
+---------------
+ Original Label: 45 
+*****Mini-cluster 0*****
+(45, 'will the downed power line on 60th street make me late to my appointment at 1 if i leave') 
+(45, 'can i make it to my 6 pm meeting if i leave now and don ##t take i ##65') 
+(45, 'when will i arrive at my 6 ##pm appointment if i leave now') 
+(45, 'what time will i make my doctors appointment if i leave in 5 minutes') 
+(45, 'if i leave at 9 ##am will i make it to my first meeting with john in the morning') 
+(45, 'if i leave at 9 ##am will i make it to my first meeting with mohamed in the morning') 
+*****Mini-cluster 1*****
+(45, 'if i live at 11 ##am will i make it to my spa session on time') 
+(45, 'can i get to my breakfast meeting on time if i leave in 5 minutes') 
+(45, 'can i make it to the buck game before tip ##off if i leave now') 
+(45, 'what time will i get to spokane for the hockey game if i left in 30 minutes') 
+(45, 'eta to concert at oak ##dale if i leave now and take route 10') 
+(45, 'what time will i arrive at my dinner party in brooklyn if i leave at 3 pm') 
+(45, 'will i make it to my 103 ##0 am appointment on time if i leave by 94 ##5') 
+(45, 'if i leave right now will i get to the parade before it starts at 8 ##am') 
+(45, 'will i be able to make it to my interview by 4 ##pm if i take the train and') 
+(45, 'am i going to be late for dinner at 6') 
+(45, 'will i make it to the trump speech in philadelphia by 11 am') 
+(45, 'can i get to the hi ##ckey game in portland by 10') 
+*****Mini-cluster 2*****
+(45, 'is the construction in connecticut going to make me late to the show in new haven') 
+(45, 'given the det ##ours on south street if i were to leave at 7 am tomorrow will i make') 
+(45, 'what is the estimated arrival time for the jazz festival') 
+(45, 'if i leave rock in the park at 100 ##am when will i get to manhattan') 
+---------------
+
+---------------
+ Original Label: 47 
+*****Mini-cluster 0*****
+(47, 'times for special events at the zoo near me') 
+*****Mini-cluster 1*****
+(47, 'towns with concerts near me on saturday') 
+(47, 'movie in the park events nearby this week') 
+---------------
+
+---------------
+ Original Label: 48 
+*****Mini-cluster 0*****
+(48, 'are there any pet ##ting zoo ##s in ole ##an ny and when are they open') 
+(48, 'pumpkin patches in ha ##vas ##u') 
+(48, 'need a themed restaurant in lower manhattan tonight') 
+(48, 'places to shop') 
+(48, 'how much are the tickets for the concert') 
+(48, 'how much are door passes for brady theater') 
+(48, 'new clubs to try out') 
+(48, 'cancel my events for today i am sick') 
+(48, 'when can i start buying tickets to the nut ##cr ##acker') 
+(48, 'popular restaurants in the flat ##iro ##n area') 
+---------------
+
+---------------
+ Original Label: 49 
+*****Mini-cluster 0*****
+(49, 'how long to drive from home to in laws') 
+(49, 'how long will it take to get to nora ##s from jays if i leave around 8 ##pm') 
+(49, 'what time it will take if i start driving from my aunt house to my sister house') 
+(49, 'how long will it take me to get to sand ##is house if i leave my mom ##s now') 
+(49, 'driving time from aimee ##s to janice ##s') 
+(49, 'how long does it take to get home from john and laura ##s') 
+---------------
+
+---------------
+ Original Label: 50 
+*****Mini-cluster 0*****
+(50, 'which is the fastest way to school avoid accident block ##age') 
+(159, 'can i make it to school on time with the traffic') 
+---------------
+
+---------------
+ Original Label: 51 
+*****Mini-cluster 0*****
+(51, 'is the freeway clear from here to the beach right now') 
+---------------
+
+---------------
+ Original Label: 52 
+*****Mini-cluster 0*****
+(52, 'what are the road conditions on i ##10') 
+(52, 'is the road still flooded in poor valley penn ##ington gap this morning') 
+(52, 'are the roads clear on highway 80 east') 
+(52, 'is the fog slowing down freeway 5') 
+(52, 'are the roads icy tonight') 
+(52, 'is the snow blocking route 5') 
+(52, 'are the roads slippery') 
+(52, 'any snow alert before noon in jersey city') 
+(52, 'is there flooding on the new jersey turnpike south heading towards philadelphia today') 
+(52, 'is there any flooding on capitol expressway this morning') 
+(52, 'are the roads snowy this morning') 
+---------------
+
+---------------
+ Original Label: 53 
+*****Mini-cluster 0*****
+(53, 'how long will it take for me to drive to my 8 ##pm meeting with dane if i take') 
+(53, 'how long will it take to get to the football game using the highway') 
+(53, 'can you tell me how long it will take me to get to met ##life for the wine show') 
+---------------
+
+---------------
+ Original Label: 54 
+*****Mini-cluster 0*****
+(54, 'how long does it take to go from target to sp ##rou ##ts') 
+(54, 'how long is the drive from norman ##dale college to mall of america') 
+(54, 'what ##s the total driving time to the singing hills mall from where i am') 
+(54, 'what is the drive time from here to the nearest park with a swimming pool') 
+(54, 'how long will it take to drive to yellowstone from here') 
+(54, 'how long does it take to reach the air force hospital from cairo festival city mall') 
+(54, 'how long will it take me to drive from tb ##cc in till ##amo ##ok to the south county') 
+---------------
+
+---------------
+ Original Label: 55 
+*****Mini-cluster 0*****
+(55, 'what ##s my travel time to work') 
+(55, 'how long is my drive to work today') 
+(55, 'how long will take me to drive to work today') 
+(55, 'how long of a drive it is to tampa from my job') 
+(55, 'traffic drive time to work') 
+(93, 'how long to peters work if i take the streets') 
+(55, 'how long is the drive to work') 
+(55, 'how long will it take to get to work') 
+(55, 'how long will traffic take me to get to work') 
+---------------
+
+---------------
+ Original Label: 56 
+*****Mini-cluster 0*****
+(56, 'please tell me how long it will take to get home from my work') 
+(56, 'how long it takes from my work to home') 
+(56, 'how long would it take me to drive to adams house if i left work at 4 to go') 
+---------------
+
+---------------
+ Original Label: 58 
+*****Mini-cluster 0*****
+(58, 'help me find cooking classes for couples in my area') 
+(58, 'any events in our neighborhood with food and music') 
+(58, 'are there any comic book events going on in my town in the next few months') 
+(58, 'what time is trick or treating in my neighborhood') 
+---------------
+
+---------------
+ Original Label: 59 
+*****Mini-cluster 0*****
+(59, 'what ##s the distance between my home and new york city') 
+(130, 'how many miles from my house to work') 
+(59, 'how far from my house to sweet ##water tennessee') 
+(59, 'how many miles is it to young ##stown ohio from my home') 
+---------------
+
+---------------
+ Original Label: 61 
+*****Mini-cluster 0*****
+(61, 'is there traffic going to school today') 
+*****Mini-cluster 1*****
+(61, 'check school route for heavy traffic') 
+(61, 'is there any traffic on the way to school') 
+(61, 'how does my ride to school look') 
+(176, 'how heavy is traffic on the way home from school') 
+---------------
+
+---------------
+ Original Label: 62 
+*****Mini-cluster 0*****
+(62, 'is there any traffic from here to my house') 
+(62, 'how is the traffic from home to the nearest hospital') 
+(62, 'what kind of traffic is there between here and my mom ##s house') 
+(62, 'is there any traffic delays between my house and south jones high school') 
+(62, 'is the freeway is crowded on my way to my an ##cles house on friday evening') 
+---------------
+
+---------------
+ Original Label: 63 
+*****Mini-cluster 0*****
+(63, 'am i going to make it to my job interview if i leave my home right now') 
+(63, 'the games at noon can i leave home at 113 ##0 and still arrive on time') 
+---------------
+
+---------------
+ Original Label: 64 
+*****Mini-cluster 0*****
+(64, 'can i get from here to my house without traffic before 5 ##pm') 
+(64, 'meg ##han is leaving her house in 2 hours about what time will she arrive to the beach house') 
+---------------
+
+---------------
+ Original Label: 65 
+*****Mini-cluster 0*****
+(65, 'how many miles is au ##tz ##one away from my house') 
+(65, 'how many miles from home to airport') 
+---------------
+
+---------------
+ Original Label: 66 
+*****Mini-cluster 0*****
+(66, 'are there toll ##s on this route') 
+---------------
+
+---------------
+ Original Label: 67 
+*****Mini-cluster 0*****
+(67, 'is the over ##pass still closed at north point parkway and atlanta h ##wy') 
+(67, 'traffic from exit 18 to exit 23 in syracuse') 
+*****Mini-cluster 1*****
+(143, 'what is the cause of the traffic on my way to my work in new cairo') 
+(67, 'traffic from here to doctor office') 
+*****Mini-cluster 2*****
+(67, 'traffic conditions near me') 
+---------------
+
+---------------
+ Original Label: 68 
+*****Mini-cluster 0*****
+(68, 'how ##s traffic around the am ##r dia ##b show in alexandria') 
+(68, 'how ##s traffic around the music festival in tampa') 
+(68, 'how is traffic condition around the art festival in ann arbor') 
+(68, 'what time do they close off duval st in key west for the mas ##que ##rade march') 
+---------------
+
+---------------
+ Original Label: 69 
+*****Mini-cluster 0*****
+(69, 'will the bishop ford get me home by 3 from mom ##s') 
+(69, 'if i leave by 10 ##pm from adrian ##s will i make it to lei ##las house before midnight') 
+---------------
+
+---------------
+ Original Label: 72 
+*****Mini-cluster 0*****
+(156, 'are the roads covered with ice and snow between my house and jeff ##s') 
+(72, 'what is the traffic like from home to sam ##s house') 
+---------------
+
+---------------
+ Original Label: 75 
+*****Mini-cluster 0*****
+(75, 'get the arrival time to work using closet route') 
+(75, 'would i be able to drive to work using easton ave and get there in 10 minutes') 
+*****Mini-cluster 1*****
+(75, 'what time will i arrive at the downtown office if i leave now') 
+(86, 'what time will i be home if i leave now from work') 
+(75, 'if i leave now can i reach my work by 8 am') 
+(75, 'if i left at 10 will i make it to scott ##s work in 15 minutes') 
+(75, 'when will i get to work if i leave now') 
+*****Mini-cluster 2*****
+(75, 'if i take the bus now can i reach my work by 7 am') 
+(75, 'am i late to work at this traffic') 
+(75, 'at what time would i arrive if i left now to go to work via the 405') 
+(75, 'if i leave now and take route 9 what time will arrive at work') 
+(75, 'will i arrive to work on time with the amount of traffic') 
+---------------
+
+---------------
+ Original Label: 76 
+*****Mini-cluster 0*****
+(76, 'are there any faster routes home') 
+(76, 'please direct give me an alternative route to get home') 
+---------------
+
+---------------
+ Original Label: 77 
+*****Mini-cluster 0*****
+(77, 'can you get me to long beach town center before bath and body works closes if i stop to') 
+(77, 'can i get to the hospital in orlando in 10 minutes from here') 
+(77, 'if i leave the va hospital in bi ##lo ##xi at 9 ##am and only use 110 what time') 
+(77, 'can i get to the post office by this morning at 8 from here') 
+---------------
+
+---------------
+ Original Label: 78 
+*****Mini-cluster 0*****
+(78, 'start me from my house and direct me to chris ##s house to arrive early afternoon') 
+(78, 'get me from seattle to jessica ##s house to my home all within 2 hours') 
+(78, 'can you help me get back home from lauren ##s house please') 
+---------------
+
+---------------
+ Original Label: 80 
+*****Mini-cluster 0*****
+(179, 'is there construction or det ##ours on i ##75 around the outlet grand opening') 
+(80, 'is there another route to get to my doctors ap ##oint ##ment other than the i ##4') 
+---------------
+
+---------------
+ Original Label: 83 
+*****Mini-cluster 0*****
+(83, 'if i want to arrive in sugar ##land by 10 ##am what time should i leave home') 
+(83, 'what time do i need to leave home to get to orlando fl by 8 am tomorrow') 
+(83, 'if the bus arrives in cleveland at 2 ##pm what time should i lev ##ae home to be there') 
+(83, 'what time is the best time for me to go home in the evenings to avoid traffic') 
+---------------
+
+---------------
+ Original Label: 84 
+*****Mini-cluster 0*****
+(84, 'is there traffic from home to work') 
+(84, 'will there be a lot of traffic on my way home from work') 
+(84, 'how much traffic between home and work') 
+(84, 'any construction on my way home from work') 
+---------------
+
+---------------
+ Original Label: 86 
+*****Mini-cluster 0*****
+(97, 'when ##s best departure time for me to leave work for home') 
+(86, 'with con ##st ##uc ##tion what time can i expect to arrive at work if i leave home at') 
+---------------
+
+---------------
+ Original Label: 87 
+*****Mini-cluster 0*****
+(87, 'where ##s the closest gas station') 
+---------------
+
+---------------
+ Original Label: 88 
+*****Mini-cluster 0*****
+(88, 'how long from here to sam ##s house of i take the expressway') 
+(88, 'how long will it take me to get the corona ##do mall from home on the freeway') 
+---------------
+
+---------------
+ Original Label: 92 
+*****Mini-cluster 0*****
+(92, 'how long will it take me to get to the wal ##mart on san jose from the school') 
+---------------
+
+---------------
+ Original Label: 94 
+*****Mini-cluster 0*****
+(94, 'i need directions from the hotel i am staying at to the ci ##val war game this weekend') 
+(94, 'tell me the quick ##est way to get to my 3 ##pm work meeting from whole foods') 
+(94, 'how do i get to my dinner with taylor if i don ##t take the highway') 
+---------------
+
+---------------
+ Original Label: 98 
+*****Mini-cluster 0*****
+(98, 'how can i get from my house to the utah shakespeare festival by 2') 
+(98, 'how do i avoid the mar ##di gr ##as parades on the way home') 
+---------------
+
+---------------
+ Original Label: 99 
+*****Mini-cluster 0*****
+(99, 'is the highway to the dog show still flooded this afternoon') 
+---------------
+
+---------------
+ Original Label: 103 
+*****Mini-cluster 0*****
+(103, 'how long will it take me to drive from work to the monsters game tonight') 
+---------------
+
+---------------
+ Original Label: 106 
+*****Mini-cluster 0*****
+(106, 'is there any toll ##s in the way') 
+(106, 'is there any gas station on road 50 to is ##ma ##elia') 
+---------------
+
+---------------
+ Original Label: 113 
+*****Mini-cluster 0*****
+(132, 'what time should i leave from here to get to the or ##ph ##eum at 700 pm') 
+(113, 'what time should i leave the library to make it to work by 6 ##pm') 
+(113, 'what time do i need to leave work if i have to be at the dog groom ##ers by') 
+---------------
+
+---------------
+ Original Label: 118 
+*****Mini-cluster 0*****
+(118, 'how long will my drive back from school take') 
+---------------
+
+---------------
+ Original Label: 120 
+*****Mini-cluster 0*****
+(120, 'give me directions to the store on allen street from school') 
+(120, 'tell me how to get to the movie theater from school') 
+---------------
+
+---------------
+ Original Label: 123 
+*****Mini-cluster 0*****
+(123, 'when will i arrive at school if i leave home at 2') 
+---------------
+
+---------------
+ Original Label: 129 
+*****Mini-cluster 0*****
+(145, 'what time is the parade starting on coast h ##wy and when ##s the best time for me to') 
+(129, 'i need to arrive to my sons school play this afternoon and what is the best time to leave') 
+---------------
+
+---------------
+ Original Label: 146 
+*****Mini-cluster 0*****
+(146, 'find an alternate route to the ##ra ##ped ##ia that avoids h ##wy 37 ##7 shortest distance') 
+---------------
+
+---------------
+ Original Label: 154 
+*****Mini-cluster 0*****
+(154, 'things to do in las vegas besides gambling') 
+---------------
+
+---------------
+ Original Label: 161 
+*****Mini-cluster 0*****
+(161, 'can i make it to a meeting at 7 ##pm at my office from my house at 6 ##pm') 
+(187, 'what is the driving time for the rodeo in caldwell and what time should i leave my house by') 
+---------------
+
+---------------
+ Original Label: 164 
+*****Mini-cluster 0*****
+(164, 'give me an alternate route from home to the key arena') 
+(177, 'are they still doing construction on scenic loop and if so what is the best way to get to') 
+---------------
+
+---------------
+ Original Label: 168 
+*****Mini-cluster 0*****
+(168, 'using my location how far is it to the up and what is the driving time') 
+---------------
+
