@@ -105,7 +105,7 @@ def train(**kwargs):
             optimizer.zero_grad()
             #train_loss = model(captions_t, masks, labels)
 
-            pooled_output, outputs = model(captions_t, masks)
+            _, _, outputs = model(captions_t, masks)
             train_loss = criterion(outputs, labels)
 
             train_loss.backward()
@@ -210,16 +210,19 @@ def test(**kwargs):
             labels = labels.to(device)
             masks = masks.to(device)
             with torch.no_grad():
-                pooled_output, outputs = model(captions_t, masks)
+                hidden_states, pooled_output, outputs = model(captions_t, masks)
                 print("Saving Data: %d" % i)
 
                 for ii in range(len(labels)):
                     key = labels[ii].data.cpu().item()
+                    
                     embedding = pooled_output[ii].data.cpu().numpy().reshape(-1)
+                    word_embeddings = hidden_states[-1][ii].data.cpu().numpy()
+                    
                     tokens = tokenizer.convert_ids_to_tokens(captions_t[ii].data.cpu().numpy())
                     tokens = [token for token in tokens if token != "[CLS]" and token != "[SEP]" and token != "[PAD]"]
                     original_sentence = " ".join(tokens)
-                    results[key].append((original_sentence, embedding))
+                    results[key].append((original_sentence, embedding, word_embeddings))
 
         torch.save(results, embedding_path)
     

@@ -31,11 +31,11 @@ class BertEmbedding(nn.Module):
         nn.init.xavier_normal_(self.classifier.weight)
 
     def forward(self, input_ids, mask, labels=None):
-        _, pooled_output = self.bert(input_ids, token_type_ids=None, attention_mask=mask)
+        hidden_states, pooled_output = self.bert(input_ids, token_type_ids=None, attention_mask=mask)
         pooled_output_d = self.dropout(pooled_output)
         logits = self.classifier(pooled_output_d)
         
-        return pooled_output, logits
+        return hidden_states, pooled_output, logits
         # loss = self.bert(input_ids, attention_mask=mask, labels=labels)
         # return loss
         
@@ -53,7 +53,7 @@ if __name__ == "__main__":
     num_labels = 2
     model = BertEmbedding(config, num_labels)
 
-    pooled_output, outputs = model(tokens_tensor)
+    hidden_states, pooled_output, outputs = model(tokens_tensor)
     print((pooled_output).shape)
     print(outputs)
 
