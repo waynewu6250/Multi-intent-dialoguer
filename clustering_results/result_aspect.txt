@@ -1,0 +1,2148 @@
+---------------
+ Current cluster: 8
+ Original Label: 62| is the freeway is crowded on my way to my ancles house on friday evening
+ Attention Words: ['my' 'way' 'is']
+---------------
+
+---------------
+ Current cluster: 10
+ Original Label: 24| which is the quicker way to the eat the street event if i leave at 3pm
+ Attention Words: ['eat' 'quicker' 'which']
+---------------
+
+---------------
+ Current cluster: 11
+ Original Label: 9| can i avoid freeways and get to salem by 4pm
+ Attention Words: ['4pm' 'to' 'can']
+ Original Label: 10| will i run into downed power lines on the way to santa barbara
+ Attention Words: ['the' 'to' 'way']
+ Original Label: 56| how long before i get home from work today
+ Attention Words: ['home' 'from']
+ Original Label: 6| are there any upcoming jazz shows at the independent
+ Attention Words: ['are' 'the' 'independent']
+ Original Label: 34| what is the best route to avoid this accident
+ Attention Words: ['route' 'best' 'the']
+ Original Label: 29| what time should i leave to make it to the alahlys game by 7pm
+ Attention Words: ['to' 'make' 'alahlys']
+ Original Label: 7| how is the traffic to go to the beach
+ Attention Words: ['go' 'beach']
+ Original Label: 24| is there a way to get to the green turtle music fest without having to go downtown tomorrow night
+ Attention Words: ['way' 'to' 'green']
+ Original Label: 1| when is traffic least heavy from here to home
+ Attention Words: ['traffic' 'when']
+ Original Label: 11| what is the best route to my office
+ Attention Words: ['best' 'to' 'route']
+ Original Label: 10| is there a construction being built on my way to sherif street right now
+ Attention Words: ['sherif' 'to' 'way']
+ Original Label: 16| are there any roads closed on my way to work
+ Attention Words: ['way' 'to' 'are']
+ Original Label: 55| what time have i wasted in traffic on the way to office
+ Attention Words: ['to' 'what' 'way']
+ Original Label: 0| how long does it take to drive to minneapolis
+ Attention Words: ['to' 'minneapolis']
+ Original Label: 5| which route is the quickest way home
+ Attention Words: ['the' 'quickest']
+ Original Label: 10| how much delay is traffic on my route
+ Attention Words: ['route' 'on']
+ Original Label: 19| how long till i get home
+ Attention Words: ['home' 'get' 'how']
+ Original Label: 8| are there any shows in fargo this weekend
+ Attention Words: ['any' 'fargo']
+ Original Label: 10| how much traffic is there in the 101 right now
+ Attention Words: ['in' 'the' '101']
+ Original Label: 10| what is the traffic usually like at noon
+ Attention Words: ['traffic' 'the']
+ Original Label: 2| can i get from here to ontario by 11
+ Attention Words: ['get' '11']
+ Original Label: 22| how long will my drive to the womens march take
+ Attention Words: ['how' 'drive' 'to']
+ Original Label: 8| are there any holiday events this weekend in kingsport
+ Attention Words: ['kingsport' 'in' 'are']
+ Original Label: 10| is there a traffic delay on route 112
+ Attention Words: ['112' 'is']
+ Original Label: 2| what will be my arrival time in san jose when started tonight at 9pm from here
+ Attention Words: ['san' 'at' 'what']
+ Original Label: 0| how long will it take to get to houston
+ Attention Words: ['to' 'get' 'to']
+ Original Label: 16| is there going to be heavy traffic when i leave work at 6 tonight
+ Attention Words: ['leave' 'there' 'going']
+ Original Label: 29| what time should i leave to make it to the dodgers game by 8 pm
+ Attention Words: ['to' 'the' 'dodgers']
+ Original Label: 4| is there more traffic than usual on my drive home
+ Attention Words: ['home' 'drive']
+ Original Label: 34| whats the best detour route to avoid traffic
+ Attention Words: ['avoid' 'to' 'best']
+ Original Label: 10| whats the traffic like in st louis right now
+ Attention Words: ['louis' 'now']
+ Original Label: 10| what is the traffic like right now in downtown tampa
+ Attention Words: ['the' 'like' 'traffic']
+ Original Label: 9| what is the fastest way to get to gifford hospital
+ Attention Words: ['gifford' 'get' 'to']
+ Original Label: 7| how bad is the traffic to the airport today
+ Attention Words: ['today' 'the' 'airport']
+ Original Label: 8| when is the festival of lights going on in riverside
+ Attention Words: ['riverside' 'when' 'the']
+ Original Label: 29| what time should i leave to make it to the sox game by 7pm
+ Attention Words: ['it' 'to' 'the']
+ Original Label: 37| what time should i leave to make it to the iguatemi cinemark movie theater by 6pm
+ Attention Words: ['make' 'the' 'to']
+ Original Label: 64| will i reach publix on rucker road by 6 pm if i leave home at 4 pm
+ Attention Words: ['at' 'home' 'will']
+ Original Label: 138| what time should i leave to get to school by 8am
+ Attention Words: ['school' 'to']
+ Original Label: 61| are there any delays on my way to school this morning
+ Attention Words: ['way' 'there' 'any']
+ Original Label: 29| what time should i leave to make it to the pink concert tonight at 7pm
+ Attention Words: ['make' 'pink' 'it']
+ Original Label: 65| what is the distance from my house to the nearest walmart
+ Attention Words: ['house' 'the' 'distance']
+ Original Label: 7| should i expect any delays on the expressway tonight
+ Attention Words: ['expressway' 'expect' 'i']
+ Original Label: 8| are there any concerts going on this weekend
+ Attention Words: ['weekend']
+ Original Label: 10| is the traffic heavy today from san antonio to houston
+ Attention Words: ['antonio' 'traffic' 'is']
+ Original Label: 10| what is the traffic like right now on ahtanum
+ Attention Words: ['on' 'like' 'traffic']
+ Original Label: 10| whats the traffic usually like on friday night in st louis
+ Attention Words: ['louis' 'traffic' 'the']
+ Original Label: 0| how long is my drive to merced going to take
+ Attention Words: ['to' 'drive']
+---------------
+
+---------------
+ Current cluster: 21
+ Original Label: 39| if i want to be home in an hour which freeway should i take with the least amount of traffic
+ Attention Words: ['i' 'if' 'take']
+---------------
+
+---------------
+ Current cluster: 27
+ Original Label: 8| whats going on in salem in january
+ Attention Words: ['in' 'salem' 'whats']
+ Original Label: 7| what is traffic in i70 in denver during the day
+ Attention Words: ['traffic' 'in']
+---------------
+
+---------------
+ Current cluster: 47
+ Original Label: 8| band performances in memphis
+ Attention Words: ['band']
+ Original Label: 1| will traffic be as bad as yesterday
+ Attention Words: ['will']
+ Original Label: 8| things to do in utah
+ Attention Words: ['things']
+ Original Label: 8| things to do today in france
+ Attention Words: ['things']
+ Original Label: 8| renaissance fairs in petal ms in january
+ Attention Words: ['renaissance']
+ Original Label: 10| traffic situation in downtown la
+ Attention Words: ['traffic']
+ Original Label: 26| take a detour please
+ Attention Words: []
+ Original Label: 13| fifth third field is located where
+ Attention Words: []
+ Original Label: 8| things to do in austell georgia
+ Attention Words: ['things']
+ Original Label: 8| events in seattle tomorrow
+ Attention Words: []
+ Original Label: 8| things to do in kansas city this weekend
+ Attention Words: ['things']
+ Original Label: 8| book festivals happening this month
+ Attention Words: ['book']
+ Original Label: 1| does traffic increase when there are sport games
+ Attention Words: ['increase' 'does']
+ Original Label: 8| things to do in mississippi
+ Attention Words: ['things']
+ Original Label: 0| current time it takes due to lane closures to travel from charlotte to greensboro
+ Attention Words: ['takes' 'lane' 'current']
+ Original Label: 8| things to do in las vegas this weekend
+ Attention Words: ['things']
+ Original Label: 8| looking for festivals in brevard county for january
+ Attention Words: ['looking']
+ Original Label: 6| christmas eve candlelight services near me
+ Attention Words: ['christmas']
+ Original Label: 13| have the games for next month on standby
+ Attention Words: ['have']
+ Original Label: 8| new york events
+ Attention Words: ['new']
+ Original Label: 8| when is the nd glee club concert
+ Attention Words: []
+ Original Label: 10| where should i expect traffic
+ Attention Words: ['where']
+ Original Label: 8| festivals in washington dc
+ Attention Words: ['festivals']
+ Original Label: 8| things to do in las vegas
+ Attention Words: ['things']
+ Original Label: 17| how far away is portland oregon
+ Attention Words: ['how']
+ Original Label: 8| whats going on in memphis tomorrow
+ Attention Words: []
+ Original Label: 6| ice cream socials nearby
+ Attention Words: ['ice']
+ Original Label: 8| vegas mega concert for justin bieber
+ Attention Words: ['vegas']
+ Original Label: 13| find me a great wing bar in austin
+ Attention Words: ['find']
+ Original Label: 6| kid friendly events happening near me
+ Attention Words: ['kid']
+ Original Label: 9| route from central to uss kidd not using florida ave
+ Attention Words: ['route']
+ Original Label: 13| where was our family reunion in 2003
+ Attention Words: ['where']
+ Original Label: 8| things to do in orlando this weekend
+ Attention Words: []
+ Original Label: 10| any traffic backups on 91 north
+ Attention Words: []
+ Original Label: 10| give me some information about the road
+ Attention Words: ['give']
+ Original Label: 8| things to do in san diego
+ Attention Words: ['things']
+ Original Label: 6| bryant park markets this weekend
+ Attention Words: ['bryant']
+ Original Label: 58| christmas fun in my area
+ Attention Words: ['christmas']
+ Original Label: 8| things to do in montgomery alabama
+ Attention Words: []
+ Original Label: 10| what does traffic look like
+ Attention Words: ['what']
+ Original Label: 8| whats happening in dallas
+ Attention Words: []
+ Original Label: 8| things to do in weekend mornings
+ Attention Words: []
+ Original Label: 8| where was the show in chicago
+ Attention Words: ['where']
+ Original Label: 10| show me traffic
+ Attention Words: []
+ Original Label: 8| things to do downtown this month
+ Attention Words: []
+ Original Label: 48| discounts on local night clubs
+ Attention Words: ['discounts']
+ Original Label: 8| cool music concerts in dallas tonight
+ Attention Words: ['cool']
+ Original Label: 8| where is todays meeting in tacoma
+ Attention Words: ['where']
+ Original Label: 10| update traffic details
+ Attention Words: ['update']
+ Original Label: 10| what was traffic like this morning
+ Attention Words: ['what']
+ Original Label: 8| ill be in vegas next week whats going on
+ Attention Words: ['ill']
+ Original Label: 8| new years eve events
+ Attention Words: []
+ Original Label: 10| find out what the traffic is like downtown
+ Attention Words: ['find']
+ Original Label: 8| food festivals in buffalo within a month
+ Attention Words: []
+ Original Label: 8| events in dallas
+ Attention Words: ['events']
+ Original Label: 10| hows the traffic looking in downtown asheville now
+ Attention Words: ['hows']
+ Original Label: 8| things to do in atlanta next friday evening
+ Attention Words: ['things']
+ Original Label: 87| where is next gas station
+ Attention Words: []
+ Original Label: 10| show traffic in la county
+ Attention Words: ['show']
+ Original Label: 8| when is the next musical concert in charleston
+ Attention Words: ['when']
+ Original Label: 6| popular local events
+ Attention Words: ['popular']
+ Original Label: 9| from nasa in houston send me directions to galveston
+ Attention Words: ['from']
+ Original Label: 13| family friendly bars near me
+ Attention Words: ['family']
+ Original Label: 8| free family events going on this weekend
+ Attention Words: ['free']
+ Original Label: 0| drive time from sacramento to medford
+ Attention Words: []
+ Original Label: 8| where should i celebrate new years eve in wilmington nc
+ Attention Words: ['wilmington' 'where']
+ Original Label: 58| whats something fun to do in my state this week
+ Attention Words: []
+ Original Label: 14| find the nearest rest stop
+ Attention Words: ['find']
+ Original Label: 118| on friday morning how long is the commute to school
+ Attention Words: ['school' 'on']
+ Original Label: 8| potluck announcements
+ Attention Words: ['potluck']
+ Original Label: 8| film screenings in new york
+ Attention Words: ['film']
+ Original Label: 36| how late am i going to be
+ Attention Words: []
+ Original Label: 10| traffic please
+ Attention Words: ['traffic']
+ Original Label: 79| miles to work
+ Attention Words: ['miles']
+ Original Label: 19| how long before i arrive at trishs
+ Attention Words: ['how']
+ Original Label: 8| christmas music events in tampa this friday
+ Attention Words: []
+ Original Label: 10| any road closures on my typical route
+ Attention Words: []
+ Original Label: 6| find the nutcracker ballet near me
+ Attention Words: ['find']
+ Original Label: 8| christmas festivals in austin
+ Attention Words: []
+ Original Label: 146| show me alternative routes for walmart
+ Attention Words: ['show']
+ Original Label: 8| the next smashing pumpkins concert in sacramento 
+ Attention Words: ['the']
+ Original Label: 17| how many miles is it from new york to california
+ Attention Words: ['many' 'how']
+ Original Label: 1| are uturns aloud throughout university drive around the college
+ Attention Words: ['are']
+ Original Label: 8| any haunted houses open to the public next week
+ Attention Words: ['any']
+ Original Label: 10| is there road construction ahead
+ Attention Words: ['is']
+ Original Label: 8| macys parade at new york
+ Attention Words: ['macys']
+ Original Label: 10| estimated traffic delay on tomball freeway
+ Attention Words: ['estimated']
+ Original Label: 7| is this highway going to clear up soon
+ Attention Words: ['is']
+ Original Label: 10| traffic please
+ Attention Words: ['traffic']
+ Original Label: 146| avoid country roads
+ Attention Words: ['avoid']
+ Original Label: 8| things to do in charleston next weekend
+ Attention Words: ['things']
+ Original Label: 8| pumpkin festivals
+ Attention Words: ['pumpkin']
+ Original Label: 34| how do i get to chelan
+ Attention Words: ['how']
+ Original Label: 8| things to do in st augustine next week
+ Attention Words: ['things']
+ Original Label: 8| restaurant openings in hallandale in october
+ Attention Words: ['restaurant']
+ Original Label: 10| how does the traffic look between tampa and wesley chapel
+ Attention Words: ['how']
+ Original Label: 8| first spring training game in sarasota
+ Attention Words: ['first']
+ Original Label: 8| looking for fun this to do with kids in harrisburg pa tonight
+ Attention Words: ['harrisburg' 'looking']
+---------------
+
+---------------
+ Current cluster: 48
+ Original Label: 10| morning traffic report please
+ Attention Words: ['report' 'morning']
+ Original Label: 10| any accidents along culver
+ Attention Words: ['any']
+ Original Label: 41| have the snow plows run in town yet or are the roads still covered
+ Attention Words: ['roads' 'the' 'have']
+ Original Label: 17| how far is bronx to queens
+ Attention Words: ['how']
+ Original Label: 10| traffic heavy
+ Attention Words: ['traffic']
+---------------
+
+---------------
+ Current cluster: 53
+ Original Label: 35| when should i leave to avoid traffic
+ Attention Words: ['i' 'avoid' 'when']
+---------------
+
+---------------
+ Current cluster: 57
+ Original Label: 10| hows the traffic on the florida turnpike
+ Attention Words: []
+---------------
+
+---------------
+ Current cluster: 58
+ Original Label: 10| how is the traffic from harrisonburg to stafford
+ Attention Words: ['traffic' 'the' 'how']
+ Original Label: 10| what is the traffic report now
+ Attention Words: ['traffic' 'the' 'what']
+ Original Label: 10| traffic conditions on the 201 freeway
+ Attention Words: ['traffic']
+ Original Label: 8| whats fun to do tonight
+ Attention Words: []
+ Original Label: 7| is traffic heavy towards the airport
+ Attention Words: ['the' 'airport' 'is']
+ Original Label: 58| anything exciting in my neighborhood this weekend
+ Attention Words: ['weekend' 'anything']
+ Original Label: 8| what to do tonight
+ Attention Words: []
+ Original Label: 8| whats happening in newark today
+ Attention Words: ['whats']
+ Original Label: 6| whats going on at the cure insurance arena in trenton this weekend
+ Attention Words: ['weekend' 'whats']
+ Original Label: 5| is there any detours to ginas house that will avoid traffic
+ Attention Words: ['any' 'is' 'will']
+ Original Label: 8| are there any comedy shows in seattle next week
+ Attention Words: ['seattle' 'in' 'are']
+ Original Label: 36| can i get from here to nutley by 7
+ Attention Words: ['here' 'can']
+ Original Label: 17| what is the distance from frankfurt germany to nice france
+ Attention Words: ['the' 'what']
+ Original Label: 11| how to avoid traffic to work
+ Attention Words: []
+ Original Label: 8| events on 4th of july weekend
+ Attention Words: []
+ Original Label: 44| will the roads downtown be blocked off for the football game
+ Attention Words: ['football' 'will']
+ Original Label: 8| music events in medina on saturday
+ Attention Words: ['in' 'music']
+ Original Label: 10| is there an accident on i95 north
+ Attention Words: ['there' 'is']
+ Original Label: 10| what is tonights 5pm traffic
+ Attention Words: ['what']
+ Original Label: 19| show time and distance for drive home
+ Attention Words: []
+ Original Label: 9| shortest way to the store
+ Attention Words: ['way' 'shortest']
+ Original Label: 6| rock concerts near me next weekend
+ Attention Words: ['near' 'rock']
+ Original Label: 6| any sport activities near me
+ Attention Words: ['any']
+ Original Label: 1| is madras closer than lincoln city
+ Attention Words: ['madras' 'is']
+ Original Label: 1| when is rush hour
+ Attention Words: ['when']
+ Original Label: 10| how is traffic in seattle
+ Attention Words: []
+ Original Label: 16| is there traffic on my normal route to work
+ Attention Words: ['normal' 'to' 'is']
+ Original Label: 0| whats the duration of a trip to scotch plains assuming heavy traffic
+ Attention Words: ['the' 'whats']
+ Original Label: 10| how much traffic will be on the i5 right now
+ Attention Words: ['i5' 'will' 'how']
+ Original Label: 7| how is traffic nearby me
+ Attention Words: []
+ Original Label: 30| how far is walgreens
+ Attention Words: ['how']
+ Original Label: 8| what is going on in st louis next summer
+ Attention Words: ['is' 'what']
+ Original Label: 8| whats happening this weekend
+ Attention Words: ['happening' 'whats']
+ Original Label: 8| christmas tree lightings in austin this weekend
+ Attention Words: ['christmas']
+ Original Label: 10| how is the weather affecting traffic
+ Attention Words: ['how']
+ Original Label: 10| is traffic heavy between el paso and sunland park
+ Attention Words: ['el' 'traffic' 'is']
+ Original Label: 8| music events in washington dc this weekend
+ Attention Words: ['music']
+ Original Label: 0| how long will me commute be today
+ Attention Words: ['long' 'how']
+ Original Label: 0| how long will this traffic hold me up
+ Attention Words: ['traffic' 'up' 'how']
+ Original Label: 8| santa claus in new york tonight
+ Attention Words: []
+ Original Label: 10| why is there so much traffic on the i94
+ Attention Words: ['there' 'why']
+ Original Label: 38| leaving here at 5am how long of a drive is it to moms
+ Attention Words: ['moms' 'it' 'leaving']
+ Original Label: 10| traffic on the i95
+ Attention Words: ['the' 'i95' 'traffic']
+ Original Label: 36| can i get to portland before 5pm
+ Attention Words: ['can']
+ Original Label: 10| show me traffic report
+ Attention Words: ['show']
+ Original Label: 6| what shows are at the stadium theater in january
+ Attention Words: ['stadium' 'what']
+ Original Label: 17| whats the distance between california and new york
+ Attention Words: ['california' 'whats']
+ Original Label: 10| are there any accidents in altamonte springs
+ Attention Words: ['altamonte' 'are']
+ Original Label: 10| is there fair traffic
+ Attention Words: ['is']
+ Original Label: 8| events happening in portland next wednesday
+ Attention Words: []
+ Original Label: 8| church events this month
+ Attention Words: ['church']
+ Original Label: 8| locations of christmas bazaars
+ Attention Words: []
+ Original Label: 8| haunted house tours in greenville sc during winter nights
+ Attention Words: ['greenville' 'haunted']
+ Original Label: 8| are there things to do in cheyenne at 2pm
+ Attention Words: ['do' 'there' 'are']
+ Original Label: 0| get the time to london via m1 road
+ Attention Words: []
+ Original Label: 6| music events in my area this weekend
+ Attention Words: ['weekend' 'music']
+ Original Label: 10| what is the traffic like on dodge street
+ Attention Words: ['traffic' 'the' 'what']
+ Original Label: 8| whats happening in fort collins tonight
+ Attention Words: ['in' 'whats']
+ Original Label: 7| will there be congestion westward on the freeway at 9pm
+ Attention Words: ['9pm' 'the' 'will']
+ Original Label: 6| what is there to do around here
+ Attention Words: ['is' 'there' 'what']
+ Original Label: 8| eric church shows this weekend in france
+ Attention Words: []
+ Original Label: 1| should i drive or take public transportation
+ Attention Words: ['should']
+ Original Label: 8| whats happening in kc this weekend
+ Attention Words: ['in' 'weekend' 'whats']
+ Original Label: 8| where is the event
+ Attention Words: ['where']
+ Original Label: 8| what music shows are happening in maui
+ Attention Words: ['maui' 'in' 'what']
+ Original Label: 8| brunch this sunday in arlington
+ Attention Words: []
+ Original Label: 10| what does the mass pike look like
+ Attention Words: ['what']
+ Original Label: 17| what is the distance between tucson and chicago
+ Attention Words: ['what']
+ Original Label: 0| how long to drive to arizona
+ Attention Words: ['long' 'how']
+ Original Label: 6| events at six flags over texas
+ Attention Words: []
+ Original Label: 39| directions to arrive by 9 am at the city hall in west hollywod leaving from home
+ Attention Words: ['the' '9' 'directions']
+ Original Label: 10| how are the roads in dallas
+ Attention Words: ['are' 'how']
+ Original Label: 23| if i leave home thurs am at 8am when will i arrive in panama fl
+ Attention Words: ['i' '8am' 'if']
+ Original Label: 17| how many miles from houston to dallas
+ Attention Words: []
+ Original Label: 17| distance between nyc and la
+ Attention Words: ['nyc' 'distance']
+ Original Label: 1| have they reopened the left lane of the freeway yet
+ Attention Words: ['the' 'have']
+ Original Label: 6| whats happening at the public library tonight
+ Attention Words: ['happening' 'library' 'whats']
+ Original Label: 8| what is happening tomorrow night after 900p
+ Attention Words: ['what']
+ Original Label: 0| how long is the drive from jenner to mendocino
+ Attention Words: ['drive' 'from' 'how']
+ Original Label: 8| what christmas events are happening in south bend this weekend
+ Attention Words: ['weekend' 'what']
+ Original Label: 10| are they still doing construction on i69
+ Attention Words: []
+ Original Label: 8| back to school events in orlando next august
+ Attention Words: ['back']
+ Original Label: 8| what is there to do in green bay on saturday night
+ Attention Words: ['there' 'do' 'what']
+ Original Label: 0| compute number of hours to drive from new york to la only using highways
+ Attention Words: ['drive' 'compute']
+ Original Label: 8| are there any charity events going on next week
+ Attention Words: ['any' 'events' 'are']
+ Original Label: 59| how many miles until i am home
+ Attention Words: ['how']
+ Original Label: 36| ifi leave at 1pm what time will i arrive in sioux city
+ Attention Words: ['at' 'sioux' 'ifi']
+ Original Label: 16| are there an y delays on hwy 90 today on my way to work
+ Attention Words: ['way' 'an' 'are']
+ Original Label: 38| taking only back roads what is the drive time from here to my moms house
+ Attention Words: ['here' 'moms' 'taking']
+ Original Label: 1| is traffic worse at 6 am or 630 am
+ Attention Words: ['630' 'is']
+ Original Label: 10| is the traffic lighter today
+ Attention Words: ['is']
+ Original Label: 7| why is the freeway so backed up today
+ Attention Words: ['why']
+ Original Label: 39| get me driving directions to the macys in biltmore square from my house
+ Attention Words: ['driving' 'macys' 'get']
+ Original Label: 1| what time does rush hour traffic start
+ Attention Words: ['what']
+ Original Label: 8| any skating events in windham
+ Attention Words: ['any']
+ Original Label: 10| what is the traffic like in cleveland ohio right now
+ Attention Words: ['the' 'what']
+ Original Label: 17| what is the distance between vista and la jolla in meters
+ Attention Words: ['what']
+ Original Label: 48| where can i get together with people looking to join a band
+ Attention Words: ['i' 'where']
+ Original Label: 34| can i get to dallas on this route
+ Attention Words: ['route' 'can']
+ Original Label: 97| whens best departure time for me to leave work for home
+ Attention Words: ['departure' 'whens']
+ Original Label: 10| accidents on friday the 13th
+ Attention Words: []
+ Original Label: 10| will i hit traffic on my trip
+ Attention Words: []
+ Original Label: 10| hows traffic in charlotte
+ Attention Words: ['hows']
+ Original Label: 6| music events near me within the next 48 hours
+ Attention Words: ['music']
+ Original Label: 1| is there more traffic on the freeway or surface streets
+ Attention Words: ['on' 'is']
+ Original Label: 59| how far is it from my house to brasilia brazil
+ Attention Words: ['house' 'my' 'how']
+ Original Label: 0| how long is my drive to san jose
+ Attention Words: ['to' 'how']
+ Original Label: 0| give me driving time from norman to oklahoma city
+ Attention Words: ['give']
+ Original Label: 17| how many miles from atlanta to nashville
+ Attention Words: ['how']
+ Original Label: 10| traffic heavy in dc now
+ Attention Words: []
+ Original Label: 8| are there any concerts tonight
+ Attention Words: ['there' 'any' 'are']
+ Original Label: 17| how many miles do i have left on my roadtrip
+ Attention Words: ['roadtrip' 'have' 'how']
+ Original Label: 67| is there any crashes near me
+ Attention Words: ['is']
+ Original Label: 10| i want to see what the traffic is like
+ Attention Words: ['i']
+ Original Label: 17| how many miles is it from orlando to san diego
+ Attention Words: ['many' 'it' 'how']
+ Original Label: 10| is traffic on i95 moving steadily
+ Attention Words: []
+ Original Label: 7| whats the traffic status near denver
+ Attention Words: ['whats']
+ Original Label: 11| show me the quickest route to work
+ Attention Words: ['quickest' 'show']
+ Original Label: 16| what is the traffic like on my route to work
+ Attention Words: ['work' 'route' 'what']
+ Original Label: 8| what do i have going on tomorrow
+ Attention Words: ['what']
+ Original Label: 13| are any of my family members going to the spring festival
+ Attention Words: ['are']
+ Original Label: 8| sports events in denver
+ Attention Words: []
+ Original Label: 10| could you please tell me how heavy the traffic is right now
+ Attention Words: ['please' 'how' 'could']
+ Original Label: 67| what is the traffic like from dodger stadium to staples center
+ Attention Words: ['the' 'traffic' 'what']
+ Original Label: 10| what time will traffic end
+ Attention Words: ['what']
+ Original Label: 17| what is the distance between rocky mount and cleveland
+ Attention Words: ['what']
+ Original Label: 6| where is the closest art show in london
+ Attention Words: ['the' 'where']
+ Original Label: 13| any parks near fillmore that offer sledding on saturday
+ Attention Words: ['parks' 'any' 'offer']
+ Original Label: 0| how long till i reach destination
+ Attention Words: ['how']
+ Original Label: 6| when does the nutcracker end at ppac
+ Attention Words: ['when']
+ Original Label: 13| what time does the sun rise today
+ Attention Words: []
+ Original Label: 175| if i leave my school at 3 oclock what time will i arrive to johns birthday party
+ Attention Words: ['time' 'johns' 'if']
+ Original Label: 52| is there flooding on the new jersey turnpike south heading towards philadelphia today
+ Attention Words: ['there' 'is']
+ Original Label: 6| what is going on near me this month
+ Attention Words: ['is' 'this' 'what']
+ Original Label: 34| can i take back roads to miss some traffic
+ Attention Words: ['take' 'i' 'can']
+ Original Label: 7| how bad is the traffic on the gwb
+ Attention Words: ['gwb' 'how']
+ Original Label: 54| how long will it take us to arrive in the city if we are trying to avoid all the tolls
+ Attention Words: ['arrive' 'will' 'how']
+ Original Label: 8| dog training classes this weekend
+ Attention Words: ['dog']
+ Original Label: 16| traffic getting to work
+ Attention Words: ['traffic']
+ Original Label: 13| who would you like to move to a new place with
+ Attention Words: ['like' 'you' 'who']
+ Original Label: 0| how long is the drive from tacoma to seattle
+ Attention Words: ['from' 'seattle' 'how']
+ Original Label: 7| whats happening with traffic near me
+ Attention Words: ['near' 'whats']
+ Original Label: 10| how quick will the traffic be
+ Attention Words: []
+ Original Label: 10| are there any traffic jams in toronto
+ Attention Words: ['traffic' 'any' 'are']
+ Original Label: 7| whats the traffic like from here to frisco
+ Attention Words: ['the' 'traffic' 'whats']
+ Original Label: 67| what is traffic like from here to the theater
+ Attention Words: ['the' 'theater' 'what']
+ Original Label: 8| festivals in st augustine next weekend
+ Attention Words: []
+ Original Label: 52| are the roads slippery
+ Attention Words: []
+ Original Label: 10| is there any heavy traffic i should be cautious about
+ Attention Words: ['be' 'heavy' 'is']
+ Original Label: 9| get me to the walmart in cupertino by noon
+ Attention Words: ['the' 'get']
+ Original Label: 8| bar crawl in nyc
+ Attention Words: ['bar']
+ Original Label: 9| driving directions to the closest hospital
+ Attention Words: []
+ Original Label: 10| what is the traffic like downtown
+ Attention Words: ['is' 'what']
+ Original Label: 10| is the traffic in new york heavy today
+ Attention Words: ['in' 'traffic' 'is']
+ Original Label: 10| whats the traffic from sweetwater to lenoir city like
+ Attention Words: ['whats']
+ Original Label: 38| time to home using expressway
+ Attention Words: []
+ Original Label: 10| what is the traffic like in dc right now
+ Attention Words: ['now' 'dc' 'what']
+ Original Label: 10| what is the traffic like going to newport news
+ Attention Words: ['newport' 'is' 'what']
+ Original Label: 14| closest money pass atm near me
+ Attention Words: ['closest']
+ Original Label: 45| am i going to catch the beginning of the music concert downtown if i move now
+ Attention Words: ['concert' 'going' 'am']
+ Original Label: 10| are there any accidents for my morning commute
+ Attention Words: ['morning' 'are']
+ Original Label: 1| is there always this much traffic
+ Attention Words: ['is']
+ Original Label: 54| how much air time is needed if started from kansas city airport to little rocks airport
+ Attention Words: ['much' 'needed' 'how']
+ Original Label: 8| family events in hollywood this weekend
+ Attention Words: ['weekend' 'family']
+ Original Label: 10| is traffic heavy in smyrna
+ Attention Words: []
+ Original Label: 8| what time is thor playing
+ Attention Words: ['what']
+ Original Label: 8| what sport events are going on this weekend
+ Attention Words: ['are' 'what']
+ Original Label: 7| where is the accident ahead
+ Attention Words: ['where']
+ Original Label: 6| events at my church this weekend
+ Attention Words: ['my' 'weekend' 'events']
+ Original Label: 10| will you give me the traffic times
+ Attention Words: ['the' 'traffic' 'will']
+ Original Label: 6| times square events happening this weekend
+ Attention Words: []
+ Original Label: 76| is there another way go to my house
+ Attention Words: ['house' 'go' 'is']
+ Original Label: 10| is traffic at a standstill
+ Attention Words: []
+ Original Label: 7| how heavy is the school traffic in this area at 3pm
+ Attention Words: ['this' 'school' 'how']
+ Original Label: 13| italian food in mililani
+ Attention Words: ['italian']
+ Original Label: 8| tree lighting ceremonies
+ Attention Words: ['tree']
+ Original Label: 1| should i take hwy 74 instead of the 215 south will it be quicker
+ Attention Words: ['215' 'take' 'should']
+ Original Label: 8| what is happening in downtown orlando this weekend
+ Attention Words: ['weekend' 'what']
+ Original Label: 19| what is the time to get home
+ Attention Words: ['get' 'time' 'what']
+ Original Label: 5| take me least congested route to my brother davids house
+ Attention Words: ['to' 'take']
+ Original Label: 8| events to attend in seattle next week
+ Attention Words: ['to' 'events']
+ Original Label: 8| any events going on in dallas
+ Attention Words: ['events' 'any']
+ Original Label: 8| christmas tree lightings in metro macomb county
+ Attention Words: ['christmas']
+ Original Label: 8| concerts in irvine tomorrow
+ Attention Words: []
+ Original Label: 0| how many hours will it take to get to new york
+ Attention Words: ['many' 'it' 'how']
+ Original Label: 8| any event for this weekend
+ Attention Words: ['any']
+ Original Label: 10| is there usually traffic at 8 am in buffalo ny
+ Attention Words: ['buffalo' 'is']
+ Original Label: 7| is the route to the library trafficfree
+ Attention Words: ['to' 'route' 'is']
+ Original Label: 8| i need the time and location of the marathon this weekend
+ Attention Words: ['marathon' 'the' 'i']
+ Original Label: 0| how long is my trip to north carolina
+ Attention Words: ['how']
+ Original Label: 0| will it take more than three hours to get to vegas
+ Attention Words: ['more' 'get' 'will']
+ Original Label: 8| is there any concert that is playing tonight in san jose
+ Attention Words: ['is' 'is']
+ Original Label: 1| will there be any gas stations open this morning if i start driving at 3am
+ Attention Words: ['morning' 'i' 'will']
+ Original Label: 13| when is burning man
+ Attention Words: []
+ Original Label: 8| whats happening in san antonio next week
+ Attention Words: ['happening' 'whats']
+ Original Label: 8| any hay rides this weekend here in miami
+ Attention Words: []
+ Original Label: 2| what time will i arrive at the barclays center if i take the 7pm train from hicksville
+ Attention Words: ['arrive' 'the' 'what']
+ Original Label: 8| are there any public christmas parties in northstar before christmas
+ Attention Words: ['are']
+ Original Label: 10| what is the traffic like from chicago to detroit
+ Attention Words: ['traffic' 'to' 'what']
+ Original Label: 10| where is the worst of the traffic
+ Attention Words: ['the' 'worst' 'where']
+ Original Label: 10| how much further is this bumper to bumper traffic on i75
+ Attention Words: ['i75' 'how']
+ Original Label: 8| any shows in huntsville today
+ Attention Words: ['shows' 'any']
+ Original Label: 8| wine and music festivals in detroit
+ Attention Words: ['wine']
+ Original Label: 10| will i hit traffic on this route
+ Attention Words: ['on' 'hit' 'will']
+ Original Label: 13| what is the most popular degree at arizona state university this year
+ Attention Words: ['year' 'what']
+ Original Label: 6| what is the nearest stop to me for the alton brown tour
+ Attention Words: ['is' 'alton' 'what']
+ Original Label: 17| what is the distance between oregon and utah
+ Attention Words: ['what']
+ Original Label: 10| when is the least traffic
+ Attention Words: ['when']
+ Original Label: 24| is there a back way to centralia to the basketball game
+ Attention Words: ['the' 'basketball' 'is']
+ Original Label: 6| any concerts near me tonight
+ Attention Words: ['tonight' 'any']
+ Original Label: 17| how many miles from america to russia
+ Attention Words: ['how']
+ Original Label: 10| how much construction is there from spokane to seattle on i 90
+ Attention Words: ['i' 'how']
+ Original Label: 10| how is the traffic from houston to austin
+ Attention Words: ['traffic' 'the' 'how']
+ Original Label: 6| christmas festivities near me
+ Attention Words: ['christmas']
+ Original Label: 48| where is the best place to park tonight for the festival of lights
+ Attention Words: ['the' 'for' 'where']
+ Original Label: 8| how many musical events are taking place in seattle this month
+ Attention Words: ['how']
+ Original Label: 10| what is the traffic from new york city to niagara falls ny
+ Attention Words: ['the' 'is' 'what']
+ Original Label: 0| drive time from maryland to maine
+ Attention Words: ['drive']
+ Original Label: 8| when is the next orchestra performance downtown
+ Attention Words: ['is' 'when']
+ Original Label: 6| movie screenings at the lincoln center this weekend
+ Attention Words: ['this' 'lincoln' 'movie']
+ Original Label: 17| what is the distance from phoenix to los feliz
+ Attention Words: ['is' 'phoenix' 'what']
+ Original Label: 20| how long to the gym
+ Attention Words: ['how']
+ Original Label: 13| what venues in buffalo ny will be hosting halloween parties this weekend
+ Attention Words: ['be' 'what']
+ Original Label: 11| best route to get to work today
+ Attention Words: ['work' 'best']
+ Original Label: 8| fun things to do in myrtle beach this winter
+ Attention Words: ['fun']
+ Original Label: 34| plot my course on highway 11 from cleveland to perry ohio
+ Attention Words: ['cleveland' 'perry' 'plot']
+ Original Label: 8| fun things to do in san jose tonight
+ Attention Words: ['fun']
+ Original Label: 10| what is the current traffic for atlanta
+ Attention Words: ['is' 'what']
+ Original Label: 10| where is the traffic backed up to the rain and flooding
+ Attention Words: ['backed' 'the' 'where']
+ Original Label: 10| whats the traffic in the loop today
+ Attention Words: ['traffic' 'loop' 'whats']
+ Original Label: 6| this months events near me
+ Attention Words: ['near' 'months' 'this']
+ Original Label: 17| whats the distance between texas and arizona
+ Attention Words: ['whats']
+ Original Label: 9| directions to the parking lot on 5th street
+ Attention Words: ['on' 'directions']
+ Original Label: 7| how the traffic on my way to my doctor
+ Attention Words: ['way' 'my' 'how']
+ Original Label: 34| fastest route to avoid traffic downtown
+ Attention Words: []
+ Original Label: 48| im looking for a cheap pizza place that delivers to ormond beach
+ Attention Words: ['cheap' 'im' 'delivers']
+ Original Label: 30| how far away is dc from me
+ Attention Words: ['me' 'dc' 'how']
+ Original Label: 10| is traffic congested this morning
+ Attention Words: ['morning' 'is']
+ Original Label: 1| when is the lightest average traffic
+ Attention Words: ['when']
+ Original Label: 8| what is happening today
+ Attention Words: ['is' 'happening' 'what']
+ Original Label: 7| how bad is traffic near the theaters
+ Attention Words: ['bad' 'how']
+ Original Label: 6| events at local aquarium next friday
+ Attention Words: ['events']
+ Original Label: 16| whats the traffic like heading in to work
+ Attention Words: ['traffic' 'whats']
+ Original Label: 8| whats happening in richmond today
+ Attention Words: ['richmond' 'whats']
+ Original Label: 8| are there wine tastings this weekend
+ Attention Words: ['are']
+ Original Label: 17| whats the distance between mexico and canada
+ Attention Words: ['whats']
+ Original Label: 10| how does traffic look out there this morning
+ Attention Words: []
+ Original Label: 48| will it rain for the music festival this weekend
+ Attention Words: ['music' 'will']
+ Original Label: 13| where did i store all my photos of my second trip to london
+ Attention Words: ['photos' 'where']
+ Original Label: 8| when does the nutcracker play in sacramento
+ Attention Words: ['when']
+ Original Label: 8| fun things to do this weekend
+ Attention Words: ['fun']
+ Original Label: 9| get directions to downtown lafayette louisiana so that i end up at the college there
+ Attention Words: ['i' 'get']
+ Original Label: 10| whats the cause of all this traffic
+ Attention Words: ['cause' 'whats']
+ Original Label: 8| is there a lighting ceremony next weekend in la
+ Attention Words: ['la' 'is']
+ Original Label: 8| fun winter parties in nyc saturday
+ Attention Words: ['fun']
+ Original Label: 10| traffic due to accidents
+ Attention Words: ['due' 'accidents' 'traffic']
+ Original Label: 7| traffic from here to dc
+ Attention Words: []
+ Original Label: 34| calculate a route to san fransisco that avoids road work
+ Attention Words: ['avoids' 'calculate']
+ Original Label: 10| is the traffic will be better to get to helwan
+ Attention Words: ['traffic' 'to' 'is']
+ Original Label: 8| what is there to do this weekend
+ Attention Words: ['do' 'weekend' 'what']
+ Original Label: 13| what weather is predicted for the rest of the week
+ Attention Words: ['weather' 'rest' 'what']
+ Original Label: 8| santa events in henderson this weekend
+ Attention Words: ['weekend' 'in' 'santa']
+ Original Label: 26| is there a way around this traffic
+ Attention Words: ['traffic' 'a' 'is']
+ Original Label: 6| what is the date of the pink concert that is happening in the q arena in cleveland ohio
+ Attention Words: ['date' 'what' 'is']
+ Original Label: 10| are there any traffic delays this morning
+ Attention Words: ['morning' 'any' 'are']
+ Original Label: 7| what is the traffic like driving from lax to marina del rey
+ Attention Words: ['the' 'is' 'what']
+ Original Label: 9| look up directions to waikiki beach from ala moana park arriving before 2pm
+ Attention Words: ['look']
+ Original Label: 17| whats the distance between minneapolis and mankato
+ Attention Words: ['and' 'the' 'whats']
+ Original Label: 1| do you know of any speed traps this morning
+ Attention Words: ['of' 'do']
+ Original Label: 1| how many lanes is this road
+ Attention Words: ['how']
+ Original Label: 8| show schedule of hamilton touring in california
+ Attention Words: []
+ Original Label: 1| how long has traffic been at a standstill
+ Attention Words: ['how']
+ Original Label: 98| directions to the convention from christinas house leaving at 5p
+ Attention Words: ['convention' 'directions']
+ Original Label: 8| art showings on saturday evening
+ Attention Words: []
+ Original Label: 17| what is the distance between ny and ma
+ Attention Words: ['what']
+ Original Label: 9| quickest route to set ramp 33 on johnson drive
+ Attention Words: ['quickest']
+ Original Label: 17| whats the distance between new york and france
+ Attention Words: ['whats']
+ Original Label: 13| next saturday i need to go to sacramento any goo restaurants there
+ Attention Words: ['to' 'go' 'next']
+ Original Label: 7| is driving congested around pike place market this morning
+ Attention Words: []
+ Original Label: 10| what kind of traffic is there driving from san diego to anaheim
+ Attention Words: ['diego' 'san' 'what']
+ Original Label: 17| how many miles between france and russia
+ Attention Words: ['many' 'france' 'how']
+ Original Label: 17| how far is miami from ft lauderdale
+ Attention Words: ['ft' 'how']
+ Original Label: 8| holiday activities this weekend
+ Attention Words: ['holiday']
+ Original Label: 44| any delays on the way to the bulls game
+ Attention Words: ['way' 'to' 'any']
+ Original Label: 1| where can i find a bike lane downtown boston near federal st
+ Attention Words: ['bike' 'i' 'where']
+ Original Label: 26| steer me around any detours
+ Attention Words: []
+ Original Label: 1| when is traffic heaviest in san francisco
+ Attention Words: ['traffic' 'when']
+ Original Label: 8| whats happening in tucson tonight
+ Attention Words: []
+ Original Label: 8| events that i can bring my dog to this weekend
+ Attention Words: ['this' 'events' 'i']
+ Original Label: 1| which northbound highway has heavy traffic right now
+ Attention Words: ['right' 'which']
+ Original Label: 10| are there any roadside accidents on my route
+ Attention Words: ['my' 'any' 'are']
+ Original Label: 10| what is the traffic from budd lake to newark
+ Attention Words: ['is' 'the' 'what']
+ Original Label: 5| tell me what i should do to arrive at moms by 3 pm
+ Attention Words: ['what' 'arrive' 'tell']
+ Original Label: 10| how heavy is the traffic in nashville
+ Attention Words: ['how']
+ Original Label: 9| get directions to the airport via valkenburgh drive
+ Attention Words: ['airport' 'via' 'get']
+ Original Label: 13| is there any kids friendly restaurant nearby
+ Attention Words: []
+ Original Label: 10| what is the current traffic conditions in la today
+ Attention Words: ['the' 'what']
+ Original Label: 65| how far is the movie theater from my house
+ Attention Words: ['house' 'movie' 'how']
+ Original Label: 36| what time will i arrive at clearpool on tuesday morning if i leave at 815 am
+ Attention Words: ['clearpool' 'what']
+ Original Label: 8| whats happening in huntington beach this weekend
+ Attention Words: ['in' 'weekend' 'whats']
+ Original Label: 10| how is the traffic between philadelphia and scranton
+ Attention Words: ['how']
+ Original Label: 20| get the time to the lakers practive facility in el segundo via sepulveda blvd
+ Attention Words: ['lakers' 'get']
+ Original Label: 8| famlily ice skating this weekend
+ Attention Words: []
+ Original Label: 8| riverwalk events during my stay in march
+ Attention Words: ['during' 'riverwalk']
+ Original Label: 8| what is there to do in portland oregon during this week
+ Attention Words: ['portland' 'week' 'what']
+ Original Label: 58| anything happening in my town tonight
+ Attention Words: ['my' 'town' 'anything']
+ Original Label: 19| how many minutes will it take for me to drive home
+ Attention Words: ['drive' 'to' 'how']
+ Original Label: 10| are there any current detours caused by flooding on howard gap road
+ Attention Words: ['are']
+ Original Label: 8| any shows scheduled on the beach side
+ Attention Words: ['beach' 'scheduled' 'any']
+ Original Label: 10| how will traffic be in pittsburgh at 7am
+ Attention Words: []
+ Original Label: 26| reroute me away from the traffic jam
+ Attention Words: ['traffic' 'away' 'reroute']
+ Original Label: 8| milwaukee area shakespeare events
+ Attention Words: ['milwaukee']
+ Original Label: 1| is there a bike lane on ed street
+ Attention Words: ['is']
+ Original Label: 8| wine events in oregon
+ Attention Words: ['wine']
+ Original Label: 6| are there any fairs or carnivals near me next weekend
+ Attention Words: ['are']
+ Original Label: 34| give me the quickest way to get from wellsboro to plymouth
+ Attention Words: ['quickest' 'give']
+ Original Label: 4| are there any traffic problems on my way home
+ Attention Words: ['way' 'home' 'are']
+ Original Label: 81| find the fastest way to get to the auto shop near costco from guitar class
+ Attention Words: ['guitar' 'fastest' 'find']
+ Original Label: 8| what things can i do in dallas this week
+ Attention Words: []
+ Original Label: 34| directions to georgia from atlanta
+ Attention Words: ['directions']
+ Original Label: 13| where to eat in hollywood tonight
+ Attention Words: ['eat' 'where']
+ Original Label: 8| when is the saint patricks day parade this year
+ Attention Words: ['is' 'when']
+ Original Label: 8| movies that are showing this weekend
+ Attention Words: ['movies' 'are']
+ Original Label: 10| what is the traffic driving from charlotte to durham
+ Attention Words: ['durham' 'charlotte' 'what']
+ Original Label: 8| whats going down this weekend in sacramento
+ Attention Words: ['whats']
+ Original Label: 10| is there traffic for my trip to tahoe
+ Attention Words: ['trip' 'there' 'is']
+ Original Label: 13| where is a bbq restaurant in portland
+ Attention Words: ['a' 'bbq' 'where']
+ Original Label: 4| how is the traffic to my house
+ Attention Words: ['house' 'my' 'how']
+ Original Label: 9| directions to the mall
+ Attention Words: []
+ Original Label: 20| get the time to manhattan using the expressway
+ Attention Words: ['the' 'get']
+ Original Label: 8| what time does the hank aaron christmas light show start on friday night
+ Attention Words: ['hank' 'time' 'what']
+ Original Label: 13| will there be a white christmas
+ Attention Words: ['will']
+ Original Label: 13| how many countries are there in the united states
+ Attention Words: ['the' 'many' 'how']
+ Original Label: 10| is highway 100 reopened this morning
+ Attention Words: []
+ Original Label: 34| which route has the lightest traffic from portland to seattle
+ Attention Words: ['has' 'from' 'which']
+ Original Label: 10| give me the traffic report please
+ Attention Words: ['traffic' 'give']
+ Original Label: 8| where and when is the next celine deon concert
+ Attention Words: ['where']
+ Original Label: 10| are there any areas of congestion in burlington county today
+ Attention Words: ['any' 'are']
+ Original Label: 0| how long is my drive to tampa
+ Attention Words: ['is' 'how']
+ Original Label: 102| show me the route with the lightest traffic on my way home from work
+ Attention Words: ['lightest' 'way' 'show']
+ Original Label: 8| when is megacon happening in orlando in may
+ Attention Words: ['orlando' 'may' 'when']
+ Original Label: 17| what is the distance between los angeles and las vegas
+ Attention Words: ['the' 'what']
+ Original Label: 10| what is the current traffic in pewaukee
+ Attention Words: ['is' 'the' 'what']
+ Original Label: 48| which cities have the best 4th of july parades in the united states
+ Attention Words: ['july' 'the' 'which']
+ Original Label: 10| are there any delays on i5
+ Attention Words: ['there' 'any' 'are']
+ Original Label: 8| things to do on oahu in december
+ Attention Words: []
+ Original Label: 96| is there traffic coming home from the concert
+ Attention Words: ['is']
+ Original Label: 8| karaoke events this weekend
+ Attention Words: []
+ Original Label: 8| brunch ideas tomorrow
+ Attention Words: ['brunch']
+ Original Label: 1| will the 520 bridge be closed this weekend at any time
+ Attention Words: ['be' 'at' 'will']
+ Original Label: 10| how is traffic on west ridge road this morning
+ Attention Words: ['is' 'morning' 'how']
+ Original Label: 8| whats going on downtown this weekend
+ Attention Words: []
+ Original Label: 10| how is the traffic in redmond
+ Attention Words: ['traffic' 'the' 'how']
+ Original Label: 10| should i be anticipating any traffic jams on 80
+ Attention Words: ['should']
+ Original Label: 8| music events this weekend on jax beach
+ Attention Words: ['this' 'on' 'music']
+ Original Label: 10| how is traffic on main street
+ Attention Words: ['is' 'how']
+ Original Label: 26| avoid toll roads
+ Attention Words: ['avoid']
+ Original Label: 56| how long will it take to get home after work
+ Attention Words: ['get' 'after' 'how']
+ Original Label: 48| are there tickets for broadway in nyc
+ Attention Words: []
+ Original Label: 6| are there any cause walks this weekend near xenia
+ Attention Words: ['are']
+ Original Label: 41| is campbell st downtown flooded again and closed
+ Attention Words: ['is']
+ Original Label: 8| fun family place to ski in colorado next month
+ Attention Words: ['ski' 'fun']
+ Original Label: 6| wine tasting in the city this weekend
+ Attention Words: ['wine']
+ Original Label: 13| seafood restaurants in alpharetta
+ Attention Words: []
+ Original Label: 26| take me a different route
+ Attention Words: ['me' 'take']
+ Original Label: 17| how far is arizona from hawaii
+ Attention Words: ['hawaii' 'how']
+ Original Label: 10| traffic updates for today
+ Attention Words: ['traffic']
+ Original Label: 10| is there heavy traffic in 95 north right now
+ Attention Words: ['95' 'now' 'is']
+ Original Label: 17| what is the distance between nyc and texas
+ Attention Words: ['and' 'is' 'what']
+ Original Label: 7| how long is the traffic backed up to get into mis today
+ Attention Words: ['is' 'backed' 'how']
+ Original Label: 10| is there construction between pittsburgh and cranberry
+ Attention Words: ['is']
+ Original Label: 19| please tell me how long it will take me to arrive home
+ Attention Words: ['will' 'it' 'please']
+ Original Label: 8| can you show me christmas events in melbourne for this weekend
+ Attention Words: ['in' 'melbourne' 'can']
+ Original Label: 8| when is the next election
+ Attention Words: ['when']
+ Original Label: 17| how far is seattle from san diego
+ Attention Words: ['san' 'how']
+ Original Label: 7| is there heavy traffic near the mall right now
+ Attention Words: ['near' 'mall' 'is']
+ Original Label: 10| is the traffic bad today on rt 4
+ Attention Words: ['traffic' 'is']
+ Original Label: 8| any holiday food events today
+ Attention Words: []
+ Original Label: 8| what should i do in austin this weekend
+ Attention Words: ['do' 'austin' 'what']
+ Original Label: 8| free events in florida
+ Attention Words: []
+ Original Label: 20| what is the current drive time to mt hood
+ Attention Words: ['what']
+ Original Label: 1| do i have time to go to all the events on my calendar before 6pm
+ Attention Words: ['events' 'go' 'do']
+ Original Label: 9| i have to pick up my computer and micro center and madison heights whats the least congested route to get there from mt clemens
+ Attention Words: ['have' 'the' 'i']
+ Original Label: 8| ugly christmas sweater party in kona
+ Attention Words: ['ugly']
+ Original Label: 8| whats happening in baltimore tonight
+ Attention Words: ['whats']
+ Original Label: 10| what is the traffic from phoenix to heber
+ Attention Words: ['traffic' 'the' 'what']
+ Original Label: 13| how have you been
+ Attention Words: ['how']
+ Original Label: 8| any holiday events this weekend
+ Attention Words: ['any']
+ Original Label: 17| what is the distance between new jersey and maryland
+ Attention Words: ['is' 'what']
+ Original Label: 10| traffic for vancouver
+ Attention Words: ['traffic']
+ Original Label: 18| how far is work from my current location
+ Attention Words: ['how']
+ Original Label: 10| is there an accident on i5
+ Attention Words: []
+ Original Label: 10| are there any traffic delays on the road
+ Attention Words: ['traffic' 'any' 'are']
+ Original Label: 8| concerts by andrea bocelli in philadelphia
+ Attention Words: ['andrea' 'concerts']
+ Original Label: 10| what is the traffic like driving from houston to san antonio
+ Attention Words: ['antonio' 'houston' 'what']
+ Original Label: 10| how is the traffic from dallas to waco
+ Attention Words: ['traffic' 'the' 'how']
+ Original Label: 8| whats going on in april in new york
+ Attention Words: ['going' 'whats']
+ Original Label: 7| whats the traffic on the interstate looking like
+ Attention Words: ['the' 'traffic' 'whats']
+ Original Label: 0| what is the drive time from dallas to houston
+ Attention Words: ['houston' 'time' 'what']
+ Original Label: 1| when is the best time to drive down town
+ Attention Words: ['the' 'best' 'when']
+ Original Label: 8| are there any esports events this month in los angeles
+ Attention Words: ['any' 'there' 'are']
+ Original Label: 8| what to do in wyoming
+ Attention Words: []
+ Original Label: 36| im pulling onto route one right now what time should i arrive in washington dc
+ Attention Words: ['now' 'washington' 'im']
+ Original Label: 8| whats happening to do jay z
+ Attention Words: ['to' 'happening' 'whats']
+ Original Label: 7| is there an accident in front of me
+ Attention Words: ['an' 'there' 'is']
+ Original Label: 10| what is traffic like heading into atlantic city
+ Attention Words: ['is' 'what']
+ Original Label: 10| is there congestion on the bqe now
+ Attention Words: ['congestion' 'bqe' 'is']
+ Original Label: 10| is there a traffic jam on alafaya
+ Attention Words: ['a' 'is']
+ Original Label: 10| show me the traffic
+ Attention Words: ['show']
+ Original Label: 10| will traffic be heavier in an hour
+ Attention Words: ['will']
+ Original Label: 1| show me how the least expensive way to get into manhattan
+ Attention Words: ['show']
+ Original Label: 30| how many miles from here to las vegas
+ Attention Words: ['how']
+ Original Label: 17| what is the distance between la and san francisco
+ Attention Words: ['is' 'the' 'what']
+ Original Label: 41| is route 515 flooded near pequannock
+ Attention Words: ['is']
+ Original Label: 10| is the traffic heavy now
+ Attention Words: ['the' 'traffic' 'is']
+ Original Label: 8| is christmas made in the south going to be in charleston next weekend
+ Attention Words: ['charleston' 'be' 'is']
+ Original Label: 8| what are the current events in washington dc
+ Attention Words: ['what']
+ Original Label: 10| where is they detouring off strong st
+ Attention Words: ['they' 'where']
+ Original Label: 27| how many minutes by car is marias house from johns baseball game
+ Attention Words: ['car' 'how']
+ Original Label: 6| bonfire parties at dockweiler beach this weekend
+ Attention Words: ['dockweiler' 'bonfire']
+ Original Label: 17| whats the distance between austin and houston
+ Attention Words: ['the' 'whats']
+ Original Label: 1| make the next right turn
+ Attention Words: ['make']
+ Original Label: 10| is there an accident on the 99 freeway
+ Attention Words: ['an' 'there' 'is']
+ Original Label: 10| whats traffic like between portland and south portland
+ Attention Words: ['traffic' 'and' 'whats']
+ Original Label: 4| any car accidents on my route home
+ Attention Words: ['my' 'car' 'any']
+ Original Label: 10| what is the traffic driving from boston to marlboro
+ Attention Words: ['boston' 'what']
+ Original Label: 36| if i leave at 8 am what time will i arrive in new york city
+ Attention Words: ['new' 'time' 'if']
+ Original Label: 54| whats the total driving time to the singing hills mall from where i am
+ Attention Words: ['from' 'the' 'whats']
+ Original Label: 6| any live jazz around here
+ Attention Words: []
+ Original Label: 8| whats going on in cleveland next weekend
+ Attention Words: ['whats']
+ Original Label: 1| how long would it take to open faisal street after the car accident this morning
+ Attention Words: ['open' 'car' 'how']
+ Original Label: 10| how is the 440 loop this morning
+ Attention Words: ['morning' 'how']
+ Original Label: 8| lets find something to do in san francisco tonight
+ Attention Words: ['do' 'san' 'lets']
+ Original Label: 10| why is traffic at a standstill
+ Attention Words: ['standstill' 'traffic' 'why']
+ Original Label: 44| are there any construction on my way to zamalek game
+ Attention Words: ['zamalek' 'to' 'are']
+ Original Label: 10| how heavy was the traffic in cleveland
+ Attention Words: []
+ Original Label: 12| furnish me with shortest path to brooklyn bridge from times square in new york city
+ Attention Words: ['new' 'with' 'furnish']
+ Original Label: 13| any hiking trail close by
+ Attention Words: ['any']
+ Original Label: 8| what is there to do tomorrow
+ Attention Words: ['what']
+ Original Label: 10| chicago traffic at 5
+ Attention Words: []
+ Original Label: 6| coffee house and music
+ Attention Words: ['coffee']
+ Original Label: 10| how is the traffic on i90
+ Attention Words: ['traffic' 'is' 'how']
+ Original Label: 17| how far away is japan from korea
+ Attention Words: ['how']
+ Original Label: 0| how long is the train to illinois
+ Attention Words: ['illinois' 'is' 'how']
+ Original Label: 10| pot holes on my route to chicago
+ Attention Words: ['chicago' 'pot']
+ Original Label: 10| traffic from miami to tampa
+ Attention Words: ['traffic']
+ Original Label: 8| christmas events
+ Attention Words: ['christmas']
+ Original Label: 17| what is the distance from biloxi to jackson
+ Attention Words: ['distance' 'biloxi' 'what']
+ Original Label: 1| what place in the queue are we to take off
+ Attention Words: ['place' 'take' 'what']
+ Original Label: 10| any accidents on the 405
+ Attention Words: []
+ Original Label: 10| what is the traffic in seattle
+ Attention Words: ['is' 'the' 'what']
+ Original Label: 13| are there any museum near me
+ Attention Words: ['are']
+ Original Label: 10| please tell me traffic isnt heavy today
+ Attention Words: ['isnt' 'traffic' 'please']
+ Original Label: 10| give me my traffic updates
+ Attention Words: ['give']
+ Original Label: 7| is there a lot of traffic near the concert hall
+ Attention Words: ['concert' 'is']
+ Original Label: 10| is the traffic bad on the way to tampa
+ Attention Words: ['tampa' 'traffic' 'is']
+ Original Label: 6| new years eve parties near me
+ Attention Words: ['new']
+ Original Label: 0| how long is the drive to los angeles
+ Attention Words: []
+ Original Label: 8| christmas tree lightings
+ Attention Words: []
+ Original Label: 87| where is macys
+ Attention Words: ['where']
+ Original Label: 10| will there be a lot of traffic tomorrow
+ Attention Words: ['will']
+ Original Label: 34| what is the fastest route
+ Attention Words: ['the' 'what']
+ Original Label: 17| whats the distance from florida to ohio
+ Attention Words: ['whats']
+ Original Label: 0| how long is the traffic going to set me back
+ Attention Words: ['is' 'set' 'how']
+ Original Label: 10| what is the traffic driving from little rock to conway
+ Attention Words: ['the' 'little' 'what']
+ Original Label: 10| is the ice on the roads slowing down traffic on main street
+ Attention Words: ['roads' 'is']
+ Original Label: 6| when is the pink concert coming near me
+ Attention Words: ['pink' 'when']
+ Original Label: 6| what food events are happening near me
+ Attention Words: ['are' 'what']
+ Original Label: 8| any underage events tonight
+ Attention Words: []
+ Original Label: 2| im leaving for the mall at 4 what time will i arrive
+ Attention Words: ['mall' 'im']
+ Original Label: 48| are there any photographers near me
+ Attention Words: ['are']
+ Original Label: 48| create an event for tuesday at my house
+ Attention Words: ['create']
+ Original Label: 10| is there heavy traffic going to homer glen on wednesday at 8am
+ Attention Words: ['heavy' 'homer' 'is']
+ Original Label: 17| what is the distance from tampa to new york
+ Attention Words: ['tampa' 'is' 'what']
+ Original Label: 4| how is the traffic going home
+ Attention Words: ['is' 'the' 'how']
+ Original Label: 12| quickest route to cpr stat from here
+ Attention Words: ['quickest']
+ Original Label: 8| any plays showing tomorrow night
+ Attention Words: ['any']
+ Original Label: 17| whats the distance from decatur alabama to decatur georgia
+ Attention Words: []
+ Original Label: 10| are there any traffic blocks on i90
+ Attention Words: ['traffic' 'any' 'are']
+ Original Label: 8| comedy club shows today in sacramento
+ Attention Words: ['in' 'today' 'comedy']
+ Original Label: 10| are there delays on the lirr
+ Attention Words: ['delays' 'there' 'are']
+ Original Label: 10| what is traffic like in miami
+ Attention Words: []
+ Original Label: 8| outkast concert in atlanta this weekend
+ Attention Words: ['outkast']
+ Original Label: 19| how much time to get home
+ Attention Words: ['how']
+ Original Label: 75| would i be able to drive to work using easton ave and get there in 10 minutes
+ Attention Words: ['10' 'there' 'would']
+ Original Label: 13| how long was eisenhower in office
+ Attention Words: ['long' 'how']
+ Original Label: 6| what can i do nearby
+ Attention Words: []
+ Original Label: 8| what college bands have shows this saturday
+ Attention Words: ['what']
+ Original Label: 8| shows by ozzy osbourne next week in london
+ Attention Words: ['shows']
+ Original Label: 8| any arts and crafts events this weekend
+ Attention Words: ['any']
+ Original Label: 13| my battery died
+ Attention Words: ['my']
+ Original Label: 10| how is traffic driving from california to tennessee
+ Attention Words: ['california' 'how']
+ Original Label: 16| is there any road construction on my way to work today
+ Attention Words: ['my' 'way' 'is']
+ Original Label: 8| where can i go to listen to live music tonight in las vegas
+ Attention Words: ['go' 'i' 'where']
+ Original Label: 9| whats the fastest route to the drivein
+ Attention Words: []
+ Original Label: 8| what is there to do this weekend
+ Attention Words: ['do' 'weekend' 'what']
+ Original Label: 6| any special events at universal studios
+ Attention Words: ['any']
+ Original Label: 13| what about a nice boat ride in dana point
+ Attention Words: ['what']
+ Original Label: 16| how is the drive to work today
+ Attention Words: ['work' 'to' 'how']
+ Original Label: 10| how is the traffic in new york city on christmas eve
+ Attention Words: ['the' 'in' 'how']
+ Original Label: 7| why is there a traffic jam at the next intersection
+ Attention Words: ['next' 'why']
+ Original Label: 17| how many miles is it from orlando to new york city
+ Attention Words: ['how']
+ Original Label: 6| star wars events near me today
+ Attention Words: ['near' 'star']
+ Original Label: 7| how is traffic on ina road in tucson
+ Attention Words: ['traffic' 'tucson' 'how']
+ Original Label: 10| any traffic alerts
+ Attention Words: []
+ Original Label: 7| show accidents of the freeways
+ Attention Words: []
+ Original Label: 10| is traffic good this morning
+ Attention Words: []
+ Original Label: 17| what is the distance from kent ohio and cleveland ohio
+ Attention Words: ['what']
+ Original Label: 8| where can i find james spann website of events for this month
+ Attention Words: ['events' 'where']
+ Original Label: 6| concerts by the beach this weekend
+ Attention Words: ['weekend' 'beach' 'concerts']
+ Original Label: 8| any events on friday
+ Attention Words: ['any']
+ Original Label: 8| events for kids this weekend
+ Attention Words: ['events']
+ Original Label: 8| any events this week to take my kids to
+ Attention Words: ['take' 'kids' 'any']
+ Original Label: 34| what train can i take downtown
+ Attention Words: []
+ Original Label: 1| what day of the week has the most traffic in nyc
+ Attention Words: ['in' 'the' 'what']
+ Original Label: 20| how long to the nearest instacare
+ Attention Words: ['how']
+ Original Label: 8| concerts in nyc
+ Attention Words: []
+ Original Label: 8| movie times 29720
+ Attention Words: ['movie']
+ Original Label: 102| what is the route from work to home
+ Attention Words: ['home' 'from' 'what']
+ Original Label: 1| where can i get the most up to the minute traffic report
+ Attention Words: ['the' 'minute' 'where']
+ Original Label: 48| any recommendations to eat in chicago tonight
+ Attention Words: ['eat' 'chicago' 'any']
+ Original Label: 8| what are some events happening in texas next month
+ Attention Words: []
+ Original Label: 8| concerts in san francisco
+ Attention Words: ['concerts']
+ Original Label: 52| are the roads plowed this morning
+ Attention Words: []
+ Original Label: 67| whats the traffic situation near costco
+ Attention Words: []
+ Original Label: 8| where is there a party in atwater village this friday night
+ Attention Words: ['there' 'party' 'where']
+ Original Label: 10| is traffic heavy today
+ Attention Words: ['is']
+ Original Label: 17| how many miles is there between seattle and olympia
+ Attention Words: ['many' 'there' 'how']
+ Original Label: 36| if i leave at 5am what time will i get to buffalo
+ Attention Words: ['to' 'get' 'if']
+ Original Label: 118| how long will my drive to school be
+ Attention Words: ['how']
+ Original Label: 10| what are the roads like
+ Attention Words: []
+ Original Label: 8| when is the next concert
+ Attention Words: []
+ Original Label: 17| what is the distance between nyc and myrtle beach
+ Attention Words: ['the' 'is' 'what']
+ Original Label: 10| construction on route
+ Attention Words: []
+ Original Label: 8| whats happening in lorain next wekend
+ Attention Words: ['happening' 'whats']
+ Original Label: 10| how many work zones are there along this route
+ Attention Words: ['many' 'route' 'how']
+ Original Label: 8| things t go with kids on oahu
+ Attention Words: ['oahu' 'things']
+ Original Label: 8| family birthday party for next month
+ Attention Words: ['month' 'family']
+ Original Label: 8| what christmas events are happening next week
+ Attention Words: ['what']
+ Original Label: 6| what free events are close to me today
+ Attention Words: ['today' 'me' 'what']
+ Original Label: 10| what is the traffic currently in ft lauderdale
+ Attention Words: ['traffic' 'what']
+ Original Label: 9| give me driving direction to the library on davis hwy
+ Attention Words: ['the' 'give']
+ Original Label: 62| whats the traffic like between here and home
+ Attention Words: ['the' 'whats']
+ Original Label: 8| events in los angeles tonight
+ Attention Words: ['events']
+ Original Label: 10| traffic in minneapolis
+ Attention Words: []
+ Original Label: 34| which route has the least traffic
+ Attention Words: ['has' 'which']
+ Original Label: 10| when is rush hour in houston
+ Attention Words: []
+ Original Label: 8| when is mannheim steamroller performing next in st louis
+ Attention Words: ['when']
+ Original Label: 9| give me the information on how to make it to the zoo located in san diego
+ Attention Words: ['the' 'zoo' 'give']
+ Original Label: 0| what is the driving from washington to virginia
+ Attention Words: ['washington' 'is' 'what']
+ Original Label: 10| is there traffic from dallas to san antonio
+ Attention Words: ['antonio' 'is']
+ Original Label: 44| any delays to the adele concert
+ Attention Words: []
+ Original Label: 8| next event
+ Attention Words: ['next']
+ Original Label: 13| bus schedule to work today
+ Attention Words: ['bus']
+ Original Label: 7| why is the traffic so heavy on this highway
+ Attention Words: ['the' 'highway' 'why']
+ Original Label: 13| is any restaurants in my neighborhood family friendly
+ Attention Words: []
+ Original Label: 8| what to see in gatlinburg
+ Attention Words: []
+ Original Label: 6| is the nutcracker at mccarter theater this weekend
+ Attention Words: ['is']
+ Original Label: 12| avaoiding downed power lines get me driving directions to prawns supermarket from the barbers shop
+ Attention Words: ['lines' 'driving' 'avaoiding']
+ Original Label: 6| are there any neat events occuring near me tonight
+ Attention Words: ['occuring' 'are']
+ Original Label: 8| anything going on in cranberry this weekend
+ Attention Words: ['weekend' 'anything']
+ Original Label: 13| price of lemons
+ Attention Words: ['price']
+ Original Label: 6| where can i take the kids to have dinner with santa near me
+ Attention Words: ['have' 'where']
+ Original Label: 4| how will the drive home be
+ Attention Words: ['home' 'how']
+ Original Label: 4| whats the rush hour traffic on way home
+ Attention Words: ['home' 'rush' 'whats']
+ Original Label: 1| is traffic worse on congress avenue than military trail
+ Attention Words: ['is']
+ Original Label: 6| music events happening near me
+ Attention Words: ['near' 'music']
+ Original Label: 8| what holiday events are happening in providence tomorrow
+ Attention Words: ['what']
+ Original Label: 23| what time will i arrive at mom and dads
+ Attention Words: ['mom' 'what']
+ Original Label: 10| is traffic heavy on main street
+ Attention Words: ['traffic' 'is']
+ Original Label: 10| will i need to plan more time for traffic
+ Attention Words: ['i' 'will']
+ Original Label: 10| please tell me what the traffic driving is from pueblo to denver
+ Attention Words: ['traffic' 'from' 'please']
+ Original Label: 1| what time is the traffic heavier in times square
+ Attention Words: ['what']
+ Original Label: 7| is there any traffic congestion between main street and route 347 in smithtown
+ Attention Words: ['347' 'is']
+ Original Label: 10| is traffic heavy in downtown san francisco
+ Attention Words: ['is']
+ Original Label: 13| best place to eat at
+ Attention Words: ['best']
+ Original Label: 8| places to go this weekend
+ Attention Words: ['places']
+---------------
+
+---------------
+ Current cluster: 71
+ Original Label: 59| how many miles does it take to get to houston texas from my home
+ Attention Words: ['home' 'get' 'to']
+ Original Label: 3| what time should i leave my house to get to del amo mall by 12 pm
+ Attention Words: ['get' 'to' 'del']
+ Original Label: 81| is the interstate the fastest way to the omaha arena for the madonna concert
+ Attention Words: ['omaha' 'the' 'interstate']
+ Original Label: 19| what is the travel time on to monicas house if i have to detour from touhy ave due to heavy construction on thursday
+ Attention Words: ['have' 'travel' 'the']
+ Original Label: 39| can you tell me how to get to universal city walk without using i4 from my house
+ Attention Words: ['universal' 'house']
+ Original Label: 22| how long would it take me to drive to the snoop dogg gig if i left in 5 minutes
+ Attention Words: ['long' 'the' 'snoop']
+---------------
+
+---------------
+ Current cluster: 72
+ Original Label: 0| how long is the drive to sf on the pch
+ Attention Words: ['sf' 'is' 'pch']
+---------------
+
+---------------
+ Current cluster: 75
+ Original Label: 8| christmas lights show in atlanta this december
+ Attention Words: ['christmas']
+ Original Label: 17| show me the distance between san antonio and austin
+ Attention Words: ['the' 'show']
+ Original Label: 17| how many miles is hollywood from van nuys
+ Attention Words: ['hollywood' 'how']
+ Original Label: 8| im trying to find something to do in atlanta tomorrow
+ Attention Words: ['do' 'im']
+ Original Label: 10| traffic conditions for charlotte nc
+ Attention Words: ['traffic']
+ Original Label: 30| how many miles am i from the grand canyon
+ Attention Words: ['how']
+ Original Label: 34| please avoid all detours this morning
+ Attention Words: ['please']
+ Original Label: 34| give me a route to la with least amount of traffic
+ Attention Words: ['a' 'traffic' 'give']
+ Original Label: 9| directions to the pearl district while avoid drawbridges leaving at 8am
+ Attention Words: ['8am' 'directions']
+ Original Label: 10| how many traffic accidents today in phoenix
+ Attention Words: ['accidents' 'how']
+ Original Label: 8| what events are taking place for kids next week
+ Attention Words: ['what']
+ Original Label: 48| most recently attended events
+ Attention Words: ['most']
+ Original Label: 8| what marathon events are scheduled on the west coast next year
+ Attention Words: ['what']
+ Original Label: 9| get me directions from ranch to silverspring county at 5 50am tomorrow
+ Attention Words: ['ranch' 'silverspring' 'get']
+ Original Label: 8| are any bands coming to minneapolis around december 27th
+ Attention Words: ['are']
+ Original Label: 12| tell me how to reach the scheels near the main street in bellevue
+ Attention Words: ['scheels' 'tell']
+ Original Label: 17| how many miles between boise and seattle
+ Attention Words: ['between' 'how']
+ Original Label: 1| how many more miles before traffic lets up
+ Attention Words: ['how']
+ Original Label: 8| where can families have fun in st louis
+ Attention Words: ['st' 'where']
+ Original Label: 1| heaviest traffic hour in miami is
+ Attention Words: ['heaviest']
+ Original Label: 8| how many sports events are planned for las vegas over the next year
+ Attention Words: ['how']
+ Original Label: 7| check the traffic status for my area please
+ Attention Words: ['area' 'check']
+ Original Label: 10| do they still have road closures from daytona beach to key west because of hurricane damage
+ Attention Words: ['key' 'closures' 'do']
+ Original Label: 8| any good classical musicals going on in portland next week
+ Attention Words: ['any']
+ Original Label: 1| is the road still barricaded for the jamesville easter parade
+ Attention Words: ['is']
+ Original Label: 13| where would i find good japanese food in town
+ Attention Words: ['where']
+ Original Label: 8| holiday train show in new york city
+ Attention Words: ['holiday']
+ Original Label: 39| can you give me directions to the dallas courthouse on commerce street from my house with no toll roads
+ Attention Words: ['house' 'my' 'can']
+ Original Label: 48| top 10 restaurants in midtown manhattan
+ Attention Words: ['top']
+ Original Label: 7| please give me the latest highway traffic report
+ Attention Words: ['please']
+ Original Label: 9| give me driving directions from port harcort to lagos street avoiding the highway
+ Attention Words: ['driving' 'lagos' 'give']
+ Original Label: 10| what is traffic for 6 pm tomorrow
+ Attention Words: []
+ Original Label: 9| i need help getting to unisys today at 3pm
+ Attention Words: ['i']
+ Original Label: 8| good concerts for preteens in portland this summer
+ Attention Words: ['good']
+ Original Label: 8| new year parties planned in reno
+ Attention Words: ['reno' 'new']
+ Original Label: 48| are tickets sold out for shakespeare in the park
+ Attention Words: ['are']
+ Original Label: 8| whats up in miami friday night
+ Attention Words: ['whats']
+ Original Label: 7| how heavy is traffic around dulles international airport today
+ Attention Words: ['how']
+ Original Label: 8| community events this month for yucca valley
+ Attention Words: ['community']
+ Original Label: 8| where can i see live music and have cocktails
+ Attention Words: ['see' 'and' 'where']
+ Original Label: 52| are the roads clear on highway 80 east
+ Attention Words: ['are']
+ Original Label: 52| are roads icy
+ Attention Words: []
+ Original Label: 8| anything going on tonight in phoenix
+ Attention Words: []
+ Original Label: 17| how many miles from los angeles to boston
+ Attention Words: ['how']
+ Original Label: 8| list some events that are planned for mardi gras in 2018
+ Attention Words: ['are' 'list']
+ Original Label: 9| whats the most direct route to wayne state university auditorium traveling south on woodward
+ Attention Words: ['woodward' 'most' 'whats']
+ Original Label: 1| does the b train stop at dekalb avenue
+ Attention Words: ['b' 'dekalb' 'does']
+ Original Label: 13| please send a happy birthday text to all my friends who have birthdays this week
+ Attention Words: ['please']
+ Original Label: 8| whats going on in miami tomorrow evening
+ Attention Words: ['whats']
+ Original Label: 8| concerts in la for this weekend
+ Attention Words: []
+ Original Label: 6| holiday concerts near me next week
+ Attention Words: ['week' 'near' 'holiday']
+ Original Label: 8| what are the tour dates for taylor swift
+ Attention Words: ['what']
+ Original Label: 6| concerts by garth brooks near me next month
+ Attention Words: ['garth' 'concerts']
+ Original Label: 26| can you find an alternate route to x around heavy traffic
+ Attention Words: ['you' 'to' 'can']
+ Original Label: 8| networking dinners in miami this week
+ Attention Words: ['networking']
+ Original Label: 26| help me find an alternate route to san mateo
+ Attention Words: ['find' 'help']
+ Original Label: 8| concerts happening this week
+ Attention Words: []
+ Original Label: 8| music concerts in dallas saturday
+ Attention Words: ['music']
+ Original Label: 8| find a free sporting event this week please
+ Attention Words: ['find']
+ Original Label: 8| things to do in colorado springs colorado this christmas
+ Attention Words: ['things']
+ Original Label: 26| can we go around the heavy traffic areas
+ Attention Words: ['can']
+ Original Label: 8| all the music festivals in the united states for summer 2018
+ Attention Words: ['all']
+ Original Label: 8| theater productions in seattle washington next month
+ Attention Words: ['next' 'month' 'theater']
+ Original Label: 10| have a look at traffic please
+ Attention Words: ['look' 'have']
+---------------
+
+---------------
+ Current cluster: 77
+ Original Label: 10| does 94 west have traffic
+ Attention Words: ['does']
+ Original Label: 8| concerts by primus next month
+ Attention Words: ['month' 'primus' 'by']
+---------------
+
+---------------
+ Current cluster: 78
+ Original Label: 35| what time should i leave for myrtle beach if i want to arrive before midnight
+ Attention Words: ['what' 'leave' 'for']
+ Original Label: 39| what is the shortest route home from camelback lodge in the poconos leaving at 11am
+ Attention Words: ['poconos' 'shortest' 'what']
+ Original Label: 34| can i get from 12th st nw to 44th ave s if i take washington st
+ Attention Words: ['44th' 'take' 'can']
+ Original Label: 52| is there ice and snow now on the freeway to maine
+ Attention Words: ['there' 'on' 'is']
+---------------
+
+---------------
+ Current cluster: 79
+ Original Label: 8| are there any events on saturday in the wilkes barre area
+ Attention Words: ['wilkes' 'the' 'are']
+ Original Label: 0| how long will it take to drive to alpharetta
+ Attention Words: ['alpharetta' 'to' 'how']
+---------------
+
+---------------
+ Current cluster: 83
+ Original Label: 0| how long is a flight from new york to paris
+ Attention Words: ['new' 'paris' 'how']
+ Original Label: 6| what is playing at the local theater downtown this weekend
+ Attention Words: ['local' 'the' 'what']
+ Original Label: 183| update me on the current traffic situations in my town
+ Attention Words: ['my' 'current' 'the']
+ Original Label: 7| what is traffic like on the i15 around vegas right now
+ Attention Words: ['traffic' 'i15' 'like']
+ Original Label: 22| if i leave at 6pm how much time will traffic add for me to get to dinner
+ Attention Words: ['to' 'get' 'to']
+ Original Label: 60| how do i get to el paso from my house using the fewest freeways as possible no toll roads
+ Attention Words: ['do' 'el' 'how']
+ Original Label: 77| am i going to make it to the dentist on time if i take the highway and are there quicker roads
+ Attention Words: ['dentist' 'highway' 'i']
+ Original Label: 7| will i run into construction on my way to the casino on main street
+ Attention Words: ['way' 'to' 'will']
+ Original Label: 3| i have to pick someone up at the airport during rush hour what time should i leave home in order to meet a 6pm flight
+ Attention Words: ['i' 'time' 'i']
+ Original Label: 2| can i get to rahway in under an hour if i take the turnpike
+ Attention Words: ['the' 'under' 'can']
+---------------
+
+---------------
+ Current cluster: 85
+ Original Label: 17| how far away is sacramento california from louisville kentucky
+ Attention Words: ['louisville' 'sacramento']
+---------------
+
+---------------
+ Current cluster: 90
+ Original Label: 44| is there any construction on the way to the pink march on 3rd street
+ Attention Words: ['any' 'construction' 'way']
+ Original Label: 7| is the traffic heavy on route 17 in paramus
+ Attention Words: ['heavy' 'the' 'traffic']
+ Original Label: 8| what are some events happening in san francisco over this weekend
+ Attention Words: ['francisco' 'are' 'some']
+ Original Label: 20| how long will it take for me to drive from here to sandy springs
+ Attention Words: ['it' 'long' 'will']
+ Original Label: 0| how fast can i get to nyc by train today
+ Attention Words: ['train' 'i' 'fast']
+ Original Label: 19| how long will it take me to get to cindys house
+ Attention Words: ['get' 'to' 'will']
+ Original Label: 36| i need an eta for arrival in austin if i leave now
+ Attention Words: ['leave' 'now']
+ Original Label: 20| how long it takes to take a bus to the city
+ Attention Words: ['the' 'to' 'it']
+ Original Label: 22| how long will it take me to go to the seahawks game tonight
+ Attention Words: ['to' 'go' 'seahawks']
+ Original Label: 20| how long is the drive to get the mall
+ Attention Words: ['the' 'mall']
+ Original Label: 19| how long will it take me to drive home with the current traffic
+ Attention Words: ['it' 'long' 'will']
+ Original Label: 23| can i get from my house to st louis in less than 12 hours if i leave now
+ Attention Words: ['i' 'get' 'louis']
+ Original Label: 8| are there any events going on after midnight on saturday
+ Attention Words: ['events' 'any']
+ Original Label: 24| i need to be at my meeting by 3 what routes can i take
+ Attention Words: ['need' 'be' 'to']
+ Original Label: 49| get the time it would take to get home from dakotas house
+ Attention Words: ['get' 'home' 'time']
+ Original Label: 63| if i leave my moms house by 5 will i make it to the justin timberlake concert by 6 in boise
+ Attention Words: ['my' '5' 'leave']
+ Original Label: 0| how long does it take to get to brookeville by bus
+ Attention Words: ['brookeville' 'to' 'does']
+ Original Label: 53| how long will it take to get to my doctors appointment if i leave from here now
+ Attention Words: ['doctors' 'will' 'my']
+ Original Label: 10| what is the traffic like in san francisco today
+ Attention Words: ['today' 'francisco']
+ Original Label: 17| what is the distance from san francisco to sacramento
+ Attention Words: ['to' 'distance' 'the']
+ Original Label: 1| how long does it take for kfc order delivery to arrive to my house if i order now
+ Attention Words: ['arrive' 'does' 'for']
+ Original Label: 29| what time should i leave to make it to the rangers game by 7pm
+ Attention Words: ['the' 'rangers' 'to']
+ Original Label: 20| how long will it take to get to disney around lunch time
+ Attention Words: ['to' 'will' 'get']
+ Original Label: 118| how long will my drive back from school take
+ Attention Words: ['drive' 'long' 'will']
+ Original Label: 20| how long does it take to drive from my current location to ventura
+ Attention Words: ['long' 'drive' 'does']
+ Original Label: 1| the best way to avoid traffic is the highway
+ Attention Words: ['avoid' 'way' 'highway']
+ Original Label: 1| would it be faster to take my bike to the parade tonight from my house or to take my car
+ Attention Words: ['car' 'it' 'be']
+ Original Label: 1| will i reach faster to office by bus or by car if started at 8am today
+ Attention Words: ['bus' 'or' 'by']
+ Original Label: 0| how long will it take me to get from beltsville to dc
+ Attention Words: ['long' 'will' 'get']
+ Original Label: 22| how long will it take for me to drive to my meeting at 7pm if i take 84 west
+ Attention Words: ['to' 'for' 'will']
+ Original Label: 39| what route will how the least traffic delays at this time to reach waterford lakes town center from my house
+ Attention Words: ['least' 'route' 'will']
+ Original Label: 20| will i make it from here to round rock in under two hours if i leave at 9 am
+ Attention Words: ['under' 'round' 'make']
+ Original Label: 19| how long would it take to drive to orlando fl from my house
+ Attention Words: ['would' 'it' 'orlando']
+ Original Label: 22| how long will it take me to get to the decoy festival with construction on 264
+ Attention Words: ['long' 'to' 'will']
+ Original Label: 10| can you tell me the traffic in galway city right now
+ Attention Words: ['galway' 'you' 'tell']
+ Original Label: 67| what is the traffic going to harrisburg international airport from my location
+ Attention Words: ['is' 'traffic' 'the']
+ Original Label: 0| how long will it take me to get to ocean city md
+ Attention Words: ['to' 'ocean' 'get']
+ Original Label: 19| how long will it take me to get to nicholass house if i leave now
+ Attention Words: ['to' 'get' 'will']
+ Original Label: 45| in traffic can i make it to the banquet in chino by 4 pm
+ Attention Words: ['i' 'can' 'traffic']
+---------------
+
+---------------
+ Current cluster: 91
+ Original Label: 1| what is the best time to head to morristown monday afternoon if i want to avoid rush hour traffic
+ Attention Words: ['the' 'what']
+ Original Label: 1| will you give me automatic updates on any faster routes as i travel from city and states
+ Attention Words: ['give' 'any' 'will']
+ Original Label: 19| how long it will take from nasr city embassies district to my home at 8 pm departure time
+ Attention Words: ['will' 'long' 'it']
+ Original Label: 54| how long will it take me to get from sevier county high school to kroger on 66 if i leave at 3 pm
+ Attention Words: ['it' 'will' 'long']
+---------------
+
+---------------
+ Current cluster: 92
+ Original Label: 29| what time should i leave to make it to the cubs game by 7pm
+ Attention Words: ['make' 'to' 'i']
+---------------
+
+---------------
+ Current cluster: 93
+ Original Label: 10| is the traffic bad at 6a on 820
+ Attention Words: ['the' 'traffic' 'is']
+ Original Label: 7| what is the traffic condition around cairo stadium this evening
+ Attention Words: ['traffic' 'the' 'what']
+ Original Label: 10| how fast is traffic moving on i90
+ Attention Words: ['moving' 'traffic' 'how']
+---------------
+
+---------------
+ Current cluster: 97
+ Original Label: 17| what is the distance from mcdonough to riverdale
+ Attention Words: ['distance' 'the' 'what']
+ Original Label: 20| how long does it take to get to down town miami tonigh
+ Attention Words: ['to' 'to' 'how']
+ Original Label: 0| how long does it take to get from north carolina to florida
+ Attention Words: ['from' 'north' 'how']
+ Original Label: 94| what is the quickest way to the concert in kapiolani park
+ Attention Words: ['the' 'concert' 'what']
+ Original Label: 83| at what time should i plan to leave my house this afternoon if i want to arrive in orlando tomorrow by noon
+ Attention Words: ['leave' 'my' 'at']
+ Original Label: 10| what is the traffic driving from denver to dallas
+ Attention Words: ['traffic' 'the' 'what']
+ Original Label: 144| i need to be in middletown by 7 tonight is there construction on the thruway between suffern and harriman will i make it in time
+ Attention Words: ['be' 'construction' 'there']
+ Original Label: 61| please tell me if the roads are clear for my route to giovannas school
+ Attention Words: ['giovannas' 'to' 'please']
+ Original Label: 1| is it quicker to take 96 or grand river to get to howell right now
+ Attention Words: ['grand' 'to' 'is']
+ Original Label: 67| how is traffic on i4 heading north from my current location
+ Attention Words: ['my' 'current' 'how']
+ Original Label: 8| how many more days until the beach party
+ Attention Words: ['party' 'how']
+ Original Label: 1| how many more train stops until i get to my destination
+ Attention Words: ['destination' 'my' 'to']
+ Original Label: 34| i want the fastest route to north shore if i leave 6am on saturday
+ Attention Words: ['i' 'leave']
+---------------
+
+---------------
+ Current cluster: 101
+ Original Label: 75| if i left at 10 will i make it to scotts work in 15 minutes
+ Attention Words: ['to' 'it' 'make']
+---------------
+
+---------------
+ Current cluster: 114
+ Original Label: 8| concerts by frank ocean
+ Attention Words: ['frank' 'by']
+---------------
+
+---------------
+ Current cluster: 117
+ Original Label: 6| rock concerts coming to the huntington center next month
+ Attention Words: ['the' 'huntington']
+ Original Label: 8| concerts by fantasia
+ Attention Words: ['concerts' 'fantasia' 'by']
+ Original Label: 8| portland concerts during december
+ Attention Words: ['during' 'portland']
+ Original Label: 48| help i need lastminute tickets to any broadway show for tomorrow afternoon matinee only
+ Attention Words: ['any' 'lastminute' 'need']
+ Original Label: 8| concerts in miami next week
+ Attention Words: ['week' 'in']
+ Original Label: 8| what dates are the state fair in ohio
+ Attention Words: ['what']
+ Original Label: 8| concerts by sza
+ Attention Words: ['by' 'sza']
+---------------
+
+---------------
+ Current cluster: 119
+ Original Label: 8| concerts by pink
+ Attention Words: ['pink' 'concerts']
+ Original Label: 16| can you give me an update on traffic accidents on my commute to work
+ Attention Words: ['an' 'commute' 'can']
+---------------
+
+---------------
+ Current cluster: 121
+ Original Label: 112| is there a lot of snow still on the roads going to school
+ Attention Words: ['lot' 'a' 'roads']
+ Original Label: 83| when should i request an uber to get to gabys by 6 pm
+ Attention Words: ['get' 'should' 'i']
+ Original Label: 8| what events are happening this weekend for children to participate in
+ Attention Words: ['for' 'happening' 'are']
+ Original Label: 10| if i leave now how do the roads look for my departure to hornby
+ Attention Words: ['now' 'leave' 'departure']
+ Original Label: 36| if i leave now what is my expected arrival time in bloomington if i take i65 south
+ Attention Words: ['now' 'is' 'leave']
+ Original Label: 60| i could really use the fastest route to the hospital from my home in canton since my wife is in labor
+ Attention Words: ['the' 'could' 'hospital']
+ Original Label: 45| what time will i make my doctors appointment if i leave in 5 minutes
+ Attention Words: ['doctors' 'make' 'i']
+ Original Label: 4| is there usually traffic on the weekend for my area
+ Attention Words: ['there' 'weekend' 'for']
+ Original Label: 6| can you let me know if there are any art gallery openings with in a 20 mile radius of downtown columbus next week
+ Attention Words: ['can' 'you' 'let']
+ Original Label: 0| how long will it take me to kacapiring street if i leave at 5 pm
+ Attention Words: ['kacapiring' 'long' 'will']
+ Original Label: 161| can i make it to a meeting at 7pm at my office from my house at 6pm
+ Attention Words: ['make' 'house' 'my']
+---------------
+
+---------------
+ Current cluster: 131
+ Original Label: 0| how long does it take to go to new york from miami going 55 mph
+ Attention Words: ['to' 'miami' 'how']
+---------------
+
+---------------
+ Current cluster: 136
+ Original Label: 1| what is the route of the duck boats for the eagles super bowl parade in downtown philly
+ Attention Words: ['is' 'route' 'the']
+---------------
+
+---------------
+ Current cluster: 137
+ Original Label: 8| theater events in new york city this weekend
+ Attention Words: ['theater']
+ Original Label: 13| what are some cities my friends have recently gone to
+ Attention Words: ['what']
+---------------
+
+---------------
+ Current cluster: 142
+ Original Label: 29| what time should i leave to make it to the roller derby by 8pm
+ Attention Words: ['to' 'the' 'roller']
+ Original Label: 34| is there a way to get from lynnwood to tacoma without being on i5
+ Attention Words: ['to' 'get' 'from']
+ Original Label: 103| my doctors appointment this afternoon at 2 is in troy how long will it take me to get there from my office
+ Attention Words: ['will' 'afternoon' 'my']
+ Original Label: 7| are there any accidents on the i5 in portland today
+ Attention Words: ['today' 'i5']
+ Original Label: 29| what time should i leave if i want to get to the billy joel concert by 645
+ Attention Words: ['if' 'want' 'i']
+ Original Label: 34| best way to avoid travelling on 32nd street
+ Attention Words: ['avoid' 'to' 'best']
+ Original Label: 1| are there any bike lanes on empire circle
+ Attention Words: ['any' 'are']
+ Original Label: 17| what is the distance from meridian to mccall
+ Attention Words: ['distance' 'meridian' 'the']
+---------------
+
+---------------
+ Current cluster: 144
+ Original Label: 132| what time should i leave the hotel to arrive at disneyworld when it opens
+ Attention Words: ['the' 'leave' 'what']
+---------------
+
+---------------
+ Current cluster: 162
+ Original Label: 20| how long will it take me to drive to dodger stadium right now
+ Attention Words: ['long' 'to' 'will']
+ Original Label: 34| can you tell me the quickest way to get to forest lake from cambridge
+ Attention Words: ['quickest' 'you' 'tell']
+ Original Label: 2| can i get to the theater by five if i leave at 4
+ Attention Words: ['theater' 'get' 'at']
+ Original Label: 20| how long is my drive to the dentist
+ Attention Words: ['to' 'dentist' 'is']
+ Original Label: 45| will the downed power line on 60th street make me late to my appointment at 1 if i leave now
+ Attention Words: ['downed' 'me' 'late']
+---------------
+
+---------------
+ Current cluster: 165
+ Original Label: 1| is it a faster drive during the evening or the morning
+ Attention Words: ['it' 'morning' 'a']
+ Original Label: 82| what time in the morning should i leave to get to the office by 9 am
+ Attention Words: ['to' 'get' 'to']
+---------------
+
+---------------
+ Current cluster: 169
+ Original Label: 45| if i leave at 7am will i make it to my first meeting with yasia in the morning given the construction on i90
+ Attention Words: ['the' 'my' 'first']
+ Original Label: 54| how long of a drive is it from dfw airport to the hilton downtown dallas at midnight
+ Attention Words: ['long' 'a' 'of']
+ Original Label: 43| can i make it from here to my 6pm meeting on time if i leave in 40 minutes
+ Attention Words: ['from' 'it' 'make']
+ Original Label: 24| best route alternative to get to mikes superbowl party in hamden if i leave now
+ Attention Words: ['route' 'to' 'alternative']
+ Original Label: 10| how is the traffic driving from athens to decatur
+ Attention Words: ['traffic' 'the' 'is']
+ Original Label: 0| how long will it take me to drive to miami in heavy traffic
+ Attention Words: ['to' 'long' 'will']
+ Original Label: 19| how long will it take me to get home if i leave at 6pm
+ Attention Words: ['it' 'long' 'will']
+ Original Label: 4| if i leave thursday morning to get to my brothers house how much traffic can i expect to have
+ Attention Words: ['my' 'i' 'leave']
+ Original Label: 20| how long will it take me to get to duvall from des moines taking the hov lane at 5pm
+ Attention Words: ['long' 'to' 'will']
+ Original Label: 64| if i leave here now can i get to dads house by 1pm
+ Attention Words: ['dads' 'by' 'house']
+ Original Label: 55| will it take a lot longer to get to work today because of any traffic in my route to work
+ Attention Words: ['it' 'a' 'take']
+ Original Label: 16| how long will i be sitting in traffic today on the way to work
+ Attention Words: ['i' 'long' 'will']
+ Original Label: 92| how long will it take me to get to school from here if i leave at 225 pm
+ Attention Words: ['get' 'long' 'will']
+ Original Label: 0| how long will it take me to get to altamonte
+ Attention Words: ['long' 'to' 'will']
+ Original Label: 55| will it take longer to get to work if i take main street
+ Attention Words: ['take' 'to']
+ Original Label: 19| how long will it take me to drive to the jersey shore from my parents house in northeast philly
+ Attention Words: ['will' 'my' 'long']
+ Original Label: 20| how long will it take me to get into new york via the queens bridge
+ Attention Words: ['will' 'to' 'get']
+ Original Label: 39| whats the best way to get from my house to central station in denver right now
+ Attention Words: ['central' 'to' 'house']
+ Original Label: 22| how long will it take me to drive to my 10am meeting
+ Attention Words: ['my' 'drive' 'to']
+ Original Label: 19| how long will it take to get to jessies if i leave at 2
+ Attention Words: ['long' 'to' 'will']
+ Original Label: 45| if i leave at 1 will i make it to my 3 pm appointment in sawsville
+ Attention Words: ['at' 'i' 'leave']
+ Original Label: 45| can i get to my meeting in 20 minutes if i leave now
+ Attention Words: ['my' 'to' 'get']
+ Original Label: 29| what time to i need to leave to get to my doctors appointment by 3
+ Attention Words: ['need' 'to' 'get']
+ Original Label: 45| can i make kickoff if i leave now for the soccer game at 8 pm
+ Attention Words: ['now' 'i' 'make']
+ Original Label: 0| how long will it take to drive from chicago to mississippi
+ Attention Words: ['from' 'chicago' 'will']
+ Original Label: 69| if i leave by 10pm from adrians will i make it to leilas house before midnight
+ Attention Words: ['i' 'by' 'leave']
+ Original Label: 54| how long is it going to take me to get from publix to the university on 13th
+ Attention Words: ['long' 'is' 'it']
+ Original Label: 55| how long will it take me to get to work today
+ Attention Words: ['long' 'get' 'will']
+ Original Label: 2| if i leave here at 7 am when will i get to los angeles
+ Attention Words: ['to' 'i' 'get']
+ Original Label: 56| how long will it take me with traffic to get from my home to my job
+ Attention Words: ['my' 'get' 'will']
+ Original Label: 54| how long would it take me to get to holiday hill from staten island ny if i took the highway at 9 in the morning
+ Attention Words: ['it' 'long' 'would']
+ Original Label: 36| if i leave kennebunkport now what time will i make it to hartford ct
+ Attention Words: ['to' 'make' 'leave']
+ Original Label: 0| if i leave in 20 minutes how long will it take to get to new brunswick
+ Attention Words: ['i' 'in' 'leave']
+ Original Label: 3| what time should i leave home to get to the airport by 9 am next tuesday
+ Attention Words: ['the' 'by' 'airport']
+ Original Label: 19| how long will my commute be to travel to ft lauderdale from my home if i leave now
+ Attention Words: ['long' 'my' 'will']
+ Original Label: 19| how long will it take me to get to harrys if i leave now
+ Attention Words: ['it' 'long' 'will']
+ Original Label: 0| how long will it take me to drive to chicago
+ Attention Words: ['chicago' 'drive' 'to']
+ Original Label: 4| how much traffic is there on the way to rachels house if i leave now
+ Attention Words: ['to' 'way' 'much']
+ Original Label: 19| how long will it take to get to pittsburgh from home
+ Attention Words: ['will' 'to' 'pittsburgh']
+ Original Label: 38| how long will it take me to drive from publix to my home
+ Attention Words: ['publix' 'from' 'will']
+ Original Label: 10| how long will i be in this traffic
+ Attention Words: ['will' 'traffic']
+ Original Label: 27| how long will it take to get to the fresno fuegos soccer game if i leave at 545pm from shellys house
+ Attention Words: ['at' 'fresno' 'leave']
+ Original Label: 0| how long will it take me to get to pensacola
+ Attention Words: ['to' 'to' 'get']
+ Original Label: 0| how long will it take to get to royal oak now
+ Attention Words: ['it' 'will' 'royal']
+ Original Label: 19| how long will it take me to get from kelsis house to the french quarter using i 10 if i left in 30 minutes
+ Attention Words: ['long' 'it' 'will']
+ Original Label: 1| will it take longer to get to houston on a bus or taxi from conroe texas on friday
+ Attention Words: ['get' 'it' 'take']
+ Original Label: 10| can you tell me the traffic flow on 264 right now
+ Attention Words: ['you' 'tell' 'flow']
+ Original Label: 45| if i leave at 600 will i make the 645 movie
+ Attention Words: ['at' 'i' 'leave']
+ Original Label: 9| what is the fastest way to get to the hospital
+ Attention Words: ['to' 'hospital' 'the']
+ Original Label: 7| what is the traffic like on the way to the target center right now
+ Attention Words: ['the' 'traffic' 'way']
+ Original Label: 19| how long will it take to get to ians house if i leave at 500
+ Attention Words: ['it' 'long' 'will']
+ Original Label: 20| how long does it take to get from liverpool to cicero if i take only the freeway
+ Attention Words: ['liverpool' 'long' 'does']
+ Original Label: 36| will i be able to get to atlanta by noon if i leave at 2 am
+ Attention Words: ['at' 'be' 'if']
+ Original Label: 19| if i leave now how long will it take me to get to adams house
+ Attention Words: ['i' 'now' 'leave']
+ Original Label: 0| how long will it take to drive from laramie to ft collins co
+ Attention Words: ['long' 'it' 'will']
+ Original Label: 54| how long will it take to drive from disneyland to knotts berry farm
+ Attention Words: ['it' 'long' 'will']
+ Original Label: 49| how long will it take me to get to sandis house if i leave my moms now
+ Attention Words: ['to' 'long' 'will']
+ Original Label: 38| how long will it take me to get to my boyfriends house from here if i leave now
+ Attention Words: ['get' 'to' 'my']
+ Original Label: 7| is there traffic on the highway right now
+ Attention Words: ['is' 'traffic' 'highway']
+ Original Label: 0| how long will it take me to drive from toledo to chicago
+ Attention Words: ['long' 'toledo' 'will']
+ Original Label: 7| what is the traffic like on the 585 in rochester now
+ Attention Words: ['traffic' 'rochester' '585']
+ Original Label: 27| how long will it take me to drive to my moms house from the monica show
+ Attention Words: ['drive' 'long' 'will']
+ Original Label: 49| how long will it take me to get home from moms in an hour
+ Attention Words: ['it' 'will' 'long']
+ Original Label: 19| how long will it take me to drive to milwaukee from my house
+ Attention Words: ['long' 'to' 'will']
+ Original Label: 38| tell me how long it will take me to drive from columbus ohio airport to home
+ Attention Words: ['long' 'me' 'how']
+ Original Label: 30| whats the length of the route to the civic center
+ Attention Words: ['the' 'the' 'length']
+ Original Label: 40| if i take the tunnel can i make it to work by 9
+ Attention Words: ['the' 'i' 'take']
+ Original Label: 0| how long will it take to get to portland maine from st augustine using i 95
+ Attention Words: ['long' 'it' 'will']
+ Original Label: 123| when will i arrive at school if i leave home at 2
+ Attention Words: ['i' '2' 'at']
+ Original Label: 88| how long will it take to get from marys house to the movie theater at the mall
+ Attention Words: ['it' 'marys' 'will']
+ Original Label: 38| how long will it take me to get to omars house from here if i leave in 15 minutes
+ Attention Words: ['to' 'long' 'will']
+ Original Label: 0| how long will it take me to get to toledo from delaware ohio
+ Attention Words: ['will' 'to' 'toledo']
+---------------
+
+---------------
+ Current cluster: 174
+ Original Label: 8| are there any renaissance events for texas during the spring
+ Attention Words: ['there' 'renaissance' 'any']
+---------------
+
