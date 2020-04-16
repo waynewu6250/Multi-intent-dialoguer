@@ -109,6 +109,8 @@ checkpoints/
 checkpoints-dcec/*.h5
 checkpoints-scbert/*.h5
 raw_datasets/MULTIWOZ2.1/
+finetune_results/
+clustering_results/*.pkl
 
 
 
