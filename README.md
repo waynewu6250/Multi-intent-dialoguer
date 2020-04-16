@@ -77,6 +77,23 @@ As we further delve into some subclusters by choosing only 6 nearest neighbors w
     I need a flight from philadelphia to boston
     I would like a flight from boston to san francisco on august seventeenth what are your flights from dallas to baltimore
 
+## 4. Deep Embedding Clustering
+>
+    python perform_dcec.py train
+    python perform_dcec.py test
+
+Checkpoints are in ``checkpoints-dcec/``
+
+Results are in ``clustering_results/``
+
+## 5. Sentence Clustering BERT
+>
+    python sentence_clustering.py train
+    python sentence_clustering.py test
+
+Checkpoints are in ``checkpoints-scbert/``
+
+Results are in ``clustering_results/``
 
 
 
