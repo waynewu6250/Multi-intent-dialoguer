@@ -4,10 +4,12 @@ import keras.backend as K
 from keras.engine.topology import Layer, InputSpec
 from keras.layers import Lambda
 from keras.models import Model, load_model
+from keras import optimizers
+
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 
-from model.cae import CAE_model
+from model.cae import CAE_model, CustomLoss
 
 class ClusterLayer(Layer):
     """
@@ -53,12 +55,13 @@ class DCEC:
     def __init__(self, input_shape, filters, kernel_size, n_clusters, weights, data, alpha=1.0, pretrain=True):
         
         if pretrain:
-            self.autoencoder = load_model('checkpoints-dcec/model.h5')
+            self.autoencoder = CAE_model(input_shape, filters, kernel_size)
+            self.autoencoder.load_weights('checkpoints-dcec/model_att.h5')
         else:
             print("Start Pretraining...")
             self.autoencoder = CAE_model(input_shape, filters, kernel_size)
-            (x_train, x_test) = data
-            self.pretrain_model(x_train, x_test)
+            (emb_train, emb_test, att_train, att_test, l_train, l_test) = data
+            self.pretrain_model(att_train, l_train)
             print("Pretraining Complete")
         
         features = self.autoencoder.get_layer('max_pooling1d_3').output
@@ -67,23 +70,25 @@ class DCEC:
         
         features_s = Lambda(lambda x: K.squeeze(x, axis=2))(features)
         probs = ClusterLayer(n_clusters, alpha, name='cluster')(features_s)
-        self.model = Model(inputs = self.autoencoder.input, outputs=[probs, self.autoencoder.output])
+        loss = CustomLoss()([self.autoencoder.get_layer('average_vector').output, self.autoencoder.output, self.autoencoder.get_layer('att_weights').output])
+        
+        self.model = Model(inputs = self.autoencoder.input, outputs=probs)
 
         if weights:
             self.model.load_weights(weights)
             print("2. Successfully loading weights!!")
     
-    def pretrain_model(self, x_train, x_test):
-
-        self.autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
-
-        self.autoencoder.fit(x_train, x_train,
-                epochs=10,
+    def pretrain_model(self, x_train, l_train):
+        sgd = optimizers.SGD(lr=0.001, decay=1e-6, momentum=0.9, nesterov=True)
+        self.autoencoder.compile(optimizer=sgd)
+        
+        self.autoencoder.fit([x_train, l_train],
+                epochs=30,
                 batch_size=128,
                 shuffle=True,
-                validation_data=(x_test, x_test))
+                validation_split=0.1)
         
-        self.autoencoder.save('checkpoints-dcec/model.h5')
+        self.autoencoder.save_weights('checkpoints-dcec/model_att.h5')
         self.pretrain = True
     
     @staticmethod
@@ -96,10 +101,10 @@ class DCEC:
 
     def fit(self, data, opt):
 
-        (x_train, x_test) = data
+        (emb_train, emb_test, att_train, att_test, l_train, l_test) = data
         
         # Initialize cluster centers by K-Means
-        features = self.feature_extractor.predict(x_test)
+        features = self.feature_extractor.predict([att_test, l_test])
         features = features.squeeze(-1)
 
         kmeans_model = KMeans(n_clusters=opt.n_clusters, n_init = 20, random_state=1)
@@ -113,7 +118,7 @@ class DCEC:
             # Update our target distribution
             if iter % opt.update_interval == 0:
 
-                q, _ = self.model.predict(x_test)
+                q = self.model.predict([att_test, l_test])
                 p = self.target(q)
                 self.cur_label = np.argmax(q, axis = 1)
 
@@ -126,21 +131,21 @@ class DCEC:
                     break
             
             # train on batch
-            if (index + 1) * opt.batch_size > x_test.shape[0]:
-                loss = self.model.train_on_batch(x=x_test[index * opt.batch_size::],
-                                                 y=[p[index * opt.batch_size::], x_test[index * opt.batch_size::]])
+            if (index + 1) * opt.batch_size > att_test.shape[0]:
+                loss = self.model.train_on_batch(x=[att_test[index * opt.batch_size::], l_test[index * opt.batch_size::]],
+                                                 y=p[index * opt.batch_size::])#, att_test[index * opt.batch_size::]])
                 index = 0
             else:
-                loss = self.model.train_on_batch(x=x_test[index * opt.batch_size:(index + 1) * opt.batch_size],
-                                                 y=[p[index * opt.batch_size:(index + 1) * opt.batch_size],
-                                                    x_test[index * opt.batch_size:(index + 1) * opt.batch_size]])
+                loss = self.model.train_on_batch(x=[att_test[index * opt.batch_size:(index + 1) * opt.batch_size], l_test[index * opt.batch_size:(index + 1) * opt.batch_size]],
+                                                 y=p[index * opt.batch_size:(index + 1) * opt.batch_size])#,
+                                                    #att_test[index * opt.batch_size:(index + 1) * opt.batch_size]])
                 index += 1
 
             # save intermediate model
             if (iter+1) % opt.save_interval == 0:
                 # save DCEC model checkpoints
                 print('Saving model no.', iter)
-                self.model.save_weights('checkpoints-dcec/dcec_model_' + str(iter) + '.h5')
+                self.model.save_weights('checkpoints-dcec/dcec_model_att_' + str(iter) + '.h5')
             
 
         
