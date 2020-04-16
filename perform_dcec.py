@@ -39,7 +39,7 @@ class PerformClustering:
             self.dic = pickle.load(f)
         self.reverse_dic = {v: k for k,v in self.dic.items()}
         self.embeddings = torch.load(self.embeddings_path)
-        self.emb2sent, self.emb2id, self.data, self.labels_ref = self.prepare_data()
+        self.emb2sent, self.emb2id, self.data, self.attdata, self.lengths, self.labels_ref = self.prepare_data()
     
     def prepare_data(self):
         
@@ -48,26 +48,33 @@ class PerformClustering:
         emb2id = {}
         labels_ref = {}
         data = np.zeros((num_data, 768))
+        attdata = np.zeros((num_data, 20, 768))
+        lengths = np.zeros((num_data, 1))
         
         number = 0
         for key, value in self.embeddings.items():
-            for (sent, emb) in value:
+            for (sent, emb, word_emb) in value:
                 emb2sent[tuple(emb)] = sent
                 emb2id[tuple(emb)] = key
+                
                 data[number] = emb
+                attdata[number] = word_emb
+                lengths[number] = 20-len(sent.split(" "))
+                
                 labels_ref[number] = key
                 number += 1
         
-        return emb2sent, emb2id, data, labels_ref
+        return emb2sent, emb2id, data, attdata, lengths.astype(np.int32), labels_ref
     
     def random_split(self, ratio):
         
         indices = np.random.permutation(len(self.data))
         train_size = int(ratio*len(self.data))
-        x_train = self.data[indices[:train_size],:][:,:,np.newaxis]
-        x_test = self.data[indices[train_size:],:][:,:,np.newaxis]
+        emb_train, emb_test = self.data[indices[:train_size],:], self.data[indices[train_size:],:]
+        att_train, att_test = self.attdata[indices[:train_size],:,:], self.attdata[indices[train_size:],:,:]
+        l_train, l_test = self.lengths[indices[:train_size]], self.lengths[indices[train_size:]]
         
-        return (x_train, x_test)
+        return emb_train, emb_test, att_train, att_test, l_train, l_test
 
 
 def train(**kwargs):
@@ -77,25 +84,35 @@ def train(**kwargs):
     
     cluster = PerformClustering(opt.dic_path, opt.embedding_path)
     data = cluster.random_split(0.8)
+    emb_train, emb_test, att_train, att_test, l_train, l_test = data
     
     print("1. Get data ready!")
 
-    model = DCEC(opt.input_shape, opt.filters, opt.kernel_size, opt.n_clusters, opt.weights, data, opt.alpha, pretrain=False)
-    model.compile(loss=['kld', 'binary_crossentropy'], optimizer='adam')
+    model = DCEC(opt.input_shape, opt.filters, opt.kernel_size, opt.n_clusters, opt.weights, data, opt.alpha, pretrain=True)
+    model.compile(loss='kld', optimizer='adam')
     print("3. Compile model!")
     
     model.fit(data, opt)
 
+    emb_train, emb_test, att_train, att_test, l_train, l_test = data
+
+    # 1. Attention weights
+    test_func = K.function(model.model.input, model.model.get_layer(name='att_weights').output)
+    att_weights = test_func([att_test, l_test])
+
+    # 2. Cluster center
     test_func = K.function(model.model.input, model.model.get_layer(name='cluster').weights)
-    cluster_centers = test_func(data[1])
+    cluster_centers = test_func([att_test, l_test])
     
-    q, _ = model.model.predict(data[1])
+    q = model.model.predict([att_test, l_test])
     cur_label = np.argmax(q, axis = 1)
 
     with open(opt.cluster_label_path, 'wb') as f:
         pickle.dump(cur_label, f)
     with open(opt.cluster_data_path, 'wb') as f:
         pickle.dump(data, f)
+    with open(opt.cluster_weight_path, 'wb') as f:
+        pickle.dump(att_weights, f)
     
 
 
@@ -110,23 +127,36 @@ def test(**kwargs):
         data = pickle.load(f)
     with open(opt.cluster_label_path, 'rb') as f:
         labels = pickle.load(f)
-
-    x_train, x_test = data
-    x_test = x_test.squeeze(-1)
+    with open(opt.cluster_weight_path, 'rb') as f:
+        att_weights = pickle.load(f)
+    
+    emb_train, emb_test, att_train, att_test, l_train, l_test = data
+    att_weights = att_weights.squeeze(-1)
 
     #print('Cluster Number:', opt.cluster_id)
     cache = collections.defaultdict(list)
     for cluster_id in range(opt.n_clusters):
         idds = []
         sents = []
+        
         # Calculate original ids
         if cluster_id not in labels:
             continue
-        for emb in x_test[np.where(labels == cluster_id)]:
+        
+        chosen = np.where(labels == cluster_id)
+        for emb, weights in zip(emb_test[chosen], att_weights[chosen]):
+            
+            index = np.argsort(weights)[-3:]
+            print(np.sort(weights)[-3:])
+
             idd = cluster.emb2id[tuple(emb.tolist())]
             sent = cluster.emb2sent[tuple(emb.tolist())]
+
+            toks = sent.split(' ')
+            toks = np.array(toks+['<PAD>']*(20-len(toks)))
+
             idds.append(idd)
-            sents.append((idd,sent))
+            sents.append((idd,sent,toks[index]))
         
         # Cluster:
         uid = np.unique(idds)
@@ -135,14 +165,14 @@ def test(**kwargs):
 
     cache = sorted(cache.items(), key = lambda x: x[0])
 
-    with open('clustering_results/result_ft_raw.txt', 'w') as f:
+    with open('clustering_results/result_ft_att.txt', 'w') as f:
         for key, value in cache:
             f.write("-"*15)
             f.write("\n Original Label: {} \n".format(key))
             for i, sents in enumerate(value):
                 f.write("*"*5+"Mini-cluster {}".format(i)+"*"*5+"\n")
-                for sent in sents:
-                    f.write("{} \n".format(sent))
+                for idd, sent, words in sents:
+                    f.write("Ground Truth: {}, Attention Words: {} | {}\n".format(idd, " ".join(words[::-1]), sent))
             f.write("-"*15+"\n\n")
         
 

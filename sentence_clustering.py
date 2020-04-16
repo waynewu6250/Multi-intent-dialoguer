@@ -145,11 +145,24 @@ def test(**kwargs):
 
     # Predictions
     ids = np.argmax(aspect_probs, axis=-1)
-    print(embs)
-    print(ids)
-    print(y_test[ids==0])
+    att_words = np.argsort(att_weights, axis=-1)[:, -3:]
+    
+    unique_ids = np.unique(ids)
+    raw_texts = np.array(X)[indices[train_size:]]
 
+    def check(text, words):
+        text = text.split(" ")
+        return np.array(text)[[word for word in words if word < len(text)]]
+        
 
+    with open('clustering_results/result_aspect.txt', 'w') as f:
+        for idd in unique_ids:
+            f.write("-"*15)
+            f.write("\n Current cluster: {}".format(idd))
+            for real_label, text, words in zip(y_test[ids==idd], raw_texts[ids==idd], att_words[ids==idd]):
+                f.write("\n Original Label: {}| {}".format(real_label, text))
+                f.write("\n Attention Words: {}".format(check(text, words)))
+            f.write("\n"+"-"*15+"\n\n")
 
 if __name__ == "__main__":
     import fire

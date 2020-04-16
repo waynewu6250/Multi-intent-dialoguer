@@ -31,11 +31,17 @@ class Attention(Layer):
 
         self.time_steps = input_shape[0][1]
 
-        self.W = self.add_weight(shape=(input_shape[0][-1], input_shape[1][-1]),
-                                 initializer='glorot_uniform', name='W_attention')
-        self.b = self.add_weight(shape=(1,), 
-                                 initializer='zero', 
-                                 name='b_attention')
+        self.W1 = self.add_weight(shape=(input_shape[0][-1]+input_shape[0][-1], 32),
+                                  initializer='glorot_normal', name='W_attention1')
+        self.b1 = self.add_weight(shape=(32,), 
+                                  initializer='zero', 
+                                  name='b_attention1')
+        self.W2 = self.add_weight(shape=(32, 1),
+                                  initializer='glorot_normal', name='W_attention2')
+        self.b2 = self.add_weight(shape=(1,), 
+                                  initializer='zero', 
+                                  name='b_attention2')
+
         self.built = True
 
     def compute_mask(self, input_tensor, mask=None):
@@ -43,21 +49,20 @@ class Attention(Layer):
     
     def call(self, input_tensor):
         
-        x = input_tensor[0]
-        y = input_tensor[1]
+        x = input_tensor[0] #(N, T, H)
+        y = input_tensor[1] #(N, H)
 
-        y = K.dot(y, self.W)
+        # Attention Mechanism
         y = K.repeat_elements(K.expand_dims(y, axis=-2), self.time_steps, axis=1)
-        eij = K.sum(x*y, axis=-1)
 
-        b = K.repeat_elements(self.b, self.time_steps, axis=0)
+        concat = K.concatenate([x, y], axis=-1) #(N, T, 2H)
+        h1 = K.tanh(K.dot(concat, self.W1) + self.b1)
+        h2 = K.relu(K.dot(h1, self.W2) + self.b2)
         
-        eij += b
+        a = K.exp(h2)
+        a /= K.cast(K.sum(a, axis=-2, keepdims=True) + K.epsilon(), K.floatx())
+        a = K.squeeze(a, axis=-1)
 
-        eij = K.tanh(eij)
-        a = K.exp(eij)
-
-        a /= K.cast(K.sum(a, axis=1, keepdims=True) + K.epsilon(), K.floatx())
         return a
 
     def compute_output_shape(self, input_shape):

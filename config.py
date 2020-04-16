@@ -6,13 +6,13 @@ class Config:
     atis_test_path = "data/atis/raw_data_test.pkl"
     atis_dic_path = "data/atis/intent2id.pkl"
     atis_model_path = "checkpoints/epoch-3.pth"
-    atis_embedding_path = "results/atis_embeddings.pth"
+    atis_embedding_path = "finetune_results/atis_embeddings.pth"
 
     # semantic parsing dataset
     se_path = "data/semantic/raw_data_se.pkl"
     se_dic_path = "data/semantic/intent2id_se.pkl"
     se_model_path = "checkpoints/epoch-se-3.pth"
-    se_embedding_path = "results/se_embeddings.pth"
+    se_embedding_path = "finetune_results/se_embeddings_with_hidden.pth"
 
     # multiWOZ dataset
     woz_path = "data/"
@@ -29,12 +29,12 @@ class Config:
 
     #################### For Clustering ####################
     dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/semantic/intent2id_se.pkl"
-    embedding_path = "/nethome/twu367/Multi-intent-dialoguer/results/se_embeddings_raw.pth"
+    embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/se_embeddings_with_hidden.pth"
 
     #################### For DCEC ####################
     
     # Model
-    input_shape = (768, 1)
+    input_shape = (20, 768)
     filters = [16, 8, 1]
     kernel_size = 3
     alpha = 1
@@ -47,11 +47,12 @@ class Config:
     save_interval = 10
     tol = 1e-3
 
-    weights = None #'checkpoints-dcec/dcec_model_99.h5'
+    weights = None #'checkpoints-dcec/dcec_model_att_99.h5'
 
     # clustering
-    cluster_data_path = "clustering_results/data.pkl"
-    cluster_label_path =  "clustering_results/labels.pkl"
+    cluster_data_path = "clustering_results/data_att.pkl"
+    cluster_label_path =  "clustering_results/labels_att.pkl"
+    cluster_weight_path =  "clustering_results/weight_att.pkl"
     cluster_id = 0
 
     #################### For scBERT ####################
