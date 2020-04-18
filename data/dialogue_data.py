@@ -24,6 +24,31 @@ class MULTIWOZData(Data):
     #==================================================#
     #                   Prepare Text                   #
     #==================================================#
+
+    def text_prepare(self, text, mode):
+        """
+            text: a string       
+            return: modified string
+        """
+        def prepare(text):
+            text = text.lower() # lowercase text
+            text = re.sub(self.REPLACE_BY_SPACE_RE, ' ', text) # replace REPLACE_BY_SPACE_RE symbols by space in text
+            text = re.sub(self.BAD_SYMBOLS_RE, '', text) # delete symbols which are in BAD_SYMBOLS_RE from text
+            text = re.sub(r"[ ]+", " ", text)
+            text = re.sub(r"\!+", "!", text)
+            text = re.sub(r"\,+", ",", text)
+            text = re.sub(r"\?+", "?", text)
+            return text
+        
+        texts = text.split('[SEP]')
+        text = "[SEP]".join([prepare(text) for text in texts])
+        
+        if mode == "Bert":
+            text = "[CLS] " + text + " [SEP]"
+            tokenized_text = self.tokenizer.tokenize(text)
+            tokenized_ids = self.tokenizer.convert_tokens_to_ids(tokenized_text)
+            text = tokenized_ids
+        return text
     
     def prepare_dialogue(self, done):
         """
@@ -169,5 +194,5 @@ class MULTIWOZData(Data):
     
     
 if __name__ == "__main__":
-    data = MULTIWOZData("../raw_datasets/MULTIWOZ2.1/data.json", done=True)
+    data = MULTIWOZData("../raw_datasets/MULTIWOZ2.1/data.json", done=False)
     print(data.train_data[0])

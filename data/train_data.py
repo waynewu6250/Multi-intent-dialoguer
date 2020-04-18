@@ -45,6 +45,7 @@ class Data:
         text = re.sub(r"\?+", "?", text)
         if mode == "Bert":
             text = "[CLS] " + text + " [SEP]"
+            print(text)
             tokenized_text = self.tokenizer.tokenize(text)
             tokenized_ids = self.tokenizer.convert_tokens_to_ids(tokenized_text)
             text = tokenized_ids
