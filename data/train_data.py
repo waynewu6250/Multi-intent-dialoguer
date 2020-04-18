@@ -9,7 +9,7 @@ import json
 import os
 import csv
 import spacy
-#from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM
+from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM
 import time
 
 class Data:
@@ -19,6 +19,7 @@ class Data:
         self.data_path = data_path
         self.REPLACE_BY_SPACE_RE = re.compile(r'[/(){}\[\]\|@,;]')
         self.BAD_SYMBOLS_RE = re.compile(r'[^0-9a-z #+_]')
+        self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
 
     #==================================================#
     #                   Text Prepare                   #
@@ -44,9 +45,8 @@ class Data:
         text = re.sub(r"\?+", "?", text)
         if mode == "Bert":
             text = "[CLS] " + text + " [SEP]"
-            tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
-            tokenized_text = tokenizer.tokenize(text)
-            tokenized_ids = tokenizer.convert_tokens_to_ids(tokenized_text)
+            tokenized_text = self.tokenizer.tokenize(text)
+            tokenized_ids = self.tokenizer.convert_tokens_to_ids(tokenized_text)
             text = tokenized_ids
         return text
     
