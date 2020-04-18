@@ -17,12 +17,93 @@ class MULTIWOZData(Data):
     def __init__(self, data_path, done=True):
 
         super(MULTIWOZData, self).__init__(data_path)
-        self.df, self.data, self.labels = self.prepare_text(done)
+        #self.df, self.data, self.labels = self.prepare_text(done)
+        self.train_data, self.intent2id = self.prepare_dialogue(done)
+        self.num_labels = len(self.intent2id)
 
     #==================================================#
     #                   Prepare Text                   #
     #==================================================#
     
+    def prepare_dialogue(self, done):
+        """
+        train_data:
+        
+        a list of dialogues
+        for each dialogue:
+            [(sent1, [label1, label2]), 
+             (sent2, [label2]),...]
+        """
+
+        if done:
+            with open("MULTIWOZ2.1/dialogue_data.pkl", "rb") as f:
+                train_data = pickle.load(f)
+            with open("MULTIWOZ2.1/intent2id.pkl", "rb") as f:
+                intent2id = pickle.load(f)
+            return train_data, intent2id
+        
+        ptime = time.time()
+
+        with open(self.data_path, 'r') as f:
+            data = json.load(f)
+        
+        dialogues = []
+        for key, value in data.items():
+            
+            topic = []
+            for k, v in value["goal"].items():
+                if len(v) > 0 and k not in ['message', 'topic']:
+                    topic.append(k)
+            
+            # dialogue
+            dialogue = []
+            for dic in value["log"]:
+                labels = []
+                for key, value in dic['metadata'].items():
+                    if len("".join(list(value['semi'].values()))) != 0:
+                        labels.append(key)
+                dialogue.append((dic['text'], labels))
+            dialogues.append((topic, dialogue))
+        
+        train_data = []
+        intent2id = {}
+        counter = 0
+        yes = 0
+        for topic, texts in dialogues:
+            data=[]
+            prev_text = ''
+            prev_col = []
+            for text, col in texts:
+                full_text = prev_text+' [SEP] '+text
+                full_col = prev_col+col
+                prev_text = text
+                prev_col = col
+                
+                if not col:
+                    full_col += topic
+                
+                # set up intent2id
+                full_col = set(full_col)
+                for col in full_col:
+                    if col not in intent2id:
+                        intent2id[col] = counter
+                        counter += 1
+                
+                data.append((self.text_prepare(full_text,'Bert'), [intent2id[col] for col in full_col]))
+            train_data.append(data[1:])
+            print(yes)
+            yes += 1
+        
+        with open("MULTIWOZ2.1/dialogue_data.pkl", "wb") as f:
+            pickle.dump(train_data, f)
+        with open("MULTIWOZ2.1/intent2id.pkl", "wb") as f:
+            pickle.dump(intent2id, f)
+        
+        print("Process time: ", time.time()-ptime)
+        
+        return train_data, intent2id
+        
+
     def prepare_text(self, done):
 
         if done:
@@ -89,3 +170,4 @@ class MULTIWOZData(Data):
     
 if __name__ == "__main__":
     data = MULTIWOZData("../raw_datasets/MULTIWOZ2.1/data.json", done=True)
+    print(data.train_data[0])
