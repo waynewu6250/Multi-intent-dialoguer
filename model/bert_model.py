@@ -2,7 +2,8 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
-from pytorch_pretrained_bert import BertTokenizer, BertModel, BertConfig, BertForSequenceClassification
+from pytorch_pretrained_bert import BertTokenizer, BertModel, BertConfig
+from pytorch_pretrained_bert import BertForNextSentencePrediction
 
 class BertLayerNorm(nn.Module):
     def __init__(self, hidden_size, eps=1e-12):
@@ -30,15 +31,14 @@ class BertEmbedding(nn.Module):
         self.classifier = nn.Linear(config.hidden_size, num_labels)
         nn.init.xavier_normal_(self.classifier.weight)
 
-    def forward(self, input_ids, mask, labels=None):
-        hidden_states, pooled_output = self.bert(input_ids, token_type_ids=None, attention_mask=mask)
+    def forward(self, input_ids, mask, seg_tensors=None):
+        hidden_states, pooled_output = self.bert(input_ids, token_type_ids=seg_tensors, attention_mask=mask)
         pooled_output_d = self.dropout(pooled_output)
         logits = self.classifier(pooled_output_d)
         
         return hidden_states, pooled_output, logits
         # loss = self.bert(input_ids, attention_mask=mask, labels=labels)
         # return loss
-        
 
 
 if __name__ == "__main__":
