@@ -17,11 +17,11 @@ class Config:
     # multiWOZ dataset
     woz_path = "data/MULTIWOZ2.1/dialogue_data.pkl"
     woz_dic_path = "data/MULTIWOZ2.1/intent2id.pkl"
-    woz_model_path = None #"checkpoints/epoch-woz.pth"
+    woz_model_path = "checkpoints/epoch-woz-0.pth" 
 
     maxlen = 50 #20
-    batch_size = 16
-    epochs = 5
+    batch_size = 128 #16
+    epochs = 20 #5
     learning_rate_bert = 2e-5
     learning_rate_classifier = 1e-3
 

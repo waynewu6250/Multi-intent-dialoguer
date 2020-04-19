@@ -71,8 +71,8 @@ def train(**kwargs):
     
     X_train, mask_train, seg_train = load_data(X_train)
     X_test, mask_test, seg_test = load_data(X_test)
-    train_loader = get_dataloader_dialogue(X_train, y_train, mask_train, seg_train, opt)
-    val_loader = get_dataloader_dialogue(X_test, y_test, mask_test, seg_test, opt)
+    train_loader = get_dataloader_dialogue(X_train, y_train, mask_train, seg_train, len(dic), opt)
+    val_loader = get_dataloader_dialogue(X_test, y_test, mask_test, seg_test, len(dic), opt)
     
     # model
     config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
@@ -95,8 +95,8 @@ def train(**kwargs):
     ]
     
     optimizer = BertAdam(optimizer_grouped_parameters,lr=opt.learning_rate_bert, warmup=.1)
-    criterion = nn.CrossEntropyLoss().to(device)
-    best_loss = 100
+    criterion = nn.BCEWithLogitsLoss(reduction='sum').to(device)
+    best_loss = 10000
 
     # Start training
     for epoch in range(opt.epochs):
@@ -117,16 +117,21 @@ def train(**kwargs):
             #train_loss = model(captions_t, masks, labels)
 
             _, _, outputs = model(captions_t, masks, segs)
-            print(labels)
             train_loss = criterion(outputs, labels)
+            print('Current loss: ', train_loss.item())
 
             train_loss.backward()
             optimizer.step()
 
             total_train_loss += train_loss
-            train_corrects += torch.sum(torch.max(outputs, 1)[1] == labels)
+            for i, logits in enumerate(outputs):
+                log = logits[torch.where(labels[i]==1)[0]]
+                log = torch.sigmoid(log)
+                log = torch.sum(log) / len(log)
+                train_corrects += log
         
-        print('Total train loss: {:.4f} '.format(total_train_loss / train_loader.dataset.num_data))
+        num_batches = train_loader.dataset.num_data // opt.batch_size
+        print('Total train loss: {:.4f} '.format(total_train_loss / num_batches))
         print('Train accuracy: {:.4f}'.format(train_corrects.double() / train_loader.dataset.num_data))
 
         # Validation Phase
@@ -144,17 +149,21 @@ def train(**kwargs):
             val_loss = criterion(outputs, labels)
 
             total_val_loss += val_loss
-            val_corrects += torch.sum(torch.max(outputs, 1)[1] == labels)
-
-        print('Total val loss: {:.4f} '.format(total_val_loss / val_loader.dataset.num_data))
+            for i, logits in enumerate(outputs):
+                log = logits[torch.where(labels[i]==1)[0]]
+                log = torch.sigmoid(log)
+                log = torch.sum(log) / len(log)
+                val_corrects += log
+        
+        num_batches = val_loader.dataset.num_data // opt.batch_size
+        print('Total val loss: {:.4f} '.format(total_val_loss / num_batches))
         print('Val accuracy: {:.4f}'.format(val_corrects.double() / val_loader.dataset.num_data))
-        if total_val_loss < best_loss:
-            print('saving with loss of {}'.format(total_val_loss),
-                  'improved over previous {}'.format(best_loss))
-            best_loss = total_val_loss
-            best_model_wts = copy.deepcopy(model.state_dict())
 
-            torch.save(model.state_dict(), "checkpoints/epoch-woz-%s.pth"%epoch)
+        print('saving with loss of {}'.format(total_val_loss / num_batches))
+        best_loss = total_val_loss
+        best_model_wts = copy.deepcopy(model.state_dict())
+
+        torch.save(model.state_dict(), "checkpoints/epoch-woz-%s.pth"%epoch)
         
         print()
 

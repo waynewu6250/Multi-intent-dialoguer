@@ -40,13 +40,14 @@ def get_dataloader(data, labels, masks, opt):
 
 class DialogueDataset(Dataset):
     
-    def __init__(self, data, labels, masks, segs, opt):
+    def __init__(self, data, labels, masks, segs, num_labels, opt):
         self.data = data
         self.labels = labels
         self.masks = masks
         self.segs = segs
         self.num_data = len(self.data)
         self.maxlen = opt.maxlen
+        self.num_labels = num_labels
 
     def __getitem__(self, index):
 
@@ -56,9 +57,8 @@ class DialogueDataset(Dataset):
 
         # labels
         label = self.labels[index]
-        pad_label = np.ones(10)*10
-        pad_label[:len(label)] = np.array(label)
-        labels = t.from_numpy(pad_label)
+        label = t.LongTensor(np.array(label))
+        labels = t.zeros(self.num_labels).scatter_(0, label, 1)
 
         # masks
         masks = t.tensor(self.masks[index])
@@ -71,8 +71,8 @@ class DialogueDataset(Dataset):
     def __len__(self):
         return len(self.data)
 
-def get_dataloader_dialogue(data, labels, masks, segs, opt):
-    dataset = DialogueDataset(data, labels, masks, segs, opt)
+def get_dataloader_dialogue(data, labels, masks, segs, num_labels, opt):
+    dataset = DialogueDataset(data, labels, masks, segs, num_labels, opt)
     return DataLoader(dataset, 
                       batch_size=opt.batch_size, 
                       shuffle=False)
