@@ -15,9 +15,11 @@ class Config:
     se_embedding_path = "finetune_results/se_embeddings_with_hidden.pth"
 
     # multiWOZ dataset
-    woz_path = "data/"
+    woz_path = "data/MULTIWOZ2.1/dialogue_data.pkl"
+    woz_dic_path = "data/MULTIWOZ2.1/intent2id.pkl"
+    woz_model_path = None #"checkpoints/epoch-woz.pth"
 
-    maxlen = 20
+    maxlen = 50 #20
     batch_size = 16
     epochs = 5
     learning_rate_bert = 2e-5
