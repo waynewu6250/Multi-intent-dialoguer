@@ -12,7 +12,7 @@ import numpy as np
 import collections
 
 from model import BertEmbedding
-from all_data import get_dataloader
+from all_data import get_dataloader_dialogue
 from config import opt
 
 def load_data(X):
@@ -20,10 +20,25 @@ def load_data(X):
     input_ids = pad_sequences(X, maxlen=opt.maxlen, dtype="long", truncating="post", padding="post")
     
     attention_masks = []
+    segments = []
     for seq in input_ids:
+        # mask
         seq_mask = [float(i>0) for i in seq]
         attention_masks.append(seq_mask)
-    return input_ids, attention_masks
+        # segments
+        seq = np.array(seq)
+        seg = np.zeros_like(seq)
+        
+        pivot = np.where(seq==102)[0]
+        if len(pivot) == 0:
+            pass
+        elif len(pivot) == 1:
+            seg[pivot[0]:] = 1.0
+        elif len(pivot) == 2:
+            seg[pivot[0]+1:pivot[1]+1] = 1.0
+        segments.append(seg)
+        
+    return input_ids, attention_masks, segments
 
 def train(**kwargs):
     
@@ -54,18 +69,18 @@ def train(**kwargs):
     X, y = zip(*all_data)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
     
-    X_train, mask_train = load_data(X_train)
-    X_test, mask_test = load_data(X_test)
-    train_loader = get_dataloader(X_train, y_train, mask_train, opt)
-    val_loader = get_dataloader(X_test, y_test, mask_test, opt)
+    X_train, mask_train, seg_train = load_data(X_train)
+    X_test, mask_test, seg_test = load_data(X_test)
+    train_loader = get_dataloader_dialogue(X_train, y_train, mask_train, seg_train, opt)
+    val_loader = get_dataloader_dialogue(X_test, y_test, mask_test, seg_test, opt)
     
     # model
     config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
         num_hidden_layers=12, num_attention_heads=12, intermediate_size=3072)
     
     model = BertEmbedding(config, len(dic))
-    if opt.se_model_path:
-        model.load_state_dict(torch.load(opt.se_model_path))
+    if opt.woz_model_path:
+        model.load_state_dict(torch.load(opt.woz_model_path))
         print("Pretrained model has been loaded.\n")
     model = model.to(device)
 
@@ -91,16 +106,18 @@ def train(**kwargs):
         total_train_loss = 0
         train_corrects = 0
         
-        for (captions_t, labels, masks) in train_loader:
+        for (captions_t, labels, masks, segs) in train_loader:
 
             captions_t = captions_t.to(device)
             labels = labels.to(device)
             masks = masks.to(device)
+            segs = segs.to(device)
 
             optimizer.zero_grad()
             #train_loss = model(captions_t, masks, labels)
 
-            _, _, outputs = model(captions_t, masks)
+            _, _, outputs = model(captions_t, masks, segs)
+            print(labels)
             train_loss = criterion(outputs, labels)
 
             train_loss.backward()
@@ -115,14 +132,15 @@ def train(**kwargs):
         # Validation Phase
         total_val_loss = 0
         val_corrects = 0
-        for (captions_t, labels, masks) in val_loader:
+        for (captions_t, labels, masks, segs) in val_loader:
 
             captions_t = captions_t.to(device)
             labels = labels.to(device)
             masks = masks.to(device)
+            segs = segs.to(device)
             
             with torch.no_grad():
-                pooled_output, outputs = model(captions_t, masks)
+                _, pooled_output, outputs = model(captions_t, masks, segs)
             val_loss = criterion(outputs, labels)
 
             total_val_loss += val_loss

@@ -127,7 +127,7 @@ def train(**kwargs):
             masks = masks.to(device)
             
             with torch.no_grad():
-                pooled_output, outputs = model(captions_t, masks)
+                _, pooled_output, outputs = model(captions_t, masks)
             val_loss = criterion(outputs, labels)
 
             total_val_loss += val_loss
