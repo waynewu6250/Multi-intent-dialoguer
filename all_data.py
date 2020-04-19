@@ -38,6 +38,45 @@ def get_dataloader(data, labels, masks, opt):
                       batch_size=opt.batch_size, 
                       shuffle=False)
 
+class DialogueDataset(Dataset):
+    
+    def __init__(self, data, labels, masks, segs, opt):
+        self.data = data
+        self.labels = labels
+        self.masks = masks
+        self.segs = segs
+        self.num_data = len(self.data)
+        self.maxlen = opt.maxlen
+
+    def __getitem__(self, index):
+
+        # caps
+        caps = self.data[index]
+        caps = t.tensor(caps)
+
+        # labels
+        label = self.labels[index]
+        pad_label = np.ones(10)*10
+        pad_label[:len(label)] = np.array(label)
+        labels = t.from_numpy(pad_label)
+
+        # masks
+        masks = t.tensor(self.masks[index])
+
+        # segments
+        segs = t.tensor(self.segs[index])
+
+        return caps, labels, masks, segs
+
+    def __len__(self):
+        return len(self.data)
+
+def get_dataloader_dialogue(data, labels, masks, segs, opt):
+    dataset = DialogueDataset(data, labels, masks, segs, opt)
+    return DataLoader(dataset, 
+                      batch_size=opt.batch_size, 
+                      shuffle=False)
+
 if __name__ == '__main__':
     
     with open(opt.data_path, 'rb') as f:
