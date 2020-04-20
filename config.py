@@ -17,7 +17,8 @@ class Config:
     # multiWOZ dataset
     woz_path = "data/MULTIWOZ2.1/dialogue_data.pkl"
     woz_dic_path = "data/MULTIWOZ2.1/intent2id.pkl"
-    woz_model_path = "checkpoints/epoch-woz-0.pth" 
+    woz_model_path = "checkpoints/epoch-woz-17.pth" 
+    woz_embedding_path ="finetune_results/woz_embeddings.pth"
 
     maxlen = 50 #20
     batch_size = 128 #16

@@ -169,32 +169,28 @@ def train(**kwargs):
 
 def test(**kwargs):
 
-    # ATIS Dataset
-    if opt.datatype == "atis":
-        with open(opt.atis_train_path, 'rb') as f:
-            train_data = pickle.load(f)
-        X_train, y_train, _ = zip(*train_data)
-        X_train, mask_train = load_data(X_train)
-        
-        with open(opt.atis_test_path, 'rb') as f:
-            test_data = pickle.load(f)
-        X_test, y_test, _ = zip(*test_data)
-        X_test, mask_test = load_data(X_test)
+    #dataset
+    with open(opt.woz_path, 'rb') as f:
+        train_data = pickle.load(f)
+    with open(opt.woz_dic_path, 'rb') as f:
+        dic = pickle.load(f)
+    reverse_dic = {v: k for k,v in dic.items()}
 
-        dic_path = opt.atis_dic_path
-        model_path = opt.atis_model_path
-        embedding_path = opt.atis_embedding_path
+    all_data = []
+    dialogue_id = {}
+    dialogue_counter = 0
+    counter = 0
+    for data in train_data:
+        for instance in data:
+            all_data.append(instance)
+            dialogue_id[counter] = dialogue_counter
+            counter += 1
+        dialogue_counter += 1
 
-    # Semantic parsing Dataset
-    elif opt.datatype == "semantic":
-        with open(opt.se_path, 'rb') as f:
-            data = pickle.load(f)
-        X_train, y_train = zip(*data)
-        X_train, mask_train = load_data(X_train)
+    X, y = zip(*all_data)
 
-        dic_path = opt.se_dic_path
-        model_path = opt.se_model_path
-        embedding_path = opt.se_embedding_path
+    model_path = opt.woz_model_path
+    embedding_path = opt.woz_embedding_path
 
     # attributes
     for k, v in kwargs.items():
@@ -202,11 +198,6 @@ def test(**kwargs):
 
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     torch.backends.cudnn.enabled = False
-
-    # dictionary
-    with open(dic_path, 'rb') as f:
-        dic = pickle.load(f)
-    reverse_dic = {v: k for k,v in dic.items()}
     
     # model
     config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
@@ -221,30 +212,45 @@ def test(**kwargs):
 
     # Store embeddings
     if opt.mode == "embedding":
-        
-        train_loader = get_dataloader(X_train, y_train, mask_train, opt)
+        X_train, mask_train, seg_train = load_data(X)
+        train_loader = get_dataloader_dialogue(X_train, y, mask_train, seg_train, len(dic), opt)
 
-        results = collections.defaultdict(list)
-
-        for i, (captions_t, labels, masks) in enumerate(train_loader):
+        results = []
+        for i, (captions_t, labels, masks, segs) in enumerate(train_loader):
             
             captions_t = captions_t.to(device)
             labels = labels.to(device)
             masks = masks.to(device)
+            segs = segs.to(device)
             with torch.no_grad():
-                hidden_states, pooled_output, outputs = model(captions_t, masks)
-                print("Saving Data: %d" % i)
+                
+                # Skip the last sentence in each dialogue at this time
 
                 for ii in range(len(labels)):
-                    key = labels[ii].data.cpu().item()
+                    seq = captions_t[ii]
+                    mask = masks[ii]
+                    seg = segs[ii]
+                    pivot = torch.where(seq==102)[0]
+                    if len(pivot) > 0:
+                        seq = seq[:pivot[0]+1]
+                        mask = mask[:pivot[0]+1]
+                        seg = seg[:pivot[0]+1]
+                    seq = seq.unsqueeze(0)
+                    mask = mask.unsqueeze(0)
+                    seg = seg.unsqueeze(0)
+                    hidden_states, pooled_output, outputs = model(seq, mask, seg)
                     
-                    embedding = pooled_output[ii].data.cpu().numpy().reshape(-1)
-                    word_embeddings = hidden_states[-1][ii].data.cpu().numpy()
+                    key = torch.where(labels[ii]==1)[0].data.cpu().numpy()
                     
-                    tokens = tokenizer.convert_ids_to_tokens(captions_t[ii].data.cpu().numpy())
+                    embedding = pooled_output[0].data.cpu().numpy().reshape(-1)
+                    word_embeddings = hidden_states[-1][0].data.cpu().numpy()
+                    
+                    tokens = tokenizer.convert_ids_to_tokens(seq[0].data.cpu().numpy())
                     tokens = [token for token in tokens if token != "[CLS]" and token != "[SEP]" and token != "[PAD]"]
                     original_sentence = " ".join(tokens)
-                    results[key].append((original_sentence, embedding, word_embeddings))
+                    results.append((original_sentence, embedding, word_embeddings, key))
+
+                print("Saving Data: %d" % i)
 
         torch.save(results, embedding_path)
     
@@ -262,32 +268,6 @@ def test(**kwargs):
             pooled_output, outputs = model(captions_t, mask)
         print("Predicted label: ", reverse_dic[torch.max(outputs, 1)[1].item()])
         print("Real label: ", reverse_dic[y_test[index]])
-    
-    # User defined
-    elif opt.mode == "user":
-        while True:
-            print("Please input the sentence: ")
-            text = input()
-            print("\n======== Predicted Results ========")
-            print(text)
-            text = "[CLS] " + text + " [SEP]"
-            tokenized_text = tokenizer.tokenize(text)
-            tokenized_ids = np.array(tokenizer.convert_tokens_to_ids(tokenized_text))[np.newaxis,:]
-            
-            input_ids = pad_sequences(tokenized_ids, maxlen=opt.maxlen, dtype="long", truncating="post", padding="post").squeeze(0)
-            attention_masks = [float(i>0) for i in input_ids]
-
-            captions_t = torch.LongTensor(input_ids).unsqueeze(0).to(device)
-            mask = torch.LongTensor(attention_masks).unsqueeze(0).to(device)
-            with torch.no_grad():
-                pooled_output, outputs = model(captions_t, mask)
-            print("Predicted label: ", reverse_dic[torch.max(outputs, 1)[1].item()])
-            print("=================================")    
-    
-    
-
-
-
 
 
 if __name__ == '__main__':
