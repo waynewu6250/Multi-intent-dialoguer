@@ -17,6 +17,7 @@ class Config:
     # multiWOZ dataset
     woz_path = "data/MULTIWOZ2.1/dialogue_data.pkl"
     woz_dic_path = "data/MULTIWOZ2.1/intent2id.pkl"
+    woz_dialogue_id_path = "data/MULTIWOZ2.1/dialogue_id.pkl"
     woz_model_path = "checkpoints/epoch-woz-17.pth" 
     woz_embedding_path ="finetune_results/woz_embeddings.pth"
 
@@ -33,6 +34,8 @@ class Config:
     #################### For Clustering ####################
     dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/semantic/intent2id_se.pkl"
     embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/se_embeddings_with_hidden.pth"
+    woz_dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/MULTIWOZ2.1/intent2id.pkl"
+    woz_embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/woz_embeddings_sub.pth"
 
     #################### For DCEC ####################
     
@@ -44,7 +47,7 @@ class Config:
 
     # Training
     b_size = 1024
-    n_clusters = 180
+    n_clusters = 8 #180
     max_iter = 100
     update_interval = 10
     save_interval = 10
@@ -53,9 +56,9 @@ class Config:
     weights = None #'checkpoints-dcec/dcec_model_att_99.h5'
 
     # clustering
-    cluster_data_path = "clustering_results/data_att.pkl"
-    cluster_label_path =  "clustering_results/labels_att.pkl"
-    cluster_weight_path =  "clustering_results/weight_att.pkl"
+    cluster_data_path = "clustering_results/data_att_woz.pkl"
+    cluster_label_path =  "clustering_results/labels_att_woz.pkl"
+    cluster_weight_path =  "clustering_results/weight_att_woz.pkl"
     cluster_id = 0
 
     #################### For scBERT ####################

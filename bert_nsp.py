@@ -186,6 +186,9 @@ def test(**kwargs):
             dialogue_id[counter] = dialogue_counter
             counter += 1
         dialogue_counter += 1
+    with open(opt.woz_dialogue_id_path, 'wb') as f:
+        pickle.dump(dialogue_id, f)
+    
 
     X, y = zip(*all_data)
 
@@ -226,19 +229,23 @@ def test(**kwargs):
                 
                 # Skip the last sentence in each dialogue at this time
 
+                seq = torch.zeros(1, 25).to(device)
+                mask = torch.zeros(1, 25).to(device)
+                seg = torch.zeros(1, 25).to(device)
+
                 for ii in range(len(labels)):
-                    seq = captions_t[ii]
-                    mask = masks[ii]
-                    seg = segs[ii]
-                    pivot = torch.where(seq==102)[0]
-                    if len(pivot) > 0:
-                        seq = seq[:pivot[0]+1]
-                        mask = mask[:pivot[0]+1]
-                        seg = seg[:pivot[0]+1]
-                    seq = seq.unsqueeze(0)
-                    mask = mask.unsqueeze(0)
-                    seg = seg.unsqueeze(0)
-                    hidden_states, pooled_output, outputs = model(seq, mask, seg)
+                    
+                    pivot = torch.where(captions_t[ii]==102)[0]
+                    if len(pivot) > 0 and pivot[0] < 25:
+                        seq[0][:pivot[0]+1] = captions_t[ii][:pivot[0]+1]
+                        mask[0][:pivot[0]+1] = (captions_t[ii][:pivot[0]+1]>0).long()
+                        seg[0][:pivot[0]+1] = segs[ii][:pivot[0]+1]
+                    else:
+                        seq[0] = captions_t[ii][:25]
+                        mask[0] = (captions_t[ii][:25]>0).long()
+                        seg[0] = segs[ii][:25]
+                    
+                    hidden_states, pooled_output, outputs = model(seq.long(), mask.long(), seg.long())
                     
                     key = torch.where(labels[ii]==1)[0].data.cpu().numpy()
                     
@@ -248,9 +255,12 @@ def test(**kwargs):
                     tokens = tokenizer.convert_ids_to_tokens(seq[0].data.cpu().numpy())
                     tokens = [token for token in tokens if token != "[CLS]" and token != "[SEP]" and token != "[PAD]"]
                     original_sentence = " ".join(tokens)
+                    
                     results.append((original_sentence, embedding, word_embeddings, key))
 
                 print("Saving Data: %d" % i)
+            if i == 100:
+                break
 
         torch.save(results, embedding_path)
     
