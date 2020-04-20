@@ -88,7 +88,7 @@ class DCEC:
                 shuffle=True,
                 validation_split=0.1)
         
-        self.autoencoder.save_weights('checkpoints-dcec/model_att.h5')
+        self.autoencoder.save_weights('checkpoints-dcec/model_woz.h5')
         self.pretrain = True
     
     @staticmethod
@@ -145,7 +145,7 @@ class DCEC:
             if (iter+1) % opt.save_interval == 0:
                 # save DCEC model checkpoints
                 print('Saving model no.', iter)
-                self.model.save_weights('checkpoints-dcec/dcec_model_att_' + str(iter) + '.h5')
+                self.model.save_weights('checkpoints-dcec/dcec_model_woz_' + str(iter) + '.h5')
             
 
         
