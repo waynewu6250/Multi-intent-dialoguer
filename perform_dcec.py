@@ -116,9 +116,9 @@ def train(**kwargs):
 
     
     true_label = np.array([cluster.emb2id[tuple(emb.tolist())] for emb in emb_test])
-    with open('clustering_labels/se_true.pkl', 'wb') as f:
+    with open('clustering_labels/different_amount_data/se_true.pkl', 'wb') as f:
         pickle.dump(true_label, f)
-    with open('clustering_labels/se_pred.pkl', 'wb') as f:
+    with open('clustering_labels/different_amount_data/se_pred.pkl', 'wb') as f:
         pickle.dump(cur_label, f)
 
     
