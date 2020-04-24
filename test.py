@@ -68,12 +68,12 @@ class PerformClustering:
         return emb_train, emb_test, att_train, att_test, l_train, l_test
 
 
-
+print(opt.embedding_path)
 cluster = PerformClustering(opt.dic_path, opt.embedding_path)
 data = cluster.random_split(0.8)
 emb_train, emb_test, att_train, att_test, l_train, l_test = data
 
-kmeans = KMeans(n_clusters=180, random_state=0).fit(emb_test)
+kmeans = KMeans(n_clusters=20, random_state=0).fit(emb_test)
 kmeans.labels_
 
 true_label = np.array([cluster.emb2id[tuple(emb.tolist())] for emb in emb_test])
