@@ -21,7 +21,7 @@ class Config:
     woz_model_path = "checkpoints/epoch-woz-17.pth" 
     woz_embedding_path ="finetune_results/woz_embeddings.pth"
 
-    maxlen = 50 #20
+    maxlen = 20 #20
     batch_size = 128 #16
     epochs = 20 #5
     learning_rate_bert = 2e-5
@@ -32,8 +32,8 @@ class Config:
     mode = "embedding" #"user", "data"
 
     #################### For Clustering ####################
-    dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/atis/intent2id.pkl"
-    embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/atis_embeddings_with_hidden.pth"
+    dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/semantic/intent2id_se.pkl"
+    embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/se_embeddings_with_hidden.pth"
     woz_dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/MULTIWOZ2.1/intent2id.pkl"
     woz_embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/woz_embeddings_sub.pth"
 
@@ -47,7 +47,7 @@ class Config:
 
     # Training
     b_size = 1024
-    n_clusters = 8 #180
+    n_clusters = 180 #180
     max_iter = 100
     update_interval = 10
     save_interval = 10
