@@ -23,7 +23,7 @@ class Config:
 
     maxlen = 20 #20
     batch_size = 128 #16
-    epochs = 20 #5
+    epochs = 10 #5
     learning_rate_bert = 2e-5
     learning_rate_classifier = 1e-3
 
@@ -31,13 +31,12 @@ class Config:
     datatype = "semantic"
     mode = "embedding" #"user", "data"
 
-    #################### For Clustering ####################
-    dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/atis/intent2id.pkl"
-    embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/atis_embeddings_with_hidden.pth"
+    #################### For Clustering & DCEC ####################
+    
+    dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/semantic/intent2id_se.pkl"
+    embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/se_embeddings_with_hidden.pth"
     woz_dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/MULTIWOZ2.1/intent2id.pkl"
     woz_embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/woz_embeddings_sub.pth"
-
-    #################### For DCEC ####################
     
     # Model
     input_shape = (20, 768)
