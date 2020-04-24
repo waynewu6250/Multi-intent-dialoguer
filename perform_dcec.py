@@ -88,7 +88,7 @@ def train(**kwargs):
     
     print("1. Get data ready!")
 
-    model = DCEC(opt.input_shape, opt.filters, opt.kernel_size, opt.n_clusters, opt.weights, data, opt.alpha, pretrain=True)
+    model = DCEC(opt.input_shape, opt.filters, opt.kernel_size, opt.n_clusters, opt.weights, data, opt.alpha, pretrain=False)
     model.compile(loss='kld', optimizer='adam')
     print("3. Compile model!")
     
@@ -113,6 +113,14 @@ def train(**kwargs):
         pickle.dump(data, f)
     with open(opt.cluster_weight_path, 'wb') as f:
         pickle.dump(att_weights, f)
+
+    
+    true_label = np.array([cluster.emb2id[tuple(emb.tolist())] for emb in emb_test])
+    with open('clustering_labels/atis_true.pkl', 'wb') as f:
+        pickle.dump(true_label, f)
+    with open('clustering_labels/atis_pred.pkl', 'wb') as f:
+        pickle.dump(cur_label, f)
+
     
 
 
@@ -165,7 +173,7 @@ def test(**kwargs):
 
     cache = sorted(cache.items(), key = lambda x: x[0])
 
-    with open('clustering_results/result_ft_att.txt', 'w') as f:
+    with open('clustering_results/result_atis_att.txt', 'w') as f:
         for key, value in cache:
             f.write("-"*15)
             f.write("\n Original Label: {} \n".format(key))
