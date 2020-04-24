@@ -107,7 +107,7 @@ class ATISData(Data):
                 counter += 1
             raw_data.append((self.text_prepare(sample['text'], mode), intent2id[sample['intent']], sample['entities']))
         
-        with open("atis/raw_data_test.pkl", "wb") as f:
+        with open("atis/raw_data.pkl", "wb") as f:
             pickle.dump(raw_data, f)
         with open("atis/intent2id.pkl", "wb") as f:
             pickle.dump(intent2id, f)
@@ -191,8 +191,8 @@ class SemanticData(Data):
 
 
 if __name__ == "__main__":
-    #data = ATISData("../raw_datasets/ATIS/test.json", "Bert")
-    data = SemanticData("../raw_datasets/top-dataset-semantic-parsing/train.tsv", done=False)
+    data = ATISData("../raw_datasets/ATIS/train.json", "Bert", done=False)
+    #data = SemanticData("../raw_datasets/top-dataset-semantic-parsing/train.tsv", done=False)
 
 
 
