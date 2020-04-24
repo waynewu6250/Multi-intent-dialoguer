@@ -61,6 +61,10 @@ def train(**kwargs):
         X_train, mask_train = load_data(X_train)
         X_test, mask_test = load_data(X_test)
     
+    X_train = X_train[:len(X_train)*0.8]
+    y_train = y_train[:len(X_train)*0.8]
+    mask_train = mask_train[:len(X_train)*0.8]
+    
     train_loader = get_dataloader(X_train, y_train, mask_train, opt)
     val_loader = get_dataloader(X_test, y_test, mask_test, opt)
     
@@ -141,7 +145,7 @@ def train(**kwargs):
             best_loss = total_val_loss
             best_model_wts = copy.deepcopy(model.state_dict())
 
-            torch.save(model.state_dict(), "checkpoints/epoch-se-%s.pth"%epoch)
+            torch.save(model.state_dict(), "checkpoints/epoch-se5000-%s.pth"%epoch)
         
         print()
 

@@ -49,11 +49,11 @@ def train(**kwargs):
         setattr(opt, k, v)
 
     # Data
-    with open(opt.se_dic_path_for_sc, 'rb') as f:
+    with open(opt.atis_dic_path_for_sc, 'rb') as f:
         dic = pickle.load(f)
-    with open(opt.se_path_for_sc, 'rb') as f:
+    with open(opt.atis_path_for_sc, 'rb') as f:
         data = pickle.load(f)
-    X, y = zip(*data)
+    X, y, entities = zip(*data) #entities only for atis
     vocab = set_dict(X)
 
     tokenizer = MyTokenizer(vocab)
@@ -85,7 +85,7 @@ def train(**kwargs):
     neg_X_test, neg_seg_test = neg_sampling(X_test, seg_test)
 
     model = SCBert(opt)
-    model.load_weights('checkpoints-scbert/model-val-weights.h5')
+    #model.load_weights('checkpoints-scbert/model-val-weights.h5')
     adam = optimizers.Adam(learning_rate=0.001, beta_1=0.9, beta_2=0.999, amsgrad=False)
     model.compile(optimizer = adam, loss=None)
     model.summary()
@@ -105,11 +105,11 @@ def test(**kwargs):
         setattr(opt, k, v)
 
     # Data
-    with open(opt.se_dic_path_for_sc, 'rb') as f:
+    with open(opt.atis_dic_path_for_sc, 'rb') as f:
         dic = pickle.load(f)
-    with open(opt.se_path_for_sc, 'rb') as f:
+    with open(opt.atis_path_for_sc, 'rb') as f:
         data = pickle.load(f)
-    X, y = zip(*data)
+    X, y, entities = zip(*data)  #entities only for atis
     vocab = set_dict(X)
 
     tokenizer = MyTokenizer(vocab)
@@ -155,7 +155,7 @@ def test(**kwargs):
         return np.array(text)[[word for word in words if word < len(text)]]
         
 
-    with open('clustering_results/result_aspect.txt', 'w') as f:
+    with open('clustering_results/result_stis_aspect.txt', 'w') as f:
         for idd in unique_ids:
             f.write("-"*15)
             f.write("\n Current cluster: {}".format(idd))

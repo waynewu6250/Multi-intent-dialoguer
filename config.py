@@ -28,7 +28,7 @@ class Config:
     learning_rate_classifier = 1e-3
 
     # control
-    datatype = "atis"
+    datatype = "semantic"
     mode = "embedding" #"user", "data"
 
     #################### For Clustering ####################
@@ -64,7 +64,9 @@ class Config:
     #################### For scBERT ####################
     se_path_for_sc = "data/semantic/raw_data_se_not_tokenize.pkl"
     se_dic_path_for_sc = "data/semantic/intent2id_se_not_tokenize.pkl"
-    se_model_path_for_sc = "checkpoints-dcec/epoch-se.pth"
+
+    atis_path_for_sc = "data/atis/raw_data_not_tokenize.pkl"
+    atis_dic_path_for_sc = "data/atis/intent2id_not_tokenize.pkl"
 
     neg_size = 100
     hidden_dim = 768
