@@ -5,13 +5,13 @@ class Config:
     atis_train_path = "data/atis/raw_data.pkl"
     atis_test_path = "data/atis/raw_data_test.pkl"
     atis_dic_path = "data/atis/intent2id.pkl"
-    atis_model_path = "checkpoints/epoch-3.pth"
-    atis_embedding_path = "finetune_results/atis_embeddings.pth"
+    atis_model_path = "checkpoints/epoch-atis.pth"
+    atis_embedding_path = "finetune_results/atis_embeddings_with_hidden.pth"
 
     # semantic parsing dataset
     se_path = "data/semantic/raw_data_se.pkl"
     se_dic_path = "data/semantic/intent2id_se.pkl"
-    se_model_path = "checkpoints/epoch-se-3.pth"
+    se_model_path = "checkpoints/epoch-se.pth"
     se_embedding_path = "finetune_results/se_embeddings_with_hidden.pth"
 
     # multiWOZ dataset
@@ -28,12 +28,12 @@ class Config:
     learning_rate_classifier = 1e-3
 
     # control
-    datatype = "semantic"
+    datatype = "atis"
     mode = "embedding" #"user", "data"
 
     #################### For Clustering ####################
-    dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/semantic/intent2id_se.pkl"
-    embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/se_embeddings_with_hidden.pth"
+    dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/atis/intent2id.pkl"
+    embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/atis_embeddings_with_hidden.pth"
     woz_dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/MULTIWOZ2.1/intent2id.pkl"
     woz_embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/woz_embeddings_sub.pth"
 
@@ -56,9 +56,9 @@ class Config:
     weights = None #'checkpoints-dcec/dcec_model_att_99.h5'
 
     # clustering
-    cluster_data_path = "clustering_results/data_att_woz.pkl"
-    cluster_label_path =  "clustering_results/labels_att_woz.pkl"
-    cluster_weight_path =  "clustering_results/weight_att_woz.pkl"
+    cluster_data_path = "clustering_results/data_att.pkl"
+    cluster_label_path =  "clustering_results/labels_att.pkl"
+    cluster_weight_path =  "clustering_results/weight_att.pkl"
     cluster_id = 0
 
     #################### For scBERT ####################
