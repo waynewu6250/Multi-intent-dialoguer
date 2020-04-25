@@ -17,7 +17,7 @@ from config import opt
 
 class PerformClustering:
     
-    def __init__(self, dic_path, embeddings_path, label_id=None):
+    def __init__(self, dic_path, embeddings_path, mxlen=25, label_id=None):
         '''
         data:
         1. embeddings: id: [(sent1,emb1), (sent2,emb2), (sent3,emb3), ...]
@@ -34,6 +34,7 @@ class PerformClustering:
         
         self.dic_path = dic_path
         self.embeddings_path = embeddings_path
+        self.mxlen = mxlen
 
         with open(self.dic_path, 'rb') as f:
             self.dic = pickle.load(f)
@@ -48,7 +49,7 @@ class PerformClustering:
         emb2id = {}
         labels_ref = {}
         data = np.zeros((num_data, 768))
-        attdata = np.zeros((num_data, 25, 768))
+        attdata = np.zeros((num_data, self.mxlen, 768))
         lengths = np.zeros((num_data, 1))
         
         number = 0
@@ -59,7 +60,7 @@ class PerformClustering:
             
             data[number] = embedding
             attdata[number] = word_embeddings
-            lengths[number] = 25-len(original_sentence.split(" "))
+            lengths[number] = self.mxlen-len(original_sentence.split(" "))
             
             labels_ref[number] = key
             number += 1
@@ -82,13 +83,13 @@ def train(**kwargs):
     for k, v in kwargs.items():
         setattr(opt, k, v)
     
-    cluster = PerformClustering(opt.woz_dic_path, opt.woz_embedding_path)
+    cluster = PerformClustering(opt.woz_dic_path, opt.woz_embedding_path, opt.maxlen)
     data = cluster.random_split(0.8)
     emb_train, emb_test, att_train, att_test, l_train, l_test = data
     
     print("1. Get data ready!")
 
-    model = DCEC((25, 768), opt.filters, opt.kernel_size, opt.n_clusters, opt.weights, data, opt.alpha, pretrain=True)
+    model = DCEC((opt.maxlen, 768), opt.filters, opt.kernel_size, opt.n_clusters, opt.weights, data, opt.alpha, pretrain=False)
     model.compile(loss='kld', optimizer='adam')
     print("3. Compile model!")
     
@@ -121,7 +122,7 @@ def test(**kwargs):
     for k, v in kwargs.items():
         setattr(opt, k, v)
 
-    cluster = PerformClustering(opt.woz_dic_path, opt.woz_embedding_path)
+    cluster = PerformClustering(opt.woz_dic_path, opt.woz_embedding_path, opt.maxlen)
 
     with open(opt.cluster_data_path, 'rb') as f:
         data = pickle.load(f)
@@ -137,8 +138,8 @@ def test(**kwargs):
 
     ########################## dialogue id ##########################
     # USE ALL DATA
-    with open('clustering_results/result_ft_woz_dialogue.txt', 'w') as f:
-
+    with open('clustering_results/result_woz_dialogue.txt', 'w') as f:
+        f.write("Dialogue Num: \t Predicted Label \t Real Label \t Attenton Word \t Sentence \n")
         for i, (emb, weights, pred_label) in enumerate(zip(cluster.data, att_weights, labels)):
             
             index = np.argsort(weights)[-3:]
@@ -147,9 +148,9 @@ def test(**kwargs):
             sent = cluster.emb2sent[tuple(emb.tolist())]
 
             toks = sent.split(' ')
-            toks = np.array(toks+['<PAD>']*(25-len(toks)))
+            toks = np.array(toks+['<PAD>']*(opt.maxlen-len(toks)))
 
-            f.write("Dialogue Num: {} ||| Ground Truth {}, Predicted Label {}, Attention Words: {} | {} \
+            f.write("Dialogue Num: {} [{} | {}] {} | {} \
                      \n".format(dialogue_id[i], real_label, pred_label, " ".join(toks[index][::-1]), sent))
     ########################## dialogue id ##########################
 

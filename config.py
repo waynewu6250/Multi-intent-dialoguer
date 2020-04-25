@@ -19,9 +19,9 @@ class Config:
     woz_dic_path = "data/MULTIWOZ2.1/intent2id.pkl"
     woz_dialogue_id_path = "data/MULTIWOZ2.1/dialogue_id.pkl"
     woz_model_path = "checkpoints/epoch-woz-17.pth" 
-    woz_embedding_path ="finetune_results/woz_embeddings.pth"
+    woz_embedding_path ="finetune_results/woz_embeddings_sub.pth"
 
-    maxlen = 20 #20
+    maxlen = 50 #20
     batch_size = 128 #16
     epochs = 10 #5
     learning_rate_bert = 2e-5
@@ -46,7 +46,7 @@ class Config:
 
     # Training
     b_size = 1024
-    n_clusters = 180 #180
+    n_clusters = 8 #180
     max_iter = 100
     update_interval = 10
     save_interval = 10
@@ -55,12 +55,13 @@ class Config:
     weights = None #'checkpoints-dcec/dcec_model_att_99.h5'
 
     # clustering
-    cluster_data_path = "clustering_results/data_att.pkl"
-    cluster_label_path =  "clustering_results/labels_att.pkl"
-    cluster_weight_path =  "clustering_results/weight_att.pkl"
+    cluster_data_path = "clustering_results/data_att_woz_pair.pkl"
+    cluster_label_path =  "clustering_results/labels_att_woz_pair.pkl"
+    cluster_weight_path =  "clustering_results/weight_att_woz_pair.pkl"
     cluster_id = 0
 
     #################### For scBERT ####################
+
     se_path_for_sc = "data/semantic/raw_data_se_not_tokenize.pkl"
     se_dic_path_for_sc = "data/semantic/intent2id_se_not_tokenize.pkl"
 

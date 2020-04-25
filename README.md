@@ -95,6 +95,20 @@ Checkpoints are in ``checkpoints-scbert/``
 
 Results are in ``clustering_results/``
 
+## Dialogue cluster
+1. On single sentence
+2. On sentence pair (data with postfix: pair)
+
+
+
+## TODOs
+
+1. Redefine labels in dialogue dataset
+2. Train Bert model with single sentence datasets and apply to dialogue datasets for clustering
+3. Attention words with masking mechanism
+4. Fewer labels to train as possible
+5. Check dcec convergence
+
 
 
 
