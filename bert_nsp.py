@@ -225,15 +225,15 @@ def test(**kwargs):
             labels = labels.to(device)
             masks = masks.to(device)
             segs = segs.to(device)
+
             with torch.no_grad():
                 
                 # Skip the last sentence in each dialogue at this time
-
-                seq = torch.zeros(1, 25).to(device)
-                mask = torch.zeros(1, 25).to(device)
-                seg = torch.zeros(1, 25).to(device)
-
                 for ii in range(len(labels)):
+
+                    seq = torch.zeros(1, 25).to(device)
+                    mask = torch.zeros(1, 25).to(device)
+                    seg = torch.zeros(1, 25).to(device)
                     
                     pivot = torch.where(captions_t[ii]==102)[0]
                     if len(pivot) > 0 and pivot[0] < 25:
@@ -246,20 +246,27 @@ def test(**kwargs):
                         seg[0] = segs[ii][:25]
                     
                     hidden_states, pooled_output, outputs = model(seq.long(), mask.long(), seg.long())
+                    #hidden_states, pooled_output, outputs = model(captions_t, masks, segs)
                     
+                    # one hot to sparse index
                     key = torch.where(labels[ii]==1)[0].data.cpu().numpy()
                     
                     embedding = pooled_output[0].data.cpu().numpy().reshape(-1)
                     word_embeddings = hidden_states[-1][0].data.cpu().numpy()
                     
                     tokens = tokenizer.convert_ids_to_tokens(seq[0].data.cpu().numpy())
+                    # embedding = pooled_output[ii].data.cpu().numpy().reshape(-1)
+                    # word_embeddings = hidden_states[-1][ii].data.cpu().numpy()
+                    
+                    # tokens = tokenizer.convert_ids_to_tokens(captions_t[ii].data.cpu().numpy())
+
                     tokens = [token for token in tokens if token != "[CLS]" and token != "[SEP]" and token != "[PAD]"]
                     original_sentence = " ".join(tokens)
                     
                     results.append((original_sentence, embedding, word_embeddings, key))
 
                 print("Saving Data: %d" % i)
-            if i == 100:
+            if i == 50:
                 break
 
         torch.save(results, embedding_path)
