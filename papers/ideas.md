@@ -29,15 +29,17 @@ Use Image+Texts+Answer to attend on images.
 
 b) **Deep Clustering:**
 
+[Deep Learning Methods for Clustering](https://arxiv.org/pdf/1801.07648.pdf)
+
 [Deep Embedding Clustering](http://proceedings.mlr.press/v48/xieb16.pdf)
 
 [Deep Convolutional Embedding Clustering](https://xifengguo.github.io/papers/ICONIP17-DCEC.pdf)
 
-[Text Clustering](https://www.aclweb.org/anthology/D19-5405.pdf)
-
 [Unsupervised Aspect Extraction](https://www.comp.nus.edu.sg/~leews/publications/acl17.pdf)
 
 [Weakly Supervised Aspect Extraction](https://stangelid.github.io/emnlp18oposum.pdf)
+
+[Text Clustering](https://www.aclweb.org/anthology/D19-5405.pdf)
 
 c) **Text Summarization using autoencoder:**
 
