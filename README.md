@@ -176,7 +176,7 @@ Results are in ``clustering_results/``
 
 ## TODOs
 
-- [ ] Redefine labels in dialogue dataset
+- [x] Redefine labels in dialogue dataset
 - [ ] Train Bert model with single sentence datasets and apply to dialogue datasets for clustering
 - [ ] Attention words with masking mechanism
 - [ ] Fewer labels to train as possible
