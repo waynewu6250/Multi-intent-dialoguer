@@ -176,11 +176,11 @@ Results are in ``clustering_results/``
 
 ## TODOs
 
-- [ ] Redefine labels in dialogue dataset (some are not clear)
-- [ ] Train Bert model with single sentence datasets and apply to dialogue datasets for clustering
-- [ ] Attention words with masking mechanism
-- [ ] Fewer labels to train as possible
-- [ ] Check dcec convergence
+- [ ] Redefine labels in dialogue dataset (some are not clear).
+- [ ] Train Bert model with single sentence datasets and apply to dialogue datasets for clustering.
+- [ ] Attention words with masking mechanism.
+- [ ] Fewer labels to train as possible.
+- [ ] Check dcec convergence.
 
 
 
