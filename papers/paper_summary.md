@@ -1,4 +1,4 @@
-# Intent Clustering Paper Summary
+# Paper Summary
 
 ## 1. [SBERT-WK: A Sentence Embedding Method By Dissecting BERT-based Word Models](https://github.com/waynewu6250/Multi-intent-dialoguer/blob/master/papers/BERT-Kuo.pdf)
 
