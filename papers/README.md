@@ -10,6 +10,12 @@
 
 ## 2. Task oriented dialogue system
 
+Overview
+1. [Comparison for tods](https://github.com/AtmaHou/Task-Oriented-Dialogue-Research-Progress-Survey)
+2. [Previous work organized from Stanford NLP](https://web.stanford.edu/~jurafsky/slp3/26.pdf)
+3. [Intelligent conversational chatbot](https://www.csie.ntu.edu.tw/~yvchen/s105-icb/syllabus.html)
+4. [MiuLab work](https://www.csie.ntu.edu.tw/~miulab/#home)
+
 NLU
 1. [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
 
