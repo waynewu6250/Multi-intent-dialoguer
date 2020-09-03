@@ -19,6 +19,11 @@ Overview
 NLU
 1. [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
 
+Dialogue State Tracking
+1. [Hidden Information State model](http://mi.eng.cam.ac.uk/~sjy/papers/ygkm10.pdf)
+2. [Bayesian update of dialogue state](http://mi.eng.cam.ac.uk/~sjy/papers/thyo10.pdf)
+3. [DNN](https://www.aclweb.org/anthology/W13-4073.pdf)
+
 NLG
 1. [Natural Language Generation](https://pdfs.semanticscholar.org/728e/18fbf00f5a80e9a070db4f4416d66c7b28f4.pdf)
 
