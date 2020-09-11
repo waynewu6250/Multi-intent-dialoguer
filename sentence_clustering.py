@@ -7,9 +7,13 @@ import pickle
 import copy
 import numpy as np
 import collections
+import os
+import tensorflow as tf
 
 from model import MyTokenizer, SCBert
 from config import opt
+
+tf.compat.v1.disable_eager_execution()
 
 def set_dict(data):
     vocab = get_base_dict()
@@ -95,7 +99,9 @@ def train(**kwargs):
               batch_size=100,
               shuffle=True,
               validation_split=0.1)
-        
+    
+    if not os.path.exists('checkpoints-scbert'):
+        os.mkdir('checkpoints-scbert')
     model.save_weights('checkpoints-scbert/model-val-weights.h5')
 
 
@@ -140,7 +146,7 @@ def test(**kwargs):
     model.summary()
 
     test_fn = K.function([model.get_layer('x_input').input, model.get_layer('x_segment').input, K.learning_phase()], 
-                         [model.get_layer('lambda_1').input, model.get_layer('att_weights').output, model.get_layer('scores').output])
+                         [model.get_layer('lambda').input, model.get_layer('att_weights').output, model.get_layer('scores').output])
     embs, att_weights, aspect_probs = test_fn([X_test, seg_test, 0])
 
     # Predictions
@@ -155,7 +161,7 @@ def test(**kwargs):
         return np.array(text)[[word for word in words if word < len(text)]]
         
 
-    with open('clustering_results/result_stis_aspect.txt', 'w') as f:
+    with open('clustering_results/result_atis_aspect.txt', 'w') as f:
         for idd in unique_ids:
             f.write("-"*15)
             f.write("\n Current cluster: {}".format(idd))

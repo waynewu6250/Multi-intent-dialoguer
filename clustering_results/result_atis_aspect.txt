@@ -1,1264 +1,1020 @@
 ---------------
  Current cluster: 0
- Original Label: 0| can you give me the latest flight from atlanta to denver on july seventh
- Attention Words: ['you']
- Original Label: 0| in the month of december are there any flights from atlanta to denver that stop in boston
- Attention Words: ['the']
- Original Label: 11| what are the cities that american airlines serves
- Attention Words: ['are']
- Original Label: 0| give me the flights from indianapolis to orlando on december twenty seventh and twenty eighth
- Attention Words: ['me']
- Original Label: 20| show me the cheapest fare in the database
- Attention Words: ['me']
- Original Label: 0| what flights are there from tampa to charlotte
- Attention Words: ['flights']
- Original Label: 0| give me flights without fares from atlanta to baltimore
- Attention Words: ['me']
- Original Label: 0| show me flights from atlanta to philadelphia in the morning
- Attention Words: ['me']
- Original Label: 6| what airlines have nonstop early afternoon flights from boston to denver
- Attention Words: ['airlines']
- Original Label: 0| show me the flights on friday from newark to tampa
- Attention Words: ['me']
- Original Label: 4| i d like to know the ground travel available in fort worth
- Attention Words: ['d']
- Original Label: 0| what is the earliest flight leaving from boston going to atlanta
- Attention Words: ['is']
- Original Label: 0| can i have a list of all the thursday flights from baltimore to atlanta that leave after 1 pm
- Attention Words: ['i' 'pm']
- Original Label: 0| on a flight from san francisco to atlanta that leaves before 8 am is there such a flight
- Attention Words: ['a']
- Original Label: 0| do you have a 9 oclock flight from boston to philadelphia
- Attention Words: ['you']
- Original Label: 0| i d like to see flights from baltimore to atlanta that arrive before noon
- Attention Words: ['d']
- Original Label: 0| what is the first flight from atlanta to boston on thursday september fifth that leaves after 8 am
- Attention Words: ['is']
- Original Label: 0| show flights on us air from pittsburgh to oakland connecting through denver
- Attention Words: ['flights']
----------------
-
----------------
- Current cluster: 9
- Original Label: 14| give me the flights and fares on december twenty seventh from indianapolis to orlando
- Attention Words: ['me']
- Original Label: 2| what is lowest cost air fare available for a flight from dallas to baltimore arriving on july fourth
- Attention Words: ['is']
- Original Label: 0| i d like to go from detroit to san diego on wednesday evening june second
- Attention Words: ['d']
- Original Label: 0| show me the flights from love field to all other airports
- Attention Words: ['me']
- Original Label: 3| what kind of airplanes are used by delta airlines flying between washington and denver
- Attention Words: ['kind']
----------------
-
----------------
- Current cluster: 10
- Original Label: 6| what airlines fly from boston to washington
- Attention Words: ['airlines']
- Original Label: 0| list all the landings at general mitchell international
- Attention Words: ['all']
- Original Label: 0| show me the flights from baltimore to oakland
- Attention Words: ['me']
- Original Label: 0| please show me the philadelphia to denver saturday flights again
- Attention Words: ['show']
- Original Label: 0| i would like to leave early in the morning
- Attention Words: ['would']
+ Original Label: 0| show me the flight with the smallest seating capacity which leaves pittsburgh and arrives in baltimore on june fourteenth
+ Attention Words: ['baltimore' 'show']
+ Original Label: 0| show me the flights from toronto to salt lake city which leave toronto after 6 pm
+ Attention Words: ['toronto' 'flights' 'the']
  Original Label: 2| what is the least expensive one way fare from boston to pittsburgh
- Attention Words: ['is']
- Original Label: 0| what are the flights from orlando to kansas city
- Attention Words: ['are']
- Original Label: 14| all flights and fares from dallas
- Attention Words: ['flights']
+ Attention Words: ['to' 'fare' 'what']
 ---------------
 
 ---------------
- Current cluster: 11
- Original Label: 0| what classes of service does twa have
- Attention Words: ['classes']
- Original Label: 0| what nonstop flights between atlanta and washington leave atlanta after 6 oclock pm
- Attention Words: ['nonstop']
- Original Label: 5| houston airports
- Attention Words: ['airports']
- Original Label: 0| what flights leave from nashville to milwaukee
- Attention Words: ['flights']
- Original Label: 0| flights from philadelphia to oakland
- Attention Words: ['from']
- Original Label: 8| what is fare code m
- Attention Words: ['is']
- Original Label: 8| what is hp
- Attention Words: ['is']
- Original Label: 0| flights from las vegas to phoenix
- Attention Words: ['from']
- Original Label: 8| what is hp
- Attention Words: ['is']
- Original Label: 4| rental car in baltimore
- Attention Words: ['car']
- Original Label: 0| i need a flight from logan to atlanta this afternoon
- Attention Words: ['need']
- Original Label: 8| what does the meal code s stand for
- Attention Words: ['does']
- Original Label: 8| what does fare code qo mean
- Attention Words: ['does']
- Original Label: 8| what does ewr mean
- Attention Words: ['does']
- Original Label: 8| what is sa
- Attention Words: ['is']
- Original Label: 10| how many booking classes are there
- Attention Words: ['many']
- Original Label: 0| what flights stop in atlanta before noon
- Attention Words: ['flights']
- Original Label: 8| what does the fare code y mean
- Attention Words: ['does']
- Original Label: 8| what does y mean
- Attention Words: ['does']
- Original Label: 8| what does ua stand for
- Attention Words: ['does']
- Original Label: 0| san francisco to pittsburgh friday
- Attention Words: ['francisco']
- Original Label: 8| what is bur
- Attention Words: ['is']
- Original Label: 8| what is as
- Attention Words: ['is']
- Original Label: 0| i m interested in flying from boston to atlanta
- Attention Words: ['m']
- Original Label: 8| what does the abbreviation ua mean
- Attention Words: ['does']
- Original Label: 8| what is sa
- Attention Words: ['is']
- Original Label: 4| ground transportation in las vegas
- Attention Words: ['transportation']
- Original Label: 8| what does ff mean
- Attention Words: ['does']
- Original Label: 8| what does restriction ap 57 mean
- Attention Words: ['does']
- Original Label: 0| pittsburgh to denver
- Attention Words: ['to']
- Original Label: 8| what does fare code y mean
- Attention Words: ['does']
- Original Label: 0| newark to cleveland
- Attention Words: ['to']
- Original Label: 8| what is mco
- Attention Words: ['is']
- Original Label: 8| what does fare code qo mean
- Attention Words: ['does']
- Original Label: 10| how many american airline flights leave denver june tenth
- Attention Words: ['many']
- Original Label: 0| where does continental fly to from chicago
- Attention Words: ['does']
- Original Label: 0| what flights from tampa to cincinnati
- Attention Words: ['flights']
----------------
-
----------------
- Current cluster: 12
- Original Label: 0| give me a flight from philadelphia to denver on sunday
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 14
- Original Label: 0| does midwest express serve cleveland
- Attention Words: ['midwest']
----------------
-
----------------
- Current cluster: 15
- Original Label: 0| show me flights from anywhere to philadelphia arriving after 2100
- Attention Words: ['me']
- Original Label: 0| i want a flight that leaves from charlotte to newark that leaves in the afternoon or evening
- Attention Words: ['want']
- Original Label: 0| list daily flights from oakland to boston using delta airlines
- Attention Words: ['daily']
- Original Label: 0| information on american airlines from fort worth texas to philadelphia
- Attention Words: ['on']
- Original Label: 0| show me flights from tampa to st louis
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 16
+ Current cluster: 1
+ Original Label: 2| what is the price of a one way fare from boston to denver on continental airlines
+ Attention Words: ['a' 'the' 'price']
+ Original Label: 2| show me the coach fares from baltimore to dallas
+ Attention Words: ['coach']
  Original Label: 0| list all flights on saturday from dallas to san francisco nonstop
- Attention Words: ['all']
- Original Label: 0| flight from philadelphia to dallas arriving before 4 pm on saturday
- Attention Words: ['from']
- Original Label: 0| i am interested in booking an early morning flight from dallas into houston and returning in the late evening
- Attention Words: ['am' 'evening']
- Original Label: 0| what s the earliest flight from phoenix to salt lake city
- Attention Words: ['s']
- Original Label: 0| can you please show me the flights from pittsburgh to boston on wednesday of next week that arrive before noon
- Attention Words: ['you' 'before' 'noon']
- Original Label: 5| show me airports near washington dc
- Attention Words: ['me']
- Original Label: 0| what is the earliest flight from boston to san francisco that serves a meal
- Attention Words: ['is']
----------------
-
----------------
- Current cluster: 17
- Original Label: 0| show me the latest flight from salt lake city to phoenix
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 25
- Original Label: 19| show me the costs and times for flights from san francisco to atlanta
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 28
- Original Label: 2| round trip fares new york to san jose
- Attention Words: ['trip']
----------------
-
----------------
- Current cluster: 29
- Original Label: 0| list daily flights from denver to boston
- Attention Words: ['daily']
- Original Label: 0| is there a nonstop flight from denver to san francisco
- Attention Words: ['there']
- Original Label: 6| what airlines fly from boston to denver
- Attention Words: ['airlines']
- Original Label: 0| what flights are there on delta from boston to dallas
- Attention Words: ['flights']
- Original Label: 0| find a flight from toronto to san diego with a layover in san francisco on air canada
- Attention Words: ['a']
- Original Label: 6| show me the airlines that fly from toronto to boston
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 30
- Original Label: 6| which airlines have connections between pittsburgh and baltimore
- Attention Words: ['airlines']
----------------
-
----------------
- Current cluster: 31
- Original Label: 6| which airline offers the cheapest rate going from dallas to baltimore on july fourth
- Attention Words: ['airline']
----------------
-
----------------
- Current cluster: 36
- Original Label: 0| give me the cheapest one way flights between boston and philadelphia which arrive after noon on a tuesday
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 38
+ Attention Words: ['to' 'francisco' 'san']
+ Original Label: 0| show me flights first class from san francisco to pittsburgh leaving on tuesday after 8 oclock in the morning and before 12 noon
+ Attention Words: ['pittsburgh' 'first' 'tuesday']
  Original Label: 4| what ground transportation is available at the boston airport
- Attention Words: ['ground']
+ Attention Words: ['airport' 'the']
+ Original Label: 2| what is the cost for these flights from baltimore to philadelphia
+ Attention Words: ['philadelphia']
+ Original Label: 0| list all flights on united from san francisco to boston
+ Attention Words: ['boston' 'to' 'san']
+ Original Label: 0| find me a flight from boston to san francisco with layover in denver on united
+ Attention Words: ['on' 'united' 'with']
  Original Label: 0| what flights are available monday from san francisco to pittsburgh
- Attention Words: ['flights']
+ Attention Words: ['pittsburgh']
+ Original Label: 0| show me the flights from san diego to san francisco on southwest airlines
+ Attention Words: ['on' 'francisco' 'san']
+ Original Label: 0| what are the flights from denver to baltimore on august tenth
+ Attention Words: ['to' 'baltimore' 'august']
+ Original Label: 0| on april eighth i would like to book a flight from charlotte to baltimore
+ Attention Words: ['charlotte' 'book' 'from']
+ Original Label: 0| what is the latest us air flight leaving philadelphia and returning to boston
+ Attention Words: ['latest' 'and' 'boston']
+ Original Label: 0| show me the flights from san diego to newark
+ Attention Words: ['san' 'newark']
+ Original Label: 0| show me flights denver to washington dc on thursday
+ Attention Words: ['thursday']
+ Original Label: 2| what would be cost of a round trip from pittsburgh to san francisco
+ Attention Words: ['san']
+ Original Label: 0| a one way flight from boston to san francisco please
+ Attention Words: ['boston' 'to' 'san']
+ Original Label: 0| could i have a listing of flights leaving boston going to baltimore leaving wednesday after 2100
+ Attention Words: ['leaving' 'boston' 'going']
+ Original Label: 0| what flight do you have from san francisco to pittsburgh on the evening of august twenty seventh
+ Attention Words: ['from' 'do' 'the']
+ Original Label: 0| what are the flights on january first 1992 from boston to san francisco
+ Attention Words: ['january' 'to' 'boston']
+ Original Label: 2| what are the fares for flights from la to newark leaving monday morning
+ Attention Words: ['from' 'newark' 'the']
+ Original Label: 0| what nonstop flights between boston and washington arrive after 5 oclock pm
+ Attention Words: ['after' '5']
+ Original Label: 0| give me a list of flights between pittsburgh and baltimore
+ Attention Words: ['between' 'baltimore']
+ Original Label: 0| i would like to see the flights from denver to philadelphia
+ Attention Words: ['from']
+ Original Label: 0| what flights go from dallas to denver after 3 pm
+ Attention Words: ['after' 'go' '3']
+ Original Label: 0| i would like to book a flight from charlotte to baltimore on april eighth
+ Attention Words: ['book' 'from' 'charlotte']
  Original Label: 0| list flights from pittsburgh to baltimore on thursday morning nonstop
- Attention Words: ['flights']
+ Attention Words: ['on' 'morning' 'thursday']
+ Original Label: 0| list all united flights from philadelphia to san francisco
+ Attention Words: ['san']
+ Original Label: 14| give me the flights and fares on december twenty seventh from indianapolis to orlando
+ Attention Words: ['december']
+ Original Label: 0| i would like to fly united airlines from washington dc to denver colorado
+ Attention Words: ['like' 'washington' 'from']
+ Original Label: 0| show me all the eastern airlines flights leaving pittsburgh between 12 and 4 in the afternoon
+ Attention Words: ['me' 'the' 'all']
  Original Label: 4| what ground transportation is available from pittsburgh to downtown
- Attention Words: ['ground']
+ Attention Words: ['pittsburgh' 'downtown']
+ Original Label: 0| show me all the flights from baltimore to columbus
+ Attention Words: ['columbus' 'baltimore']
+ Original Label: 0| find a flight on american airlines from boston to san francisco that makes a stopover in denver
+ Attention Words: ['francisco' 'san' 'that']
+ Original Label: 0| i would like to fly from pittsburgh to san francisco
+ Attention Words: ['pittsburgh' 'san']
+ Original Label: 1| what time are the flights from baltimore to san francisco
+ Attention Words: ['baltimore' 'san']
+ Original Label: 0| i d like a flight from st petersburg to miami on that next thursday
+ Attention Words: ['like' 'from' 'st']
+ Original Label: 0| i need a flight from kansas city to newark on the first of july
+ Attention Words: ['from' 'a' 'flight']
+ Original Label: 0| i would like to schedule a flight on american airlines from philadelphia to san francisco that makes a stop in denver
+ Attention Words: ['flight' 'like' 'to']
+ Original Label: 0| i d like to fly early tomorrow from columbus to minneapolis
+ Attention Words: ['to' 'columbus' 'from']
+ Original Label: 0| what s the last flight from houston to dallas
+ Attention Words: ['dallas']
+ Original Label: 0| what economy flights are available from dallas to baltimore on december seventeenth
+ Attention Words: ['on' 'baltimore' 'december']
+ Original Label: 0| what flights are available from san francisco to pittsburgh on monday morning
+ Attention Words: ['on' 'to' 'pittsburgh']
+ Original Label: 0| show me all nonstop flights between denver and oakland leaving after noon and arriving after 5 pm
+ Attention Words: ['and' 'between' 'nonstop']
+ Original Label: 0| what are the flights available in the morning between boston and denver
+ Attention Words: ['morning' 'between' 'the']
  Original Label: 4| i need information for ground transportation denver colorado
- Attention Words: ['need']
+ Attention Words: ['denver' 'transportation' 'colorado']
+ Original Label: 2| what is lowest cost air fare available for a flight from dallas to baltimore arriving on july fourth
+ Attention Words: ['to' 'dallas' 'lowest']
+ Original Label: 0| i want to fly from boston at 838 am and arrive in denver at 1110 in the morning
+ Attention Words: ['and' '838' 'am']
  Original Label: 0| what are the flights from pittsburgh to baltimore
- Attention Words: ['are']
+ Attention Words: ['baltimore']
+ Original Label: 0| what are all the flights available between pittsburgh and dallas fort worth
+ Attention Words: ['dallas' 'all' 'between']
+ Original Label: 0| show me the flights from boston to pittsburgh leaving wednesdays and thursdays
+ Attention Words: ['leaving' 'wednesdays' 'pittsburgh']
+ Original Label: 4| show me a list of ground transportation at boston airport
+ Attention Words: ['transportation' 'airport' 'boston']
+ Original Label: 0| is there a flight on american airlines going from boston to san francisco on june twenty eighth
+ Attention Words: ['going' 'san' 'to']
+ Original Label: 0| list all flights leaving san francisco monday afternoon arriving in pittsburgh
+ Attention Words: ['francisco' 'monday' 'pittsburgh']
+ Original Label: 0| what is the cheapest flight from denver to pittsburgh leaving on september twenty eighth
+ Attention Words: ['on' 'september' 'pittsburgh']
+ Original Label: 0| i would like a flight from oakland to philadelphia at one in the afternoon arriving at 5 pm
+ Attention Words: ['a' 'at' 'like']
+ Original Label: 0| list the nonstop flights on wednesday june second from miami to washington arriving in washington between 1115 am and 1245 pm
+ Attention Words: ['the' 'wednesday' 'nonstop']
+ Original Label: 0| all flights from washington to san francisco leaving after 2
+ Attention Words: ['san' 'after' '2']
+ Original Label: 0| show me the itinerary of the connecting flight from boston to denver that departs boston at 10 am
+ Attention Words: ['denver' 'boston' 'the']
+ Original Label: 0| what flights from kansas city to denver after 845 in the morning
+ Attention Words: ['after' '845']
  Original Label: 2| show me economy fares from dallas to baltimore
- Attention Words: ['me']
+ Attention Words: ['dallas' 'to' 'baltimore']
+ Original Label: 0| i would like to fly from boston to baltimore
+ Attention Words: ['to' 'boston' 'baltimore']
+ Original Label: 0| show me the latest flight from san francisco to denver
+ Attention Words: ['san' 'denver']
  Original Label: 2| fares and flights from denver to philadelphia
- Attention Words: ['and']
+ Attention Words: ['philadelphia']
+ Original Label: 2| show me the first class fares from baltimore to dallas
+ Attention Words: ['dallas' 'baltimore']
  Original Label: 4| what is the ground transportation from philadelphia airport to the city proper
- Attention Words: ['is']
+ Attention Words: ['airport' 'to' 'the']
+ Original Label: 2| show me the fare from dallas to san francisco
+ Attention Words: ['francisco' 'to' 'san']
+ Original Label: 0| show me what flights are available from baltimore to dallas with economy fares
+ Attention Words: ['baltimore' 'from' 'dallas']
+ Original Label: 0| show me all flights from san francisco to pittsburgh
+ Attention Words: ['to' 'pittsburgh']
+ Original Label: 0| i would like a flight from boston to san francisco on august seventeenth
+ Attention Words: ['on' 'san' 'august']
+ Original Label: 0| what s the earliest flight from boston to bwi that serves lunch
+ Attention Words: ['boston' 'the' 'earliest']
+ Original Label: 0| i need to fly from boston to baltimore please give me the times of your flights in the morning before 8 oclock
+ Attention Words: ['me' 'times' 'the']
+ Original Label: 0| i would like an afternoon flight leaving tuesday san diego to indianapolis
+ Attention Words: ['san' 'an' 'like']
+ Original Label: 0| i would like the cheapest flight from boston to san francisco
+ Attention Words: ['to' 'san']
+ Original Label: 0| what are the flights for united airlines on september twentieth in the morning
+ Attention Words: ['the' 'on' 'september']
+ Original Label: 0| show me all flights from pittsburgh to baltimore which leave thursday after 3 oclock pm
+ Attention Words: ['pittsburgh' '3' 'which']
  Original Label: 0| show me flights from denver to philadelphia
- Attention Words: ['me']
+ Attention Words: ['philadelphia']
+ Original Label: 0| list the earliest flights from st paul to houston
+ Attention Words: ['st' 'houston' 'earliest']
+ Original Label: 0| i would like to see the flights from baltimore to philadelphia again
+ Attention Words: ['philadelphia' 'from' 'baltimore']
+ Original Label: 0| show all flights leaving monday morning from boston to pittsburgh
+ Attention Words: ['leaving' 'pittsburgh' 'boston']
+ Original Label: 0| what are the evening flights flying out of dallas and going to san francisco on american airlines
+ Attention Words: ['evening' 'and' 'the']
  Original Label: 0| what are the flights from dallas to philadelphia
- Attention Words: ['are']
+ Attention Words: ['dallas' 'to']
  Original Label: 0| show me the flights from baltimore to dallas
- Attention Words: ['me']
+ Attention Words: ['dallas' 'baltimore']
+ Original Label: 2| what united airlines first class airfare flights are available from denver to baltimore on july three
+ Attention Words: ['baltimore' 'to' 'from']
+ Original Label: 0| i d like to book the cheapest flight from atlanta to denver on august first
+ Attention Words: ['august' 'on']
+ Original Label: 0| i need to fly from boston to denver on to san francisco and back
+ Attention Words: ['on' 'san' 'to']
+ Original Label: 0| give me the list of flights for continental airlines between boston and denver
+ Attention Words: ['for' 'the' 'list']
  Original Label: 0| what delta flights are available from pittsburgh to san francisco
- Attention Words: ['delta']
+ Attention Words: ['francisco' 'san']
+ Original Label: 0| show me all the us air flights leaving pittsburgh between 12 and 4 in the afternoon
+ Attention Words: ['the' 'between' 'all']
+ Original Label: 0| what are the flights on january first 1992 from boston to san francisco
+ Attention Words: ['january' 'to' 'boston']
+ Original Label: 2| please show me again the first class fares from baltimore to dallas
+ Attention Words: ['from' 'again' 'me']
+ Original Label: 0| please list the flights from dallas fort worth to boston on july twenty third
+ Attention Words: ['boston' 'fort' 'july']
+ Original Label: 0| show me all flights from new york to miami on a tuesday with round trip fares under 932 dollars
+ Attention Words: ['miami' 'new' 'from']
+ Original Label: 0| what s the earliest flight from phoenix to salt lake city
+ Attention Words: ['earliest' 'phoenix' 'salt']
+ Original Label: 0| what flights are available from denver to philadelphia on monday
+ Attention Words: ['to' 'philadelphia' 'on']
  Original Label: 0| i want the flights from denver to pittsburgh
- Attention Words: ['want']
+ Attention Words: ['to' 'pittsburgh']
+ Original Label: 0| i d like to go from detroit to san diego on wednesday evening june second
+ Attention Words: ['diego' 'on' 'wednesday']
+ Original Label: 0| i d like a flight from indianapolis to toronto leaving thursday morning nonstop
+ Attention Words: ['from' 'nonstop' 'indianapolis']
+ Original Label: 0| i would like to fly from boston to baltimore what time are the flights in the afternoon
+ Attention Words: ['baltimore' 'the' 'are']
+ Original Label: 0| show me the flights from san francisco to dallas
+ Attention Words: ['dallas']
+ Original Label: 2| i would like the least expensive airfare flight on sunday to pittsburgh from san francisco
+ Attention Words: ['sunday' 'like' 'the']
+ Original Label: 0| which united airlines flight flies from boston to san francisco and makes a stopover in philadelphia
+ Attention Words: ['francisco' 'san' 'and']
+ Original Label: 0| please show me united nonstop flights between boston and san francisco departing around 5 in the evening
+ Attention Words: ['francisco' 'nonstop' 'departing']
+ Original Label: 2| what is the first class fare for a round trip dallas to denver
+ Attention Words: ['round' 'the']
  Original Label: 4| what s the ground transportation like at pittsburgh
- Attention Words: ['s']
+ Attention Words: ['pittsburgh']
+ Original Label: 2| please show me airfare of flight us 345 from boston to pittsburgh
+ Attention Words: ['of' 'me' 'airfare']
+ Original Label: 0| please list flights between san francisco and denver
+ Attention Words: ['and' 'between']
+ Original Label: 0| show me the flights from love field to all other airports
+ Attention Words: ['all' 'love' 'other']
+ Original Label: 0| give me the flights for american airline from philadelphia to dallas
+ Attention Words: ['from' 'philadelphia']
+ Original Label: 0| please list the cheapest flight from dallas to baltimore arriving on may seventh
+ Attention Words: ['dallas' 'to' 'baltimore']
+ Original Label: 0| i want to go from boston to oakland on united and leave at 838 am which flight should i take
+ Attention Words: ['united' 'leave' 'which']
  Original Label: 0| what are the flights from boston to baltimore
- Attention Words: ['are']
+ Attention Words: ['baltimore']
  Original Label: 0| round trip flights from minneapolis to san diego coach economy fare
- Attention Words: ['trip']
+ Attention Words: ['to' 'san' 'diego']
+ Original Label: 0| show me the earliest flight from boston to san francisco
+ Attention Words: ['san' 'earliest']
+ Original Label: 0| on july twenty third an early flight on american from philadelphia to san francisco
+ Attention Words: ['francisco' 'to' 'san']
  Original Label: 0| show me flights from denver to philadelphia
- Attention Words: ['me']
- Original Label: 0| list flights from philadelphia to san francisco thursday
- Attention Words: ['flights']
- Original Label: 0| what are the flights from dallas to baltimore
- Attention Words: ['are']
- Original Label: 4| what ground transportation is available in denver
- Attention Words: ['ground']
- Original Label: 0| show first flight from boston to philadelphia
- Attention Words: ['first']
- Original Label: 0| show me flights from philadelphia to baltimore
- Attention Words: ['me']
- Original Label: 0| show me the afternoon flights from washington to boston
- Attention Words: ['me']
- Original Label: 0| show me the flights from boston to pittsburgh
- Attention Words: ['me']
- Original Label: 0| list flights from san francisco to pittsburgh
- Attention Words: ['flights']
- Original Label: 0| please show me flights from dallas to denver
- Attention Words: ['show']
- Original Label: 0| i d like to book a flight from atlanta to denver
- Attention Words: ['d']
- Original Label: 0| show me all flights from ontario to tacoma one way
- Attention Words: ['me']
- Original Label: 2| show me fares from baltimore to philadelphia
- Attention Words: ['me']
- Original Label: 0| what are the flights from boston to san francisco
- Attention Words: ['are']
- Original Label: 0| show me the flights from boston to dallas
- Attention Words: ['me']
- Original Label: 0| show all nonstop flights from boston to san francisco
- Attention Words: ['all']
- Original Label: 0| what are the flights from boston to san francisco
- Attention Words: ['are']
- Original Label: 0| list all flights from denver to philadelphia
- Attention Words: ['all']
----------------
-
----------------
- Current cluster: 41
- Original Label: 0| show me the flights from toronto to cincinnati
- Attention Words: ['me']
- Original Label: 0| list nonstop flights from baltimore to newark on wednesday before noon
- Attention Words: ['nonstop']
+ Attention Words: ['philadelphia']
  Original Label: 2| what are the fares for flights from charlotte to newark on tuesday and wednesday
- Attention Words: ['are']
- Original Label: 0| american flights to houston from cincinnati
- Attention Words: ['flights']
+ Attention Words: ['tuesday' 'from' 'the']
+ Original Label: 0| list flights from philadelphia to san francisco thursday
+ Attention Words: []
+ Original Label: 0| what continental flights go from chicago to seattle before 10 am in the morning that have a meal
+ Attention Words: ['seattle' 'that' '10']
+ Original Label: 0| is the american flight 813 from boston to oakland a nonstop flight
+ Attention Words: ['nonstop' 'american' 'oakland']
+ Original Label: 0| show me the flights from dallas to baltimore in first class
+ Attention Words: ['first' 'in']
+ Original Label: 0| i want a flight from san diego to indianapolis that leaves tuesday afternoon
+ Attention Words: ['san' 'diego' 'to']
+ Original Label: 0| show me all flights from pittsburgh to philadelphia which arrive before 8 oclock am on wednesday
+ Attention Words: ['philadelphia' 'wednesday' 'which']
+ Original Label: 0| what is your cheapest flight from pittsburgh to denver
+ Attention Words: ['from' 'pittsburgh']
+ Original Label: 0| what are the flights from dallas to baltimore
+ Attention Words: ['to' 'baltimore']
+ Original Label: 4| what ground transportation is available in denver
+ Attention Words: []
+ Original Label: 2| what are the coach fares for flights from newark to la leaving after 3 pm
+ Attention Words: ['la' '3' 'the']
  Original Label: 0| what are the dinner flights from indianapolis to san diego on wednesday may twelfth
- Attention Words: ['are']
+ Attention Words: ['diego' 'the' 'wednesday']
+ Original Label: 2| round trip fares from baltimore to philadelphia less than 1000 dollars or round trip fares from denver to philadelphia less than 1000 dollars or round trip fares from pittsburgh to philadelphia less than 1000 dollars
+ Attention Words: ['baltimore' 'fares' 'from']
+ Original Label: 0| what s the first flight after 1 pm leaving washington to denver
+ Attention Words: ['the' 'first']
+ Original Label: 6| show me a list of all the airlines that offer business class service
+ Attention Words: ['a' 'airlines' 'that']
+ Original Label: 0| show first flight from boston to philadelphia
+ Attention Words: ['philadelphia']
+ Original Label: 0| i want to leave chicago next tuesday and arrive in detroit around 6 pm
+ Attention Words: ['and' 'to' 'leave']
+ Original Label: 0| what flights leave after 7 pm from pittsburgh to philadelphia
+ Attention Words: ['to' 'pittsburgh' 'philadelphia']
+ Original Label: 0| can you please show me the flights from pittsburgh to boston on wednesday of next week that arrive before noon
+ Attention Words: ['from' 'flights' 'the']
+ Original Label: 0| what are your flights from denver to baltimore
+ Attention Words: ['baltimore' 'to' 'denver']
+ Original Label: 0| show me flights from philadelphia to baltimore
+ Attention Words: ['baltimore']
+ Original Label: 0| show me flights from pittsburgh to san francisco
+ Attention Words: ['san']
+ Original Label: 0| show me the afternoon flights from washington to boston
+ Attention Words: ['to' 'boston']
+ Original Label: 0| give me a flight from philadelphia to denver on sunday
+ Attention Words: ['denver' 'sunday' 'on']
+ Original Label: 0| give me the cheapest one way flights between boston and philadelphia which arrive after noon on a tuesday
+ Attention Words: ['the' 'cheapest' 'between']
+ Original Label: 0| show me the flights from boston to pittsburgh
+ Attention Words: ['boston' 'pittsburgh']
+ Original Label: 0| i would like to see the flights from denver to philadelphia please
+ Attention Words: []
+ Original Label: 3| what kind of airplanes are used by delta airlines flying between washington and denver
+ Attention Words: ['by' 'flying' 'delta']
+ Original Label: 2| i am looking to get one air fare from baltimore to san francisco on a 747 leaving august twenty seventh
+ Attention Words: ['on' 'san' 'a']
+ Original Label: 0| show me the flights from san diego to washington dc
+ Attention Words: ['to' 'dc' 'washington']
+ Original Label: 0| what is the cheapest flight from boston to san francisco
+ Attention Words: ['to' 'san']
+ Original Label: 3| what kind of airplane goes from boston to san francisco before noon
+ Attention Words: ['francisco' 'to' 'san']
+ Original Label: 0| i would like a flight from washington to boston on august twentieth at 324 pm
+ Attention Words: ['on' 'boston' 'august']
+ Original Label: 0| list flights from san francisco to pittsburgh
+ Attention Words: ['pittsburgh']
+ Original Label: 0| please show me flights from dallas to denver
+ Attention Words: ['to' 'dallas']
+ Original Label: 0| i d like to book a flight from atlanta to denver
+ Attention Words: ['flight']
+ Original Label: 0| what flights go from boston to san francisco with a stop in dallas
+ Attention Words: ['san' 'with' 'go']
+ Original Label: 0| show me the flights from san diego to newark
+ Attention Words: ['san' 'newark']
+ Original Label: 0| show me all flights from ontario to tacoma one way
+ Attention Words: ['one' 'ontario']
+ Original Label: 0| i would like to book a flight for may twenty sixth going from tampa to milwaukee a direct flight if possible
+ Attention Words: ['flight' 'like' 'for']
+ Original Label: 7| what is the distance from los angeles international airport to los angeles
+ Attention Words: ['angeles' 'the' 'international']
+ Original Label: 0| i want to go between boston and san francisco
+ Attention Words: ['francisco' 'san']
+ Original Label: 0| what is the earliest flight that eastern has between boston and washington
+ Attention Words: ['earliest' 'the']
+ Original Label: 2| i would like to know the first class fare on a flight from baltimore to denver
+ Attention Words: ['from' 'like' 'to']
+ Original Label: 0| what is the earliest flight from boston to san francisco that serves a meal
+ Attention Words: ['san' 'earliest' 'the']
+ Original Label: 0| give me the earliest flight tomorrow on united airlines from st petersburg to milwaukee
+ Attention Words: ['from' 'united' 'tomorrow']
+ Original Label: 0| please list all flights on united airlines and northwest airlines that go into denver and all flights on northwest airlines and united airlines that fly out of denver
+ Attention Words: ['that' 'northwest' 'all']
+ Original Label: 0| information on flights from boston to washington
+ Attention Words: ['washington' 'to']
+ Original Label: 1| i want to know the time of the latest flight i can take from washington to san francisco where i can get a dinner meal
+ Attention Words: ['to' 'the' 'latest']
+ Original Label: 2| show me fares from baltimore to philadelphia
+ Attention Words: ['philadelphia']
+ Original Label: 0| what is the last flight from baltimore to boston
+ Attention Words: ['baltimore' 'boston']
+ Original Label: 0| what are the flights from boston to san francisco
+ Attention Words: ['san']
+ Original Label: 0| what american airlines flights from phoenix to milwaukee depart phoenix after 6 pm on wednesday
+ Attention Words: ['pm' 'wednesday']
+ Original Label: 0| i want to fly philadelphia to san francisco on july eighth
+ Attention Words: ['san' 'on' 'july']
+ Original Label: 0| what is the earliest flight from washington to san francisco
+ Attention Words: ['earliest' 'san']
+ Original Label: 0| is the american flight 813 from boston to oakland a flight that goes straight through from boston to oakland without stopping at another city
+ Attention Words: ['oakland' 'flight' 'american']
+ Original Label: 0| show me all the us air flights to pittsburgh between 12 and 4 in the afternoon
+ Attention Words: ['the' 'between' 'all']
+ Original Label: 0| what is the latest flight from boston to denver that serves a meal
+ Attention Words: ['latest' 'denver' 'the']
+ Original Label: 0| show me the flights from boston to dallas
+ Attention Words: ['boston' 'dallas']
+ Original Label: 0| what is the cheapest way to fly from denver to oakland
+ Attention Words: ['fly' 'to' 'denver']
+ Original Label: 0| is there a united flight from baltimore to san francisco on the morning of august twenty seventh
+ Attention Words: ['the' 'of' 'august']
+ Original Label: 0| show me the flights from denver to philadelphia again
+ Attention Words: ['denver' 'philadelphia' 'to']
+ Original Label: 4| can you give me information on transportation from the airport in philadelphia to downtown philadelphia
+ Attention Words: ['transportation' 'from' 'airport']
+ Original Label: 0| i would like to book a flight from denver to pittsburgh on july fifteenth i d like it to be the cheapest flight
+ Attention Words: ['from' 'denver' 'july']
+ Original Label: 0| i want a flight from boston to denver that stops in pittsburgh
+ Attention Words: ['boston' 'to' 'denver']
+ Original Label: 0| please show me the flights from las vegas to detroit on the twenty eighth
+ Attention Words: ['me' 'twenty' 'detroit']
+ Original Label: 0| show me the cheapest flight on june fourteenth arriving in baltimore starting from dallas
+ Attention Words: ['on' 'cheapest' 'june']
+ Original Label: 0| show me flights from denver to washington dc on a wednesday
+ Attention Words: ['dc' 'wednesday' 'washington']
+ Original Label: 2| what does it cost to fly from boston to san francisco on united airlines flight 21
+ Attention Words: ['airlines' 'does' 'united']
+ Original Label: 0| i need to fly from dallas to san francisco and be in san francisco by 4 pm
+ Attention Words: ['san' 'fly' 'and']
+ Original Label: 0| what flights go from dallas to denver leaving after 3 pm
+ Attention Words: ['after' 'go' '3']
+ Original Label: 0| show me all flights from dallas to pittsburgh on monday which leave after 8 oclock pm
+ Attention Words: ['dallas' 'to' 'on']
+ Original Label: 0| show all nonstop flights from boston to san francisco
+ Attention Words: ['to' 'san' 'nonstop']
+ Original Label: 0| what flights from denver to pittsburgh arrive before 8 in the morning
+ Attention Words: ['before' '8']
+ Original Label: 0| what are the flights from boston to san francisco
+ Attention Words: ['san']
+ Original Label: 2| i want a one way ticket from dallas to baltimore
+ Attention Words: ['to' 'baltimore' 'dallas']
+ Original Label: 12| what is the number of first class flights on american airlines
+ Attention Words: ['on' 'american']
+ Original Label: 0| list all flights from denver to philadelphia
+ Attention Words: ['philadelphia' 'to']
+ Original Label: 0| i want to travel from philadelphia to san francisco with a stopover in dallas
+ Attention Words: ['francisco' 'san' 'with']
+ Original Label: 0| show me the flights that go from san diego to newark with one stop in houston
+ Attention Words: ['newark' 'that' 'with']
 ---------------
 
 ---------------
- Current cluster: 43
+ Current cluster: 3
+ Original Label: 0| what flights are there from pittsburgh to san francisco on friday
+ Attention Words: ['san' 'to' 'francisco']
+ Original Label: 0| san francisco to boston please with a stopover in denver
+ Attention Words: ['to' 'san']
+ Original Label: 0| show me the latest flight from salt lake city to phoenix
+ Attention Words: ['latest' 'the' 'salt']
+ Original Label: 2| what is the cheapest one way fare from boston to washington
+ Attention Words: ['washington' 'to']
+ Original Label: 0| flights from newark to cleveland 5 oclock pm daily
+ Attention Words: ['to' 'daily']
+ Original Label: 0| what nonstop flights between boston and washington arrive after 4 oclock pm
+ Attention Words: ['washington' 'after' 'between']
+ Original Label: 0| please list the flights from ontario california to orlando florida
+ Attention Words: ['florida']
+ Original Label: 0| i want a flight that leaves from charlotte to newark that leaves in the afternoon or evening
+ Attention Words: ['that' 'afternoon' 'flight']
+ Original Label: 0| all flights from boston to washington dc on november tenth
+ Attention Words: ['boston' 'november']
+ Original Label: 6| what airlines fly from boston to washington
+ Attention Words: ['boston' 'to']
+ Original Label: 0| flight from philadelphia to dallas arriving before 4 pm on saturday
+ Attention Words: ['arriving' 'saturday' '4']
+ Original Label: 0| show me all flights on us airlines from boston to oakland california which leave after 11 oclock am
+ Attention Words: ['us' 'show' 'from']
+ Original Label: 0| i am interested in booking an early morning flight from dallas into houston and returning in the late evening
+ Attention Words: ['and' 'from' 'flight']
+ Original Label: 0| show me the flights from toronto to cincinnati
+ Attention Words: ['the' 'flights' 'from']
+ Original Label: 4| show me ground transportation in baltimore
+ Attention Words: ['transportation' 'ground' 'show']
+ Original Label: 0| what are the flights from cleveland to indianapolis on wednesday may twelfth on either twa delta or continental
+ Attention Words: ['indianapolis' 'either']
+ Original Label: 0| show me the flights from baltimore to oakland
+ Attention Words: ['the' 'flights' 'baltimore']
+ Original Label: 0| please show me the philadelphia to denver saturday flights again
+ Attention Words: ['to' 'philadelphia' 'saturday']
+ Original Label: 0| please give all flights from dallas to oakland california monday
+ Attention Words: ['flights' 'to' 'oakland']
+ Original Label: 6| what airlines fly between san francisco and denver
+ Attention Words: ['francisco' 'and']
+ Original Label: 0| i would like to leave early in the morning
+ Attention Words: ['the' 'early' 'i']
+ Original Label: 0| looking for a flight from denver to salt lake city
+ Attention Words: ['to' 'from' 'looking']
+ Original Label: 6| show me the airlines that fly from toronto to boston
+ Attention Words: ['airlines' 'the' 'show']
+ Original Label: 0| list least expensive flight from dallas to baltimore
+ Attention Words: ['to' 'baltimore' 'list']
+ Original Label: 0| show me flights from seattle to san francisco that leave after 5 pm
+ Attention Words: ['san' 'that' 'francisco']
+ Original Label: 0| what are the flights from milwaukee to orlando on wednesday
+ Attention Words: ['on' 'wednesday' 'milwaukee']
+ Original Label: 0| list flights from pittsburgh to san francisco
+ Attention Words: ['san' 'francisco']
+ Original Label: 0| list all flights on continental departing on monday before noon from denver to chicago
+ Attention Words: ['noon' 'monday' 'denver']
+ Original Label: 0| what is the earliest flight from washington to atlanta leaving on wednesday september fourth
+ Attention Words: ['atlanta' 'wednesday' 'washington']
+ Original Label: 0| list flights leaving denver and arriving in orlando on saturday departing after 12 pm
+ Attention Words: ['arriving' 'on' 'orlando']
+ Original Label: 2| what is the airfare between denver and pittsburgh
+ Attention Words: ['between' 'and']
+ Original Label: 0| what flights go from baltimore to newark wednesday morning
+ Attention Words: ['baltimore' 'wednesday' 'newark']
+---------------
+
+---------------
+ Current cluster: 4
+ Original Label: 0| what flights from memphis to miami on wednesday
+ Attention Words: ['flights' 'memphis' 'from']
+ Original Label: 0| list all the flights that arrive at general mitchell international from various cities
+ Attention Words: ['the' 'that' 'general']
+ Original Label: 0| okay what i would like to know is does twa flight 505 from charlotte to las vegas with a stop in st louis serve dinner that s twa flight 505 or 163
+ Attention Words: ['like' 'would' 'i']
+ Original Label: 0| i would like a nonstop flight from new york to las vegas on march second
+ Attention Words: ['march' 'new' 'las']
+---------------
+
+---------------
+ Current cluster: 6
+ Original Label: 0| what flights leave from phoenix to nashville on american airlines
+ Attention Words: ['flights' 'american' 'what']
+ Original Label: 0| what classes of service does twa have
+ Attention Words: []
+ Original Label: 0| show me all flights from indianapolis
+ Attention Words: ['show']
+ Original Label: 0| show me all nationair flights from toronto
+ Attention Words: ['all' 'show']
+ Original Label: 0| what is the cheapest flight from pittsburgh to atlanta
+ Attention Words: ['what']
+ Original Label: 4| ground transportation in dallas and boston
+ Attention Words: ['ground']
+ Original Label: 3| what type of aircraft does eastern fly from atlanta to denver before 6 pm
+ Attention Words: ['does' 'to' 'what']
+ Original Label: 0| show me flights from denver to atlanta on june sixteenth
+ Attention Words: ['on' 'show']
+ Original Label: 0| we re going from denver to san francisco
+ Attention Words: ['we']
  Original Label: 0| please list all flights between boston and atlanta
- Attention Words: ['list']
+ Attention Words: ['please']
  Original Label: 6| what airlines fly from boston to atlanta
- Attention Words: ['airlines']
- Original Label: 0| find me the earliest flight from boston to atlanta
- Attention Words: ['me']
- Original Label: 0| what flights are between boston and atlanta on july thirty first
+ Attention Words: ['what']
+ Original Label: 0| show me flights from anywhere to philadelphia arriving after 2100
+ Attention Words: ['flights' 'philadelphia' 'show']
+ Original Label: 0| what nonstop flights between atlanta and washington leave atlanta after 6 oclock pm
+ Attention Words: ['and' 'what' 'after']
+ Original Label: 5| houston airports
+ Attention Words: []
+ Original Label: 0| can you give me the latest flight from atlanta to denver on july seventh
+ Attention Words: ['to' 'can']
+ Original Label: 0| show all flights philadelphia to dallas
+ Attention Words: ['show']
+ Original Label: 2| what is the price of a first class ticket from atlanta to san francisco
+ Attention Words: ['is' 'to' 'what']
+ Original Label: 0| in the month of december are there any flights from atlanta to denver that stop in boston
+ Attention Words: ['to' 'in']
+ Original Label: 0| what flights leave from nashville to milwaukee
+ Attention Words: ['what']
+ Original Label: 0| display all flights from san francisco to boston on august eighth
+ Attention Words: ['from' 'display']
+ Original Label: 11| what are the cities that american airlines serves
+ Attention Words: ['serves' 'airlines' 'what']
+ Original Label: 0| the flight will originate from boston
+ Attention Words: ['the']
+ Original Label: 0| what northwest airline flights leave denver before noon
+ Attention Words: ['northwest' 'what']
+ Original Label: 0| please list the flights from charlotte to long beach arriving after lunch time
+ Attention Words: ['charlotte' 'the' 'please']
+ Original Label: 0| what flights from atlanta to st louis on tuesday arriving around 230 pm
+ Attention Words: ['to' 'what']
+ Original Label: 0| flights from philadelphia to oakland
  Attention Words: ['flights']
+ Original Label: 0| find me the earliest flight from boston to atlanta
+ Attention Words: ['find']
+ Original Label: 0| could you please show me all flights from charlotte to milwaukee
+ Attention Words: ['could']
+ Original Label: 0| flights from ontario to florida
+ Attention Words: ['flights']
+ Original Label: 0| find travel arrangements for a one way flight from boston to pittsburgh
+ Attention Words: ['one' 'from' 'find']
+ Original Label: 0| i m flying from boston to dallas
+ Attention Words: ['i']
+ Original Label: 6| does any airline have a jet flight between pittsburgh and baltimore
+ Attention Words: ['have' 'and' 'does']
+ Original Label: 0| give me the flights from indianapolis to orlando on december twenty seventh and twenty eighth
+ Attention Words: ['indianapolis' 'twenty' 'give']
+ Original Label: 6| what is airline nw
+ Attention Words: ['what']
+ Original Label: 0| is there a flight between oakland and boston with a stopover in dallas fort worth on twa
+ Attention Words: ['is']
+ Original Label: 0| what do you have from philadelphia to dallas on saturday morning
+ Attention Words: ['from' 'saturday' 'what']
+ Original Label: 0| what flights are available tuesday afternoon from pittsburgh to atlanta
+ Attention Words: ['pittsburgh' 'what']
+ Original Label: 0| i m trying to find a flight from kansas city to burbank on saturday the twenty second
+ Attention Words: ['i']
+ Original Label: 0| are there any flights from new york to los angeles which stop over in milwaukee
+ Attention Words: ['are']
+ Original Label: 15| do i get a meal on the atlanta to bwi flight eastern 210
+ Attention Words: ['get' 'to' 'do']
+ Original Label: 8| what is fare code m
+ Attention Words: ['what']
+ Original Label: 8| what is hp
+ Attention Words: []
+ Original Label: 4| do you have ground transportation between airport and downtown in boston
+ Attention Words: ['and' 'ground' 'do']
+ Original Label: 0| flights from las vegas to phoenix
+ Attention Words: ['flights']
+ Original Label: 0| delta flights to dallas please
+ Attention Words: ['delta']
+ Original Label: 0| flights from montreal and phoenix to las vegas arriving at the same time
+ Attention Words: ['montreal' 'from' 'flights']
+ Original Label: 8| what is hp
+ Attention Words: []
+ Original Label: 0| flights from pittsburgh to baltimore between 10 am and 2 pm
+ Attention Words: ['and' 'from' 'flights']
+ Original Label: 0| what flights are between boston and atlanta on july thirty first
+ Attention Words: ['flights' 'on' 'what']
  Original Label: 0| please list the monday morning flights from kansas city to atlanta
+ Attention Words: ['the' 'please']
+ Original Label: 0| what flights does delta have from dallas to denver after 5 oclock
+ Attention Words: ['from' 'does' 'what']
+ Original Label: 4| rental car in baltimore
+ Attention Words: ['rental']
+ Original Label: 3| what s the next smallest plane after a turboprop
+ Attention Words: ['what']
+ Original Label: 0| i need a flight from logan to atlanta this afternoon
+ Attention Words: ['this' 'i']
+ Original Label: 0| how can i go from the san francisco airport to downtown san francisco
+ Attention Words: ['the' 'san' 'how']
+ Original Label: 3| please inform me the type of aircraft used on a flight from atlanta to denver before 12 oclock noon
+ Attention Words: ['the' 'to' 'please']
+ Original Label: 2| how much does it cost to fly directly from philadelphia to san francisco on american airlines
+ Attention Words: ['directly' 'fly' 'how']
+ Original Label: 8| what does the meal code s stand for
+ Attention Words: ['what']
+ Original Label: 0| what are connecting flights from chicago to seattle on june first
+ Attention Words: ['connecting' 'from' 'what']
+ Original Label: 0| what are the flights on tuesday october first from atlanta to baltimore
+ Attention Words: ['are' 'to' 'what']
+ Original Label: 0| is there a flight in the afternoon from philadelphia that arrives in the evening in denver
+ Attention Words: ['flight' 'the' 'is']
+ Original Label: 0| i need to fly between philadelphia and atlanta
+ Attention Words: ['i']
+ Original Label: 2| us 3724 baltimore to philadelphia what is the round trip fare
+ Attention Words: ['to' 'us']
+ Original Label: 0| how about flights leaving san francisco and arriving in boston for any day
+ Attention Words: ['leaving' 'boston' 'how']
+ Original Label: 0| find a flight between denver and oakland the flight should leave in the afternoon and arrive near 5 pm the flight should also be nonstop
+ Attention Words: ['and' 'find']
+ Original Label: 0| show me the nonstop flights from nashville to st louis
+ Attention Words: ['me' 'st' 'show']
+ Original Label: 0| also give me a list of flights between oakland and boston
+ Attention Words: ['me' 'also']
+ Original Label: 0| morning flight from oakland to dallas
+ Attention Words: ['morning']
+ Original Label: 0| list daily flights from denver to boston
  Attention Words: ['list']
  Original Label: 8| what is the code for business class
- Attention Words: ['is']
- Original Label: 0| san francisco to philadelphia please
- Attention Words: ['francisco']
- Original Label: 0| list the flights arriving in atlanta from baltimore before noon on august fourth
- Attention Words: ['the']
- Original Label: 0| please list the flights from washington dc to atlanta
- Attention Words: ['list']
- Original Label: 0| which united flights from boston to san francisco make connections
- Attention Words: ['united']
- Original Label: 0| pittsburgh to boston saturday
- Attention Words: ['to']
- Original Label: 0| tell me the last flight from atlanta to philadelphia
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 44
- Original Label: 0| show me all flights from oakland to philadelphia on saturday which serve a meal
- Attention Words: ['me']
- Original Label: 6| what airlines fly between san francisco and denver
- Attention Words: ['airlines']
- Original Label: 0| i want to go between boston and san francisco
- Attention Words: ['want']
- Original Label: 0| what is the earliest flight that eastern has between boston and washington
- Attention Words: ['is']
- Original Label: 4| i would like information on ground transportation in atlanta from the airport to the city in the morning around 9 am
- Attention Words: ['would' 'around' '9']
- Original Label: 0| list flights leaving denver and arriving in orlando on saturday departing after 12 pm
- Attention Words: ['flights']
----------------
-
----------------
- Current cluster: 51
- Original Label: 0| give me a list of flights between pittsburgh and baltimore
- Attention Words: ['me']
- Original Label: 3| what s the next smallest plane after a turboprop
- Attention Words: ['s']
- Original Label: 3| what kind of airplane goes from boston to san francisco before noon
- Attention Words: ['kind']
----------------
-
----------------
- Current cluster: 54
- Original Label: 0| are there any flights from new york to los angeles which stop over in milwaukee
- Attention Words: ['there']
- Original Label: 0| show me all flights on us airlines from boston to oakland california which leave after 11 oclock am
- Attention Words: ['me']
- Original Label: 0| i d like to book the cheapest flight from atlanta to denver on august first
- Attention Words: ['d']
- Original Label: 0| what flights leave pittsburgh for denver on monday night
- Attention Words: ['flights']
----------------
-
----------------
- Current cluster: 59
- Original Label: 15| do i get a meal on the atlanta to bwi flight eastern 210
- Attention Words: ['i']
- Original Label: 2| how much does flight ua 270 from denver to philadelphia cost
- Attention Words: ['much']
- Original Label: 0| how can i get from the airport in pittsburgh to downtown
- Attention Words: ['can']
- Original Label: 8| could you tell me what the abbreviation us stands for
- Attention Words: ['you']
- Original Label: 4| how do i get downtown from the toronto airport
- Attention Words: ['do']
- Original Label: 2| how much is a us air boston to pittsburgh daily nonstop flight
- Attention Words: ['much']
----------------
-
----------------
- Current cluster: 61
- Original Label: 2| what s the lowest round trip fare from denver to atlanta
- Attention Words: ['s']
- Original Label: 0| afternoon flight from denver to san francisco
- Attention Words: ['flight']
- Original Label: 4| is there ground transportation between airport and downtown in boston
- Attention Words: ['there']
- Original Label: 0| what flights from washington dc to toronto
- Attention Words: ['flights']
- Original Label: 0| which flights on northwest and united airlines stop in denver before noon
- Attention Words: ['flights']
----------------
-
----------------
- Current cluster: 65
- Original Label: 0| show me all flights arriving to denver from oakland
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 67
- Original Label: 0| what is the cheapest flight from pittsburgh to atlanta
- Attention Words: ['is']
- Original Label: 0| what are the flights on january first 1992 from boston to san francisco
- Attention Words: ['are']
- Original Label: 0| i m flying from boston to dallas
- Attention Words: ['m']
- Original Label: 0| i want to fly from boston at 838 am and arrive in denver at 1110 in the morning
- Attention Words: ['want']
- Original Label: 0| what are the flights on tuesday october first from atlanta to baltimore
- Attention Words: ['are']
- Original Label: 2| us 3724 baltimore to philadelphia what is the round trip fare
- Attention Words: ['3724']
- Original Label: 0| what are the flights on january first 1992 from boston to san francisco
- Attention Words: ['are']
- Original Label: 0| give me the flights for american airline from philadelphia to dallas
- Attention Words: ['me']
- Original Label: 0| flights from baltimore to dallas
- Attention Words: ['from']
- Original Label: 0| show me all flights to dallas from san francisco atlanta and pittsburgh
- Attention Words: ['me']
- Original Label: 0| what s the first flight after 1 pm leaving washington to denver
- Attention Words: ['s']
- Original Label: 0| show me the flights from atlanta to philadelphia
- Attention Words: ['me']
- Original Label: 4| show me boston ground transportation
- Attention Words: ['me']
- Original Label: 0| list the morning flights at a 124 dollars from atlanta to boston
- Attention Words: ['the']
----------------
-
----------------
- Current cluster: 71
- Original Label: 13| how many seats in a 72s
- Attention Words: ['many']
- Original Label: 0| what flights from st paul to kansas city on friday with supper served
- Attention Words: ['flights']
- Original Label: 0| do you have any flights from chicago to indianapolis
- Attention Words: ['you']
- Original Label: 8| explain the fare code q
- Attention Words: ['the']
----------------
-
----------------
- Current cluster: 72
- Original Label: 2| what is the cost of flight dl 106 from philadelphia to boston
- Attention Words: ['is']
- Original Label: 2| how much is a first class ticket from washington to san francisco leaving on friday
- Attention Words: ['much']
----------------
-
----------------
- Current cluster: 75
- Original Label: 0| what s the last flight from houston to dallas
- Attention Words: ['s']
----------------
-
----------------
- Current cluster: 82
- Original Label: 0| what are your flights from denver to baltimore
- Attention Words: ['are']
- Original Label: 0| what is the latest flight from boston to denver that serves a meal
- Attention Words: ['is']
----------------
-
----------------
- Current cluster: 84
- Original Label: 0| what do you have from philadelphia to dallas on saturday morning
- Attention Words: ['do']
----------------
-
----------------
- Current cluster: 85
- Original Label: 2| i am looking to get one air fare from baltimore to san francisco on a 747 leaving august twenty seventh
- Attention Words: ['am' 'twenty' 'seventh']
----------------
-
----------------
- Current cluster: 88
- Original Label: 0| what is the first flight arriving in montreal from toronto friday
- Attention Words: ['is']
- Original Label: 0| list flights from san francisco to denver on friday
- Attention Words: ['flights']
- Original Label: 0| are there any flights from chicago to minneapolis on saturday on continental
- Attention Words: ['there']
- Original Label: 0| i want a flight from toronto to montreal that leaves early friday morning
- Attention Words: ['want']
----------------
-
----------------
- Current cluster: 90
- Original Label: 0| list all the flights that arrive at general mitchell international from various cities
- Attention Words: ['all']
- Original Label: 0| what is the earliest flight from washington to atlanta leaving on wednesday september fourth
- Attention Words: ['is']
----------------
-
----------------
- Current cluster: 97
- Original Label: 3| what type of aircraft does eastern fly from atlanta to denver before 6 pm
- Attention Words: ['type']
- Original Label: 2| what is the price of a first class ticket from atlanta to san francisco
- Attention Words: ['is']
- Original Label: 0| display all flights from san francisco to boston on august eighth
- Attention Words: ['all']
- Original Label: 0| what flights from atlanta to st louis on tuesday arriving around 230 pm
- Attention Words: ['flights']
- Original Label: 6| does any airline have a jet flight between pittsburgh and baltimore
- Attention Words: ['any']
- Original Label: 4| do you have ground transportation between airport and downtown in boston
- Attention Words: ['you']
- Original Label: 0| what flights does delta have from dallas to denver after 5 oclock
- Attention Words: ['flights']
- Original Label: 3| please inform me the type of aircraft used on a flight from atlanta to denver before 12 oclock noon
- Attention Words: ['inform' 'noon']
- Original Label: 0| i need to fly between philadelphia and atlanta
- Attention Words: ['need']
- Original Label: 0| find a flight between denver and oakland the flight should leave in the afternoon and arrive near 5 pm the flight should also be nonstop
- Attention Words: ['a' 'pm' 'the']
- Original Label: 0| also give me a list of flights between oakland and boston
- Attention Words: ['give']
- Original Label: 2| i would like a ticket leaving from denver colorado to atlanta georgia with a stop in pittsburgh
- Attention Words: ['would']
- Original Label: 0| what morning flights do you have between oakland and denver
- Attention Words: ['morning']
- Original Label: 0| show flights from pittsburgh to oakland on us airlines with fare information
- Attention Words: ['flights']
- Original Label: 0| does us air fly from washington dc to denver
- Attention Words: ['us']
- Original Label: 0| give me a flight between boston and denver
- Attention Words: ['me']
- Original Label: 0| show me all the flights from atlanta to baltimore on any airline on thursday
- Attention Words: ['me']
- Original Label: 0| is there a flight from atlanta to san francisco on november seventh at noon
- Attention Words: ['there']
- Original Label: 0| show united flights between pittsburgh and baltimore
- Attention Words: ['united']
- Original Label: 2| how much does it cost to fly from atlanta to san francisco
- Attention Words: ['much']
- Original Label: 0| i d like to make a trip between atlanta and boston i wish to know the cheapest fare
- Attention Words: ['d']
- Original Label: 0| please give me flights from atlanta to boston on wednesday and thursday
- Attention Words: ['give']
- Original Label: 0| oh let s see does eastern airline have a flight from atlanta to washington
- Attention Words: ['let']
- Original Label: 0| do you have a flight from san francisco to atlanta around 8 am
- Attention Words: ['you']
- Original Label: 0| please list only united airlines flights between denver and boston
- Attention Words: ['list']
- Original Label: 6| does any airline have an early afternoon flight from boston to denver
- Attention Words: ['any']
- Original Label: 0| i need a flight from new york to montreal thursday may six arriving before noon
- Attention Words: ['need']
- Original Label: 0| i m looking for flights from oakland to atlanta leaving before 1045 am
- Attention Words: ['m']
- Original Label: 2| i d like to have some information on a ticket from denver to pittsburgh and atlanta
- Attention Words: ['d']
- Original Label: 0| show me the flights from boston to atlanta and the return flights from atlanta to boston
- Attention Words: ['me']
- Original Label: 0| list all daily flights between boston and oakland and between oakland and boston using delta airlines
- Attention Words: ['all']
- Original Label: 2| how much does it cost to fly on american from dallas to baltimore
- Attention Words: ['much']
- Original Label: 0| list all flights going from boston to atlanta after 6 oclock pm on wednesday
- Attention Words: ['all']
- Original Label: 2| i d like a ticket on a plane from denver to atlanta i would like a coach class or lowest fare ticket
- Attention Words: ['d' 'or' 'lowest']
- Original Label: 0| please give me flights from atlanta to boston on wednesday afternoon and thursday morning
- Attention Words: ['give']
- Original Label: 0| hi i need to go from cincinnati to san jose california after 6 pm on saturday
- Attention Words: ['i']
- Original Label: 0| now i need flights leaving from atlanta and arriving in philadelphia on wednesday morning
- Attention Words: ['i']
- Original Label: 0| show flights between toronto and san francisco
- Attention Words: ['flights']
- Original Label: 2| how much is the cheapest flight from denver to pittsburgh with a stop in atlanta
- Attention Words: ['much']
- Original Label: 0| please list all flights between boston and philadelphia operating on sundays
- Attention Words: ['list']
- Original Label: 0| find me the earliest flight from boston to atlanta and the latest return to boston on the same day
- Attention Words: ['me' 'day']
----------------
-
----------------
- Current cluster: 102
- Original Label: 0| could i have a listing of flights leaving boston going to baltimore leaving wednesday after 2100
- Attention Words: ['i']
- Original Label: 0| what are all the flights available between pittsburgh and dallas fort worth
- Attention Words: ['are']
- Original Label: 0| list the nonstop flights on wednesday june second from miami to washington arriving in washington between 1115 am and 1245 pm
- Attention Words: ['the' 'and' '1245']
- Original Label: 0| show me all the us air flights leaving pittsburgh between 12 and 4 in the afternoon
- Attention Words: ['me']
- Original Label: 0| please list the flights from dallas fort worth to boston on july twenty third
- Attention Words: ['list']
- Original Label: 0| what flights go from boston to san francisco with a stop in dallas
- Attention Words: ['flights']
- Original Label: 0| show me all the us air flights to pittsburgh between 12 and 4 in the afternoon
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 103
- Original Label: 13| how many people fit on a 73s
- Attention Words: ['many']
----------------
-
----------------
- Current cluster: 106
- Original Label: 0| find a flight on american airlines from boston to san francisco that makes a stopover in denver
- Attention Words: ['a']
- Original Label: 0| is there a flight on american airlines going from boston to san francisco on june twenty eighth
- Attention Words: ['there']
- Original Label: 0| all flights from washington to san francisco leaving after 2
- Attention Words: ['flights']
- Original Label: 0| i need to fly from boston to baltimore please give me the times of your flights in the morning before 8 oclock
- Attention Words: ['need' 'morning' 'before']
- Original Label: 2| what united airlines first class airfare flights are available from denver to baltimore on july three
- Attention Words: ['united']
- Original Label: 0| show me all flights from new york to miami on a tuesday with round trip fares under 932 dollars
- Attention Words: ['me' 'dollars']
- Original Label: 0| i would like to fly from boston to baltimore what time are the flights in the afternoon
- Attention Words: ['would']
- Original Label: 0| i want to go from boston to oakland on united and leave at 838 am which flight should i take
- Attention Words: ['want' 'i' 'take']
- Original Label: 0| show me all flights from pittsburgh to philadelphia which arrive before 8 oclock am on wednesday
- Attention Words: ['me']
- Original Label: 6| show me a list of all the airlines that offer business class service
- Attention Words: ['me']
- Original Label: 0| i would like a flight from washington to boston on august twentieth at 324 pm
- Attention Words: ['would']
- Original Label: 0| i would like to book a flight from denver to pittsburgh on july fifteenth i d like it to be the cheapest flight
- Attention Words: ['would' 'to' 'be']
- Original Label: 2| what does it cost to fly from boston to san francisco on united airlines flight 21
- Attention Words: ['does']
----------------
-
----------------
- Current cluster: 107
- Original Label: 0| show me all flights from indianapolis
- Attention Words: ['me']
- Original Label: 0| show me flights from denver to atlanta on june sixteenth
- Attention Words: ['me']
- Original Label: 0| what flights from memphis to miami on wednesday
- Attention Words: ['flights']
- Original Label: 0| what flights are available tuesday afternoon from pittsburgh to atlanta
- Attention Words: ['flights']
- Original Label: 0| show me flights from new york to miami
- Attention Words: ['me']
- Original Label: 0| show me flights from denver to atlanta on june sixteenth
- Attention Words: ['me']
- Original Label: 0| i m traveling to dallas from philadelphia
- Attention Words: ['m']
- Original Label: 0| list all american airlines flight from milwaukee to phoenix on sunday
- Attention Words: ['all']
- Original Label: 0| show me flights from atlanta to washington
- Attention Words: ['me']
- Original Label: 0| on a breakfast flight from philadelphia to dallas via atlanta
- Attention Words: ['a']
- Original Label: 0| okay and then from pittsburgh i d like to travel to atlanta on september fourth
- Attention Words: ['and']
- Original Label: 0| show me all twa flights please
- Attention Words: ['me']
- Original Label: 0| list the nonstop flights early tuesday morning from dallas to atlanta
- Attention Words: ['the']
- Original Label: 0| information of a flight from atlanta to pittsburgh
- Attention Words: ['of']
- Original Label: 0| show me the flights from dallas to atlanta
- Attention Words: ['me']
- Original Label: 0| what are the cheapest one way flights from denver to atlanta
- Attention Words: ['are']
----------------
-
----------------
- Current cluster: 108
- Original Label: 0| what s the earliest flight from boston to bwi that serves lunch
- Attention Words: ['s']
- Original Label: 0| i want a flight from san diego to indianapolis that leaves tuesday afternoon
- Attention Words: ['want']
- Original Label: 0| i want to leave chicago next tuesday and arrive in detroit around 6 pm
- Attention Words: ['want']
----------------
-
----------------
- Current cluster: 113
- Original Label: 2| what is the cost for these flights from baltimore to philadelphia
- Attention Words: ['is']
----------------
-
----------------
- Current cluster: 114
- Original Label: 0| find me a flight from boston to san francisco with layover in denver on united
- Attention Words: ['me']
- Original Label: 0| what flight do you have from san francisco to pittsburgh on the evening of august twenty seventh
- Attention Words: ['flight']
- Original Label: 0| what nonstop flights between boston and washington arrive after 5 oclock pm
- Attention Words: ['nonstop']
- Original Label: 0| i d like a flight from st petersburg to miami on that next thursday
- Attention Words: ['d']
- Original Label: 0| i m trying to find a flight from kansas city to burbank on saturday the twenty second
- Attention Words: ['m']
- Original Label: 0| what delta flights from cincinnati to new york city arrive at new york city before 6 pm on saturday
- Attention Words: ['delta' 'saturday']
- Original Label: 0| please show me united nonstop flights between boston and san francisco departing around 5 in the evening
- Attention Words: ['show']
- Original Label: 0| what continental flights go from chicago to seattle before 10 am in the morning that have a meal
- Attention Words: ['continental']
- Original Label: 0| what are the flights from cleveland to indianapolis on wednesday may twelfth on either twa delta or continental
- Attention Words: ['are']
- Original Label: 3| can you tell me what aircraft is used for delta flight 1222 from kansas city to salt lake city
- Attention Words: ['you' 'city']
- Original Label: 0| list all flights on continental departing on monday before noon from denver to chicago
- Attention Words: ['all']
----------------
-
----------------
- Current cluster: 115
- Original Label: 0| please list flights between san francisco and denver
- Attention Words: ['list']
- Original Label: 2| what is the airfare between denver and pittsburgh
- Attention Words: ['is']
----------------
-
----------------
- Current cluster: 116
- Original Label: 0| what flights are there from pittsburgh to san francisco on friday
- Attention Words: ['flights']
- Original Label: 0| san francisco to boston please with a stopover in denver
- Attention Words: ['francisco']
- Original Label: 0| flights from newark to cleveland 5 oclock pm daily
- Attention Words: ['from']
- Original Label: 0| i m interested in flights from denver to pittsburgh
- Attention Words: ['m']
- Original Label: 0| is there a late afternoon flight leaving washington for denver
- Attention Words: ['there']
- Original Label: 0| hi i need to get a flight from memphis to salt lake city departing before 10 am
- Attention Words: ['i']
- Original Label: 13| what s the capacity of an f28
- Attention Words: ['s']
- Original Label: 0| i would like a nonstop flight from new york to las vegas on march second
- Attention Words: ['would']
- Original Label: 0| may i have a listing of flights from long beach to columbus ohio on tuesday
- Attention Words: ['i']
----------------
-
----------------
- Current cluster: 117
- Original Label: 4| can i get a rental car in dallas
- Attention Words: ['i']
- Original Label: 13| how many people fit on a 72s airplane
- Attention Words: ['many']
----------------
-
----------------
- Current cluster: 119
- Original Label: 0| is there a flight between washington dc and san francisco on us air at 8 am
- Attention Words: ['there']
----------------
-
----------------
- Current cluster: 120
- Original Label: 2| what is the price of a one way fare from boston to denver on continental airlines
- Attention Words: ['is']
- Original Label: 2| what are the fares for flights from la to newark leaving monday morning
- Attention Words: ['are']
- Original Label: 0| i would like to fly united airlines from washington dc to denver colorado
- Attention Words: ['would']
- Original Label: 0| show me all the eastern airlines flights leaving pittsburgh between 12 and 4 in the afternoon
- Attention Words: ['me']
- Original Label: 0| what flights are available from san francisco to pittsburgh on monday morning
- Attention Words: ['flights']
- Original Label: 0| what are the flights available in the morning between boston and denver
- Attention Words: ['are']
- Original Label: 0| what is the cheapest flight from denver to pittsburgh leaving on september twenty eighth
- Attention Words: ['is']
- Original Label: 0| i would like a flight from oakland to philadelphia at one in the afternoon arriving at 5 pm
- Attention Words: ['would']
- Original Label: 0| show me what flights are available from baltimore to dallas with economy fares
- Attention Words: ['me']
- Original Label: 0| show all flights leaving monday morning from boston to pittsburgh
- Attention Words: ['all']
- Original Label: 0| i need to fly from boston to denver on to san francisco and back
- Attention Words: ['need']
- Original Label: 0| give me the list of flights for continental airlines between boston and denver
- Attention Words: ['me']
- Original Label: 0| what flights are available from denver to philadelphia on monday
- Attention Words: ['flights']
- Original Label: 0| i d like a flight from indianapolis to toronto leaving thursday morning nonstop
- Attention Words: ['d']
- Original Label: 2| what is the first class fare for a round trip dallas to denver
- Attention Words: ['is']
- Original Label: 2| please show me airfare of flight us 345 from boston to pittsburgh
- Attention Words: ['show']
- Original Label: 0| is the american flight 813 from boston to oakland a nonstop flight
- Attention Words: ['the']
- Original Label: 2| what are the coach fares for flights from newark to la leaving after 3 pm
- Attention Words: ['are']
- Original Label: 2| i would like to know the first class fare on a flight from baltimore to denver
- Attention Words: ['would']
- Original Label: 0| is the american flight 813 from boston to oakland a flight that goes straight through from boston to oakland without stopping at another city
- Attention Words: ['the' 'oakland' 'without']
- Original Label: 0| show me the cheapest flight on june fourteenth arriving in baltimore starting from dallas
- Attention Words: ['me']
- Original Label: 0| what flights from denver to pittsburgh arrive before 8 in the morning
- Attention Words: ['flights']
----------------
-
----------------
- Current cluster: 126
- Original Label: 0| show me all flights from boston to atlanta which leave atlanta after noon tomorrow
- Attention Words: ['me']
- Original Label: 6| which airlines have flights from denver to pittsburgh
- Attention Words: ['airlines']
----------------
-
----------------
- Current cluster: 131
- Original Label: 0| what nonstop flights between boston and washington arrive after 4 oclock pm
- Attention Words: ['nonstop']
- Original Label: 0| list all flights leaving san francisco monday afternoon arriving in pittsburgh
- Attention Words: ['all']
- Original Label: 0| what flights from kansas city to denver after 845 in the morning
- Attention Words: ['flights']
- Original Label: 0| please list the flights from ontario california to orlando florida
- Attention Words: ['list']
- Original Label: 0| all flights from boston to washington dc on november tenth
- Attention Words: ['flights']
- Original Label: 0| on july twenty third an early flight on american from philadelphia to san francisco
- Attention Words: ['july']
- Original Label: 0| what flights leave after 7 pm from pittsburgh to philadelphia
- Attention Words: ['flights']
- Original Label: 0| please give all flights from dallas to oakland california monday
- Attention Words: ['give']
- Original Label: 0| what american airlines flights from phoenix to milwaukee depart phoenix after 6 pm on wednesday
- Attention Words: ['american']
- Original Label: 0| show me flights from seattle to san francisco that leave after 5 pm
- Attention Words: ['me']
- Original Label: 4| can you give me information on transportation from the airport in philadelphia to downtown philadelphia
- Attention Words: ['you']
- Original Label: 0| please show me the flights from las vegas to detroit on the twenty eighth
- Attention Words: ['show']
- Original Label: 0| what are the flights from milwaukee to orlando on wednesday
- Attention Words: ['are']
- Original Label: 0| what flights go from baltimore to newark wednesday morning
- Attention Words: ['flights']
----------------
-
----------------
- Current cluster: 132
- Original Label: 0| i live in denver and i d like to make a trip to atlanta
- Attention Words: ['live']
----------------
-
----------------
- Current cluster: 133
- Original Label: 6| what is airline nw
- Attention Words: ['is']
- Original Label: 0| morning flight from oakland to dallas
- Attention Words: ['flight']
----------------
-
----------------
- Current cluster: 137
- Original Label: 11| what are the cities served by delta airlines
- Attention Words: ['are']
----------------
-
----------------
- Current cluster: 138
- Original Label: 0| what flights leave from phoenix to nashville on american airlines
- Attention Words: ['flights']
- Original Label: 0| we re going from denver to san francisco
- Attention Words: ['re']
- Original Label: 0| the flight will originate from boston
- Attention Words: ['flight']
- Original Label: 0| please list the flights from charlotte to long beach arriving after lunch time
- Attention Words: ['list']
- Original Label: 0| could you please show me all flights from charlotte to milwaukee
- Attention Words: ['you']
- Original Label: 0| flights from ontario to florida
- Attention Words: ['from']
- Original Label: 0| is there a flight between oakland and boston with a stopover in dallas fort worth on twa
- Attention Words: ['there']
- Original Label: 0| flights from montreal and phoenix to las vegas arriving at the same time
- Attention Words: ['from']
- Original Label: 0| how about flights leaving san francisco and arriving in boston for any day
- Attention Words: ['about']
+ Attention Words: ['what']
  Original Label: 0| is twa flight 497766 from st petersburg to milwaukee with one stop available tomorrow morning
- Attention Words: ['twa']
+ Attention Words: ['497766' 'one' 'is']
+ Original Label: 2| i would like a ticket leaving from denver colorado to atlanta georgia with a stop in pittsburgh
+ Attention Words: ['would' 'georgia' 'i']
+ Original Label: 0| philadelphia to san francisco monday
+ Attention Words: ['philadelphia']
+ Original Label: 8| what does fare code qo mean
+ Attention Words: []
+ Original Label: 0| what morning flights do you have between oakland and denver
+ Attention Words: ['flights' 'between' 'what']
  Original Label: 0| on tuesday what flights leave phoenix to st paul minnesota and leave after noon
- Attention Words: ['tuesday']
+ Attention Words: ['on']
+ Original Label: 0| san francisco to philadelphia please
+ Attention Words: ['to' 'francisco' 'san']
+ Original Label: 20| show me the cheapest fare in the database
+ Attention Words: ['show']
  Original Label: 0| tell me about flights from atlanta to charlotte north carolina leaving on monday and arriving in charlotte
- Attention Words: ['me']
+ Attention Words: ['tell' 'to']
+ Original Label: 0| show me all flights from oakland to philadelphia on saturday which serve a meal
+ Attention Words: ['philadelphia' 'oakland' 'show']
+ Original Label: 0| show flights from pittsburgh to oakland on us airlines with fare information
+ Attention Words: ['us' 'show']
+ Original Label: 2| find the cheapest one way fare from boston to san francisco
+ Attention Words: ['fare' 'to' 'find']
+ Original Label: 13| how many seats in a 72s
+ Attention Words: ['how']
+ Original Label: 0| what flights from st paul to kansas city on friday with supper served
+ Attention Words: ['what']
+ Original Label: 0| what flights are there from tampa to charlotte
+ Attention Words: ['what']
  Original Label: 0| can you list flights from boston to washington with the lowest one way fares that leave on saturday
- Attention Words: ['you']
- Original Label: 0| okay what i would like to know is does twa flight 505 from charlotte to las vegas with a stop in st louis serve dinner that s twa flight 505 or 163
- Attention Words: ['what' 'a' 'stop']
+ Attention Words: ['can']
+ Original Label: 0| does us air fly from washington dc to denver
+ Attention Words: ['does']
+ Original Label: 0| give me a flight between boston and denver
+ Attention Words: ['and' 'between' 'give']
+ Original Label: 0| i m interested in flights from denver to pittsburgh
+ Attention Words: ['flights' 'to' 'i']
+ Original Label: 0| show me all the flights from atlanta to baltimore on any airline on thursday
+ Attention Words: ['me' 'to' 'show']
+ Original Label: 0| show me flights from new york to miami
+ Attention Words: ['show']
+ Original Label: 0| list the flights arriving in atlanta from baltimore before noon on august fourth
+ Attention Words: ['list' 'from']
+ Original Label: 8| what does ewr mean
+ Attention Words: ['what']
+ Original Label: 0| what is the first flight arriving in montreal from toronto friday
+ Attention Words: ['montreal' 'is' 'what']
+ Original Label: 0| is there a delta flight from boston to denver
+ Attention Words: ['there' 'delta' 'is']
+ Original Label: 0| give me flights without fares from atlanta to baltimore
+ Attention Words: ['flights' 'to' 'give']
+ Original Label: 0| is there a nonstop flight from denver to san francisco
+ Attention Words: ['from' 'nonstop' 'is']
+ Original Label: 0| show me all flights from boston to atlanta which leave atlanta after noon tomorrow
+ Attention Words: ['which' 'after' 'show']
+ Original Label: 0| show me all flights from atlanta to denver which leave after 5 oclock pm the day after tomorrow
+ Attention Words: ['after' 'to' 'show']
+ Original Label: 0| list flights from san francisco to denver on friday
+ Attention Words: ['list']
+ Original Label: 0| show me flights from denver to atlanta on june sixteenth
+ Attention Words: ['on' 'show']
+ Original Label: 0| list all the landings at general mitchell international
+ Attention Words: []
+ Original Label: 0| what delta flights from cincinnati to new york city arrive at new york city before 6 pm on saturday
+ Attention Words: ['what']
+ Original Label: 2| what s the lowest round trip fare from denver to atlanta
+ Attention Words: ['what']
+ Original Label: 0| is there a flight from atlanta to san francisco on november seventh at noon
+ Attention Words: ['to' 'is']
+ Original Label: 0| show united flights between pittsburgh and baltimore
+ Attention Words: ['show']
+ Original Label: 8| what is sa
+ Attention Words: []
+ Original Label: 2| how much does it cost to fly from atlanta to san francisco
+ Attention Words: ['to' 'to' 'how']
+ Original Label: 0| i live in denver and i d like to make a trip to atlanta
+ Attention Words: ['trip' 'i']
+ Original Label: 0| i d like to make a trip between atlanta and boston i wish to know the cheapest fare
+ Attention Words: ['and' 'i']
+ Original Label: 11| what are the cities served by delta airlines
+ Attention Words: ['the' 'what']
+ Original Label: 0| delta flights to san francisco please
+ Attention Words: ['delta']
+ Original Label: 0| i m traveling to dallas from philadelphia
+ Attention Words: ['i']
+ Original Label: 0| can you tell me which flight from dallas to baltimore has the least expensive fare
+ Attention Words: ['can']
+ Original Label: 0| please give me flights from atlanta to boston on wednesday and thursday
+ Attention Words: ['give' 'to' 'please']
+ Original Label: 0| show me flights from atlanta to philadelphia in the morning
+ Attention Words: ['me' 'to' 'show']
+ Original Label: 2| show me fares from dallas to baltimore that cost less than 300 dollars
+ Attention Words: ['dallas' 'from' 'show']
+ Original Label: 6| what airlines fly from boston to denver
+ Attention Words: ['fly' 'what']
+ Original Label: 0| list nonstop flights from houston to dallas which arrive after 8 pm
+ Attention Words: ['to' 'which' 'list']
+ Original Label: 0| are there any flights from boston to san francisco which stop in denver
+ Attention Words: ['san' 'boston' 'are']
+ Original Label: 0| flights from pittsburgh to baltimore between 10 am and 2 pm
+ Attention Words: ['and' 'from' 'flights']
+ Original Label: 0| list nonstop flights from baltimore to newark on wednesday before noon
+ Attention Words: ['from' 'list']
+ Original Label: 0| what flights are there on delta from boston to dallas
+ Attention Words: ['are' 'delta' 'what']
+ Original Label: 0| flights from baltimore to dallas
+ Attention Words: ['flights']
  Original Label: 0| what flights leave phoenix on american airlines
+ Attention Words: ['what']
+ Original Label: 0| please list the flights from washington dc to atlanta
+ Attention Words: ['please']
+ Original Label: 10| how many booking classes are there
+ Attention Words: []
+ Original Label: 0| find a flight from toronto to san diego with a layover in san francisco on air canada
+ Attention Words: ['flight' 'from' 'find']
+ Original Label: 0| is there a late afternoon flight leaving washington for denver
+ Attention Words: ['leaving' 'late' 'is']
+ Original Label: 0| list flights from denver to baltimore
+ Attention Words: ['from' 'list']
+ Original Label: 0| oh let s see does eastern airline have a flight from atlanta to washington
+ Attention Words: ['have' 'to' 'oh']
+ Original Label: 0| american flights to houston from cincinnati
+ Attention Words: ['american']
+ Original Label: 0| what flights stop in atlanta before noon
+ Attention Words: ['before' 'what']
+ Original Label: 0| do you have a flight from san francisco to atlanta around 8 am
+ Attention Words: ['do' 'around']
+ Original Label: 8| what does the fare code y mean
+ Attention Words: ['what']
+ Original Label: 0| which united flights from boston to san francisco make connections
+ Attention Words: ['boston' 'flights' 'which']
+ Original Label: 0| afternoon flight from denver to san francisco
+ Attention Words: ['from' 'afternoon']
+ Original Label: 8| what does y mean
+ Attention Words: ['what']
+ Original Label: 0| flights from washington dc to denver
  Attention Words: ['flights']
  Original Label: 0| flights from new york city to montreal
- Attention Words: ['from']
- Original Label: 0| what flight leaves dallas for atlanta on august twenty seventh in the evening
- Attention Words: ['flight']
- Original Label: 0| are there any flights before 12 noon on june fifteenth from long beach to columbus
- Attention Words: ['there']
- Original Label: 0| what flights do you have from ontario
- Attention Words: ['flights']
- Original Label: 10| how many flights does american airlines have with a class of service code f
- Attention Words: ['many']
- Original Label: 0| all round trip flights between new york and miami business class fare
- Attention Words: ['round']
- Original Label: 2| how much is a round trip fare from indianapolis to seattle
- Attention Words: ['much']
- Original Label: 0| does united airlines fly from boston to dallas fort worth
- Attention Words: ['united']
- Original Label: 0| what flights do you have from newark new jersey to ontario california that connect in phoenix
- Attention Words: ['flights']
- Original Label: 2| can you show me fares for december sixteenth from oakland to dallas one way only
- Attention Words: ['you']
- Original Label: 0| are there any direct flights from atlanta to philadelphia arriving in philadelphia about 12 noon
- Attention Words: ['there']
- Original Label: 0| all delta flights to everywhere if you can
- Attention Words: ['delta']
- Original Label: 0| do you have one to denver from philadelphia
- Attention Words: ['you']
- Original Label: 6| what airlines are ac and as
- Attention Words: ['airlines']
- Original Label: 4| what limousine service in los angeles
- Attention Words: ['limousine']
- Original Label: 0| does american airlines flight from long beach to st louis stopping in dallas serve lunch
- Attention Words: ['american']
----------------
-
----------------
- Current cluster: 142
- Original Label: 2| what is the cheapest one way fare from boston to washington
- Attention Words: ['is']
----------------
-
----------------
- Current cluster: 143
- Original Label: 0| show me all nonstop flights between denver and oakland leaving after noon and arriving after 5 pm
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 144
- Original Label: 0| what is the latest us air flight leaving philadelphia and returning to boston
- Attention Words: ['is']
- Original Label: 0| show me all flights from pittsburgh to baltimore which leave thursday after 3 oclock pm
- Attention Words: ['me']
- Original Label: 0| which united airlines flight flies from boston to san francisco and makes a stopover in philadelphia
- Attention Words: ['united']
- Original Label: 0| show me the flights from toronto to salt lake city which leave toronto after 6 pm
- Attention Words: ['me']
- Original Label: 0| show me all flights from dallas to pittsburgh on monday which leave after 8 oclock pm
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 146
- Original Label: 0| show me all flights from atlanta to denver which leave after 5 oclock pm the day after tomorrow
- Attention Words: ['me']
- Original Label: 0| which flights depart los angeles destination charlotte that leave on a monday morning
- Attention Words: ['flights']
----------------
-
----------------
- Current cluster: 149
- Original Label: 0| find travel arrangements for a one way flight from boston to pittsburgh
- Attention Words: ['travel']
----------------
-
----------------
- Current cluster: 151
- Original Label: 0| show me all nationair flights from toronto
- Attention Words: ['me']
- Original Label: 4| ground transportation in dallas and boston
- Attention Words: ['transportation']
- Original Label: 0| list nonstop flights from houston to dallas which arrive after 8 pm
- Attention Words: ['nonstop']
- Original Label: 0| are there any flights from boston to san francisco which stop in denver
- Attention Words: ['there']
- Original Label: 0| flights from washington dc to denver
- Attention Words: ['from']
- Original Label: 0| show me the flight with the smallest seating capacity which leaves pittsburgh and arrives in baltimore on june fourteenth
- Attention Words: ['me' 'fourteenth']
- Original Label: 0| what flights leave from newark to los angeles in the afternoon
- Attention Words: ['flights']
- Original Label: 0| flights from baltimore to washington dc
- Attention Words: ['from']
----------------
-
----------------
- Current cluster: 152
- Original Label: 0| flights from pittsburgh to baltimore between 10 am and 2 pm
- Attention Words: ['from']
- Original Label: 0| what are connecting flights from chicago to seattle on june first
- Attention Words: ['are']
- Original Label: 0| flights from pittsburgh to baltimore between 10 am and 2 pm
- Attention Words: ['from']
- Original Label: 0| looking for a flight from denver to salt lake city
- Attention Words: ['for']
----------------
-
----------------
- Current cluster: 153
- Original Label: 0| show me the flights from san diego to newark
- Attention Words: ['me']
- Original Label: 0| show me flights denver to washington dc on thursday
- Attention Words: ['me']
- Original Label: 0| list all united flights from philadelphia to san francisco
- Attention Words: ['all']
- Original Label: 0| i would like to fly from pittsburgh to san francisco
- Attention Words: ['would']
- Original Label: 0| i would like to fly from boston to baltimore
- Attention Words: ['would']
- Original Label: 0| show me the latest flight from san francisco to denver
- Attention Words: ['me']
- Original Label: 0| show me all flights from san francisco to pittsburgh
- Attention Words: ['me']
- Original Label: 0| show me the flights from san francisco to dallas
- Attention Words: ['me']
- Original Label: 2| round trip fares from baltimore to philadelphia less than 1000 dollars or round trip fares from denver to philadelphia less than 1000 dollars or round trip fares from pittsburgh to philadelphia less than 1000 dollars
- Attention Words: ['trip' 'philadelphia' 'less']
- Original Label: 0| show me flights from pittsburgh to san francisco
- Attention Words: ['me']
- Original Label: 0| show me the flights from san diego to newark
- Attention Words: ['me']
- Original Label: 7| what is the distance from los angeles international airport to los angeles
- Attention Words: ['is']
- Original Label: 0| show me flights from denver to washington dc on a wednesday
- Attention Words: ['me']
- Original Label: 12| what is the number of first class flights on american airlines
- Attention Words: ['is']
----------------
-
----------------
- Current cluster: 159
- Original Label: 2| find the cheapest one way fare from boston to san francisco
- Attention Words: ['the']
----------------
-
----------------
- Current cluster: 160
- Original Label: 0| what flights go from dallas to denver after 3 pm
- Attention Words: ['flights']
- Original Label: 0| what is the last flight from baltimore to boston
- Attention Words: ['is']
----------------
-
----------------
- Current cluster: 165
- Original Label: 0| how can i go from the san francisco airport to downtown san francisco
- Attention Words: ['can']
- Original Label: 2| how much does it cost to fly directly from philadelphia to san francisco on american airlines
- Attention Words: ['much']
- Original Label: 0| is there a flight in the afternoon from philadelphia that arrives in the evening in denver
- Attention Words: ['there']
- Original Label: 0| philadelphia to san francisco monday
- Attention Words: ['to']
- Original Label: 4| show me ground transportation in baltimore
- Attention Words: ['me']
- Original Label: 0| can you tell me which flight from dallas to baltimore has the least expensive fare
- Attention Words: ['you']
- Original Label: 2| show me fares from dallas to baltimore that cost less than 300 dollars
- Attention Words: ['me']
- Original Label: 6| which airlines fly between boston and baltimore
- Attention Words: ['airlines']
- Original Label: 4| is there ground transportation in boston from the airport
- Attention Words: ['there']
- Original Label: 0| show me all all flights from pittsburgh to atlanta on wednesday which leave before noon and serve breakfast
- Attention Words: ['me']
- Original Label: 0| are there any thrift economy flights to san francisco from boston
- Attention Words: ['there']
- Original Label: 0| list least expensive flight from dallas to baltimore
- Attention Words: ['least']
----------------
-
----------------
- Current cluster: 166
- Original Label: 0| show all flights philadelphia to dallas
- Attention Words: ['all']
- Original Label: 0| list flights from denver to baltimore
- Attention Words: ['flights']
- Original Label: 2| price of flight from cleveland to nashville
- Attention Words: ['of']
- Original Label: 0| information on flights from boston to washington
- Attention Words: ['on']
- Original Label: 0| please find the earliest possible flight from boston to denver
- Attention Words: ['find']
- Original Label: 0| list flights from pittsburgh to san francisco
- Attention Words: ['flights']
----------------
-
----------------
- Current cluster: 170
- Original Label: 2| show me the coach fares from baltimore to dallas
- Attention Words: ['me']
- Original Label: 0| show me flights first class from san francisco to pittsburgh leaving on tuesday after 8 oclock in the morning and before 12 noon
- Attention Words: ['me' 'morning' 'and']
- Original Label: 0| list all flights on united from san francisco to boston
- Attention Words: ['all']
- Original Label: 0| show me the flights from san diego to san francisco on southwest airlines
- Attention Words: ['me']
- Original Label: 0| what are the flights from denver to baltimore on august tenth
- Attention Words: ['are']
- Original Label: 0| on april eighth i would like to book a flight from charlotte to baltimore
- Attention Words: ['april']
- Original Label: 2| what would be cost of a round trip from pittsburgh to san francisco
- Attention Words: ['would']
- Original Label: 0| a one way flight from boston to san francisco please
- Attention Words: ['one']
- Original Label: 0| i would like to see the flights from denver to philadelphia
- Attention Words: ['would']
- Original Label: 0| i would like to book a flight from charlotte to baltimore on april eighth
- Attention Words: ['would']
- Original Label: 0| show me all the flights from baltimore to columbus
- Attention Words: ['me']
- Original Label: 1| what time are the flights from baltimore to san francisco
- Attention Words: ['time']
- Original Label: 0| i need a flight from kansas city to newark on the first of july
- Attention Words: ['need']
- Original Label: 0| i would like to schedule a flight on american airlines from philadelphia to san francisco that makes a stop in denver
- Attention Words: ['would' 'stop' 'in']
- Original Label: 0| i d like to fly early tomorrow from columbus to minneapolis
- Attention Words: ['d']
- Original Label: 0| what economy flights are available from dallas to baltimore on december seventeenth
- Attention Words: ['economy']
- Original Label: 0| show me the flights from boston to pittsburgh leaving wednesdays and thursdays
- Attention Words: ['me']
- Original Label: 4| show me a list of ground transportation at boston airport
- Attention Words: ['me']
- Original Label: 0| show me the itinerary of the connecting flight from boston to denver that departs boston at 10 am
- Attention Words: ['me']
- Original Label: 2| show me the first class fares from baltimore to dallas
- Attention Words: ['me']
- Original Label: 0| i would like a flight from boston to san francisco on august seventeenth
- Attention Words: ['would']
- Original Label: 0| i would like an afternoon flight leaving tuesday san diego to indianapolis
- Attention Words: ['would']
- Original Label: 0| i would like the cheapest flight from boston to san francisco
- Attention Words: ['would']
- Original Label: 0| what are the flights for united airlines on september twentieth in the morning
- Attention Words: ['are']
- Original Label: 0| i would like to see the flights from baltimore to philadelphia again
- Attention Words: ['would']
- Original Label: 0| what are the evening flights flying out of dallas and going to san francisco on american airlines
- Attention Words: ['are']
- Original Label: 2| please show me again the first class fares from baltimore to dallas
- Attention Words: ['show']
- Original Label: 2| i would like the least expensive airfare flight on sunday to pittsburgh from san francisco
- Attention Words: ['would']
- Original Label: 0| please list the cheapest flight from dallas to baltimore arriving on may seventh
- Attention Words: ['list']
- Original Label: 0| show me the flights from dallas to baltimore in first class
- Attention Words: ['me']
- Original Label: 0| what is your cheapest flight from pittsburgh to denver
- Attention Words: ['is']
- Original Label: 0| i would like to see the flights from denver to philadelphia please
- Attention Words: ['would']
- Original Label: 0| show me the flights from san diego to washington dc
- Attention Words: ['me']
- Original Label: 0| what is the cheapest flight from boston to san francisco
- Attention Words: ['is']
- Original Label: 0| i would like to book a flight for may twenty sixth going from tampa to milwaukee a direct flight if possible
- Attention Words: ['would' 'flight' 'if']
- Original Label: 0| please list all flights on united airlines and northwest airlines that go into denver and all flights on northwest airlines and united airlines that fly out of denver
- Attention Words: ['list' 'northwest' 'airlines']
- Original Label: 1| i want to know the time of the latest flight i can take from washington to san francisco where i can get a dinner meal
- Attention Words: ['want' 'where' 'i']
- Original Label: 0| i want to fly philadelphia to san francisco on july eighth
- Attention Words: ['want']
- Original Label: 0| what is the earliest flight from washington to san francisco
- Attention Words: ['is']
- Original Label: 0| what is the cheapest way to fly from denver to oakland
- Attention Words: ['is']
- Original Label: 0| is there a united flight from baltimore to san francisco on the morning of august twenty seventh
- Attention Words: ['there']
- Original Label: 0| show me the flights from denver to philadelphia again
- Attention Words: ['me']
- Original Label: 0| i want a flight from boston to denver that stops in pittsburgh
- Attention Words: ['want']
- Original Label: 0| i need to fly from dallas to san francisco and be in san francisco by 4 pm
- Attention Words: ['need']
- Original Label: 0| what flights go from dallas to denver leaving after 3 pm
- Attention Words: ['flights']
- Original Label: 2| i want a one way ticket from dallas to baltimore
- Attention Words: ['want']
- Original Label: 0| i want to travel from philadelphia to san francisco with a stopover in dallas
- Attention Words: ['want']
- Original Label: 0| show me the flights that go from san diego to newark with one stop in houston
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 172
- Original Label: 0| what northwest airline flights leave denver before noon
- Attention Words: ['northwest']
- Original Label: 2| show me the fare from dallas to san francisco
- Attention Words: ['me']
- Original Label: 0| list the earliest flights from st paul to houston
- Attention Words: ['the']
- Original Label: 0| show me the earliest flight from boston to san francisco
- Attention Words: ['me']
- Original Label: 0| give me the earliest flight tomorrow on united airlines from st petersburg to milwaukee
- Attention Words: ['me']
----------------
-
----------------
- Current cluster: 176
- Original Label: 0| delta flights to dallas please
- Attention Words: ['flights']
- Original Label: 0| show me the nonstop flights from nashville to st louis
- Attention Words: ['me']
- Original Label: 0| is there a delta flight from boston to denver
- Attention Words: ['there']
- Original Label: 0| delta flights to san francisco please
- Attention Words: ['flights']
+ Attention Words: ['new' 'from' 'flights']
  Original Label: 0| show me flights from philadelphia to oakland on friday
- Attention Words: ['me']
+ Attention Words: ['show']
+ Original Label: 6| what airlines have nonstop early afternoon flights from boston to denver
+ Attention Words: ['have' 'from' 'what']
+ Original Label: 0| show me the flights on friday from newark to tampa
+ Attention Words: ['newark' 'show']
+ Original Label: 0| hi i need to get a flight from memphis to salt lake city departing before 10 am
+ Attention Words: ['to' 'from' 'hi']
+ Original Label: 0| do you have any flights from chicago to indianapolis
+ Attention Words: ['do']
+ Original Label: 13| what s the capacity of an f28
+ Attention Words: ['what']
+ Original Label: 0| show me all flights to dallas from san francisco atlanta and pittsburgh
+ Attention Words: ['atlanta' 'and' 'show']
+ Original Label: 2| round trip fares new york to san jose
+ Attention Words: ['trip' 'round']
+ Original Label: 0| list all american airlines flight from milwaukee to phoenix on sunday
+ Attention Words: ['american' 'all' 'list']
+ Original Label: 0| what flight leaves dallas for atlanta on august twenty seventh in the evening
+ Attention Words: ['what' 'on']
+ Original Label: 0| are there any flights from chicago to minneapolis on saturday on continental
+ Attention Words: ['are']
+ Original Label: 6| which airlines fly between boston and baltimore
+ Attention Words: ['fly' 'between' 'which']
+ Original Label: 0| show me flights from atlanta to washington
+ Attention Words: ['to' 'show']
+ Original Label: 0| on a breakfast flight from philadelphia to dallas via atlanta
+ Attention Words: ['on']
+ Original Label: 2| price of flight from cleveland to nashville
+ Attention Words: ['price']
+ Original Label: 4| can i get a rental car in dallas
+ Attention Words: ['rental' 'can']
+ Original Label: 0| are there any flights before 12 noon on june fifteenth from long beach to columbus
+ Attention Words: ['are']
+ Original Label: 3| can you tell me what aircraft is used for delta flight 1222 from kansas city to salt lake city
+ Attention Words: ['can']
+ Original Label: 6| which airlines have connections between pittsburgh and baltimore
+ Attention Words: ['and' 'have' 'which']
+ Original Label: 8| what does ua stand for
+ Attention Words: []
+ Original Label: 0| list daily flights from oakland to boston using delta airlines
+ Attention Words: ['list']
+ Original Label: 0| san francisco to pittsburgh friday
+ Attention Words: ['san']
+ Original Label: 0| does midwest express serve cleveland
+ Attention Words: ['does']
+ Original Label: 0| please list only united airlines flights between denver and boston
+ Attention Words: ['list' 'and' 'please']
+ Original Label: 0| okay and then from pittsburgh i d like to travel to atlanta on september fourth
+ Attention Words: ['on' 'okay']
+ Original Label: 2| how much does flight ua 270 from denver to philadelphia cost
+ Attention Words: ['ua' 'denver' 'how']
+ Original Label: 6| does any airline have an early afternoon flight from boston to denver
+ Attention Words: ['an' 'from' 'does']
+ Original Label: 0| what flights do you have from ontario
+ Attention Words: ['what']
+ Original Label: 0| i need a flight from new york to montreal thursday may six arriving before noon
+ Attention Words: ['need' 'montreal' 'i']
+ Original Label: 8| what is bur
+ Attention Words: []
+ Original Label: 4| i d like to know the ground travel available in fort worth
+ Attention Words: ['to' 'travel' 'i']
+ Original Label: 0| pittsburgh to boston saturday
+ Attention Words: ['pittsburgh']
+ Original Label: 0| how can i get from the airport in pittsburgh to downtown
+ Attention Words: ['get' 'the' 'how']
+ Original Label: 0| what is the earliest flight leaving from boston going to atlanta
+ Attention Words: ['what']
+ Original Label: 0| i m looking for flights from oakland to atlanta leaving before 1045 am
+ Attention Words: ['oakland' 'leaving' 'i']
+ Original Label: 2| i d like to have some information on a ticket from denver to pittsburgh and atlanta
+ Attention Words: ['to' 'i']
+ Original Label: 4| is there ground transportation in boston from the airport
+ Attention Words: ['in' 'transportation' 'is']
+ Original Label: 8| what is as
+ Attention Words: []
+ Original Label: 8| could you tell me what the abbreviation us stands for
+ Attention Words: ['could']
+ Original Label: 0| show me all all flights from pittsburgh to atlanta on wednesday which leave before noon and serve breakfast
+ Attention Words: ['pittsburgh' 'on' 'show']
+ Original Label: 2| what is the cost of flight dl 106 from philadelphia to boston
+ Attention Words: ['the' 'philadelphia' 'what']
  Original Label: 0| please give me evening flights leaving philadelphia to san francisco friday
- Attention Words: ['give']
+ Attention Words: ['philadelphia' 'friday' 'please']
+ Original Label: 0| i want a flight from toronto to montreal that leaves early friday morning
+ Attention Words: ['a' 'want' 'i']
+ Original Label: 19| show me the costs and times for flights from san francisco to atlanta
+ Attention Words: ['flights' 'show']
+ Original Label: 0| show me the flights from boston to atlanta and the return flights from atlanta to boston
+ Attention Words: ['to' 'and' 'show']
+ Original Label: 0| i m interested in flying from boston to atlanta
+ Attention Words: ['i']
+ Original Label: 10| how many flights does american airlines have with a class of service code f
+ Attention Words: ['airlines' 'does' 'how']
+ Original Label: 8| what does the abbreviation ua mean
+ Attention Words: []
+ Original Label: 8| what is sa
+ Attention Words: []
+ Original Label: 8| explain the fare code q
+ Attention Words: []
+ Original Label: 0| show me all twa flights please
+ Attention Words: ['show']
+ Original Label: 0| list all daily flights between boston and oakland and between oakland and boston using delta airlines
+ Attention Words: ['daily' 'between' 'list']
+ Original Label: 0| show me the flights from atlanta to philadelphia
+ Attention Words: ['me' 'to' 'show']
+ Original Label: 0| are there any thrift economy flights to san francisco from boston
+ Attention Words: ['from' 'francisco' 'are']
+ Original Label: 0| list the nonstop flights early tuesday morning from dallas to atlanta
+ Attention Words: ['list']
+ Original Label: 2| how much does it cost to fly on american from dallas to baltimore
+ Attention Words: ['to' 'american' 'how']
+ Original Label: 4| show me boston ground transportation
+ Attention Words: ['show']
+ Original Label: 4| ground transportation in las vegas
+ Attention Words: ['ground']
+ Original Label: 13| how many people fit on a 72s airplane
+ Attention Words: ['72s' 'a' 'how']
+ Original Label: 0| can i have a list of all the thursday flights from baltimore to atlanta that leave after 1 pm
+ Attention Words: ['have' 'that' 'can']
+ Original Label: 0| all round trip flights between new york and miami business class fare
+ Attention Words: ['all']
+ Original Label: 2| how much is a round trip fare from indianapolis to seattle
+ Attention Words: ['a' 'how']
+ Original Label: 0| list all flights going from boston to atlanta after 6 oclock pm on wednesday
+ Attention Words: ['after' 'list']
+ Original Label: 0| list the morning flights at a 124 dollars from atlanta to boston
+ Attention Words: ['the' 'to' 'list']
+ Original Label: 4| how do i get downtown from the toronto airport
+ Attention Words: ['how']
+ Original Label: 0| what flights leave from newark to los angeles in the afternoon
+ Attention Words: ['to' 'leave' 'what']
+ Original Label: 2| i d like a ticket on a plane from denver to atlanta i would like a coach class or lowest fare ticket
+ Attention Words: ['i' 'i']
+ Original Label: 4| is there ground transportation between airport and downtown in boston
+ Attention Words: ['transportation' 'is']
+ Original Label: 0| on a flight from san francisco to atlanta that leaves before 8 am is there such a flight
+ Attention Words: ['that' 'on']
+ Original Label: 0| what flights from washington dc to toronto
+ Attention Words: ['what']
+ Original Label: 0| does united airlines fly from boston to dallas fort worth
+ Attention Words: ['does']
+ Original Label: 0| flights from baltimore to washington dc
+ Attention Words: ['flights']
+ Original Label: 0| information on american airlines from fort worth texas to philadelphia
+ Attention Words: ['on' 'philadelphia' 'information']
+ Original Label: 0| what flights do you have from newark new jersey to ontario california that connect in phoenix
+ Attention Words: ['what']
+ Original Label: 2| can you show me fares for december sixteenth from oakland to dallas one way only
+ Attention Words: ['oakland' 'can']
+ Original Label: 8| what does ff mean
+ Attention Words: ['what']
+ Original Label: 2| how much is a us air boston to pittsburgh daily nonstop flight
+ Attention Words: ['us' 'a' 'how']
+ Original Label: 0| please give me flights from atlanta to boston on wednesday afternoon and thursday morning
+ Attention Words: ['give' 'to' 'please']
+ Original Label: 0| please find the earliest possible flight from boston to denver
+ Attention Words: ['earliest' 'please']
+ Original Label: 0| do you have a 9 oclock flight from boston to philadelphia
+ Attention Words: ['a' 'from' 'do']
+ Original Label: 8| what does restriction ap 57 mean
+ Attention Words: []
+ Original Label: 0| pittsburgh to denver
+ Attention Words: ['pittsburgh']
+ Original Label: 0| i d like to see flights from baltimore to atlanta that arrive before noon
+ Attention Words: ['d' 'that' 'i']
+ Original Label: 0| are there any direct flights from atlanta to philadelphia arriving in philadelphia about 12 noon
+ Attention Words: ['to' 'are']
+ Original Label: 4| i would like information on ground transportation in atlanta from the airport to the city in the morning around 9 am
+ Attention Words: ['like' 'from' 'i']
+ Original Label: 0| show me all flights arriving to denver from oakland
+ Attention Words: ['show']
+ Original Label: 0| hi i need to go from cincinnati to san jose california after 6 pm on saturday
+ Attention Words: ['san' 'cincinnati' 'hi']
+ Original Label: 0| all delta flights to everywhere if you can
+ Attention Words: ['delta' 'all']
+ Original Label: 6| which airlines have flights from denver to pittsburgh
+ Attention Words: ['denver' 'have' 'which']
+ Original Label: 8| what does fare code y mean
+ Attention Words: ['what']
+ Original Label: 0| which flights on northwest and united airlines stop in denver before noon
+ Attention Words: ['northwest' 'on' 'which']
+ Original Label: 0| now i need flights leaving from atlanta and arriving in philadelphia on wednesday morning
+ Attention Words: ['philadelphia' 'and' 'now']
+ Original Label: 0| do you have one to denver from philadelphia
+ Attention Words: ['do']
+ Original Label: 0| show flights between toronto and san francisco
+ Attention Words: ['show']
+ Original Label: 0| information of a flight from atlanta to pittsburgh
+ Attention Words: ['of' 'to' 'information']
+ Original Label: 0| newark to cleveland
+ Attention Words: ['newark']
+ Original Label: 13| how many people fit on a 73s
+ Attention Words: ['a' 'how']
+ Original Label: 0| is there a flight between washington dc and san francisco on us air at 8 am
+ Attention Words: ['san' 'dc' 'is']
+ Original Label: 2| how much is a first class ticket from washington to san francisco leaving on friday
+ Attention Words: ['a' 'first' 'how']
+ Original Label: 8| what is mco
+ Attention Words: []
+ Original Label: 0| what is the first flight from atlanta to boston on thursday september fifth that leaves after 8 am
+ Attention Words: ['to' 'what']
+ Original Label: 0| which flights depart los angeles destination charlotte that leave on a monday morning
+ Attention Words: ['flights' 'which']
+ Original Label: 0| what are the flights from orlando to kansas city
+ Attention Words: ['the' 'what']
+ Original Label: 0| show flights on us air from pittsburgh to oakland connecting through denver
+ Attention Words: ['us' 'flights' 'show']
+ Original Label: 0| show me the flights from dallas to atlanta
+ Attention Words: ['show']
+ Original Label: 8| what does fare code qo mean
+ Attention Words: []
+ Original Label: 0| may i have a listing of flights from long beach to columbus ohio on tuesday
+ Attention Words: ['tuesday' 'columbus' 'may']
+ Original Label: 2| how much is the cheapest flight from denver to pittsburgh with a stop in atlanta
+ Attention Words: ['how']
+ Original Label: 10| how many american airline flights leave denver june tenth
+ Attention Words: []
+ Original Label: 6| what airlines are ac and as
+ Attention Words: ['what']
+ Original Label: 6| which airline offers the cheapest rate going from dallas to baltimore on july fourth
+ Attention Words: ['offers' 'dallas' 'which']
+ Original Label: 4| what limousine service in los angeles
+ Attention Words: ['what']
+ Original Label: 0| what flights leave pittsburgh for denver on monday night
+ Attention Words: ['what']
+ Original Label: 0| what are the cheapest one way flights from denver to atlanta
+ Attention Words: ['the' 'what']
+ Original Label: 0| please list all flights between boston and philadelphia operating on sundays
+ Attention Words: ['and' 'sundays' 'please']
+ Original Label: 0| does american airlines flight from long beach to st louis stopping in dallas serve lunch
+ Attention Words: ['does']
+ Original Label: 14| all flights and fares from dallas
+ Attention Words: ['and' 'all']
+ Original Label: 0| find me the earliest flight from boston to atlanta and the latest return to boston on the same day
+ Attention Words: ['and' 'find']
+ Original Label: 0| show me flights from tampa to st louis
+ Attention Words: ['show']
+ Original Label: 0| where does continental fly to from chicago
+ Attention Words: ['where']
+ Original Label: 0| tell me the last flight from atlanta to philadelphia
+ Attention Words: ['tell' 'to']
+ Original Label: 0| what flights from tampa to cincinnati
+ Attention Words: ['what']
+---------------
+
+---------------
+ Current cluster: 7
+ Original Label: 5| show me airports near washington dc
+ Attention Words: ['airports']
 ---------------
 
