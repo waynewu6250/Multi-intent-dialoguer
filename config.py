@@ -33,10 +33,10 @@ class Config:
 
     #################### For Clustering & DCEC ####################
     
-    dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/semantic/intent2id_se.pkl"
-    embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/se_embeddings_raw_with_hidden.pth"
-    woz_dic_path = "/nethome/twu367/Multi-intent-dialoguer/data/MULTIWOZ2.1/intent2id.pkl"
-    woz_embedding_path = "/nethome/twu367/Multi-intent-dialoguer/finetune_results/woz_embeddings_sub.pth"
+    dic_path = "./data/semantic/intent2id_se.pkl"
+    embedding_path = "./finetune_results/se_embeddings_raw_with_hidden.pth"
+    woz_dic_path = "./data/MULTIWOZ2.1/intent2id.pkl"
+    woz_embedding_path = "./finetune_results/woz_embeddings_sub.pth"
     
     # Model
     input_shape = (20, 768)

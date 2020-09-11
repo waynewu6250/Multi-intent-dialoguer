@@ -1,0 +1,8 @@
+tensorflow
+pytorch
+keras
+sklearn
+pytorch_pretrained_bert
+matplotlib
+keras_bert
+fire
