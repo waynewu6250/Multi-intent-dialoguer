@@ -24,6 +24,7 @@ Dialogue State Tracking
 - [ ] [Bayesian update of dialogue state](http://mi.eng.cam.ac.uk/~sjy/papers/thyo10.pdf)
 - [x] [DNN](https://www.aclweb.org/anthology/W13-4073.pdf)
 - [x] [BERT-training1](https://arxiv.org/pdf/2006.01554.pdf)
+- [x] [BERT-training2](https://arxiv.org/pdf/1907.03040.pdf)
 
 NLG
 - [x] [Natural Language Generation](https://pdfs.semanticscholar.org/728e/18fbf00f5a80e9a070db4f4416d66c7b28f4.pdf)
