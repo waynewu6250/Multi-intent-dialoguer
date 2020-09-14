@@ -49,18 +49,42 @@ Uses autoencoder to summarize important words and cluster them into problems and
 
 4) **Unsupervised Object Detection/Segmentation**
 
-    [Unsupervised Object Detection](https://arxiv.org/pdf/1808.04593.pdf)
+    WNet
+
+    DCEC
 
     [Unsupervised Segmentation](https://kanezaki.github.io/pytorch-unsupervised-segmentation/ICASSP2018_kanezaki.pdf)
 
     [Instance Embedding](https://towardsdatascience.com/instance-embedding-instance-segmentation-without-proposals-31946a7c53e1): [code](https://github.com/nyoki-mtl/pytorch-discriminative-loss)
 
+    [Unsupervised Object Detection](https://arxiv.org/pdf/1808.04593.pdf)
 
 ------
-## Unsupervised instance segmentation:
-1) WNet
-2) superpixel clustering
-3) Vector Clustering: DEC, DCEC change p
+
+## Model Structure
+
+|     Task     | Embedding | Structure | Source | 
+| ------------ |  -------  | --------- | ------ |
+| Text classification | ESA/brown cluster | similarity + tree search | https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/viewFile/8588/8611 |
+| Text classfication  | BOW | charCNN | http://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf |
+| Document classification | CNN/RNN | Gated-RNN | https://www.aclweb.org/anthology/D15-1167.pdf |
+| Document classification | word2vec | 2-level Attention RNN (sentence+document), attend on trained representating word | https://www.aclweb.org/anthology/N16-1174.pdf |
+| Tagging | charCNN + flair | bilstm + self attention | https://github.com/Das-Boot/scifi |
+| Tagging | BERT | bilstm + SSVM | https://github.com/rujunhan/EMNLP-2019 |
+| Tagging | word2vec | bilstm + similarity clustering | https://www.aclweb.org/anthology/W18-5035.pdf |
+| Relations | x | BERT matching the blanks | https://github.com/plkmo/BERT-Relation-Extraction |
+| Relations | x | BERT + span classifier + relation classifier | https://arxiv.org/pdf/1909.07755.pdf |
+| Relations | x | BERT + relation computing layer (TxT matrix of prob in class) | https://github.com/slczgwh/REDN |
+| commonsense | x | BERT + maximum attention score | https://github.com/SAP-samples/acl2019-commonsense-reasoning |
+
+
+
+
+
+
+
+
+
 
 
 
