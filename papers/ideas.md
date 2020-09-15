@@ -75,7 +75,8 @@ Uses autoencoder to summarize important words and cluster them into problems and
 | Relations | x | BERT matching the blanks | https://github.com/plkmo/BERT-Relation-Extraction |
 | Relations | x | BERT + span classifier + relation classifier | https://arxiv.org/pdf/1909.07755.pdf |
 | Relations | x | BERT + relation computing layer (TxT matrix of prob in class) | https://github.com/slczgwh/REDN |
-| commonsense | x | BERT + maximum attention score | https://github.com/SAP-samples/acl2019-commonsense-reasoning |
+| Commonsense | x | BERT + maximum attention score | https://github.com/SAP-samples/acl2019-commonsense-reasoning |
+| Evaluation | BERT+LSTM | unsupervised nce loss between contexts and responses | https://research.fb.com/wp-content/uploads/2020/07/Learning-an-Unreferenced-Metric-for-Online-Dialogue-Evaluation.pdf | 
 
 
 
