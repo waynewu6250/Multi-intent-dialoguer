@@ -56,8 +56,6 @@ Multi turn
 - [ ] [Stanford Dialog Dataset](http://nlp.stanford.edu/projects/kvret/kvret_dataset_public.zip)
 
 
-
-
 --------
 
 ## Ideas:
