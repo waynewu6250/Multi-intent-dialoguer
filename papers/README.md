@@ -1,5 +1,24 @@
 # Papers & Ideas:
 
+## Datasets
+[Dialogue datasets1](https://github.com/AtmaHou/Task-Oriented-Dialogue-Dataset-Survey) <br>
+[Dialogue datasets2](https://breakend.github.io/DialogDatasets/)
+
+Single turn
+- [x] [ATIS](https://github.com/yvchen/JointSLU/tree/master/data) <br>
+- [x] [SNIPS](https://github.com/waynewu6250/Multi-intent-dialoguer/tree/master/raw_datasets/Benchmark) <br>
+- [x] [TOP semantic parsing](https://github.com/waynewu6250/Multi-intent-dialoguer/blob/master/raw_datasets/top-dataset-semantic-parsing/train.tsv)
+
+Multi turn
+- [x] [MultiWOZ Corpus](https://www.repository.cam.ac.uk/handle/1810/294507) <br>
+- [ ] [Schema-Guided Dialogue dataset](https://github.com/google-research-datasets/dstc8-schema-guided-dialogue)
+- [ ] [Facebook bAbi end-to-end dialog](https://arxiv.org/pdf/1605.07683.pdf) <br>
+- [ ] [Microsoft Dialogue Challenge](https://github.com/xiul-msr/e2e_dialog_challenge/tree/master/data) <br>
+- [ ] [Movie Booking Dataset](https://github.com/MiuLab/TC-Bot#data) <br>
+- [ ] [Stanford Dialog Dataset](http://nlp.stanford.edu/projects/kvret/kvret_dataset_public.zip)
+
+---------
+
 ## Papers:
 
 ## 1. Conversational AI reviews
@@ -17,6 +36,7 @@
 
 Overview
 - [x] [Stanford NLP overview](https://web.stanford.edu/~jurafsky/slp3/26.pdf)
+- [ ] [Microsoft NLP Group papers](https://github.com/microsoft/MSR-NLP-Projects)
 - [ ] [Intelligent conversational chatbot](https://www.csie.ntu.edu.tw/~yvchen/s105-icb/syllabus.html)
 - [ ] [MiuLab work](https://www.csie.ntu.edu.tw/~miulab/#home)
 - [ ] [Comparison for task-oriented dialogue system](https://github.com/AtmaHou/Task-Oriented-Dialogue-Research-Progress-Survey) <br>
@@ -24,13 +44,21 @@ Overview
 
 NLU
 - [x] [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
+- [ ] [BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
+
 
 Dialogue State Tracking
 - [ ] [Hidden Information State model](http://mi.eng.cam.ac.uk/~sjy/papers/ygkm10.pdf)
 - [ ] [Bayesian update of dialogue state](http://mi.eng.cam.ac.uk/~sjy/papers/thyo10.pdf)
 - [x] [DNN](https://www.aclweb.org/anthology/W13-4073.pdf)
-- [x] [BERT-training1](https://arxiv.org/pdf/2006.01554.pdf)
-- [x] [BERT-training2](https://arxiv.org/pdf/1907.03040.pdf)
+- [x] [2 LSTM network: slot-value & sentence](https://assets.amazon.science/23/98/80671ef545e4927c1716279a9340/flexible-and-scalable-state-tracking-framework-for-goal-oriented-dialogue-systems.pdf)
+- [x] [BERT-training1: slot-value & sentence](https://arxiv.org/pdf/2006.01554.pdf): input: u_n+r_n-1, slot_n; output: value_n
+- [x] [BERT-training2: direct prediction](https://arxiv.org/pdf/1907.03040.pdf): input: u_n+r_n-1; output: slot_n;
+- [x] [BERT-training3: SLU task](https://arxiv.org/pdf/2005.11640v3.pdf): input: u_n, slot&value_n-1; output: slot&value_n (https://github.com/simplc/WCN-BERT)
+- [ ] 
+
+NLU+DST
+- [ ] [Joint training](https://drive.google.com/file/d/1I8iU-dLPRnC7ZxTULTso_gwhj4uQJ23U/view)
 
 NLG
 - [x] [Natural Language Generation](https://pdfs.semanticscholar.org/728e/18fbf00f5a80e9a070db4f4416d66c7b28f4.pdf)
@@ -40,24 +68,6 @@ NLG
 - [x] [Multimodal Explanations by attention on images](http://openaccess.thecvf.com/content_cvpr_2018/papers/Park_Multimodal_Explanations_Justifying_CVPR_2018_paper.pdf) <br>
 - [x] [Adaptive Attention for Image Captioning](https://arxiv.org/pdf/1612.01887.pdf) <br>
 - [x] [Visual Attention for Image Captioning](https://arxiv.org/pdf/1502.03044.pdf) <br>
-
-
-## 4. Available Datasets
-[Dialogue datasets1](https://github.com/AtmaHou/Task-Oriented-Dialogue-Dataset-Survey) <br>
-[Dialogue datasets2](https://breakend.github.io/DialogDatasets/)
-
-Single turn
-- [x] [ATIS](https://github.com/yvchen/JointSLU/tree/master/data) <br>
-- [x] [SNIPS](https://github.com/waynewu6250/Multi-intent-dialoguer/tree/master/raw_datasets/Benchmark) <br>
-- [x] [TOP semantic parsing](https://github.com/waynewu6250/Multi-intent-dialoguer/blob/master/raw_datasets/top-dataset-semantic-parsing/train.tsv)
-
-Multi turn
-- [x] [MultiWOZ Corpus](https://www.repository.cam.ac.uk/handle/1810/294507) <br>
-- [ ] [Schema-Guided Dialogue dataset](https://github.com/google-research-datasets/dstc8-schema-guided-dialogue)
-- [ ] [Facebook bAbi end-to-end dialog](https://arxiv.org/pdf/1605.07683.pdf) <br>
-- [ ] [Microsoft Dialogue Challenge](https://github.com/xiul-msr/e2e_dialog_challenge/tree/master/data) <br>
-- [ ] [Movie Booking Dataset](https://github.com/MiuLab/TC-Bot#data) <br>
-- [ ] [Stanford Dialog Dataset](http://nlp.stanford.edu/projects/kvret/kvret_dataset_public.zip)
 
 
 --------
