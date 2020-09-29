@@ -45,7 +45,6 @@ class Data:
         text = re.sub(r"\?+", "?", text)
         if mode == "Bert":
             text = "[CLS] " + text + " [SEP]"
-            print(text)
             tokenized_text = self.tokenizer.tokenize(text)
             tokenized_ids = self.tokenizer.convert_tokens_to_ids(tokenized_text)
             text = tokenized_ids
@@ -145,7 +144,7 @@ class SemanticData(Data):
     def __init__(self, data_path, done=True):
 
         super(SemanticData, self).__init__(data_path)
-        self.prepare_text(done)
+        self.raw_data, self.intent2id = self.prepare_text(done)
     
     def prepare_text(self, done):
 
@@ -157,29 +156,34 @@ class SemanticData(Data):
             return raw_data, intent2id
         
         data = pd.read_csv(self.data_path, sep='\t', names = ["question", "question2", "info"])
-        data["intent"] = data["info"].apply(lambda x: "_".join(sorted(re.findall(r'\[IN:(\w+)', x))))
+        data["intent"] = data["info"].apply(lambda x: "@".join(set(sorted(re.findall(r'\[IN:(\w+)', x)))))
 
         ptime = time.time()
         
         raw_data = []
-        if os.path.exists("semantic/intent2id_se.pkl"):
-            with open("semantic/intent2id_se.pkl", "rb") as f:
-                intent2id = pickle.load(f)
-            counter = len(intent2id)
-        else:
-            intent2id = {}
-            counter = 0
+        intent2id = {}
+        counter = 0
         
-        for i, (text, intent) in enumerate(zip(data["question"].values[:10000], data["intent"].values[:10000])):
-            if intent not in intent2id:
-                intent2id[intent] = counter
-                counter += 1
-            raw_data.append((self.text_prepare(text, "Bert"), intent2id[intent]))
+        for i, (text, intents) in enumerate(zip(data["question"].values, data["intent"].values)):
+            # single intent:
+            # if intent not in intent2id:
+            #     intent2id[intent] = counter
+            #     counter += 1
+            # raw_data.append((self.text_prepare(text, "Bert"), intent2id[intent]))
+
+            # multi intents
+            intents = intents.split('@')
+            for intent in intents:
+                if intent not in intent2id:
+                    intent2id[intent] = counter
+                    counter += 1
+            raw_data.append((self.text_prepare(text, "Bert"), [intent2id[intent] for intent in intents]))
+            
             print("Finish: ", i)
         
-        with open("semantic/raw_data_se.pkl", "wb") as f:
+        with open("semantic/raw_data_multi_se.pkl", "wb") as f:
             pickle.dump(raw_data, f)
-        with open("semantic/intent2id_se.pkl", "wb") as f:
+        with open("semantic/intent2id_multi_se.pkl", "wb") as f:
             pickle.dump(intent2id, f)
         
         print("Process time: ", time.time()-ptime)
@@ -191,8 +195,10 @@ class SemanticData(Data):
 
 
 if __name__ == "__main__":
-    data = ATISData("../raw_datasets/ATIS/train.json", "Bert", done=False)
-    #data = SemanticData("../raw_datasets/top-dataset-semantic-parsing/train.tsv", done=False)
+    #data = ATISData("../raw_datasets/ATIS/train.json", "Bert", done=False)
+    data = SemanticData("../raw_datasets/top-dataset-semantic-parsing/train.tsv", done=False)
+    print(data.raw_data)
+    print(data.intent2id)
 
 
 
