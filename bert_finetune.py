@@ -10,6 +10,7 @@ import pickle
 import copy
 import numpy as np
 import collections
+from tqdm import tqdm
 
 from model import BertEmbedding
 from all_data import get_dataloader
@@ -35,8 +36,8 @@ def train(**kwargs):
     torch.backends.cudnn.enabled = False
 
     # dataset
-    if opt.datatype == "atis":
     # ATIS Dataset
+    if opt.datatype == "atis":
         with open(opt.atis_dic_path, 'rb') as f:
             dic = pickle.load(f)
         with open(opt.atis_train_path, 'rb') as f:
@@ -50,6 +51,8 @@ def train(**kwargs):
         X_train, mask_train = load_data(X_train)
         X_test, mask_test = load_data(X_test)
 
+        model_path = opt.atis_model_path
+
     # Semantic parsing Dataset
     elif opt.datatype == "semantic":
         with open(opt.se_dic_path, 'rb') as f:
@@ -57,14 +60,16 @@ def train(**kwargs):
         with open(opt.se_path, 'rb') as f:
             data = pickle.load(f)
         X, y = zip(*data)
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
         X_train, mask_train = load_data(X_train)
         X_test, mask_test = load_data(X_test)
+
+        model_path = opt.se_model_path
     
-    length = int(len(X_train)*0.1)
-    X_train = X_train[:length]
-    y_train = y_train[:length]
-    mask_train = mask_train[:length]
+    # length = int(len(X_train)*0.1)
+    # X_train = X_train[:length]
+    # y_train = y_train[:length]
+    # mask_train = mask_train[:length]
     
     train_loader = get_dataloader(X_train, y_train, mask_train, opt)
     val_loader = get_dataloader(X_test, y_test, mask_test, opt)
@@ -74,8 +79,8 @@ def train(**kwargs):
         num_hidden_layers=12, num_attention_heads=12, intermediate_size=3072)
     
     model = BertEmbedding(config, len(dic))
-    if opt.se_model_path:
-        model.load_state_dict(torch.load(opt.se_model_path))
+    if model_path:
+        model.load_state_dict(torch.load(model_path))
         print("Pretrained model has been loaded.\n")
     model = model.to(device)
 
@@ -92,16 +97,17 @@ def train(**kwargs):
     optimizer = BertAdam(optimizer_grouped_parameters,lr=opt.learning_rate_bert, warmup=.1)
     criterion = nn.CrossEntropyLoss().to(device)
     best_loss = 100
+    best_accuracy = 0
 
     # Start training
     for epoch in range(opt.epochs):
-        print("====== epoch %d / %d: ======"% (epoch, opt.epochs))
+        print("====== epoch %d / %d: ======"% (epoch+1, opt.epochs))
 
         # Training Phase
         total_train_loss = 0
         train_corrects = 0
         
-        for (captions_t, labels, masks) in train_loader:
+        for (captions_t, labels, masks) in tqdm(train_loader):
 
             captions_t = captions_t.to(device)
             labels = labels.to(device)
@@ -119,8 +125,9 @@ def train(**kwargs):
             total_train_loss += train_loss
             train_corrects += torch.sum(torch.max(outputs, 1)[1] == labels)
         
+        train_acc = train_corrects.double() / train_loader.dataset.num_data
         print('Total train loss: {:.4f} '.format(total_train_loss / train_loader.dataset.num_data))
-        print('Train accuracy: {:.4f}'.format(train_corrects.double() / train_loader.dataset.num_data))
+        print('Train accuracy: {:.4f}'.format(train_acc))
 
         # Validation Phase
         total_val_loss = 0
@@ -138,17 +145,19 @@ def train(**kwargs):
             total_val_loss += val_loss
             val_corrects += torch.sum(torch.max(outputs, 1)[1] == labels)
 
+        val_acc = val_corrects.double() / val_loader.dataset.num_data
         print('Total val loss: {:.4f} '.format(total_val_loss / val_loader.dataset.num_data))
-        print('Val accuracy: {:.4f}'.format(val_corrects.double() / val_loader.dataset.num_data))
+        print('Val accuracy: {:.4f}'.format(val_acc))
         if total_val_loss < best_loss:
             print('saving with loss of {}'.format(total_val_loss),
                   'improved over previous {}'.format(best_loss))
             best_loss = total_val_loss
-            best_model_wts = copy.deepcopy(model.state_dict())
+            best_accuracy = val_acc
 
-            torch.save(model.state_dict(), "checkpoints/epoch-se-900.pth")
+            torch.save(model.state_dict(), 'checkpoints/best_{}.pth'.format(opt.datatype))
         
         print()
+    print('Best Test Accuracy: {:.4f}'.format(best_accuracy))
 
 def test(**kwargs):
 

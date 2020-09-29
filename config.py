@@ -5,13 +5,13 @@ class Config:
     atis_train_path = "data/atis/raw_data.pkl"
     atis_test_path = "data/atis/raw_data_test.pkl"
     atis_dic_path = "data/atis/intent2id.pkl"
-    atis_model_path = "checkpoints/epoch-atis.pth"
+    atis_model_path = "checkpoints/best_atis.pth"
     atis_embedding_path = "finetune_results/atis_embeddings_with_hidden.pth"
 
     # semantic parsing dataset
     se_path = "data/semantic/raw_data_se.pkl"
     se_dic_path = "data/semantic/intent2id_se.pkl"
-    se_model_path = "checkpoints/epoch-se.pth"
+    se_model_path = None #"checkpoints/best_se.pth"
     se_embedding_path = "finetune_results/se_embeddings_with_hidden.pth"
 
     # multiWOZ dataset

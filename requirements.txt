@@ -6,3 +6,5 @@ pytorch_pretrained_bert
 matplotlib
 keras_bert
 fire
+pandas
+spacy
