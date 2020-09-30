@@ -14,9 +14,11 @@ import time
 
 class Data:
 
-    def __init__(self, data_path):
+    def __init__(self, data_path, rawdata_path, intent2id_path):
 
         self.data_path = data_path
+        self.rawdata_path = rawdata_path
+        self.intent2id_path = intent2id_path
         self.REPLACE_BY_SPACE_RE = re.compile(r'[/(){}\[\]\|@,;]')
         self.BAD_SYMBOLS_RE = re.compile(r'[^0-9a-z #+_]')
         self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
@@ -53,9 +55,9 @@ class Data:
 
 class ATISData(Data):
 
-    def __init__(self, data_path, mode, input_path=None, embedding_path=None, done=True):
+    def __init__(self, data_path, rawdata_path, intent2id_path, mode, input_path=None, embedding_path=None, done=True):
 
-        super(ATISData, self).__init__(data_path)
+        super(ATISData, self).__init__(data_path, rawdata_path, intent2id_path)
         
         self.raw_data, self.intent2id = self.prepare_text(mode, done)
         self.intents = [data[1] for data in self.raw_data]
@@ -80,9 +82,9 @@ class ATISData(Data):
     def prepare_text(self, mode, done):
 
         if done:
-            with open("atis/raw_data.pkl", "rb") as f:
+            with open(self.rawdata_path, "rb") as f:
                 raw_data = pickle.load(f)
-            with open("atis/intent2id.pkl", "rb") as f:
+            with open(self.intent2id_path, "rb") as f:
                 intent2id = pickle.load(f)
             return raw_data, intent2id
 
@@ -92,8 +94,8 @@ class ATISData(Data):
             data = json.load(f)
         
         raw_data = []
-        if os.path.exists("atis/intent2id.pkl"):
-            with open("atis/intent2id.pkl", "rb") as f:
+        if os.path.exists(self.intent2id_path):
+            with open(self.intent2id_path, "rb") as f:
                 intent2id = pickle.load(f)
             counter = len(intent2id)
         else:
@@ -106,9 +108,9 @@ class ATISData(Data):
                 counter += 1
             raw_data.append((self.text_prepare(sample['text'], mode), intent2id[sample['intent']], sample['entities']))
         
-        with open("atis/raw_data.pkl", "wb") as f:
+        with open(self.rawdata_path, "wb") as f:
             pickle.dump(raw_data, f)
-        with open("atis/intent2id.pkl", "wb") as f:
+        with open(self.intent2id_path, "wb") as f:
             pickle.dump(intent2id, f)
         
         print("Process time: ", time.time()-ptime)
@@ -141,17 +143,17 @@ class ATISData(Data):
 
 class SemanticData(Data):
 
-    def __init__(self, data_path, done=True):
+    def __init__(self, data_path, rawdata_path, intent2id_path, done=True):
 
-        super(SemanticData, self).__init__(data_path)
+        super(SemanticData, self).__init__(data_path, rawdata_path, intent2id_path)
         self.raw_data, self.intent2id = self.prepare_text(done)
     
     def prepare_text(self, done):
 
         if done:
-            with open("semantic/raw_data_se.pkl", "rb") as f:
+            with open(self.rawdata_path, "rb") as f:
                 raw_data = pickle.load(f)
-            with open("semantic/intent2id_se.pkl", "rb") as f:
+            with open(self.intent2id_path, "rb") as f:
                 intent2id = pickle.load(f)
             return raw_data, intent2id
         
@@ -181,9 +183,9 @@ class SemanticData(Data):
             
             print("Finish: ", i)
         
-        with open("semantic/raw_data_multi_se.pkl", "wb") as f:
+        with open(self.rawdata_path, "wb") as f:
             pickle.dump(raw_data, f)
-        with open("semantic/intent2id_multi_se.pkl", "wb") as f:
+        with open(self.intent2id_path, "wb") as f:
             pickle.dump(intent2id, f)
         
         print("Process time: ", time.time()-ptime)
@@ -195,9 +197,19 @@ class SemanticData(Data):
 
 
 if __name__ == "__main__":
-    #data = ATISData("../raw_datasets/ATIS/train.json", "Bert", done=False)
-    data = SemanticData("../raw_datasets/top-dataset-semantic-parsing/train.tsv", done=False)
-    print(data.raw_data)
+    # ATIS
+    # data_path = "../raw_datasets/ATIS/train.json"
+    # rawdata_path = "atis/raw_data.pkl"
+    # intent2id_path = "atis/intent2id.pkl"
+    # data = ATISData(data_path, rawdata_path, intent2id_path, "Bert", done=False)
+    
+    # semantic
+    data_path = "../raw_datasets/top-dataset-semantic-parsing/train.tsv"
+    rawdata_path = "semantic/raw_data_multi_se.pkl"
+    intent2id_path = "semantic/intent2id_multi_se.pkl"
+    data = SemanticData(data_path, rawdata_path, intent2id_path, done=False)
+    
+    #print(data.raw_data)
     print(data.intent2id)
 
 

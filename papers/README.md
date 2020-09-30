@@ -60,8 +60,8 @@ Dialogue State Tracking
 - [ ] [Bayesian update of dialogue state](http://mi.eng.cam.ac.uk/~sjy/papers/thyo10.pdf)
 - [x] [DNN](https://www.aclweb.org/anthology/W13-4073.pdf)
 - [x] [2 LSTM network: slot-value & sentence](https://assets.amazon.science/23/98/80671ef545e4927c1716279a9340/flexible-and-scalable-state-tracking-framework-for-goal-oriented-dialogue-systems.pdf)
-- [x] [BERT-training1: slot-value & sentence](https://arxiv.org/pdf/2006.01554.pdf): input: u_n+r_n-1, slot_n; output: value_n
-- [x] [BERT-training2: direct prediction](https://arxiv.org/pdf/1907.03040.pdf): input: u_n+r_n-1; output: slot_n;
+- [x] [BERT-training1: slot-value & sentence](https://arxiv.org/pdf/2006.01554.pdf): input: r_n-1+u_n, slot_n; output: value_n
+- [x] [BERT-training2: direct prediction](https://arxiv.org/pdf/1907.03040.pdf): input: r_n-1+u_n; output: slot_n;
 - [x] [BERT-training3: SLU task](https://arxiv.org/pdf/2005.11640v3.pdf): input: u_n, slot&value_n-1; output: slot&value_n (https://github.com/simplc/WCN-BERT)
 
 NLU+DST

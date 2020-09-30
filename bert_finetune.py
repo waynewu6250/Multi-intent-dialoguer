@@ -36,35 +36,39 @@ def train(**kwargs):
     torch.backends.cudnn.enabled = False
 
     # dataset
-    # ATIS Dataset
-    if opt.datatype == "atis":
-        with open(opt.atis_dic_path, 'rb') as f:
-            dic = pickle.load(f)
-        with open(opt.atis_train_path, 'rb') as f:
-            train_data = pickle.load(f)
-        with open(opt.atis_test_path, 'rb') as f:
+    with open(opt.dic_path, 'rb') as f:
+        dic = pickle.load(f)
+    with open(opt.train_path, 'rb') as f:
+        train_data = pickle.load(f)
+    if opt.test_path:
+        with open(opt.test_path, 'rb') as f:
             test_data = pickle.load(f)
 
+    if opt.datatype == "atis":
+        # ATIS Dataset
         X_train, y_train, _ = zip(*train_data)
         X_test, y_test, _ = zip(*test_data)
-        
-        X_train, mask_train = load_data(X_train)
-        X_test, mask_test = load_data(X_test)
-
-        model_path = opt.atis_model_path
-
-    # Semantic parsing Dataset
     elif opt.datatype == "semantic":
-        with open(opt.se_dic_path, 'rb') as f:
-            dic = pickle.load(f)
-        with open(opt.se_path, 'rb') as f:
-            data = pickle.load(f)
-        X, y = zip(*data)
+        # Semantic parsing Dataset
+        X, y = zip(*train_data)
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-        X_train, mask_train = load_data(X_train)
-        X_test, mask_test = load_data(X_test)
+    elif opt.datatype == "e2e":
+        # Microsoft Dialogue Dataset
+        all_data = []
+        dialogue_id = {}
+        dialogue_counter = 0
+        counter = 0
+        for data in train_data:
+            for instance in data:
+                all_data.append(instance)
+                dialogue_id[counter] = dialogue_counter
+                counter += 1
+            dialogue_counter += 1
+        X, y, _ = zip(*all_data)
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-        model_path = opt.se_model_path
+    X_train, mask_train = load_data(X_train)
+    X_test, mask_test = load_data(X_test)
     
     # length = int(len(X_train)*0.1)
     # X_train = X_train[:length]
@@ -79,8 +83,8 @@ def train(**kwargs):
         num_hidden_layers=12, num_attention_heads=12, intermediate_size=3072)
     
     model = BertEmbedding(config, len(dic))
-    if model_path:
-        model.load_state_dict(torch.load(model_path))
+    if opt.model_path:
+        model.load_state_dict(torch.load(opt.model_path))
         print("Pretrained model has been loaded.\n")
     model = model.to(device)
 

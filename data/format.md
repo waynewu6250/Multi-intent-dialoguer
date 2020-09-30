@@ -26,7 +26,28 @@
 
     intent2id:
     {intent: id}
+
+## MultiWOZ2.1 (turn-based Dialogue)
+
+>
+    train_data:
+    Every dialogue:
+    [(sent1+sent2, [domain1, domain2]), 
+     (sent2+sent3, [domain1]),...]
     
+    intent2id:
+    {domain: id}
+
+## Microsoft e2e-dialogue (utterance-based Dialogue)
+
+>
+    train_data:
+    Every dialogue:
+    [(sent1, [intent1, intent2], [slot1, slot2]), 
+     (sent2, [intent1], [slot1]),...]
+    
+    intent2id:
+    {intent: id}
 
 
 
