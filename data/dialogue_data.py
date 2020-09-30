@@ -14,9 +14,9 @@ import time
 
 class MULTIWOZData(Data):
 
-    def __init__(self, data_path, done=True):
+    def __init__(self, data_path, rawdata_path, intent2id_path, done=True):
 
-        super(MULTIWOZData, self).__init__(data_path)
+        super(MULTIWOZData, self).__init__(data_path, rawdata_path, intent2id_path)
         #self.df, self.data, self.labels = self.prepare_text(done)
         self.train_data, self.intent2id = self.prepare_dialogue(done)
         self.num_labels = len(self.intent2id)
@@ -61,9 +61,9 @@ class MULTIWOZData(Data):
         """
 
         if done:
-            with open("MULTIWOZ2.1/dialogue_data.pkl", "rb") as f:
+            with open(self.rawdata_path, "rb") as f:
                 train_data = pickle.load(f)
-            with open("MULTIWOZ2.1/intent2id.pkl", "rb") as f:
+            with open(self.intent2id_path, "rb") as f:
                 intent2id = pickle.load(f)
             return train_data, intent2id
         
@@ -119,9 +119,9 @@ class MULTIWOZData(Data):
             print(yes)
             yes += 1
         
-        with open("MULTIWOZ2.1/dialogue_data.pkl", "wb") as f:
+        with open(self.rawdata_path, "wb") as f:
             pickle.dump(train_data, f)
-        with open("MULTIWOZ2.1/intent2id.pkl", "wb") as f:
+        with open(self.intent2id_path, "wb") as f:
             pickle.dump(intent2id, f)
         
         print("Process time: ", time.time()-ptime)
@@ -194,5 +194,8 @@ class MULTIWOZData(Data):
     
     
 if __name__ == "__main__":
-    data = MULTIWOZData("../raw_datasets/MULTIWOZ2.1/data.json", done=False)
+    data_path = "../raw_datasets/MULTIWOZ2.1/data.json"
+    rawdata_path = "MULTIWOZ2.1/dialogue_data.pkl"
+    intent2id_path = "MULTIWOZ2.1/intent2id.pkl"
+    data = MULTIWOZData(data_path, rawdata_path, intent2id_path, done=True)
     print(data.train_data[0])

@@ -1,35 +1,49 @@
 class Config:
 
     #################### For BERT fine-tuning ####################
-    # atis dataset
-    atis_train_path = "data/atis/raw_data.pkl"
-    atis_test_path = "data/atis/raw_data_test.pkl"
-    atis_dic_path = "data/atis/intent2id.pkl"
-    atis_model_path = "checkpoints/best_atis.pth"
-    atis_embedding_path = "finetune_results/atis_embeddings_with_hidden.pth"
+    # control
+    datatype = "e2e"
+    mode = "embedding" #"user", "data"
 
-    # semantic parsing dataset
-    se_path = "data/semantic/raw_data_se.pkl"
-    se_dic_path = "data/semantic/intent2id_se.pkl"
-    se_model_path = None #"checkpoints/best_se.pth"
-    se_embedding_path = "finetune_results/se_embeddings_with_hidden.pth"
+    if datatype == "atis":
+        # atis dataset
+        train_path = "data/atis/raw_data.pkl"
+        test_path = "data/atis/raw_data_test.pkl"
+        dic_path = "data/atis/intent2id.pkl"
+        model_path = "checkpoints/best_atis.pth"
+        embedding_path = "finetune_results/atis_embeddings_with_hidden.pth"
+    
+    elif datatype == "semantic":
+        # semantic parsing dataset
+        train_path = "data/semantic/raw_data_se.pkl"
+        test_path = None
+        dic_path = "data/semantic/intent2id_se.pkl"
+        model_path = None #"checkpoints/best_semantic.pth"
+        embedding_path = "finetune_results/se_embeddings_with_hidden.pth"
+    
+    elif datatype == "e2e":
+        # Microsoft e2e dialogue dataset
+        train_path = "data/e2e_dialogue/dialogue_data.pkl"
+        test_path = None
+        dic_path = "data/e2e_dialogue/intent2id.pkl"
+        model_path = None #"checkpoints/best_e2e.pth"
+        embedding_path = "finetune_results/e2e_embeddings_with_hidden.pth"
+    
+    elif datatype == "woz":
+        # multiWOZ dataset
+        train_path = "data/MULTIWOZ2.1/dialogue_data.pkl"
+        test_path = None
+        dic_path = "data/MULTIWOZ2.1/intent2id.pkl"
+        dialogue_id_path = "data/MULTIWOZ2.1/dialogue_id.pkl"
+        model_path = "checkpoints/epoch-woz-17.pth" 
+        embedding_path ="finetune_results/woz_embeddings_sub.pth"
 
-    # multiWOZ dataset
-    woz_path = "data/MULTIWOZ2.1/dialogue_data.pkl"
-    woz_dic_path = "data/MULTIWOZ2.1/intent2id.pkl"
-    woz_dialogue_id_path = "data/MULTIWOZ2.1/dialogue_id.pkl"
-    woz_model_path = "checkpoints/epoch-woz-17.pth" 
-    woz_embedding_path ="finetune_results/woz_embeddings_sub.pth"
 
     maxlen = 50 #20
     batch_size = 128 #16
-    epochs = 10 #5
+    epochs = 20 #5
     learning_rate_bert = 2e-5
     learning_rate_classifier = 1e-3
-
-    # control
-    datatype = "semantic"
-    mode = "embedding" #"user", "data"
 
     #################### For Clustering & DCEC ####################
     
