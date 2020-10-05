@@ -53,6 +53,8 @@ class Data:
         return text
     
 
+############################################################################
+
 class ATISData(Data):
 
     def __init__(self, data_path, rawdata_path, intent2id_path, mode, input_path=None, embedding_path=None, done=True):
@@ -140,6 +142,10 @@ class ATISData(Data):
         for i, data in enumerate(self.raw_data):
             self.embedded_data[i,:] = np.mean([self.word_embeddings[txt] for txt in data[0].split()], axis=0)
     
+
+
+############################################################################
+
 
 class SemanticData(Data):
 

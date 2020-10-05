@@ -2,7 +2,7 @@ class Config:
 
     #################### For BERT fine-tuning ####################
     # control
-    datatype = "e2e"
+    datatype = "sgd"
     mode = "embedding" #"user", "data"
 
     if datatype == "atis":
@@ -10,7 +10,7 @@ class Config:
         train_path = "data/atis/raw_data.pkl"
         test_path = "data/atis/raw_data_test.pkl"
         dic_path = "data/atis/intent2id.pkl"
-        model_path = "checkpoints/best_atis.pth"
+        model_path = None #"checkpoints/best_atis.pth"
         embedding_path = "finetune_results/atis_embeddings_with_hidden.pth"
     
     elif datatype == "semantic":
@@ -29,6 +29,14 @@ class Config:
         model_path = None #"checkpoints/best_e2e.pth"
         embedding_path = "finetune_results/e2e_embeddings_with_hidden.pth"
     
+    elif datatype == "sgd":
+        # dstc8-sgd dialogue dataset
+        train_path = "data/sgd_dialogue/dialogue_data.pkl"
+        test_path = None
+        dic_path = "data/sgd_dialogue/intent2id.pkl"
+        model_path = None #"checkpoints/best_e2e.pth"
+        embedding_path = "finetune_results/sgd_embeddings_with_hidden.pth"
+
     elif datatype == "woz":
         # multiWOZ dataset
         train_path = "data/MULTIWOZ2.1/dialogue_data.pkl"
@@ -41,16 +49,16 @@ class Config:
 
     maxlen = 50 #20
     batch_size = 128 #16
-    epochs = 20 #5
+    epochs = 10 #5
     learning_rate_bert = 2e-5
     learning_rate_classifier = 1e-3
 
     #################### For Clustering & DCEC ####################
     
-    dic_path = "./data/semantic/intent2id_se.pkl"
-    embedding_path = "./finetune_results/se_embeddings_raw_with_hidden.pth"
-    woz_dic_path = "./data/MULTIWOZ2.1/intent2id.pkl"
-    woz_embedding_path = "./finetune_results/woz_embeddings_sub.pth"
+    dic_path_for_cluster = "./data/semantic/intent2id_se.pkl"
+    embedding_path_for_cluster = "./finetune_results/se_embeddings_raw_with_hidden.pth"
+    woz_dic_path_for_cluster = "./data/MULTIWOZ2.1/intent2id.pkl"
+    woz_embedding_path_for_cluster = "./finetune_results/woz_embeddings_sub.pth"
     
     # Model
     input_shape = (20, 768)
