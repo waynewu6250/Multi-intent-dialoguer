@@ -3,7 +3,8 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 from torch.optim import Adam, RMSprop
-from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM, BertConfig, BertAdam
+from transformers import BertTokenizer, BertModel, BertConfig, AdamW
+
 from keras.preprocessing.sequence import pad_sequences
 from sklearn.model_selection import train_test_split
 import pickle
@@ -52,7 +53,7 @@ def train(**kwargs):
         # Semantic parsing Dataset
         X, y = zip(*train_data)
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-    elif opt.datatype == "e2e":
+    elif opt.datatype == "e2e" or opt.datatype == "sgd":
         # Microsoft Dialogue Dataset
         all_data = []
         dialogue_id = {}
@@ -89,16 +90,17 @@ def train(**kwargs):
     model = model.to(device)
 
     # optimizer, criterion
-    param_optimizer = list(model.named_parameters())
-    no_decay = ['bias', 'gamma', 'beta']
-    optimizer_grouped_parameters = [
-        {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)],
-        'weight_decay_rate': 0.01},
-        {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)],
-        'weight_decay_rate': 0.0}
-    ]
-    
-    optimizer = BertAdam(optimizer_grouped_parameters,lr=opt.learning_rate_bert, warmup=.1)
+    # param_optimizer = list(model.named_parameters())
+    # no_decay = ['bias', 'gamma', 'beta']
+    # optimizer_grouped_parameters = [
+    #     {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)],
+    #     'weight_decay_rate': 0.01},
+    #     {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)],
+    #     'weight_decay_rate': 0.0}
+    # ]
+    # optimizer = BertAdam(optimizer_grouped_parameters,lr=opt.learning_rate_bert, warmup=.1)
+
+    optimizer = AdamW(model.parameters(), weight_decay=0.01, lr=opt.learning_rate_bert)
     criterion = nn.CrossEntropyLoss().to(device)
     best_loss = 100
     best_accuracy = 0
@@ -110,7 +112,7 @@ def train(**kwargs):
         # Training Phase
         total_train_loss = 0
         train_corrects = 0
-        
+        model.train()
         for (captions_t, labels, masks) in tqdm(train_loader):
 
             captions_t = captions_t.to(device)
@@ -130,12 +132,13 @@ def train(**kwargs):
             train_corrects += torch.sum(torch.max(outputs, 1)[1] == labels)
         
         train_acc = train_corrects.double() / train_loader.dataset.num_data
-        print('Total train loss: {:.4f} '.format(total_train_loss / train_loader.dataset.num_data))
+        print('Average train loss: {:.4f} '.format(total_train_loss / train_loader.dataset.num_data))
         print('Train accuracy: {:.4f}'.format(train_acc))
 
         # Validation Phase
         total_val_loss = 0
         val_corrects = 0
+        model.eval()
         for (captions_t, labels, masks) in val_loader:
 
             captions_t = captions_t.to(device)
@@ -150,9 +153,9 @@ def train(**kwargs):
             val_corrects += torch.sum(torch.max(outputs, 1)[1] == labels)
 
         val_acc = val_corrects.double() / val_loader.dataset.num_data
-        print('Total val loss: {:.4f} '.format(total_val_loss / val_loader.dataset.num_data))
+        print('Average val loss: {:.4f} '.format(total_val_loss / val_loader.dataset.num_data))
         print('Val accuracy: {:.4f}'.format(val_acc))
-        if total_val_loss < best_loss:
+        if val_acc > best_accuracy:
             print('saving with loss of {}'.format(total_val_loss),
                   'improved over previous {}'.format(best_loss))
             best_loss = total_val_loss
@@ -161,6 +164,7 @@ def train(**kwargs):
             torch.save(model.state_dict(), 'checkpoints/best_{}.pth'.format(opt.datatype))
         
         print()
+    print('Best total val loss: {:.4f}'.format(total_val_loss))
     print('Best Test Accuracy: {:.4f}'.format(best_accuracy))
 
 def test(**kwargs):

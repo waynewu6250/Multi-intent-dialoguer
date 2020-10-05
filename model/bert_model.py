@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
-from pytorch_pretrained_bert import BertTokenizer, BertModel, BertConfig
+from transformers import BertTokenizer, BertModel
 from pytorch_pretrained_bert import BertForNextSentencePrediction
 
 class BertLayerNorm(nn.Module):
@@ -26,13 +26,24 @@ class BertEmbedding(nn.Module):
         super(BertEmbedding, self).__init__()
         # self.bert = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels)
         self.num_labels = num_labels
-        self.bert = BertModel.from_pretrained('bert-base-uncased')
+        self.bert = BertModel.from_pretrained('bert-base-uncased', output_hidden_states=True, output_attentions=True)
         self.dropout = nn.Dropout(0.1)
         self.classifier = nn.Linear(config.hidden_size, num_labels)
         nn.init.xavier_normal_(self.classifier.weight)
 
     def forward(self, input_ids, mask, seg_tensors=None):
-        hidden_states, pooled_output = self.bert(input_ids, token_type_ids=seg_tensors, attention_mask=mask)
+        """
+        BERT outputs:
+        last_hidden_states: (b, t, h)
+        pooled_output: (b, h), from output of a linear classifier + tanh
+        hidden_states: 13 x (b, t, h), embed to last layer embedding
+        attentions: 12 x (b, num_heads, t, t)
+        """
+        last_hidden_states, pooled_output, hidden_states, attentions = self.bert(input_ids, token_type_ids=seg_tensors, attention_mask=mask)
+        
+        # Method 1: max pooling:
+        #pooled_output, indexes = torch.max(last_hidden_states * mask[:,:,None], dim=1)
+
         pooled_output_d = self.dropout(pooled_output)
         logits = self.classifier(pooled_output_d)
         
