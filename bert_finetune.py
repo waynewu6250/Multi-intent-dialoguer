@@ -36,6 +36,9 @@ def train(**kwargs):
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     torch.backends.cudnn.enabled = False
 
+    print('Dataset to use: ', opt.train_path)
+    print('Dictionary to use: ', opt.dic_path)
+
     # dataset
     with open(opt.dic_path, 'rb') as f:
         dic = pickle.load(f)

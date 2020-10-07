@@ -1,13 +1,14 @@
 # Papers & Ideas:
 
 ## Datasets
+[Single Sentence benchmark](https://github.com/sz128/slot_filling_and_intent_detection_of_SLU) <br>
 [Dialogue datasets1](https://github.com/AtmaHou/Task-Oriented-Dialogue-Dataset-Survey) <br>
 [Dialogue datasets2](https://breakend.github.io/DialogDatasets/)
 
 Single turn
 - [x] [ATIS](https://github.com/yvchen/JointSLU/tree/master/data) 
       : single intent + entity <br>
-- [x] [SNIPS](https://github.com/waynewu6250/Multi-intent-dialoguer/tree/master/raw_datasets/Benchmark)
+- [x] [SNIPS](https://github.com/waynewu6250/Multi-intent-dialoguer/tree/master/raw_datasets/SNIPS)
       : add 'and' to be multi intents + entity <br>
 - [x] [TOP semantic parsing](https://github.com/waynewu6250/Multi-intent-dialoguer/blob/master/raw_datasets/top-dataset-semantic-parsing/train.tsv)
       : multi intents + entity <br>
