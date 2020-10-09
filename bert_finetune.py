@@ -1,3 +1,6 @@
+"""For model training and inference
+Data input should be a single sentence.
+"""
 import random
 import torch
 import torch.nn as nn
@@ -26,6 +29,20 @@ def load_data(X):
         seq_mask = [float(i>0) for i in seq]
         attention_masks.append(seq_mask)
     return input_ids, attention_masks
+
+def calc_score(outputs, labels):
+    corrects = 0
+    totals = 0
+    if opt.data_mode == 'single':
+        corrects += torch.sum(torch.max(outputs, 1)[1] == labels)
+    else:
+        for i, logits in enumerate(outputs):
+            log = torch.sigmoid(logits)
+            correct = (labels[i][torch.where(log>0.5)[0]]).sum()
+            total = len(torch.where(labels[i]==1)[0])
+            corrects += correct
+            totals += total
+    return corrects, totals
 
 def train(**kwargs):
     
@@ -79,8 +96,8 @@ def train(**kwargs):
     # y_train = y_train[:length]
     # mask_train = mask_train[:length]
     
-    train_loader = get_dataloader(X_train, y_train, mask_train, opt)
-    val_loader = get_dataloader(X_test, y_test, mask_test, opt)
+    train_loader = get_dataloader(X_train, y_train, mask_train, len(dic), opt)
+    val_loader = get_dataloader(X_test, y_test, mask_test, len(dic), opt)
     
     # model
     config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
@@ -104,7 +121,10 @@ def train(**kwargs):
     # optimizer = BertAdam(optimizer_grouped_parameters,lr=opt.learning_rate_bert, warmup=.1)
 
     optimizer = AdamW(model.parameters(), weight_decay=0.01, lr=opt.learning_rate_bert)
-    criterion = nn.CrossEntropyLoss().to(device)
+    if opt.data_mode == 'single':
+        criterion = nn.CrossEntropyLoss().to(device)
+    else:
+        criterion = nn.BCEWithLogitsLoss(reduction='sum').to(device)
     best_loss = 100
     best_accuracy = 0
 
@@ -115,6 +135,7 @@ def train(**kwargs):
         # Training Phase
         total_train_loss = 0
         train_corrects = 0
+        totals = 0
         model.train()
         for (captions_t, labels, masks) in tqdm(train_loader):
 
@@ -132,15 +153,18 @@ def train(**kwargs):
             optimizer.step()
 
             total_train_loss += train_loss
-            train_corrects += torch.sum(torch.max(outputs, 1)[1] == labels)
+            co, to = calc_score(outputs, labels)
+            train_corrects += co
+            totals += to
         
-        train_acc = train_corrects.double() / train_loader.dataset.num_data
+        train_acc = train_corrects.double() / train_loader.dataset.num_data if opt.data_mode == 'single' else train_corrects.double() / totals
         print('Average train loss: {:.4f} '.format(total_train_loss / train_loader.dataset.num_data))
         print('Train accuracy: {:.4f}'.format(train_acc))
 
         # Validation Phase
         total_val_loss = 0
         val_corrects = 0
+        totals = 0
         model.eval()
         for (captions_t, labels, masks) in val_loader:
 
@@ -153,9 +177,11 @@ def train(**kwargs):
             val_loss = criterion(outputs, labels)
 
             total_val_loss += val_loss
-            val_corrects += torch.sum(torch.max(outputs, 1)[1] == labels)
+            co, to = calc_score(outputs, labels)
+            val_corrects += co
+            totals += to
 
-        val_acc = val_corrects.double() / val_loader.dataset.num_data
+        val_acc = val_corrects.double() / val_loader.dataset.num_data if opt.data_mode == 'single' else val_corrects.double() / totals
         print('Average val loss: {:.4f} '.format(total_val_loss / val_loader.dataset.num_data))
         print('Val accuracy: {:.4f}'.format(val_acc))
         if val_acc > best_accuracy:

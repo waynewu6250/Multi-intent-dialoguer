@@ -1,3 +1,6 @@
+"""For model pretraining
+Data input should be a adjacency pair in dialogue turn.
+"""
 import random
 import torch
 import torch.nn as nn
@@ -10,6 +13,7 @@ import pickle
 import copy
 import numpy as np
 import collections
+import tqdm
 
 from model import BertEmbedding
 from all_data import get_dataloader_dialogue
@@ -50,10 +54,13 @@ def train(**kwargs):
     torch.backends.cudnn.enabled = False
 
     # dataset
-    with open(opt.woz_path, 'rb') as f:
-        train_data = pickle.load(f)
-    with open(opt.woz_dic_path, 'rb') as f:
+    with open(opt.dic_path, 'rb') as f:
         dic = pickle.load(f)
+    with open(opt.train_path, 'rb') as f:
+        train_data = pickle.load(f)
+    if opt.test_path:
+        with open(opt.test_path, 'rb') as f:
+            test_data = pickle.load(f)
 
     all_data = []
     dialogue_id = {}
@@ -79,8 +86,8 @@ def train(**kwargs):
         num_hidden_layers=12, num_attention_heads=12, intermediate_size=3072)
     
     model = BertEmbedding(config, len(dic))
-    if opt.woz_model_path:
-        model.load_state_dict(torch.load(opt.woz_model_path))
+    if opt.model_path:
+        model.load_state_dict(torch.load(opt.model_path))
         print("Pretrained model has been loaded.\n")
     model = model.to(device)
 
@@ -97,6 +104,7 @@ def train(**kwargs):
     optimizer = BertAdam(optimizer_grouped_parameters,lr=opt.learning_rate_bert, warmup=.1)
     criterion = nn.BCEWithLogitsLoss(reduction='sum').to(device)
     best_loss = 10000
+    best_accuracy = 0
 
     # Start training
     for epoch in range(opt.epochs):
@@ -105,8 +113,8 @@ def train(**kwargs):
         # Training Phase
         total_train_loss = 0
         train_corrects = 0
-        
-        for (captions_t, labels, masks, segs) in train_loader:
+        model.train()
+        for (captions_t, labels, masks, segs) in tqdm.tqdm(train_loader):
 
             captions_t = captions_t.to(device)
             labels = labels.to(device)
@@ -118,7 +126,6 @@ def train(**kwargs):
 
             _, _, outputs = model(captions_t, masks, segs)
             train_loss = criterion(outputs, labels)
-            print('Current loss: ', train_loss.item())
 
             train_loss.backward()
             optimizer.step()
@@ -137,6 +144,7 @@ def train(**kwargs):
         # Validation Phase
         total_val_loss = 0
         val_corrects = 0
+        model.eval()
         for (captions_t, labels, masks, segs) in val_loader:
 
             captions_t = captions_t.to(device)
@@ -156,14 +164,16 @@ def train(**kwargs):
                 val_corrects += log
         
         num_batches = val_loader.dataset.num_data // opt.batch_size
+        val_acc = val_corrects.double() / val_loader.dataset.num_data
         print('Total val loss: {:.4f} '.format(total_val_loss / num_batches))
-        print('Val accuracy: {:.4f}'.format(val_corrects.double() / val_loader.dataset.num_data))
-
-        print('saving with loss of {}'.format(total_val_loss / num_batches))
-        best_loss = total_val_loss
-        best_model_wts = copy.deepcopy(model.state_dict())
-
-        torch.save(model.state_dict(), "checkpoints/epoch-woz-%s.pth"%epoch)
+        print('Val accuracy: {:.4f}'.format(val_acc))
+        
+        if val_acc > best_accuracy:
+            print('saving with loss of {}'.format(total_val_loss / num_batches),
+                  'improved over previous {}'.format(best_loss))
+            best_loss = total_val_loss
+            best_accuracy = val_acc
+            torch.save(model.state_dict(), 'checkpoints/best_{}.pth'.format(opt.datatype))
         
         print()
 

@@ -4,6 +4,7 @@ class Config:
     # control
     datatype = "sgd"
     mode = "embedding" #"user", "data"
+    data_mode = "multi" #"multi"
 
     if datatype == "atis":
         # atis dataset
@@ -15,25 +16,25 @@ class Config:
     
     elif datatype == "semantic":
         # semantic parsing dataset
-        train_path = "data/semantic/raw_data_se.pkl"
+        train_path = "data/semantic/raw_data_se.pkl" if data_mode == "single" else "data/semantic/raw_data_multi_se.pkl"
         test_path = None
-        dic_path = "data/semantic/intent2id_se.pkl"
+        dic_path = "data/semantic/intent2id_se.pkl" if data_mode == "single" else "data/semantic/intent2id_multi_se.pkl"
         model_path = None #"checkpoints/best_semantic.pth"
         embedding_path = "finetune_results/se_embeddings_with_hidden.pth"
     
     elif datatype == "e2e":
         # Microsoft e2e dialogue dataset
-        train_path = "data/e2e_dialogue/dialogue_data.pkl"
+        train_path = "data/e2e_dialogue/dialogue_data.pkl" if data_mode == "single" else "data/e2e_dialogue/dialogue_data_multi.pkl"
         test_path = None
-        dic_path = "data/e2e_dialogue/intent2id.pkl"
+        dic_path = "data/e2e_dialogue/intent2id.pkl" if data_mode == "single" else "data/e2e_dialogue/intent2id_multi.pkl"
         model_path = None #"checkpoints/best_e2e.pth"
         embedding_path = "finetune_results/e2e_embeddings_with_hidden.pth"
     
     elif datatype == "sgd":
         # dstc8-sgd dialogue dataset
-        train_path = "data/sgd_dialogue/dialogue_data.pkl"
+        train_path = "data/sgd_dialogue/dialogue_data.pkl" if data_mode == "single" else "data/sgd_dialogue/dialogue_data_multi.pkl"
         test_path = None
-        dic_path = "data/sgd_dialogue/intent2id.pkl"
+        dic_path = "data/sgd_dialogue/intent2id.pkl" if data_mode == "single" else "data/sgd_dialogue/intent2id_multi.pkl"
         model_path = None #"checkpoints/best_e2e.pth"
         embedding_path = "finetune_results/sgd_embeddings_with_hidden.pth"
 
@@ -43,7 +44,7 @@ class Config:
         test_path = None
         dic_path = "data/MULTIWOZ2.1/intent2id.pkl"
         dialogue_id_path = "data/MULTIWOZ2.1/dialogue_id.pkl"
-        model_path = "checkpoints/epoch-woz-17.pth" 
+        model_path = "checkpoints/best_woz.pth" 
         embedding_path ="finetune_results/woz_embeddings_sub.pth"
 
 

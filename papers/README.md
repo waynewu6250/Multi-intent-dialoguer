@@ -50,11 +50,14 @@ Overview
 - [ ] [Comparison for task-oriented dialogue system](https://github.com/AtmaHou/Task-Oriented-Dialogue-Research-Progress-Survey) <br>
 - [ ] [Spoken Language Understanding papers](https://paperswithcode.com/task/spoken-language-understanding)
 
-NLU
+NLU (Intent + Slot-filling)
 - [x] [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
 - [x] [Multi-intent benchmark1](https://arxiv.org/pdf/2004.10087.pdf)
+- [x] [Multi-intent detection (multilingual)](http://ajiips.com.au/papers/V17.1/v17n1_5-12.pdf)
 - [ ] [BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
-
+- [ ] [Joint task with LSTM](https://www.aclweb.org/anthology/N19-1055.pdf)
+- [ ] [New concept for semantic frames](https://www.aclweb.org/anthology/2020.acl-main.186.pdf)
+- [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
 
 Dialogue State Tracking
 - [ ] [Hidden Information State model](http://mi.eng.cam.ac.uk/~sjy/papers/ygkm10.pdf)
@@ -70,6 +73,8 @@ NLU+DST
 
 NLG
 - [x] [Natural Language Generation](https://pdfs.semanticscholar.org/728e/18fbf00f5a80e9a070db4f4416d66c7b28f4.pdf)
+
+
 
 ## 3. Attention Mechanism
 - [x] [Attention on BERT](https://drive.google.com/file/d/1e0WA8t0T0xvngTuMk01rbMeJySxynGE8/view) <br>
