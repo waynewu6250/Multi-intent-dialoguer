@@ -32,14 +32,33 @@ class BertEmbedding(nn.Module):
         self.classifier = nn.Linear(config.hidden_size, num_labels)
         nn.init.xavier_normal_(self.classifier.weight)
 
+        # self.mode = 'max-pooling'
+        # self.mode = 'self-attentive'
+        # self.mode = 'self-attentive-mean'
+        # self.mode = 'h-max-pooling'
+        # self.mode = 'bissect'
+        self.mode = 'normal'
+        self.pre = True
+
         # Self-attentive
-        self.linear1 = nn.Linear(config.hidden_size, 256)
-        self.linear2 = nn.Linear(4*256, config.hidden_size)
-        self.tanh = nn.Tanh()
-        self.context_vector = nn.Parameter(torch.randn(256, 4), requires_grad=True)
+        if self.mode == 'self-attentive':
+            self.linear1 = nn.Linear(config.hidden_size, 256)
+            self.linear2 = nn.Linear(4*256, config.hidden_size)
+            self.tanh = nn.Tanh()
+            self.context_vector = nn.Parameter(torch.randn(256, 4), requires_grad=True)
 
         # Hierarchical
-        self.linear = nn.Linear(13*config.hidden_size, config.hidden_size)
+        if self.mode == 'h-max-pooling':
+            self.linear = nn.Linear(13*config.hidden_size, config.hidden_size)
+        
+        # Load pretrained weights
+        if self.pre:
+            print('Loading pretrained weights...')
+            pre_model_dict = torch.load('checkpoints/best_woz.pth')
+            model_dict = self.bert.state_dict()
+            pre_model_dict = {k:v for k, v in pre_model_dict.items() if k in model_dict and v.size() == model_dict[k].size}
+            model_dict.update(pre_model_dict)
+            self.bert.load_state_dict(model_dict)
 
     def forward(self, input_ids, mask, seg_tensors=None):
         """
@@ -51,12 +70,7 @@ class BertEmbedding(nn.Module):
         """
         last_hidden_states, pooled_output, hidden_states, attentions = self.bert(input_ids, token_type_ids=seg_tensors, attention_mask=mask)
 
-        # mode = 'max-pooling'
-        # mode = 'self-attentive'
-        # mode = 'self-attentive-mean'
-        # mode = 'h-max-pooling'
-        mode = 'bissect'
-        pooled_output = self.transform(last_hidden_states, pooled_output, hidden_states, attentions, mask, mode)
+        pooled_output = self.transform(last_hidden_states, pooled_output, hidden_states, attentions, mask) # (b, h)
         pooled_output_d = self.dropout(pooled_output)
         logits = self.classifier(pooled_output_d)
 
@@ -64,13 +78,13 @@ class BertEmbedding(nn.Module):
         # loss = self.bert(input_ids, attention_mask=mask, labels=labels)
         # return loss
     
-    def transform(self, last_hidden_states, pooled_output, hidden_states, attentions, mask, mode):
+    def transform(self, last_hidden_states, pooled_output, hidden_states, attentions, mask):
         
-        if mode == 'max-pooling':
+        if self.mode == 'max-pooling':
             # Method 1: max pooling
             pooled_output, indexes = torch.max(last_hidden_states * mask[:,:,None], dim=1)
         
-        elif mode == 'self-attentive':
+        elif self.mode == 'self-attentive':
             # Method 2: self-attentive network
             b, _, _ = last_hidden_states.shape
             vectors = self.context_vector.unsqueeze(0).repeat(b, 1, 1)
@@ -81,7 +95,7 @@ class BertEmbedding(nn.Module):
             outputs = torch.bmm(scores.permute(0, 2, 1), h).view(b, -1) # (b, 4h)
             pooled_output = self.linear2(outputs)
         
-        elif mode == 'self-attentive-mean':
+        elif self.mode == 'self-attentive-mean':
             # Method 2: self-attentive network
             b, _, _ = last_hidden_states.shape
             vector = torch.mean(last_hidden_states, dim=1).unsqueeze(2)
@@ -91,7 +105,7 @@ class BertEmbedding(nn.Module):
             scores = nn.Softmax(dim=1)(scores) # (b, t, 1)
             pooled_output = torch.bmm(scores.permute(0, 2, 1), last_hidden_states).squeeze(1) # (b, h)
 
-        elif mode == 'h-max-pooling':
+        elif self.mode == 'h-max-pooling':
             # Method 3: hierarchical max pooling
             b, t, h = last_hidden_states.shape
             N = len(hidden_states)
@@ -102,7 +116,7 @@ class BertEmbedding(nn.Module):
             final_vectors = final_vectors.view(b, -1)
             pooled_output = self.linear(final_vectors)
         
-        elif mode == 'bissect':
+        elif self.mode == 'bissect':
             # Method 4: bissecting bert
             hidden_states = hidden_states[1:]
             b, t, h = hidden_states[0].shape
@@ -133,6 +147,9 @@ class BertEmbedding(nn.Module):
                 # final_vectors[:, i, :] = hidden_states[-1][:, i, :]
             
             pooled_output, indexes = torch.max(final_vectors * mask[:,:,None], dim=1)
+        
+        else:
+            pooled_output = pooled_output
             
         return pooled_output
             
