@@ -49,18 +49,18 @@ class E2EData(Data):
                         slots.append(s[0].split(';'))
                 
                 # single intent
-                intents = "@".join(sorted(intents))
-                if intents not in intent2id:
-                    intent2id[intents] = counter
-                    counter += 1
-                intents = intent2id[intents]
+                # intents = "@".join(sorted(intents))
+                # if intents not in intent2id:
+                #     intent2id[intents] = counter
+                #     counter += 1
+                # intents = intent2id[intents]
                 
                 # multi intents
-                # for intent in intents:
-                #     if intent not in intent2id:
-                #         intent2id[intent] = counter
-                #         counter += 1
-                # intents = [intent2id[intent] for intent in intents]
+                for intent in intents:
+                    if intent not in intent2id:
+                        intent2id[intent] = (counter, self.text_prepare(intent, 'Bert')) # counter
+                        counter += 1
+                intents = [intent2id[intent][0] for intent in intents]
                 
                 if data and prev_id != dialogue_id:
                     all_data.append(data)
@@ -68,6 +68,7 @@ class E2EData(Data):
                     prev_id = dialogue_id
                 
                 data.append((self.text_prepare(text, 'Bert'), intents, slots))
+                # data.append((text, intents, slots))
         
         return all_data, counter
     
@@ -118,21 +119,34 @@ class E2EData(Data):
 
 class SGDData(Data):
 
-    def __init__(self, data_path, rawdata_path, intent2id_path, done=True):
+    def __init__(self, data_path, rawdata_path, intent2id_path, turn_path, done=True):
 
         super(SGDData, self).__init__(data_path, rawdata_path, intent2id_path)
-        self.train_data, self.intent2id = self.prepare_dialogue(done)
+        self.turn_path = turn_path
+        self.train_data, self.intent2id, self.turn_data_all = self.prepare_dialogue(done)
         self.num_labels = len(self.intent2id)
+    
+    def build_ids(self, items, item2id, counter):
+        for item in items:
+            if item not in item2id:
+                item2id[item] = (counter, self.text_prepare(item, 'Bert')) # counter
+                counter += 1
+        items = [item2id[item][0] for item in items]
+        return items, item2id, counter
     
     def prepare_dialogue(self, done):
         """
         train_data:
         
-        a list of dialogues
+        a list of dialogues (utterance-level)
         for each dialogue:
             [(sent1, [label1, label2], [slot1, slot2]), 
              (sent2, [label2], [slot2]),...]
-        (Not including slots right now!!)
+        
+        a list of dialogues (turn-level)
+        for each dialogue:
+            [(turn1, intents1, requested_slots1, slots1, values1),...
+             (turn2, intents2, requested_slots2, slots2, values2),...]
         """
 
         if done:
@@ -140,7 +154,9 @@ class SGDData(Data):
                 train_data = pickle.load(f)
             with open(self.intent2id_path, "rb") as f:
                 intent2id = pickle.load(f)
-            return train_data, intent2id
+            with open(self.turn_path, "rb") as f:
+                turn_data_all = pickle.load(f)
+            return train_data, intent2id, turn_data_all
         
         ptime = time.time()
 
@@ -151,8 +167,18 @@ class SGDData(Data):
         # else:
         intent2id = {}
         counter = 0
+        
+        aintent2id = {}
+        acounter = 0
+        request2id = {}
+        rcounter = 0
+        slot2id = {}
+        scounter = 0
+        value2id = {}
+        vcounter = 0
 
         all_data = []
+        all_data_turn = []
         services = []
 
         for file in sorted(os.listdir(self.data_path))[:-1]:
@@ -161,8 +187,17 @@ class SGDData(Data):
                 print('Parsing file: ', file)
                 raw_data = json.load(f)
                 for dialogue in raw_data:
+
+                    # utterance data
                     data = []
+
+                    # turn data
+                    prev_text = 'this is a dummy sentence'
+                    data_turn = []
+
                     for turns in dialogue['turns']:
+
+                        ###################### utterance ##########################
                         intents = []
                         slots = []
                         for action in turns['frames'][0]['actions']:
@@ -172,22 +207,45 @@ class SGDData(Data):
                         intents = list(set(intents))
 
                         # single intent
-                        intents = "@".join(intents)
-                        if intents not in intent2id:
-                            intent2id[intents] = counter
-                            counter += 1
-                        intents = intent2id[intents]
+                        # intents = "@".join(intents)
+                        # if intents not in intent2id:
+                        #     intent2id[intents] = counter
+                        #     counter += 1
+                        # intents = intent2id[intents]
                         
                         # multi intents
-                        # for intent in intents:
-                        #     if intent not in intent2id:
-                        #         intent2id[intent] = counter
-                        #         counter += 1
-                        # intents = [intent2id[intent] for intent in intents]
+                        for intent in intents:
+                            if intent not in intent2id:
+                                intent2id[intent] = (counter, self.text_prepare(intent, 'Bert')) # counter
+                                counter += 1
+                        intents = [intent2id[intent][0] for intent in intents]
 
                         data.append((self.text_prepare(turns['utterance'], 'Bert'), intents, slots))
+                        # data.append((turns['utterance'], intents, slots))
+
+                        ###################### turn ##########################
+                        if 'state' in turns['frames'][0]:
+                            slot_values = turns['frames'][0]['state']['slot_values']
+                            if not slot_values:
+                                s_turn = []
+                                v_turn = []
+                            else:
+                                s_turn, v_turn = zip(*[(k,v[0]) for k, v in slot_values.items()])
+                            
+                            encoded = self.tokenizer.encode_plus(prev_text, text_pair=turns['utterance'], return_tensors='pt')
+                            aintents, aintent2id, acounter = self.build_ids([turns['frames'][0]['state']['active_intent']], aintent2id, acounter)
+                            requests, request2id, rcounter = self.build_ids(turns['frames'][0]['state']['requested_slots'], request2id, rcounter)
+                            slots, slot2id, scounter = self.build_ids(s_turn, slot2id, scounter)
+                            values, value2id, vcounter = self.build_ids(v_turn, value2id, vcounter)
+
+                            data_turn.append((encoded['input_ids'], aintents, requests, slots, values))
+                            prev_text = turns['utterance']
+                        else:
+                            prev_text = turns['utterance']
+
                     
                     all_data.append(data)
+                    all_data_turn.append(data_turn)
                     services.append(dialogue['services'])
         
         with open(self.rawdata_path, "wb") as f:
@@ -196,24 +254,32 @@ class SGDData(Data):
             pickle.dump(intent2id, f)
         with open("sgd_dialogue/services.pkl", "wb") as f:
             pickle.dump(services, f)
+        turn_data_all = {'turns': all_data_turn,
+                         'aintent2id': aintent2id,
+                         'request2id': request2id,
+                         'slot2id': slot2id,
+                         'value2id': value2id}
+        with open(self.turn_path, "wb") as f:
+            pickle.dump(turn_data_all, f)
         
         print("Process time: ", time.time()-ptime)
         
-        return all_data, intent2id
+        return all_data, intent2id, turn_data_all
     
     
 if __name__ == "__main__":
     # e2e dataset
     # data_path = "../raw_datasets/e2e_dialogue/"
-    # rawdata_path = "e2e_dialogue/dialogue_data.pkl"
-    # intent2id_path = "e2e_dialogue/intent2id.pkl"
+    # rawdata_path = "e2e_dialogue/dialogue_data_multi.pkl"
+    # intent2id_path = "e2e_dialogue/intent2id_multi_with_tokens.pkl"
     # data = E2EData(data_path, rawdata_path, intent2id_path, done=False)
 
     # sgd dataset
     data_path = "../raw_datasets/dstc8-schema-guided-dialogue/train"
-    rawdata_path = "sgd_dialogue/dialogue_data.pkl"
-    intent2id_path = "sgd_dialogue/intent2id.pkl"
-    data = SGDData(data_path, rawdata_path, intent2id_path, done=False)
-
-    print(data.train_data[100])
-    print(data.intent2id)
+    rawdata_path = "sgd_dialogue/dialogue_data_multi.pkl"
+    intent2id_path = "sgd_dialogue/intent2id_multi_with_tokens.pkl"
+    turn_path = "sgd_dialogue/turns.pkl"
+    data = SGDData(data_path, rawdata_path, intent2id_path, turn_path, done=False)
+    print(data.turn_data_all['turns'][0])
+    # print(data.train_data[100])
+    # print(data.intent2id)

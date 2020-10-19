@@ -112,5 +112,9 @@ raw_datasets/MULTIWOZ2.1/
 finetune_results/
 clustering_results/*.pkl
 
+# Data
+raw_datasets/kvret_dataset_public/
+*.pkl
+
 
 
