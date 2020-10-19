@@ -2,16 +2,17 @@ class Config:
 
     #################### For BERT fine-tuning ####################
     # control
-    datatype = "sgd"
-    mode = "embedding" #"user", "data"
-    data_mode = "multi" #"multi"
+    datatype = "e2e"
+    data_mode = "multi" #"multi"      # single or multi intent in data
+    sentence_mode = "one" #"two"       # one or two sentence in data
+    retrain = False                    # Reuse trained model weights
+    test_mode = "data" #"user", "data"
 
     if datatype == "atis":
         # atis dataset
         train_path = "data/atis/raw_data.pkl"
         test_path = "data/atis/raw_data_test.pkl"
         dic_path = "data/atis/intent2id.pkl"
-        model_path = None #"checkpoints/best_atis.pth"
         embedding_path = "finetune_results/atis_embeddings_with_hidden.pth"
     
     elif datatype == "semantic":
@@ -19,7 +20,7 @@ class Config:
         train_path = "data/semantic/raw_data_se.pkl" if data_mode == "single" else "data/semantic/raw_data_multi_se.pkl"
         test_path = None
         dic_path = "data/semantic/intent2id_se.pkl" if data_mode == "single" else "data/semantic/intent2id_multi_se.pkl"
-        model_path = None #"checkpoints/best_semantic.pth"
+        dic_path_with_tokens = "data/semantic/intent2id_multi_se_with_tokens.pkl"
         embedding_path = "finetune_results/se_embeddings_with_hidden.pth"
     
     elif datatype == "e2e":
@@ -27,16 +28,18 @@ class Config:
         train_path = "data/e2e_dialogue/dialogue_data.pkl" if data_mode == "single" else "data/e2e_dialogue/dialogue_data_multi.pkl"
         test_path = None
         dic_path = "data/e2e_dialogue/intent2id.pkl" if data_mode == "single" else "data/e2e_dialogue/intent2id_multi.pkl"
-        model_path = None #"checkpoints/best_e2e.pth"
+        dic_path_with_tokens = "data/e2e_dialogue/intent2id_multi_with_tokens.pkl"
         embedding_path = "finetune_results/e2e_embeddings_with_hidden.pth"
+        pretrain_path = "data/e2e_dialogue/dialogue_data_pretrain.pkl"
     
     elif datatype == "sgd":
         # dstc8-sgd dialogue dataset
         train_path = "data/sgd_dialogue/dialogue_data.pkl" if data_mode == "single" else "data/sgd_dialogue/dialogue_data_multi.pkl"
         test_path = None
         dic_path = "data/sgd_dialogue/intent2id.pkl" if data_mode == "single" else "data/sgd_dialogue/intent2id_multi.pkl"
-        model_path = None #"checkpoints/best_e2e.pth"
+        dic_path_with_tokens = "data/sgd_dialogue/intent2id_multi_with_tokens.pkl"
         embedding_path = "finetune_results/sgd_embeddings_with_hidden.pth"
+        pretrain_path = "data/sgd_dialogue/dialogue_data_pretrain.pkl"
 
     elif datatype == "woz":
         # multiWOZ dataset
@@ -44,13 +47,14 @@ class Config:
         test_path = None
         dic_path = "data/MULTIWOZ2.1/intent2id.pkl"
         dialogue_id_path = "data/MULTIWOZ2.1/dialogue_id.pkl"
-        model_path = "checkpoints/best_woz.pth" 
         embedding_path ="finetune_results/woz_embeddings_sub.pth"
+    
+    model_path = None if not retrain else "checkpoints/best_{}_{}.pth".format(datatype, data_mode)
 
 
     maxlen = 50 #20
     batch_size = 128 #16
-    epochs = 15 #10, 5
+    epochs = 50 #30, 5
     learning_rate_bert = 2e-5
     learning_rate_classifier = 1e-3
 

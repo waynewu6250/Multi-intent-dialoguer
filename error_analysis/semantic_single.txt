@@ -1,0 +1,4676 @@
+----------- Wrong Examples ------------
+0
+is the winter wonderland in miami already open
+Predicted label: UNSUPPORTED_EVENT
+Real label: GET_EVENT
+------
+1
+when should i leave to avoid traffic in the morning
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+2
+does this route include toll roads
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_ROUTE
+------
+3
+get me driving directions to the festival but avoid the highway
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_EVENT
+------
+4
+did hill drive re ##open
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+5
+what is the distance in a country mile
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_NAVIGATION
+------
+6
+wine ##tas ##ting this weekend in the pass area
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+7
+road conditions for tonight
+Predicted label: GET_INFO_ROAD_CONDITION
+Real label: GET_INFO_TRAFFIC
+------
+8
+what about a nice boat ride in dana point
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+9
+great places to have a crazy night in hollywood
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+10
+how do i avoid traffic in honolulu
+Predicted label: GET_DIRECTIONS
+Real label: GET_INFO_TRAFFIC
+------
+11
+what is the 48 ##5 loop like today
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+12
+what route home has the least amount of traffic
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: UNSUPPORTED_NAVIGATION
+------
+13
+id like to know if the roads are clear on my way home tonight
+Predicted label: GET_LOCATION_HOME@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_INFO_ROAD_CONDITION
+------
+14
+what events are happening near work today
+Predicted label: GET_LOCATION@GET_LOCATION_WORK@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_LOCATION_WORK@GET_EVENT
+------
+15
+what kind of food is the festival serving
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+16
+how long will it take me to get to syracuse university if i leave at 10 ##pm
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+17
+its raining where can i go and still have fun
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+18
+where is the heaviest traffic in los angeles
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+19
+how much are tickets to pit ##bu ##ll
+Predicted label: UNSUPPORTED_EVENT
+Real label: UNSUPPORTED
+------
+20
+disney holiday events
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+21
+find me a place to listen to a live band and eat dinner within 20 minutes of home
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_EVENT
+------
+22
+can i get to miami from home in under 3 hours and what ##s the fastest route
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL@COMBINE
+------
+23
+including a 15 minute stop at each way ##point what is the drive time from here to downtown os ##we ##go
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: UNSUPPORTED_NAVIGATION
+------
+24
+when is suzanne ##s next weave ##life weaving show at liberty station
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED
+------
+25
+friends birthday parties next month
+Predicted label: GET_EVENT
+Real label: GET_CONTACT@GET_EVENT
+------
+26
+does school starts 8 ##am
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+27
+give me the round trip time to the grocery
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: UNSUPPORTED_NAVIGATION
+------
+28
+if i want to get outside and move how could i do that
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED_EVENT
+------
+29
+how many miles long is the delaware river
+Predicted label: GET_DISTANCE
+Real label: UNSUPPORTED_NAVIGATION
+------
+30
+nearest mechanical workshop
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+31
+what time does the su game start on sunday
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_EVENT
+------
+32
+will it take longer to take the bus or bicycle to work this morning
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+33
+road blocks on the interstate
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+34
+what time should i leave work if i want to make it to the show near times square by 730
+Predicted label: GET_LOCATION@GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION@GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+35
+traffic on highway 24 g ##los ##ter ms
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+36
+will i hit any road construction on the way to the baseball game at wr ##ig ##ly field if i leave in ten minutes
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_EVENT@GET_INFO_TRAFFIC
+------
+37
+can you help me figure out how to get to sarah ##s in atlantic city by dinner time
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME
+------
+38
+what time will i get to kenny ##wood if i leave at 10 ##am
+Predicted label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_ARRIVAL
+------
+39
+how many miles is it coast to coast in the us
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_DISTANCE
+------
+40
+is the traffic heavy on i ##10 downtown san antonio now
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+41
+how many is it to travel from atlanta to los angeles
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_DISTANCE
+------
+42
+are there any short ##cut ##s i can take to get from my job to allison ##s house by 4 pm
+Predicted label: GET_DIRECTIONS@GET_LOCATION_WORK
+Real label: GET_DIRECTIONS@GET_LOCATION_WORK@GET_LOCATION_HOME
+------
+43
+are there any down power line on the freeway to the cartoon expo
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_EVENT@GET_INFO_TRAFFIC
+------
+44
+is the quick ##est route to jefferson county down the 10
+Predicted label: GET_DIRECTIONS
+Real label: UNSUPPORTED_NAVIGATION
+------
+45
+where is the next movie staring lucy liu playing
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+46
+family friendly concerts coming to my area
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION_HOME@GET_EVENT
+------
+47
+any free concerts in our area
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION_HOME@GET_EVENT
+------
+48
+is there storm debris blocking any roads between here and dad ##s house
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_INFO_ROAD_CONDITION
+------
+49
+i need driving directions from my home to downtown city place
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+------
+50
+looking for ferry rides
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+51
+i need to get to dinner at hotel za ##za by 6 should i leave now
+Predicted label: GET_LOCATION@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+52
+how long is the delay ahead
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+53
+what is the best route
+Predicted label: GET_DIRECTIONS
+Real label: UNSUPPORTED_NAVIGATION
+------
+54
+find det ##ours on my current route
+Predicted label: UPDATE_DIRECTIONS
+Real label: GET_INFO_TRAFFIC
+------
+55
+leaving in 5 min will i make it to the concert on ##time if i stop to pick up monica
+Predicted label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+56
+which exit do i take to get to the al ##oh ##a stadium main gate for the flea market
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_NAVIGATION
+------
+57
+how many hours drive is it to san fran ##c is ##co
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+58
+when is tis ##hs wedding
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+59
+is there a traffic delay going from downtown to gulf breeze on the bridge right now
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+60
+is the road still barr ##ica ##ded for the james ##ville easter parade
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+61
+im in the mood for live music
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+62
+how long is my drive from home to hollywood beach
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+------
+63
+is the tr ##ou ##p county chamber of commerce having any events this week
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+64
+can i get to downtown honolulu at 230 ##pm via h ##1
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_DIRECTIONS
+------
+65
+best light display in my area
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION_HOME@GET_EVENT
+------
+66
+what time does traffic get heavy
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+67
+when should i move if i wanted to catch my fathers birthday today at 9 ##pm
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE@GET_EVENT
+Real label: GET_CONTACT@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+68
+places to go in rainy weather
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+69
+is that an accident ahead
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+70
+will i make it to providence university by 3 ##pm if i leave at 1 ##pm from my company
+Predicted label: GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+------
+71
+are there any public transportation options to get to the stanford mall for the un ##ve ##iling of the new samsung phone event
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_DIRECTIONS@GET_EVENT
+------
+72
+when is rush hour over
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+73
+where can i find the nearest metro bus stop
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+74
+where is the worst traffic in the city right now
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+75
+if i leave sea ##bre ##ez ##e at 730 ##pm when will i get to mt hope ave
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+------
+76
+where is the traffic worst this evening
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+77
+best way to avoid traffic in maitland
+Predicted label: GET_DIRECTIONS
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+78
+show me the shortest route to johns house from here
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME
+------
+79
+do any of the toby ##mac dates land him in ok ##c in april or may
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+80
+will it faster to get to the museum by bus
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+81
+where can i find the best food trucks by me
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+82
+can i avoid snowy roads around the spring ##time cherry blossoms around 7 ##pm in the evening
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+83
+what det ##our could i take to avoid the construction on the way to dad ##s house
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+------
+84
+ho ##bo ##ken steak houses open late week ##night ##s
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+85
+is traffic heavier right now than it was yesterday
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+86
+how many minutes will it take for me to drive from my location to my thursday appointment
+Predicted label: GET_ESTIMATED_DURATION@GET_EVENT
+Real label: GET_ESTIMATED_DURATION@GET_EVENT@GET_LOCATION
+------
+87
+any accidents on closet highway
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+88
+what time do i need to pickup emmy from school to make it to her dentist app ##t by 430
+Predicted label: GET_DIRECTIONS@GET_LOCATION_SCHOOL
+Real label: GET_ESTIMATED_DEPARTURE@GET_EVENT@GET_LOCATION_SCHOOL
+------
+89
+get the time to get the cape at 9 ##am this morning
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+90
+things to do when stuck in a traffic jam
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_NAVIGATION
+------
+91
+any traffic to my route to j ##fk from work today
+Predicted label: GET_LOCATION_WORK@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_LOCATION_WORK@GET_INFO_TRAFFIC
+------
+92
+how far is work from my current location
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_WORK
+Real label: GET_LOCATION@GET_LOCATION_WORK@GET_DISTANCE
+------
+93
+are any of my friends going to the concert
+Predicted label: UNSUPPORTED
+Real label: GET_CONTACT@GET_EVENT_ATTENDEE
+------
+94
+if i left now will i get to my sons school by 5 ##pm
+Predicted label: GET_LOCATION@GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_SCHOOL@GET_ESTIMATED_ARRIVAL
+------
+95
+will traffic be better or worse if i wait to leave
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+96
+how long does it take to drive across the country on i ##70
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+97
+fun places to go
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+98
+closest glow bowling place
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED
+------
+99
+is there any way i can make it to the local wal ##mart by 83 ##0 tonight if i avoid the road closure on 6 south
+Predicted label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+100
+what is traffic like from lax to van nu ##ys at 3 ##pm on tuesday ##s
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+101
+how many miles til ucla
+Predicted label: GET_DISTANCE
+Real label: GET_LOCATION@GET_DISTANCE
+------
+102
+what is the name of the street that i turn on to get to bentley ##s
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_NAVIGATION
+------
+103
+disney christmas
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED
+------
+104
+if i leave my office at 315 and take the freeway home how long would it take me
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION_WORK
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION_WORK@GET_LOCATION
+------
+105
+is there a faster route to get to my doctors appointment so i can be there by 3
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_EVENT@UPDATE_DIRECTIONS
+------
+106
+when does the traffic appear to be clear by for my route into philadelphia
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+107
+when was the last family reunion and where was it
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+108
+the best way to avoid traffic is the highway
+Predicted label: GET_LOCATION@GET_DIRECTIONS
+Real label: UNSUPPORTED_NAVIGATION
+------
+109
+is there any traffic on the way to niagara falls
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+110
+can i make it from home to astoria in 30 minutes
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+------
+111
+new years fireworks displays in south texas
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+112
+what will my travel time be to get from my house to patriot place tonight
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+------
+113
+please provide a live traffic update read me notification ##s
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC@UNSUPPORTED@COMBINE
+------
+114
+how long is the drive to san juan islands from federal way
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+115
+is the interstate the fastest way to the omaha arena for the madonna concert
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_EVENT
+------
+116
+time with the lest cong ##ested traffic in atlanta
+Predicted label: GET_ESTIMATED_DURATION
+Real label: UNSUPPORTED_NAVIGATION
+------
+117
+how much traffic does a highway usually have over a year
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+118
+need to find a place to throw a todd ##ler birthday party in march 2018
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+119
+i need a good event to take my kids to this weekend in beaver ##ton
+Predicted label: GET_EVENT
+Real label: GET_CONTACT@GET_EVENT
+------
+120
+where is the closest bowling alley
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+121
+schedules and delays for tr ##ax
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+122
+can i get to the canadian border by 7 ##pm if i leave now
+Predicted label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_ARRIVAL
+------
+123
+where there is a gas station on the road
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION
+------
+124
+holiday shows in channel 62 today
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+125
+are there any attractions on my route
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_ROUTE
+------
+126
+calculate the time to drive from my home to bingham ##ton ny round ##trip
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+------
+127
+is construction work hind ##ering the traffic southbound on interstate 85
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+128
+which streets have the least traffic in my area
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+129
+how do i book tickets for dan fog ##el ##berg
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+130
+what are the hours for the busiest traffic in detroit
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+131
+if i leave the elton john concert at 10 ##pm from the wells fargo center how long will it take me to get home to egg harbor township
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_EVENT
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_EVENT@GET_LOCATION
+------
+132
+which way is the quick ##est way
+Predicted label: GET_DIRECTIONS
+Real label: UNSUPPORTED_NAVIGATION
+------
+133
+show me det ##ours to the bruins game
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_EVENT@GET_INFO_TRAFFIC
+------
+134
+is there a faster route than the one im on
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UPDATE_DIRECTIONS
+------
+135
+has the 500 train to brooklyn been delayed
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+136
+event coordinator that is available today
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+137
+what is the shortest route in miles from red ##lands to moreno valley
+Predicted label: GET_DIRECTIONS
+Real label: GET_DISTANCE
+------
+138
+how much time will it take to from south phil ##ly to the show at the electric factory
+Predicted label: GET_ESTIMATED_DURATION@GET_EVENT
+Real label: GET_ESTIMATED_DURATION@GET_EVENT@GET_LOCATION
+------
+139
+popular spots in the city
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+140
+coffee houses in minneapolis
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+141
+what is the approximate time to arrive home
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+------
+142
+what time should i leave to arrive to my sisters wedding at 3 pm
+Predicted label: GET_ESTIMATED_DEPARTURE@GET_EVENT
+Real label: GET_CONTACT@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+143
+will the roads be cleared if i leave now to get to 5th ave
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_INFO_ROAD_CONDITION
+------
+144
+where is there less traffic
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+145
+what ##s scheduled in trophy club tonight
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+146
+i want to go to a christmas concert where can i find one locally
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+147
+how long will it take to drive from maine to washington with no toll ##s
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+148
+advise new routes to work
+Predicted label: GET_DIRECTIONS@GET_LOCATION_WORK
+Real label: GET_LOCATION_WORK@UPDATE_DIRECTIONS
+------
+149
+are there any road back ups around the royals baseball game
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_EVENT@GET_INFO_TRAFFIC
+------
+150
+what city has the most traffic in the us
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+151
+if i take the scenic route to port your on using m 29 how long will it take me to get there if i leave at 10 am
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+152
+my flight leave o ##ia at 2 pm what time should i leave to get there 2 hours early
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+153
+are there any bus stations near by that can get me to the city
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION
+------
+154
+give me the shortest distance route from my house to ken ##s job
+Predicted label: GET_LOCATION_HOME@GET_LOCATION_WORK@GET_DISTANCE
+Real label: GET_DIRECTIONS@GET_LOCATION_WORK@GET_LOCATION_HOME
+------
+155
+when is the ice rink open for public skating in truck ##ee
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_EVENT
+------
+156
+is my road closed
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_INFO_TRAFFIC
+------
+157
+how long will i be in traffic for
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_ESTIMATED_DURATION
+------
+158
+take me the fastest way to my aunt ##s house with a grocery store on the way
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+------
+159
+can i drive to downtown in 15 minutes right now
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_ARRIVAL
+------
+160
+how to sleep better
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+161
+is rush hour over yet
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+162
+how far am i from work
+Predicted label: GET_LOCATION_HOME@GET_LOCATION_WORK@GET_DISTANCE
+Real label: GET_LOCATION@GET_LOCATION_WORK@GET_DISTANCE
+------
+163
+do you have a list of events happening near me with spots still available
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED
+------
+164
+where is the traffic building in the city
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+165
+call me an uber at nine pm
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+166
+what time will i arrive at la fitness if i leave my house at 600 am and take the freeway
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+------
+167
+what is the traffic driving from home to lake george
+Predicted label: GET_LOCATION_HOME@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_INFO_TRAFFIC
+------
+168
+how does i ##64 look
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+169
+how much time to get from pi ##sca ##ta ##way to here
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+170
+what is the thor move start time
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+171
+how far is men ##ards from my house
+Predicted label: GET_LOCATION_HOME@GET_DISTANCE
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_DISTANCE
+------
+172
+are the roads clear tonight
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_INFO_ROAD_CONDITION
+------
+173
+how many hours of your life you lose in traffic
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+174
+what is the best route to get around the women ##s march
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_DIRECTIONS
+------
+175
+using my location how far is it to the up and what is the driving time
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION@GET_DISTANCE@COMBINE
+------
+176
+when is traffic the worst here
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+177
+have the roads from here to my mothers house been cleared of ice
+Predicted label: GET_LOCATION_HOME@GET_INFO_ROAD_CONDITION
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_INFO_ROAD_CONDITION
+------
+178
+can i get from 12th st nw to 44th ave s if i take washington st
+Predicted label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+Real label: GET_DIRECTIONS
+------
+179
+how far is the dentist in this traffic
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_DISTANCE
+------
+180
+will i run into construction on the way to the mall concert
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_EVENT@GET_INFO_TRAFFIC
+------
+181
+how long will it take me to get to the florida aquarium in tampa if i leave ho ##ime at 7 ##am
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+------
+182
+what can i do in t ##l ##h tonight
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+183
+what ##s the travel time between home and school if i leave at 2
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_SCHOOL
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION_SCHOOL
+------
+184
+what time should i leave for work
+Predicted label: GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+185
+current time to home please
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+------
+186
+get the time to boulevard in fine weather conditions
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+187
+what would be the travel time to sf ##o right now please
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+188
+theater events in ho ##bo ##ken this week
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+189
+what time shall i leave for my 8 am meeting from here
+Predicted label: GET_LOCATION@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+190
+has exit 25 been reopened or do i need an alternate route
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+191
+how long has snoop dogg have his name as snoop lion
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+192
+how long will it take if i travel 70 miles
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DURATION
+------
+193
+what would my arrival time in lewis ##burg tn be if i left now and avoided the interstate
+Predicted label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_ARRIVAL
+------
+194
+how many miles is it between my home and notre dame
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_DISTANCE
+Real label: GET_LOCATION_HOME@GET_DISTANCE
+------
+195
+places to shop
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+196
+flow of traffic at i ##80 380 interchange
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+197
+where are santa photos near me
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_EVENT
+------
+198
+ho ##e many miles is it from here to san francisco
+Predicted label: GET_LOCATION@GET_DISTANCE
+Real label: GET_DISTANCE
+------
+199
+24 hour plum ##bers near houston
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED
+------
+200
+how long will it take me to get through town right now
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: UNSUPPORTED_NAVIGATION
+------
+201
+if l leave my home right will i make it sons soccer game by 3 ##pm
+Predicted label: GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_CONTACT@GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+202
+what time will traffic start
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+203
+how far is the history museum from mike ##s work
+Predicted label: GET_LOCATION_HOME@GET_LOCATION_WORK@GET_DISTANCE
+Real label: GET_LOCATION@GET_LOCATION_WORK@GET_DISTANCE
+------
+204
+what day is the shortest day of year
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+205
+what time will i likely arrive at school if i were to leave right now
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_SCHOOL
+Real label: GET_LOCATION_SCHOOL@GET_ESTIMATED_ARRIVAL
+------
+206
+do bands play on fremont street all year
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+207
+what time is traffic heavy in milwaukee
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+208
+when in the wine and food festival in ep ##cot
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+209
+are there any photographers near me
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+210
+what time of day is traffic the worst in san francisco
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+211
+is there traffic ahead on the ga ##wani ##s
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+212
+how long will it take me to get to the hospital from my house right now
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+------
+213
+what is a back road from i 680 to my work
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_WORK
+Real label: GET_DIRECTIONS@GET_LOCATION_WORK
+------
+214
+should i leave early to work today
+Predicted label: GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+215
+is there a way around the fire at the concert
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_DIRECTIONS
+------
+216
+how long will it take to get from federal way to seat ##ac
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+217
+popular dj near dallas ga
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+218
+when is traffic hour
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+219
+add a gas stop to my route
+Predicted label: UPDATE_DIRECTIONS
+Real label: GET_LOCATION@UPDATE_DIRECTIONS
+------
+220
+what day the week will construction start on i 69 in la ##von ##ia
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+221
+how long does it take to get to mira ##s hose from here
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+------
+222
+show me the holiday concerts in my area for this season
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION_HOME@GET_EVENT
+------
+223
+the madonna concert is at seven this monday what time should i leave work
+Predicted label: GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+224
+can you tell me if there is downed power lines between 2nd street and 3rd street in seattle
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_ROAD_CONDITION
+------
+225
+if i leave work 15 min early will i make it to my daughters play
+Predicted label: GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+Real label: GET_CONTACT@GET_LOCATION_WORK@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+226
+is there any traffic in ala ##zh ##ar tunnel right now
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+227
+how long will it take me to drive from here to my children ##s school
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_SCHOOL
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_SCHOOL@GET_LOCATION
+------
+228
+how long to get from here to bridge ##water
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+229
+find jerry springer tap ##ing times and ticket availability for february
+Predicted label: UNSUPPORTED_EVENT
+Real label: GET_EVENT@UNSUPPORTED_EVENT@COMBINE
+------
+230
+what time do i have if i take chat ##ano ##na
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_DURATION
+------
+231
+have they cleared to accident heading to the battle of flowers parade by the 410 exit downtown
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_EVENT@GET_INFO_TRAFFIC
+------
+232
+what ##s the com ##mute
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_DIRECTIONS
+------
+233
+freeway with less traffic
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: UPDATE_DIRECTIONS
+------
+234
+is the freeway the fastest way to get to the polka festival this morning
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_EVENT
+Real label: GET_DIRECTIONS@GET_EVENT
+------
+235
+how long will it take to get to work if i take route 46 instead of route 80
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK
+------
+236
+is there traffic on the beach line
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+237
+what time should i leave home to get to the game at pepsi center by 5 pm and avoid taking how 76
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE@GET_EVENT
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+238
+should i leave early now in ##ord ##er to reach g ##ha ##zia ##bad asa ##p
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: GET_ESTIMATED_ARRIVAL
+------
+239
+museum of failure exhibit in los angeles next week
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+240
+are there going to be any games at met life this weekend that will delay travel
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION@GET_EVENT@GET_INFO_TRAFFIC
+------
+241
+what ##s the best route to scott ##s to make it there by 2 ##pm
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME
+------
+242
+free local music events tonight
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+243
+show me the time ill get to jericho turnpike if i leave in 2 minutes and take 231
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_ARRIVAL
+------
+244
+g ##w ##b traffic
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+245
+is there any road work happening in my town
+Predicted label: GET_LOCATION_HOME@GET_EVENT
+Real label: GET_LOCATION_HOMETOWN@GET_INFO_TRAFFIC
+------
+246
+how long is the delay on us ##6 due to the accident
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_INFO_TRAFFIC
+------
+247
+what is howell ##s play house showing this month
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+248
+is there a car accident ahead
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+249
+is off ramp open on the 296
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+250
+how do i get home faster
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_LOCATION_HOME@UPDATE_DIRECTIONS
+------
+251
+is the train delayed today
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+252
+will i be able make it to school on time in this traffic
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_SCHOOL
+Real label: GET_LOCATION_SCHOOL@GET_ESTIMATED_ARRIVAL
+------
+253
+are any of the roads in town flooded today
+Predicted label: GET_LOCATION@GET_INFO_ROAD_CONDITION
+Real label: GET_INFO_ROAD_CONDITION
+------
+254
+is there another route that i can take that will get me to portland by noon if i leave by 9
+Predicted label: GET_DIRECTIONS
+Real label: UPDATE_DIRECTIONS
+------
+255
+can i get to the target in he ##lot ##es via la can ##tera parkway
+Predicted label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+256
+what is the traffic like driving from lax to marina del rey
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+257
+where is a close mexican restaurant in portland please
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+258
+when is ep ##cot ##s flower and garden festival
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+259
+how long will it take to get to work and back with traffic
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK
+------
+260
+what is the nearest stop to me for the alton brown tour
+Predicted label: UNSUPPORTED_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+261
+is it possible to go from my brothers college to the party before 10 ##am
+Predicted label: GET_LOCATION@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_EVENT@GET_LOCATION_SCHOOL@GET_ESTIMATED_ARRIVAL
+------
+262
+give me the shortest time i can reach a hospital near me
+Predicted label: GET_LOCATION@GET_DIRECTIONS
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+263
+best events in my area
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION_HOME@GET_EVENT
+------
+264
+open satellite map
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_NAVIGATION
+------
+265
+is there a road closure ahead
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+266
+on our way camping id like to know the directions that include the most scenic route available
+Predicted label: UNSUPPORTED
+Real label: GET_DIRECTIONS@GET_EVENT
+------
+267
+det ##our to avoid traffic
+Predicted label: UPDATE_DIRECTIONS
+Real label: GET_DIRECTIONS
+------
+268
+how do i get to ni ##eer from my house
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+------
+269
+is i ##85 going toward atlanta open again and if not what other way can i take to get there
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_DIRECTIONS@GET_INFO_TRAFFIC@COMBINE
+------
+270
+cigar stores near dallas
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+271
+the chocolate festival is at the edison convention center starting at 9 am if i leave my house now will i make it on time
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+272
+is the traffic heavy on my street
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_INFO_TRAFFIC
+------
+273
+how long will it take to get to andrews
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+------
+274
+show the distance of two countries
+Predicted label: UNSUPPORTED
+Real label: GET_DISTANCE
+------
+275
+is there a funeral procession scheduled for dodge street around 9 am tomorrow
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_NAVIGATION
+------
+276
+will i make it to the concert at the idaho center in time if i leave my house at 500
+Predicted label: GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+277
+is the drive to dee ##s long
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+------
+278
+can you navigate around the traffic
+Predicted label: GET_DIRECTIONS
+Real label: UPDATE_DIRECTIONS
+------
+279
+can i get to virginia beach sometime tonight without passing the flooding
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_DIRECTIONS
+------
+280
+how long of a delay on 77
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+281
+are there any large pot holes on this road
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+282
+i need the fastest route from my house to the san jose gardens for the beer and brat ##s festival
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME@GET_EVENT
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME@GET_EVENT
+------
+283
+would taking the freeway to work save me time
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_LOCATION
+Real label: UNSUPPORTED_NAVIGATION
+------
+284
+what is the most scenic route
+Predicted label: GET_DIRECTIONS
+Real label: UNSUPPORTED_NAVIGATION
+------
+285
+is fair ##view rd under construction right now and what road s should i take instead to get to wal ##mart
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_INFO_TRAFFIC@COMBINE
+------
+286
+pumpkin patches in ha ##vas ##u
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+287
+i need you to show me routes from my house to amber ##s house on evergreen including current traffic
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME
+------
+288
+how many inches of snow did we get last week
+Predicted label: GET_INFO_ROAD_CONDITION
+Real label: UNSUPPORTED
+------
+289
+how long will it take to get to colonial williamsburg from my house
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+------
+290
+news from honduras
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+291
+farming ##ton fair det ##our
+Predicted label: GET_EVENT
+Real label: GET_EVENT@GET_INFO_TRAFFIC
+------
+292
+will i get to the roller derby on time if i avoid the interstate and leave right now
+Predicted label: GET_LOCATION@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+293
+can i get from here to alex before noon
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+------
+294
+what time should i leave to make it to my sisters recital by 8 ##pm
+Predicted label: GET_ESTIMATED_DEPARTURE@GET_EVENT
+Real label: GET_CONTACT@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+295
+when will i arrive at school if i leave home at 2
+Predicted label: GET_LOCATION_HOME@GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_LOCATION_SCHOOL@GET_ESTIMATED_ARRIVAL
+------
+296
+what is the ferry schedule from va ##sch ##on island
+Predicted label: UNSUPPORTED_EVENT
+Real label: UNSUPPORTED_NAVIGATION
+------
+297
+can you find me some car shows in south alabama this weekend
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+298
+is traffic likely to get better if i leave later
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+299
+road conditions for ann arbor
+Predicted label: GET_INFO_ROAD_CONDITION
+Real label: GET_INFO_TRAFFIC
+------
+300
+is it a clear path to the raiders game tonight
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_EVENT@GET_INFO_TRAFFIC
+------
+301
+near which exits is traffic the worst on i ##90
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+302
+how long will it take to get to pipes ##tone
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+303
+where does the traffic stop
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+304
+what is the traffic wait time from troy to winfield
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_ESTIMATED_DURATION
+------
+305
+what time would i have to leave to get to the civic center by 7 ##pm
+Predicted label: GET_LOCATION@GET_ESTIMATED_DEPARTURE
+Real label: GET_ESTIMATED_DEPARTURE
+------
+306
+fl ##ota ##tion sessions group ##on
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+307
+can i bike to adams if i need to be there by noon and i leave now
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+------
+308
+best hotels to sleep in during my trip
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_NAVIGATION
+------
+309
+long ##wood gardens christmas lights
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+310
+get me directions ##to cinema ##rk at i ##6 ##35 and forest lane by 630 ##p and list of movies showing
+Predicted label: GET_LOCATION@GET_DIRECTIONS
+Real label: GET_LOCATION@GET_DIRECTIONS@UNSUPPORTED@COMBINE
+------
+311
+which day is best to go to downtown orlando
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+312
+best route to take to get from lily ##s as seen on tv to bee ##hi ##ve at 12 pm
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+313
+how far is the east coast of the us from the west coast
+Predicted label: GET_DISTANCE
+Real label: GET_LOCATION@GET_DISTANCE
+------
+314
+any accidents by san tan
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+315
+can i make it in under 3 hours
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_DURATION
+------
+316
+what roads are closing for president trump ##s speech in pensacola today
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED
+------
+317
+is there any accident at the turn pike
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+318
+what theater events are happening
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+319
+avoid freeway and go by street
+Predicted label: GET_LOCATION@GET_DIRECTIONS
+Real label: GET_LOCATION@UPDATE_DIRECTIONS
+------
+320
+on what street is my old high school on and how long should it take to get there
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_SCHOOL@GET_LOCATION@COMBINE
+------
+321
+what month will chalk the block take place on
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+322
+do my friends have any upcoming events this month
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+323
+is the traffic worse or better today
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+324
+when is traffic the heaviest here
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+325
+can i avoid the traffic
+Predicted label: GET_DIRECTIONS
+Real label: GET_INFO_TRAFFIC
+------
+326
+i need to get to the toyota stadium for a game at 5 ##pm what time should i leave home
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE@GET_EVENT
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+327
+there is an accident ahead how long will it take me to get to the office going an alternate route
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK
+------
+328
+are the roadway ##s busy today
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+329
+are any sections of route 307 closed near my house
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+330
+suggest a different street
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UPDATE_DIRECTIONS
+------
+331
+is it too late to make the 5 ##pm movie at turtle creek mall if i leave my house by 4 ##pm
+Predicted label: GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+332
+directions to church
+Predicted label: GET_LOCATION@GET_DIRECTIONS
+Real label: UNSUPPORTED
+------
+333
+how long will it take me to get to the dr _ phillips can ##ter for an 8 ##pm play if i leave home at 6 ##pm
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_EVENT
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_EVENT@GET_LOCATION
+------
+334
+what is the average rate of speed on 75 in collin county right now
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+335
+what is my shortest traffic route to work this morning
+Predicted label: GET_LOCATION_WORK@GET_INFO_TRAFFIC
+Real label: GET_DIRECTIONS@GET_LOCATION_WORK
+------
+336
+can we find a place to pick apples in new jersey for the upcoming weekend
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+337
+is traffic heavier right now than it was earlier today
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+338
+what events can i take my parents to
+Predicted label: GET_EVENT
+Real label: GET_CONTACT@GET_EVENT
+------
+339
+is there a better route available
+Predicted label: UPDATE_DIRECTIONS
+Real label: UNSUPPORTED_NAVIGATION
+------
+340
+what venues in buffalo ny will be hosting halloween parties this weekend
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+341
+are upcoming concerts in my area next month
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION_HOME@GET_EVENT
+------
+342
+when is trunk or treat
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+343
+can i make a party starting at 8 ##pm if i leave work now at 6 ##pm
+Predicted label: GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_WORK@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+344
+what ##s the anticipated time in traffic
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_ESTIMATED_DURATION
+------
+345
+update traffic every 10 minutes
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+346
+find me a country bar
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+347
+when is rush hour in los angeles
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+348
+what is the best mexican restaurant in fort collins
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+349
+what time do i have to leave to make it to school at 6 ##pm for class
+Predicted label: GET_DIRECTIONS@GET_LOCATION_SCHOOL
+Real label: GET_ESTIMATED_DEPARTURE@GET_LOCATION_SCHOOL
+------
+350
+can ze ##pp ##is pizza shop get a pizza to my house in 20 minutes
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_NAVIGATION
+------
+351
+get the time to disney on ice using local roads only
+Predicted label: GET_ESTIMATED_DURATION@GET_EVENT@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_EVENT
+------
+352
+what ##s the best way to get to mana ##yu ##nk for restaurant week
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_DIRECTIONS
+------
+353
+how long is the drive from midway to oh ##are
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+354
+how far is anaheim from las vegas
+Predicted label: GET_DISTANCE
+Real label: GET_ESTIMATED_DURATION
+------
+355
+what is the traffic driving from university park to harrisburg
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+356
+is there a age limit for ice skating downtown
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+357
+when is the community holiday tree decoration happening this week
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+358
+when is road construction scheduled this week
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+359
+antique shows in the near future around my area
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_EVENT
+------
+360
+hotel events in miami
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+361
+suggestions to avoid traffic
+Predicted label: GET_DIRECTIONS
+Real label: UPDATE_DIRECTIONS
+------
+362
+where is the nearest exit
+Predicted label: GET_LOCATION
+Real label: UNSUPPORTED_NAVIGATION
+------
+363
+field target ranges near me
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+364
+where are the local music festivals happening at in washington
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+365
+how long will it take me to drive to lo ##lla ##pal ##oo ##za if i leave my home at 7 am
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_EVENT
+------
+366
+we have got a lot of rain are there any local roads closed because of it
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_ROAD_CONDITION
+------
+367
+how far is my husbands office from target
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_DISTANCE
+Real label: GET_LOCATION@GET_LOCATION_WORK@GET_DISTANCE
+------
+368
+i need to know how long it ##ll take me to get to my meeting if i leave work at 4 ##pm
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_EVENT
+------
+369
+find 2 routes from dan ##bury to hunter new york for the hunter mountain fest
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: UNSUPPORTED_NAVIGATION
+------
+370
+what is the fastest way to get from my house to my office while bypass ##ing any major delays
+Predicted label: GET_DIRECTIONS@GET_LOCATION_WORK
+Real label: GET_DIRECTIONS@GET_LOCATION_WORK@GET_LOCATION_HOME
+------
+371
+will rush hour add anytime to my com ##mute to the university today
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+372
+which route is fastest
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_DIRECTIONS
+------
+373
+where is the best place to park tonight for the festival of lights
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+374
+at what exit does the traffic start
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+375
+how can i get to the sp ##rou ##ts on san mateo from home
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+------
+376
+if i leave work by 5 ##pm what time will i arrive in j ##fk
+Predicted label: GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+------
+377
+what ##s the best route to food works on a friday night
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+378
+did drake cancel concert in miami tonight
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+379
+are there any local events in dallas on he weekend of the 25th
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+380
+how is the traffic to the horse expo right now can i get there by 6
+Predicted label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_INFO_TRAFFIC@GET_ESTIMATED_ARRIVAL@GET_EVENT@COMBINE
+------
+381
+i am thinking of driving to the opus vineyard in nap ##a today what time will be the fastest and have the few ##est delays
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_ESTIMATED_DEPARTURE
+------
+382
+who has the best children ##s entertainment in south boston va
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+383
+local events please
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+384
+anything happening in the stock ##yard ##s tonight
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+385
+which one is the better fair to go to near me
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+386
+when does the nut ##cr ##acker end at pp ##ac
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_EVENT
+------
+387
+where can i take a date to ballroom dance next month
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+388
+where can i go for a date this friday
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+389
+where is a good place to have a kids birthday party in chicago in the summer
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+390
+where is the night ##life cong ##re ##gated at 1 am in boston
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+391
+what time will pizza arrive from pizza hut in farming ##ton ar
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_NAVIGATION
+------
+392
+im bored
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+393
+are the roads clear to great america
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+394
+if i leave my house at at 235 ##pm will i make it to craig ##s house in lincoln by 310 ##pm
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+------
+395
+how ##s the traffic on the road to ink ##s lake from austin right now
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+396
+what time should i leave based on traffic now in colorado springs if i were heading to denver
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+397
+l ##ga traffic update
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+398
+how many lights do i go through to get to my meeting at the dinner on rt 59
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_NAVIGATION
+------
+399
+when best is the time to drive from san francisco to pleasant ##on for the least traffic congestion tomorrow
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+400
+i need david to pick me up on his way to work tomorrow morning please send him directions that pass my apartment
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+401
+what is the distance between the north and south pole
+Predicted label: GET_DISTANCE
+Real label: UNSUPPORTED_NAVIGATION
+------
+402
+what ##s the best time this afternoon to leave to get to the steak ##house quickly
+Predicted label: GET_LOCATION@GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+403
+i need to be at school by 6 ##pm what time do i need to leave work
+Predicted label: GET_LOCATION@GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE@GET_LOCATION_SCHOOL
+------
+404
+what is the best time to travel from my house to alex
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+405
+how soon we can reach men ##lo park for paint ni ##te if started at 6 ##pm instead of 7 ##pm
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+406
+local wine tasting events
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+407
+if i go see the late movie instead of the 7 pm movie at amc will i still be able to make it to dawn ##s house by midnight
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: UNSUPPORTED_NAVIGATION
+------
+408
+if i leave grants pass oregon at 7 am what time will i get to crater lake
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+------
+409
+nut ##cr ##acker performance dates for the next two weeks here in south florida please
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+410
+leaving my meeting at 315 and taking the freeway home how long would it take me
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_EVENT
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_EVENT@GET_LOCATION
+------
+411
+what beaches are free in this state
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+412
+how long is the drive to new orleans from huntsville if you take highway all the way over
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+413
+is traffic faster out east
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+414
+can i get to sam ##s by noon if i take the expressway
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+------
+415
+what are the thursday specials at the local ##den ##ny ##s
+Predicted label: UNSUPPORTED_EVENT
+Real label: UNSUPPORTED
+------
+416
+are there any accidents on the cross ##town today
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+417
+re ##rou ##te around this accident
+Predicted label: UPDATE_DIRECTIONS
+Real label: GET_DIRECTIONS
+------
+418
+show time for ju ##man ##ji on friday at car ##mi ##ke cinemas
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+419
+com ##mute report from ridge ##field to woodland
+Predicted label: GET_DIRECTIONS
+Real label: GET_INFO_TRAFFIC
+------
+420
+are there any mud ##sl ##ides at the moment
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_INFO_ROAD_CONDITION
+------
+421
+how many miles is it between lake michigan and lake erie
+Predicted label: GET_DISTANCE
+Real label: GET_LOCATION@GET_DISTANCE
+------
+422
+what time should i leave for the woodlands if i want to arrive before 8
+Predicted label: GET_LOCATION@GET_ESTIMATED_DEPARTURE
+Real label: GET_ESTIMATED_DEPARTURE
+------
+423
+theaters showing the pink panther movie after 8 ##pm this weekend
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_EVENT
+------
+424
+how long it takes from chicago to ni ##ag ##ra falls
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+425
+the club opens at 8 ##pm tonight
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+426
+what is the traffic speed on interstate ##s in florida
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+427
+how late can i leave my house to catch the shuttle bus into town for the game at the stadium
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+428
+has my aunt carol made it home yet from london
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: UNSUPPORTED
+------
+429
+pet friendly events this weekend in upstate ny
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+430
+when will dad arrive if he leaves at 6 am
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: UNSUPPORTED_NAVIGATION
+------
+431
+what is the best time to leave home and drive to taylor ##sville nc including traffic
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+432
+when will all the surrounding roads near the may ##day parade be blocked off to all vehicles
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+433
+how far is it from lax to brisbane australia in nautical miles
+Predicted label: GET_DISTANCE
+Real label: GET_LOCATION@GET_DISTANCE
+------
+434
+how bad are the road today
+Predicted label: GET_INFO_ROAD_CONDITION
+Real label: GET_INFO_TRAFFIC
+------
+435
+we needs a few dozen of balloons for the party next tuesday
+Predicted label: UNSUPPORTED_EVENT
+Real label: UNSUPPORTED
+------
+436
+10 ##mi ##les from stacy house what time will i make it driving 80 miles per hour
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: UNSUPPORTED_NAVIGATION
+------
+437
+which clubs are having live music this weekend
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+438
+fridays events v live
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+439
+rock concerts in the area
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION_HOME@GET_EVENT
+------
+440
+places to park for free near lincoln park zoo
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+441
+what are pet friendly events in my area this weekend
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION_HOME@GET_EVENT
+------
+442
+when can i leave to catch my sons birthday at 9 pm
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE
+Real label: GET_CONTACT@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+443
+if i leave at 10 am will i make it to my first class in school at noon
+Predicted label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_EVENT@GET_LOCATION_SCHOOL@GET_ESTIMATED_ARRIVAL
+------
+444
+when are the roads the busy today
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+445
+are they still doing construction on summer ##lin parkway would it be faster to take the front ##age rd to get home from my current location
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+Real label: UNSUPPORTED_NAVIGATION
+------
+446
+will it rain for the music festival this weekend
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+447
+if i start at 9 am from my house when would do i reach school
+Predicted label: GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_LOCATION_SCHOOL@GET_ESTIMATED_ARRIVAL
+------
+448
+outdoor food festivals in the upstate of sc this weekend
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+449
+which road to nj has the least traffic from manhattan
+Predicted label: GET_DIRECTIONS
+Real label: UNSUPPORTED_NAVIGATION
+------
+450
+tell me where black ice advisor ##ies are
+Predicted label: UNSUPPORTED
+Real label: GET_INFO_ROAD_CONDITION
+------
+451
+how long will it take me to get to ta ##wn ##ias house in boise if i leave my mom ##s house now
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+------
+452
+when is rush hour traffic the worst
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+453
+how much are door passes for brady theater
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+454
+soccer practice ends at 12 ##pm what route home should i take to avoid the mid day traffic
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME@GET_EVENT
+------
+455
+please avoid all toll roads this morning
+Predicted label: GET_DIRECTIONS
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+456
+marvin says that disco night at the roller rink on the south ##side is a garbage place for a first date what do you think the date is saturday
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+457
+using main road how long will it take to get to tell ##uri ##de before 11 ##pm
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+458
+where is the strike
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+459
+what is the distance to the sun
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+460
+show me the closest grocery store that sells wine without driving more than 12 miles
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION
+------
+461
+can you make a reservation for iron hill bar tomorrow
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+462
+how far is the drive from here to vendor 3 location on my to do list
+Predicted label: GET_LOCATION@GET_DISTANCE
+Real label: UNSUPPORTED_NAVIGATION
+------
+463
+show me belt ##way traffic
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+464
+what is the quick ##est way to the concert in ka ##pio ##lani park
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_EVENT
+------
+465
+what ##s the traffic in my area
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_INFO_TRAFFIC
+------
+466
+did the snow trucks get out today
+Predicted label: GET_INFO_ROAD_CONDITION
+Real label: UNSUPPORTED_NAVIGATION
+------
+467
+wine festivals not too far away this weekend
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+468
+is there a gas station on my route home
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_INFO_ROUTE
+------
+469
+to mojo cooking fest that ##ll be held saturday february 28th on dar ##la street
+Predicted label: GET_EVENT
+Real label: GET_DIRECTIONS@GET_EVENT
+------
+470
+facebook information on the school book fair event
+Predicted label: UNSUPPORTED_EVENT
+Real label: GET_EVENT
+------
+471
+i am starting at 5 pm from school avoiding construction traffic when will i reach home
+Predicted label: GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_LOCATION_SCHOOL@GET_ESTIMATED_ARRIVAL
+------
+472
+is there a road ##block or an accident ahead
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+473
+is the traffic fair
+Predicted label: GET_EVENT
+Real label: GET_INFO_TRAFFIC
+------
+474
+is there a faster route available
+Predicted label: UPDATE_DIRECTIONS
+Real label: GET_DIRECTIONS
+------
+475
+please tell me what the traffic is like from her to florida
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+476
+where it the best rode to bal ##y
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_DIRECTIONS
+------
+477
+can i make it from here to orlando without getting on any interstate ##s and if so how long would it take by car
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_DIRECTIONS@GET_LOCATION@COMBINE
+------
+478
+start the next trip
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_NAVIGATION
+------
+479
+friends who have responded to my event on sunday
+Predicted label: UNSUPPORTED
+Real label: GET_CONTACT@GET_EVENT_ATTENDEE
+------
+480
+is city driving bad today
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+481
+which night clubs are open past 12 am
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+482
+can you alert me when traffic dies down
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+483
+when is aspen open for skiing
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+484
+how many hours will it take to drive from portland to disneyland
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+485
+what time does lions daze open this weekend
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+486
+is the christmas parade causing any delays downtown and if so will i still make it home from 7 pm
+Predicted label: GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_ARRIVAL@GET_INFO_TRAFFIC@GET_LOCATION_HOME@GET_EVENT@COMBINE
+------
+487
+will the ice on the road have cleared up before the festival downtown starts
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: GET_EVENT@GET_INFO_ROAD_CONDITION
+------
+488
+where are locations to ice skate in new york tonight
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+489
+when is the heaviest traffic for saturdays in mas ##ury
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+490
+can anyone get the news about weather on the freeway
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_INFO_ROAD_CONDITION
+------
+491
+is i ##65 flooded in kentucky
+Predicted label: GET_INFO_ROAD_CONDITION
+Real label: GET_LOCATION@GET_INFO_ROAD_CONDITION
+------
+492
+how late is nathan ##s in cone ##y island open
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+493
+what is the new schedule for the local main street parade that got cancelled last night due to rain
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+494
+alternate routes to te ##me ##cula from here
+Predicted label: UPDATE_DIRECTIONS
+Real label: GET_LOCATION@UPDATE_DIRECTIONS
+------
+495
+how far does the great wall of china go
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+496
+i am lost and need directions home and how long will it take me to get home
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+Real label: GET_ESTIMATED_DURATION@GET_DIRECTIONS@GET_LOCATION_HOME@COMBINE
+------
+497
+good places to go in atlanta tonight
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+498
+is the canyon open
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+499
+who has the best bloody mary special for sunday br ##un ##ch
+Predicted label: UNSUPPORTED_EVENT
+Real label: UNSUPPORTED
+------
+500
+what is my com ##mute to work today
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK
+Real label: GET_DIRECTIONS@GET_LOCATION_WORK
+------
+501
+should i take an alternate route home today
+Predicted label: GET_LOCATION_HOME@UPDATE_DIRECTIONS
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME
+------
+502
+need somewhere to get pictures with santa for the kids in the next week not at the mall
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+503
+what route is the most cong ##ested
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+504
+how long does it take to drive from the sea ranch to pet ##al ##uma
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+505
+what is the earliest to drive the i ##4 without getting in traffic jam ##s
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DEPARTURE
+------
+506
+find local concerts in cleveland
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+507
+should i take an alternate route to work
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION_WORK@UPDATE_DIRECTIONS
+------
+508
+how long will traffic last
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_INFO_TRAFFIC
+------
+509
+time to st armand ##s
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+510
+list all the local festivals for the weekend
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+511
+take me where there is to traffic
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_DIRECTIONS
+------
+512
+what is the fastest freeway to work
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_WORK
+Real label: UNSUPPORTED_NAVIGATION
+------
+513
+where is route 66
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION
+------
+514
+when does the next android operating system release
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+515
+how does a school bus driver who drives more than one route not get confused of where to go and drop kids off
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+516
+how long will it take me to get to venice beach with traffic
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+517
+christmas parade events in nw arkansas
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+518
+i have a flight at love field at 320 pm so what time would i leave home to get there by 2
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+519
+spa packages in phil ##ly
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+520
+how long will it take for me to drive to my dad ##s restaurant to make it there before noon
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK
+------
+521
+what time should i call an uber if i need to be at the airport by 5 ##pm
+Predicted label: GET_LOCATION@GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED
+------
+522
+where should i have my kids b ##day party
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+523
+what time of day has the most traffic
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+524
+is there an atm on my route home
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_INFO_ROUTE
+------
+525
+keeping in mind the traffic conditions what time should i start out tomorrow to make it for my 11 am appointment time at paws sao ##n on mans ##ell road
+Predicted label: GET_LOCATION@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+526
+open wa ##ze navigation
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+527
+will it take long to go to harvard university at 10 am
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+528
+bar deals near me today
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED
+------
+529
+how long is the drive from seattle to mt st helens
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+530
+on any given week
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+531
+how long will i be stuck in traffic today
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_ESTIMATED_DURATION
+------
+532
+how long will it take me to drive from work to the muse concert tonight
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_EVENT
+------
+533
+what time should i leave for work to beat the school buses
+Predicted label: GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+534
+which is the best route to take home nearby me
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME
+------
+535
+get me directions to the new orleans super ##dome from 5th street if i leave now
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+536
+how is the traffic driving from downtown to the suburbs
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+537
+anything to do close to home tomorrow and inexpensive
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_EVENT
+------
+538
+when is the local christmas parade
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+539
+toys for to ##ts drives in my area
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION_HOME@GET_EVENT
+------
+540
+can i make the 10 pm flight out of the atlanta airport if i leave here in 2 hours
+Predicted label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+541
+when will traffic stop
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+542
+the red wings are playing at the lc ##a what time should i leave home to get there at 7 pm
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+543
+how long is the delay
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_INFO_TRAFFIC
+------
+544
+next local concert happening near the end of the month
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+545
+what is the best time to travel from a to b
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DEPARTURE
+------
+546
+how long is the delay on the fifteen
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_INFO_TRAFFIC
+------
+547
+things to do in las vegas besides gambling
+Predicted label: GET_EVENT
+Real label: NEGATION@GET_EVENT
+------
+548
+is soaring ridge releasing any new beers this month in roanoke
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+549
+when was the last time this route had traffic
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+550
+west elementary school please
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+551
+how long would it take to get to work if i took all side streets avoiding any construction
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK
+------
+552
+is tool in town soon
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_EVENT
+------
+553
+take me where there is less traffic
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UPDATE_DIRECTIONS
+------
+554
+how long is my drive home from school today
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_SCHOOL
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION_SCHOOL
+------
+555
+what are jennifer ##s performance dates in may
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+556
+directions to kate ##s school from the grocery store
+Predicted label: GET_DIRECTIONS@GET_LOCATION_SCHOOL
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_SCHOOL
+------
+557
+where can i go on a sl ##ei ##gh ride for a date
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+558
+where ##s the nearest recreational marijuana store
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+559
+is i ##70 slick from mile marker 254 to 257
+Predicted label: GET_INFO_ROAD_CONDITION
+Real label: GET_LOCATION@GET_INFO_ROAD_CONDITION
+------
+560
+is there any weather conditions slowing the traffic on the interstate
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_ROAD_CONDITION
+------
+561
+how much time will traffic add to my com ##mute if i leave at 530 ##pm versus 500 ##pm to downtown
+Predicted label: GET_ESTIMATED_DURATION
+Real label: UNSUPPORTED_NAVIGATION
+------
+562
+how much does current traffic conditions add to the drive to flags ##taff
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_ESTIMATED_DURATION
+------
+563
+how long will i be in traffic
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_ESTIMATED_DURATION
+------
+564
+hot grocery deals this week near me
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+565
+any police activity on main street today
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+566
+what is the best time to drive home from work
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION_HOME@GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE
+------
+567
+can you get me directions to louisa ##s apartment from work avoiding the freeway ##s
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_WORK
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_WORK@GET_LOCATION_HOME
+------
+568
+short distance from here to los angeles
+Predicted label: GET_LOCATION@GET_DISTANCE
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+569
+family friendly movie theaters near me
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+570
+what is the traffic driving to niagara falls on
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+571
+what day does snoop dogg ##s birthday fall on this year
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+572
+how long will it take me to get to chicago midway right now
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+573
+can i make it to jens house in 30 minutes
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+------
+574
+what is the quick ##est way to get from loop 1604 and band ##era road to the high school battle of the band competition
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_EVENT@GET_LOCATION_SCHOOL
+------
+575
+list the best places to view christmas lights near tu ##sca ##lo ##osa this weekend
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED
+------
+576
+will traffic make me late today
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_INFO_TRAFFIC
+------
+577
+how long will it take using det ##ours to get to nana ##s house if i leave at 2 ##pm
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+------
+578
+cruises from california for january
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+579
+what ##s the best way to avoid the parade tomorrow morning on my way to church
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_EVENT
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+580
+date and location for my 25 year high school reunion
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+581
+get me to babies r us avoiding the flooded roads for black friday sales if i am leaving at 200 am
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_EVENT
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+582
+how many people expected to show up on first star wars showing
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT_ATTENDEE_AMOUNT
+------
+583
+is there a way around this traffic
+Predicted label: GET_DIRECTIONS
+Real label: UPDATE_DIRECTIONS
+------
+584
+search the quick ##est route to e ##wa beach from mill ##ila ##ni via kun ##ia road
+Predicted label: GET_DIRECTIONS
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+585
+my doctors appointment this afternoon at 2 is in troy how long will it take me to get there from my office
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_EVENT
+------
+586
+how long does this jam go for
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+587
+what website can i find the list of events near me
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+588
+what day and time is the shortest com ##mute to atlanta from my house
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: UNSUPPORTED_NAVIGATION
+------
+589
+how late are museums open in indianapolis
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+590
+if i leave my brothers house at 10 am will i run into any traffic congestion on my way to the show at the majestic theater
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_EVENT@GET_INFO_TRAFFIC
+------
+591
+chambers ##burg high school reunion
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+592
+will there be ample parking for the le ##pre ##chua ##n run at the green parrot next month
+Predicted label: UNSUPPORTED_EVENT
+Real label: UNSUPPORTED_NAVIGATION
+------
+593
+belt ##way traffic report
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+594
+will i find parking at un ##l during the national guard marathon
+Predicted label: UNSUPPORTED_EVENT
+Real label: UNSUPPORTED_NAVIGATION
+------
+595
+is there an off ramp coming up
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+596
+find helicopter flights in maui in october
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+597
+are all the snow cleared from the freeway ##s for my morning com ##mute to work this morning
+Predicted label: GET_LOCATION@GET_INFO_ROAD_CONDITION
+Real label: GET_LOCATION@GET_LOCATION_WORK@GET_INFO_ROAD_CONDITION
+------
+598
+is the traffic usually lighter on saturday
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+599
+when is the next meteor shower that i can see from dallas tx
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+600
+how long is my com ##mute if i take bo ##uga ##n ##ville drive vs salt lake to get to the airport
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: UNSUPPORTED_NAVIGATION
+------
+601
+what is fire ##work for
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED
+------
+602
+will i be hitting any flooding that will alter my goal to be in minneapolis by 1 ##pm
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_ROAD_CONDITION
+------
+603
+hot spots in town
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+604
+directions to the circus near my brothers home
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME@GET_EVENT
+------
+605
+event planner that is available 9 am in 2 weeks
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+606
+flights hi ##ny february 2018
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_EVENT
+------
+607
+is the freeway shut down im at a complete stop
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+608
+is there a lot of traffic in my area
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_INFO_TRAFFIC
+------
+609
+places to volunteer serving food on christmas day
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+610
+nearest hotels
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION
+------
+611
+how long will it take me to drive to dr benson ##s office tomorrow morning
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+612
+alternate routes to work
+Predicted label: GET_DIRECTIONS@GET_LOCATION_WORK
+Real label: GET_LOCATION_WORK@UPDATE_DIRECTIONS
+------
+613
+how long will it take me to drive to south carolina if i leave at midnight and avoid all the toll roads
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+614
+is it possible to get from my sister in laws school to the gym by 10 ##pm
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_LOCATION_SCHOOL@GET_ESTIMATED_ARRIVAL
+------
+615
+i need a grocery store please give me the directions to the closest one that is currently open thank you
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+616
+what time will traffic open up in la
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+617
+how ##s traffic around coach ##ella right now
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_EVENT@GET_INFO_TRAFFIC
+------
+618
+how far is it between mandal ##ay bay at the st ##rat ##osphere
+Predicted label: GET_DISTANCE
+Real label: GET_LOCATION@GET_DISTANCE
+------
+619
+are tickets still available to alton brown in indianapolis
+Predicted label: UNSUPPORTED_EVENT
+Real label: UNSUPPORTED
+------
+620
+why is the lane blocked
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+621
+how long does it take to get into the city
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+622
+are there any faster route from ca ##ju ##eiro ##s street to cr ##av ##os street
+Predicted label: UPDATE_DIRECTIONS
+Real label: GET_DIRECTIONS
+------
+623
+why is traffic stopped at eastern and pe ##bble
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+624
+can we go around the heavy traffic areas
+Predicted label: GET_DIRECTIONS
+Real label: UPDATE_DIRECTIONS
+------
+625
+what ##s the traffic like on gram army plaza
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+626
+what are the days and times left to see frozen on ice in san antonio
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+627
+avoid construction
+Predicted label: GET_DIRECTIONS
+Real label: UPDATE_DIRECTIONS
+------
+628
+what mode of transportation should i use to avoid nyc traffic
+Predicted label: GET_DIRECTIONS
+Real label: UNSUPPORTED_NAVIGATION
+------
+629
+i want to get to infirmary health urgent care arrival time 10 am
+Predicted label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+630
+how do i get around the accident
+Predicted label: GET_DIRECTIONS
+Real label: UPDATE_DIRECTIONS
+------
+631
+how long will it take to run my er ##rand ##s
+Predicted label: GET_ESTIMATED_DURATION
+Real label: UNSUPPORTED_NAVIGATION
+------
+632
+how do i drive to dolly ##wood from louisville ky
+Predicted label: GET_DIRECTIONS
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+633
+how long is my drive from work to the game
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_EVENT
+------
+634
+how many rest areas are available from south of the border to columbia sc
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_ROUTE
+------
+635
+what is the best attraction for kids in nashville
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+636
+have the snow pl ##ows run in town yet or are the roads still covered
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_ROAD_CONDITION
+------
+637
+events going on after church
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+638
+is traffic bad east bound on 180
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+639
+is there a route that does not have toll ##s
+Predicted label: GET_LOCATION@GET_DIRECTIONS
+Real label: GET_DIRECTIONS
+------
+640
+80s themed night clubs in chicago or nearby to visit
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+641
+how long will it take for me to my office from grand central if i leave at 6 am
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK@GET_LOCATION
+------
+642
+how are road conditions right now from my house to bert ##s house
+Predicted label: GET_LOCATION_HOME@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_INFO_ROAD_CONDITION
+------
+643
+when do the tickets for the lion king start selling
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+644
+will the construction on i ##65 keep me from making it to my book club tonight by 8
+Predicted label: GET_LOCATION@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+645
+list hiking tours of mt rain ##ier in june
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+646
+quick ##est way to the tr ##op ##ica ##na
+Predicted label: GET_DIRECTIONS
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+647
+how many freeway ##s in las vegas are closed
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+648
+how can i get to gil ##roy on surface roads
+Predicted label: GET_DIRECTIONS
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+649
+are there concerts on the moon
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+650
+are there any delays on my ride to physical therapy
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_EVENT@GET_INFO_TRAFFIC
+------
+651
+what time should i leave the house to get to school by 8 ##am
+Predicted label: GET_LOCATION_HOME@GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE@GET_LOCATION_SCHOOL
+------
+652
+can i take a det ##our at exit 30 and then take allen road to get to var ##un ##s house
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+------
+653
+how long will my drive from soho to manhattan be and what time will i get there
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_ESTIMATED_ARRIVAL@COMBINE
+------
+654
+hotels with rooftop bars near me
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+655
+can you re ##rou ##te me to dia
+Predicted label: UPDATE_DIRECTIONS
+Real label: GET_LOCATION@UPDATE_DIRECTIONS
+------
+656
+places near me that can do an outdoor wedding
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED
+------
+657
+what rock bands are coming to down before christmas
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+658
+are there any concerts near me this weekend with tickets still available
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+659
+places to go after midnight
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+660
+can i add a stop at a gas station along the road trip route
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@UPDATE_DIRECTIONS
+------
+661
+any accidents reported ahead
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+662
+which cardinal direction is wichita from tulsa
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_DIRECTIONS
+------
+663
+how long does this traffic last
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+664
+if there is no construction how long will it take me to get to ni ##eer
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+665
+recommendation for food festivals in western illinois
+Predicted label: UNSUPPORTED_EVENT
+Real label: GET_EVENT
+------
+666
+weekend get ##away near me
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+667
+restaurants open near time square on new years eve
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+668
+tell me the current road closure ##s in my area
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_INFO_TRAFFIC
+------
+669
+how long is the rush hour delay
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_INFO_TRAFFIC
+------
+670
+is there any flooding on the way to uncles house in nas ##r city
+Predicted label: GET_LOCATION_HOME@GET_INFO_ROAD_CONDITION
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_INFO_ROAD_CONDITION
+------
+671
+is light up lee ##sburg worth it
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+672
+places to visit in the morning
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+673
+will i arrive to the music festival at 6th october stage before dawn if i leave at 1 am
+Predicted label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+674
+i going to the staples arena in boston tomorrow how long will it take from my house how much money in toll ##s
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@UNSUPPORTED_NAVIGATION@GET_LOCATION@GET_LOCATION_HOME@COMBINE
+------
+675
+is victoria ##s secret having their annual sale yet
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+676
+can i get to mom ##s by 3 with the icy road conditions
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_INFO_ROAD_CONDITION
+------
+677
+party planner in indianapolis for next month
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+678
+show me how the least expensive way to get into manhattan
+Predicted label: GET_DIRECTIONS
+Real label: UNSUPPORTED_NAVIGATION
+------
+679
+how many steps would it take to travel from atlanta to new york
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_DISTANCE
+------
+680
+i need to get to work before 9 ##am using the freeway
+Predicted label: GET_LOCATION@GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_WORK
+------
+681
+avoid toll roads
+Predicted label: GET_DIRECTIONS
+Real label: UPDATE_DIRECTIONS
+------
+682
+will i make it from here to round rock in under two hours if i leave at 9 am
+Predicted label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+683
+have they cleared the accident on the parkway or should i take an alternate route
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+684
+how long will it take me to drive across the country on route 66
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+685
+driving speed from home to miami
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+Real label: UNSUPPORTED_NAVIGATION
+------
+686
+when is rush hour traffic in nashville
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+687
+what ##s the traffic in oak creek canyon like today
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+688
+if i wait to 10 minutes to leave will the traffic be lighter today
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+689
+what time are tail ##gate parties allowed to start for this saturdays f ##su game
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+690
+how late is in and out on 5th street open until
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+691
+is there always traffic on the g ##w
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+692
+help me plan an alternate route that avoids all construction delays on the major highways
+Predicted label: UPDATE_DIRECTIONS
+Real label: GET_LOCATION@UPDATE_DIRECTIONS
+------
+693
+shortest way from my house to school
+Predicted label: GET_DIRECTIONS@GET_LOCATION_SCHOOL
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME@GET_LOCATION_SCHOOL
+------
+694
+what time should i leave to avoid rush hour
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+695
+how long will it take me to drive to the 11 am mass at st augustine
+Predicted label: GET_ESTIMATED_DURATION@GET_EVENT
+Real label: GET_ESTIMATED_DURATION@GET_EVENT@GET_LOCATION
+------
+696
+if i want to arrive at school at 7 ##am what time should i leave home
+Predicted label: GET_LOCATION_HOME@GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE@GET_LOCATION_SCHOOL
+------
+697
+when can i start from ohio if i want to visit my mother in austin
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE
+------
+698
+what nightclub ##s have live music this weekend in boston
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_EVENT
+------
+699
+id like to see an art gallery showing this weekend if i don ##t have to drive too far
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: GET_EVENT
+------
+700
+how long will it take me to get from downtown to loyola while the chicago marathon is going on
+Predicted label: GET_ESTIMATED_DURATION@GET_EVENT
+Real label: GET_ESTIMATED_DURATION
+------
+701
+are there any book clubs forming within 50 miles
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_EVENT
+------
+702
+election news from honduras
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+703
+show me a rode map
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_NAVIGATION
+------
+704
+which route between home and norfolk is the least miles
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: UNSUPPORTED_NAVIGATION
+------
+705
+can i make the 7 pm movie at the river east theater if i leave my house now
+Predicted label: GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+706
+are there any traffic accidents on my way from home to rock in rio
+Predicted label: GET_LOCATION_HOME@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_EVENT@GET_INFO_TRAFFIC
+------
+707
+a good greek tavern to visit in chicago this weekend
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+708
+is there snow on the way to big bear now
+Predicted label: GET_LOCATION@GET_INFO_ROAD_CONDITION
+Real label: GET_INFO_ROAD_CONDITION
+------
+709
+when should i plan on leaving based on traffic
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+710
+is the best way into boston the train
+Predicted label: GET_DIRECTIONS
+Real label: UNSUPPORTED_NAVIGATION
+------
+711
+are there any pumpkin carving events near halloween
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+712
+how do get to the party in 1 hour if i leave now
+Predicted label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_DIRECTIONS@GET_EVENT
+------
+713
+is there such an animal as a hairs ##tyle ##s for long hair workshop anywhere in the cs ##t zone in 2018
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+714
+where is the catholic church near don qui ##ox ##te
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION
+------
+715
+is the sky ##way bridge open
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+716
+when should i leave for work if i want to make it before the roads are blocked off downtown for the parade
+Predicted label: GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+717
+are there any live performances this week with tickets available
+Predicted label: UNSUPPORTED_EVENT
+Real label: GET_EVENT
+------
+718
+how long will it take me to get to school from here if i leave at 225 pm
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_SCHOOL
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_SCHOOL@GET_LOCATION
+------
+719
+how long will it take to get to oak park if i don ##t take the expressway
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+720
+alert me if traffic slow ##s down on i ##40
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+721
+how can i drive to beth ##s house without driving on a highway
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME
+------
+722
+if i leave work at 5 pm will i arrive at the hockey game by 6 pm
+Predicted label: GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_WORK@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+723
+club events in miami
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+724
+how long will it take me to get through traffic on i ##35
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_ESTIMATED_DURATION
+------
+725
+if i need to pick up sally and then get to the arboretum by 2 ##pm what time should i leave
+Predicted label: GET_LOCATION@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE
+------
+726
+can i make the 5 ##pm movie at movie town
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+727
+are tickets to new years eve in times square available yet
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+728
+how long will it take me to get to taste of chicago if i leave at 2 ##pm today
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_EVENT
+------
+729
+what do the current road conditions between work and home look like if i leave now
+Predicted label: GET_LOCATION_HOME@GET_LOCATION_WORK@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_LOCATION_WORK@GET_INFO_ROAD_CONDITION
+------
+730
+what time should i leave to make it to the concert in the park by 8 ##pm
+Predicted label: GET_ESTIMATED_DEPARTURE@GET_EVENT
+Real label: GET_LOCATION@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+731
+is there a toll road option
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@UPDATE_DIRECTIONS
+------
+732
+if i take the thru way can i get to syracuse ny by noon
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+------
+733
+what time will i make the drive to ken ##ne ##wick if i leave by 6 am
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_DURATION
+------
+734
+when should i leave tucson if i want to avoid rush hour traffic in phoenix
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+735
+any ongoing construction in my area
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_INFO_TRAFFIC
+------
+736
+are road conditions expected to delay large truck deliveries
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_INFO_ROAD_CONDITION
+------
+737
+how far away is the north pole
+Predicted label: GET_DISTANCE
+Real label: GET_LOCATION@GET_DISTANCE
+------
+738
+local events happening tonight
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+739
+what store has deal on baby dia ##pers right now
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+740
+i need to pick up my sister then get to the colonial theatre by 7 o ##cl ##ock what time should i leave
+Predicted label: GET_LOCATION@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE
+------
+741
+are the roads blocked on my com ##mute this morning
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+742
+give me directions from my mom ##s house to school
+Predicted label: GET_DIRECTIONS@GET_LOCATION_SCHOOL
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME@GET_LOCATION_SCHOOL
+------
+743
+are there any accidents between my location and destination
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+744
+dog parks near me
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+745
+please avoid any car accidents on the highway
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+746
+when is reagan ##s birthday next saturday
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+747
+any hiking trail close by
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+748
+what is the parade route
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_EVENT
+------
+749
+how long is the traffic today from home to work
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION_WORK
+Real label: GET_LOCATION_HOME@GET_LOCATION_WORK@GET_INFO_TRAFFIC
+------
+750
+how many minutes to get to rock ##away beach
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+751
+where are the major traffic areas
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+752
+how to avoid traffic to salt lake city
+Predicted label: GET_DIRECTIONS
+Real label: GET_INFO_TRAFFIC
+------
+753
+will the ives dairy exit on i ##9 ##5 still be closed tomorrow
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+754
+how many inches of snow will denver get normally
+Predicted label: GET_INFO_ROAD_CONDITION
+Real label: UNSUPPORTED
+------
+755
+do my friends have any events this weekend
+Predicted label: GET_EVENT
+Real label: GET_CONTACT@GET_EVENT
+------
+756
+are there any toll ##s between home and norfolk
+Predicted label: GET_LOCATION@GET_INFO_ROUTE
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_INFO_ROUTE
+------
+757
+how many minutes to 34 ##6 18th street
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+758
+will traffic be as bad as yesterday
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+759
+where is the next turn off the highway now
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: UNSUPPORTED
+------
+760
+can i have the local traffic please
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+761
+how long until carol gets back to me
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+Real label: UNSUPPORTED
+------
+762
+will i pass any gas stations on the way home
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_INFO_ROUTE
+------
+763
+tell me the best route to get home after the lakers game tomorrow night
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME@GET_EVENT
+------
+764
+what time do i leave to avoid heavy traffic
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+765
+how long will it take me to get to duval ##l from des moines taking the ho ##v lane at 5 ##pm
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+766
+what time should i leave work to make it to the kings game on time tonight
+Predicted label: GET_LOCATION@GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+767
+how long will it take me to get to the beach by bus
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+768
+is the fog slowing down freeway 5
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_INFO_ROAD_CONDITION
+------
+769
+how far am i from china
+Predicted label: GET_DISTANCE
+Real label: GET_LOCATION@GET_DISTANCE
+------
+770
+is traffic bad going north or south
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+771
+church ba ##ke sales this week in fort payne
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+772
+how far away is the nut ##cr ##acker parade
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+773
+how long will it take to go through mcdonald ##s drive through and pick up kids from jerry pop williams elementary
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: UNSUPPORTED_NAVIGATION
+------
+774
+is ago ##uz ##a square will be opened at 8 ##pm
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_NAVIGATION
+------
+775
+if i wanted to drive from van nu ##ys to san francisco tomorrow what would be the best time to leave to avoid the most traffic
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+776
+how long will it take to get home from the highway versus the side streets right now
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+Real label: UNSUPPORTED_NAVIGATION
+------
+777
+kirk ##land party show starts tonight for a week long
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+778
+ko ##sher dinner for han ##nu ##ka ##h in chicago
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+779
+is there a way to go to my daughters concert without passing any construction
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_CONTACT@GET_DIRECTIONS@GET_EVENT
+------
+780
+how many hours is brooklyn
+Predicted label: GET_ESTIMATED_DURATION
+Real label: UNSUPPORTED
+------
+781
+using the highway can i make it home by 2 ##pm
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+------
+782
+are there any traffic events downtown savannah
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+783
+tell me the quick ##est route to reach my office if i leave from home at 7 ##am
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_DIRECTIONS@GET_LOCATION_WORK@GET_LOCATION_HOME
+------
+784
+what time should i leave if i want to get to tyler ##s school down the road from wal mart by 315 today
+Predicted label: GET_DIRECTIONS@GET_LOCATION_SCHOOL
+Real label: GET_LOCATION@GET_ESTIMATED_DEPARTURE@GET_LOCATION_SCHOOL
+------
+785
+how much additional time does the traffic add to my estimated arrival time
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: UNSUPPORTED_NAVIGATION
+------
+786
+when does christmas break start for the local schools
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: UNSUPPORTED
+------
+787
+can i reach cairo airport from mom ##s place in less than an hour
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+------
+788
+can you tell me how to get to the am ##way center using toll roads and how long will it take me
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_DIRECTIONS@GET_LOCATION@COMBINE
+------
+789
+traffic westbound
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+790
+how far above sea level is cleveland ohio
+Predicted label: GET_DISTANCE
+Real label: UNSUPPORTED_NAVIGATION
+------
+791
+will i run into construction on the way to downtown jacksonville tonight
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+792
+if i want to get to lexington by 9 ##pm and avoid toll roads when do i need to leave by
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION@GET_ESTIMATED_DEPARTURE
+------
+793
+avoid dirt roads along my route
+Predicted label: GET_DIRECTIONS
+Real label: GET_LOCATION@UPDATE_DIRECTIONS
+------
+794
+how many routes are there to get to russell ##ville ar from my location
+Predicted label: GET_LOCATION@GET_DIRECTIONS
+Real label: UNSUPPORTED_NAVIGATION
+------
+795
+is there an accident ahead of us
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+796
+get directions avoiding toll ##s
+Predicted label: GET_LOCATION@GET_DIRECTIONS
+Real label: GET_DIRECTIONS
+------
+797
+i need to get to the columbia zoo for a meeting at 1 pm what time do i need to leave my house
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE@GET_EVENT
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+798
+is there still construction on 76 ##th in between south boulder road and baseline
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+799
+for a reservation at 64 ##5 in the arts district downtown by what time would i need to leave in order to arrive on time
+Predicted label: GET_LOCATION@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+800
+how do i get to sky lake from streets
+Predicted label: GET_LOCATION@GET_DIRECTIONS
+Real label: GET_DIRECTIONS
+------
+801
+if i start right now can i make up for the comedian chris porter event scheduled at 8 ##pm tonight
+Predicted label: UNSUPPORTED_EVENT
+Real label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+802
+will it rain
+Predicted label: GET_INFO_ROAD_CONDITION
+Real label: UNSUPPORTED_EVENT
+------
+803
+how far do i have to travel to see the lakers play this month
+Predicted label: UNSUPPORTED_EVENT
+Real label: GET_EVENT@GET_DISTANCE
+------
+804
+what is the road conditions between brush and fort morgan
+Predicted label: GET_INFO_ROAD_CONDITION
+Real label: GET_INFO_TRAFFIC
+------
+805
+is traffic at a stop on i ##10
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+806
+is the 5 ##k race causing det ##ours between main street and the boulevard
+Predicted label: GET_EVENT@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+807
+can i make it home in less than an hour today
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+------
+808
+what exit can i take to miss the delay
+Predicted label: GET_DIRECTIONS
+Real label: UNSUPPORTED_NAVIGATION
+------
+809
+how is the rain going to be for my drive home
+Predicted label: GET_LOCATION_HOME@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_INFO_ROAD_CONDITION
+------
+810
+find me classical concerts for this sunday not too far away
+Predicted label: GET_EVENT
+Real label: GET_LOCATION@GET_EVENT
+------
+811
+when do i need to leave to be to school by 102 ##0 am
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_SCHOOL
+Real label: GET_ESTIMATED_DEPARTURE@GET_LOCATION_SCHOOL
+------
+812
+what is a good alternative route for my trip home today
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_LOCATION_HOME@UPDATE_DIRECTIONS
+------
+813
+can i get from here to nut ##ley by 7
+Predicted label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_ARRIVAL
+------
+814
+how long of a drive it is to minneapolis by highway
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+815
+piano bars in lynch ##burg va
+Predicted label: UNSUPPORTED_EVENT
+Real label: UNSUPPORTED
+------
+816
+can i get the train at po ##mp ##ano station and get my work at 83 ##0 ##am
+Predicted label: GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+------
+817
+christian music concerts happening in cedar park this month
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+818
+are the protesters blocking traffic on martin luther king b ##l ##v
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+819
+how long will it take to get to moe ##s
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+------
+820
+should i wait to leave or has traffic cleared
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+821
+will the lanes be visible on freeway in this snowy weather
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_ROAD_CONDITION
+------
+822
+is there any anime events happening in my area
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION_HOME@GET_EVENT
+------
+823
+can you give me directions from here to the renaissance fair ##e in concord
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_EVENT
+------
+824
+the am ##way center is about one hour away from home is there a route which might get me there is less time for the magic ##s game
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME@GET_EVENT
+------
+825
+when is the heavy traffic in the morning
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+826
+tell me more about the local ballet
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+827
+how long is the delay
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_INFO_TRAFFIC
+------
+828
+what time have i wasted in traffic on the way to office
+Predicted label: GET_LOCATION_WORK@GET_ESTIMATED_DEPARTURE
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK
+------
+829
+is there another way that i can get to work this morning
+Predicted label: GET_DIRECTIONS@GET_LOCATION_WORK
+Real label: GET_LOCATION_WORK@UPDATE_DIRECTIONS
+------
+830
+get me the arrival time at the music concert if i leave home at 8 pm using the high road
+Predicted label: GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+831
+how far is it from here to miami beach is there a crime problem in miami beach
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@UNSUPPORTED@GET_DISTANCE@COMBINE
+------
+832
+show me the route without toll ways
+Predicted label: GET_DIRECTIONS
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+833
+any roads flooded on the way to work
+Predicted label: GET_LOCATION_WORK@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_WORK@GET_INFO_ROAD_CONDITION
+------
+834
+where was our family reunion in 2003
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+835
+how long will it take to get to the middle school
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_SCHOOL
+------
+836
+give me a list of bars this weekend showing the big game
+Predicted label: UNSUPPORTED_EVENT
+Real label: UNSUPPORTED
+------
+837
+if i leave at 114 ##5 ##am will i make it to my nephew ##s party in the afternoon
+Predicted label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_CONTACT@GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+838
+how long would it take to travel across the state of texas
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+839
+is there a det ##our around lowry tunnel
+Predicted label: UPDATE_DIRECTIONS
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+840
+has highway 76 been cleared yet
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_INFO_ROAD_CONDITION
+------
+841
+please provide light traffic routes
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_DIRECTIONS
+------
+842
+what is the com ##mute to work right now
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK
+Real label: GET_LOCATION_WORK@GET_INFO_TRAFFIC
+------
+843
+i want to watch dr z ##hi ##va ##go
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+844
+play choices near me
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_EVENT
+------
+845
+is it possible to go to hal ##a pets shop in mohan ##des ##een by 8 am through sudan street
+Predicted label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+846
+did sarah go to the 20 year reunion
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT_ATTENDEE
+------
+847
+how long is it from buffalo to niagara falls
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+848
+so my plans for this weekend just totally fell through and now i can ##t even go to stacy ##s anymore don ##t ask long story short vince is garbage i need a new date for thursday and i need to figure out what other club i can even
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+849
+directions to brady ##s house from work without freeway ##s
+Predicted label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_WORK
+Real label: GET_DIRECTIONS@GET_LOCATION_WORK@GET_LOCATION_HOME
+------
+850
+what time is this construction going to put us in lu ##bb ##ock
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_ARRIVAL
+------
+851
+when is journey coming to tulsa
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+852
+avoid toll roads
+Predicted label: GET_DIRECTIONS
+Real label: UPDATE_DIRECTIONS
+------
+853
+ski lessons at sq ##ua ##w valley next week
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+854
+is it crowd on the freeway today
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_INFO_TRAFFIC
+------
+855
+how long will it take us to get through this traffic
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_ESTIMATED_DURATION
+------
+856
+dan i drive on cedar avenue this weekend
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+857
+are there any bus routes between my home and my job
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_DIRECTIONS@GET_LOCATION_WORK@GET_LOCATION_HOME
+------
+858
+what ##s the distance from toledo to cincinnati in time
+Predicted label: GET_DISTANCE
+Real label: GET_ESTIMATED_DURATION
+------
+859
+is there a route that can get me to the mo ##he ##gan sun in less than two hours
+Predicted label: GET_DIRECTIONS
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+860
+can i get downtown in 20 minutes
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_DURATION
+------
+861
+how cong ##ested is down town brighton
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+862
+how long it will take from nas ##r city em ##bas ##sies district to my home at 8 pm departure time
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+------
+863
+are there any closure ##s ahead
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+864
+i want to know the light ##est traffic hours for kansas city
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+865
+how far away is the house in mons ##on that we are going to look at
+Predicted label: GET_LOCATION@GET_LOCATION_HOME@GET_DISTANCE
+Real label: GET_LOCATION@GET_DISTANCE
+------
+866
+how can i avoid construction traffic
+Predicted label: GET_DIRECTIONS
+Real label: UPDATE_DIRECTIONS
+------
+867
+when is the best time to drive through akron
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DEPARTURE
+------
+868
+if hailey and jack are going to the concert i don ##t want to go
+Predicted label: GET_ESTIMATED_DEPARTURE@GET_EVENT
+Real label: UNSUPPORTED_EVENT
+------
+869
+can i make it to billy ##s house by 6 ##pm for the party tonight
+Predicted label: GET_LOCATION_HOME@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+------
+870
+low cost event halls near pittsburgh
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+871
+are there any delays on 192 heading towards ap ##op ##ka if so how long if i were to leave home now
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_INFO_TRAFFIC@COMBINE
+------
+872
+need to be at corona del mar by 9 am tomorrow please provide route from home without toll roads
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_HOME
+------
+873
+have the games for next month on stand ##by
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+874
+are the express lanes open
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+875
+if jen ##n leaves at 10 will she make it on time
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+------
+876
+can i take to yale by 1000 if i go by bus
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_ESTIMATED_ARRIVAL
+------
+877
+what will be the quick ##est route to my daughters soccer game with current traffic conditions
+Predicted label: GET_DIRECTIONS@GET_EVENT
+Real label: GET_CONTACT@GET_DIRECTIONS@GET_EVENT
+------
+878
+avoid country roads
+Predicted label: GET_DIRECTIONS
+Real label: GET_LOCATION@UPDATE_DIRECTIONS
+------
+879
+where is the most traffic in atlanta
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+880
+what time can i visit the hospital tomorrow
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+881
+what route has the least stop and go
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_DIRECTIONS
+------
+882
+is it work taking the richards parkway express if i drive today
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_DIRECTIONS
+------
+883
+what are typical rush hours between denver metro and castle rock on i ##25
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+884
+are there any road blocks
+Predicted label: GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+885
+what time should i leave summer ##fest today to make it to the ridge hotel in lake geneva
+Predicted label: GET_LOCATION@GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION@GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+886
+are there any delays on the way to yellow stone
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+887
+how long will it take me to dive to the alam ##o city comic ##on
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION@GET_EVENT
+------
+888
+safe running trails
+Predicted label: GET_LOCATION@GET_DIRECTIONS
+Real label: UNSUPPORTED
+------
+889
+where to go shopping in austin this week
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+890
+is there any way i can avoid traffic from the yankees stadium
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_DIRECTIONS
+------
+891
+how many miles is it from my house to school
+Predicted label: GET_LOCATION_HOME@GET_LOCATION_WORK@GET_DISTANCE
+Real label: GET_LOCATION_HOME@GET_LOCATION_SCHOOL@GET_DISTANCE
+------
+892
+is there anything christmas ##rel ##ated to do in my area this weekend
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_LOCATION_HOME@GET_EVENT
+------
+893
+tell me how to get to the movie theater from school
+Predicted label: GET_DIRECTIONS@GET_LOCATION_SCHOOL
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_LOCATION_SCHOOL
+------
+894
+best places to visit in the city
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+895
+when and where is my dogs vet appointment
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+896
+is there train service between portland and san francisco
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_DIRECTIONS
+------
+897
+what ##s the drive time to the coast
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION
+Real label: GET_ESTIMATED_DURATION
+------
+898
+can i get from 4th ave main st las vegas to the bulls game without det ##ours
+Predicted label: GET_LOCATION@GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_EVENT
+------
+899
+can i get to the soccer game at 100 puff ##nst ##uf street without going into heavy traffic
+Predicted label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_DIRECTIONS@GET_EVENT
+------
+900
+how far is it from navy pier to the children ##s museum in du ##page county and what is the best route to take
+Predicted label: GET_LOCATION@GET_DISTANCE
+Real label: GET_LOCATION@GET_DIRECTIONS@GET_DISTANCE@COMBINE
+------
+901
+how long will it take me to get to the office from home at 7 am if i don ##t take the freeway
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION_WORK
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION_HOME@GET_LOCATION_WORK@GET_LOCATION
+------
+902
+if i leave my school at 3 o ##cl ##ock what time will i arrive to johns birthday party
+Predicted label: GET_LOCATION@GET_LOCATION_WORK@GET_ESTIMATED_ARRIVAL
+Real label: GET_EVENT@GET_LOCATION_SCHOOL@GET_ESTIMATED_ARRIVAL
+------
+903
+what is the best way to go from stock car to home
+Predicted label: GET_DIRECTIONS@GET_LOCATION_HOME
+Real label: GET_DIRECTIONS@GET_LOCATION_HOME@GET_EVENT
+------
+904
+ex ##ter ##mina ##tor for mice
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+905
+what is the flow of traffic on the road im on
+Predicted label: GET_INFO_TRAFFIC
+Real label: GET_LOCATION@GET_INFO_TRAFFIC
+------
+906
+can ##de lit virgil for the victims in this town
+Predicted label: UNSUPPORTED
+Real label: GET_LOCATION@GET_EVENT
+------
+907
+is there any flooding on the way to delta park from my house
+Predicted label: GET_LOCATION_HOME@GET_INFO_ROAD_CONDITION
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_INFO_ROAD_CONDITION
+------
+908
+how long will it take me to get to maria ##s music concert from school if i leave at 6 pm
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_SCHOOL
+Real label: GET_ESTIMATED_DURATION@GET_EVENT@GET_LOCATION_SCHOOL
+------
+909
+when should i leave lake ta ##hoe to miss any traffic today
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: GET_LOCATION@GET_ESTIMATED_DEPARTURE
+------
+910
+has the town of apex planned any easter egg hunts
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+911
+how long to get to win ##n dixie
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_ESTIMATED_DURATION@GET_LOCATION
+------
+912
+what are the traffic levels in my area right now
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_INFO_TRAFFIC
+------
+913
+what date is kim ##s going away party
+Predicted label: GET_EVENT
+Real label: UNSUPPORTED
+------
+914
+distance from home to venice beach
+Predicted label: GET_LOCATION_HOME@GET_DISTANCE
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_DISTANCE
+------
+915
+can i get to bellevue by 1100 with the current traffic conditions
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_DIRECTIONS
+------
+916
+should i leave home early due to traffic
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_DEPARTURE
+Real label: UNSUPPORTED_NAVIGATION
+------
+917
+how many traffic accidents happened in the city today
+Predicted label: GET_LOCATION@GET_INFO_TRAFFIC
+Real label: UNSUPPORTED_NAVIGATION
+------
+918
+my plane leaves at 1 when should i leave to get there by 12
+Predicted label: GET_ESTIMATED_DEPARTURE
+Real label: GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+919
+what day is the concert for eric church in burlington
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+920
+are the buses running on schedule today
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DEPARTURE
+------
+921
+traffic times from work today
+Predicted label: GET_ESTIMATED_DURATION@GET_LOCATION_WORK
+Real label: GET_LOCATION_WORK@GET_INFO_TRAFFIC
+------
+922
+what is the average time to drive from denver to colorado springs
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_ESTIMATED_DURATION
+------
+923
+how long of a delay will there be in washington dc due to traffic at 6 today on my way
+Predicted label: GET_ESTIMATED_DURATION
+Real label: GET_INFO_TRAFFIC
+------
+924
+how long will it take me from the city parade to get to my meeting this afternoon
+Predicted label: GET_ESTIMATED_DURATION@GET_EVENT
+Real label: GET_ESTIMATED_DURATION@GET_EVENT@GET_LOCATION
+------
+925
+display real time traffic
+Predicted label: UNSUPPORTED_NAVIGATION
+Real label: GET_INFO_TRAFFIC
+------
+926
+i need to know what time it will be when i get to timmy ##s house in athens if i leave in an hour
+Predicted label: GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+Real label: GET_LOCATION@GET_LOCATION_HOME@GET_ESTIMATED_ARRIVAL
+------
+927
+when will the parade in pensacola begin do they throw beads
+Predicted label: UNSUPPORTED
+Real label: GET_EVENT
+------
+928
+review the menu items for our pot ##lu ##ck this sunday
+Predicted label: UNSUPPORTED_EVENT
+Real label: UNSUPPORTED
+------
+929
+what ##s going on at lake e ##ola
+Predicted label: GET_LOCATION@GET_EVENT
+Real label: GET_EVENT
+------
+930
+show me the bus schedule
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_NAVIGATION
+------
+931
+what is the latest i can leave boer ##ne and still make it to the ballet before it starts
+Predicted label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+Real label: GET_ESTIMATED_DEPARTURE@GET_EVENT
+------
+932
+if i walk can i make it to pv days before noon
+Predicted label: GET_ESTIMATED_ARRIVAL
+Real label: GET_EVENT@GET_ESTIMATED_ARRIVAL
+------
+933
+best place to drink a buzz
+Predicted label: UNSUPPORTED
+Real label: UNSUPPORTED_EVENT
+------
+934
+how heavy is traffic on the way home from school
+Predicted label: GET_LOCATION_SCHOOL@GET_INFO_TRAFFIC
+Real label: GET_LOCATION_HOME@GET_LOCATION_SCHOOL@GET_INFO_TRAFFIC
+------

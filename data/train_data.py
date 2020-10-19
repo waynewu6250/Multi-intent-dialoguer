@@ -9,7 +9,7 @@ import json
 import os
 import csv
 import spacy
-from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM
+from transformers import BertTokenizer, BertModel, BertForMaskedLM
 import time
 
 class Data:
@@ -183,9 +183,9 @@ class SemanticData(Data):
             intents = intents.split('@')
             for intent in intents:
                 if intent not in intent2id:
-                    intent2id[intent] = counter
+                    intent2id[intent] = (counter, self.text_prepare(intent, 'Bert')) #counter
                     counter += 1
-            raw_data.append((self.text_prepare(text, "Bert"), [intent2id[intent] for intent in intents]))
+            raw_data.append((self.text_prepare(text, "Bert"), [intent2id[intent][0] for intent in intents]))
             
             print("Finish: ", i)
         
@@ -212,7 +212,7 @@ if __name__ == "__main__":
     # semantic
     data_path = "../raw_datasets/top-dataset-semantic-parsing/train.tsv"
     rawdata_path = "semantic/raw_data_multi_se.pkl"
-    intent2id_path = "semantic/intent2id_multi_se.pkl"
+    intent2id_path = "semantic/intent2id_multi_se_with_tokens.pkl"
     data = SemanticData(data_path, rawdata_path, intent2id_path, done=False)
     
     #print(data.raw_data)

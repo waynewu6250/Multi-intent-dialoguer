@@ -7,7 +7,7 @@ import numpy as np
 
 class CoreDataset(Dataset):
 
-    def __init__(self, data, labels, masks, num_labels, opt):
+    def __init__(self, data, labels, masks, num_labels, opt, segs=None):
         self.data = data
         self.labels = labels
         self.masks = masks
@@ -15,6 +15,8 @@ class CoreDataset(Dataset):
         self.maxlen = opt.maxlen
         self.num_labels = num_labels
         self.mode = opt.data_mode
+        self.sentence_mode = opt.sentence_mode
+        self.segs = segs
 
     def __getitem__(self, index):
 
@@ -33,55 +35,70 @@ class CoreDataset(Dataset):
         # masks
         masks = t.tensor(self.masks[index])
 
-        return caps, labels, masks
+        if self.sentence_mode == 'one':
+            return caps, labels, masks
+        else:
+            # segments
+            segs = t.tensor(self.segs[index]) 
+            return caps, labels, masks, segs
 
     def __len__(self):
         return len(self.data)
 
-def get_dataloader(data, labels, masks, num_labels, opt):
-    dataset = CoreDataset(data, labels, masks, num_labels, opt)
+def get_dataloader(data, labels, masks, num_labels, opt, segs=None):
+    dataset = CoreDataset(data, labels, masks, num_labels, opt, segs)
     return DataLoader(dataset, 
                       batch_size=opt.batch_size, 
                       shuffle=False)
 
-class DialogueDataset(Dataset):
-    
-    def __init__(self, data, labels, masks, segs, num_labels, opt):
-        self.data = data
-        self.labels = labels
-        self.masks = masks
-        self.segs = segs
-        self.num_data = len(self.data)
-        self.maxlen = opt.maxlen
+######################################################################
+
+class DSTDataset(Dataset):
+
+    def __init__(self, x_data, x_masks, y_data, y_masks, y_labels, num_labels, opt):
+        self.x_data = x_data
+        self.x_masks = x_masks
+        self.y_data = y_data
+        self.y_masks = y_masks
+        self.y_labels = y_labels
+        self.num_data = len(self.x_data)
         self.num_labels = num_labels
 
     def __getitem__(self, index):
 
         # caps
-        caps = self.data[index]
-        caps = t.tensor(caps)
+        x_caps = t.tensor(self.x_data[index])
+        
+        y_caps_raw = self.y_data[index]
+        y_caps = t.zeros(5, 10).long()
+        for i, y_cap in enumerate(y_caps_raw):
+            y_caps[i] = t.tensor(y_cap)
+
+        # masks
+        x_masks = t.tensor(self.x_masks[index])
+
+        y_masks_raw = self.y_data[index]
+        y_masks = t.zeros(5, 10).long()
+        for i, y_mask in enumerate(y_masks_raw):
+            y_masks[i] = t.tensor(y_mask)
 
         # labels
-        label = self.labels[index]
+        label = self.y_labels[index]
         label = t.LongTensor(np.array(label))
         labels = t.zeros(self.num_labels).scatter_(0, label, 1)
 
-        # masks
-        masks = t.tensor(self.masks[index])
-
-        # segments
-        segs = t.tensor(self.segs[index])
-
-        return caps, labels, masks, segs
+        return x_caps, x_masks, y_caps, y_masks, labels
 
     def __len__(self):
-        return len(self.data)
+        return len(self.x_data)
 
-def get_dataloader_dialogue(data, labels, masks, segs, num_labels, opt):
-    dataset = DialogueDataset(data, labels, masks, segs, num_labels, opt)
+def get_dataloader_zsl(x_data, x_masks, y_data, y_masks, y_labels, num_labels, opt):
+    dataset = ZSLDataset(x_data, x_masks, y_data, y_masks, y_labels, num_labels, opt)
     return DataLoader(dataset, 
                       batch_size=opt.batch_size, 
                       shuffle=False)
+
+######################################################################
 
 if __name__ == '__main__':
     

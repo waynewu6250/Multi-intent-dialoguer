@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
+import numpy as np
 from transformers import BertTokenizer, BertModel
 from pytorch_pretrained_bert import BertForNextSentencePrediction
 
@@ -32,13 +33,33 @@ class BertEmbedding(nn.Module):
         self.classifier = nn.Linear(config.hidden_size, num_labels)
         nn.init.xavier_normal_(self.classifier.weight)
 
-        # self.mode = 'max-pooling'
-        # self.mode = 'self-attentive'
-        # self.mode = 'self-attentive-mean'
-        # self.mode = 'h-max-pooling'
-        # self.mode = 'bissect'
+        self.clusters = nn.Parameter(torch.randn(num_labels, config.hidden_size).float(), requires_grad=True)
+        self.mapping = nn.Linear(config.hidden_size, num_labels)
+
+        """
+        mode: 
+        'max-pooling'
+        'self-attentive'
+        'self-attentive-mean'
+        'h-max-pooling'
+        'bissect'
+        'normal'
+
+        mode2:
+        'gram'
+        'dot'
+        'dnn'
+        'student'
+        'normal'
+
+        """
         self.mode = 'normal'
-        self.pre = True
+        self.mode2 = 'gram'
+        self.pre = False
+
+        print('Surface encoder mode: ', self.mode)
+        print('Inference mode: ', self.mode2)
+        print('Use pretrained: ', self.pre)
 
         # Self-attentive
         if self.mode == 'self-attentive':
@@ -54,7 +75,7 @@ class BertEmbedding(nn.Module):
         # Load pretrained weights
         if self.pre:
             print('Loading pretrained weights...')
-            pre_model_dict = torch.load('checkpoints/best_woz.pth')
+            pre_model_dict = torch.load('checkpoints/best_e2e_pretrain.pth')
             model_dict = self.bert.state_dict()
             pre_model_dict = {k:v for k, v in pre_model_dict.items() if k in model_dict and v.size() == model_dict[k].size}
             model_dict.update(pre_model_dict)
@@ -71,8 +92,7 @@ class BertEmbedding(nn.Module):
         last_hidden_states, pooled_output, hidden_states, attentions = self.bert(input_ids, token_type_ids=seg_tensors, attention_mask=mask)
 
         pooled_output = self.transform(last_hidden_states, pooled_output, hidden_states, attentions, mask) # (b, h)
-        pooled_output_d = self.dropout(pooled_output)
-        logits = self.classifier(pooled_output_d)
+        logits = self.multi_learn(pooled_output)
 
         return last_hidden_states, pooled_output, logits
         # loss = self.bert(input_ids, attention_mask=mask, labels=labels)
@@ -152,7 +172,67 @@ class BertEmbedding(nn.Module):
             pooled_output = pooled_output
             
         return pooled_output
-            
+
+    def multi_learn(self, pooled_output):
+    
+        if self.mode2 == 'gram':
+            gram = torch.mm(self.clusters, self.clusters.permute(1,0)) # (n, n)
+            weights = torch.mm(pooled_output, self.clusters.permute(1,0))
+            weights = torch.mm(weights, torch.inverse(gram))
+            pooled_output = torch.mm(weights, self.clusters) # (b, h)
+        
+        elif self.mode2 == 'dot':
+            weights = torch.mm(pooled_output, self.clusters.permute(1,0))
+            pooled_output = torch.mm(weights, self.clusters) # (b, h)
+
+        elif self.mode2 == 'dnn':
+            weights = self.mapping(pooled_output) # (b, n)
+            weights = nn.Tanh()(weights)
+            pooled_output = torch.mm(weights, self.clusters) # (b, h)
+        
+        elif self.mode2 == 'student':
+            self.alpha = 20.0
+            q = 1.0 / (1.0 + (torch.sum(torch.square(pooled_output[:,None,:] - self.clusters), axis=2) / self.alpha))
+            # q = torch.pow(q, (self.alpha + 1.0) / 2.0)
+            q = nn.Softmax(dim=1)(q)
+            # q = q.transpose(1,0) / torch.sum(q, dim=1)
+            # q = q.transpose(1,0)
+            pooled_output = torch.mm(q, self.clusters)
+
+        else:
+            pooled_output = pooled_output
+        
+        pooled_output_d = self.dropout(pooled_output)
+        logits = self.classifier(pooled_output_d)
+
+        return logits
+
+
+class BertForNextSentence(nn.Module):
+    
+    def __init__(self, config, num_labels=2):
+        super(BertForNextSentence, self).__init__()
+        self.device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+        self.num_labels = num_labels
+        self.bert = BertModel.from_pretrained('bert-base-uncased', output_hidden_states=True, output_attentions=True)
+        self.dropout = nn.Dropout(0.1)
+        self.classifier = nn.Linear(config.hidden_size, num_labels)
+        nn.init.xavier_normal_(self.classifier.weight)
+
+    def forward(self, input_ids, mask, seg_tensors=None):
+        """
+        BERT outputs:
+        last_hidden_states: (b, t, h)
+        pooled_output: (b, h), from output of a linear classifier + tanh
+        hidden_states: 13 x (b, t, h), embed to last layer embedding
+        attentions: 12 x (b, num_heads, t, t)
+        """
+        last_hidden_states, pooled_output, hidden_states, attentions = self.bert(input_ids, token_type_ids=seg_tensors, attention_mask=mask)
+
+        pooled_output_d = self.dropout(pooled_output)
+        logits = self.classifier(pooled_output_d)
+
+        return last_hidden_states, pooled_output, logits
 
 
 if __name__ == "__main__":

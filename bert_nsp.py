@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 from torch.optim import Adam, RMSprop
-from pytorch_pretrained_bert import BertTokenizer, BertModel, BertForMaskedLM, BertConfig, BertAdam
+from transformers import BertTokenizer, BertModel, BertConfig, AdamW
 from keras.preprocessing.sequence import pad_sequences
 from sklearn.model_selection import train_test_split
 import pickle
@@ -15,8 +15,8 @@ import numpy as np
 import collections
 import tqdm
 
-from model import BertEmbedding
-from all_data import get_dataloader_dialogue
+from model import BertEmbedding, BertForNextSentence
+from all_data import get_dataloader
 from config import opt
 
 def load_data(X):
@@ -44,6 +44,31 @@ def load_data(X):
         
     return input_ids, attention_masks, segments
 
+def padding(X, seg, mask):
+    X = [i[0] for i in X]
+    seg = [i[0] for i in seg]
+    mask = [i[0] for i in mask]
+    X = pad_sequences(X, maxlen=opt.maxlen, dtype="long", truncating="post", padding="post")
+    seg = pad_sequences(seg, maxlen=opt.maxlen, dtype="long", truncating="post", padding="post")
+    mask = pad_sequences(mask, maxlen=opt.maxlen, dtype="long", truncating="post", padding="post")
+    return X, seg, mask
+
+def calc_score(outputs, labels):
+    corrects = 0
+    totals = 0
+    if opt.data_mode == 'single':
+        corrects += torch.sum(torch.max(outputs, 1)[1] == labels)
+    else:
+        for i, logits in enumerate(outputs):
+            log = torch.sigmoid(logits)
+            correct = (labels[i][torch.where(log>0.5)[0]]).sum()
+            total = len(torch.where(labels[i]==1)[0])
+            corrects += correct
+            totals += total
+    return corrects, totals
+
+#####################################
+
 def train(**kwargs):
     
     # attributes
@@ -54,38 +79,56 @@ def train(**kwargs):
     torch.backends.cudnn.enabled = False
 
     # dataset
-    with open(opt.dic_path, 'rb') as f:
-        dic = pickle.load(f)
-    with open(opt.train_path, 'rb') as f:
-        train_data = pickle.load(f)
-    if opt.test_path:
-        with open(opt.test_path, 'rb') as f:
-            test_data = pickle.load(f)
+    # with open(opt.dic_path, 'rb') as f:
+    #     dic = pickle.load(f)
+    # with open(opt.train_path, 'rb') as f:
+    #     train_data = pickle.load(f)
+    # if opt.test_path:
+    #     with open(opt.test_path, 'rb') as f:
+    #         test_data = pickle.load(f)
 
-    all_data = []
-    dialogue_id = {}
-    dialogue_counter = 0
-    counter = 0
-    for data in train_data:
-        for instance in data:
-            all_data.append(instance)
-            dialogue_id[counter] = dialogue_counter
-            counter += 1
-        dialogue_counter += 1
+    # all_data = []
+    # dialogue_id = {}
+    # dialogue_counter = 0
+    # counter = 0
+    # for data in train_data:
+    #     for instance in data:
+    #         all_data.append(instance)
+    #         dialogue_id[counter] = dialogue_counter
+    #         counter += 1
+    #     dialogue_counter += 1
 
-    X, y = zip(*all_data)
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
+    # X, y = zip(*all_data)
+    # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
     
-    X_train, mask_train, seg_train = load_data(X_train)
-    X_test, mask_test, seg_test = load_data(X_test)
-    train_loader = get_dataloader_dialogue(X_train, y_train, mask_train, seg_train, len(dic), opt)
-    val_loader = get_dataloader_dialogue(X_test, y_test, mask_test, seg_test, len(dic), opt)
+    # X_train, mask_train, seg_train = load_data(X_train)
+    # X_test, mask_test, seg_test = load_data(X_test)
+    # train_loader = get_dataloader_dialogue(X_train, y_train, mask_train, seg_train, len(dic), opt)
+    # val_loader = get_dataloader_dialogue(X_test, y_test, mask_test, seg_test, len(dic), opt)
+
+    # pretrain next-sentence prediction
+    with open("data/e2e_dialogue/dialogue_data_pretrain.pkl", 'rb') as f:
+        e2e_data = pickle.load(f)
+    with open("data/sgd_dialogue/dialogue_data_pretrain.pkl", 'rb') as f:
+        sgd_data = pickle.load(f)
+    all_data = e2e_data + sgd_data
+    #all_data = e2e_data
+    
+    all_train, all_test = train_test_split(all_data, test_size=0.4, random_state=42)
+    
+    X_train, seg_train, mask_train, y_train = zip(*all_train)
+    X_test, seg_test, mask_test, y_test = zip(*all_test)
+    X_train, seg_train, mask_train = padding(X_train, seg_train, mask_train)
+    X_test, seg_test, mask_test = padding(X_test, seg_test, mask_test)
+    
+    train_loader = get_dataloader(X_train, y_train, mask_train, 2, opt, seg_train)
+    val_loader = get_dataloader(X_test, y_test, mask_test, 2, opt, seg_test)
     
     # model
     config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
         num_hidden_layers=12, num_attention_heads=12, intermediate_size=3072)
     
-    model = BertEmbedding(config, len(dic))
+    model = BertForNextSentence(config, 2)
     if opt.model_path:
         model.load_state_dict(torch.load(opt.model_path))
         print("Pretrained model has been loaded.\n")
@@ -101,8 +144,11 @@ def train(**kwargs):
         'weight_decay_rate': 0.0}
     ]
     
-    optimizer = BertAdam(optimizer_grouped_parameters,lr=opt.learning_rate_bert, warmup=.1)
-    criterion = nn.BCEWithLogitsLoss(reduction='sum').to(device)
+    optimizer = AdamW(model.parameters(), weight_decay=0.01, lr=opt.learning_rate_bert)
+    if opt.data_mode == 'single':
+        criterion = nn.CrossEntropyLoss().to(device)
+    else:
+        criterion = nn.BCEWithLogitsLoss(reduction='sum').to(device)
     best_loss = 10000
     best_accuracy = 0
 
@@ -113,6 +159,7 @@ def train(**kwargs):
         # Training Phase
         total_train_loss = 0
         train_corrects = 0
+        totals = 0
         model.train()
         for (captions_t, labels, masks, segs) in tqdm.tqdm(train_loader):
 
@@ -131,19 +178,18 @@ def train(**kwargs):
             optimizer.step()
 
             total_train_loss += train_loss
-            for i, logits in enumerate(outputs):
-                log = logits[torch.where(labels[i]==1)[0]]
-                log = torch.sigmoid(log)
-                log = torch.sum(log) / len(log)
-                train_corrects += log
+            co, to = calc_score(outputs, labels)
+            train_corrects += co
+            totals += to
         
-        num_batches = train_loader.dataset.num_data // opt.batch_size
-        print('Total train loss: {:.4f} '.format(total_train_loss / num_batches))
-        print('Train accuracy: {:.4f}'.format(train_corrects.double() / train_loader.dataset.num_data))
+        train_acc = train_corrects.double() / train_loader.dataset.num_data if opt.data_mode == 'single' else train_corrects.double() / totals
+        print('Average train loss: {:.4f} '.format(total_train_loss / train_loader.dataset.num_data))
+        print('Train accuracy: {:.4f}'.format(train_acc))
 
         # Validation Phase
         total_val_loss = 0
         val_corrects = 0
+        totals = 0
         model.eval()
         for (captions_t, labels, masks, segs) in val_loader:
 
@@ -153,29 +199,28 @@ def train(**kwargs):
             segs = segs.to(device)
             
             with torch.no_grad():
-                _, pooled_output, outputs = model(captions_t, masks, segs)
+                _, pooled_output, outputs = model(captions_t, masks)
             val_loss = criterion(outputs, labels)
 
             total_val_loss += val_loss
-            for i, logits in enumerate(outputs):
-                log = logits[torch.where(labels[i]==1)[0]]
-                log = torch.sigmoid(log)
-                log = torch.sum(log) / len(log)
-                val_corrects += log
-        
-        num_batches = val_loader.dataset.num_data // opt.batch_size
-        val_acc = val_corrects.double() / val_loader.dataset.num_data
-        print('Total val loss: {:.4f} '.format(total_val_loss / num_batches))
+            co, to = calc_score(outputs, labels)
+            val_corrects += co
+            totals += to
+
+        val_acc = val_corrects.double() / val_loader.dataset.num_data if opt.data_mode == 'single' else val_corrects.double() / totals
+        print('Average val loss: {:.4f} '.format(total_val_loss / val_loader.dataset.num_data))
         print('Val accuracy: {:.4f}'.format(val_acc))
-        
         if val_acc > best_accuracy:
-            print('saving with loss of {}'.format(total_val_loss / num_batches),
+            print('saving with loss of {}'.format(total_val_loss),
                   'improved over previous {}'.format(best_loss))
             best_loss = total_val_loss
             best_accuracy = val_acc
-            torch.save(model.state_dict(), 'checkpoints/best_{}.pth'.format(opt.datatype))
+
+            torch.save(model.state_dict(), 'checkpoints/best_{}_pretrain.pth'.format(opt.datatype))
         
         print()
+    print('Best total val loss: {:.4f}'.format(total_val_loss))
+    print('Best Test Accuracy: {:.4f}'.format(best_accuracy))
 
 def test(**kwargs):
 
