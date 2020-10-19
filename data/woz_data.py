@@ -92,6 +92,7 @@ class MULTIWOZData(Data):
         
         dialogues = []
         for key, value in data.items():
+            print('Parsing ', key)
             
             topic = []
             for k, v in value["goal"].items():
@@ -107,19 +108,18 @@ class MULTIWOZData(Data):
             turn_num = 1
             for i, dic in enumerate(value["log"]):
                 if (i+1) % 2 == 0:
-                    texts = self.tokenizer.encode_plus(prev_text, text_pair=turns['utterance'], return_tensors='pt')
+                    texts = self.tokenizer.encode_plus(prev_text, text_pair=dic['text'], return_tensors='pt')
 
                     slot_pairs = []
                     if svs[str(turn_num)] != 'No Annotation':
                         for k,v in svs[str(turn_num)].items():
                             for pair in v:
                                 slot_pairs.append(tuple([k]+pair))
-                    
-                    aintents, slots, values = zip(*slot_pairs)
-                    aintents, aintent2id, acounter = self.build_ids(aintents, aintent2id, acounter)
-                    slots, slot2id, scounter = self.build_ids(slots, slot2id, scounter)
-                    values, value2id, vcounter = self.build_ids(values, value2id, vcounter)
-                    slot_pairs = zip(aintents, slots, values)
+                        aintents, slots, values = zip(*slot_pairs)
+                        aintents, aintent2id, acounter = self.build_ids(aintents, aintent2id, acounter)
+                        slots, slot2id, scounter = self.build_ids(slots, slot2id, scounter)
+                        values, value2id, vcounter = self.build_ids(values, value2id, vcounter)
+                        slot_pairs = list(zip(aintents, slots, values))
 
                     dialogue.append((texts['input_ids'], slot_pairs))
                     turn_num += 1
@@ -212,4 +212,4 @@ if __name__ == "__main__":
     turn_path = "../raw_datasets/MULTIWOZ2.1/dialogue_acts.json"
     rawdata_path = "MULTIWOZ2.1/turns.pkl"
     data = MULTIWOZData(data_path, turn_path, rawdata_path, done=False)
-    print(data['turns'][0])
+    print(data.turn_data_all['turns'][0])
