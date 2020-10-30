@@ -49,15 +49,18 @@ Overview
 - [ ] [MiuLab work](https://www.csie.ntu.edu.tw/~miulab/#home)
 - [ ] [Comparison for task-oriented dialogue system](https://github.com/AtmaHou/Task-Oriented-Dialogue-Research-Progress-Survey)
 - [ ] [Spoken Language Understanding papers](https://paperswithcode.com/task/spoken-language-understanding)
+- [ ] [Dialogue papers](https://paperswithcode.com/task/dialogue)
 
 NLU (Intent + Slot-filling)
 - [x] [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
-- [x] [Multi-intent benchmark1](https://arxiv.org/pdf/2004.10087.pdf)
+- [ ] [Joint task with LSTM](https://www.aclweb.org/anthology/N19-1055.pdf)
+- [ ] [Multi-intent dialogue](https://link.springer.com/article/10.1007%2Fs11042-016-3724-4)
+- [x] [Multi-intent benchmark](https://arxiv.org/pdf/2004.10087.pdf)
 - [x] [Multi-intent detection (multilingual)](http://ajiips.com.au/papers/V17.1/v17n1_5-12.pdf)
 - [ ] [BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
-- [ ] [Joint task with LSTM](https://www.aclweb.org/anthology/N19-1055.pdf)
 - [ ] [New concept for semantic frames](https://www.aclweb.org/anthology/2020.acl-main.186.pdf)
 - [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
+- [ ] [Visual Dialogue](https://arxiv.org/pdf/2005.07493.pdf)
 
 Dialogue State Tracking
 - [ ] [Hidden Information State model](http://mi.eng.cam.ac.uk/~sjy/papers/ygkm10.pdf)
@@ -67,6 +70,7 @@ Dialogue State Tracking
 - [x] [BERT-training1: slot-value & sentence](https://arxiv.org/pdf/2006.01554.pdf)
 - [x] [BERT-training2: direct prediction](https://arxiv.org/pdf/1907.03040.pdf)
 - [x] [BERT-training3: SLU task](https://arxiv.org/pdf/2005.11640v3.pdf): (https://github.com/simplc/WCN-BERT)
+- [x] [BERT-training4: direct prediction2](https://github.com/laituan245/BERT-Dialog-State-Tracking)
 
 NLU+DST
 - [ ] [Joint training](https://drive.google.com/file/d/1I8iU-dLPRnC7ZxTULTso_gwhj4uQJ23U/view)
@@ -82,13 +86,18 @@ NLG
 - [x] [Adaptive Attention for Image Captioning](https://arxiv.org/pdf/1612.01887.pdf) <br>
 - [x] [Visual Attention for Image Captioning](https://arxiv.org/pdf/1502.03044.pdf) <br>
 
+## 4. Label Embedding
+- [ ] [Label embedding](https://reader.elsevier.com/reader/sd/pii/S0031320319300184?token=17658B5D93506DABE37CD07981324BD915C4C626AD0D5EAB9039D9E2397E8A55034D0F7292AFF0AC7B967508AC2822B1)
+- [ ] [Relation Network](https://openaccess.thecvf.com/content_cvpr_2018/papers/Sung_Learning_to_Compare_CVPR_2018_paper.pdf)
+
 ----
 
 
 ## Conferences
-http://www.guide2research.com/topconf/machine-learning
-https://blog.csdn.net/devenlau/article/details/82660886
-https://github.com/lixin4ever/Conference-Acceptance-Rate
+ML conferences1: http://www.guide2research.com/topconf/machine-learning
+ML conferences2: https://blog.csdn.net/devenlau/article/details/82660886
+Acceptance rate: https://github.com/lixin4ever/Conference-Acceptance-Rate
+Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 
 |      Conference     |  Day   | Submission Deadline | Tier |
 | ------------------- | ------ | ------------------- | ---- |
@@ -113,3 +122,4 @@ https://github.com/lixin4ever/Conference-Acceptance-Rate
 |  NAACL-HLT 2021     |  6/6   | 11/23               |  1   |
 |  SIGDIAL 2021       |  7/1   |                     |  2   |
 |  ICML 2021          |  7/18  |                     |  1   |
+|  IWSDS 2021         |        |                     |  2   |
