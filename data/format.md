@@ -35,17 +35,6 @@ xxx_pretrain.pkl: pretrain data
     3. intent2id_multi_with_tokens:
     {intent: (id, tokenized_id)}
 
-## MultiWOZ2.1 (turn-based Dialogue)
-
->
-    1. train_data:
-    Every dialogue:
-    [(sent1+sent2, [domain1, domain2]), 
-     (sent2+sent3, [domain1]),...]
-    
-    2. intent2id:
-    {domain: id}
-
 ## Microsoft e2e-dialogue (utterance-based Dialogue)
 
 >
@@ -58,7 +47,7 @@ xxx_pretrain.pkl: pretrain data
     {intent: id}
 
     3. intent2id_multi:
-    {intent: [id1,id2]}
+    {intent: id}
 
     4. intent2id_multi_with_tokens:
     {intent: (id, tokenized_id)}
@@ -74,13 +63,12 @@ xxx_pretrain.pkl: pretrain data
     2. intent2id:
     {intent: id}
 
-    3. ntent2id_multi:
-    {intent: [id1,id2]}
+    3. intent2id_multi:
+    {intent: id}
 
     4. intent2id_multi_with_tokens:
     {intent: (id, tokenized_id)}
 
-    
     5. turn_data_all = {'turns': all_data_turn,
                         'aintent2id': aintent2id,
                         'request2id': request2id,
@@ -88,8 +76,27 @@ xxx_pretrain.pkl: pretrain data
                         'value2id': value2id}
         all_data_turn: a list of dialogues (turn-level)
         for each dialogue:
-            [(turn1, intents1, requested_slots1, slots1, values1),...
-             (turn2, intents2, requested_slots2, slots2, values2),...]
+            [(turn1, intents1, requested_slots1, slots1, values1, (sent1's data, sent2's data)),...
+             (turn2, intents2, requested_slots2, slots2, values2, (sent1's data, sent2's data)),...]
+
+## MultiWOZ2.1 (turn-based Dialogue)
+
+>
+    1. turn_data_all = {'turns': all_data_turn,
+                        'aintent2id': aintent2id,
+                        'request2id': request2id,
+                        'slot2id': slot2id,
+                        'value2id': value2id}
+    
+    all_data_turn: a list of dialogues (turn-level)
+    [(topic1, dialogue1), (topic2, dialogue2), ...]
+
+    for each dialogue:
+        [(turn1, [(intents1, slots1, values1),
+                  (intents2, slots2, values2)...]
+         (turn2, [(intents1, slots1, values1),
+                  (intents2, slots2, values2)...]
+         ...]
 
 ## Pretrain dataset
 
