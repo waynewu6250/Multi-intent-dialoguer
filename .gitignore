@@ -114,6 +114,7 @@ clustering_results/*.pkl
 
 # Data
 raw_datasets/kvret_dataset_public/
+CHAN-DST/
 
 
 
