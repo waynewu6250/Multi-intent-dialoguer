@@ -4,8 +4,12 @@ class Config:
     # control
     datatype = "e2e"
     data_mode = "multi" #"multi"      # single or multi intent in data
-    sentence_mode = "one" #"two"       # one or two sentence in data
-    retrain = False                    # Reuse trained model weights
+    sentence_mode = "one" #"two"      # one or two sentence in data
+    dialog_data_mode = False         # for dialogue-wise data (A+B)
+    retrain = False                   # Reuse trained model weights
+
+
+
     test_mode = "data" #"user", "data"
 
     if datatype == "atis":
@@ -57,6 +61,8 @@ class Config:
     epochs = 50 #30, 5
     learning_rate_bert = 2e-5
     learning_rate_classifier = 1e-3
+    max_dialog_size = 25 if datatype == "e2e" else 50
+    dialog_batch_size = 100
 
     #################### For Clustering & DCEC ####################
     

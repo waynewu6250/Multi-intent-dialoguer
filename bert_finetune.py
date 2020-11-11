@@ -34,6 +34,7 @@ def calc_score(outputs, labels):
     corrects = 0
     totals = 0
     preds = 0
+    acc = 0
     if opt.data_mode == 'single':
         corrects += torch.sum(torch.max(outputs, 1)[1] == labels)
     else:
@@ -45,7 +46,12 @@ def calc_score(outputs, labels):
             corrects += correct
             totals += total
             preds += pred
-    return corrects, totals, preds
+            
+            p = (torch.where(log>0.5)[0])
+            r = (torch.where(labels[i]==1)[0])
+            if len(p) == len(r) and (p == r).all():
+                acc += 1
+    return corrects, totals, preds, acc
 
 #####################################################################
 
@@ -146,6 +152,7 @@ def train(**kwargs):
         train_corrects = 0
         totals = 0
         preds = 0
+        total_acc = 0
         model.train()
         for (captions_t, labels, masks) in tqdm(train_loader):
 
@@ -163,10 +170,11 @@ def train(**kwargs):
             optimizer.step()
 
             total_train_loss += train_loss
-            co, to, pr = calc_score(outputs, labels)
+            co, to, pr, acc = calc_score(outputs, labels)
             train_corrects += co
             totals += to
             preds += pr
+            total_acc += acc
 
         print('Average train loss: {:.4f} '.format(total_train_loss / train_loader.dataset.num_data))
         if opt.data_mode == 'single':
@@ -177,6 +185,7 @@ def train(**kwargs):
             precision = train_corrects.double() / preds
             f1 = 2 * (precision*recall) / (precision + recall)
             print(f'P = {precision:.4f}, R = {recall:.4f}, F1 = {f1:.4f}')
+            print('Accuracy: ', total_acc/train_loader.dataset.num_data)
         
 
         # Validation Phase
@@ -184,6 +193,7 @@ def train(**kwargs):
         val_corrects = 0
         totals = 0
         preds = 0
+        total_acc = 0
         model.eval()
         for (captions_t, labels, masks) in val_loader:
 
@@ -196,10 +206,11 @@ def train(**kwargs):
             val_loss = criterion(outputs, labels)
 
             total_val_loss += val_loss
-            co, to, pr = calc_score(outputs, labels)
+            co, to, pr, acc = calc_score(outputs, labels)
             val_corrects += co
             totals += to
             preds += pr
+            total_acc += acc
 
         print('Average val loss: {:.4f} '.format(total_val_loss / val_loader.dataset.num_data))
         if opt.data_mode == 'single':
@@ -210,7 +221,9 @@ def train(**kwargs):
             precision = val_corrects.double() / preds
             f1 = 2 * (precision*recall) / (precision + recall)
             print(f'P = {precision:.4f}, R = {recall:.4f}, F1 = {f1:.4f}')
-            val_acc = f1
+            print('Accuracy: ', total_acc/val_loader.dataset.num_data)
+            val_acc = total_acc/val_loader.dataset.num_data
+            
         
         if val_acc > best_accuracy:
             print('saving with loss of {}'.format(total_val_loss),

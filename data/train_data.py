@@ -180,7 +180,7 @@ class SemanticData(Data):
             # raw_data.append((self.text_prepare(text, "Bert"), intent2id[intent]))
 
             # multi intents
-            intents = intents.split('@')
+            intents = [intent.lower().replace('_', ' ') for intent in intents.split('@')]
             for intent in intents:
                 if intent not in intent2id:
                     intent2id[intent] = (counter, self.text_prepare(intent, 'Bert')) #counter

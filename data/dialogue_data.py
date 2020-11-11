@@ -172,10 +172,6 @@ class SGDData(Data):
         acounter = 0
         request2id = {}
         rcounter = 0
-        slot2id = {}
-        scounter = 0
-        value2id = {}
-        vcounter = 0
 
         all_data = []
         all_data_turn = []
@@ -193,6 +189,7 @@ class SGDData(Data):
 
                     # turn data
                     prev_text = 'this is a dummy sentence'
+                    prev_data = ('', '', '')
                     data_turn = []
 
                     for turns in dialogue['turns']:
@@ -235,13 +232,12 @@ class SGDData(Data):
                             encoded = self.tokenizer.encode_plus(prev_text, text_pair=turns['utterance'], return_tensors='pt')
                             aintents, aintent2id, acounter = self.build_ids([turns['frames'][0]['state']['active_intent']], aintent2id, acounter)
                             requests, request2id, rcounter = self.build_ids(turns['frames'][0]['state']['requested_slots'], request2id, rcounter)
-                            slots, slot2id, scounter = self.build_ids(s_turn, slot2id, scounter)
-                            values, value2id, vcounter = self.build_ids(v_turn, value2id, vcounter)
 
-                            data_turn.append((encoded['input_ids'], aintents, requests, slots, values))
+                            data_turn.append((encoded['input_ids'], aintents, requests, s_turn, v_turn, (prev_data, data[-1])))
                             prev_text = turns['utterance']
                         else:
                             prev_text = turns['utterance']
+                            prev_data = data[-1]
 
                     
                     all_data.append(data)
@@ -256,9 +252,7 @@ class SGDData(Data):
             pickle.dump(services, f)
         turn_data_all = {'turns': all_data_turn,
                          'aintent2id': aintent2id,
-                         'request2id': request2id,
-                         'slot2id': slot2id,
-                         'value2id': value2id}
+                         'request2id': request2id}
         with open(self.turn_path, "wb") as f:
             pickle.dump(turn_data_all, f)
         
