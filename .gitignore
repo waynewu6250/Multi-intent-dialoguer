@@ -109,12 +109,17 @@ checkpoints/
 checkpoints-dcec/*.h5
 checkpoints-scbert/*.h5
 raw_datasets/MULTIWOZ2.1/
+raw_datasets/woz2.0
 finetune_results/
 clustering_results/*.pkl
 
 # Data
 raw_datasets/kvret_dataset_public/
+data/*/*.pkl
+sgd_dialogue/dialogue_data_multi.pkl
+semantic/raw_data_multi_se.pkl
 CHAN-DST/
+zst/outputs/
 
 
 

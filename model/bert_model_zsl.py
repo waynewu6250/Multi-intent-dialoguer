@@ -21,6 +21,8 @@ class BertZSL(nn.Module):
         nn.init.xavier_normal_(self.classifier.weight)
 
         self.mapping = nn.Linear(config.hidden_size, num_labels)
+        self.relations1 = nn.Linear(2*config.hidden_size, 10)
+        self.relations2 = nn.Linear(10, 1)
 
         """
         mode: 
@@ -41,7 +43,7 @@ class BertZSL(nn.Module):
 
         """
         self.mode = 'normal'
-        self.mode2 = 'gram'
+        self.mode2 = 'zero-shot'
         self.pre = False
 
         print('Surface encoder mode: ', self.mode)
@@ -178,7 +180,6 @@ class BertZSL(nn.Module):
             weights = self.mapping(pooled_output) # (b, n)
             weights = nn.Tanh()(weights)
             pooled_output = torch.mm(weights, clusters) # (b, h)
-            print(clusters[0])
         
         elif self.mode2 == 'student':
             self.alpha = 20.0
@@ -190,14 +191,27 @@ class BertZSL(nn.Module):
             pooled_output = torch.mm(q, clusters)
         
         elif self.mode2 == 'zero-shot':
-            weights = torch.mm(pooled_output, clusters.permute(1,0)) # (b,n)
-            return -torch.log(torch.sum(torch.sum(weights * labels, dim=1)))
+            gram = torch.mm(clusters, clusters.permute(1,0)) # (n, n)
+            weights = torch.mm(pooled_output, clusters.permute(1,0))
+            weights = torch.mm(weights, torch.inverse(gram)) * np.sqrt(768)
+            return weights
+
+            b, h = pooled_output.shape
+            query = pooled_output.unsqueeze(1).repeat(1, self.num_labels, 1) # b, n, h
+            support = clusters.unsqueeze(0).repeat(b, 1, 1) # b, n, h
+
+            logits = torch.cat([query, support], dim=2)
+            logits = nn.ReLU()(self.relations1(logits))
+            logits = self.relations2(logits)
+            logits = logits.squeeze(2)
+            return logits
 
         else:
             pooled_output = pooled_output
         
         pooled_output_d = self.dropout(pooled_output)
         logits = self.classifier(pooled_output_d)
+        # logits = nn.Sigmoid()(logits)
 
         return logits
 
