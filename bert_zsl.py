@@ -16,7 +16,7 @@ import numpy as np
 import collections
 from tqdm import tqdm
 
-from model import BertZSL
+from model import BertZSL, BertDST
 from all_data import get_dataloader
 from config import opt
 
@@ -34,6 +34,7 @@ def calc_score(outputs, labels):
     corrects = 0
     totals = 0
     preds = 0
+    acc = 0
     if opt.data_mode == 'single':
         corrects += torch.sum(torch.max(outputs, 1)[1] == labels)
     else:
@@ -45,7 +46,12 @@ def calc_score(outputs, labels):
             corrects += correct
             totals += total
             preds += pred
-    return corrects, totals, preds
+            
+            p = (torch.where(log>0.5)[0])
+            r = (torch.where(labels[i]==1)[0])
+            if len(p) == len(r) and (p == r).all():
+                acc += 1
+    return corrects, totals, preds, acc
 
 #####################################################################
 
@@ -72,7 +78,8 @@ def train(**kwargs):
         with open(opt.test_path, 'rb') as f:
             test_data = pickle.load(f)
 
-    
+    X_lengths_train = None
+    X_lengths_test = None
     if opt.datatype == "semantic":
         # Semantic parsing Dataset
         X, y = zip(*train_data)
@@ -80,17 +87,38 @@ def train(**kwargs):
     elif opt.datatype == "e2e" or opt.datatype == "sgd":
         # Microsoft Dialogue Dataset / SGD Dataset
         all_data = []
-        dialogue_id = {}
-        dialogue_counter = 0
-        counter = 0
-        for data in train_data:
-            for instance in data:
-                all_data.append(instance)
-                dialogue_id[counter] = dialogue_counter
-                counter += 1
-            dialogue_counter += 1
-        X, y, _ = zip(*all_data)
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+        if not opt.dialog_data_mode:
+            dialogue_id = {}
+            dialogue_counter = 0
+            counter = 0
+            for data in train_data:
+                for instance in data:
+                    all_data.append(instance)
+                    dialogue_id[counter] = dialogue_counter
+                    counter += 1
+                dialogue_counter += 1
+            X, y, _ = zip(*all_data)
+            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+        else:
+            X_lengths = []
+            for dialog in train_data:
+                X_lengths.extend([len(dialog)]*25)
+                if len(dialog) < opt.max_dialog_size:
+                    pad_num = opt.max_dialog_size-len(dialog)
+                    # Pad dummy sentences
+                    pad = ([101,0,0,102], [0], [0])
+                    dialog.extend([pad]*pad_num)
+                all_data.append(dialog)
+            all_data = [sent for dialog in all_data for sent in dialog]
+            
+            X, y, _ = zip(*all_data)
+            train_num = int(len(train_data)*0.7)*25
+            X_train = X[:train_num]
+            y_train = y[:train_num]
+            X_test = X[train_num:]
+            y_test = y[train_num:]
+            X_lengths_train = X_lengths[:train_num]
+            X_lengths_test = X_lengths[train_num:]
     
     X_train, mask_train = load_data(X_train, opt.maxlen)
     X_test, mask_test = load_data(X_test, opt.maxlen)
@@ -100,8 +128,8 @@ def train(**kwargs):
     # y_train = y_train[:length]
     # mask_train = mask_train[:length]
     
-    train_loader = get_dataloader(X_train, y_train, mask_train, len(dic), opt)
-    val_loader = get_dataloader(X_test, y_test, mask_test, len(dic), opt)
+    train_loader = get_dataloader(X_train, y_train, mask_train, len(dic), opt, X_lengths=X_lengths_train)
+    val_loader = get_dataloader(X_test, y_test, mask_test, len(dic), opt, X_lengths=X_lengths_test)
 
     # label tokens
     intent_tokens = [intent for name, (tag, intent) in dic.items()]
@@ -117,7 +145,11 @@ def train(**kwargs):
     config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
         num_hidden_layers=12, num_attention_heads=12, intermediate_size=3072)
     
-    model = BertZSL(config, len(dic))
+    if not opt.dialog_data_mode:
+        model = BertZSL(config, len(dic))
+    else:
+        model = BertDST(config, opt, len(dic))
+    
     if opt.model_path:
         model.load_state_dict(torch.load(opt.model_path))
         print("Pretrained model has been loaded.\n")
@@ -141,6 +173,7 @@ def train(**kwargs):
         criterion = nn.CrossEntropyLoss().to(device)
     else:
         criterion = nn.BCEWithLogitsLoss(reduction='sum').to(device)
+        # criterion = nn.MSELoss().to(device)
     best_loss = 100
     best_accuracy = 0
 
@@ -153,27 +186,53 @@ def train(**kwargs):
         train_corrects = 0
         totals = 0
         preds = 0
+        total_acc = 0
         model.train()
-        for (captions_t, labels, masks) in tqdm(train_loader):
+        for (captions_t, labels, masks) in tqdm(train_loader): #X_lengths
 
             captions_t = captions_t.to(device)
             labels = labels.to(device)
             masks = masks.to(device)
+            # X_lengths = X_lengths.to(device)
 
             optimizer.zero_grad()
             #train_loss = model(captions_t, masks, labels)
 
-            _, _, outputs = model(captions_t, masks, intent_tokens, mask_tokens, labels)
+            _, _, outputs = model(captions_t, masks, intent_tokens, mask_tokens, labels) #X_lengths
+            # outputs = torch.sigmoid(outputs)
+            # print(outputs)
+            # print(labels)
             train_loss = criterion(outputs, labels)
+            # print(train_loss)
+
+            # Handle padding issue
+            # index = []
+            # for i in range(len(captions_t)):
+            #     if not torch.all(torch.eq(captions_t[i][:4], torch.Tensor([101,0,0,102]).to(device))):
+            #         index.append(i)
+            # labels = labels[index]
+            
+            # idx = torch.arange(0, len(X_lengths), opt.max_dialog_size)
+            # X_lengths = X_lengths[idx]
+            # counter = 0
+            # index2 = [False]*max(X_lengths)*len(X_lengths)
+            # for length in X_lengths:
+            #     for _ in range(length):
+            #         index2[counter] = True
+            #         counter += 1
+            #     counter += (max(X_lengths)-length)
+            # outputs = outputs[index2]
+            # train_loss = criterion(outputs, labels)
 
             train_loss.backward()
             optimizer.step()
 
             total_train_loss += train_loss
-            co, to, pr = calc_score(outputs, labels)
+            co, to, pr, acc = calc_score(outputs, labels)
             train_corrects += co
             totals += to
             preds += pr
+            total_acc += acc
 
         print('Average train loss: {:.4f} '.format(total_train_loss / train_loader.dataset.num_data))
         if opt.data_mode == 'single':
@@ -184,6 +243,7 @@ def train(**kwargs):
             precision = train_corrects.double() / preds
             f1 = 2 * (precision*recall) / (precision + recall)
             print(f'P = {precision:.4f}, R = {recall:.4f}, F1 = {f1:.4f}')
+            print('Accuracy: ', total_acc/train_loader.dataset.num_data)
         
 
         # Validation Phase
@@ -191,22 +251,45 @@ def train(**kwargs):
         val_corrects = 0
         totals = 0
         preds = 0
+        total_acc = 0
         model.eval()
-        for (captions_t, labels, masks) in val_loader:
+        for (captions_t, labels, masks) in val_loader: #X_lengths
 
             captions_t = captions_t.to(device)
             labels = labels.to(device)
             masks = masks.to(device)
+            # X_lengths = X_lengths.to(device)
             
             with torch.no_grad():
-                _, pooled_output, outputs = model(captions_t, masks, intent_tokens, mask_tokens, labels)
+                _, pooled_output, outputs = model(captions_t, masks, intent_tokens, mask_tokens, labels) #X_lengths
+            # outputs = torch.sigmoid(outputs)
             val_loss = criterion(outputs, labels)
+            
+            # Handle padding issue
+            # index = []
+            # for i in range(len(captions_t)):
+            #     if not torch.all(torch.eq(captions_t[i][:4], torch.Tensor([101,0,0,102]).to(device))):
+            #         index.append(i)
+            # labels = labels[index]
+
+            # idx = torch.arange(0, len(X_lengths), opt.max_dialog_size)
+            # X_lengths = X_lengths[idx]
+            # counter = 0
+            # index2 = [False]*max(X_lengths)*len(X_lengths)
+            # for length in X_lengths:
+            #     for _ in range(length):
+            #         index2[counter] = True
+            #         counter += 1
+            #     counter += (max(X_lengths)-length)
+            # outputs = outputs[index2]
+            # val_loss = criterion(outputs, labels)
 
             total_val_loss += val_loss
-            co, to, pr = calc_score(outputs, labels)
+            co, to, pr, acc = calc_score(outputs, labels)
             val_corrects += co
             totals += to
             preds += pr
+            total_acc += acc
 
         print('Average val loss: {:.4f} '.format(total_val_loss / val_loader.dataset.num_data))
         if opt.data_mode == 'single':
@@ -217,7 +300,8 @@ def train(**kwargs):
             precision = val_corrects.double() / preds
             f1 = 2 * (precision*recall) / (precision + recall)
             print(f'P = {precision:.4f}, R = {recall:.4f}, F1 = {f1:.4f}')
-            val_acc = f1
+            print('Accuracy: ', total_acc/val_loader.dataset.num_data)
+            val_acc = total_acc/val_loader.dataset.num_data
         
         if val_acc > best_accuracy:
             print('saving with loss of {}'.format(total_val_loss),

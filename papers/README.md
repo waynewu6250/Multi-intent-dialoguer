@@ -50,7 +50,8 @@ Overview
 - [ ] [Comparison for task-oriented dialogue system](https://github.com/AtmaHou/Task-Oriented-Dialogue-Research-Progress-Survey)
 - [ ] [Spoken Language Understanding papers](https://paperswithcode.com/task/spoken-language-understanding)
 - [ ] [Dialogue papers](https://paperswithcode.com/task/dialogue)
-
+- [ ] [State of the arts](http://nlpprogress.com/english/dialogue.html)
+ 
 NLU (Intent + Slot-filling)
 - [x] [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
 - [ ] [Joint task with LSTM](https://www.aclweb.org/anthology/N19-1055.pdf)
@@ -61,16 +62,17 @@ NLU (Intent + Slot-filling)
 - [ ] [New concept for semantic frames](https://www.aclweb.org/anthology/2020.acl-main.186.pdf)
 - [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
 - [ ] [Visual Dialogue](https://arxiv.org/pdf/2005.07493.pdf)
+- [x] [Out of scope intents](https://www.aclweb.org/anthology/D19-1131.pdf?fbclid=IwAR0mRMf0PQ3IJzD9AeIscsJ6X1DCTWGCIA9dhKCMqagm-0JT64kYo_SJI9s)
 
 Dialogue State Tracking
 - [ ] [Hidden Information State model](http://mi.eng.cam.ac.uk/~sjy/papers/ygkm10.pdf)
 - [ ] [Bayesian update of dialogue state](http://mi.eng.cam.ac.uk/~sjy/papers/thyo10.pdf)
 - [x] [DNN](https://www.aclweb.org/anthology/W13-4073.pdf)
 - [x] [2 LSTM network: slot-value & sentence](https://assets.amazon.science/23/98/80671ef545e4927c1716279a9340/flexible-and-scalable-state-tracking-framework-for-goal-oriented-dialogue-systems.pdf)
-- [x] [BERT-training1: slot-value & sentence](https://arxiv.org/pdf/2006.01554.pdf)
-- [x] [BERT-training2: direct prediction](https://arxiv.org/pdf/1907.03040.pdf)
+- [x] [BERT-training1: slot-value & sentence](https://arxiv.org/pdf/2006.01554.pdf): (https://github.com/smartyfh/CHAN-DST)
+- [x] [BERT-training2: direct prediction](https://arxiv.org/pdf/1907.03040.pdf): (https://github.com/guanlinchao/bert-dst)
 - [x] [BERT-training3: SLU task](https://arxiv.org/pdf/2005.11640v3.pdf): (https://github.com/simplc/WCN-BERT)
-- [x] [BERT-training4: direct prediction2](https://github.com/laituan245/BERT-Dialog-State-Tracking)
+- [x] [BERT-training4: direct prediction2](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
 
 NLU+DST
 - [ ] [Joint training](https://drive.google.com/file/d/1I8iU-dLPRnC7ZxTULTso_gwhj4uQJ23U/view)
