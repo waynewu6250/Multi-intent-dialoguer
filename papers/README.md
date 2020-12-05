@@ -73,12 +73,18 @@ Dialogue State Tracking
 - [x] [BERT-training2: direct prediction](https://arxiv.org/pdf/1907.03040.pdf): (https://github.com/guanlinchao/bert-dst)
 - [x] [BERT-training3: SLU task](https://arxiv.org/pdf/2005.11640v3.pdf): (https://github.com/simplc/WCN-BERT)
 - [x] [BERT-training4: direct prediction2](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
+- [ ] [A Simple Language Model for
+Task-Oriented Dialogue]: (https://arxiv.org/pdf/2005.00796.pdf)
+- [ ] [Work from Amazon]: (https://www.amazon.science/author/dilek-hakkani-tur)
 
 NLU+DST
 - [ ] [Joint training](https://drive.google.com/file/d/1I8iU-dLPRnC7ZxTULTso_gwhj4uQJ23U/view)
 
 NLG
 - [x] [Natural Language Generation](https://pdfs.semanticscholar.org/728e/18fbf00f5a80e9a070db4f4416d66c7b28f4.pdf)
+
+Evaluation
+- [ ] [Efficient evaluation of dialogue](https://www.amazon.science/publications/efficient-evaluation-of-task-oriented-dialogue-systems)
 
 
 
