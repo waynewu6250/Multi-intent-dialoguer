@@ -51,6 +51,8 @@ Overview
 - [ ] [Spoken Language Understanding papers](https://paperswithcode.com/task/spoken-language-understanding)
 - [ ] [Dialogue papers](https://paperswithcode.com/task/dialogue)
 - [ ] [State of the arts](http://nlpprogress.com/english/dialogue.html)
+- [ ] [Work from Amazon Tur](https://www.amazon.science/author/dilek-hakkani-tur)
+- [ ] [Work from Amazon Science](https://www.aboutamazon.com/news/aws/meet-alexas-speech-coach)
  
 NLU (Intent + Slot-filling)
 - [x] [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
@@ -73,9 +75,7 @@ Dialogue State Tracking
 - [x] [BERT-training2: direct prediction](https://arxiv.org/pdf/1907.03040.pdf): (https://github.com/guanlinchao/bert-dst)
 - [x] [BERT-training3: SLU task](https://arxiv.org/pdf/2005.11640v3.pdf): (https://github.com/simplc/WCN-BERT)
 - [x] [BERT-training4: direct prediction2](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
-- [ ] [A Simple Language Model for
-Task-Oriented Dialogue]: (https://arxiv.org/pdf/2005.00796.pdf)
-- [ ] [Work from Amazon]: (https://www.amazon.science/author/dilek-hakkani-tur)
+- [ ] [A Simple Language Model for Task-Oriented Dialogue](https://arxiv.org/pdf/2005.00796.pdf)
 
 NLU+DST
 - [ ] [Joint training](https://drive.google.com/file/d/1I8iU-dLPRnC7ZxTULTso_gwhj4uQJ23U/view)
@@ -85,6 +85,12 @@ NLG
 
 Evaluation
 - [ ] [Efficient evaluation of dialogue](https://www.amazon.science/publications/efficient-evaluation-of-task-oriented-dialogue-systems)
+
+Intent Clustering
+- [ ] [Dialog intent Induction](https://arxiv.org/pdf/1908.11487.pdf)
+- [ ] [DM using intent clustering](https://onlinelibrary.wiley.com/doi/epdf/10.1111/exsy.12630)
+- [ ] [Semi-supervised clustering using deep metric learning and graph embedding](https://www.researchgate.net/publication/335382603_Semi-supervised_clustering_with_deep_metric_learning_and_graph_embedding)
+
 
 
 
@@ -111,6 +117,8 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 | ------------------- | ------ | ------------------- | ---- |
 |  IJCAI 2021         |  8/21  | 1/12 (1/18)         |  1   |
 |  ICDM 2021          |  7/14  | 1/15                |  2   |
+|  SIGDIAL 2021       |  7/29  | 1/15                |  2   |
+|  ICML 2021          |  7/18  | 1/28 (2/4)          |  1   |
 |  ACL-IJCNLP 2021    |  8/1   | 2/1                 |  1   |
 |  SIGIR 2021         |  7/11  | 2/2 (2/9)           |  1   |
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |
@@ -128,6 +136,4 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  ICASSP 2021        |  6/6   | 10/21               |  1   |
 |  CVPR 2021          |  7/21  | 11/16               |  1   |
 |  NAACL-HLT 2021     |  6/6   | 11/23               |  1   |
-|  SIGDIAL 2021       |  7/1   |                     |  2   |
-|  ICML 2021          |  7/18  |                     |  1   |
 |  IWSDS 2021         |        |                     |  2   |
