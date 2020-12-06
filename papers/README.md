@@ -108,9 +108,9 @@ Intent Clustering
 
 
 ## Conferences
-ML conferences1: http://www.guide2research.com/topconf/machine-learning
-ML conferences2: https://blog.csdn.net/devenlau/article/details/82660886
-Acceptance rate: https://github.com/lixin4ever/Conference-Acceptance-Rate
+ML conferences1: http://www.guide2research.com/topconf/machine-learning <br>
+ML conferences2: https://blog.csdn.net/devenlau/article/details/82660886 <br>
+Acceptance rate: https://github.com/lixin4ever/Conference-Acceptance-Rate <br>
 Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 
 |      Conference     |  Day   | Submission Deadline | Tier |
