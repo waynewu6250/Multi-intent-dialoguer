@@ -115,9 +115,8 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 
 |      Conference     |  Day   | Submission Deadline | Tier |
 | ------------------- | ------ | ------------------- | ---- |
-|  IJCAI 2021         |  8/21  | 1/12 (1/18)         |  1   |
+|  IJCAI 2021         |  8/21  | 1/13 (1/20)         |  1   |
 |  ICDM 2021          |  7/14  | 1/15                |  2   |
-|  SIGDIAL 2021       |  7/29  | 1/15                |  2   |
 |  ICML 2021          |  7/18  | 1/28 (2/4)          |  1   |
 |  ACL-IJCNLP 2021    |  8/1   | 2/1                 |  1   |
 |  SIGIR 2021         |  7/11  | 2/2 (2/9)           |  1   |
@@ -126,6 +125,7 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  UAI 2021           |  8/3   | 2/20                |  2   |
 |  ICCV 2021          |  10/10 | 3/17                |  1   |
 |  Interspeech 2021   |  8/30  | 3/26                |  1   |
+|  SIGDIAL 2021       |  7/29  | 4/2                 |  2   |
 |  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |
 |  EMNLP 2021         |  11/7  | 6/3                 |  1   |
 |  SLT 2021           |  1/19  | 8/14                |  2   |
