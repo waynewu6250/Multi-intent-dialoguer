@@ -51,8 +51,6 @@ Overview
 - [ ] [Spoken Language Understanding papers](https://paperswithcode.com/task/spoken-language-understanding)
 - [ ] [Dialogue papers](https://paperswithcode.com/task/dialogue)
 - [ ] [State of the arts](http://nlpprogress.com/english/dialogue.html)
-- [ ] [Work from Amazon Tur](https://www.amazon.science/author/dilek-hakkani-tur)
-- [ ] [Work from Amazon Science](https://www.aboutamazon.com/news/aws/meet-alexas-speech-coach)
  
 NLU (Intent + Slot-filling)
 - [x] [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
@@ -87,7 +85,7 @@ Evaluation
 - [ ] [Efficient evaluation of dialogue](https://www.amazon.science/publications/efficient-evaluation-of-task-oriented-dialogue-systems)
 
 Intent Clustering
-- [ ] [Dialog intent Induction](https://arxiv.org/pdf/1908.11487.pdf)
+- [ ] [Dialog intent Induction](https://arxiv.org/pdf/1908.11487.pdf): (https://github.com/asappresearch/dialog-intent-induction)
 - [ ] [DM using intent clustering](https://onlinelibrary.wiley.com/doi/epdf/10.1111/exsy.12630)
 - [ ] [Semi-supervised clustering using deep metric learning and graph embedding](https://www.researchgate.net/publication/335382603_Semi-supervised_clustering_with_deep_metric_learning_and_graph_embedding)
 
@@ -103,6 +101,13 @@ Intent Clustering
 ## 4. Label Embedding
 - [ ] [Label embedding](https://reader.elsevier.com/reader/sd/pii/S0031320319300184?token=17658B5D93506DABE37CD07981324BD915C4C626AD0D5EAB9039D9E2397E8A55034D0F7292AFF0AC7B967508AC2822B1)
 - [ ] [Relation Network](https://openaccess.thecvf.com/content_cvpr_2018/papers/Sung_Learning_to_Compare_CVPR_2018_paper.pdf)
+
+## 5. Amazon Science in Conversational AI
+- [ ] [Work from Alexa](https://www.amazon.science/publications?f0=0000016e-2ff0-da81-a5ef-3ff057f10000&s=0)
+- [ ] [Work from Interspeech](https://www.amazon.science/conferences-and-events/interspeech-2020)
+- [ ] [Work from Alexa Speech](https://www.aboutamazon.com/news/aws/meet-alexas-speech-coach)
+- [ ] [Work from Hakkani-Tur](https://www.amazon.science/author/dilek-hakkani-tur)
+
 
 ----
 
