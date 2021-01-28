@@ -54,7 +54,11 @@ Overview
  
 NLU (Intent + Slot-filling)
 - [x] [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
+- [ ] [Intent detection overview](https://iopscience.iop.org/article/10.1088/1742-6596/1267/1/012059)
+- [ ] [Intent detection with dual sentence encoders](https://arxiv.org/abs/2003.04807)
 - [ ] [Joint task with LSTM](https://www.aclweb.org/anthology/N19-1055.pdf)
+- [ ] [Joint task with interrelated model](https://www.aclweb.org/anthology/P19-1544.pdf)
+- [ ] [Joint task with CM-Net](https://arxiv.org/abs/1909.06937)
 - [ ] [Multi-intent dialogue](https://link.springer.com/article/10.1007%2Fs11042-016-3724-4)
 - [x] [Multi-intent benchmark](https://arxiv.org/pdf/2004.10087.pdf)
 - [x] [Multi-intent detection (multilingual)](http://ajiips.com.au/papers/V17.1/v17n1_5-12.pdf)
@@ -63,6 +67,14 @@ NLU (Intent + Slot-filling)
 - [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
 - [ ] [Visual Dialogue](https://arxiv.org/pdf/2005.07493.pdf)
 - [x] [Out of scope intents](https://www.aclweb.org/anthology/D19-1131.pdf?fbclid=IwAR0mRMf0PQ3IJzD9AeIscsJ6X1DCTWGCIA9dhKCMqagm-0JT64kYo_SJI9s)
+
+Zero-shot
+- [ ] [Zero-shot Overview](https://arxiv.org/pdf/1707.00600.pdf)
+- [ ] [Zero-shot Intent detection: capsule network](https://www.aclweb.org/anthology/D18-1348.pdf)
+- [ ] [Zero-shot Intent detection: capsule network 2](https://www.aclweb.org/anthology/D19-1486.pdf)
+- [ ] [Zero-shot via reading comprehension](http://nlp.cs.washington.edu/zeroshot/)
+- [ ] [Zero-shot disentangled intent representation](https://arxiv.org/pdf/2012.01721.pdf)
+
 
 Dialogue State Tracking
 - [ ] [Hidden Information State model](http://mi.eng.cam.ac.uk/~sjy/papers/ygkm10.pdf)
@@ -88,6 +100,9 @@ Intent Clustering
 - [ ] [Dialog intent Induction](https://arxiv.org/pdf/1908.11487.pdf): (https://github.com/asappresearch/dialog-intent-induction)
 - [ ] [DM using intent clustering](https://onlinelibrary.wiley.com/doi/epdf/10.1111/exsy.12630)
 - [ ] [Semi-supervised clustering using deep metric learning and graph embedding](https://www.researchgate.net/publication/335382603_Semi-supervised_clustering_with_deep_metric_learning_and_graph_embedding)
+
+Text-to-SQL
+- [ ] [Text-to-SQL](https://arxiv.org/pdf/2012.10309v1.pdf)
 
 
 
@@ -126,8 +141,8 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  ACL-IJCNLP 2021    |  8/1   | 2/1                 |  1   |
 |  SIGIR 2021         |  7/11  | 2/2 (2/9)           |  1   |
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |
-|  KDD 2021           |  8/14  | 2/13                |  1   |
-|  UAI 2021           |  8/3   | 2/20                |  2   |
+|  KDD 2021           |  8/14  | 2/8                 |  1   |
+|  UAI 2021           |  8/3   | 2/19                |  2   |
 |  ICCV 2021          |  10/10 | 3/17                |  1   |
 |  Interspeech 2021   |  8/30  | 3/26                |  1   |
 |  SIGDIAL 2021       |  7/29  | 4/2                 |  2   |
