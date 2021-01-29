@@ -54,6 +54,14 @@ Overview
  
 NLU (Intent + Slot-filling)
 - [x] [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
+- [ ] [Intent detection overview](https://iopscience.iop.org/article/10.1088/1742-6596/1267/1/012059)
+- [ ] [Intent detection with dual sentence encoders](https://arxiv.org/abs/2003.04807)
+- [ ] [Joint task with LSTM](https://www.aclweb.org/anthology/N19-1055.pdf)
+- [ ] [Joint task with interrelated model](https://www.aclweb.org/anthology/P19-1544.pdf)
+- [ ] [Joint task with CM-Net](https://arxiv.org/abs/1909.06937)
+- [ ] [Multi-intent dialogue](https://link.springer.com/article/10.1007%2Fs11042-016-3724-4)
+- [x] [Multi-intent benchmark](https://arxiv.org/pdf/2004.10087.pdf)
+- [x] [Multi-intent detection (multilingual)](http://ajiips.com.au/papers/V17.1/v17n1_5-12.pdf)
 - [ ] [BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
 - [ ] [New concept for semantic frames](https://www.aclweb.org/anthology/2020.acl-main.186.pdf)
 - [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
@@ -67,6 +75,14 @@ Multi-intent
 - [x] [Out of scope intents](https://www.aclweb.org/anthology/D19-1131.pdf?fbclid=IwAR0mRMf0PQ3IJzD9AeIscsJ6X1DCTWGCIA9dhKCMqagm-0JT64kYo_SJI9s)
 - [ ] [Multi-intent clustering]()
 
+Zero-shot
+- [ ] [Zero-shot Overview](https://arxiv.org/pdf/1707.00600.pdf)
+- [ ] [Zero-shot Intent detection: capsule network](https://www.aclweb.org/anthology/D18-1348.pdf)
+- [ ] [Zero-shot Intent detection: capsule network 2](https://www.aclweb.org/anthology/D19-1486.pdf)
+- [ ] [Zero-shot via reading comprehension](http://nlp.cs.washington.edu/zeroshot/)
+- [ ] [Zero-shot disentangled intent representation](https://arxiv.org/pdf/2012.01721.pdf)
+
+
 Dialogue State Tracking
 - [ ] [Hidden Information State model](http://mi.eng.cam.ac.uk/~sjy/papers/ygkm10.pdf)
 - [ ] [Bayesian update of dialogue state](http://mi.eng.cam.ac.uk/~sjy/papers/thyo10.pdf)
@@ -78,13 +94,29 @@ Dialogue State Tracking
 - [x] [DSTQA](https://arxiv.org/pdf/1911.06192.pdf): (https://github.com/alexa/dstqa)
 - [x] [CHAN-DST](https://arxiv.org/pdf/2006.01554.pdf): (https://github.com/smartyfh/CHAN-DST)
 - [x] [SLU](https://arxiv.org/pdf/2005.11640v3.pdf): (https://github.com/simplc/WCN-BERT)
-
+- [x] [BERT-training1: slot-value & sentence](https://arxiv.org/pdf/2006.01554.pdf): (https://github.com/smartyfh/CHAN-DST)
+- [x] [BERT-training2: direct prediction](https://arxiv.org/pdf/1907.03040.pdf): (https://github.com/guanlinchao/bert-dst)
+- [x] [BERT-training3: SLU task](https://arxiv.org/pdf/2005.11640v3.pdf): (https://github.com/simplc/WCN-BERT)
+- [x] [BERT-training4: direct prediction2](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
+- [ ] [A Simple Language Model for Task-Oriented Dialogue](https://arxiv.org/pdf/2005.00796.pdf)
 
 NLU+DST
 - [ ] [Joint training](https://drive.google.com/file/d/1I8iU-dLPRnC7ZxTULTso_gwhj4uQJ23U/view)
 
 NLG
 - [x] [Natural Language Generation](https://pdfs.semanticscholar.org/728e/18fbf00f5a80e9a070db4f4416d66c7b28f4.pdf)
+
+Evaluation
+- [ ] [Efficient evaluation of dialogue](https://www.amazon.science/publications/efficient-evaluation-of-task-oriented-dialogue-systems)
+
+Intent Clustering
+- [ ] [Dialog intent Induction](https://arxiv.org/pdf/1908.11487.pdf): (https://github.com/asappresearch/dialog-intent-induction)
+- [ ] [DM using intent clustering](https://onlinelibrary.wiley.com/doi/epdf/10.1111/exsy.12630)
+- [ ] [Semi-supervised clustering using deep metric learning and graph embedding](https://www.researchgate.net/publication/335382603_Semi-supervised_clustering_with_deep_metric_learning_and_graph_embedding)
+
+Text-to-SQL
+- [ ] [Text-to-SQL](https://arxiv.org/pdf/2012.10309v1.pdf)
+
 
 
 
@@ -97,6 +129,13 @@ NLG
 ## 4. Label Embedding
 - [ ] [Label embedding](https://reader.elsevier.com/reader/sd/pii/S0031320319300184?token=17658B5D93506DABE37CD07981324BD915C4C626AD0D5EAB9039D9E2397E8A55034D0F7292AFF0AC7B967508AC2822B1)
 - [ ] [Relation Network](https://openaccess.thecvf.com/content_cvpr_2018/papers/Sung_Learning_to_Compare_CVPR_2018_paper.pdf)
+
+## 5. Amazon Science in Conversational AI
+- [ ] [Work from Alexa](https://www.amazon.science/publications?f0=0000016e-2ff0-da81-a5ef-3ff057f10000&s=0)
+- [ ] [Work from Interspeech](https://www.amazon.science/conferences-and-events/interspeech-2020)
+- [ ] [Work from Alexa Speech](https://www.aboutamazon.com/news/aws/meet-alexas-speech-coach)
+- [ ] [Work from Hakkani-Tur](https://www.amazon.science/author/dilek-hakkani-tur)
+
 
 ----
 
@@ -111,7 +150,7 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |      Conference     |  Day   | Submission Deadline | Tier |
 | ------------------- | ------ | ------------------- | ---- |
 |  IWSDS 2021         |  5/18  | 1/10 (temp)         |  2   |
-|  IJCAI 2021         |  8/21  | 1/12 (1/18)         |  1   |
+|  IJCAI 2021         |  8/21  | 1/13 (1/20)         |  1   |
 |  ICDM 2021          |  7/14  | 1/15                |  2   |
 |  ICML 2021          |  7/18  | 1/28 (2/4)          |  1   |
 |  ACL-IJCNLP 2021    |  8/1   | 2/1                 |  1   |
@@ -119,12 +158,12 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  KDD 2021           |  8/14  | 2/8                 |  1   |
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |
 |  UAI 2021           |  8/3   | 2/20                |  2   |
-|  SIGDIAL 2021       |  7/1   | 3/6 (temp)          |  2   |
 |  ICCV 2021          |  10/10 | 3/17                |  1   |
 |  KR 2021            |  11/6  | 3/24 (3/31)         |  2   |
 |  ECML PKDD 2021     |  9/13  | 3/26 (4/2)          |  2   |
 |  Interspeech 2021   |  8/30  | 3/26                |  1   |
 |  RANLP 2021         |  9/6   | 5/15                |  2   |
+|  SIGDIAL 2021       |  7/29  | 4/2                 |  2   |
 |  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |
 |  EMNLP 2021 (CONLL) |  11/7  | 6/3                 |  1   |
 |  SLT 2021           |  1/19  | 8/14                |  2   |
@@ -136,4 +175,6 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  ICASSP 2021        |  6/6   | 10/21               |  1   |
 |  CVPR 2021          |  7/21  | 11/16               |  1   |
 |  NAACL-HLT 2021     |  6/6   | 11/23               |  1   |
+|  IWSDS 2021         |        |                     |  2   |
 ACML
+
