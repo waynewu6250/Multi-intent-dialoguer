@@ -54,25 +54,31 @@ Overview
  
 NLU (Intent + Slot-filling)
 - [x] [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
-- [ ] [Joint task with LSTM](https://www.aclweb.org/anthology/N19-1055.pdf)
-- [ ] [Multi-intent dialogue](https://link.springer.com/article/10.1007%2Fs11042-016-3724-4)
-- [x] [Multi-intent benchmark](https://arxiv.org/pdf/2004.10087.pdf)
-- [x] [Multi-intent detection (multilingual)](http://ajiips.com.au/papers/V17.1/v17n1_5-12.pdf)
 - [ ] [BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
 - [ ] [New concept for semantic frames](https://www.aclweb.org/anthology/2020.acl-main.186.pdf)
 - [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
 - [ ] [Visual Dialogue](https://arxiv.org/pdf/2005.07493.pdf)
+
+Multi-intent
+- [ ] [Joint task with LSTM](https://www.aclweb.org/anthology/N19-1055.pdf)
+- [x] [Multi-intent detection (multilingual)](http://ajiips.com.au/papers/V17.1/v17n1_5-12.pdf)
+- [ ] [Multi-intent dialogue](https://link.springer.com/article/10.1007%2Fs11042-016-3724-4)
+- [x] [Multi-intent benchmark](https://arxiv.org/pdf/2004.10087.pdf): (https://github.com/LooperXX/AGIF)
 - [x] [Out of scope intents](https://www.aclweb.org/anthology/D19-1131.pdf?fbclid=IwAR0mRMf0PQ3IJzD9AeIscsJ6X1DCTWGCIA9dhKCMqagm-0JT64kYo_SJI9s)
+- [ ] [Multi-intent clustering]()
 
 Dialogue State Tracking
 - [ ] [Hidden Information State model](http://mi.eng.cam.ac.uk/~sjy/papers/ygkm10.pdf)
 - [ ] [Bayesian update of dialogue state](http://mi.eng.cam.ac.uk/~sjy/papers/thyo10.pdf)
 - [x] [DNN](https://www.aclweb.org/anthology/W13-4073.pdf)
 - [x] [2 LSTM network: slot-value & sentence](https://assets.amazon.science/23/98/80671ef545e4927c1716279a9340/flexible-and-scalable-state-tracking-framework-for-goal-oriented-dialogue-systems.pdf)
-- [x] [BERT-training1: slot-value & sentence](https://arxiv.org/pdf/2006.01554.pdf): (https://github.com/smartyfh/CHAN-DST)
-- [x] [BERT-training2: direct prediction](https://arxiv.org/pdf/1907.03040.pdf): (https://github.com/guanlinchao/bert-dst)
-- [x] [BERT-training3: SLU task](https://arxiv.org/pdf/2005.11640v3.pdf): (https://github.com/simplc/WCN-BERT)
-- [x] [BERT-training4: direct prediction2](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
+- [x] [BERT-DST](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
+- [x] [BERT-DST-Chao](https://arxiv.org/pdf/1907.03040.pdf): (https://github.com/guanlinchao/bert-dst)
+- [x] [GLAD-RCFS](https://www.aclweb.org/anthology/N19-1057.pdf)
+- [x] [DSTQA](https://arxiv.org/pdf/1911.06192.pdf): (https://github.com/alexa/dstqa)
+- [x] [CHAN-DST](https://arxiv.org/pdf/2006.01554.pdf): (https://github.com/smartyfh/CHAN-DST)
+- [x] [SLU](https://arxiv.org/pdf/2005.11640v3.pdf): (https://github.com/simplc/WCN-BERT)
+
 
 NLU+DST
 - [ ] [Joint training](https://drive.google.com/file/d/1I8iU-dLPRnC7ZxTULTso_gwhj4uQJ23U/view)
@@ -98,30 +104,36 @@ NLG
 ## Conferences
 ML conferences1: http://www.guide2research.com/topconf/machine-learning
 ML conferences2: https://blog.csdn.net/devenlau/article/details/82660886
+ML conferences ranking: https://blog.csdn.net/cpp12341234/article/details/50886540
 Acceptance rate: https://github.com/lixin4ever/Conference-Acceptance-Rate
 Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 
 |      Conference     |  Day   | Submission Deadline | Tier |
 | ------------------- | ------ | ------------------- | ---- |
+|  IWSDS 2021         |  5/18  | 1/10 (temp)         |  2   |
 |  IJCAI 2021         |  8/21  | 1/12 (1/18)         |  1   |
 |  ICDM 2021          |  7/14  | 1/15                |  2   |
+|  ICML 2021          |  7/18  | 1/28 (2/4)          |  1   |
 |  ACL-IJCNLP 2021    |  8/1   | 2/1                 |  1   |
 |  SIGIR 2021         |  7/11  | 2/2 (2/9)           |  1   |
+|  KDD 2021           |  8/14  | 2/8                 |  1   |
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |
-|  KDD 2021           |  8/14  | 2/13                |  1   |
 |  UAI 2021           |  8/3   | 2/20                |  2   |
+|  SIGDIAL 2021       |  7/1   | 3/6 (temp)          |  2   |
 |  ICCV 2021          |  10/10 | 3/17                |  1   |
+|  KR 2021            |  11/6  | 3/24 (3/31)         |  2   |
+|  ECML PKDD 2021     |  9/13  | 3/26 (4/2)          |  2   |
 |  Interspeech 2021   |  8/30  | 3/26                |  1   |
+|  RANLP 2021         |  9/6   | 5/15                |  2   |
 |  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |
-|  EMNLP 2021         |  11/7  | 6/3                 |  1   |
+|  EMNLP 2021 (CONLL) |  11/7  | 6/3                 |  1   |
 |  SLT 2021           |  1/19  | 8/14                |  2   |
 |  AAAI 2021          |  2/2   | 9/1 (9/9)           |  1   |
 |  ICLR 2021          |  5/4   | 10/2                |  1   |
 |  AISTATS 2021       |  4/13  | 10/8 (10/15)        |  2   |
 |  WWW 2021           |  4/19  | 10/12 (10/19)       |  1   |
+|  EACL 2021          |  4/21  | 10/7                |  2   |
 |  ICASSP 2021        |  6/6   | 10/21               |  1   |
 |  CVPR 2021          |  7/21  | 11/16               |  1   |
 |  NAACL-HLT 2021     |  6/6   | 11/23               |  1   |
-|  SIGDIAL 2021       |  7/1   |                     |  2   |
-|  ICML 2021          |  7/18  |                     |  1   |
-|  IWSDS 2021         |        |                     |  2   |
+ACML
