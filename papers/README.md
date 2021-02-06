@@ -38,7 +38,9 @@ Multi turn references
 - [x] [Chatbot Design review](https://thesai.org/Downloads/Volume6No7/Paper_12-Survey_on_Chatbot_Design_Techniques_in_Speech_Conversation_Systems.pdf) <br>
 - [x] [Chatbot Evaluation](https://www.aclweb.org/anthology/W17-5522.pdf) <br>
 - [x] [Systematic review on speech recognition](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8632885) <br>
-- [x] [CNN Model Review](https://towardsdatascience.com/review-ssd-single-shot-detector-object-detection-851a94607d11)
+- [x] [CNN Model Review](https://towardsdatascience.com/review-ssd-single-shot-detector-object-detection-851a94607d11) <br>
+- [ ] [Deep Learning in Spoken and Text-Based Dialog Systems (Book)](https://link.springer.com/chapter/10.1007%2F978-981-10-5209-5_3) <br>
+- [ ] [Pre-trained Models for Natural Language Processing: A Survey](https://arxiv.org/pdf/2003.08271.pdf)
 
 ## 2. Task oriented dialogue system
 
@@ -51,6 +53,7 @@ Overview
 - [ ] [Spoken Language Understanding papers](https://paperswithcode.com/task/spoken-language-understanding)
 - [ ] [Dialogue papers](https://paperswithcode.com/task/dialogue)
 - [ ] [State of the arts](http://nlpprogress.com/english/dialogue.html)
+- [ ] [Meaning representation in NLP (slides)](https://gabrielstanovsky.github.io/assets/invited_talks/job/presentation.pdf)
  
 NLU (Intent + Slot-filling)
 - [x] [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
@@ -66,6 +69,7 @@ NLU (Intent + Slot-filling)
 - [ ] [New concept for semantic frames](https://www.aclweb.org/anthology/2020.acl-main.186.pdf)
 - [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
 - [ ] [Visual Dialogue](https://arxiv.org/pdf/2005.07493.pdf)
+- [ ] [Review of Intent Detection Methods in the Human-Machine Dialogue System](https://iopscience.iop.org/article/10.1088/1742-6596/1267/1/012059/pdf)
 
 Multi-intent
 - [ ] [Joint task with LSTM](https://www.aclweb.org/anthology/N19-1055.pdf)
@@ -73,12 +77,14 @@ Multi-intent
 - [ ] [Multi-intent dialogue](https://link.springer.com/article/10.1007%2Fs11042-016-3724-4)
 - [x] [Multi-intent benchmark](https://arxiv.org/pdf/2004.10087.pdf): (https://github.com/LooperXX/AGIF)
 - [x] [Out of scope intents](https://www.aclweb.org/anthology/D19-1131.pdf?fbclid=IwAR0mRMf0PQ3IJzD9AeIscsJ6X1DCTWGCIA9dhKCMqagm-0JT64kYo_SJI9s)
-- [ ] [Multi-intent clustering]()
 
 Zero-shot
 - [ ] [Zero-shot Overview](https://arxiv.org/pdf/1707.00600.pdf)
-- [ ] [Zero-shot Intent detection: capsule network](https://www.aclweb.org/anthology/D18-1348.pdf)
-- [ ] [Zero-shot Intent detection: capsule network 2](https://www.aclweb.org/anthology/D19-1486.pdf)
+- [x] [CDSSM (embedding match)](https://www.csie.ntu.edu.tw/~yvchen/doc/ICASSP16_ZeroShot.pdf)
+- [x] [Zero-Shot Learning Across Heterogeneous Overlapping Domains (embedding match)](https://assets.amazon.science/5c/3e/0e957e1f4b609c1778e0f5576eb2/zero-shot-learning-across-heterogeneous-overlapping-domains.pdf)
+- [ ] [Zero-shot on word-sense ambiguation (embedding match)](https://www.aclweb.org/anthology/P19-1568.pdf)
+- [x] [Zero-shot Intent detection: capsule network](https://www.aclweb.org/anthology/D18-1348.pdf)
+- [x] [Zero-shot Intent detection: capsule network 2](https://www.aclweb.org/anthology/D19-1486.pdf)
 - [ ] [Zero-shot via reading comprehension](http://nlp.cs.washington.edu/zeroshot/)
 - [ ] [Zero-shot disentangled intent representation](https://arxiv.org/pdf/2012.01721.pdf)
 
@@ -105,9 +111,11 @@ NLU+DST
 
 NLG
 - [x] [Natural Language Generation](https://pdfs.semanticscholar.org/728e/18fbf00f5a80e9a070db4f4416d66c7b28f4.pdf)
+- [ ] [NLG Evaluation survey](https://arxiv.org/pdf/2006.14799.pdf)
 
 Evaluation
 - [ ] [Efficient evaluation of dialogue](https://www.amazon.science/publications/efficient-evaluation-of-task-oriented-dialogue-systems)
+- [ ] [Towards Unified Dialogue System Evaluation: A Comprehensive Analysis of Current Evaluation Protocols](https://arxiv.org/abs/2006.06110)
 
 Intent Clustering
 - [ ] [Dialog intent Induction](https://arxiv.org/pdf/1908.11487.pdf): (https://github.com/asappresearch/dialog-intent-induction)
@@ -117,7 +125,12 @@ Intent Clustering
 Text-to-SQL
 - [ ] [Text-to-SQL](https://arxiv.org/pdf/2012.10309v1.pdf)
 
+Knowledge graph
+- [ ] [Fg2seq: Effectively Encoding Knowledge for End-To-End Task-Oriented Dialog](https://ieeexplore.ieee.org/document/9053667)
+- [ ] [GraphDialog: Integrating Graph Knowledge into End-to-End Task-Oriented Dialogue Systems](https://arxiv.org/pdf/2010.01447.pdf)
 
+Model Analysis (Noise perturbation)
+- [ ] [Do Neural Dialog Systems Use the Conversation History Effectively? An Empirical Study](https://arxiv.org/pdf/1906.01603.pdf)
 
 
 ## 3. Attention Mechanism
@@ -152,8 +165,8 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  IWSDS 2021         |  5/18  | 1/10 (temp)         |  2   |        |
 |  IJCAI 2021         |  8/21  | 1/13 (1/20)         |  1   |        |
 |  ICDM 2021          |  7/14  | 1/15                |  2   |        |
+|  ACL-IJCNLP 2021    |  8/1   | 1/25 (2/1)          |  1   |    v   |
 |  ICML 2021          |  7/18  | 1/28 (2/4)          |  1   |        |
-|  ACL-IJCNLP 2021    |  8/1   | 1/25 (2/8)          |  1   |    s   |
 |  SIGIR 2021         |  7/11  | 2/2 (2/9)           |  1   |        |
 |  KDD 2021           |  8/14  | 2/8                 |  1   |    s   |
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |        |
@@ -163,9 +176,11 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  ECML PKDD 2021     |  9/13  | 3/26 (4/2)          |  2   |        |
 |  Interspeech 2021   |  8/30  | 3/26                |  1   |    t   |
 |  RANLP 2021         |  9/6   | 5/15                |  2   |    t   |
+|  ICMI 2021          |  10/18 | 5/26                |  2   |    t   |
 |  SIGDIAL 2021       |  7/29  | 4/2                 |  2   |    t   |
 |  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |    t   |
 |  EMNLP 2021 (CONLL) |  11/7  | 6/3                 |  1   |    t   |
+|  ASRU 2021          |  12/13 | 7/5                 |  2   |    t   |
 |  SLT 2021           |  1/19  | 8/14                |  2   |    t   |
 |  AAAI 2021          |  2/2   | 9/1 (9/9)           |  1   |    t   |
 |  ICLR 2021          |  5/4   | 10/2                |  1   |    t   |
@@ -178,3 +193,6 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  IWSDS 2021         |        |                     |  2   |        |
 ACML
 
+v: ok
+s: ready to submit
+t: targeted
