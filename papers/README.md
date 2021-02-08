@@ -123,14 +123,14 @@ Intent Clustering
 - [ ] [Semi-supervised clustering using deep metric learning and graph embedding](https://www.researchgate.net/publication/335382603_Semi-supervised_clustering_with_deep_metric_learning_and_graph_embedding)
 
 Text-to-SQL
-- [ ] [Text-to-SQL](https://arxiv.org/pdf/2012.10309v1.pdf)
+- [x] [Text-to-SQL](https://arxiv.org/pdf/2012.10309v1.pdf)
 
 Knowledge graph
 - [ ] [Fg2seq: Effectively Encoding Knowledge for End-To-End Task-Oriented Dialog](https://ieeexplore.ieee.org/document/9053667)
 - [ ] [GraphDialog: Integrating Graph Knowledge into End-to-End Task-Oriented Dialogue Systems](https://arxiv.org/pdf/2010.01447.pdf)
 
 Model Analysis (Noise perturbation)
-- [ ] [Do Neural Dialog Systems Use the Conversation History Effectively? An Empirical Study](https://arxiv.org/pdf/1906.01603.pdf)
+- [x] [Do Neural Dialog Systems Use the Conversation History Effectively? An Empirical Study](https://arxiv.org/pdf/1906.01603.pdf)
 
 
 ## 3. Attention Mechanism
@@ -168,7 +168,7 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  ACL-IJCNLP 2021    |  8/1   | 1/25 (2/1)          |  1   |    v   |
 |  ICML 2021          |  7/18  | 1/28 (2/4)          |  1   |        |
 |  SIGIR 2021         |  7/11  | 2/2 (2/9)           |  1   |        |
-|  KDD 2021           |  8/14  | 2/8                 |  1   |    s   |
+|  KDD 2021           |  8/14  | 2/8                 |  1   |    v   |
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |        |
 |  UAI 2021           |  8/3   | 2/20                |  2   |    t   |
 |  ICCV 2021          |  10/10 | 3/17                |  1   |        |
@@ -183,6 +183,7 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  ASRU 2021          |  12/13 | 7/5                 |  2   |    t   |
 |  SLT 2021           |  1/19  | 8/14                |  2   |    t   |
 |  AAAI 2021          |  2/2   | 9/1 (9/9)           |  1   |    t   |
+|  AAAI student 2021  |  2/2   | 9/18                |  2   |    t   |
 |  ICLR 2021          |  5/4   | 10/2                |  1   |    t   |
 |  AISTATS 2021       |  4/13  | 10/8 (10/15)        |  2   |        |
 |  WWW 2021           |  4/19  | 10/12 (10/19)       |  1   |        |
