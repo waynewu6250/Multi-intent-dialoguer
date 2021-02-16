@@ -58,43 +58,59 @@ Overview
 NLU (Intent + Slot-filling)
 - [x] [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
 - [ ] [Intent detection overview](https://iopscience.iop.org/article/10.1088/1742-6596/1267/1/012059)
-- [ ] [Intent detection with dual sentence encoders](https://arxiv.org/abs/2003.04807)
-- [ ] [Joint task with LSTM](https://www.aclweb.org/anthology/N19-1055.pdf)
+- [ ] [Review of Intent Detection Methods in the Human-Machine Dialogue System](https://iopscience.iop.org/article/10.1088/1742-6596/1267/1/012059/pdf)
+- [x] [Query intent detection with CNN 2016](http://people.cs.pitt.edu/~hashemi/papers/QRUMS2016_HBHashemi.pdf)
+- [x] [Query intent detection with NER, LSTM and similarity 2018](https://ieeexplore.ieee.org/document/8458426)
+- [x] [Intent detection with dual pretrained sentence encoders 2020 (ConvRT)](https://arxiv.org/abs/2003.04807)
+- [x] [Intent detection with siamese network 2020](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9082602)
+- [x] [Slot filling with focus not attention mechanism](https://arxiv.org/pdf/1608.02097.pdf)
+- [x] [Slot filling with TDNN and context embedding](https://www.researchgate.net/publication/342209812_Using_Deep_Time_Delay_Neural_Network_for_Slot_Filling_in_Spoken_Language_Understanding)
 - [ ] [Joint task with interrelated model](https://www.aclweb.org/anthology/P19-1544.pdf)
 - [ ] [Joint task with CM-Net](https://arxiv.org/abs/1909.06937)
-- [ ] [Multi-intent dialogue](https://link.springer.com/article/10.1007%2Fs11042-016-3724-4)
-- [x] [Multi-intent benchmark](https://arxiv.org/pdf/2004.10087.pdf)
-- [x] [Multi-intent detection (multilingual)](http://ajiips.com.au/papers/V17.1/v17n1_5-12.pdf)
-- [ ] [BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
 - [ ] [New concept for semantic frames](https://www.aclweb.org/anthology/2020.acl-main.186.pdf)
-- [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
 - [ ] [Visual Dialogue](https://arxiv.org/pdf/2005.07493.pdf)
-- [ ] [Review of Intent Detection Methods in the Human-Machine Dialogue System](https://iopscience.iop.org/article/10.1088/1742-6596/1267/1/012059/pdf)
 
 Multi-intent
+- [ ] [Two-stage multi-intent 2017](https://link.springer.com/article/10.1007%2Fs11042-016-3724-4)
 - [ ] [Joint task with LSTM](https://www.aclweb.org/anthology/N19-1055.pdf)
 - [x] [Multi-intent detection (multilingual)](http://ajiips.com.au/papers/V17.1/v17n1_5-12.pdf)
-- [ ] [Multi-intent dialogue](https://link.springer.com/article/10.1007%2Fs11042-016-3724-4)
 - [x] [Multi-intent benchmark](https://arxiv.org/pdf/2004.10087.pdf): (https://github.com/LooperXX/AGIF)
-- [x] [Out of scope intents](https://www.aclweb.org/anthology/D19-1131.pdf?fbclid=IwAR0mRMf0PQ3IJzD9AeIscsJ6X1DCTWGCIA9dhKCMqagm-0JT64kYo_SJI9s)
 
-Zero-shot
+
+Zero-shot/Out of domain
 - [ ] [Zero-shot Overview](https://arxiv.org/pdf/1707.00600.pdf)
 - [x] [CDSSM (embedding match)](https://www.csie.ntu.edu.tw/~yvchen/doc/ICASSP16_ZeroShot.pdf)
 - [x] [Zero-Shot Learning Across Heterogeneous Overlapping Domains (embedding match)](https://assets.amazon.science/5c/3e/0e957e1f4b609c1778e0f5576eb2/zero-shot-learning-across-heterogeneous-overlapping-domains.pdf)
-- [ ] [Zero-shot on word-sense ambiguation (embedding match)](https://www.aclweb.org/anthology/P19-1568.pdf)
+- [ ] [Zero-shot Intent detection: word-sense ambiguation (embedding match)](https://www.aclweb.org/anthology/P19-1568.pdf)
 - [x] [Zero-shot Intent detection: capsule network](https://www.aclweb.org/anthology/D18-1348.pdf)
 - [x] [Zero-shot Intent detection: capsule network 2](https://www.aclweb.org/anthology/D19-1486.pdf)
-- [ ] [Zero-shot via reading comprehension](http://nlp.cs.washington.edu/zeroshot/)
-- [ ] [Zero-shot disentangled intent representation](https://arxiv.org/pdf/2012.01721.pdf)
+- [ ] [Zero-shot Intent detection: reading comprehension](http://nlp.cs.washington.edu/zeroshot/)
+- [ ] [Zero-shot Intent detection: disentangled intent representation](https://arxiv.org/pdf/2012.01721.pdf)
+- [x] [Out of scope: intent dataset 2019](https://www.aclweb.org/anthology/D19-1131.pdf?fbclid=IwAR0mRMf0PQ3IJzD9AeIscsJ6X1DCTWGCIA9dhKCMqagm-0JT64kYo_SJI9s)
+- [x] [Out of scope: LMCL, LOF 2019](https://arxiv.org/pdf/1906.00434.pdf)
+- [x] [Out of scope: KL divergence 2020](https://dl.acm.org/doi/pdf/10.1145/3397271.3401318)
 
+NLU+DST
+- [ ] [Joint training](https://drive.google.com/file/d/1I8iU-dLPRnC7ZxTULTso_gwhj4uQJ23U/view)
+
+Context
+
+
+Cross Domain
+- [ ] [Cross Domain DST](https://www.aclweb.org/anthology/P15-2130.pdf)
+
+Pretrain
+- [ ] [BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
+- [ ] [ConvRT](https://arxiv.org/pdf/1911.03688.pdf)
 
 Dialogue State Tracking
 - [ ] [Hidden Information State model](http://mi.eng.cam.ac.uk/~sjy/papers/ygkm10.pdf)
 - [ ] [Bayesian update of dialogue state](http://mi.eng.cam.ac.uk/~sjy/papers/thyo10.pdf)
 - [x] [DNN](https://www.aclweb.org/anthology/W13-4073.pdf)
 - [x] [2 LSTM network: slot-value & sentence](https://assets.amazon.science/23/98/80671ef545e4927c1716279a9340/flexible-and-scalable-state-tracking-framework-for-goal-oriented-dialogue-systems.pdf)
-- [x] [BERT-DST](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
+- [x] [Neural belief tracking](https://arxiv.org/pdf/1606.03777.pdf)
+- [x] [TRADE: generator](https://arxiv.org/pdf/1905.08743.pdf)
+- [x] [BERT-DST 1,0](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
 - [x] [BERT-DST-Chao](https://arxiv.org/pdf/1907.03040.pdf): (https://github.com/guanlinchao/bert-dst)
 - [x] [GLAD-RCFS](https://www.aclweb.org/anthology/N19-1057.pdf)
 - [x] [DSTQA](https://arxiv.org/pdf/1911.06192.pdf): (https://github.com/alexa/dstqa)
@@ -106,21 +122,19 @@ Dialogue State Tracking
 - [x] [BERT-training4: direct prediction2](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
 - [ ] [A Simple Language Model for Task-Oriented Dialogue](https://arxiv.org/pdf/2005.00796.pdf)
 
-NLU+DST
-- [ ] [Joint training](https://drive.google.com/file/d/1I8iU-dLPRnC7ZxTULTso_gwhj4uQJ23U/view)
-
-NLG
-- [x] [Natural Language Generation](https://pdfs.semanticscholar.org/728e/18fbf00f5a80e9a070db4f4416d66c7b28f4.pdf)
-- [ ] [NLG Evaluation survey](https://arxiv.org/pdf/2006.14799.pdf)
-
 Evaluation
 - [ ] [Efficient evaluation of dialogue](https://www.amazon.science/publications/efficient-evaluation-of-task-oriented-dialogue-systems)
 - [ ] [Towards Unified Dialogue System Evaluation: A Comprehensive Analysis of Current Evaluation Protocols](https://arxiv.org/abs/2006.06110)
 
 Intent Clustering
-- [ ] [Dialog intent Induction](https://arxiv.org/pdf/1908.11487.pdf): (https://github.com/asappresearch/dialog-intent-induction)
-- [ ] [DM using intent clustering](https://onlinelibrary.wiley.com/doi/epdf/10.1111/exsy.12630)
+- [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
+- [ ] [Dialog intent Induction with AvKmeans](https://arxiv.org/pdf/1908.11487.pdf): (https://github.com/asappresearch/dialog-intent-induction)
+- [ ] [Dialog management using intent clustering](https://onlinelibrary.wiley.com/doi/epdf/10.1111/exsy.12630)
 - [ ] [Semi-supervised clustering using deep metric learning and graph embedding](https://www.researchgate.net/publication/335382603_Semi-supervised_clustering_with_deep_metric_learning_and_graph_embedding)
+
+NLG
+- [x] [Natural Language Generation](https://pdfs.semanticscholar.org/728e/18fbf00f5a80e9a070db4f4416d66c7b28f4.pdf)
+- [ ] [NLG Evaluation survey](https://arxiv.org/pdf/2006.14799.pdf)
 
 Text-to-SQL
 - [x] [Text-to-SQL](https://arxiv.org/pdf/2012.10309v1.pdf)
@@ -170,30 +184,36 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  SIGIR 2021         |  7/11  | 2/2 (2/9)           |  1   |        |
 |  KDD 2021           |  8/14  | 2/8                 |  1   |    v   |
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |        |
-|  UAI 2021           |  8/3   | 2/20                |  2   |    t   |
-|  ICCV 2021          |  10/10 | 3/17                |  1   |        |
-|  KR 2021            |  11/6  | 3/24 (3/31)         |  2   |    t   |
+|  NAACL SRW          |  6/6   | 2/12                |  w   |        |  
+|  UAI 2021           |  8/3   | 2/20                |  2   |    b   |
+|  ICCV 2021          |  10/10 | 3/17                |  1   |    a   |
+|  KR 2021            |  11/6  | 3/24 (3/31)         |  2   |    b   |
 |  ECML PKDD 2021     |  9/13  | 3/26 (4/2)          |  2   |        |
-|  Interspeech 2021   |  8/30  | 3/26                |  1   |    t   |
-|  RANLP 2021         |  9/6   | 5/15                |  2   |    t   |
-|  ICMI 2021          |  10/18 | 5/26                |  2   |    t   |
-|  SIGDIAL 2021       |  7/29  | 4/2                 |  2   |    t   |
-|  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |    t   |
-|  EMNLP 2021 (CONLL) |  11/7  | 6/3                 |  1   |    t   |
-|  ASRU 2021          |  12/13 | 7/5                 |  2   |    t   |
-|  SLT 2021           |  1/19  | 8/14                |  2   |    t   |
-|  AAAI 2021          |  2/2   | 9/1 (9/9)           |  1   |    t   |
-|  AAAI student 2021  |  2/2   | 9/18                |  2   |    t   |
-|  ICLR 2021          |  5/4   | 10/2                |  1   |    t   |
+|  Interspeech 2021   |  8/30  | 3/26                |  1   |    a   |
+|  [RepL4NLP 2021](https://sites.google.com/view/repl4nlp-2021/call-for-papers?authuser=0)      |  8/5   | 4/26                |  w   |    a   |
+|  [ACL workshop](https://doc2dial.github.io/workshop2021/)                                     |  8/5   | 4/26                |  w   |    a   |
+|  RANLP 2021         |  9/6   | 5/15                |  2   |    a   |
+|  ICMI 2021          |  10/18 | 5/26                |  2   |    b   |
+|  SIGDIAL 2021       |  7/29  | 4/2                 |  2   |    a   |
+|  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |    b   |
+|  EMNLP 2021 (CONLL) |  11/7  | 6/3                 |  1   |    a   |
+|  EMNLP 2021 workshop|  11/7  |                     |  w   |    a   |
+|  IWSDS 2021         |  11/15 |                     |  2   |    a   |
+|  ASRU 2021          |  12/13 | 7/5                 |  2   |    b   |
+|  SLT 2021           |  1/19  | 8/14                |  2   |    a   |
+|  AAAI 2021          |  2/2   | 9/1 (9/9)           |  1   |    a   |
+|  AAAI student 2021  |  2/2   | 9/18                |  2   |    w   |
+|  ICLR 2021          |  5/4   | 10/2                |  1   |    b   |
 |  AISTATS 2021       |  4/13  | 10/8 (10/15)        |  2   |        |
 |  WWW 2021           |  4/19  | 10/12 (10/19)       |  1   |        |
-|  EACL 2021          |  4/21  | 10/7                |  2   |    t   |
-|  ICASSP 2021        |  6/6   | 10/21               |  1   |    t   |
+|  EACL 2021          |  4/21  | 10/7                |  2   |    a   |
+|  ICASSP 2021        |  6/6   | 10/21               |  1   |    a   |
+|  AAAI 2021 workshop |  2/8   | 11/9                |  w   |    w   |
 |  CVPR 2021          |  7/21  | 11/16               |  1   |    t   |
-|  NAACL-HLT 2021     |  6/6   | 11/23               |  1   |    t   |
-|  IWSDS 2021         |        |                     |  2   |        |
+|  NAACL-HLT 2021     |  6/6   | 11/23               |  1   |    a   |
 ACML
 
-v: ok
-s: ready to submit
-t: targeted
+v: ok <br>
+a: first to submit <br>
+b: second to submit <br>
+w: workshop <br>
