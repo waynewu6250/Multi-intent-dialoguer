@@ -54,7 +54,10 @@ Overview
 - [ ] [Dialogue papers](https://paperswithcode.com/task/dialogue)
 - [ ] [State of the arts](http://nlpprogress.com/english/dialogue.html)
 - [ ] [Meaning representation in NLP (slides)](https://gabrielstanovsky.github.io/assets/invited_talks/job/presentation.pdf)
- 
+- [ ] [ConvLab: joint NLU/DST/Policy/Simulator/NLG benchmark](https://github.com/thu-coai/Convlab-2)
+
+### 1) NLU
+
 NLU (Intent + Slot-filling)
 - [x] [NLU services comparison](https://www.aclweb.org/anthology/W17-5522.pdf)
 - [ ] [Intent detection overview](https://iopscience.iop.org/article/10.1088/1742-6596/1267/1/012059)
@@ -63,11 +66,17 @@ NLU (Intent + Slot-filling)
 - [x] [Query intent detection with NER, LSTM and similarity 2018](https://ieeexplore.ieee.org/document/8458426)
 - [x] [Intent detection with dual pretrained sentence encoders 2020 (ConvRT)](https://arxiv.org/abs/2003.04807)
 - [x] [Intent detection with siamese network 2020](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9082602)
-- [x] [Slot filling with focus not attention mechanism](https://arxiv.org/pdf/1608.02097.pdf)
-- [x] [Slot filling with TDNN and context embedding](https://www.researchgate.net/publication/342209812_Using_Deep_Time_Delay_Neural_Network_for_Slot_Filling_in_Spoken_Language_Understanding)
+- [x] [Slot filling with knowledge K-SAN 2016](https://www.csie.ntu.edu.tw/~yvchen/doc/SLT16_SyntaxSemantics.pdf)
+- [x] [Slot filling with focus not attention mechanism 2017](https://arxiv.org/pdf/1608.02097.pdf)
+- [x] [Slot filling with TDNN and context embedding 2020](https://www.researchgate.net/publication/342209812_Using_Deep_Time_Delay_Neural_Network_for_Slot_Filling_in_Spoken_Language_Understanding)
+- [x] [Slot filling with sparse attention 2017](https://arxiv.org/pdf/1709.10191.pdf)
+- [x] [Slot filling with three label embedding 2020](https://arxiv.org/pdf/2003.09831.pdf)
+- [x] [Joint task with BERT+self attention+intent/slot attention 2019](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8907842)
+- [x] [Joint task with BERT+self attention+slot gating+CRF 2020](https://dl.acm.org/doi/pdf/10.1145/3379247.3379266)
+- [x] [Joint task with graph LSTM 2020](https://ojs.aaai.org//index.php/AAAI/article/view/6499)
+- [x] [Joint task with CM-Net 2020](https://arxiv.org/abs/1909.06937)
 - [ ] [Joint task with interrelated model](https://www.aclweb.org/anthology/P19-1544.pdf)
-- [ ] [Joint task with CM-Net](https://arxiv.org/abs/1909.06937)
-- [ ] [New concept for semantic frames](https://www.aclweb.org/anthology/2020.acl-main.186.pdf)
+- [x] [New concept for semantic frames](https://www.aclweb.org/anthology/2020.acl-main.186.pdf)
 - [ ] [Visual Dialogue](https://arxiv.org/pdf/2005.07493.pdf)
 
 Multi-intent
@@ -76,12 +85,11 @@ Multi-intent
 - [x] [Multi-intent detection (multilingual)](http://ajiips.com.au/papers/V17.1/v17n1_5-12.pdf)
 - [x] [Multi-intent benchmark](https://arxiv.org/pdf/2004.10087.pdf): (https://github.com/LooperXX/AGIF)
 
-
 Zero-shot/Out of domain
 - [ ] [Zero-shot Overview](https://arxiv.org/pdf/1707.00600.pdf)
 - [x] [CDSSM (embedding match)](https://www.csie.ntu.edu.tw/~yvchen/doc/ICASSP16_ZeroShot.pdf)
 - [x] [Zero-Shot Learning Across Heterogeneous Overlapping Domains (embedding match)](https://assets.amazon.science/5c/3e/0e957e1f4b609c1778e0f5576eb2/zero-shot-learning-across-heterogeneous-overlapping-domains.pdf)
-- [ ] [Zero-shot Intent detection: word-sense ambiguation (embedding match)](https://www.aclweb.org/anthology/P19-1568.pdf)
+- [x] [Zero-shot Intent detection: word-sense ambiguation (embedding match)](https://www.aclweb.org/anthology/P19-1568.pdf)
 - [x] [Zero-shot Intent detection: capsule network](https://www.aclweb.org/anthology/D18-1348.pdf)
 - [x] [Zero-shot Intent detection: capsule network 2](https://www.aclweb.org/anthology/D19-1486.pdf)
 - [ ] [Zero-shot Intent detection: reading comprehension](http://nlp.cs.washington.edu/zeroshot/)
@@ -94,33 +102,23 @@ NLU+DST
 - [ ] [Joint training](https://drive.google.com/file/d/1I8iU-dLPRnC7ZxTULTso_gwhj4uQJ23U/view)
 
 Context
-
+- [x] [Context on joint task](https://ieeexplore.ieee.org/document/6639291)
+- [x] [Context on joint task: knowledge graph](https://ieeexplore.ieee.org/document/9006162)
+- [x] [Context on joint task: CASA-NLU, DiSAN](https://arxiv.org/pdf/1909.08705.pdf)s
 
 Cross Domain
-- [ ] [Cross Domain DST](https://www.aclweb.org/anthology/P15-2130.pdf)
+- [x] [Cross Domain slot filling](https://arxiv.org/pdf/2003.09831.pdf)
+- [x] [Cross Domain DST-delexicalised RNN](https://www.aclweb.org/anthology/P15-2130.pdf)
+- [x] [Cross Domain DST-graph attention network](https://ojs.aaai.org//index.php/AAAI/article/view/6250)
 
 Pretrain
 - [ ] [BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
-- [ ] [ConvRT](https://arxiv.org/pdf/1911.03688.pdf)
+- [ ] [ConveRT](https://arxiv.org/pdf/1911.03688.pdf)
 
-Dialogue State Tracking
-- [ ] [Hidden Information State model](http://mi.eng.cam.ac.uk/~sjy/papers/ygkm10.pdf)
-- [ ] [Bayesian update of dialogue state](http://mi.eng.cam.ac.uk/~sjy/papers/thyo10.pdf)
-- [x] [DNN](https://www.aclweb.org/anthology/W13-4073.pdf)
-- [x] [2 LSTM network: slot-value & sentence](https://assets.amazon.science/23/98/80671ef545e4927c1716279a9340/flexible-and-scalable-state-tracking-framework-for-goal-oriented-dialogue-systems.pdf)
-- [x] [Neural belief tracking](https://arxiv.org/pdf/1606.03777.pdf)
-- [x] [TRADE: generator](https://arxiv.org/pdf/1905.08743.pdf)
-- [x] [BERT-DST 1,0](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
-- [x] [BERT-DST-Chao](https://arxiv.org/pdf/1907.03040.pdf): (https://github.com/guanlinchao/bert-dst)
-- [x] [GLAD-RCFS](https://www.aclweb.org/anthology/N19-1057.pdf)
-- [x] [DSTQA](https://arxiv.org/pdf/1911.06192.pdf): (https://github.com/alexa/dstqa)
-- [x] [CHAN-DST](https://arxiv.org/pdf/2006.01554.pdf): (https://github.com/smartyfh/CHAN-DST)
-- [x] [SLU](https://arxiv.org/pdf/2005.11640v3.pdf): (https://github.com/simplc/WCN-BERT)
-- [x] [BERT-training1: slot-value & sentence](https://arxiv.org/pdf/2006.01554.pdf): (https://github.com/smartyfh/CHAN-DST)
-- [x] [BERT-training2: direct prediction](https://arxiv.org/pdf/1907.03040.pdf): (https://github.com/guanlinchao/bert-dst)
-- [x] [BERT-training3: SLU task](https://arxiv.org/pdf/2005.11640v3.pdf): (https://github.com/simplc/WCN-BERT)
-- [x] [BERT-training4: direct prediction2](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
-- [ ] [A Simple Language Model for Task-Oriented Dialogue](https://arxiv.org/pdf/2005.00796.pdf)
+Memory
+- [x] [Hetereogenous memory network](https://arxiv.org/pdf/1909.11287.pdf)
+- [x] [Mem2seq](https://arxiv.org/pdf/1901.04713.pdf)
+- [x] [Global-to-local memory pointer network](https://arxiv.org/pdf/1901.04713.pdf)
 
 Evaluation
 - [ ] [Efficient evaluation of dialogue](https://www.amazon.science/publications/efficient-evaluation-of-task-oriented-dialogue-systems)
@@ -132,9 +130,36 @@ Intent Clustering
 - [ ] [Dialog management using intent clustering](https://onlinelibrary.wiley.com/doi/epdf/10.1111/exsy.12630)
 - [ ] [Semi-supervised clustering using deep metric learning and graph embedding](https://www.researchgate.net/publication/335382603_Semi-supervised_clustering_with_deep_metric_learning_and_graph_embedding)
 
+### 2) DST
+
+Dialogue State Tracking
+- [ ] [Hidden Information State model](http://mi.eng.cam.ac.uk/~sjy/papers/ygkm10.pdf)
+- [ ] [Bayesian update of dialogue state](http://mi.eng.cam.ac.uk/~sjy/papers/thyo10.pdf)
+- [x] [DNN](https://www.aclweb.org/anthology/W13-4073.pdf)
+- [x] [2 LSTM network: slot-value & sentence](https://assets.amazon.science/23/98/80671ef545e4927c1716279a9340/flexible-and-scalable-state-tracking-framework-for-goal-oriented-dialogue-systems.pdf)
+- [x] [Neural belief tracking](https://arxiv.org/pdf/1606.03777.pdf)
+- [x] [BERT-DST: 1,0](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
+- [x] [BERT-DST: Chao](https://arxiv.org/pdf/1907.03040.pdf): (https://github.com/guanlinchao/bert-dst)
+- [x] [BERT-DST: context GLAD-RCFS](https://www.aclweb.org/anthology/N19-1057.pdf)
+- [x] [BERT-DST: TRADE generator](https://arxiv.org/pdf/1905.08743.pdf)
+- [x] [BERT-DST: DSTQA](https://arxiv.org/pdf/1911.06192.pdf): (https://github.com/alexa/dstqa)
+- [x] [BERT-DST: CHAN-DST](https://arxiv.org/pdf/2006.01554.pdf): (https://github.com/smartyfh/CHAN-DST)
+- [x] [BERT-DST: WCN-SLU](https://arxiv.org/pdf/2005.11640v3.pdf): (https://github.com/simplc/WCN-BERT)
+- [x] [BERT-training1: slot-value & sentence](https://arxiv.org/pdf/2006.01554.pdf): (https://github.com/smartyfh/CHAN-DST)
+- [x] [BERT-training2: direct prediction](https://arxiv.org/pdf/1907.03040.pdf): (https://github.com/guanlinchao/bert-dst)
+- [x] [BERT-training3: SLU task](https://arxiv.org/pdf/2005.11640v3.pdf): (https://github.com/simplc/WCN-BERT)
+- [x] [BERT-training4: direct prediction2](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9053975): (https://github.com/laituan245/BERT-Dialog-State-Tracking)
+- [ ] [A Simple Language Model for Task-Oriented Dialogue](https://arxiv.org/pdf/2005.00796.pdf)
+
+### 3) NLG
+
 NLG
 - [x] [Natural Language Generation](https://pdfs.semanticscholar.org/728e/18fbf00f5a80e9a070db4f4416d66c7b28f4.pdf)
 - [ ] [NLG Evaluation survey](https://arxiv.org/pdf/2006.14799.pdf)
+- [x] [NLG: ZSDG mapping 2018](https://arxiv.org/pdf/1801.06176.pdf)
+- [x] [NLG: SC-GPT few shot 2020](https://arxiv.org/pdf/2002.12328.pdf)
+
+### 4) Others
 
 Text-to-SQL
 - [x] [Text-to-SQL](https://arxiv.org/pdf/2012.10309v1.pdf)
@@ -156,6 +181,7 @@ Model Analysis (Noise perturbation)
 ## 4. Label Embedding
 - [ ] [Label embedding](https://reader.elsevier.com/reader/sd/pii/S0031320319300184?token=17658B5D93506DABE37CD07981324BD915C4C626AD0D5EAB9039D9E2397E8A55034D0F7292AFF0AC7B967508AC2822B1)
 - [ ] [Relation Network](https://openaccess.thecvf.com/content_cvpr_2018/papers/Sung_Learning_to_Compare_CVPR_2018_paper.pdf)
+- [x] [Meta Dataset](https://arxiv.org/pdf/1903.03096.pdf)
 
 ## 5. Amazon Science in Conversational AI
 - [ ] [Work from Alexa](https://www.amazon.science/publications?f0=0000016e-2ff0-da81-a5ef-3ff057f10000&s=0)
@@ -186,6 +212,7 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |        |
 |  NAACL SRW          |  6/6   | 2/12                |  w   |        |  
 |  UAI 2021           |  8/3   | 2/20                |  2   |    b   |
+| ------------------- | ------ | ------------------- | ---- | ------ |
 |  ICCV 2021          |  10/10 | 3/17                |  1   |    a   |
 |  KR 2021            |  11/6  | 3/24 (3/31)         |  2   |    b   |
 |  ECML PKDD 2021     |  9/13  | 3/26 (4/2)          |  2   |        |
@@ -212,6 +239,8 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  CVPR 2021          |  7/21  | 11/16               |  1   |    t   |
 |  NAACL-HLT 2021     |  6/6   | 11/23               |  1   |    a   |
 ACML
+IEEE transactions on audio, speech and language processing
+ICCDE 3
 
 v: ok <br>
 a: first to submit <br>
