@@ -10,7 +10,7 @@ Single turn
       : single intent + entity <br>
 - [x] [SNIPS](https://github.com/waynewu6250/Multi-intent-dialoguer/tree/master/raw_datasets/SNIPS)
       : add 'and' to be multi intents + entity <br>
-- [x] [TOP semantic parsing](https://github.com/waynewu6250/Multi-intent-dialoguer/blob/master/raw_datasets/top-dataset-semantic-parsing/train.tsv)
+- [x] [TOP semantic parsing](https://www.aclweb.org/anthology/D18-1300/)
       : multi intents + entity <br>
 
 Multi turn
@@ -77,6 +77,7 @@ NLU (Intent + Slot-filling)
 - [x] [Joint task with CM-Net 2020](https://arxiv.org/abs/1909.06937)
 - [ ] [Joint task with interrelated model](https://www.aclweb.org/anthology/P19-1544.pdf)
 - [x] [New concept for semantic frames](https://www.aclweb.org/anthology/2020.acl-main.186.pdf)
+- [ ] [Semantic machines](https://arxiv.org/abs/2009.11423)
 - [ ] [Visual Dialogue](https://arxiv.org/pdf/2005.07493.pdf)
 
 Multi-intent
@@ -104,7 +105,7 @@ NLU+DST
 Context
 - [x] [Context on joint task](https://ieeexplore.ieee.org/document/6639291)
 - [x] [Context on joint task: knowledge graph](https://ieeexplore.ieee.org/document/9006162)
-- [x] [Context on joint task: CASA-NLU, DiSAN](https://arxiv.org/pdf/1909.08705.pdf)s
+- [x] [Context on joint task: CASA-NLU, DiSAN](https://arxiv.org/pdf/1909.08705.pdf)
 
 Cross Domain
 - [x] [Cross Domain slot filling](https://arxiv.org/pdf/2003.09831.pdf)
@@ -116,9 +117,10 @@ Pretrain
 - [ ] [ConveRT](https://arxiv.org/pdf/1911.03688.pdf)
 
 Memory
-- [x] [Hetereogenous memory network](https://arxiv.org/pdf/1909.11287.pdf)
+- [x] [HMN: Hetereogenous memory network](https://arxiv.org/pdf/1909.11287.pdf)
 - [x] [Mem2seq](https://arxiv.org/pdf/1901.04713.pdf)
-- [x] [Global-to-local memory pointer network](https://arxiv.org/pdf/1901.04713.pdf)
+- [x] [GLMP: Global-to-local memory pointer network](https://arxiv.org/pdf/1901.04713.pdf)
+- [x] [QA with Freebase](https://arxiv.org/pdf/1506.02075.pdf)
 
 Evaluation
 - [ ] [Efficient evaluation of dialogue](https://www.amazon.science/publications/efficient-evaluation-of-task-oriented-dialogue-systems)
