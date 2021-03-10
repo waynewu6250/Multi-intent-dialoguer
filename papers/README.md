@@ -169,6 +169,7 @@ Text-to-SQL
 Knowledge graph
 - [ ] [Fg2seq: Effectively Encoding Knowledge for End-To-End Task-Oriented Dialog](https://ieeexplore.ieee.org/document/9053667)
 - [ ] [GraphDialog: Integrating Graph Knowledge into End-to-End Task-Oriented Dialogue Systems](https://arxiv.org/pdf/2010.01447.pdf)
+- [x] [Effective Utilization of External Knowledge and History Context in Multi-turn Spoken Language Understanding Model](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9006162)
 
 Model Analysis (Noise perturbation)
 - [x] [Do Neural Dialog Systems Use the Conversation History Effectively? An Empirical Study](https://arxiv.org/pdf/1906.01603.pdf)
@@ -216,6 +217,7 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  UAI 2021           |  8/3   | 2/20                |  2   |    b   |
 | ------------------- | ------ | ------------------- | ---- | ------ |
 |  ICCV 2021          |  10/10 | 3/17                |  1   |    a   |
+|  [NAACL multimodal](https://alvr-workshop.github.io/)   |  6/11  | 3/22                |  w   |    a   |
 |  KR 2021            |  11/6  | 3/24 (3/31)         |  2   |    b   |
 |  ECML PKDD 2021     |  9/13  | 3/26 (4/2)          |  2   |        |
 |  Interspeech 2021   |  8/30  | 3/26                |  1   |    a   |
