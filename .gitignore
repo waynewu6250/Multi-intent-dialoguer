@@ -120,6 +120,10 @@ sgd_dialogue/dialogue_data_multi.pkl
 semantic/raw_data_multi_se.pkl
 CHAN-DST/
 zst/outputs/
+*.tsv
+*.pkl
+data/semantic/intent2id_multi_se.pkl
+data/semantic/raw_data_multi_se.pkl
 
 
 
