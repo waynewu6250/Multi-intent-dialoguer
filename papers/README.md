@@ -55,6 +55,7 @@ Overview
 - [ ] [State of the arts](http://nlpprogress.com/english/dialogue.html)
 - [ ] [Meaning representation in NLP (slides)](https://gabrielstanovsky.github.io/assets/invited_talks/job/presentation.pdf)
 - [ ] [ConvLab: joint NLU/DST/Policy/Simulator/NLG benchmark](https://github.com/thu-coai/Convlab-2)
+- [ ] [System overall experimental evaluation review](https://arxiv.org/pdf/2005.07362.pdf)
 
 ### 1) NLU
 
@@ -203,6 +204,7 @@ ML conferences ranking: https://blog.csdn.net/cpp12341234/article/details/508865
 Acceptance rate: https://github.com/lixin4ever/Conference-Acceptance-Rate
 Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 
+Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |      Conference     |  Day   | Submission Deadline | Tier | Target |
 | ------------------- | ------ | ------------------- | ---- | ------ |
 |  IWSDS 2021         |  5/18  | 1/10 (temp)         |  2   |        |
@@ -221,13 +223,14 @@ Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 |  KR 2021            |  11/6  | 3/24 (3/31)         |  2   |    b   |
 |  ECML PKDD 2021     |  9/13  | 3/26 (4/2)          |  2   |        |
 |  Interspeech 2021   |  8/30  | 3/26                |  1   |    a   |
+|  SIGDIAL 2021       |  7/29  | 4/2                 |  2   |    a   |
+|  ACL student        |  8/1   | 4/2                 |  2   |    a   |
 |  [RepL4NLP 2021](https://sites.google.com/view/repl4nlp-2021/call-for-papers?authuser=0)      |  8/5   | 4/26                |  w   |    a   |
 |  [ACL workshop](https://doc2dial.github.io/workshop2021/)                                     |  8/5   | 4/26                |  w   |    a   |
+|  EMNLP 2021 (CONLL) |  11/7  | 5/10 (5/17)         |  1   |    a   |
 |  RANLP 2021         |  9/6   | 5/15                |  2   |    a   |
 |  ICMI 2021          |  10/18 | 5/26                |  2   |    b   |
-|  SIGDIAL 2021       |  7/29  | 4/2                 |  2   |    a   |
 |  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |    b   |
-|  EMNLP 2021 (CONLL) |  11/7  | 6/3                 |  1   |    a   |
 |  EMNLP 2021 workshop|  11/7  |                     |  w   |    a   |
 |  IWSDS 2021         |  11/15 |                     |  2   |    a   |
 |  ASRU 2021          |  12/13 | 7/5                 |  2   |    b   |
