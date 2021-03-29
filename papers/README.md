@@ -126,6 +126,7 @@ Memory
 Evaluation
 - [ ] [Efficient evaluation of dialogue](https://www.amazon.science/publications/efficient-evaluation-of-task-oriented-dialogue-systems)
 - [ ] [Towards Unified Dialogue System Evaluation: A Comprehensive Analysis of Current Evaluation Protocols](https://arxiv.org/abs/2006.06110)
+- [ ] [User satisfaction model](https://arxiv.org/pdf/1908.07064.pdf)
 
 Intent Clustering
 - [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
@@ -217,20 +218,21 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |        |
 |  NAACL SRW          |  6/6   | 2/12                |  w   |        |  
 |  UAI 2021           |  8/3   | 2/20                |  2   |    b   |
-| ------------------- | ------ | ------------------- | ---- | ------ |
 |  ICCV 2021          |  10/10 | 3/17                |  1   |    a   |
 |  [NAACL multimodal](https://alvr-workshop.github.io/)   |  6/11  | 3/22                |  w   |    a   |
 |  KR 2021            |  11/6  | 3/24 (3/31)         |  2   |    b   |
 |  ECML PKDD 2021     |  9/13  | 3/26 (4/2)          |  2   |        |
-|  Interspeech 2021   |  8/30  | 3/26                |  1   |    a   |
+| ------------------- | ------ | ------------------- | ---- | ------ |
+|  Interspeech 2021   |  8/30  | 3/26 (4/2)          |  1   |    a   |
 |  SIGDIAL 2021       |  7/29  | 4/2                 |  2   |    a   |
 |  ACL student        |  8/1   | 4/2                 |  2   |    a   |
 |  [RepL4NLP 2021](https://sites.google.com/view/repl4nlp-2021/call-for-papers?authuser=0)      |  8/5   | 4/26                |  w   |    a   |
 |  [ACL workshop](https://doc2dial.github.io/workshop2021/)                                     |  8/5   | 4/26                |  w   |    a   |
-|  EMNLP 2021 (CONLL) |  11/7  | 5/10 (5/17)         |  1   |    a   |
+|  EMNLP 2021         |  11/7  | 5/10 (5/17)         |  1   |    a   |
 |  RANLP 2021         |  9/6   | 5/15                |  2   |    a   |
 |  ICMI 2021          |  10/18 | 5/26                |  2   |    b   |
 |  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |    b   |
+|  CoNLL 2021         |  11/10 | 6/14                |  2   |    a   |
 |  EMNLP 2021 workshop|  11/7  |                     |  w   |    a   |
 |  IWSDS 2021         |  11/15 |                     |  2   |    a   |
 |  ASRU 2021          |  12/13 | 7/5                 |  2   |    b   |
