@@ -107,11 +107,15 @@ Context
 - [x] [Context on joint task](https://ieeexplore.ieee.org/document/6639291)
 - [x] [Context on joint task: knowledge graph](https://ieeexplore.ieee.org/document/9006162)
 - [x] [Context on joint task: CASA-NLU, DiSAN](https://arxiv.org/pdf/1909.08705.pdf)
+- [x] [Context on DST](https://www.aclweb.org/anthology/N19-1057.pdf)
+- [x] [DiSAN](https://arxiv.org/pdf/1709.04696.pdf)
 
-Cross Domain
+Cross Domain/lingual
 - [x] [Cross Domain slot filling](https://arxiv.org/pdf/2003.09831.pdf)
 - [x] [Cross Domain DST-delexicalised RNN](https://www.aclweb.org/anthology/P15-2130.pdf)
 - [x] [Cross Domain DST-graph attention network](https://ojs.aaai.org//index.php/AAAI/article/view/6250)
+- [x] [Cross Lingual Pretraining SLU](https://isca-speech.org/archive/Interspeech_2020/pdfs/0059.pdf)
+- [x] [Cross Lingual transfer learning on SLU](https://www.aclweb.org/anthology/N19-1380.pdf)
 
 Pretrain
 - [ ] [BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
@@ -129,8 +133,11 @@ Evaluation
 - [ ] [User satisfaction model](https://arxiv.org/pdf/1908.07064.pdf)
 
 Intent Clustering
-- [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
-- [ ] [Dialog intent Induction with AvKmeans](https://arxiv.org/pdf/1908.11487.pdf): (https://github.com/asappresearch/dialog-intent-induction)
+- [x] [Quora Intent supervised clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
+- [x] [Dialog intent Induction with AvKmeans](https://arxiv.org/pdf/1908.11487.pdf): (https://github.com/asappresearch/dialog-intent-induction)
+- [x] [Deep align clustering on intents](https://arxiv.org/pdf/2012.08987.pdf)
+- [x] [Iter-DBSCAN on intents](https://www.aclweb.org/anthology/2020.coling-main.366.pdf)
+- [x] [Intra/inter context/response clustering](https://www.aclweb.org/anthology/2020.coling-main.437.pdf)
 - [ ] [Dialog management using intent clustering](https://onlinelibrary.wiley.com/doi/epdf/10.1111/exsy.12630)
 - [ ] [Semi-supervised clustering using deep metric learning and graph embedding](https://www.researchgate.net/publication/335382603_Semi-supervised_clustering_with_deep_metric_learning_and_graph_embedding)
 
@@ -219,15 +226,16 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  NAACL SRW          |  6/6   | 2/12                |  w   |        |  
 |  UAI 2021           |  8/3   | 2/20                |  2   |    b   |
 |  ICCV 2021          |  10/10 | 3/17                |  1   |    a   |
-|  [NAACL multimodal](https://alvr-workshop.github.io/)   |  6/11  | 3/22                |  w   |    a   |
+|  [NAACL multimodal](https://alvr-workshop.github.io/)                                                           |  6/11  | 3/22                |  w   |    a   |
 |  KR 2021            |  11/6  | 3/24 (3/31)         |  2   |    b   |
 |  ECML PKDD 2021     |  9/13  | 3/26 (4/2)          |  2   |        |
 | ------------------- | ------ | ------------------- | ---- | ------ |
-|  Interspeech 2021   |  8/30  | 3/26 (4/2)          |  1   |    a   |
+|  Interspeech 2021   |  8/30  | 3/26 (4/2)          |  1   |    v   | (target)
 |  SIGDIAL 2021       |  7/29  | 4/2                 |  2   |    a   |
-|  ACL student        |  8/1   | 4/2                 |  2   |    a   |
-|  [RepL4NLP 2021](https://sites.google.com/view/repl4nlp-2021/call-for-papers?authuser=0)      |  8/5   | 4/26                |  w   |    a   |
-|  [ACL workshop](https://doc2dial.github.io/workshop2021/)                                     |  8/5   | 4/26                |  w   |    a   |
+|  ACL student        |  8/1   | 4/2                 |  w   |    a   | (target)
+|  [ACL workshop conv AI](https://sites.google.com/view/2ndnlp4convai/home)                                       |  8/1   | 4/17                |  w   |    a   |  (target)
+|  [RepL4NLP 2021](https://sites.google.com/view/repl4nlp-2021/call-for-papers?authuser=0)                        |  8/5   | 4/26                |  w   |    a   |
+|  [ACL workshop grounded dialogue](https://doc2dial.github.io/workshop2021/)                                     |  8/5   | 4/26                |  w   |    a   |
 |  EMNLP 2021         |  11/7  | 5/10 (5/17)         |  1   |    a   |
 |  RANLP 2021         |  9/6   | 5/15                |  2   |    a   |
 |  ICMI 2021          |  10/18 | 5/26                |  2   |    b   |

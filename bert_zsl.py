@@ -77,13 +77,16 @@ def train(**kwargs):
     if opt.test_path:
         with open(opt.test_path, 'rb') as f:
             test_data = pickle.load(f)
+    #train_data = train_data+test_data[:50]
 
     X_lengths_train = None
     X_lengths_test = None
     if opt.datatype == "semantic":
         # Semantic parsing Dataset
-        X, y = zip(*train_data)
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+        X_train, y_train = zip(*train_data)
+        X_test, y_test = zip(*test_data)
+        #X, y = zip(*train_data)
+        #X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
     elif opt.datatype == "e2e" or opt.datatype == "sgd":
         # Microsoft Dialogue Dataset / SGD Dataset
         all_data = []
@@ -119,6 +122,10 @@ def train(**kwargs):
             y_test = y[train_num:]
             X_lengths_train = X_lengths[:train_num]
             X_lengths_test = X_lengths[train_num:]
+    elif 'mix' in opt.datatype:
+        # Mix dataset
+        X_train, y_train, _ = zip(*train_data)
+        X_test, y_test, _ = zip(*test_data)
     
     X_train, mask_train = load_data(X_train, opt.maxlen)
     X_test, mask_test = load_data(X_test, opt.maxlen)
@@ -328,18 +335,20 @@ def test(**kwargs):
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     torch.backends.cudnn.enabled = False
 
-    print('Dataset to use: ', opt.train_path)
-    print('Dictionary to use: ', opt.dic_path)
+    print('Dataset to use: ', opt.test_path)
+    print('Dictionary to use: ', opt.dic_path_with_tokens)
 
     # dataset
-    with open(opt.dic_path, 'rb') as f:
+    with open(opt.dic_path_with_tokens, 'rb') as f:
         dic = pickle.load(f)
-    reverse_dic = {v: k for k,v in dic.items()}
-    with open(opt.train_path, 'rb') as f:
-        train_data = pickle.load(f)
-    if opt.test_path:
-        with open(opt.test_path, 'rb') as f:
-            test_data = pickle.load(f)
+    # with open(opt.dic_path_with_tokens_test, 'rb') as f:
+    #     dic = pickle.load(f)
+    print(dic)
+    #print(dic)
+    reverse_dic = {v[0]: k for k,v in dic.items()}
+    with open(opt.test_path, 'rb') as f:
+        test_data = pickle.load(f)
+        #test_data = test_data[50:]
 
     if opt.datatype == "atis":
         # ATIS Dataset
@@ -347,8 +356,9 @@ def test(**kwargs):
         X_test, y_test, _ = zip(*test_data)
     elif opt.datatype == "semantic":
         # Semantic parsing Dataset
-        X, y = zip(*train_data)
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+        # X, y = zip(*test_data)
+        # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+        X_test, y_test = zip(*test_data)
     elif opt.datatype == "e2e" or opt.datatype == "sgd":
         # Microsoft Dialogue Dataset / SGD Dataset
         all_data = []
@@ -363,18 +373,35 @@ def test(**kwargs):
             dialogue_counter += 1
         X, y, _ = zip(*all_data)
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+    elif 'mix' in opt.datatype:
+        # Mix dataset
+        X_test, y_test, _ = zip(*test_data)
 
-    X_train, mask_train = load_data(X_train)
-    X_test, mask_test = load_data(X_test)
+    #X_train, mask_train = load_data(X_train, opt.maxlen)
+    X_test, mask_test = load_data(X_test, opt.maxlen)
+
+    # label tokens
+    intent_tokens = [intent for name, (tag, intent) in dic.items()]
+    intent_tok, mask_tok = load_data(intent_tokens, 10)
+    intent_tokens = torch.zeros(len(intent_tok), 10).long().to(device)
+    mask_tokens = torch.zeros(len(mask_tok), 10).long().to(device)
+    for i in range(len(intent_tok)):
+        intent_tokens[i] = torch.tensor(intent_tok[i])
+    for i in range(len(mask_tok)):
+        mask_tokens[i] = torch.tensor(mask_tok[i])
     
     # model
     config = BertConfig(vocab_size_or_config_json_file=32000, hidden_size=768,
         num_hidden_layers=12, num_attention_heads=12, intermediate_size=3072)
     
-    model = BertEmbedding(config, len(dic))
+    if not opt.dialog_data_mode:
+        model = BertZSL(config, len(dic))
+    else:
+        model = BertDST(config, opt, len(dic))
+
     if opt.model_path:
         model.load_state_dict(torch.load(opt.model_path))
-        print("Pretrained model has been loaded.\n")
+        print("Pretrained model {} has been loaded.".format(opt.model_path))
     model = model.to(device)
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
 
@@ -407,6 +434,38 @@ def test(**kwargs):
 
         torch.save(results, embedding_path)
     
+    # Run zero-shot validation
+    elif opt.test_mode == "validation":
+
+        test_loader = get_dataloader(X_test, y_test, mask_test, len(dic), opt)
+        
+        val_corrects = 0
+        totals = 0
+        preds = 0
+        total_acc = 0
+        model.eval()
+        for i, (captions_t, labels, masks) in enumerate(test_loader):
+            print('Run prediction: ', i)
+
+            captions_t = captions_t.to(device)
+            labels = labels.to(device)
+            masks = masks.to(device)
+            
+            with torch.no_grad():
+                _, pooled_output, outputs = model(captions_t, masks, intent_tokens, mask_tokens, labels)
+
+            co, to, pr, acc = calc_score(outputs, labels)
+            val_corrects += co
+            totals += to
+            preds += pr
+            total_acc += acc
+
+        recall = val_corrects.double() / totals
+        precision = val_corrects.double() / preds
+        f1 = 2 * (precision*recall) / (precision + recall)
+        print(f'P = {precision:.4f}, R = {recall:.4f}, F1 = {f1:.4f}')
+        print('Accuracy: ', total_acc/test_loader.dataset.num_data)
+    
     # Run test classification
     elif opt.test_mode == "data":
         
@@ -431,7 +490,10 @@ def test(**kwargs):
         real_labels = []
         test_corrects = 0
         totals = 0
+        preds = 0
+        total_acc = 0
         model.eval()
+        print(len(test_loader.dataset))
         for i, (captions_t, labels, masks) in enumerate(test_loader):
             print('predict batches: ', i)
 
@@ -440,10 +502,12 @@ def test(**kwargs):
             masks = masks.to(device)
             
             with torch.no_grad():
-                _, pooled_output, outputs = model(captions_t, masks)
-                co, to = calc_score(outputs, labels)
+                _, pooled_output, outputs = model(captions_t, masks, intent_tokens, mask_tokens, labels)
+                co, to, pr, acc = calc_score(outputs, labels)
                 test_corrects += co
                 totals += to
+                preds += pr
+                total_acc += acc
 
                 if opt.data_mode == 'single':
                     idx = torch.max(outputs, 1)[1] != labels
@@ -456,15 +520,15 @@ def test(**kwargs):
                         log = torch.sigmoid(logits)
                         correct = (labels[i][torch.where(log>0.5)[0]]).sum()
                         total = len(torch.where(labels[i]==1)[0])
-                        if correct != total:
-                            wrong_caption = tokenizer.convert_ids_to_tokens(captions_t[i], skip_special_tokens=True)
-                            error_ids.append(wrong_caption)
-                            pred_ls = [reverse_dic[p] for p in torch.where(log>0.5)[0].detach().cpu().numpy()]
-                            real_ls = [reverse_dic[i] for i, r in enumerate(labels[i].detach().cpu().numpy()) if r == 1]
-                            pred_labels.append(pred_ls)
-                            real_labels.append(real_ls)
+                        #if correct != total:
+                        wrong_caption = tokenizer.convert_ids_to_tokens(captions_t[i], skip_special_tokens=True)
+                        error_ids.append(wrong_caption)
+                        pred_ls = [reverse_dic[p] for p in torch.where(log>0.5)[0].detach().cpu().numpy()]
+                        real_ls = [reverse_dic[i] for i, r in enumerate(labels[i].detach().cpu().numpy()) if r == 1]
+                        pred_labels.append(pred_ls)
+                        real_labels.append(real_ls)
 
-        with open('error_analysis/{}_{}.txt'.format(opt.datatype, opt.data_mode), 'w') as f:
+        with open('error_analysis/{}_{}_zsl.txt'.format(opt.datatype, opt.data_mode), 'w') as f:
             f.write('----------- Wrong Examples ------------\n')
             for i, (caption, pred, real) in enumerate(zip(error_ids, pred_labels, real_labels)):
                 f.write(str(i)+'\n')
@@ -472,8 +536,11 @@ def test(**kwargs):
                 f.write('Predicted label: {}\n'.format(pred))
                 f.write('Real label: {}\n'.format(real))
                 f.write('------\n')
-        test_acc = test_corrects.double() / test_loader.dataset.num_data if opt.data_mode == 'single' else test_corrects.double() / totals
-        print('Test accuracy: {:.4f}'.format(test_acc))
+        recall = test_corrects.double() / totals
+        precision = test_corrects.double() / preds
+        f1 = 2 * (precision*recall) / (precision + recall)
+        print(f'P = {precision:.4f}, R = {recall:.4f}, F1 = {f1:.4f}')
+        print('Accuracy: ', total_acc/test_loader.dataset.num_data)
 
     
     # User defined

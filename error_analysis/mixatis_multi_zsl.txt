@@ -1,0 +1,3601 @@
+----------- Wrong Examples ------------
+0
+list california airports , list la and how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_airport', 'atis_quantity']
+Real label: ['atis_airport', 'atis_city', 'atis_quantity']
+------
+1
+i need a ticket from nashville to seattle and then flight numbers from chicago to seattle on continental
+Predicted label: ['atis_flight_no', 'atis_airfare']
+Real label: ['atis_flight_no', 'atis_airfare']
+------
+2
+what cities does northwest fly to
+Predicted label: ['atis_city']
+Real label: ['atis_city']
+------
+3
+show me the cheap ##est round trip fares from san francisco to houston and then how many passengers can an l ##10 ##11 aircraft hold
+Predicted label: ['atis_capacity', 'atis_airfare']
+Real label: ['atis_capacity', 'atis_airfare']
+------
+4
+what cities does northwest fly to and list the distance in miles from san francisco international airport to san francisco downtown
+Predicted label: ['atis_city', 'atis_distance']
+Real label: ['atis_city', 'atis_distance']
+------
+5
+tell me about the m ##80 aircraft , list airports and then how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_airport', 'atis_aircraft', 'atis_quantity']
+Real label: ['atis_airport', 'atis_aircraft', 'atis_quantity']
+------
+6
+how much is limousine service in los angeles
+Predicted label: ['atis_ground_fare']
+Real label: ['atis_ground_fare']
+------
+7
+list la , list ground transportation in baltimore and what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_ground_service', 'atis_meal']
+Real label: ['atis_city', 'atis_ground_service', 'atis_meal']
+------
+8
+what cities does northwest fly to and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_city', 'atis_quantity']
+Real label: ['atis_city', 'atis_quantity']
+------
+9
+what class is fare code q and also list airports
+Predicted label: ['atis_abbreviation', 'atis_airport']
+Real label: ['atis_abbreviation', 'atis_airport']
+------
+10
+what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle and also how many canadian airlines international flights use j ##31
+Predicted label: ['atis_meal', 'atis_quantity']
+Real label: ['atis_meal', 'atis_quantity']
+------
+11
+list flights between pittsburgh and milwaukee and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_quantity', 'atis_flight']
+Real label: ['atis_quantity', 'atis_flight']
+------
+12
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon , how much does it cost to fly from columbus to st . louis round trip on t ##wa and also how much is the limousine service in boston
+Predicted label: ['atis_aircraft', 'atis_ground_fare', 'atis_airfare']
+Real label: ['atis_aircraft', 'atis_ground_fare', 'atis_airfare']
+------
+13
+list california airports , which flights travel from cleveland to indianapolis on april fifth and also what are the fares for ground transportation in denver
+Predicted label: ['atis_airport', 'atis_flight']
+Real label: ['atis_airport', 'atis_ground_fare', 'atis_flight']
+------
+14
+what does fare code f mean , i need a ticket from nashville tennessee to seattle and then which airport is closest to ontario california
+Predicted label: ['atis_abbreviation', 'atis_airport', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_airport', 'atis_airfare']
+------
+15
+list the distance in miles from boston airport to downtown boston , flight number from dallas to houston and how much is a limousine service in la guard ##ia
+Predicted label: ['atis_flight_no', 'atis_ground_fare', 'atis_distance']
+Real label: ['atis_flight_no', 'atis_ground_fare', 'atis_distance']
+------
+16
+how much is coach flight from pittsburgh to atlanta , what is the seating capacity on the aircraft 73 ##3 and also list the cities from which northwest flies
+Predicted label: ['atis_city', 'atis_capacity', 'atis_airfare']
+Real label: ['atis_city', 'atis_capacity', 'atis_airfare']
+------
+17
+flight number from houston to dallas
+Predicted label: ['atis_flight_no']
+Real label: ['atis_flight_no']
+------
+18
+what ground transportation is available between milwaukee airport and downtown milwaukee
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+19
+what type of ground transportation is there at the las vegas airport and also what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_ground_service', 'atis_meal']
+Real label: ['atis_ground_service', 'atis_meal']
+------
+20
+list airports in la and also please list ground transportation from e ##wr into new york city
+Predicted label: ['atis_airport', 'atis_ground_service']
+Real label: ['atis_airport', 'atis_ground_service']
+------
+21
+what airline is as as in sam and then how many canadian airlines international flights use j ##31
+Predicted label: ['atis_quantity', 'atis_airline']
+Real label: ['atis_quantity', 'atis_airline']
+------
+22
+what is seating capacity on the aircraft 73 ##s
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+23
+list flights from oakland to salt lake city and also how much is a limousine service in toronto international
+Predicted label: ['atis_ground_fare', 'atis_flight']
+Real label: ['atis_ground_fare', 'atis_flight']
+------
+24
+what are the departure times from detroit to westchester county and what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_meal', 'atis_flight_time']
+Real label: ['atis_meal', 'atis_flight_time']
+------
+25
+i need information on flights from toronto to san diego
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+26
+what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time']
+Real label: ['atis_flight_time']
+------
+27
+what is meal code sb
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation']
+------
+28
+give me the fares from miami to cleveland next sunday and which airline is us
+Predicted label: ['atis_airfare', 'atis_airline']
+Real label: ['atis_airfare', 'atis_airline']
+------
+29
+how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity']
+Real label: ['atis_quantity']
+------
+30
+list flights from pittsburgh to newark daily and also what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_meal', 'atis_flight']
+Real label: ['atis_meal', 'atis_flight']
+------
+31
+flight numbers from seattle to chicago on continental
+Predicted label: ['atis_flight_no']
+Real label: ['atis_flight_no']
+------
+32
+i would like to have the airline that flies toronto detroit and st . louis
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+33
+list la
+Predicted label: []
+Real label: ['atis_city']
+------
+34
+what type of aircraft are flying from cleveland to dallas before noon and also what ground transportation is there in baltimore
+Predicted label: ['atis_aircraft', 'atis_ground_service']
+Real label: ['atis_aircraft', 'atis_ground_service']
+------
+35
+are snacks served on tower air
+Predicted label: ['atis_meal']
+Real label: ['atis_meal']
+------
+36
+list la and how much is a limousine service in la guard ##ia
+Predicted label: ['atis_ground_fare']
+Real label: ['atis_city', 'atis_ground_fare']
+------
+37
+what does fare code y mean
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation']
+------
+38
+is there a fare from pittsburgh to cleveland under 200 dollars and then how far is san francisco international from downtown
+Predicted label: ['atis_distance', 'atis_airfare']
+Real label: ['atis_distance', 'atis_airfare']
+------
+39
+list the cities from which northwest flies
+Predicted label: ['atis_city']
+Real label: ['atis_city']
+------
+40
+what types of ground transportation are available in denver and also what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_ground_service', 'atis_meal']
+Real label: ['atis_ground_service', 'atis_meal']
+------
+41
+at the charlotte airport how many different types of aircraft are there for us air
+Predicted label: ['atis_quantity']
+Real label: ['atis_aircraft']
+------
+42
+show me ground transportation in phoenix
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+43
+which airline is us and also how many canadian airlines international flights use j ##31
+Predicted label: ['atis_quantity', 'atis_airline']
+Real label: ['atis_quantity', 'atis_airline']
+------
+44
+which airline is kw
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+45
+list the arizona airport and list la
+Predicted label: ['atis_airport']
+Real label: ['atis_airport', 'atis_city']
+------
+46
+list seating capacities of delta flights from seattle to salt lake city and then what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_capacity', 'atis_meal']
+Real label: ['atis_capacity', 'atis_meal']
+------
+47
+tell me about the type of aircraft called an m ##80 , what airline is aa and then how far is toronto international from downtown
+Predicted label: ['atis_aircraft', 'atis_distance', 'atis_airline']
+Real label: ['atis_aircraft', 'atis_distance', 'atis_airline']
+------
+48
+list airports in new york
+Predicted label: ['atis_airport']
+Real label: ['atis_airport']
+------
+49
+list the arizona airport and then please show ground transportation to milwaukee
+Predicted label: ['atis_airport', 'atis_ground_service']
+Real label: ['atis_airport', 'atis_ground_service']
+------
+50
+what airline is us and also i need the flight numbers of flights leaving from cleveland and arriving at dallas
+Predicted label: ['atis_flight_no', 'atis_airline']
+Real label: ['atis_flight_no', 'atis_airline']
+------
+51
+what type of aircraft are flying from cleveland to dallas before noon , what airlines fly between washington dc and columbus ohio and also is there ground transportation available at the salt lake city airport
+Predicted label: ['atis_aircraft', 'atis_ground_service', 'atis_airline']
+Real label: ['atis_aircraft', 'atis_ground_service', 'atis_airline']
+------
+52
+what are the departure times from detroit to westchester county and also how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_flight_time']
+Real label: ['atis_quantity', 'atis_flight_time']
+------
+53
+what is the seating capacity on the aircraft 73 ##3
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+54
+list california airports , show me ground transportation in fort worth and what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_airport', 'atis_ground_service', 'atis_meal']
+Real label: ['atis_airport', 'atis_ground_service', 'atis_meal']
+------
+55
+list seating capacities of delta flights from seattle to salt lake city and also list the alaska airlines flights arriving in bu ##rba ##nk
+Predicted label: ['atis_capacity', 'atis_flight']
+Real label: ['atis_capacity', 'atis_flight']
+------
+56
+what ' s the fare for a taxi to denver
+Predicted label: ['atis_airfare']
+Real label: ['atis_ground_fare']
+------
+57
+what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_meal']
+Real label: ['atis_meal']
+------
+58
+what does ap 57 mean
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation']
+------
+59
+what is the seating capacity of an m ##80 and also list the distance in miles from toronto international airport to downtown toronto
+Predicted label: ['atis_capacity', 'atis_distance']
+Real label: ['atis_capacity', 'atis_distance']
+------
+60
+what does ua mean and are snacks served on tower air
+Predicted label: ['atis_abbreviation', 'atis_meal']
+Real label: ['atis_abbreviation', 'atis_meal']
+------
+61
+what are the departure times from detroit to westchester county and then how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_flight_time']
+Real label: ['atis_quantity', 'atis_flight_time']
+------
+62
+what is the seating capacity for the aircraft m ##80
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+63
+list limousine rates for the city of boston and also is there ground transportation available at the salt lake city airport
+Predicted label: ['atis_ground_service', 'atis_ground_fare']
+Real label: ['atis_ground_service', 'atis_ground_fare']
+------
+64
+what is the seating capacity for the aircraft m ##80 and then what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_capacity', 'atis_meal']
+Real label: ['atis_capacity', 'atis_meal']
+------
+65
+to what cities from boston does america west fly first class and how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_city', 'atis_quantity']
+Real label: ['atis_city', 'atis_quantity']
+------
+66
+list california airports and how far is san francisco international from downtown
+Predicted label: ['atis_airport', 'atis_distance']
+Real label: ['atis_airport', 'atis_distance']
+------
+67
+cheap ##est round trip fare from or indianapolis to orlando on december twenty fifth , flight number from houston to dallas and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_flight_no', 'atis_airfare']
+Real label: ['atis_quantity', 'atis_flight_no', 'atis_airfare']
+------
+68
+is there ground transportation from the memphis airport into town when if i arrive at 84 ##2 in the morning and also are snacks served on tower air
+Predicted label: ['atis_ground_service', 'atis_meal']
+Real label: ['atis_ground_service', 'atis_meal']
+------
+69
+list la and also how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_abbreviation', 'atis_quantity']
+Real label: ['atis_city', 'atis_quantity']
+------
+70
+what airline is us and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_airline']
+Real label: ['atis_quantity', 'atis_airline']
+------
+71
+how many canadian airlines international flights use j ##31
+Predicted label: ['atis_quantity']
+Real label: ['atis_quantity']
+------
+72
+what is a d ##9 ##s and then what type of ground transportation is there at the las vegas airport
+Predicted label: ['atis_abbreviation', 'atis_ground_service']
+Real label: ['atis_abbreviation', 'atis_ground_service']
+------
+73
+what type of aircraft is used for the american flight leaving at 41 ##9 pm and then what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_aircraft', 'atis_meal']
+Real label: ['atis_aircraft', 'atis_meal']
+------
+74
+cheap ##est round trip fare from or indianapolis to orlando on december twenty fifth and also now show me ground transportation in houston on monday afternoon
+Predicted label: ['atis_ground_service', 'atis_airfare']
+Real label: ['atis_ground_service', 'atis_airfare']
+------
+75
+get the saturday fare from washington to toronto and also how far is los angeles international from downtown
+Predicted label: ['atis_distance', 'atis_airfare']
+Real label: ['atis_distance', 'atis_airfare']
+------
+76
+at the charlotte airport how many different types of aircraft are there for us air and st . paul to kansas city friday night
+Predicted label: ['atis_airport', 'atis_quantity']
+Real label: ['atis_aircraft', 'atis_flight']
+------
+77
+how much is coach flight from pittsburgh to atlanta and also how much is limousine service in los angeles
+Predicted label: ['atis_ground_fare', 'atis_airfare']
+Real label: ['atis_ground_fare', 'atis_airfare']
+------
+78
+what is fare code f and then how far is los angeles international from downtown
+Predicted label: ['atis_abbreviation', 'atis_distance']
+Real label: ['atis_abbreviation', 'atis_distance']
+------
+79
+what is the seating capacity for the aircraft m ##80 , to what cities from boston does america west fly first class and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_city', 'atis_capacity', 'atis_flight_time']
+Real label: ['atis_city', 'atis_capacity', 'atis_flight_time']
+------
+80
+what type of plane is a d ##9 ##s
+Predicted label: ['atis_aircraft']
+Real label: ['atis_aircraft']
+------
+81
+what does fare code f mean and then what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_abbreviation', 'atis_meal']
+Real label: ['atis_abbreviation', 'atis_meal']
+------
+82
+get fares from washington to boston and then what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_meal', 'atis_airfare']
+Real label: ['atis_meal', 'atis_airfare']
+------
+83
+does tacoma airport offer transportation from the airport to the downtown area
+Predicted label: ['atis_airport', 'atis_ground_service']
+Real label: ['atis_ground_service']
+------
+84
+list the distance in miles from san francisco international airport to san francisco downtown , what types of ground transportation are available in denver and how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_ground_service', 'atis_quantity', 'atis_distance']
+Real label: ['atis_ground_service', 'atis_quantity', 'atis_distance']
+------
+85
+what is mc ##i , what is the seating capacity of a 75 ##7 and also list the cities from which northwest flies
+Predicted label: ['atis_abbreviation', 'atis_city', 'atis_capacity']
+Real label: ['atis_abbreviation', 'atis_city', 'atis_capacity']
+------
+86
+what is the seating capacity of the type of aircraft m ##80 , get flight from toronto to san diego stopping at dt ##w and what ground transportation is available between milwaukee airport and downtown milwaukee
+Predicted label: ['atis_capacity', 'atis_ground_service', 'atis_flight']
+Real label: ['atis_capacity', 'atis_ground_service', 'atis_flight']
+------
+87
+list the distance in miles from san francisco international airport to san francisco downtown , what are the departure times from detroit to westchester county and also how much is limousine service in los angeles
+Predicted label: ['atis_flight_time', 'atis_ground_fare', 'atis_distance']
+Real label: ['atis_flight_time', 'atis_ground_fare', 'atis_distance']
+------
+88
+what does fare code b ##h mean and also what ' s the fare for a taxi to denver
+Predicted label: ['atis_abbreviation', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_ground_fare']
+------
+89
+show me round trip fares from toronto to detroit on delta northwest us air and united airlines and also how much is a limousine service in toronto international
+Predicted label: ['atis_ground_fare', 'atis_airfare']
+Real label: ['atis_ground_fare', 'atis_airfare']
+------
+90
+how much is a limousine service in toronto international , what ground transportation is available between phoenix airport and downtown phoenix and also what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_ground_service', 'atis_meal', 'atis_ground_fare']
+Real label: ['atis_ground_service', 'atis_meal', 'atis_ground_fare']
+------
+91
+tell me about the m ##80 aircraft and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_aircraft', 'atis_quantity']
+Real label: ['atis_aircraft', 'atis_quantity']
+------
+92
+what is the seating capacity of a 72 ##s and how much is the limousine service in boston
+Predicted label: ['atis_capacity', 'atis_ground_fare']
+Real label: ['atis_capacity', 'atis_ground_fare']
+------
+93
+i need flight information for flights departing from cleveland going back to milwaukee wednesday after 5 pm and is there ground transportation from l ##ga into new york city
+Predicted label: ['atis_ground_service', 'atis_flight']
+Real label: ['atis_ground_service', 'atis_flight']
+------
+94
+what is the lowest fare for a flight from washington dc to boston and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_airfare']
+Real label: ['atis_flight_time', 'atis_airfare']
+------
+95
+please give me the flights from nashville to houston nonstop with dinner served
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+96
+show me airlines that have flights between toronto and detroit between detroit and st . louis and between st . louis and toronto and also i want a flight from toronto to san diego
+Predicted label: ['atis_flight', 'atis_airline']
+Real label: ['atis_flight', 'atis_airline']
+------
+97
+list the distance in miles from new york ' s la guard ##ia airport to downtown new york city and also how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_distance']
+Real label: ['atis_quantity', 'atis_distance']
+------
+98
+list airports in la and then what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_airport', 'atis_meal']
+Real label: ['atis_airport', 'atis_meal']
+------
+99
+is there a fare from pittsburgh to cleveland under 200 dollars , list airports in new york and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_airport', 'atis_flight_time', 'atis_airfare']
+Real label: ['atis_airport', 'atis_flight_time', 'atis_airfare']
+------
+100
+what type of plane is a d ##9 ##s and then what ' s the fare for a taxi to denver
+Predicted label: ['atis_aircraft', 'atis_airfare']
+Real label: ['atis_aircraft', 'atis_ground_fare']
+------
+101
+tell me about the m ##80 aircraft and then what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_aircraft', 'atis_meal']
+Real label: ['atis_aircraft', 'atis_meal']
+------
+102
+tell me about the m ##80 aircraft
+Predicted label: ['atis_aircraft']
+Real label: ['atis_aircraft']
+------
+103
+how many passengers can an l ##10 ##11 aircraft hold , what cities does northwest fly to and what are the departure times from detroit to westchester county
+Predicted label: ['atis_city', 'atis_capacity', 'atis_flight_time']
+Real label: ['atis_city', 'atis_capacity', 'atis_flight_time']
+------
+104
+list la and then i need flight numbers for those flights departing on thursday before 8 am from oakland going to salt lake city
+Predicted label: ['atis_abbreviation', 'atis_flight_no']
+Real label: ['atis_city', 'atis_flight_no']
+------
+105
+what is the seating capacity of an m ##80 , what are the departure times from detroit to westchester county and then are snacks served on tower air
+Predicted label: ['atis_capacity', 'atis_meal', 'atis_flight_time']
+Real label: ['atis_capacity', 'atis_meal', 'atis_flight_time']
+------
+106
+list la and then what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_abbreviation', 'atis_meal']
+Real label: ['atis_city', 'atis_meal']
+------
+107
+list airports in la and also how many canadian airlines international flights use j ##31
+Predicted label: ['atis_airport', 'atis_quantity']
+Real label: ['atis_airport', 'atis_quantity']
+------
+108
+what type of plane is a d ##9 ##s and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_aircraft', 'atis_quantity']
+Real label: ['atis_aircraft', 'atis_quantity']
+------
+109
+i need the flight numbers of flights leaving from cleveland and arriving at dallas
+Predicted label: ['atis_flight_no']
+Real label: ['atis_flight_no']
+------
+110
+list air ##fare ##s for first class round trip from detroit to st . petersburg
+Predicted label: ['atis_airfare']
+Real label: ['atis_airfare']
+------
+111
+what type of plane is a d ##9 ##s , how far is new york ' s la guard ##ia from downtown and also how much is a limousine service in la guard ##ia
+Predicted label: ['atis_aircraft', 'atis_ground_fare', 'atis_distance']
+Real label: ['atis_aircraft', 'atis_ground_fare', 'atis_distance']
+------
+112
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon , after 12 pm on wednesday april sixth i would like to fly from long beach to columbus and also are snacks served on tower air
+Predicted label: ['atis_aircraft', 'atis_meal', 'atis_flight']
+Real label: ['atis_aircraft', 'atis_meal', 'atis_flight']
+------
+113
+what is the seating capacity of the aircraft m ##80 , list the distance in miles from toronto international airport to downtown toronto and then what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_capacity', 'atis_meal', 'atis_distance']
+Real label: ['atis_capacity', 'atis_meal', 'atis_distance']
+------
+114
+i would like to leave thursday morning from indianapolis to toronto and what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_meal', 'atis_flight']
+Real label: ['atis_meal', 'atis_flight']
+------
+115
+what airlines fly from baltimore to san francisco and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_airline']
+Real label: ['atis_flight_time', 'atis_airline']
+------
+116
+tell me all the airports in the new york city area and then to what cities from boston does america west fly first class
+Predicted label: ['atis_airport', 'atis_city']
+Real label: ['atis_airport', 'atis_city']
+------
+117
+to what cities from boston does america west fly first class
+Predicted label: ['atis_city']
+Real label: ['atis_city']
+------
+118
+is there one airline that flies from bu ##rba ##nk to milwaukee milwaukee to st . louis and from st . louis to bu ##rba ##nk
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+119
+list the airlines with flights to or from denver
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+120
+list coach round trip air ##fare from detroit to st . petersburg , what is the seating capacity on the aircraft 73 ##3 and also show me northwest flight 60 ##8 from kansas city to st . paul
+Predicted label: ['atis_capacity', 'atis_flight', 'atis_airfare']
+Real label: ['atis_capacity', 'atis_flight', 'atis_airfare']
+------
+121
+what does fare code b ##h mean , what is the seating capacity of the 75 ##7 and what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_abbreviation', 'atis_capacity', 'atis_meal']
+Real label: ['atis_abbreviation', 'atis_capacity', 'atis_meal']
+------
+122
+list airports in la , how much is the limousine service in boston and then what ' s the ground transportation in denver
+Predicted label: ['atis_airport', 'atis_ground_service', 'atis_ground_fare']
+Real label: ['atis_airport', 'atis_ground_service', 'atis_ground_fare']
+------
+123
+list the distance in miles from boston airport to downtown boston
+Predicted label: ['atis_distance']
+Real label: ['atis_distance']
+------
+124
+flight numbers from seattle to chicago on continental and also how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_flight_no']
+Real label: ['atis_quantity', 'atis_flight_no']
+------
+125
+at the charlotte airport how many different types of aircraft are there for us air and also list ground transportation in baltimore
+Predicted label: ['atis_ground_service', 'atis_quantity']
+Real label: ['atis_aircraft', 'atis_ground_service']
+------
+126
+what does fare code b ##h mean , to what cities from boston does america west fly first class and ground transportation in las vegas
+Predicted label: ['atis_abbreviation', 'atis_city', 'atis_ground_service']
+Real label: ['atis_abbreviation', 'atis_city', 'atis_ground_service']
+------
+127
+what the abbreviation us stand for and also list limousine rates for the city of boston
+Predicted label: ['atis_abbreviation', 'atis_ground_fare']
+Real label: ['atis_abbreviation', 'atis_ground_fare']
+------
+128
+i would like a flight on friday morning from toronto to montreal and also what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_meal', 'atis_flight']
+Real label: ['atis_meal', 'atis_flight']
+------
+129
+i need a ticket from nashville tennessee to seattle and then are meals ever served on tower air
+Predicted label: ['atis_meal', 'atis_airfare']
+Real label: ['atis_meal', 'atis_airfare']
+------
+130
+show me the morning flights from memphis to new york city and how much is limousine service in los angeles
+Predicted label: ['atis_ground_fare', 'atis_flight']
+Real label: ['atis_ground_fare', 'atis_flight']
+------
+131
+what is the seating capacity of the 73 ##3
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+132
+what airline is aa and then what is the seating capacity for aircraft l ##10
+Predicted label: ['atis_capacity', 'atis_airline']
+Real label: ['atis_capacity', 'atis_airline']
+------
+133
+what is the seating capacity of the 75 ##7
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+134
+ground transportation in las vegas
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+135
+list la and then what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_abbreviation', 'atis_meal']
+Real label: ['atis_city', 'atis_meal']
+------
+136
+what does ap 20 mean
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation']
+------
+137
+how many passengers can fly on a 75 ##7
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+138
+show me the cheap ##est round trip fares from san francisco to houston and also list the distance in miles from new york ' s la guard ##ia airport to downtown new york city
+Predicted label: ['atis_distance', 'atis_airfare']
+Real label: ['atis_distance', 'atis_airfare']
+------
+139
+on april first i need a ticket from tacoma to san jose departing before 7 am
+Predicted label: ['atis_airfare']
+Real label: ['atis_airfare']
+------
+140
+what does ap 57 mean and also to what cities from boston does america west fly first class
+Predicted label: ['atis_abbreviation', 'atis_city']
+Real label: ['atis_abbreviation', 'atis_city']
+------
+141
+what are the departure times from detroit to westchester county and what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_meal', 'atis_flight_time']
+Real label: ['atis_meal', 'atis_flight_time']
+------
+142
+list la and what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_meal']
+Real label: ['atis_city', 'atis_meal']
+------
+143
+list airports in la and what is seating capacity on the aircraft 73 ##s
+Predicted label: ['atis_airport', 'atis_capacity']
+Real label: ['atis_airport', 'atis_capacity']
+------
+144
+what is the seating capacity of a dc ##9 and list all tower air flights with meals
+Predicted label: ['atis_capacity', 'atis_flight']
+Real label: ['atis_capacity', 'atis_flight']
+------
+145
+what does fare code b ##h mean
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation']
+------
+146
+list the cities from which northwest flies and how much is a limousine service in la guard ##ia
+Predicted label: ['atis_city', 'atis_ground_fare']
+Real label: ['atis_city', 'atis_ground_fare']
+------
+147
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon and then how many canadian airlines international flights use j ##31
+Predicted label: ['atis_aircraft', 'atis_quantity']
+Real label: ['atis_aircraft', 'atis_quantity']
+------
+148
+list the arizona airport and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_airport', 'atis_quantity']
+Real label: ['atis_airport', 'atis_quantity']
+------
+149
+tell me about the m ##80 aircraft , list airports in arizona nevada and california please and also list ground transportation in baltimore
+Predicted label: ['atis_airport', 'atis_aircraft', 'atis_ground_service']
+Real label: ['atis_airport', 'atis_aircraft', 'atis_ground_service']
+------
+150
+what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_meal']
+Real label: ['atis_meal']
+------
+151
+how many passengers can an l ##10 ##11 aircraft hold
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+152
+get first flight from oakland to salt lake city on thursday and also how much is the limousine service in boston
+Predicted label: ['atis_ground_fare', 'atis_flight']
+Real label: ['atis_ground_fare', 'atis_flight']
+------
+153
+tell me about the m ##80 aircraft , get saturday fares from washington to montreal and also i would like to have the airline that flies toronto detroit and st . louis
+Predicted label: ['atis_aircraft', 'atis_airfare', 'atis_airline']
+Real label: ['atis_aircraft', 'atis_airfare', 'atis_airline']
+------
+154
+what ' s the cheap ##est flight from columbus to st . louis round trip on t ##wa
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+155
+what cities does northwest fly out of and how much is the limousine service in boston
+Predicted label: ['atis_city', 'atis_ground_fare']
+Real label: ['atis_city', 'atis_ground_fare']
+------
+156
+tell me about the m ##80 aircraft , what are the fares for all flights between washington and columbus and then list la
+Predicted label: ['atis_aircraft', 'atis_airfare']
+Real label: ['atis_city', 'atis_aircraft', 'atis_airfare']
+------
+157
+list the arizona airport and then what is the seating capacity of an m ##80
+Predicted label: ['atis_airport', 'atis_capacity']
+Real label: ['atis_airport', 'atis_capacity']
+------
+158
+how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity']
+Real label: ['atis_quantity']
+------
+159
+what does ap 57 mean and also i need the flight numbers of flights leaving from cleveland and arriving at dallas
+Predicted label: ['atis_abbreviation', 'atis_flight_no']
+Real label: ['atis_abbreviation', 'atis_flight_no']
+------
+160
+what airlines fly between detroit and westchester county
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+161
+what airline is as as in sam , list airports and then what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_airport', 'atis_meal', 'atis_airline']
+Real label: ['atis_airport', 'atis_meal', 'atis_airline']
+------
+162
+list airports in la and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_airport', 'atis_flight_time']
+Real label: ['atis_airport', 'atis_flight_time']
+------
+163
+list airports in arizona nevada and california please , what ground transportation is available from dallas fort worth airport to downtown dallas and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_airport', 'atis_ground_service', 'atis_quantity']
+Real label: ['atis_airport', 'atis_ground_service', 'atis_quantity']
+------
+164
+what does fare code b ##h mean and also i ' ll need to rent a car in washington dc
+Predicted label: ['atis_abbreviation', 'atis_ground_service']
+Real label: ['atis_abbreviation', 'atis_ground_service']
+------
+165
+what is the seating capacity of a 75 ##7 and also list the distance in miles from new york ' s la guard ##ia airport to downtown new york city
+Predicted label: ['atis_capacity', 'atis_distance']
+Real label: ['atis_capacity', 'atis_distance']
+------
+166
+i need a daily flight from st . louis to milwaukee and how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_flight']
+Real label: ['atis_quantity', 'atis_flight']
+------
+167
+what are the fares for ground transportation in denver and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_airfare']
+Real label: ['atis_quantity', 'atis_ground_fare']
+------
+168
+what does fare code f mean , list la and then how about a flight from milwaukee to st . louis that leaves monday night
+Predicted label: ['atis_abbreviation', 'atis_flight']
+Real label: ['atis_abbreviation', 'atis_city', 'atis_flight']
+------
+169
+how much is a limousine service in toronto international
+Predicted label: ['atis_ground_fare']
+Real label: ['atis_ground_fare']
+------
+170
+what type of plane is a d ##9 ##s and then how much is a limousine service in la guard ##ia
+Predicted label: ['atis_aircraft', 'atis_ground_fare']
+Real label: ['atis_aircraft', 'atis_ground_fare']
+------
+171
+give me the fares for round trip flights from cleveland to miami next wednesday and is there ground transportation available at the indianapolis airport
+Predicted label: ['atis_ground_service', 'atis_airfare']
+Real label: ['atis_ground_service', 'atis_airfare']
+------
+172
+list la and then how much is a limousine service in la guard ##ia
+Predicted label: ['atis_ground_fare']
+Real label: ['atis_city', 'atis_ground_fare']
+------
+173
+list the distance in miles from san francisco international airport to san francisco downtown
+Predicted label: ['atis_distance']
+Real label: ['atis_distance']
+------
+174
+how far is san francisco international from downtown , what are the departure times from detroit to westchester county and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_quantity', 'atis_flight_time', 'atis_distance']
+Real label: ['atis_quantity', 'atis_flight_time', 'atis_distance']
+------
+175
+show me airlines that have flights between toronto and detroit between detroit and st . louis and between st . louis and toronto
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+176
+what ground transportation is available at denver
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+177
+what airlines fly into denver , what is the seating capacity for the aircraft m ##80 and then how many canadian airlines international flights use j ##31
+Predicted label: ['atis_capacity', 'atis_quantity', 'atis_airline']
+Real label: ['atis_capacity', 'atis_quantity', 'atis_airline']
+------
+178
+what ground transportation is available between dc ##a and downtown washington
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+179
+is there ground transportation available at the indianapolis airport
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+180
+i need flight numbers for those flights departing on thursday before 8 am from oakland going to salt lake city and then what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_meal', 'atis_flight_no']
+Real label: ['atis_meal', 'atis_flight_no']
+------
+181
+i need flight numbers for those flights departing on thursday before 8 am from oakland going to salt lake city
+Predicted label: ['atis_flight_no']
+Real label: ['atis_flight_no']
+------
+182
+tell me about the m ##80 aircraft and also list la
+Predicted label: ['atis_aircraft']
+Real label: ['atis_city', 'atis_aircraft']
+------
+183
+how long does a flight from baltimore to san francisco take and then what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_meal', 'atis_distance']
+Real label: ['atis_meal', 'atis_distance']
+------
+184
+what is the seating capacity on the aircraft m ##80 and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_capacity', 'atis_quantity']
+Real label: ['atis_capacity', 'atis_quantity']
+------
+185
+what airlines are departing from baltimore and also how far is new york ' s la guard ##ia from downtown
+Predicted label: ['atis_distance', 'atis_airline']
+Real label: ['atis_distance', 'atis_airline']
+------
+186
+what airline is hp and how much is a limousine service in toronto international
+Predicted label: ['atis_ground_fare', 'atis_airline']
+Real label: ['atis_ground_fare', 'atis_airline']
+------
+187
+list the distance in miles from toronto international airport to downtown toronto , find american flight from newark to nashville around 630 pm and what ground transportation is there in baltimore
+Predicted label: ['atis_ground_service', 'atis_flight', 'atis_distance']
+Real label: ['atis_ground_service', 'atis_flight', 'atis_distance']
+------
+188
+list flights from miami to indianapolis sunday and then flight number from dallas to houston
+Predicted label: ['atis_flight_no', 'atis_flight']
+Real label: ['atis_flight_no', 'atis_flight']
+------
+189
+what airline is hp and what is the capacity of the 73 ##s
+Predicted label: ['atis_capacity', 'atis_airline']
+Real label: ['atis_capacity', 'atis_airline']
+------
+190
+what is the lowest fare for a flight from washington dc to boston , flight numbers from chicago to seattle and also does tacoma airport offer transportation from the airport to the downtown area
+Predicted label: ['atis_airport', 'atis_ground_service', 'atis_flight_no', 'atis_airfare']
+Real label: ['atis_ground_service', 'atis_flight_no', 'atis_airfare']
+------
+191
+flight numbers from chicago to seattle on continental and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_no', 'atis_flight_time']
+Real label: ['atis_flight_no', 'atis_flight_time']
+------
+192
+what is the seating capacity on the aircraft 73 ##3 , how far is los angeles international from downtown and flight numbers from chicago to seattle
+Predicted label: ['atis_capacity', 'atis_flight_no', 'atis_distance']
+Real label: ['atis_capacity', 'atis_flight_no', 'atis_distance']
+------
+193
+what is the seating capacity of a dc ##9
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+194
+list california airports
+Predicted label: ['atis_airport']
+Real label: ['atis_airport']
+------
+195
+what does ua mean and also what type of aircraft are flying from cleveland to dallas before noon
+Predicted label: ['atis_abbreviation', 'atis_aircraft']
+Real label: ['atis_abbreviation', 'atis_aircraft']
+------
+196
+list the cheap ##est fare from charlotte to las vegas , to what cities from boston does america west fly first class and flight number from houston to dallas
+Predicted label: ['atis_city', 'atis_flight_no', 'atis_airfare']
+Real label: ['atis_city', 'atis_flight_no', 'atis_airfare']
+------
+197
+what does fare code b ##h mean , list airlines that fly from seattle to salt lake city and also show me the nonstop flights from toronto to st . petersburg
+Predicted label: ['atis_abbreviation', 'atis_flight', 'atis_airline']
+Real label: ['atis_abbreviation', 'atis_flight', 'atis_airline']
+------
+198
+what does fare code h mean and then what is the seating capacity for aircraft l ##10
+Predicted label: ['atis_abbreviation', 'atis_capacity']
+Real label: ['atis_abbreviation', 'atis_capacity']
+------
+199
+what are the departure times from detroit to westchester county and also what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_meal', 'atis_flight_time']
+Real label: ['atis_meal', 'atis_flight_time']
+------
+200
+which airlines fly between toronto and san diego and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_airline']
+Real label: ['atis_flight_time', 'atis_airline']
+------
+201
+which airline is us , list airports and what cities does northwest fly to
+Predicted label: ['atis_airport', 'atis_city', 'atis_airline']
+Real label: ['atis_airport', 'atis_city', 'atis_airline']
+------
+202
+what does fare code h mean and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_abbreviation', 'atis_flight_time']
+Real label: ['atis_abbreviation', 'atis_flight_time']
+------
+203
+list la , dallas to houston after 120 ##1 am and then flight number from houston to dallas
+Predicted label: ['atis_flight_no', 'atis_flight']
+Real label: ['atis_city', 'atis_flight_no', 'atis_flight']
+------
+204
+i need the flight numbers of flights leaving from cleveland and arriving at dallas and what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_no', 'atis_flight_time']
+Real label: ['atis_flight_no', 'atis_flight_time']
+------
+205
+how much is the limousine service in boston and also show me ground transportation in fort worth
+Predicted label: ['atis_ground_service', 'atis_ground_fare']
+Real label: ['atis_ground_service', 'atis_ground_fare']
+------
+206
+show me the cheap ##est round trip fare from san francisco to houston on february twenty eighth 1994 , list la and what ground transportation is available at denver
+Predicted label: ['atis_ground_service', 'atis_airfare']
+Real label: ['atis_city', 'atis_ground_service', 'atis_airfare']
+------
+207
+i need a friday flight from newark to tampa
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+208
+list airports in la and how much is the limousine service in boston
+Predicted label: ['atis_airport', 'atis_ground_fare']
+Real label: ['atis_airport', 'atis_ground_fare']
+------
+209
+at the charlotte airport how many different types of aircraft are there for us air , list the distance in miles from san francisco international airport to san francisco downtown and is there ground transportation from l ##ga into new york city
+Predicted label: ['atis_ground_service', 'atis_distance']
+Real label: ['atis_aircraft', 'atis_ground_service', 'atis_distance']
+------
+210
+what is the seating capacity of a 72 ##s
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+211
+what does q mean , what airlines fly between detroit and westchester county and then what cities does northwest fly to
+Predicted label: ['atis_abbreviation', 'atis_city', 'atis_airline']
+Real label: ['atis_abbreviation', 'atis_city', 'atis_airline']
+------
+212
+tell me about the type of aircraft called an m ##80 and also how far is san francisco international from downtown
+Predicted label: ['atis_aircraft', 'atis_distance']
+Real label: ['atis_aircraft', 'atis_distance']
+------
+213
+what cities does northwest fly out of
+Predicted label: ['atis_city']
+Real label: ['atis_city']
+------
+214
+list california nevada arizona airports and then what type of ground transportation is there at the las vegas airport
+Predicted label: ['atis_airport', 'atis_ground_service']
+Real label: ['atis_airport', 'atis_ground_service']
+------
+215
+what are the fares for ground transportation in denver
+Predicted label: ['atis_ground_service', 'atis_airfare']
+Real label: ['atis_ground_fare']
+------
+216
+what is the seating capacity for aircraft l ##10 and then flight numbers from seattle to chicago on continental
+Predicted label: ['atis_capacity', 'atis_flight_no']
+Real label: ['atis_capacity', 'atis_flight_no']
+------
+217
+what is the seating capacity of the aircraft 72 ##s and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_capacity', 'atis_quantity']
+Real label: ['atis_capacity', 'atis_quantity']
+------
+218
+what does hp stand for and what airlines fly between washington dc and columbus ohio
+Predicted label: ['atis_abbreviation', 'atis_airline']
+Real label: ['atis_abbreviation', 'atis_airline']
+------
+219
+i need the flight numbers of flights leaving from cleveland and arriving at dallas and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_no', 'atis_flight_time']
+Real label: ['atis_flight_no', 'atis_flight_time']
+------
+220
+flight number from dallas to houston and what ground transportation is available between pittsburgh airport and downtown pittsburgh
+Predicted label: ['atis_ground_service', 'atis_flight_no']
+Real label: ['atis_ground_service', 'atis_flight_no']
+------
+221
+what cities does northwest fly out of and then how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_city', 'atis_quantity']
+Real label: ['atis_city', 'atis_quantity']
+------
+222
+flight numbers from chicago to seattle on continental
+Predicted label: ['atis_flight_no']
+Real label: ['atis_flight_no']
+------
+223
+list flights from washington dc to boston
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+224
+what does hp stand for , determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon and also which airline is us
+Predicted label: ['atis_abbreviation', 'atis_aircraft', 'atis_airline']
+Real label: ['atis_abbreviation', 'atis_aircraft', 'atis_airline']
+------
+225
+list airports in la , what cities does northwest fly out of and then is there ground transportation available at the denver airport
+Predicted label: ['atis_airport', 'atis_city', 'atis_ground_service']
+Real label: ['atis_airport', 'atis_city', 'atis_ground_service']
+------
+226
+i ' ll need to rent a car in washington dc
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+227
+what is a d ##9 ##s and then what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_abbreviation', 'atis_meal']
+Real label: ['atis_abbreviation', 'atis_meal']
+------
+228
+which airline is us and then what ' s the fare for a taxi to denver
+Predicted label: ['atis_airfare', 'atis_airline']
+Real label: ['atis_ground_fare', 'atis_airline']
+------
+229
+list the airports in la and also how much is limousine service in los angeles
+Predicted label: ['atis_airport', 'atis_ground_fare']
+Real label: ['atis_airport', 'atis_ground_fare']
+------
+230
+what does fare code b ##h mean and i would like a flight leaving san francisco for san diego
+Predicted label: ['atis_abbreviation', 'atis_flight']
+Real label: ['atis_abbreviation', 'atis_flight']
+------
+231
+find flight from san diego to phoenix on monday am and what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_flight']
+Real label: ['atis_flight_time', 'atis_flight']
+------
+232
+list flights from houston to denver and tell me about the ground transportation from nashville airport
+Predicted label: ['atis_ground_service', 'atis_flight']
+Real label: ['atis_ground_service', 'atis_flight']
+------
+233
+how far is los angeles international from downtown , are there any flights from boston to orlando connecting in new york and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_flight', 'atis_distance']
+Real label: ['atis_flight_time', 'atis_flight', 'atis_distance']
+------
+234
+what does ua mean and then flight numbers from chicago to seattle on continental
+Predicted label: ['atis_abbreviation', 'atis_flight_no']
+Real label: ['atis_abbreviation', 'atis_flight_no']
+------
+235
+what ' s the ground transportation in denver
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+236
+milwaukee to phoenix on saturday and then i need to rent a car at tampa
+Predicted label: ['atis_ground_service', 'atis_flight']
+Real label: ['atis_ground_service', 'atis_flight']
+------
+237
+list airlines that fly from seattle to salt lake city and also how much is a limousine service in toronto international
+Predicted label: ['atis_ground_fare', 'atis_airline']
+Real label: ['atis_ground_fare', 'atis_airline']
+------
+238
+what type of aircraft are flying from cleveland to dallas before noon and then list the airports in la
+Predicted label: ['atis_airport', 'atis_aircraft']
+Real label: ['atis_airport', 'atis_aircraft']
+------
+239
+please show ground transportation to milwaukee
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+240
+can you list all of the delta flights from salt lake city to new york next saturday arriving before 6 pm and are meals ever served on tower air
+Predicted label: ['atis_meal', 'atis_flight']
+Real label: ['atis_meal', 'atis_flight']
+------
+241
+cheap ##est fare round trip from indianapolis to orlando on december twenty seventh and also tell me all the airports near westchester county
+Predicted label: ['atis_airport', 'atis_airfare']
+Real label: ['atis_airport', 'atis_airfare']
+------
+242
+give me the flights from chicago to seattle on continental that have meals early saturday morning and then flight numbers from chicago to seattle
+Predicted label: ['atis_flight_no', 'atis_flight']
+Real label: ['atis_flight_no', 'atis_flight']
+------
+243
+which airlines fly between toronto and san diego , list airports in arizona nevada and california please and what are the departure times from detroit to westchester county
+Predicted label: ['atis_airport', 'atis_flight_time', 'atis_airline']
+Real label: ['atis_airport', 'atis_flight_time', 'atis_airline']
+------
+244
+flight numbers from chicago to seattle on continental and also what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_meal', 'atis_flight_no']
+Real label: ['atis_meal', 'atis_flight_no']
+------
+245
+what type of aircraft is used for the american flight leaving at 41 ##9 pm and also what cities does northwest fly out of
+Predicted label: ['atis_city', 'atis_aircraft']
+Real label: ['atis_city', 'atis_aircraft']
+------
+246
+what is 73 ##s and then i need a ticket from nashville to seattle
+Predicted label: ['atis_abbreviation', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_airfare']
+------
+247
+what does ap 57 mean and tell me about the m ##80 aircraft
+Predicted label: ['atis_abbreviation', 'atis_aircraft']
+Real label: ['atis_abbreviation', 'atis_aircraft']
+------
+248
+what the abbreviation us stand for , what type of aircraft is used for the american flight leaving at 41 ##9 pm and then list distance from airports to downtown in new york
+Predicted label: ['atis_abbreviation', 'atis_aircraft', 'atis_distance']
+Real label: ['atis_abbreviation', 'atis_aircraft', 'atis_distance']
+------
+249
+list la , find flights arriving new york city next saturday and then what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_meal', 'atis_flight']
+Real label: ['atis_city', 'atis_meal', 'atis_flight']
+------
+250
+show me the cheap ##est round trip coach fare from las vegas to detroit , flight number from dallas to houston and then how much is a limousine service in toronto international
+Predicted label: ['atis_flight_no', 'atis_ground_fare', 'atis_airfare']
+Real label: ['atis_flight_no', 'atis_ground_fare', 'atis_airfare']
+------
+251
+list the airports in la , flight number from dallas to houston and is there ground transportation from l ##ga into new york city
+Predicted label: ['atis_airport', 'atis_ground_service', 'atis_flight_no']
+Real label: ['atis_airport', 'atis_ground_service', 'atis_flight_no']
+------
+252
+what ' s the fare for a taxi to denver and are meals ever served on tower air
+Predicted label: ['atis_meal', 'atis_airfare']
+Real label: ['atis_meal', 'atis_ground_fare']
+------
+253
+how many passengers can fly on a 75 ##7 and also list limousine rates for the city of boston
+Predicted label: ['atis_capacity', 'atis_ground_fare']
+Real label: ['atis_capacity', 'atis_ground_fare']
+------
+254
+i need to rent a car in milwaukee
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+255
+list california nevada arizona airports
+Predicted label: ['atis_airport']
+Real label: ['atis_airport']
+------
+256
+flight number from dallas to houston and what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_no', 'atis_flight_time']
+Real label: ['atis_flight_no', 'atis_flight_time']
+------
+257
+tell me all the airports in the new york city area and then list distance from airports to downtown in new york
+Predicted label: ['atis_airport', 'atis_distance']
+Real label: ['atis_airport', 'atis_distance']
+------
+258
+list the distance in miles from san francisco international airport to san francisco downtown , i want to go from boston to washington on a saturday and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_flight', 'atis_distance']
+Real label: ['atis_flight_time', 'atis_flight', 'atis_distance']
+------
+259
+what type of aircraft is used for the american flight leaving at 41 ##9 pm and then which airlines fly from baltimore to san francisco
+Predicted label: ['atis_aircraft', 'atis_airline']
+Real label: ['atis_aircraft', 'atis_airline']
+------
+260
+what airlines fly into denver
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+261
+how far is new york ' s la guard ##ia from downtown
+Predicted label: ['atis_distance']
+Real label: ['atis_distance']
+------
+262
+what airline is dl and then how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_airline']
+Real label: ['atis_quantity', 'atis_airline']
+------
+263
+what type of aircraft are flying from cleveland to dallas before noon
+Predicted label: ['atis_aircraft']
+Real label: ['atis_aircraft']
+------
+264
+what is the seating capacity of the aircraft 72 ##s and what are the flights from milwaukee to seattle
+Predicted label: ['atis_capacity', 'atis_flight']
+Real label: ['atis_capacity', 'atis_flight']
+------
+265
+tell me about the type of aircraft called an m ##80
+Predicted label: ['atis_aircraft']
+Real label: ['atis_aircraft']
+------
+266
+list airports in la , list la and also what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_airport', 'atis_meal']
+Real label: ['atis_airport', 'atis_city', 'atis_meal']
+------
+267
+list the distance in miles from toronto international airport to downtown toronto and also list all tower air flights with meals
+Predicted label: ['atis_flight', 'atis_distance']
+Real label: ['atis_flight', 'atis_distance']
+------
+268
+flight number from houston to dallas and are meals ever served on tower air
+Predicted label: ['atis_meal', 'atis_flight_no']
+Real label: ['atis_meal', 'atis_flight_no']
+------
+269
+what are the departure times from detroit to westchester county and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_quantity', 'atis_flight_time']
+Real label: ['atis_quantity', 'atis_flight_time']
+------
+270
+what is the least expensive fare from boston to salt lake city and also is there ground transportation available at the salt lake city airport
+Predicted label: ['atis_ground_service', 'atis_airfare']
+Real label: ['atis_ground_service', 'atis_airfare']
+------
+271
+what is the seating capacity of the type of aircraft m ##80 , list the cities from which northwest flies and list the distance in miles from boston airport to downtown boston
+Predicted label: ['atis_city', 'atis_capacity', 'atis_distance']
+Real label: ['atis_city', 'atis_capacity', 'atis_distance']
+------
+272
+list la and then ground transportation in las vegas
+Predicted label: ['atis_ground_service']
+Real label: ['atis_city', 'atis_ground_service']
+------
+273
+are meals ever served on tower air
+Predicted label: ['atis_meal']
+Real label: ['atis_meal']
+------
+274
+how much is a limousine service in la guard ##ia and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_ground_fare']
+Real label: ['atis_quantity', 'atis_ground_fare']
+------
+275
+what is the seating capacity of an m ##80 , find flight from san diego to phoenix on monday am and also what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_capacity', 'atis_meal', 'atis_flight']
+Real label: ['atis_capacity', 'atis_meal', 'atis_flight']
+------
+276
+list distance from airports to downtown in new york and also milwaukee to phoenix on saturday
+Predicted label: ['atis_flight', 'atis_distance']
+Real label: ['atis_flight', 'atis_distance']
+------
+277
+i would like a flight from cincinnati to bu ##rba ##nk on american
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+278
+what are the departure times from detroit to westchester county and also how much is the limousine service in boston
+Predicted label: ['atis_flight_time', 'atis_ground_fare']
+Real label: ['atis_flight_time', 'atis_ground_fare']
+------
+279
+what type of aircraft are flying from cleveland to dallas before noon and then list california airports
+Predicted label: ['atis_airport', 'atis_aircraft']
+Real label: ['atis_airport', 'atis_aircraft']
+------
+280
+what airline is as
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+281
+tell me about the m ##80 aircraft and also what are the flights between memphis and cincinnati on wednesday
+Predicted label: ['atis_aircraft', 'atis_flight']
+Real label: ['atis_aircraft', 'atis_flight']
+------
+282
+what is 73 ##s and then at the charlotte airport how many different types of aircraft are there for us air
+Predicted label: ['atis_abbreviation', 'atis_quantity']
+Real label: ['atis_abbreviation', 'atis_aircraft']
+------
+283
+how much is limousine service in los angeles and also is there ground transportation available at the denver airport
+Predicted label: ['atis_ground_service', 'atis_ground_fare']
+Real label: ['atis_ground_service', 'atis_ground_fare']
+------
+284
+i need the flight numbers of flights leaving from cleveland and arriving at dallas and is there ground transportation available at the phoenix airport
+Predicted label: ['atis_ground_service', 'atis_flight_no']
+Real label: ['atis_ground_service', 'atis_flight_no']
+------
+285
+what is the seating capacity of the type of aircraft m ##80
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+286
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon and then list the distance in miles from toronto international airport to downtown toronto
+Predicted label: ['atis_aircraft', 'atis_distance']
+Real label: ['atis_aircraft', 'atis_distance']
+------
+287
+list california nevada arizona airports and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_airport', 'atis_flight_time']
+Real label: ['atis_airport', 'atis_flight_time']
+------
+288
+list airports , what cities does northwest fly to and also how much is a limousine service in la guard ##ia
+Predicted label: ['atis_airport', 'atis_city', 'atis_ground_fare']
+Real label: ['atis_airport', 'atis_city', 'atis_ground_fare']
+------
+289
+how many passengers can an l ##10 ##11 aircraft hold and also how many canadian airlines international flights use j ##31
+Predicted label: ['atis_capacity', 'atis_quantity']
+Real label: ['atis_capacity', 'atis_quantity']
+------
+290
+what cities does northwest fly out of , flight numbers from chicago to seattle and are meals ever served on tower air
+Predicted label: ['atis_city', 'atis_flight_no']
+Real label: ['atis_city', 'atis_meal', 'atis_flight_no']
+------
+291
+a flight from baltimore to san francisco arriving between 5 and 8 pm , what are the departure times from detroit to westchester county and also how much is the limousine service in boston
+Predicted label: ['atis_flight_time', 'atis_ground_fare', 'atis_flight']
+Real label: ['atis_flight_time', 'atis_ground_fare', 'atis_flight']
+------
+292
+how much is a limousine service in la guard ##ia and then how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_ground_fare']
+Real label: ['atis_quantity', 'atis_ground_fare']
+------
+293
+list type of aircraft for all flights from charlotte , what are the fares for ground transportation in denver and are snacks served on tower air
+Predicted label: ['atis_aircraft', 'atis_ground_service', 'atis_airfare']
+Real label: ['atis_aircraft', 'atis_meal', 'atis_ground_fare']
+------
+294
+to what cities from boston does america west fly first class and also flight numbers on american airlines from phoenix to milwaukee
+Predicted label: ['atis_city', 'atis_flight_no']
+Real label: ['atis_city', 'atis_flight_no']
+------
+295
+list the cities from which northwest flies and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_city', 'atis_flight_time']
+Real label: ['atis_city', 'atis_flight_time']
+------
+296
+what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_meal']
+Real label: ['atis_meal']
+------
+297
+what is the fare for a first class round trip ticket from detroit to st . petersburg and then list flights between pittsburgh and milwaukee
+Predicted label: ['atis_flight', 'atis_airfare']
+Real label: ['atis_flight', 'atis_airfare']
+------
+298
+what is the seating capacity on the aircraft m ##80 and i need a flight from toronto to newark one way leaving wednesday evening or thursday morning
+Predicted label: ['atis_capacity', 'atis_flight']
+Real label: ['atis_capacity', 'atis_flight']
+------
+299
+how long does a flight from baltimore to san francisco take and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_distance']
+Real label: ['atis_flight_time', 'atis_distance']
+------
+300
+what is the seating capacity of an m ##80 and list the distance in miles from boston airport to downtown boston
+Predicted label: ['atis_capacity', 'atis_distance']
+Real label: ['atis_capacity', 'atis_distance']
+------
+301
+tell me about the m ##80 aircraft and also how much is the limousine service in boston
+Predicted label: ['atis_aircraft', 'atis_ground_fare']
+Real label: ['atis_aircraft', 'atis_ground_fare']
+------
+302
+list la and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time']
+Real label: ['atis_city', 'atis_flight_time']
+------
+303
+list the airports in la
+Predicted label: ['atis_airport']
+Real label: ['atis_airport']
+------
+304
+tell me about the m ##80 aircraft and what are the departure times from detroit to westchester county
+Predicted label: ['atis_aircraft', 'atis_flight_time']
+Real label: ['atis_aircraft', 'atis_flight_time']
+------
+305
+tell me about the type of aircraft called an m ##80 and list the distance in miles from boston airport to downtown boston
+Predicted label: ['atis_aircraft', 'atis_distance']
+Real label: ['atis_aircraft', 'atis_distance']
+------
+306
+which flights travel from tacoma to san jose and then how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_flight']
+Real label: ['atis_quantity', 'atis_flight']
+------
+307
+list la and what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time']
+Real label: ['atis_city', 'atis_flight_time']
+------
+308
+what does fare code h mean , what are the lowest fares from washington dc to salt lake city and then list california airports
+Predicted label: ['atis_abbreviation', 'atis_airport', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_airport', 'atis_airfare']
+------
+309
+what airline is dl
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+310
+now show me ground transportation in houston on monday afternoon
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+311
+which airline is us and then list all of the daily flights arriving in denver from 8 to 9 pm
+Predicted label: ['atis_flight', 'atis_airline']
+Real label: ['atis_flight', 'atis_airline']
+------
+312
+show me the airports serviced by tower air and then what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_airport', 'atis_meal']
+Real label: ['atis_airport', 'atis_meal']
+------
+313
+at the charlotte airport how many different types of aircraft are there for us air , what ' s the fare for a taxi to denver and then how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_airfare']
+Real label: ['atis_aircraft', 'atis_quantity', 'atis_ground_fare']
+------
+314
+get saturday fares from washington to toronto
+Predicted label: ['atis_airfare']
+Real label: ['atis_airfare']
+------
+315
+what airline is hp
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+316
+what type of plane is a d ##9 ##s and also show me airlines that have flights between toronto and detroit between detroit and st . louis and between st . louis and toronto
+Predicted label: ['atis_aircraft', 'atis_airline']
+Real label: ['atis_aircraft', 'atis_airline']
+------
+317
+i would like to fly from atlanta to san diego and also what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_meal', 'atis_flight']
+Real label: ['atis_meal', 'atis_flight']
+------
+318
+show me the cost of a first class ticket from detroit to las vegas and back , what are the departure times from detroit to westchester county and how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_flight_time', 'atis_airfare']
+Real label: ['atis_quantity', 'atis_flight_time', 'atis_airfare']
+------
+319
+what cities does northwest fly out of , list the distance in miles from toronto international airport to downtown toronto and flight number from houston to dallas
+Predicted label: ['atis_city', 'atis_flight_no', 'atis_distance']
+Real label: ['atis_city', 'atis_flight_no', 'atis_distance']
+------
+320
+list the cities from which northwest flies and how much is the limousine service in boston
+Predicted label: ['atis_city', 'atis_ground_fare']
+Real label: ['atis_city', 'atis_ground_fare']
+------
+321
+what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_meal']
+Real label: ['atis_meal']
+------
+322
+list the arizona airport and is there ground transportation from l ##ga into new york city
+Predicted label: ['atis_airport', 'atis_ground_service']
+Real label: ['atis_airport', 'atis_ground_service']
+------
+323
+cheap ##est fare from indianapolis to orlando on the twenty seventh of december and what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_airfare']
+Real label: ['atis_flight_time', 'atis_airfare']
+------
+324
+i need a flight from memphis to las vegas
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+325
+find flight from houston to memphis on friday and also how much is the limousine service in boston
+Predicted label: ['atis_ground_fare', 'atis_flight']
+Real label: ['atis_ground_fare', 'atis_flight']
+------
+326
+what does fare code h mean and i need flight numbers for those flights departing on thursday before 8 am from oakland going to salt lake city
+Predicted label: ['atis_abbreviation', 'atis_flight_no']
+Real label: ['atis_abbreviation', 'atis_flight_no']
+------
+327
+what does the restriction ap ##58 mean and then what type of ground transportation is there at the las vegas airport
+Predicted label: ['atis_abbreviation', 'atis_ground_service']
+Real label: ['atis_abbreviation', 'atis_ground_service']
+------
+328
+list the cheap ##est fare from charlotte to las vegas , what is the capacity of the 73 ##s and also chicago to seattle saturday morning
+Predicted label: ['atis_capacity', 'atis_flight', 'atis_airfare']
+Real label: ['atis_capacity', 'atis_flight', 'atis_airfare']
+------
+329
+list distance from airports to downtown in new york , now show me ground transportation in houston on monday afternoon and then are meals ever served on tower air
+Predicted label: ['atis_ground_service', 'atis_meal', 'atis_distance']
+Real label: ['atis_ground_service', 'atis_meal', 'atis_distance']
+------
+330
+what are the departure times from detroit to westchester county and i need to rent a car at tampa
+Predicted label: ['atis_ground_service', 'atis_flight_time']
+Real label: ['atis_ground_service', 'atis_flight_time']
+------
+331
+what meals are served on american flight 81 ##1 from tampa to milwaukee and then how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_meal', 'atis_quantity']
+Real label: ['atis_meal', 'atis_quantity']
+------
+332
+what is the least expensive fare from boston to salt lake city and then what are the fares for ground transportation in denver
+Predicted label: ['atis_airfare']
+Real label: ['atis_ground_fare', 'atis_airfare']
+------
+333
+how much does it cost to fly on t ##wa from columbus to milwaukee and what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_meal', 'atis_airfare']
+Real label: ['atis_meal', 'atis_airfare']
+------
+334
+what airline is as as in sam and find american flight from newark to nashville around 630 pm
+Predicted label: ['atis_flight', 'atis_airline']
+Real label: ['atis_flight', 'atis_airline']
+------
+335
+list distance from airports to downtown in new york and also how much is a limousine service in la guard ##ia
+Predicted label: ['atis_ground_fare', 'atis_distance']
+Real label: ['atis_ground_fare', 'atis_distance']
+------
+336
+show me ground transportation in fort worth and how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_ground_service', 'atis_quantity']
+Real label: ['atis_ground_service', 'atis_quantity']
+------
+337
+get saturday fares from washington to boston
+Predicted label: ['atis_airfare']
+Real label: ['atis_airfare']
+------
+338
+list ground transportation in baltimore
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+339
+show me the cheap ##est round trip between st . petersburg and detroit that arrives before 7 pm
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+340
+what are restrictions ap 57 and also list all flights on all types of aircraft arriving in denver between 8 and 9 pm
+Predicted label: ['atis_abbreviation', 'atis_flight']
+Real label: ['atis_abbreviation', 'atis_flight']
+------
+341
+what does the restriction ap ##58 mean and then how much is limousine service in los angeles
+Predicted label: ['atis_abbreviation', 'atis_ground_fare']
+Real label: ['atis_abbreviation', 'atis_ground_fare']
+------
+342
+are meals ever served on tower air and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_meal', 'atis_quantity']
+Real label: ['atis_meal', 'atis_quantity']
+------
+343
+tell me about the m ##80 aircraft and also list the distance in miles from new york ' s la guard ##ia airport to downtown new york city
+Predicted label: ['atis_aircraft', 'atis_distance']
+Real label: ['atis_aircraft', 'atis_distance']
+------
+344
+what does hp stand for and list the cities from which northwest flies
+Predicted label: ['atis_abbreviation', 'atis_city']
+Real label: ['atis_abbreviation', 'atis_city']
+------
+345
+i would like to know what airports are in los angeles , flight numbers on american airlines from phoenix to milwaukee and also what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_airport', 'atis_meal', 'atis_flight_no']
+Real label: ['atis_airport', 'atis_meal', 'atis_flight_no']
+------
+346
+what is the seating capacity for the aircraft m ##80 and how far is new york ' s la guard ##ia from downtown
+Predicted label: ['atis_capacity', 'atis_distance']
+Real label: ['atis_capacity', 'atis_distance']
+------
+347
+what cities does northwest fly to and flight numbers from chicago to seattle
+Predicted label: ['atis_city', 'atis_flight_no']
+Real label: ['atis_city', 'atis_flight_no']
+------
+348
+what does hp stand for and are snacks served on tower air
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation', 'atis_meal']
+------
+349
+what is the seating capacity of the aircraft m ##80
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+350
+how far is toronto international from downtown
+Predicted label: ['atis_distance']
+Real label: ['atis_distance']
+------
+351
+i need a ticket from nashville to seattle and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_airfare']
+Real label: ['atis_flight_time', 'atis_airfare']
+------
+352
+please list flights from san francisco to charlotte , flight numbers on american airlines from phoenix to milwaukee and also how many canadian airlines international flights use j ##31
+Predicted label: ['atis_quantity', 'atis_flight_no', 'atis_flight']
+Real label: ['atis_quantity', 'atis_flight_no', 'atis_flight']
+------
+353
+list type of aircraft for all flights from charlotte
+Predicted label: ['atis_aircraft']
+Real label: ['atis_aircraft']
+------
+354
+what type of plane is a d ##9 ##s and what ground transportation is available between dc ##a and downtown washington
+Predicted label: ['atis_aircraft', 'atis_ground_service']
+Real label: ['atis_aircraft', 'atis_ground_service']
+------
+355
+what cities does northwest fly to and how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_city', 'atis_quantity']
+Real label: ['atis_city', 'atis_quantity']
+------
+356
+what airline is as and what is the seating capacity of a 72 ##s
+Predicted label: ['atis_capacity', 'atis_airline']
+Real label: ['atis_capacity', 'atis_airline']
+------
+357
+what is the first class round trip air ##fare from india indianapolis to memphis and also what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_meal', 'atis_airfare']
+Real label: ['atis_meal', 'atis_airfare']
+------
+358
+is there a fare from pittsburgh to cleveland under 200 dollars , list distance from airports to downtown in new york and then i need a flight on united airlines from la guard ##ia to san jose
+Predicted label: ['atis_flight', 'atis_distance', 'atis_airfare']
+Real label: ['atis_flight', 'atis_distance', 'atis_airfare']
+------
+359
+what airline is us
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+360
+list airports in la and then what ground transportation is available from dallas fort worth airport to downtown dallas
+Predicted label: ['atis_airport', 'atis_ground_service']
+Real label: ['atis_airport', 'atis_ground_service']
+------
+361
+list la and also show me the flights in from minneapolis to indianapolis on tuesday afternoon
+Predicted label: ['atis_flight']
+Real label: ['atis_city', 'atis_flight']
+------
+362
+what airlines serve denver
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+363
+list airports in la and also what cities does northwest fly out of
+Predicted label: ['atis_airport', 'atis_city']
+Real label: ['atis_airport', 'atis_city']
+------
+364
+get saturday fares from washington to boston and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_airfare']
+Real label: ['atis_flight_time', 'atis_airfare']
+------
+365
+what is mc ##i and what is the seating capacity on the aircraft 73 ##3
+Predicted label: ['atis_abbreviation', 'atis_capacity']
+Real label: ['atis_abbreviation', 'atis_capacity']
+------
+366
+list la and how much is limousine service in los angeles
+Predicted label: ['atis_city', 'atis_ground_fare']
+Real label: ['atis_city', 'atis_ground_fare']
+------
+367
+what is the seating capacity of an m ##80 and what are the departure times from detroit to westchester county
+Predicted label: ['atis_capacity', 'atis_flight_time']
+Real label: ['atis_capacity', 'atis_flight_time']
+------
+368
+what is cv ##g
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation']
+------
+369
+what airlines fly from baltimore to san francisco and also how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_airline']
+Real label: ['atis_quantity', 'atis_airline']
+------
+370
+what are the departure times from detroit to westchester county and list limousine rates for the city of boston
+Predicted label: ['atis_flight_time', 'atis_ground_fare']
+Real label: ['atis_flight_time', 'atis_ground_fare']
+------
+371
+list distance from airports to downtown in new york
+Predicted label: ['atis_distance']
+Real label: ['atis_distance']
+------
+372
+what does fare code f mean and then what is the fare for a first class round trip ticket from detroit to st . petersburg
+Predicted label: ['atis_abbreviation', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_airfare']
+------
+373
+what are the fares for all flights between washington and columbus , i need the flight numbers of flights leaving from cleveland and arriving at dallas and then what ground transportation is available between milwaukee airport and downtown milwaukee
+Predicted label: ['atis_ground_service', 'atis_flight_no', 'atis_airfare']
+Real label: ['atis_ground_service', 'atis_flight_no', 'atis_airfare']
+------
+374
+what are the fares for all flights between washington and columbus and then flight number from houston to dallas
+Predicted label: ['atis_flight_no', 'atis_airfare']
+Real label: ['atis_flight_no', 'atis_airfare']
+------
+375
+what is a d ##9 ##s and what is the seating capacity of a 72 ##s
+Predicted label: ['atis_abbreviation', 'atis_capacity']
+Real label: ['atis_abbreviation', 'atis_capacity']
+------
+376
+get fares from washington to boston and list airports
+Predicted label: ['atis_airport', 'atis_airfare']
+Real label: ['atis_airport', 'atis_airfare']
+------
+377
+what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning and how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_meal', 'atis_quantity']
+Real label: ['atis_meal', 'atis_quantity']
+------
+378
+what airline is aa and what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_meal', 'atis_airline']
+Real label: ['atis_meal', 'atis_airline']
+------
+379
+what is the most expensive one way fare between detroit and westchester county and also what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_meal', 'atis_airfare']
+Real label: ['atis_meal', 'atis_airfare']
+------
+380
+what does fare code b ##h mean and then flight number from houston to dallas
+Predicted label: ['atis_abbreviation', 'atis_flight_no']
+Real label: ['atis_abbreviation', 'atis_flight_no']
+------
+381
+what airlines off from love field between 6 and 10 am on june sixth , what are the departure times from detroit to westchester county and what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_meal', 'atis_flight_time', 'atis_airline']
+Real label: ['atis_meal', 'atis_flight_time', 'atis_airline']
+------
+382
+i need a ticket from nashville to seattle , tell me all the airports in the new york city area and also what flights leave from cleveland and go to dallas
+Predicted label: ['atis_airport', 'atis_flight', 'atis_airfare']
+Real label: ['atis_airport', 'atis_flight', 'atis_airfare']
+------
+383
+list the cities from which northwest flies and then what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_city', 'atis_meal']
+Real label: ['atis_city', 'atis_meal']
+------
+384
+show flights from kansas city to orlando
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+385
+what is the seating capacity of the 75 ##7 and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_capacity', 'atis_quantity']
+Real label: ['atis_capacity', 'atis_quantity']
+------
+386
+what type of aircraft is used for the american flight leaving at 41 ##9 pm , what are the departure times from detroit to westchester county and also now show me ground transportation in houston on monday afternoon
+Predicted label: ['atis_aircraft', 'atis_ground_service', 'atis_flight_time']
+Real label: ['atis_aircraft', 'atis_ground_service', 'atis_flight_time']
+------
+387
+list la and also flight numbers from seattle to chicago on continental
+Predicted label: ['atis_abbreviation', 'atis_flight_no']
+Real label: ['atis_city', 'atis_flight_no']
+------
+388
+list air ##fare ##s for first class round trip from detroit to st . petersburg , flight number from dallas to houston and also what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_meal', 'atis_flight_no', 'atis_airfare']
+Real label: ['atis_meal', 'atis_flight_no', 'atis_airfare']
+------
+389
+what airlines fly between washington dc and columbus ohio , list flights from washington dc to philadelphia saturday pm and what ' s the fare for a taxi to denver
+Predicted label: ['atis_flight', 'atis_airfare', 'atis_airline']
+Real label: ['atis_ground_fare', 'atis_flight', 'atis_airline']
+------
+390
+what cities does northwest fly to and then are meals ever served on tower air
+Predicted label: ['atis_city', 'atis_meal']
+Real label: ['atis_city', 'atis_meal']
+------
+391
+list la , list the distance in miles from boston airport to downtown boston and then list early morning flights from cincinnati to tampa
+Predicted label: ['atis_abbreviation', 'atis_flight', 'atis_distance']
+Real label: ['atis_city', 'atis_flight', 'atis_distance']
+------
+392
+what are the departure times from detroit to westchester county , are snacks served on tower air and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_meal', 'atis_quantity', 'atis_flight_time']
+Real label: ['atis_meal', 'atis_quantity', 'atis_flight_time']
+------
+393
+what airline is dl and does tacoma airport offer transportation from the airport to the downtown area
+Predicted label: ['atis_airport', 'atis_ground_service', 'atis_airline']
+Real label: ['atis_ground_service', 'atis_airline']
+------
+394
+cheap ##est round trip fare from or indianapolis to orlando on december twenty fifth and flight numbers on american airlines from phoenix to milwaukee
+Predicted label: ['atis_flight_no', 'atis_airfare']
+Real label: ['atis_flight_no', 'atis_airfare']
+------
+395
+what are the fares for all flights between washington and columbus , is there taxi service at the ontario airport and then how many canadian airlines international flights use j ##31
+Predicted label: ['atis_ground_service', 'atis_quantity', 'atis_airfare']
+Real label: ['atis_ground_service', 'atis_quantity', 'atis_airfare']
+------
+396
+how far is new york ' s la guard ##ia from downtown and then what ground transportation is available from dallas fort worth airport to downtown dallas
+Predicted label: ['atis_ground_service', 'atis_distance']
+Real label: ['atis_ground_service', 'atis_distance']
+------
+397
+what does fare code f mean , what are the fares for ground transportation in denver and what ground transportation is available between dc ##a and downtown washington
+Predicted label: ['atis_abbreviation', 'atis_ground_service', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_ground_service', 'atis_ground_fare']
+------
+398
+list airports and also how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_airport', 'atis_quantity']
+Real label: ['atis_airport', 'atis_quantity']
+------
+399
+what does q mean and also what airline is as
+Predicted label: ['atis_abbreviation', 'atis_airline']
+Real label: ['atis_abbreviation', 'atis_airline']
+------
+400
+how many flights does alaska airlines have to bu ##rba ##nk and also how many canadian airlines international flights use j ##31
+Predicted label: ['atis_quantity']
+Real label: ['atis_quantity', 'atis_flight']
+------
+401
+which airline is us
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+402
+list the cities from which northwest flies , how far is san francisco international from downtown and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_city', 'atis_flight_time', 'atis_distance']
+Real label: ['atis_city', 'atis_flight_time', 'atis_distance']
+------
+403
+what type of aircraft is used for the american flight leaving at 41 ##9 pm , list the cities from which northwest flies and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_city', 'atis_aircraft', 'atis_flight_time']
+Real label: ['atis_city', 'atis_aircraft', 'atis_flight_time']
+------
+404
+what airline is hp and what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_airline']
+Real label: ['atis_flight_time', 'atis_airline']
+------
+405
+list first class air ##fare round trip from indianapolis to memphis
+Predicted label: ['atis_airfare']
+Real label: ['atis_airfare']
+------
+406
+i need a flight from toronto to st . louis
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+407
+what is the ground transportation between the charlotte airport charlotte airport and downtown charlotte and then how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_ground_service', 'atis_quantity']
+Real label: ['atis_ground_service', 'atis_quantity']
+------
+408
+what is the seating capacity of the 75 ##7 , list the cities from which northwest flies and then i need the flight numbers of flights leaving from cleveland and arriving at dallas
+Predicted label: ['atis_city', 'atis_capacity', 'atis_flight_no']
+Real label: ['atis_city', 'atis_capacity', 'atis_flight_no']
+------
+409
+i would like to have the airline that flies toronto detroit and st . louis and also is there ground transportation from l ##ga into new york city
+Predicted label: ['atis_ground_service', 'atis_airline']
+Real label: ['atis_ground_service', 'atis_airline']
+------
+410
+tell me all the airports in the new york city area and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_airport', 'atis_flight_time']
+Real label: ['atis_airport', 'atis_flight_time']
+------
+411
+what are the fares for flights between boston and washington dc , i need flight numbers for those flights departing on thursday before 8 am from oakland going to salt lake city and ground transportation for las vegas
+Predicted label: ['atis_ground_service', 'atis_flight_no', 'atis_airfare']
+Real label: ['atis_ground_service', 'atis_flight_no', 'atis_airfare']
+------
+412
+flight numbers on american airlines from phoenix to milwaukee and then how much is a limousine service in la guard ##ia
+Predicted label: ['atis_flight_no', 'atis_ground_fare']
+Real label: ['atis_flight_no', 'atis_ground_fare']
+------
+413
+which airlines fly between toronto and san diego and also what cities does northwest fly to
+Predicted label: ['atis_city', 'atis_airline']
+Real label: ['atis_city', 'atis_airline']
+------
+414
+show me airlines that have flights between toronto and detroit between detroit and st . louis and between st . louis and toronto and also get first flight from oakland to salt lake city on thursday
+Predicted label: ['atis_flight', 'atis_airline']
+Real label: ['atis_flight', 'atis_airline']
+------
+415
+which airlines fly from baltimore to san francisco
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+416
+what does not sa mean and then how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_abbreviation', 'atis_quantity']
+Real label: ['atis_abbreviation', 'atis_quantity']
+------
+417
+list american airlines flights from houston to milwaukee departing friday pm
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+418
+tell me all the airports near westchester county and then list the distance in miles from san francisco international airport to san francisco downtown
+Predicted label: ['atis_airport', 'atis_distance']
+Real label: ['atis_airport', 'atis_distance']
+------
+419
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon and what airline is as as in sam
+Predicted label: ['atis_aircraft', 'atis_airline']
+Real label: ['atis_aircraft', 'atis_airline']
+------
+420
+what type of aircraft is used for the american flight leaving at 41 ##9 pm
+Predicted label: ['atis_aircraft']
+Real label: ['atis_aircraft']
+------
+421
+what airlines fly between detroit and westchester county and also how much is limousine service in los angeles
+Predicted label: ['atis_ground_fare', 'atis_airline']
+Real label: ['atis_ground_fare', 'atis_airline']
+------
+422
+how long does a flight from baltimore to san francisco take and also list limousine rates for the city of boston
+Predicted label: ['atis_ground_fare', 'atis_distance']
+Real label: ['atis_ground_fare', 'atis_distance']
+------
+423
+what airline is hp , what is the seating capacity of the 73 ##3 and what types of ground transportation are available in denver
+Predicted label: ['atis_capacity', 'atis_ground_service', 'atis_airline']
+Real label: ['atis_capacity', 'atis_ground_service', 'atis_airline']
+------
+424
+tell me about the m ##80 aircraft and how many passengers can fly on a 75 ##7
+Predicted label: ['atis_capacity', 'atis_aircraft']
+Real label: ['atis_capacity', 'atis_aircraft']
+------
+425
+what is the seating capacity of a 75 ##7 and also flight number from dallas to houston
+Predicted label: ['atis_capacity', 'atis_flight_no']
+Real label: ['atis_capacity', 'atis_flight_no']
+------
+426
+list california airports , list the flights from memphis to cleveland and also what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_airport', 'atis_meal', 'atis_flight']
+Real label: ['atis_airport', 'atis_meal', 'atis_flight']
+------
+427
+list the flights from westchester county to denver on june seventh
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+428
+show me all flights from orlando to montreal please and then list limousine rates for the city of boston
+Predicted label: ['atis_ground_fare', 'atis_flight']
+Real label: ['atis_ground_fare', 'atis_flight']
+------
+429
+list the arizona airport
+Predicted label: ['atis_airport']
+Real label: ['atis_airport']
+------
+430
+which flights arrive in bu ##rba ##nk from las vegas on saturday april twenty third in the afternoon and what is the ground transportation between the charlotte airport charlotte airport and downtown charlotte
+Predicted label: ['atis_ground_service', 'atis_flight']
+Real label: ['atis_ground_service', 'atis_flight']
+------
+431
+i need flight numbers for those flights departing on thursday before 8 am from oakland going to salt lake city and also how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_flight_no']
+Real label: ['atis_quantity', 'atis_flight_no']
+------
+432
+what does fare code q ##o mean , list airlines that fly from seattle to salt lake city and then flight numbers from chicago to seattle
+Predicted label: ['atis_abbreviation', 'atis_flight_no', 'atis_airline']
+Real label: ['atis_abbreviation', 'atis_flight_no', 'atis_airline']
+------
+433
+tell me about the m ##80 aircraft and also flight numbers on american airlines from phoenix to milwaukee
+Predicted label: ['atis_aircraft', 'atis_flight_no']
+Real label: ['atis_aircraft', 'atis_flight_no']
+------
+434
+which flights go from new york to miami and back
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+435
+what airlines fly between detroit and westchester county and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_airline']
+Real label: ['atis_quantity', 'atis_airline']
+------
+436
+get saturday fares from washington to montreal , list la and then flight numbers from chicago to seattle
+Predicted label: ['atis_flight_no', 'atis_airfare']
+Real label: ['atis_city', 'atis_flight_no', 'atis_airfare']
+------
+437
+how many passengers can fly on a 75 ##7 and then is ground transportation available in st . louis
+Predicted label: ['atis_capacity', 'atis_ground_service']
+Real label: ['atis_capacity', 'atis_ground_service']
+------
+438
+what does fare code q ##o mean
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation']
+------
+439
+tell me about the type of aircraft called an m ##80 and then what cities does northwest fly to
+Predicted label: ['atis_city', 'atis_aircraft']
+Real label: ['atis_city', 'atis_aircraft']
+------
+440
+what is a d ##9 ##s , what is seating capacity on the aircraft 73 ##s and also show me flights from montreal to orlando and long beach
+Predicted label: ['atis_abbreviation', 'atis_capacity', 'atis_flight']
+Real label: ['atis_abbreviation', 'atis_capacity', 'atis_flight']
+------
+441
+list airports in la and then what is the seating capacity on the aircraft 73 ##3
+Predicted label: ['atis_airport', 'atis_capacity']
+Real label: ['atis_airport', 'atis_capacity']
+------
+442
+list airports in la
+Predicted label: ['atis_airport']
+Real label: ['atis_airport']
+------
+443
+what does fare code f mean and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_abbreviation', 'atis_flight_time']
+Real label: ['atis_abbreviation', 'atis_flight_time']
+------
+444
+list limousine rates for the city of boston
+Predicted label: ['atis_ground_fare']
+Real label: ['atis_ground_fare']
+------
+445
+what is the seating capacity of an m ##80 and what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_capacity', 'atis_meal']
+Real label: ['atis_capacity', 'atis_meal']
+------
+446
+i need a ticket from nashville tennessee to seattle and i need to rent a car at tampa
+Predicted label: ['atis_ground_service', 'atis_airfare']
+Real label: ['atis_ground_service', 'atis_airfare']
+------
+447
+how much is the limousine service in boston and also is there ground transportation available at the phoenix airport
+Predicted label: ['atis_ground_service', 'atis_ground_fare']
+Real label: ['atis_ground_service', 'atis_ground_fare']
+------
+448
+what are restrictions ap 57 and also give me a combination of continental flights from chicago to seattle that have meals early saturday morning
+Predicted label: ['atis_abbreviation', 'atis_flight']
+Real label: ['atis_abbreviation', 'atis_flight']
+------
+449
+what does fare code b ##h mean , tell me about the type of aircraft called an m ##80 and also show me the cheap ##est round trip fares from houston to boston
+Predicted label: ['atis_abbreviation', 'atis_aircraft', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_aircraft', 'atis_airfare']
+------
+450
+cheap ##est fare round trip from indianapolis to orlando on december twenty seventh
+Predicted label: ['atis_airfare']
+Real label: ['atis_airfare']
+------
+451
+i would like to have the airline that flies toronto detroit and st . louis and what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_airline']
+Real label: ['atis_flight_time', 'atis_airline']
+------
+452
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon and also what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_aircraft', 'atis_meal']
+Real label: ['atis_aircraft', 'atis_meal']
+------
+453
+what is meal code sb and what is the fare for a first class round trip ticket from detroit to st . petersburg
+Predicted label: ['atis_abbreviation', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_airfare']
+------
+454
+show me the cheap ##est round trip fares from san francisco to houston , what is the seating capacity of the aircraft 72 ##s and list limousine rates for the city of boston
+Predicted label: ['atis_capacity', 'atis_ground_fare', 'atis_airfare']
+Real label: ['atis_capacity', 'atis_ground_fare', 'atis_airfare']
+------
+455
+what class is fare code q and list seating capacities of delta flights from seattle to salt lake city
+Predicted label: ['atis_abbreviation', 'atis_capacity']
+Real label: ['atis_abbreviation', 'atis_capacity']
+------
+456
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon and then what ground transportation is there in baltimore
+Predicted label: ['atis_aircraft', 'atis_ground_service']
+Real label: ['atis_aircraft', 'atis_ground_service']
+------
+457
+what is a d ##9 ##s and then what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_abbreviation', 'atis_meal']
+Real label: ['atis_abbreviation', 'atis_meal']
+------
+458
+list type of aircraft for all flights from charlotte , is there ground transportation available at the denver airport and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_aircraft', 'atis_ground_service', 'atis_quantity']
+Real label: ['atis_aircraft', 'atis_ground_service', 'atis_quantity']
+------
+459
+list distance from airports to downtown in new york and then how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_distance']
+Real label: ['atis_quantity', 'atis_distance']
+------
+460
+what airlines fly between washington dc and columbus ohio and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_airline']
+Real label: ['atis_flight_time', 'atis_airline']
+------
+461
+what type of plane is a d ##9 ##s , show me flights from fort worth to san jose and then flight numbers on american airlines from phoenix to milwaukee
+Predicted label: ['atis_aircraft', 'atis_flight_no', 'atis_flight']
+Real label: ['atis_aircraft', 'atis_flight_no', 'atis_flight']
+------
+462
+list airports in arizona nevada and california please , what are the departure times from detroit to westchester county and how much is the limousine service in boston
+Predicted label: ['atis_airport', 'atis_flight_time', 'atis_ground_fare']
+Real label: ['atis_airport', 'atis_flight_time', 'atis_ground_fare']
+------
+463
+what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am and then how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_meal', 'atis_quantity']
+Real label: ['atis_meal', 'atis_quantity']
+------
+464
+list type of aircraft for all flights from charlotte and how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_aircraft', 'atis_quantity']
+Real label: ['atis_aircraft', 'atis_quantity']
+------
+465
+what ground transportation is available between phoenix airport and downtown phoenix and are meals ever served on tower air
+Predicted label: ['atis_ground_service', 'atis_meal']
+Real label: ['atis_ground_service', 'atis_meal']
+------
+466
+what types of ground transportation are available in denver
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+467
+what does fare code b ##h mean and what are the fares for ground transportation in denver
+Predicted label: ['atis_abbreviation', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_ground_fare']
+------
+468
+flight numbers from chicago to seattle on continental and how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_flight_no']
+Real label: ['atis_quantity', 'atis_flight_no']
+------
+469
+which airline is us , i need information on flights from toronto to san diego and also how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_flight', 'atis_airline']
+Real label: ['atis_quantity', 'atis_flight', 'atis_airline']
+------
+470
+list airports in arizona nevada and california please and also what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_airport', 'atis_meal']
+Real label: ['atis_airport', 'atis_meal']
+------
+471
+what does ua mean
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation']
+------
+472
+tell me about the ground transportation from nashville airport
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+473
+what is fare code f and then please show ground transportation to milwaukee
+Predicted label: ['atis_abbreviation', 'atis_ground_service']
+Real label: ['atis_abbreviation', 'atis_ground_service']
+------
+474
+give me the fares for round trip flights from cleveland to miami next wednesday and also list airports
+Predicted label: ['atis_airport', 'atis_airfare']
+Real label: ['atis_airport', 'atis_airfare']
+------
+475
+at the charlotte airport how many different types of aircraft are there for us air and also how much is the limousine service in boston
+Predicted label: ['atis_quantity', 'atis_ground_fare']
+Real label: ['atis_aircraft', 'atis_ground_fare']
+------
+476
+show me the cheap ##est round trip coach fare on t ##wa from las vegas to detroit
+Predicted label: ['atis_airfare']
+Real label: ['atis_airfare']
+------
+477
+cheap ##est fare from indianapolis to orlando on the twenty seventh of december
+Predicted label: ['atis_airfare']
+Real label: ['atis_airfare']
+------
+478
+what is cv ##g , is there one airline that flies from bu ##rba ##nk to milwaukee milwaukee to st . louis and from st . louis to bu ##rba ##nk and also show me the airports serviced by tower air
+Predicted label: ['atis_abbreviation', 'atis_airport', 'atis_airline']
+Real label: ['atis_abbreviation', 'atis_airport', 'atis_airline']
+------
+479
+what is fare code m and then what is the seating capacity for delta be ##1
+Predicted label: ['atis_abbreviation', 'atis_capacity']
+Real label: ['atis_abbreviation', 'atis_capacity']
+------
+480
+what is the seating capacity of the type of aircraft m ##80 and also flight number from houston to dallas
+Predicted label: ['atis_capacity', 'atis_flight_no']
+Real label: ['atis_capacity', 'atis_flight_no']
+------
+481
+how far is san francisco international from downtown and what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_distance']
+Real label: ['atis_flight_time', 'atis_distance']
+------
+482
+flight numbers from seattle to chicago on continental and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_no', 'atis_flight_time']
+Real label: ['atis_flight_no', 'atis_flight_time']
+------
+483
+what is the lowest fare from washington dc to montreal and list distance from airports to downtown in new york
+Predicted label: ['atis_distance', 'atis_airfare']
+Real label: ['atis_distance', 'atis_airfare']
+------
+484
+how much does it cost to fly on t ##wa from columbus to milwaukee and then what is the seating capacity of the aircraft 72 ##s
+Predicted label: ['atis_capacity', 'atis_airfare']
+Real label: ['atis_capacity', 'atis_airfare']
+------
+485
+how far is los angeles international from downtown and list flights from milwaukee to detroit
+Predicted label: ['atis_flight', 'atis_distance']
+Real label: ['atis_flight', 'atis_distance']
+------
+486
+list airports , what ground transportation is available from dallas fort worth airport to downtown dallas and what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_airport', 'atis_ground_service', 'atis_meal']
+Real label: ['atis_airport', 'atis_ground_service', 'atis_meal']
+------
+487
+flight numbers from seattle to chicago on continental and then what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_meal', 'atis_flight_no']
+Real label: ['atis_meal', 'atis_flight_no']
+------
+488
+what does hp stand for and then what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_abbreviation', 'atis_meal']
+Real label: ['atis_abbreviation', 'atis_meal']
+------
+489
+i need a ticket from nashville tennessee to seattle and then what airline is aa
+Predicted label: ['atis_airfare', 'atis_airline']
+Real label: ['atis_airfare', 'atis_airline']
+------
+490
+what is cv ##g and list the arizona airport
+Predicted label: ['atis_abbreviation', 'atis_airport']
+Real label: ['atis_abbreviation', 'atis_airport']
+------
+491
+what are the departure times from detroit to westchester county and also are snacks served on tower air
+Predicted label: ['atis_meal', 'atis_flight_time']
+Real label: ['atis_meal', 'atis_flight_time']
+------
+492
+get fares from washington to montreal and list the arizona airport
+Predicted label: ['atis_airport', 'atis_airfare']
+Real label: ['atis_airport', 'atis_airfare']
+------
+493
+list flights from washington dc to montreal
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+494
+list airports and then flight number from houston to dallas
+Predicted label: ['atis_airport', 'atis_flight_no']
+Real label: ['atis_airport', 'atis_flight_no']
+------
+495
+tell me all the airports in the new york city area
+Predicted label: ['atis_airport']
+Real label: ['atis_airport']
+------
+496
+list the cities from which northwest flies , what are the fares for ground transportation in denver and then what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_city', 'atis_ground_service', 'atis_meal', 'atis_airfare']
+Real label: ['atis_city', 'atis_meal', 'atis_ground_fare']
+------
+497
+what ' s the ground transportation in denver and what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_ground_service', 'atis_meal']
+Real label: ['atis_ground_service', 'atis_meal']
+------
+498
+what airline flies from boston to san diego and list flights from dallas to houston
+Predicted label: ['atis_flight', 'atis_airline']
+Real label: ['atis_flight', 'atis_airline']
+------
+499
+flight number from houston to dallas and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_no', 'atis_flight_time']
+Real label: ['atis_flight_no', 'atis_flight_time']
+------
+500
+tell me about the type of aircraft called an m ##80 and what ' s the ground transportation in denver
+Predicted label: ['atis_aircraft', 'atis_ground_service']
+Real label: ['atis_aircraft', 'atis_ground_service']
+------
+501
+how much is a limousine service in la guard ##ia
+Predicted label: ['atis_ground_fare']
+Real label: ['atis_ground_fare']
+------
+502
+list airports
+Predicted label: ['atis_airport']
+Real label: ['atis_airport']
+------
+503
+what type of plane is a d ##9 ##s and list airports
+Predicted label: ['atis_airport', 'atis_aircraft']
+Real label: ['atis_airport', 'atis_aircraft']
+------
+504
+what is ph ##l and also list the distance in miles from boston airport to downtown boston
+Predicted label: ['atis_abbreviation', 'atis_distance']
+Real label: ['atis_abbreviation', 'atis_distance']
+------
+505
+tell me all the airports near westchester county and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_airport', 'atis_flight_time']
+Real label: ['atis_airport', 'atis_flight_time']
+------
+506
+what is the seating capacity of an m ##80 and also what ground transportation is available between pittsburgh airport and downtown pittsburgh
+Predicted label: ['atis_capacity', 'atis_ground_service']
+Real label: ['atis_capacity', 'atis_ground_service']
+------
+507
+tell me about the m ##80 aircraft , to what cities from boston does america west fly first class and then how many canadian airlines international flights use j ##31
+Predicted label: ['atis_city', 'atis_aircraft', 'atis_quantity']
+Real label: ['atis_city', 'atis_aircraft', 'atis_quantity']
+------
+508
+how far is los angeles international from downtown
+Predicted label: ['atis_distance']
+Real label: ['atis_distance']
+------
+509
+i need flight numbers for those flights departing on thursday before 8 am from oakland going to salt lake city and also and now show me ground transportation that i could get in boston late night
+Predicted label: ['atis_ground_service', 'atis_flight_no']
+Real label: ['atis_ground_service', 'atis_flight_no']
+------
+510
+list la and also are snacks served on tower air
+Predicted label: ['atis_meal']
+Real label: ['atis_city', 'atis_meal']
+------
+511
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon , list la and flight number from houston to dallas
+Predicted label: ['atis_aircraft', 'atis_flight_no']
+Real label: ['atis_city', 'atis_aircraft', 'atis_flight_no']
+------
+512
+what airlines fly from baltimore to san francisco , what are the departure times from detroit to westchester county and then what are the fares for ground transportation in denver
+Predicted label: ['atis_flight_time', 'atis_airfare', 'atis_airline']
+Real label: ['atis_flight_time', 'atis_ground_fare', 'atis_airline']
+------
+513
+list distance from airports to downtown in new york and i need the flight numbers of flights leaving from cleveland and arriving at dallas
+Predicted label: ['atis_flight_no', 'atis_distance']
+Real label: ['atis_flight_no', 'atis_distance']
+------
+514
+what does hp stand for and then tell me about the m ##80 aircraft
+Predicted label: ['atis_abbreviation', 'atis_aircraft']
+Real label: ['atis_abbreviation', 'atis_aircraft']
+------
+515
+list air ##fare ##s for first class round trip from detroit to st . petersburg , what is the seating capacity for delta be ##1 and then what ' s the fare for a taxi to denver
+Predicted label: ['atis_capacity', 'atis_airfare']
+Real label: ['atis_capacity', 'atis_ground_fare', 'atis_airfare']
+------
+516
+what is a d ##9 ##s and show me the cheap ##est round trip fares from houston to boston
+Predicted label: ['atis_abbreviation', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_airfare']
+------
+517
+what is the seating capacity for delta be ##1 and what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_capacity', 'atis_meal']
+Real label: ['atis_capacity', 'atis_meal']
+------
+518
+list fares from washington dc to montreal
+Predicted label: ['atis_airfare']
+Real label: ['atis_airfare']
+------
+519
+list airports in new york and how far is los angeles international from downtown
+Predicted label: ['atis_airport', 'atis_distance']
+Real label: ['atis_airport', 'atis_distance']
+------
+520
+what are the departure times from detroit to westchester county and how much is the limousine service in boston
+Predicted label: ['atis_flight_time', 'atis_ground_fare']
+Real label: ['atis_flight_time', 'atis_ground_fare']
+------
+521
+miami to cleveland sunday afternoon and flight number from houston to dallas
+Predicted label: ['atis_flight_no', 'atis_flight']
+Real label: ['atis_flight_no', 'atis_flight']
+------
+522
+what type of plane is a d ##9 ##s and how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_aircraft', 'atis_quantity']
+Real label: ['atis_aircraft', 'atis_quantity']
+------
+523
+what is the seating capacity on the aircraft 73 ##3 and are meals ever served on tower air
+Predicted label: ['atis_capacity', 'atis_meal']
+Real label: ['atis_capacity', 'atis_meal']
+------
+524
+what type of aircraft is used for the american flight leaving at 41 ##9 pm , list airports in new york and how much is limousine service in los angeles
+Predicted label: ['atis_airport', 'atis_aircraft', 'atis_ground_fare']
+Real label: ['atis_airport', 'atis_aircraft', 'atis_ground_fare']
+------
+525
+what is the lowest fare from toronto to washington dc , list flights from milwaukee to washington dc before 1200 and then flight numbers from chicago to seattle on continental
+Predicted label: ['atis_flight_no', 'atis_flight', 'atis_airfare']
+Real label: ['atis_flight_no', 'atis_flight', 'atis_airfare']
+------
+526
+what cities does northwest fly to and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_city', 'atis_flight_time']
+Real label: ['atis_city', 'atis_flight_time']
+------
+527
+what does fare code f mean , what is the seating capacity of a 75 ##7 and then what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_abbreviation', 'atis_capacity', 'atis_meal']
+Real label: ['atis_abbreviation', 'atis_capacity', 'atis_meal']
+------
+528
+is there ground transportation available at the phoenix airport
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+529
+how long does a flight from baltimore to san francisco take
+Predicted label: ['atis_distance']
+Real label: ['atis_distance']
+------
+530
+new york city to las vegas and memphis to las vegas on sunday
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+531
+tell me about the m ##80 aircraft and then flight number from dallas to houston
+Predicted label: ['atis_aircraft', 'atis_flight_no']
+Real label: ['atis_aircraft', 'atis_flight_no']
+------
+532
+what airline is hp and then list airports in la
+Predicted label: ['atis_airport', 'atis_airline']
+Real label: ['atis_airport', 'atis_airline']
+------
+533
+how far is san francisco international from downtown , i need the flight numbers of flights leaving from cleveland and arriving at dallas and also what ' s the fare for a taxi to denver
+Predicted label: ['atis_flight_no', 'atis_distance', 'atis_airfare']
+Real label: ['atis_flight_no', 'atis_ground_fare', 'atis_distance']
+------
+534
+list the distance in miles from boston airport to downtown boston and then what are the fares for ground transportation in denver
+Predicted label: ['atis_distance', 'atis_airfare']
+Real label: ['atis_ground_fare', 'atis_distance']
+------
+535
+how much is the limousine service in boston and what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_meal', 'atis_ground_fare']
+Real label: ['atis_meal', 'atis_ground_fare']
+------
+536
+list the cities from which northwest flies and is there ground transportation available at the phoenix airport
+Predicted label: ['atis_city', 'atis_ground_service']
+Real label: ['atis_city', 'atis_ground_service']
+------
+537
+tell me about the type of aircraft called an m ##80 , how many passengers can fly on a 75 ##7 and i would like a flight leaving san francisco for san diego
+Predicted label: ['atis_capacity', 'atis_aircraft', 'atis_flight']
+Real label: ['atis_capacity', 'atis_aircraft', 'atis_flight']
+------
+538
+flight number from dallas to houston and also what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_meal', 'atis_flight_no']
+Real label: ['atis_meal', 'atis_flight_no']
+------
+539
+list la and then i would like to leave thursday morning from indianapolis to toronto
+Predicted label: ['atis_flight']
+Real label: ['atis_city', 'atis_flight']
+------
+540
+get saturday fares from washington to montreal and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_airfare']
+Real label: ['atis_flight_time', 'atis_airfare']
+------
+541
+list airports in la and does tacoma airport offer transportation from the airport to the downtown area
+Predicted label: ['atis_airport', 'atis_ground_service']
+Real label: ['atis_airport', 'atis_ground_service']
+------
+542
+flight number from dallas to houston
+Predicted label: ['atis_flight_no']
+Real label: ['atis_flight_no']
+------
+543
+at the charlotte airport how many different types of aircraft are there for us air and also what cities does northwest fly to
+Predicted label: ['atis_city', 'atis_quantity']
+Real label: ['atis_city', 'atis_aircraft']
+------
+544
+what does fare code h mean and also what is the seating capacity of the aircraft m ##80
+Predicted label: ['atis_abbreviation', 'atis_capacity']
+Real label: ['atis_abbreviation', 'atis_capacity']
+------
+545
+what is the seating capacity of the 75 ##7 and also list the distance in miles from boston airport to downtown boston
+Predicted label: ['atis_capacity', 'atis_distance']
+Real label: ['atis_capacity', 'atis_distance']
+------
+546
+list flights from houston to denver and then what are the fares for ground transportation in denver
+Predicted label: ['atis_flight', 'atis_airfare']
+Real label: ['atis_ground_fare', 'atis_flight']
+------
+547
+ground transportation in las vegas and also what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_ground_service', 'atis_meal']
+Real label: ['atis_ground_service', 'atis_meal']
+------
+548
+what does the restriction ap ##58 mean , how much is coach flight from pittsburgh to atlanta and what is the seating capacity for aircraft l ##10
+Predicted label: ['atis_abbreviation', 'atis_capacity', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_capacity', 'atis_airfare']
+------
+549
+what airlines fly between washington dc and columbus ohio and also is there ground transportation from the memphis airport into town when if i arrive at 84 ##2 in the morning
+Predicted label: ['atis_ground_service', 'atis_airline']
+Real label: ['atis_ground_service', 'atis_airline']
+------
+550
+what is mc ##i and then list la
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation', 'atis_city']
+------
+551
+show me airlines that have flights between toronto and detroit between detroit and st . louis and between st . louis and toronto and then now show me ground transportation in houston on monday afternoon
+Predicted label: ['atis_ground_service', 'atis_airline']
+Real label: ['atis_ground_service', 'atis_airline']
+------
+552
+list the distance in miles from san francisco international airport to san francisco downtown , flight number from houston to dallas and then how much is a limousine service in la guard ##ia
+Predicted label: ['atis_flight_no', 'atis_ground_fare', 'atis_distance']
+Real label: ['atis_flight_no', 'atis_ground_fare', 'atis_distance']
+------
+553
+i would like to know what airports are in los angeles , list the cities from which northwest flies and what are the departure times from detroit to westchester county
+Predicted label: ['atis_airport', 'atis_city', 'atis_flight_time']
+Real label: ['atis_airport', 'atis_city', 'atis_flight_time']
+------
+554
+how many passengers can fly on a 75 ##7 and then how much is a limousine service in toronto international
+Predicted label: ['atis_capacity', 'atis_ground_fare']
+Real label: ['atis_capacity', 'atis_ground_fare']
+------
+555
+show me the cheap ##est one way fare from san francisco to houston on february twenty eighth 1994 and then which airport is closest to ontario california
+Predicted label: ['atis_airport', 'atis_airfare']
+Real label: ['atis_airport', 'atis_airfare']
+------
+556
+what airline is dl and how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_airline']
+Real label: ['atis_quantity', 'atis_airline']
+------
+557
+what is the seating capacity of an m ##80 and then list distance from airports to downtown in new york
+Predicted label: ['atis_capacity', 'atis_distance']
+Real label: ['atis_capacity', 'atis_distance']
+------
+558
+list california nevada arizona airports , list the cities from which northwest flies and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_airport', 'atis_city', 'atis_quantity']
+Real label: ['atis_airport', 'atis_city', 'atis_quantity']
+------
+559
+does the airport at bu ##rba ##nk have a flight that comes in from kansas city
+Predicted label: ['atis_airport', 'atis_flight']
+Real label: ['atis_flight']
+------
+560
+list la and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_abbreviation', 'atis_quantity']
+Real label: ['atis_city', 'atis_quantity']
+------
+561
+flight numbers on american airlines from phoenix to milwaukee
+Predicted label: ['atis_flight_no']
+Real label: ['atis_flight_no']
+------
+562
+what is a d ##9 ##s and what cities does northwest fly out of
+Predicted label: ['atis_abbreviation', 'atis_city']
+Real label: ['atis_abbreviation', 'atis_city']
+------
+563
+what airlines fly into denver , list the distance in miles from toronto international airport to downtown toronto and then flight numbers from seattle to chicago on continental
+Predicted label: ['atis_flight_no', 'atis_distance', 'atis_airline']
+Real label: ['atis_flight_no', 'atis_distance', 'atis_airline']
+------
+564
+get the saturday fare from washington to toronto and then how much is a limousine service in toronto international
+Predicted label: ['atis_ground_fare', 'atis_airfare']
+Real label: ['atis_ground_fare', 'atis_airfare']
+------
+565
+what are restrictions ap 57
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation']
+------
+566
+list type of aircraft for all flights from charlotte , flight number from houston to dallas and are snacks served on tower air
+Predicted label: ['atis_aircraft', 'atis_flight_no']
+Real label: ['atis_aircraft', 'atis_meal', 'atis_flight_no']
+------
+567
+what is the seating capacity for delta be ##1
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+568
+what airlines fly between washington dc and columbus ohio and then list california nevada arizona airports
+Predicted label: ['atis_airport', 'atis_airline']
+Real label: ['atis_airport', 'atis_airline']
+------
+569
+tell me about the m ##80 aircraft , show me the cheap ##est round trip fares from houston to boston and then how many canadian airlines international flights use j ##31
+Predicted label: ['atis_aircraft', 'atis_quantity', 'atis_airfare']
+Real label: ['atis_aircraft', 'atis_quantity', 'atis_airfare']
+------
+570
+how much is coach flight from pittsburgh to atlanta and then how long does a flight from baltimore to san francisco take
+Predicted label: ['atis_distance', 'atis_airfare']
+Real label: ['atis_distance', 'atis_airfare']
+------
+571
+what is the capacity of the 73 ##s
+Predicted label: ['atis_capacity']
+Real label: ['atis_capacity']
+------
+572
+tell me about the type of aircraft called an m ##80 and show me the cheap ##est round trip fare from san francisco to houston on february twenty eighth 1994
+Predicted label: ['atis_aircraft', 'atis_airfare']
+Real label: ['atis_aircraft', 'atis_airfare']
+------
+573
+what cities does northwest fly to , show flights from kansas city to minneapolis and then what are the fares for ground transportation in denver
+Predicted label: ['atis_city', 'atis_ground_service', 'atis_flight', 'atis_airfare']
+Real label: ['atis_city', 'atis_ground_fare', 'atis_flight']
+------
+574
+list type of aircraft for all flights from charlotte and what are the departure times from detroit to westchester county
+Predicted label: ['atis_aircraft', 'atis_flight_time']
+Real label: ['atis_aircraft', 'atis_flight_time']
+------
+575
+is there a fare from pittsburgh to cleveland under 200 dollars and also what is the seating capacity of a dc ##9
+Predicted label: ['atis_capacity', 'atis_airfare']
+Real label: ['atis_capacity', 'atis_airfare']
+------
+576
+what is the seating capacity of the m ##80 and then get flights between st . petersburg and charlotte
+Predicted label: ['atis_capacity', 'atis_flight']
+Real label: ['atis_capacity', 'atis_flight']
+------
+577
+what cities does northwest fly out of , how far is toronto international from downtown and also what are the fares for ground transportation in denver
+Predicted label: ['atis_city', 'atis_distance', 'atis_airfare']
+Real label: ['atis_city', 'atis_ground_fare', 'atis_distance']
+------
+578
+list a flight on american airlines from toronto to san diego
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+579
+how far is los angeles international from downtown and ground transportation for las vegas
+Predicted label: ['atis_ground_service', 'atis_distance']
+Real label: ['atis_ground_service', 'atis_distance']
+------
+580
+what does ua mean and also list limousine rates for the city of boston
+Predicted label: ['atis_abbreviation', 'atis_ground_fare']
+Real label: ['atis_abbreviation', 'atis_ground_fare']
+------
+581
+what does fare code b ##h mean , what type of aircraft is used for the american flight leaving at 41 ##9 pm and then st . paul to kansas city friday night
+Predicted label: ['atis_abbreviation', 'atis_aircraft', 'atis_flight']
+Real label: ['atis_abbreviation', 'atis_aircraft', 'atis_flight']
+------
+582
+what is the seating capacity of a 72 ##s and also flight numbers from seattle to chicago on continental
+Predicted label: ['atis_capacity', 'atis_flight_no']
+Real label: ['atis_capacity', 'atis_flight_no']
+------
+583
+what airlines are departing from baltimore and what is the seating capacity of the type of aircraft m ##80
+Predicted label: ['atis_capacity', 'atis_airline']
+Real label: ['atis_capacity', 'atis_airline']
+------
+584
+list airports in la and also are snacks served on tower air
+Predicted label: ['atis_airport', 'atis_meal']
+Real label: ['atis_airport', 'atis_meal']
+------
+585
+what does fare code b ##h mean and also which airline is as
+Predicted label: ['atis_abbreviation', 'atis_airline']
+Real label: ['atis_abbreviation', 'atis_airline']
+------
+586
+list the cities from which northwest flies , flight number from houston to dallas and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_city', 'atis_flight_no', 'atis_flight_time']
+Real label: ['atis_city', 'atis_flight_no', 'atis_flight_time']
+------
+587
+flight numbers from chicago to seattle
+Predicted label: ['atis_flight_no']
+Real label: ['atis_flight_no']
+------
+588
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon , get saturday fares from washington to montreal and also what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_aircraft', 'atis_meal', 'atis_airfare']
+Real label: ['atis_aircraft', 'atis_meal', 'atis_airfare']
+------
+589
+i need a ticket from nashville tennessee to seattle
+Predicted label: ['atis_airfare']
+Real label: ['atis_airfare']
+------
+590
+list the cities from which northwest flies , is there ground transportation from l ##ga into new york city and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_city', 'atis_ground_service', 'atis_quantity']
+Real label: ['atis_city', 'atis_ground_service', 'atis_quantity']
+------
+591
+what does q mean and then what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_abbreviation', 'atis_meal']
+Real label: ['atis_abbreviation', 'atis_meal']
+------
+592
+flights from atlanta to seattle and please show ground transportation to milwaukee
+Predicted label: ['atis_ground_service', 'atis_flight']
+Real label: ['atis_ground_service', 'atis_flight']
+------
+593
+how much is the limousine service in boston
+Predicted label: ['atis_ground_fare']
+Real label: ['atis_ground_fare']
+------
+594
+tell me about the m ##80 aircraft and list the cities from which northwest flies
+Predicted label: ['atis_city', 'atis_aircraft']
+Real label: ['atis_city', 'atis_aircraft']
+------
+595
+what does fare code f mean , is there one airline that flies from bu ##rba ##nk to milwaukee milwaukee to st . louis and from st . louis to bu ##rba ##nk and list california airports
+Predicted label: ['atis_abbreviation', 'atis_airport', 'atis_airline']
+Real label: ['atis_abbreviation', 'atis_airport', 'atis_airline']
+------
+596
+find me a flight from cincinnati to any airport in the new york city area and then what ground transportation is available between pittsburgh airport and downtown pittsburgh
+Predicted label: ['atis_ground_service', 'atis_flight']
+Real label: ['atis_ground_service', 'atis_flight']
+------
+597
+tell me about the m ##80 aircraft , show me the cheap ##est round trip fares from san francisco to houston and also list airports in arizona nevada and california please
+Predicted label: ['atis_airport', 'atis_aircraft', 'atis_airfare']
+Real label: ['atis_airport', 'atis_aircraft', 'atis_airfare']
+------
+598
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon
+Predicted label: ['atis_aircraft']
+Real label: ['atis_aircraft']
+------
+599
+what is a d ##9 ##s
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation']
+------
+600
+is there ground transportation from the memphis airport into town when if i arrive at 84 ##2 in the morning
+Predicted label: ['atis_ground_service']
+Real label: ['atis_ground_service']
+------
+601
+what are the departure times from detroit to westchester county and then how many canadian airlines international flights use j ##31
+Predicted label: ['atis_quantity', 'atis_flight_time']
+Real label: ['atis_quantity', 'atis_flight_time']
+------
+602
+what type of plane is a d ##9 ##s and also how much is the limousine service in boston
+Predicted label: ['atis_aircraft', 'atis_ground_fare']
+Real label: ['atis_aircraft', 'atis_ground_fare']
+------
+603
+list the cheap ##est fare from charlotte to las vegas and then list airports in new york
+Predicted label: ['atis_airport', 'atis_airfare']
+Real label: ['atis_airport', 'atis_airfare']
+------
+604
+how much is coach flight from pittsburgh to atlanta
+Predicted label: ['atis_airfare']
+Real label: ['atis_airfare']
+------
+605
+now show me all the round trips from new york to miami and then how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_flight']
+Real label: ['atis_quantity', 'atis_flight']
+------
+606
+what does hp stand for , how many passengers can fly on a 75 ##7 and what are the departure times from detroit to westchester county
+Predicted label: ['atis_abbreviation', 'atis_capacity', 'atis_flight_time']
+Real label: ['atis_abbreviation', 'atis_capacity', 'atis_flight_time']
+------
+607
+show flights tuesday evening from milwaukee to st . louis and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_flight']
+Real label: ['atis_quantity', 'atis_flight']
+------
+608
+show me round trip flights from bu ##rba ##nk to seattle
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+609
+how far is san francisco international from downtown and flight numbers from chicago to seattle
+Predicted label: ['atis_flight_no', 'atis_distance']
+Real label: ['atis_flight_no', 'atis_distance']
+------
+610
+list airports in arizona nevada and california please and also to what cities from boston does america west fly first class
+Predicted label: ['atis_airport', 'atis_city']
+Real label: ['atis_airport', 'atis_city']
+------
+611
+what airlines off from love field between 6 and 10 am on june sixth and are snacks served on tower air
+Predicted label: ['atis_airline']
+Real label: ['atis_meal', 'atis_airline']
+------
+612
+what is the seating capacity for aircraft l ##10 and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_capacity', 'atis_flight_time']
+Real label: ['atis_capacity', 'atis_flight_time']
+------
+613
+list ground transportation in baltimore and then are snacks served on tower air
+Predicted label: ['atis_ground_service', 'atis_meal']
+Real label: ['atis_ground_service', 'atis_meal']
+------
+614
+what is seating capacity on the aircraft 73 ##s and also what is the latest flight from baltimore to oakland that serves dinner
+Predicted label: ['atis_capacity', 'atis_flight']
+Real label: ['atis_capacity', 'atis_flight']
+------
+615
+what airline is as as in sam and also find a flight between st . petersburg and charlotte the flight should leave in the afternoon and arrive as soon after 5 pm as possible it should be a nonstop flight
+Predicted label: ['atis_flight', 'atis_airline']
+Real label: ['atis_flight', 'atis_airline']
+------
+616
+list the cities from which northwest flies and also what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_city', 'atis_meal']
+Real label: ['atis_city', 'atis_meal']
+------
+617
+list airports in la and then how many canadian airlines international flights use j ##31
+Predicted label: ['atis_airport', 'atis_quantity']
+Real label: ['atis_airport', 'atis_quantity']
+------
+618
+show me all the flights from las vegas to new york city , i need flight numbers for those flights departing on thursday before 8 am from oakland going to salt lake city and then how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_flight_no', 'atis_flight']
+Real label: ['atis_quantity', 'atis_flight_no', 'atis_flight']
+------
+619
+list type of aircraft for all flights from charlotte and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_aircraft', 'atis_flight_time']
+Real label: ['atis_aircraft', 'atis_flight_time']
+------
+620
+what is the seating capacity of the 75 ##7 and what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_capacity', 'atis_meal']
+Real label: ['atis_capacity', 'atis_meal']
+------
+621
+what cities does northwest fly out of and then houston to dallas before midnight
+Predicted label: ['atis_city', 'atis_flight']
+Real label: ['atis_city', 'atis_flight']
+------
+622
+what airlines fly between detroit and westchester county and then how long does a flight from baltimore to san francisco take
+Predicted label: ['atis_distance', 'atis_airline']
+Real label: ['atis_distance', 'atis_airline']
+------
+623
+list type of aircraft for all flights from charlotte , list ground transportation in baltimore and then what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_aircraft', 'atis_ground_service', 'atis_meal']
+Real label: ['atis_aircraft', 'atis_ground_service', 'atis_meal']
+------
+624
+at the charlotte airport how many different types of aircraft are there for us air and then what ' s the fare for a taxi to denver
+Predicted label: ['atis_quantity', 'atis_airfare']
+Real label: ['atis_aircraft', 'atis_ground_fare']
+------
+625
+what airline flies from boston to san diego
+Predicted label: ['atis_airline']
+Real label: ['atis_airline']
+------
+626
+what cities does northwest fly out of and how far is toronto international from downtown
+Predicted label: ['atis_city', 'atis_distance']
+Real label: ['atis_city', 'atis_distance']
+------
+627
+what does q mean and get saturday fares from washington to montreal
+Predicted label: ['atis_abbreviation', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_airfare']
+------
+628
+give me the flights from chicago to seattle saturday morning that have meals and how much is a limousine service in la guard ##ia
+Predicted label: ['atis_ground_fare', 'atis_flight']
+Real label: ['atis_ground_fare', 'atis_flight']
+------
+629
+how much is limousine service in los angeles and i need to rent a car at tampa
+Predicted label: ['atis_ground_service', 'atis_ground_fare']
+Real label: ['atis_ground_service', 'atis_ground_fare']
+------
+630
+what does q mean
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation']
+------
+631
+list california airports and flight numbers from seattle to chicago on continental
+Predicted label: ['atis_airport', 'atis_flight_no']
+Real label: ['atis_airport', 'atis_flight_no']
+------
+632
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon and what is seating capacity on the aircraft 73 ##s
+Predicted label: ['atis_capacity', 'atis_aircraft']
+Real label: ['atis_capacity', 'atis_aircraft']
+------
+633
+what class is fare code q and then cheap ##est fare round trip from indianapolis to orlando on december twenty seventh
+Predicted label: ['atis_abbreviation', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_airfare']
+------
+634
+what is the capacity of the 73 ##s , list the cities from which northwest flies and also how many canadian airlines international flights use j ##31
+Predicted label: ['atis_city', 'atis_capacity', 'atis_quantity']
+Real label: ['atis_city', 'atis_capacity', 'atis_quantity']
+------
+635
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon and also list the distance in miles from toronto international airport to downtown toronto
+Predicted label: ['atis_aircraft', 'atis_distance']
+Real label: ['atis_aircraft', 'atis_distance']
+------
+636
+at the charlotte airport how many different types of aircraft are there for us air , what are the departure times from detroit to westchester county and also what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_meal', 'atis_quantity', 'atis_flight_time']
+Real label: ['atis_aircraft', 'atis_meal', 'atis_flight_time']
+------
+637
+tell me all the airports near westchester county , what meals are served on american flight 81 ##1 from tampa to milwaukee and then how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_airport', 'atis_meal', 'atis_quantity']
+Real label: ['atis_airport', 'atis_meal', 'atis_quantity']
+------
+638
+show me the cheap ##est round trip fares from houston to boston , list airports in la and then how many canadian airlines international flights use j ##31
+Predicted label: ['atis_airport', 'atis_quantity', 'atis_airfare']
+Real label: ['atis_airport', 'atis_quantity', 'atis_airfare']
+------
+639
+flight numbers from chicago to seattle and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_no', 'atis_flight_time']
+Real label: ['atis_flight_no', 'atis_flight_time']
+------
+640
+what is the seating capacity on the aircraft 73 ##3 , how far is new york ' s la guard ##ia from downtown and also what ' s the ground transportation in denver
+Predicted label: ['atis_capacity', 'atis_ground_service', 'atis_distance']
+Real label: ['atis_capacity', 'atis_ground_service', 'atis_distance']
+------
+641
+tell me about the m ##80 aircraft , what is the seating capacity of an m ##80 and also what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_capacity', 'atis_aircraft', 'atis_meal']
+Real label: ['atis_capacity', 'atis_aircraft', 'atis_meal']
+------
+642
+what are restrictions ap 57 and ground transportation in las vegas
+Predicted label: ['atis_abbreviation', 'atis_ground_service']
+Real label: ['atis_abbreviation', 'atis_ground_service']
+------
+643
+list airports in la and list la
+Predicted label: ['atis_airport']
+Real label: ['atis_airport', 'atis_city']
+------
+644
+tell me about the type of aircraft called an m ##80 and also how far is toronto international from downtown
+Predicted label: ['atis_aircraft', 'atis_distance']
+Real label: ['atis_aircraft', 'atis_distance']
+------
+645
+list california airports , how many passengers can fly on a 75 ##7 and also list the cities from which northwest flies
+Predicted label: ['atis_airport', 'atis_city', 'atis_capacity']
+Real label: ['atis_airport', 'atis_city', 'atis_capacity']
+------
+646
+i need the flight numbers of flights leaving from cleveland and arriving at dallas , what are the departure times from detroit to westchester county and how much is a limousine service in la guard ##ia
+Predicted label: ['atis_flight_no', 'atis_flight_time', 'atis_ground_fare']
+Real label: ['atis_flight_no', 'atis_flight_time', 'atis_ground_fare']
+------
+647
+list coach round trip air ##fare from detroit to st . petersburg and also how much is a limousine service in toronto international
+Predicted label: ['atis_ground_fare', 'atis_airfare']
+Real label: ['atis_ground_fare', 'atis_airfare']
+------
+648
+list la and how far is new york ' s la guard ##ia from downtown
+Predicted label: ['atis_distance']
+Real label: ['atis_city', 'atis_distance']
+------
+649
+what does ap 20 mean and then list airports in la
+Predicted label: ['atis_abbreviation', 'atis_airport']
+Real label: ['atis_abbreviation', 'atis_airport']
+------
+650
+what airline is as and then how far is new york ' s la guard ##ia from downtown
+Predicted label: ['atis_distance', 'atis_airline']
+Real label: ['atis_distance', 'atis_airline']
+------
+651
+list distance from airports to downtown in new york , what are the departure times from detroit to westchester county and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_flight_time', 'atis_distance']
+Real label: ['atis_quantity', 'atis_flight_time', 'atis_distance']
+------
+652
+show me the cost of a first class ticket from detroit to las vegas and back , list la and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_airfare']
+Real label: ['atis_city', 'atis_flight_time', 'atis_airfare']
+------
+653
+what are the departure times from detroit to westchester county and then how much is a limousine service in la guard ##ia
+Predicted label: ['atis_flight_time', 'atis_ground_fare']
+Real label: ['atis_flight_time', 'atis_ground_fare']
+------
+654
+give me the fares from miami to cleveland next sunday and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_quantity', 'atis_airfare']
+Real label: ['atis_quantity', 'atis_airfare']
+------
+655
+what is the most expensive one way fare between detroit and westchester county and then how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_airfare']
+Real label: ['atis_quantity', 'atis_airfare']
+------
+656
+what is the seating capacity of the 75 ##7 , how far is los angeles international from downtown and then i ' ll need to rent a car in washington dc
+Predicted label: ['atis_capacity', 'atis_ground_service', 'atis_distance']
+Real label: ['atis_capacity', 'atis_ground_service', 'atis_distance']
+------
+657
+tell me about the m ##80 aircraft and i need to rent a car at tampa
+Predicted label: ['atis_aircraft', 'atis_ground_service']
+Real label: ['atis_aircraft', 'atis_ground_service']
+------
+658
+which airport is closest to ontario california
+Predicted label: ['atis_airport']
+Real label: ['atis_airport']
+------
+659
+which flights arrive in bu ##rba ##nk from kansas city on saturdays in the afternoon and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_flight_time', 'atis_flight']
+Real label: ['atis_flight_time', 'atis_flight']
+------
+660
+get saturday fares from washington to boston , list airports in new york and also what is the seating capacity of a 72 ##s
+Predicted label: ['atis_airport', 'atis_capacity', 'atis_airfare']
+Real label: ['atis_airport', 'atis_capacity', 'atis_airfare']
+------
+661
+what the abbreviation us stand for , i ' d like a one way ticket from milwaukee to orlando either wednesday evening or thursday morning and flight number from dallas to houston
+Predicted label: ['atis_abbreviation', 'atis_flight_no', 'atis_airfare']
+Real label: ['atis_abbreviation', 'atis_flight_no', 'atis_airfare']
+------
+662
+what the abbreviation us stand for and then are meals ever served on tower air
+Predicted label: ['atis_abbreviation', 'atis_meal']
+Real label: ['atis_abbreviation', 'atis_meal']
+------
+663
+flight numbers on american airlines from phoenix to milwaukee and then what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_meal', 'atis_flight_no']
+Real label: ['atis_meal', 'atis_flight_no']
+------
+664
+what is the seating capacity of a dc ##9 and then show flights from kansas city to orlando
+Predicted label: ['atis_capacity', 'atis_flight']
+Real label: ['atis_capacity', 'atis_flight']
+------
+665
+what airlines fly from baltimore to san francisco and then list california airports
+Predicted label: ['atis_airport', 'atis_airline']
+Real label: ['atis_airport', 'atis_airline']
+------
+666
+list fares from washington dc to montreal , list distance from airports to downtown in new york and how many canadian airlines flights use aircraft dh ##8
+Predicted label: ['atis_quantity', 'atis_distance', 'atis_airfare']
+Real label: ['atis_quantity', 'atis_distance', 'atis_airfare']
+------
+667
+list the distance in miles from boston airport to downtown boston and what ground transportation is available between pittsburgh airport and downtown pittsburgh
+Predicted label: ['atis_ground_service', 'atis_distance']
+Real label: ['atis_ground_service', 'atis_distance']
+------
+668
+what united airlines flights on june eighth go from westchester county to cincinnati
+Predicted label: ['atis_flight']
+Real label: ['atis_flight']
+------
+669
+what does fare code h mean , give me the saturday morning flights on continental that have meals from chicago to minneapolis and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_abbreviation', 'atis_flight_time', 'atis_flight']
+Real label: ['atis_abbreviation', 'atis_flight_time', 'atis_flight']
+------
+670
+how much is limousine service in los angeles and then what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_meal', 'atis_ground_fare']
+Real label: ['atis_meal', 'atis_ground_fare']
+------
+671
+list california airports and then is there taxi service at the ontario airport
+Predicted label: ['atis_airport', 'atis_ground_service']
+Real label: ['atis_airport', 'atis_ground_service']
+------
+672
+what is meal code sb and also list airports in new york
+Predicted label: ['atis_abbreviation', 'atis_airport']
+Real label: ['atis_abbreviation', 'atis_airport']
+------
+673
+what are the departure times from detroit to westchester county , what ' s the fare for a taxi to denver and then what meals are available on dl 46 ##8 which al arrives in san francisco at 950 am
+Predicted label: ['atis_meal', 'atis_flight_time', 'atis_airfare']
+Real label: ['atis_meal', 'atis_flight_time', 'atis_ground_fare']
+------
+674
+what is a d ##9 ##s , list the distance in miles from toronto international airport to downtown toronto and ground transportation for las vegas
+Predicted label: ['atis_abbreviation', 'atis_ground_service', 'atis_distance']
+Real label: ['atis_abbreviation', 'atis_ground_service', 'atis_distance']
+------
+675
+what cities does northwest fly out of and also what are the fares for ground transportation in denver
+Predicted label: ['atis_city', 'atis_airfare']
+Real label: ['atis_city', 'atis_ground_fare']
+------
+676
+what cities does northwest fly to and are snacks served on tower air
+Predicted label: ['atis_city', 'atis_meal']
+Real label: ['atis_city', 'atis_meal']
+------
+677
+how many northwest flights leave st . paul and what are the departure times from detroit to westchester county
+Predicted label: ['atis_quantity', 'atis_flight_time']
+Real label: ['atis_flight_time', 'atis_flight']
+------
+678
+what ' s the fare for a taxi to denver and also what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_meal', 'atis_airfare']
+Real label: ['atis_meal', 'atis_ground_fare']
+------
+679
+what cities does northwest fly to and how far is los angeles international from downtown
+Predicted label: ['atis_city', 'atis_distance']
+Real label: ['atis_city', 'atis_distance']
+------
+680
+what does ua mean , to what cities from boston does america west fly first class and list the distance in miles from new york ' s la guard ##ia airport to downtown new york city
+Predicted label: ['atis_abbreviation', 'atis_city', 'atis_distance']
+Real label: ['atis_abbreviation', 'atis_city', 'atis_distance']
+------
+681
+what does not sa mean , flight numbers from seattle to chicago on continental and also what are the departure times from detroit to westchester county
+Predicted label: ['atis_abbreviation', 'atis_flight_no', 'atis_flight_time']
+Real label: ['atis_abbreviation', 'atis_flight_no', 'atis_flight_time']
+------
+682
+what are the fares for flights between boston and washington dc , what is the seating capacity of the 75 ##7 and also what cities does northwest fly to
+Predicted label: ['atis_city', 'atis_capacity', 'atis_airfare']
+Real label: ['atis_city', 'atis_capacity', 'atis_airfare']
+------
+683
+what is ph ##l and then what type of aircraft is used for the american flight leaving at 41 ##9 pm
+Predicted label: ['atis_abbreviation', 'atis_aircraft']
+Real label: ['atis_abbreviation', 'atis_aircraft']
+------
+684
+determine the type of aircraft used on a flight from cleveland to dallas that leaves before noon , list the airlines with flights to or from denver and then what ground transportation is available from dallas fort worth airport to downtown dallas
+Predicted label: ['atis_aircraft', 'atis_ground_service', 'atis_airline']
+Real label: ['atis_aircraft', 'atis_ground_service', 'atis_airline']
+------
+685
+flight number from dallas to houston and how much is a limousine service in la guard ##ia
+Predicted label: ['atis_flight_no', 'atis_ground_fare']
+Real label: ['atis_flight_no', 'atis_ground_fare']
+------
+686
+what cities does northwest fly to and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_city', 'atis_quantity']
+Real label: ['atis_city', 'atis_quantity']
+------
+687
+i ' d like a one way ticket from milwaukee to orlando either wednesday evening or thursday morning and what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_meal', 'atis_airfare']
+Real label: ['atis_meal', 'atis_airfare']
+------
+688
+list california nevada arizona airports and then what meals are served on american flight 66 ##5 67 ##3 from milwaukee to seattle
+Predicted label: ['atis_airport', 'atis_meal']
+Real label: ['atis_airport', 'atis_meal']
+------
+689
+what cities does northwest fly to and which flights travel from indianapolis to san diego on april fifth
+Predicted label: ['atis_city', 'atis_flight']
+Real label: ['atis_city', 'atis_flight']
+------
+690
+what type of aircraft are flying from cleveland to dallas before noon and also what airline is us
+Predicted label: ['atis_aircraft', 'atis_airline']
+Real label: ['atis_aircraft', 'atis_airline']
+------
+691
+list airports in la and then flight numbers from chicago to seattle on continental
+Predicted label: ['atis_airport', 'atis_flight_no']
+Real label: ['atis_airport', 'atis_flight_no']
+------
+692
+tell me all the airports in the new york city area and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_airport', 'atis_quantity']
+Real label: ['atis_airport', 'atis_quantity']
+------
+693
+list type of aircraft for all flights from charlotte and how much is limousine service in los angeles
+Predicted label: ['atis_aircraft', 'atis_ground_fare']
+Real label: ['atis_aircraft', 'atis_ground_fare']
+------
+694
+list all flights from cleveland to nashville , how much is limousine service in los angeles and and now show me ground transportation that i could get in boston late night
+Predicted label: ['atis_ground_service', 'atis_ground_fare', 'atis_flight']
+Real label: ['atis_ground_service', 'atis_ground_fare', 'atis_flight']
+------
+695
+what cities does northwest fly to , i would like an early morning flight today from los angeles to charlotte and then what are the departure times from detroit to westchester county
+Predicted label: ['atis_city', 'atis_flight_time', 'atis_flight']
+Real label: ['atis_city', 'atis_flight_time', 'atis_flight']
+------
+696
+list the distance in miles from boston airport to downtown boston and then how many canadian airlines international flights use j ##31
+Predicted label: ['atis_quantity', 'atis_distance']
+Real label: ['atis_quantity', 'atis_distance']
+------
+697
+what are the departure times from detroit to westchester county and how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_flight_time']
+Real label: ['atis_quantity', 'atis_flight_time']
+------
+698
+is there one airline that flies from bu ##rba ##nk to milwaukee milwaukee to st . louis and from st . louis to bu ##rba ##nk and how far is new york ' s la guard ##ia from downtown
+Predicted label: ['atis_distance', 'atis_airline']
+Real label: ['atis_distance', 'atis_airline']
+------
+699
+what is the seating capacity of a dc ##9 and what ground transportation is available between milwaukee airport and downtown milwaukee
+Predicted label: ['atis_capacity', 'atis_ground_service']
+Real label: ['atis_capacity', 'atis_ground_service']
+------
+700
+how far is san francisco international from downtown and how many canadian airlines international flights use j ##31
+Predicted label: ['atis_quantity', 'atis_distance']
+Real label: ['atis_quantity', 'atis_distance']
+------
+701
+tell me about the type of aircraft called an m ##80 and then are snacks served on tower air
+Predicted label: ['atis_aircraft', 'atis_meal']
+Real label: ['atis_aircraft', 'atis_meal']
+------
+702
+flight numbers on american airlines from phoenix to milwaukee and also how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_flight_no']
+Real label: ['atis_quantity', 'atis_flight_no']
+------
+703
+at the charlotte airport how many different types of aircraft are there for us air , what airline is us and also what cities does northwest fly to
+Predicted label: ['atis_city', 'atis_quantity', 'atis_airline']
+Real label: ['atis_city', 'atis_aircraft', 'atis_airline']
+------
+704
+what airlines fly into denver , what cities does northwest fly out of and how far is new york ' s la guard ##ia from downtown
+Predicted label: ['atis_city', 'atis_distance', 'atis_airline']
+Real label: ['atis_city', 'atis_distance', 'atis_airline']
+------
+705
+show me the cheap ##est round trip fare from san francisco to houston on february twenty eighth 1994
+Predicted label: ['atis_airfare']
+Real label: ['atis_airfare']
+------
+706
+list airports and what are the departure times from detroit to westchester county
+Predicted label: ['atis_airport', 'atis_flight_time']
+Real label: ['atis_airport', 'atis_flight_time']
+------
+707
+at the charlotte airport how many different types of aircraft are there for us air and what meals are served on american flight 81 ##1 from tampa to milwaukee
+Predicted label: ['atis_meal', 'atis_quantity']
+Real label: ['atis_aircraft', 'atis_meal']
+------
+708
+what is ph ##l and list la
+Predicted label: ['atis_abbreviation']
+Real label: ['atis_abbreviation', 'atis_city']
+------
+709
+show me the airports serviced by tower air and then list distance from airports to downtown in new york
+Predicted label: ['atis_airport', 'atis_distance']
+Real label: ['atis_airport', 'atis_distance']
+------
+710
+what is ph ##l and then next wednesday i would like to leave kansas city on a trip to chicago which arrives in chicago around 7 pm
+Predicted label: ['atis_abbreviation', 'atis_flight']
+Real label: ['atis_abbreviation', 'atis_flight']
+------
+711
+show me the cheap ##est round trip fare from san francisco to houston on february twenty eighth 1994 and then how far is san francisco international from downtown
+Predicted label: ['atis_distance', 'atis_airfare']
+Real label: ['atis_distance', 'atis_airfare']
+------
+712
+what airline is as and how many canadian airlines international flights use aircraft 320
+Predicted label: ['atis_quantity', 'atis_airline']
+Real label: ['atis_quantity', 'atis_airline']
+------
+713
+tell me about the m ##80 aircraft , show me airlines that have flights between toronto and detroit between detroit and st . louis and between st . louis and toronto and also what meals are there on flight 38 ##2 from milwaukee to washington dc on tuesday morning
+Predicted label: ['atis_aircraft', 'atis_meal', 'atis_airline']
+Real label: ['atis_aircraft', 'atis_meal', 'atis_airline']
+------
+714
+what does ap 20 mean and also flight numbers on american airlines from phoenix to milwaukee
+Predicted label: ['atis_abbreviation', 'atis_flight_no']
+Real label: ['atis_abbreviation', 'atis_flight_no']
+------
+715
+flight numbers from chicago to seattle and then are snacks served on tower air
+Predicted label: ['atis_flight_no']
+Real label: ['atis_meal', 'atis_flight_no']
+------
+716
+what is a d ##9 ##s and then how much is a limousine service in toronto international
+Predicted label: ['atis_abbreviation', 'atis_ground_fare']
+Real label: ['atis_abbreviation', 'atis_ground_fare']
+------
+717
+show me the cost of a first class ticket from detroit to las vegas and back and also what airline is aa
+Predicted label: ['atis_airfare', 'atis_airline']
+Real label: ['atis_airfare', 'atis_airline']
+------
+718
+list coach round trip air ##fare from detroit to st . petersburg , what is the seating capacity for delta be ##1 and is there ground transportation from l ##ga into new york city
+Predicted label: ['atis_capacity', 'atis_ground_service', 'atis_airfare']
+Real label: ['atis_capacity', 'atis_ground_service', 'atis_airfare']
+------
+719
+list type of aircraft for all flights from charlotte and flight numbers from chicago to seattle on continental
+Predicted label: ['atis_aircraft', 'atis_flight_no']
+Real label: ['atis_aircraft', 'atis_flight_no']
+------
