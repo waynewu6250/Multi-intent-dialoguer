@@ -107,6 +107,7 @@ Context
 - [x] [Context on joint task](https://ieeexplore.ieee.org/document/6639291)
 - [x] [Context on joint task: knowledge graph](https://ieeexplore.ieee.org/document/9006162)
 - [x] [Context on joint task: CASA-NLU, DiSAN](https://arxiv.org/pdf/1909.08705.pdf)
+<<<<<<< HEAD
 - [x] [Context on DST](https://www.aclweb.org/anthology/N19-1057.pdf)
 - [x] [DiSAN](https://arxiv.org/pdf/1709.04696.pdf)
 
@@ -116,6 +117,13 @@ Cross Domain/lingual
 - [x] [Cross Domain DST-graph attention network](https://ojs.aaai.org//index.php/AAAI/article/view/6250)
 - [x] [Cross Lingual Pretraining SLU](https://isca-speech.org/archive/Interspeech_2020/pdfs/0059.pdf)
 - [x] [Cross Lingual transfer learning on SLU](https://www.aclweb.org/anthology/N19-1380.pdf)
+=======
+
+Cross Domain
+- [x] [Cross Domain slot filling](https://arxiv.org/pdf/2003.09831.pdf)
+- [x] [Cross Domain DST-delexicalised RNN](https://www.aclweb.org/anthology/P15-2130.pdf)
+- [x] [Cross Domain DST-graph attention network](https://ojs.aaai.org//index.php/AAAI/article/view/6250)
+>>>>>>> 2f95e913cdc254d22f7cee0bdf082c578248a239
 
 Pretrain
 - [ ] [BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
@@ -133,11 +141,16 @@ Evaluation
 - [ ] [User satisfaction model](https://arxiv.org/pdf/1908.07064.pdf)
 
 Intent Clustering
+<<<<<<< HEAD
 - [x] [Quora Intent supervised clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
 - [x] [Dialog intent Induction with AvKmeans](https://arxiv.org/pdf/1908.11487.pdf): (https://github.com/asappresearch/dialog-intent-induction)
 - [x] [Deep align clustering on intents](https://arxiv.org/pdf/2012.08987.pdf)
 - [x] [Iter-DBSCAN on intents](https://www.aclweb.org/anthology/2020.coling-main.366.pdf)
 - [x] [Intra/inter context/response clustering](https://www.aclweb.org/anthology/2020.coling-main.437.pdf)
+=======
+- [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
+- [ ] [Dialog intent Induction with AvKmeans](https://arxiv.org/pdf/1908.11487.pdf): (https://github.com/asappresearch/dialog-intent-induction)
+>>>>>>> 2f95e913cdc254d22f7cee0bdf082c578248a239
 - [ ] [Dialog management using intent clustering](https://onlinelibrary.wiley.com/doi/epdf/10.1111/exsy.12630)
 - [ ] [Semi-supervised clustering using deep metric learning and graph embedding](https://www.researchgate.net/publication/335382603_Semi-supervised_clustering_with_deep_metric_learning_and_graph_embedding)
 
