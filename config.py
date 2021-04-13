@@ -2,11 +2,7 @@ class Config:
 
     #################### For BERT fine-tuning ####################
     # control
-<<<<<<< HEAD
     datatype = "semantic"
-=======
-    datatype = "e2e"
->>>>>>> 2f95e913cdc254d22f7cee0bdf082c578248a239
     data_mode = "multi" #"multi"      # single or multi intent in data
     sentence_mode = "one" #"two"      # one or two sentence in data
     dialog_data_mode = False         # for dialogue-wise data (A+B)
@@ -14,11 +10,7 @@ class Config:
 
 
 
-<<<<<<< HEAD
     test_mode = "data" #"user", "data", "embedding", "validation"
-=======
-    test_mode = "data" #"user", "data"
->>>>>>> 2f95e913cdc254d22f7cee0bdf082c578248a239
 
     if datatype == "atis":
         # atis dataset
@@ -29,28 +21,11 @@ class Config:
     
     elif datatype == "semantic":
         # semantic parsing dataset
-<<<<<<< HEAD
-        # normal
-        train_path = "data/semantic/raw_data_se.pkl" if data_mode == "single" else "data/semantic/raw_data_multi_se.pkl"
-        test_path = "data/semantic/raw_data_multi_se_test.pkl"
-        dic_path = "data/semantic/intent2id_se.pkl" if data_mode == "single" else "data/semantic/intent2id_multi_se.pkl"
-        dic_path_with_tokens = "data/semantic/intent2id_multi_se_with_tokens.pkl"
-        embedding_path = "finetune_results/se_embeddings_with_hidden.pth"
-
-        # num = '5'
-        # train_path = "data/semantic/raw_data_se.pkl" if data_mode == "single" else "data/semantic/zeroshot/raw_data_multi_se_zst_train{}.pkl".format(num)
-        # test_path = "data/semantic/zeroshot/raw_data_multi_se_zst_test{}.pkl".format(num)
-        # dic_path = "data/semantic/intent2id_se.pkl" if data_mode == "single" else "data/semantic/intent2id_multi_se.pkl"
-        # dic_path_with_tokens = "data/semantic/zeroshot/intent2id_multi_se_with_tokens_zst_train{}.pkl".format(num)
-        # dic_path_with_tokens_test = "data/semantic/zeroshot/intent2id_multi_se_with_tokens_zst_test{}.pkl".format(num)
-        # embedding_path = "finetune_results/se_embeddings_with_hidden.pth"
-=======
         train_path = "data/semantic/raw_data_se.pkl" if data_mode == "single" else "data/semantic/raw_data_multi_se.pkl"
         test_path = None
         dic_path = "data/semantic/intent2id_se.pkl" if data_mode == "single" else "data/semantic/intent2id_multi_se.pkl"
         dic_path_with_tokens = "data/semantic/intent2id_multi_se_with_tokens.pkl"
         embedding_path = "finetune_results/se_embeddings_with_hidden.pth"
->>>>>>> 2f95e913cdc254d22f7cee0bdf082c578248a239
     
     elif datatype == "e2e":
         # Microsoft e2e dialogue dataset
@@ -78,7 +53,6 @@ class Config:
         dialogue_id_path = "data/MULTIWOZ2.1/dialogue_id.pkl"
         embedding_path ="finetune_results/woz_embeddings_sub.pth"
     
-<<<<<<< HEAD
     elif datatype == "mixatis":
         # mix atis dataset
         train_path = "data/MixATIS_clean/raw_data_multi_ma_train.pkl"
@@ -93,8 +67,6 @@ class Config:
         test_path = "data/MixSNIPS_clean/raw_data_multi_sn_test.pkl"
         dic_path_with_tokens = "data/MixSNIPS_clean/intent2id_multi_sn_with_tokens.pkl"
     
-=======
->>>>>>> 2f95e913cdc254d22f7cee0bdf082c578248a239
     model_path = None if not retrain else "checkpoints/best_{}_{}.pth".format(datatype, data_mode)
 
 
