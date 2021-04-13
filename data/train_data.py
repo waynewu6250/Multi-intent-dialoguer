@@ -197,7 +197,7 @@ class SemanticData(Data):
             raw_data.append((self.text_prepare(text, "Bert"), [intent2id[intent][0] for intent in intents]))
             
             print("Finish: ", i)
-
+        
         with open(self.rawdata_path, "wb") as f:
             pickle.dump(raw_data, f)
         with open(self.intent2id_path, "wb") as f:
