@@ -107,7 +107,6 @@ Context
 - [x] [Context on joint task](https://ieeexplore.ieee.org/document/6639291)
 - [x] [Context on joint task: knowledge graph](https://ieeexplore.ieee.org/document/9006162)
 - [x] [Context on joint task: CASA-NLU, DiSAN](https://arxiv.org/pdf/1909.08705.pdf)
-<<<<<<< HEAD
 - [x] [Context on DST](https://www.aclweb.org/anthology/N19-1057.pdf)
 - [x] [DiSAN](https://arxiv.org/pdf/1709.04696.pdf)
 
@@ -117,17 +116,12 @@ Cross Domain/lingual
 - [x] [Cross Domain DST-graph attention network](https://ojs.aaai.org//index.php/AAAI/article/view/6250)
 - [x] [Cross Lingual Pretraining SLU](https://isca-speech.org/archive/Interspeech_2020/pdfs/0059.pdf)
 - [x] [Cross Lingual transfer learning on SLU](https://www.aclweb.org/anthology/N19-1380.pdf)
-=======
-
-Cross Domain
-- [x] [Cross Domain slot filling](https://arxiv.org/pdf/2003.09831.pdf)
-- [x] [Cross Domain DST-delexicalised RNN](https://www.aclweb.org/anthology/P15-2130.pdf)
-- [x] [Cross Domain DST-graph attention network](https://ojs.aaai.org//index.php/AAAI/article/view/6250)
->>>>>>> 2f95e913cdc254d22f7cee0bdf082c578248a239
 
 Pretrain
-- [ ] [BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
+- [x] [TOD-BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
 - [ ] [ConveRT](https://arxiv.org/pdf/1911.03688.pdf)
+- [x] [SOLOIST: GPT2 for all history and state generation](https://arxiv.org/pdf/2005.05298.pdf)
+- [x] [SimpleTOD: GPT2 for all history and state generation](https://arxiv.org/pdf/2005.00796.pdf)
 
 Memory
 - [x] [HMN: Hetereogenous memory network](https://arxiv.org/pdf/1909.11287.pdf)
@@ -141,16 +135,13 @@ Evaluation
 - [ ] [User satisfaction model](https://arxiv.org/pdf/1908.07064.pdf)
 
 Intent Clustering
-<<<<<<< HEAD
 - [x] [Quora Intent supervised clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
 - [x] [Dialog intent Induction with AvKmeans](https://arxiv.org/pdf/1908.11487.pdf): (https://github.com/asappresearch/dialog-intent-induction)
 - [x] [Deep align clustering on intents](https://arxiv.org/pdf/2012.08987.pdf)
+- [x] [Deep adaptive clustering](https://arxiv.org/abs/1911.08891)
+- [x] [Emerging intent with clustering](https://dke.maastrichtuniversity.nl/jan.niehues/wp-content/uploads/2020/09/MASTER-THESIS-Camiel-Kerkhofs.pdf)
 - [x] [Iter-DBSCAN on intents](https://www.aclweb.org/anthology/2020.coling-main.366.pdf)
 - [x] [Intra/inter context/response clustering](https://www.aclweb.org/anthology/2020.coling-main.437.pdf)
-=======
-- [ ] [Intent clustering](https://www.aclweb.org/anthology/D18-1254.pdf)
-- [ ] [Dialog intent Induction with AvKmeans](https://arxiv.org/pdf/1908.11487.pdf): (https://github.com/asappresearch/dialog-intent-induction)
->>>>>>> 2f95e913cdc254d22f7cee0bdf082c578248a239
 - [ ] [Dialog management using intent clustering](https://onlinelibrary.wiley.com/doi/epdf/10.1111/exsy.12630)
 - [ ] [Semi-supervised clustering using deep metric learning and graph embedding](https://www.researchgate.net/publication/335382603_Semi-supervised_clustering_with_deep_metric_learning_and_graph_embedding)
 
@@ -233,6 +224,7 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  ICDM 2021          |  7/14  | 1/15                |  2   |        |
 |  ACL-IJCNLP 2021    |  8/1   | 1/25 (2/1)          |  1   |    v   |
 |  ICML 2021          |  7/18  | 1/28 (2/4)          |  1   |        |
+|  COLT 2021          |  7/7   | 1/29                |  2   |        |
 |  SIGIR 2021         |  7/11  | 2/2 (2/9)           |  1   |        |
 |  KDD 2021           |  8/14  | 2/8                 |  1   |    v   |
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |        |
@@ -242,35 +234,42 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  [NAACL multimodal](https://alvr-workshop.github.io/)                                                           |  6/11  | 3/22                |  w   |    a   |
 |  KR 2021            |  11/6  | 3/24 (3/31)         |  2   |    b   |
 |  ECML PKDD 2021     |  9/13  | 3/26 (4/2)          |  2   |        |
-| ------------------- | ------ | ------------------- | ---- | ------ |
-|  Interspeech 2021   |  8/30  | 3/26 (4/2)          |  1   |    v   | (target)
+|  Interspeech 2021   |  8/30  | 3/26 (4/2)          |  1   |    v   |
 |  SIGDIAL 2021       |  7/29  | 4/2                 |  2   |    a   |
-|  ACL student        |  8/1   | 4/2                 |  w   |    a   | (target)
-|  [ACL workshop conv AI](https://sites.google.com/view/2ndnlp4convai/home)                                       |  8/1   | 4/17                |  w   |    a   |  (target)
-|  [RepL4NLP 2021](https://sites.google.com/view/repl4nlp-2021/call-for-papers?authuser=0)                        |  8/5   | 4/26                |  w   |    a   |
+|  ACL student        |  8/1   | 4/2                 |  w   |    v   |
+|  [ACL workshop conv AI](https://sites.google.com/view/2ndnlp4convai/home)                                       |  8/1   | 4/17                |  w   |    a   |
+|  ACMMM 2021         |  10/20 | 4/17                |  2   |    b   |
+| ------------------- | ------ | ------------------- | ---- | ------ |
 |  [ACL workshop grounded dialogue](https://doc2dial.github.io/workshop2021/)                                     |  8/5   | 4/26                |  w   |    a   |
-|  EMNLP 2021         |  11/7  | 5/10 (5/17)         |  1   |    a   |
-|  RANLP 2021         |  9/6   | 5/15                |  2   |    a   |
+|  [RepL4NLP 2021](https://sites.google.com/view/repl4nlp-2021/call-for-papers?authuser=0)                        |  8/5   | 5/3                 |  w   |    a   |
+|  EMNLP 2021         |  11/7  | 5/10 (5/17)         |  1   |    a   | (targeted)
+|  RANLP 2021         |  9/6   | 5/15                |  2   |    a   | (targeted)
+|  CIKM 2021          |  11/1  | 5/19 (5/26)         |  1   |    b   |  
 |  ICMI 2021          |  10/18 | 5/26                |  2   |    b   |
-|  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |    b   |
-|  CoNLL 2021         |  11/10 | 6/14                |  2   |    a   |
+|  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |    b   | (targeted)
+|  CoNLL 2021         |  11/10 | 6/14                |  2   |    a   | (targeted)
+|  ICONIP 2021        |  12/8  | 6/30                |  2   |    b   |
 |  EMNLP 2021 workshop|  11/7  |                     |  w   |    a   |
-|  IWSDS 2021         |  11/15 |                     |  2   |    a   |
-|  ASRU 2021          |  12/13 | 7/5                 |  2   |    b   |
-|  SLT 2021           |  1/19  | 8/14                |  2   |    a   |
-|  AAAI 2021          |  2/2   | 9/1 (9/9)           |  1   |    a   |
+|  COLING 2022        |  12/8  | 7/1                 |  2   |    a   |
+|  IWSDS 2021         |  11/15 | 7/2                 |  2   |    a   | (targeted)
+|  ASRU 2021          |  12/13 | 7/5                 |  2   |    b   | (targeted)
+|  SLT 2021           |  1/19  | 8/14                |  2   |    a   | (targeted)
+|  AAAI 2021          |  2/2   | 9/1 (9/9)           |  1   |    a   | (targeted)
 |  AAAI student 2021  |  2/2   | 9/18                |  2   |    w   |
 |  ICLR 2021          |  5/4   | 10/2                |  1   |    b   |
 |  AISTATS 2021       |  4/13  | 10/8 (10/15)        |  2   |        |
 |  WWW 2021           |  4/19  | 10/12 (10/19)       |  1   |        |
 |  EACL 2021          |  4/21  | 10/7                |  2   |    a   |
-|  ICASSP 2021        |  6/6   | 10/21               |  1   |    a   |
+|  ICASSP 2021        |  5/23  | 10/19               |  1   |    a   |
 |  AAAI 2021 workshop |  2/8   | 11/9                |  w   |    w   |
+|  ECAI 2022          |  8/29  | 11/15               |  2   |    a   |
 |  CVPR 2021          |  7/21  | 11/16               |  1   |    t   |
 |  NAACL-HLT 2021     |  6/6   | 11/23               |  1   |    a   |
+|  ICME 2022          |  7/11  | 11/29               |  2   |        |
 ACML
 IEEE transactions on audio, speech and language processing
 ICCDE 3
+ECCV
 
 v: ok <br>
 a: first to submit <br>
