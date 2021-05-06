@@ -116,6 +116,8 @@ Cross Domain/lingual
 - [x] [Cross Domain DST-graph attention network](https://ojs.aaai.org//index.php/AAAI/article/view/6250)
 - [x] [Cross Lingual Pretraining SLU](https://isca-speech.org/archive/Interspeech_2020/pdfs/0059.pdf)
 - [x] [Cross Lingual transfer learning on SLU](https://www.aclweb.org/anthology/N19-1380.pdf)
+- [x] [Continual learning in task-oriented dialog](https://arxiv.org/abs/2012.15504)
+- [x] [Continual learning in NLG](https://arxiv.org/abs/2010.00910)
 
 Pretrain
 - [x] [TOD-BERT pretrained dialogue](https://arxiv.org/pdf/2004.06871.pdf)
@@ -210,10 +212,10 @@ Model Analysis (Noise perturbation)
 
 
 ## Conferences
-ML conferences1: http://www.guide2research.com/topconf/machine-learning
-ML conferences2: https://blog.csdn.net/devenlau/article/details/82660886
-ML conferences ranking: https://blog.csdn.net/cpp12341234/article/details/50886540
-Acceptance rate: https://github.com/lixin4ever/Conference-Acceptance-Rate
+ML conferences1: http://www.guide2research.com/topconf/machine-learning <br>
+ML conferences2: https://blog.csdn.net/devenlau/article/details/82660886 <br>
+ML conferences ranking: https://blog.csdn.net/cpp12341234/article/details/50886540 <br>
+Acceptance rate: https://github.com/lixin4ever/Conference-Acceptance-Rate <br>
 Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
 
 Important months: 2 init, 3 end, 6 init, 8,9,10,11
@@ -230,6 +232,7 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |        |
 |  NAACL SRW          |  6/6   | 2/12                |  w   |        |  
 |  UAI 2021           |  8/3   | 2/20                |  2   |    b   |
+|  ECCV 2021          |  10/11 | 3/10                |  1   |    b   |å
 |  ICCV 2021          |  10/10 | 3/17                |  1   |    a   |
 |  [NAACL multimodal](https://alvr-workshop.github.io/)                                                           |  6/11  | 3/22                |  w   |    a   |
 |  KR 2021            |  11/6  | 3/24 (3/31)         |  2   |    b   |
@@ -239,15 +242,15 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  ACL student        |  8/1   | 4/2                 |  w   |    v   |
 |  [ACL workshop conv AI](https://sites.google.com/view/2ndnlp4convai/home)                                       |  8/1   | 4/17                |  w   |    a   |
 |  ACMMM 2021         |  10/20 | 4/17                |  2   |    b   |
-| ------------------- | ------ | ------------------- | ---- | ------ |
 |  [ACL workshop grounded dialogue](https://doc2dial.github.io/workshop2021/)                                     |  8/5   | 4/26                |  w   |    a   |
 |  [RepL4NLP 2021](https://sites.google.com/view/repl4nlp-2021/call-for-papers?authuser=0)                        |  8/5   | 5/3                 |  w   |    a   |
+| ------------------- | ------ | ------------------- | ---- | ------ |
 |  EMNLP 2021         |  11/7  | 5/10 (5/17)         |  1   |    a   | (targeted)
-|  RANLP 2021         |  9/6   | 5/15                |  2   |    a   | (targeted)
 |  CIKM 2021          |  11/1  | 5/19 (5/26)         |  1   |    b   |  
 |  ICMI 2021          |  10/18 | 5/26                |  2   |    b   |
 |  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |    b   | (targeted)
 |  CoNLL 2021         |  11/10 | 6/14                |  2   |    a   | (targeted)
+|  [RANLP 2021](https://ranlp.org/ranlp2021/thirdCfP.php)                                                         |  9/1   | 6/10 (6/15)         |  2   |    a   | (targeted)
 |  ICONIP 2021        |  12/8  | 6/30                |  2   |    b   |
 |  EMNLP 2021 workshop|  11/7  |                     |  w   |    a   |
 |  COLING 2022        |  12/8  | 7/1                 |  2   |    a   |
