@@ -2,11 +2,7 @@ class Config:
 
     #################### For BERT fine-tuning ####################
     # control
-<<<<<<< HEAD
     datatype = "semantic"
-=======
-    datatype = "e2e"
->>>>>>> 2f95e913cdc254d22f7cee0bdf082c578248a239
     data_mode = "multi" #"multi"      # single or multi intent in data
     sentence_mode = "one" #"two"      # one or two sentence in data
     dialog_data_mode = False         # for dialogue-wise data (A+B)
@@ -14,11 +10,7 @@ class Config:
 
 
 
-<<<<<<< HEAD
     test_mode = "data" #"user", "data", "embedding", "validation"
-=======
-    test_mode = "data" #"user", "data"
->>>>>>> 2f95e913cdc254d22f7cee0bdf082c578248a239
 
     if datatype == "atis":
         # atis dataset
@@ -61,7 +53,6 @@ class Config:
         dialogue_id_path = "data/MULTIWOZ2.1/dialogue_id.pkl"
         embedding_path ="finetune_results/woz_embeddings_sub.pth"
     
-<<<<<<< HEAD
     elif datatype == "mixatis":
         # mix atis dataset
         train_path = "data/MixATIS_clean/raw_data_multi_ma_train.pkl"
@@ -76,8 +67,6 @@ class Config:
         test_path = "data/MixSNIPS_clean/raw_data_multi_sn_test.pkl"
         dic_path_with_tokens = "data/MixSNIPS_clean/intent2id_multi_sn_with_tokens.pkl"
     
-=======
->>>>>>> 2f95e913cdc254d22f7cee0bdf082c578248a239
     model_path = None if not retrain else "checkpoints/best_{}_{}.pth".format(datatype, data_mode)
 
 
