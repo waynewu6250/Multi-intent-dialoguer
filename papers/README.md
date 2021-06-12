@@ -249,6 +249,7 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  CIKM 2021          |  11/1  | 5/19 (5/26)         |  1   |    b   |  
 |  ICMI 2021          |  10/18 | 5/26                |  2   |    b   |
 |  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |    b   | (targeted)
+|  WACV 2022          |  1/4   | 6/2 (8/11)          |  2   |    a   |
 |  CoNLL 2021         |  11/10 | 6/14                |  2   |    a   | (targeted)
 |  [RANLP 2021](https://ranlp.org/ranlp2021/thirdCfP.php)                                                         |  9/1   | 6/10 (6/15)         |  2   |    a   | (targeted)
 |  ICONIP 2021        |  12/8  | 6/30                |  2   |    b   |
