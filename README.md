@@ -33,6 +33,7 @@ It has the following features & aims: <br>
 - [ ] Surface: Fewer labels to train as possible.
 
 
+
 -----------------------
 
 
@@ -100,7 +101,7 @@ For this mode, it will generate and store the sentence embeddings for every trai
 ## 3. Surface Model
 After obtaining embeddings, we could use them for surface model:
 
-please check here: <br>
+please check here for more details: <br>
 
 1. [intent clustering](nlu.md) <br>
 2. intent+slot-filling
