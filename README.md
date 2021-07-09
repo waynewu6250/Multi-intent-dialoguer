@@ -2,7 +2,7 @@
 
 **Main Research:** <br>
 
-A new framework for natural language understanding modules in task-oriented dialgoue systems.
+A new framework for spoken language understanding in task-oriented dialgoue systems with a more real scenario.
 This research project mainly focuses on the motivations of understanding human utterances and machine interactions, then forming knowledge abstraction for downstream policy learning tasks.
 
 Mainly given a dialogue turn, it will return the updated **slot-values** and **satisfaction level**. <br>
