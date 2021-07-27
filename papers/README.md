@@ -246,7 +246,6 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  [ACL workshop grounded dialogue](https://doc2dial.github.io/workshop2021/)                                     |  8/5   | 4/26                |  w   |    a   |
 |  ICTIR 2021         |  7/11  | 4/26                |  2   |    b   |
 |  [RepL4NLP 2021](https://sites.google.com/view/repl4nlp-2021/call-for-papers?authuser=0)                        |  8/5   | 5/3                 |  w   |    a   |
-| ------------------- | ------ | ------------------- | ---- | ------ |
 |  EMNLP 2021         |  11/7  | 5/10 (5/17)         |  1   |    a   | (targeted)
 |  CIKM 2021          |  11/1  | 5/19 (5/26)         |  1   |    b   |  
 |  ICMI 2021          |  10/18 | 5/26                |  2   |    b   |
@@ -262,6 +261,7 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  ASRU 2021          |  12/13 | 7/5                 |  2   |    b   | (targeted)
 |  O-COCOSDA 2021     |  11/18 | 7/31                |  2   |    b   |
 |  PACLIC 2021        |  11/5  | 7/31                |  2   |    b   |
+| ------------------- | ------ | ------------------- | ---- | ------ |
 |  SLT 2021           |  1/19  | 8/14                |  2   |    a   | (targeted)
 |  ICCDE 2022         |  1/11  | 8/25                |  2   |    b   |
 |  AAAI 2021          |  2/2   | 9/1 (9/9)           |  1   |    a   | (targeted)
