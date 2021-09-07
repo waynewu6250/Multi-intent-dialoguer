@@ -80,6 +80,7 @@ NLU (Intent + Slot-filling)
 - [x] [New concept for semantic frames](https://www.aclweb.org/anthology/2020.acl-main.186.pdf)
 - [ ] [Semantic machines](https://arxiv.org/abs/2009.11423)
 - [ ] [Visual Dialogue](https://arxiv.org/pdf/2005.07493.pdf)
+- [ ] [Intent description generation from query and documents](https://arxiv.org/pdf/2008.10889v1.pdf)
 
 Multi-intent
 - [ ] [Two-stage multi-intent 2017](https://link.springer.com/article/10.1007%2Fs11042-016-3724-4)
