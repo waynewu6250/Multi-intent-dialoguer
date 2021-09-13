@@ -255,8 +255,8 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  ICONIP 2021        |  12/8  | 6/30                |  2   |    b   |
 |  EMNLP 2021 workshop|  11/7  |                     |  w   |    a   |
 |  COLING 2022        |  12/8  | 7/1                 |  2   |    a   |
-|  IWSDS 2021         |  11/15 | 7/2                 |  2   |    a   | (targeted)
-|  ASRU 2021          |  12/13 | 7/5                 |  2   |    b   | (targeted)
+|  IWSDS 2021         |  11/15 | 7/2 (7/9)           |  2   |    a   | (targeted)
+|  ASRU 2021          |  12/13 | 6/25 (7/2)          |  2   |    b   | (targeted)
 |  SLT 2021           |  1/19  | 8/14                |  2   |    a   | (targeted)
 |  AAAI 2021          |  2/2   | 9/1 (9/9)           |  1   |    a   | (targeted)
 |  AAAI student 2021  |  2/2   | 9/18                |  2   |    w   |
