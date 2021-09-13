@@ -80,6 +80,7 @@ NLU (Intent + Slot-filling)
 - [x] [New concept for semantic frames](https://www.aclweb.org/anthology/2020.acl-main.186.pdf)
 - [ ] [Semantic machines](https://arxiv.org/abs/2009.11423)
 - [ ] [Visual Dialogue](https://arxiv.org/pdf/2005.07493.pdf)
+- [ ] [Intent description generation from query and documents](https://arxiv.org/pdf/2008.10889v1.pdf)
 
 Multi-intent
 - [ ] [Two-stage multi-intent 2017](https://link.springer.com/article/10.1007%2Fs11042-016-3724-4)
@@ -214,6 +215,7 @@ Model Analysis (Noise perturbation)
 ## Conferences
 ML conferences1: http://www.guide2research.com/topconf/machine-learning <br>
 ML conferences2: https://blog.csdn.net/devenlau/article/details/82660886 <br>
+NLP conferences: http://www.aclclp.org.tw/confer_c.php <br>
 ML conferences ranking: https://blog.csdn.net/cpp12341234/article/details/50886540 <br>
 Acceptance rate: https://github.com/lixin4ever/Conference-Acceptance-Rate <br>
 Deadlines: https://aideadlin.es/?sub=ML,CV,NLP,RO,SP,DM
@@ -232,7 +234,7 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |        |
 |  NAACL SRW          |  6/6   | 2/12                |  w   |        |  
 |  UAI 2021           |  8/3   | 2/20                |  2   |    b   |
-|  ECCV 2021          |  10/11 | 3/10                |  1   |    b   |å
+|  ECCV 2021          |  10/11 | 3/10                |  1   |    b   |
 |  ICCV 2021          |  10/10 | 3/17                |  1   |    a   |
 |  [NAACL multimodal](https://alvr-workshop.github.io/)                                                           |  6/11  | 3/22                |  w   |    a   |
 |  KR 2021            |  11/6  | 3/24 (3/31)         |  2   |    b   |
@@ -243,12 +245,13 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  [ACL workshop conv AI](https://sites.google.com/view/2ndnlp4convai/home)                                       |  8/1   | 4/17                |  w   |    a   |
 |  ACMMM 2021         |  10/20 | 4/17                |  2   |    b   |
 |  [ACL workshop grounded dialogue](https://doc2dial.github.io/workshop2021/)                                     |  8/5   | 4/26                |  w   |    a   |
+|  ICTIR 2021         |  7/11  | 4/26                |  2   |    b   |
 |  [RepL4NLP 2021](https://sites.google.com/view/repl4nlp-2021/call-for-papers?authuser=0)                        |  8/5   | 5/3                 |  w   |    a   |
-| ------------------- | ------ | ------------------- | ---- | ------ |
 |  EMNLP 2021         |  11/7  | 5/10 (5/17)         |  1   |    a   | (targeted)
 |  CIKM 2021          |  11/1  | 5/19 (5/26)         |  1   |    b   |  
 |  ICMI 2021          |  10/18 | 5/26                |  2   |    b   |
 |  NIPS 2021          |  12/6  | 5/27 (6/5)          |  1   |    b   | (targeted)
+|  ECNLPIR 2021       |  8/13  | 6/10                |  2   |    b   |
 |  WACV 2022          |  1/4   | 6/2 (8/11)          |  2   |    a   |
 |  CoNLL 2021         |  11/10 | 6/14                |  2   |    a   | (targeted)
 |  [RANLP 2021](https://ranlp.org/ranlp2021/thirdCfP.php)                                                         |  9/1   | 6/10 (6/15)         |  2   |    a   | (targeted)
@@ -256,15 +259,20 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  EMNLP 2021 workshop|  11/7  |                     |  w   |    a   |
 |  COLING 2022        |  12/8  | 7/1                 |  2   |    a   |
 |  IWSDS 2021         |  11/15 | 7/2 (7/9)           |  2   |    a   | (targeted)
-|  ASRU 2021          |  12/13 | 6/25 (7/2)          |  2   |    b   | (targeted)
+|  ASRU 2021          |  12/13 | 7/5                 |  2   |    b   | (targeted)
+|  O-COCOSDA 2021     |  11/18 | 7/31                |  2   |    b   |
+|  PACLIC 2021        |  11/5  | 7/31                |  2   |    b   |
+| ------------------- | ------ | ------------------- | ---- | ------ |
 |  SLT 2021           |  1/19  | 8/14                |  2   |    a   | (targeted)
+|  WeCNLP 2021        |  10/29 | 8/14                |  w   |    w   |
+|  ICCDE 2022         |  1/11  | 8/25                |  2   |    b   |
 |  AAAI 2021          |  2/2   | 9/1 (9/9)           |  1   |    a   | (targeted)
 |  AAAI student 2021  |  2/2   | 9/18                |  2   |    w   |
 |  ICLR 2021          |  5/4   | 10/2                |  1   |    b   |
 |  AISTATS 2021       |  4/13  | 10/8 (10/15)        |  2   |        |
 |  WWW 2021           |  4/19  | 10/12 (10/19)       |  1   |        |
 |  EACL 2021          |  4/21  | 10/7                |  2   |    a   |
-|  ICASSP 2021        |  5/23  | 10/19               |  1   |    a   |
+|  ICASSP 2022        |  5/23  | 10/19               |  1   |    a   |
 |  AAAI 2021 workshop |  2/8   | 11/9                |  w   |    w   |
 |  ECAI 2022          |  8/29  | 11/15               |  2   |    a   |
 |  CVPR 2021          |  7/21  | 11/16               |  1   |    t   |
@@ -272,8 +280,8 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  ICME 2022          |  7/11  | 11/29               |  2   |        |
 ACML
 IEEE transactions on audio, speech and language processing
-ICCDE 3
 ECCV
+ISCSLP
 
 v: ok <br>
 a: first to submit <br>
