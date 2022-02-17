@@ -110,7 +110,7 @@ please check here for more details: <br>
 -----------------------
 
 ## 4. Pertinence Model
-After obtaining embeddings, we could use them for pertinence model
+After obtaining embeddings, we could use them for pertinence model.
 
 
 
