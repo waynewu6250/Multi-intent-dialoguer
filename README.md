@@ -2,7 +2,7 @@
 
 **Main Research:** <br>
 
-A new framework for spoken language understanding in task-oriented dialgoue systems with a more real scenario.
+A new framework for spoken language understanding in task-oriented dialgoue systems to approach the naturalness (tackle irregularities).
 This research project mainly focuses on the motivations of understanding human utterances and machine interactions, then forming knowledge abstraction for downstream policy learning tasks.
 
 Mainly given a dialogue turn, it will return the updated **slot-values** and **satisfaction level**. <br>
@@ -110,7 +110,7 @@ please check here for more details: <br>
 -----------------------
 
 ## 4. Pertinence Model
-After obtaining embeddings, we could use them for pertinence model
+After obtaining embeddings, we could use them for pertinence model.
 
 
 
