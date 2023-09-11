@@ -186,6 +186,7 @@ Knowledge graph
 - [ ] [Fg2seq: Effectively Encoding Knowledge for End-To-End Task-Oriented Dialog](https://ieeexplore.ieee.org/document/9053667)
 - [ ] [GraphDialog: Integrating Graph Knowledge into End-to-End Task-Oriented Dialogue Systems](https://arxiv.org/pdf/2010.01447.pdf)
 - [x] [Effective Utilization of External Knowledge and History Context in Multi-turn Spoken Language Understanding Model](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9006162)
+- [x] [Knowledge-Augmented Language Model](https://arxiv.org/pdf/1904.04458.pdf)
 
 Model Analysis (Noise perturbation)
 - [x] [Do Neural Dialog Systems Use the Conversation History Effectively? An Empirical Study](https://arxiv.org/pdf/1906.01603.pdf)
@@ -226,10 +227,11 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  IWSDS 2021         |  5/18  | 1/10 (temp)         |  2   |        |
 |  IJCAI 2021         |  8/21  | 1/13 (1/20)         |  1   |        |
 |  ICDM 2021          |  7/14  | 1/15                |  2   |        |
-|  ACL-IJCNLP 2021    |  8/1   | 1/25 (2/1)          |  1   |    v   |
+|  ACL-IJCNLP 2022    |  8/1   | 1/7                 |  1   |    v   |
 |  ICML 2021          |  7/18  | 1/28 (2/4)          |  1   |        |
 |  COLT 2021          |  7/7   | 1/29                |  2   |        |
 |  SIGIR 2021         |  7/11  | 2/2 (2/9)           |  1   |        |
+|  NAACL-HLT 2022     |  6/6   | 2/6                 |  1   |    a   |
 |  KDD 2021           |  8/14  | 2/8                 |  1   |    v   |
 |  ICDAR 2021         |  9/5   | 2/8                 |  2   |        |
 |  NAACL SRW          |  6/6   | 2/12                |  w   |        |  
@@ -262,7 +264,6 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  ASRU 2021          |  12/13 | 7/5                 |  2   |    b   | (targeted)
 |  O-COCOSDA 2021     |  11/18 | 7/31                |  2   |    b   |
 |  PACLIC 2021        |  11/5  | 7/31                |  2   |    b   |
-| ------------------- | ------ | ------------------- | ---- | ------ |
 |  SLT 2021           |  1/19  | 8/14                |  2   |    a   | (targeted)
 |  WeCNLP 2021        |  10/29 | 8/14                |  w   |    w   |
 |  ICCDE 2022         |  1/11  | 8/25                |  2   |    b   |
@@ -272,11 +273,11 @@ Important months: 2 init, 3 end, 6 init, 8,9,10,11
 |  AISTATS 2021       |  4/13  | 10/8 (10/15)        |  2   |        |
 |  WWW 2021           |  4/19  | 10/12 (10/19)       |  1   |        |
 |  EACL 2021          |  4/21  | 10/7                |  2   |    a   |
-|  ICASSP 2022        |  5/23  | 10/19               |  1   |    a   |
+|  ICASSP 2022        |  5/23  | 10/6                |  1   |    a   |
 |  AAAI 2021 workshop |  2/8   | 11/9                |  w   |    w   |
+| ------------------- | ------ | ------------------- | ---- | ------ |
 |  ECAI 2022          |  8/29  | 11/15               |  2   |    a   |
-|  CVPR 2021          |  7/21  | 11/16               |  1   |    t   |
-|  NAACL-HLT 2021     |  6/6   | 11/23               |  1   |    a   |
+|  CVPR 2022          |  7/21  | 11/16               |  1   |    t   |
 |  ICME 2022          |  7/11  | 11/29               |  2   |        |
 ACML
 IEEE transactions on audio, speech and language processing
